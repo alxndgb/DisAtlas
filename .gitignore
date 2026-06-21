@@ -1,0 +1,5 @@
+.vscode
+.github/
+.DS_Store
+data/
+temp/
