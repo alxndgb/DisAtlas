@@ -2,66 +2,90 @@
 
 ![Logo](images/Alexion_AZ_Logo.png)
 
-# ComPPlete
+# Dis2Vec
 
 ## Project Description
 
-ComPPlete (Completing the Protein-Protein Interaction Network) is a novel ML pipeline utilizing PPI network topology for strategic sampling of protein-protein non-interactions (PPNIs) by leveraging higher-order network characteristics that capture the inherent complementarity-driven mechanisms of PPIs.
-Integrating unsupervised pre-training in protein representation learning with topological PPNI samples, ComPPlete improves PPI prediction generalizability and interpretability, particularly in identifying potential binding sites locations on amino acid sequences.
-ComPPlete strengthens the prioritization of screening assays, facilitates the transferability of ML predictions across protein families and homodimers.
-ComPPlete establishes the foundation for a fundamental negative sampling methodology in graph machine learning by integrating insights from network topology.
+Dis2Vec (Disease to Vector) is a disease representation learning framework designed to generate biologically grounded disease embeddings from human genetic and phenotypic evidence.
+
+The framework is used for:
+
+1. Disease-Disease Association Learning (DDAL), including transfer-learning-style evaluation against independent positive and negative controls.
+2. Unsupervised disease clustering to reveal shared mechanisms across rare and non-rare diseases.
+
+This repository contains cached DDAL predictions and notebooks for querying high-confidence disease-disease links (for example, indication expansion and rare-to-non-rare transfer hypotheses).
 
 ## Software Requirements
 
-ComPPlete is developed in Python 3. Required packages to run ComPPlete is available in: compplete_env.yml.
+Python 3.11 is recommended.
+
+Install dependencies from `requirements.txt`:
+
+```bash
+python -m pip install -r requirements.txt
+```
 
 ## How to use/Run the code
 
-ComPPlete is developed with NVIDIA A100 GPUs with CUDA 12.0. Use the compplete_env.yml to set-up the Python 3 environment. Then use ComPPlete_Frontend.ipynb to run predictions. You require the amino acid sequences of both proteins.
+Run the query notebook to inspect cached DDAL predictions:
+
+1. Open `notebooks/query_cached_UPNA-DDAL_preds.ipynb`.
+2. Execute cells top to bottom.
+3. Update disease pair IDs in the query cells to inspect additional hypotheses.
+
+The notebook reads:
+
+- `data/dis2vec_all_preds.parquet.gzip` (cached DDAL predictions)
+- `data/dis2vec_clust.xlsx` (disease clustering metadata)
 
 # Data
 
-## data/ComPPlete_PPNI_PPI_Interactome/
+## data/
 
-Two ComPPlete interactomes are available here: 
+Key artifacts used by the notebooks:
 
-(1) ComPPlete PPI (Protein-Prtoein Interactions) interactome that has 4,582,765 PPI predictions
+1. `dis2vec_all_preds.parquet.gzip`: cached disease-disease association predictions.
+2. `dis2vec_clust.xlsx`: clustering metadata used for disease ID lookup and interpretation.
 
-(2) ComPPlete PPNI (Protein-Prtoein None-Interactions) interactome that has 1,287,060 PPNI predictions. 
+# Notebooks
 
-## Topological_Negatives/
+## notebooks/
 
-The topological negatives obtained from contrastive-L3 approach. A total of 3,063,604 negatives between 5,037 proteins.
+`query_cached_UPNA-DDAL_preds.ipynb` provides examples for querying associations such as:
 
-# Models
+1. aHUS <-> PNH
+2. Rheumatoid Arthritis <-> Antisynthetase Syndrome
+3. Rheumatoid Arthritis <-> Polymyositis
+4. Rheumatoid Arthritis <-> Dermatomyositis
+5. Rheumatoid Arthritis <-> Mixed Connective Tissue Disease
+6. Rheumatoid Arthritis <-> Overlap Myositis
 
-## models/ 
+# Research Context
 
-Trained models.
+This repository aligns with the manuscript:
 
-# Code
+Representation Learning of Human Diseases for Indication Expansion and Investment Decisions
 
-## frontend/ 
+Dis2Vec is positioned as a biologically grounded representation layer for:
 
-Use this notebook to run ComPPlete models.
+1. Mechanistic disease similarity learning from genetic and phenotypic evidence.
+2. Transfer-learning evaluation for DDAL.
+3. Cross-disease knowledge repurposing between rare and non-rare disorders.
 
-## interpretability/
+# Citation
 
-This notebook offers the code to obtain binding profiles
-
-# Cite ComPPlete
-
-If you find ComPPlete useful in your research, please add the following citation:
+If you use this repository, please cite the associated Dis2Vec manuscript when available and include a link to this repository.
 
 ```
-@article{ComPPlete,
-  title={Topology-Driven Negative Sampling Enhances Generalizability in Protein-Protein Interaction Prediction},
-  author={Chatterjee, Ayan and Ravandi, Babak and Philip, Naomi H and Abdelmessih, Mario and Mowrey, William R and Ricchiuto, Piero and Liang, Yupu and Ding, Wei and Mobarec, Juan C and Eliassi-Rad, Tina},
-  url = {https://www.biorxiv.org/content/10.1101/2024.04.27.591478},
-  journal={bioRxiv},
-  pages={2024--04},
-  year={2024},
+@misc{dis2vec,
+	title = {Representation Learning of Human Diseases for Indication Expansion and Investment Decisions},
+	author = {Ravandi, Cyrus Babak and Mowrey, William R. and Chatterjee, Ayan and Khanshan, Fariba and Haddadi, Parham and Ughetto, Michaël and Barrett, Ian and Ding, Wei and Del Angel, Guillermo and Diethe, Tom and Mobarec, Juan Carlos and Lambden, Simon and Cheng, Seng and Eliassi-Rad, Tina and Risa, Gabriel and Ricchiuto, Piero},
+	year = {2026},
+	doi = {10.1101/2024.11.19.624381},
+	url = {https://www.biorxiv.org/content/10.1101/2024.11.19.624381},
+	journal = {In Prep}
 }
 
 ```
+
 
