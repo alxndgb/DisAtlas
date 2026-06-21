@@ -1,6 +1,6 @@
 ![Maturity level-0](https://img.shields.io/badge/Maturity%20Level-ML--0-red)
 
-![Logo](https://github.com/alxndgb/ComPPlete/blob/main/images/Alexion_AZ_Logo.png)
+![Logo](images/Alexion_AZ_Logo.png)
 
 # ComPPlete
 
