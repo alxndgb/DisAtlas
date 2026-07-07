@@ -1,5 +1,24 @@
-polars==1.41.2
+# Environment for the Dis2Vec-zenodo notebooks
+#   - clustering_rare_and_common.ipynb
+#   - query_UPNA-DDAL_preds_cached.ipynb
+#
+# Python 3.11 (built/verified on 3.11.15).
+# Reproduce with:
+#   python3.11 -m venv .venv
+#   . .venv/bin/activate
+#   pip install -r requirements.txt
+
+# --- Data handling ---
 pandas==3.0.3
-pyarrow==24.0.0
-openpyxl==3.1.5
+polars==1.41.2
+
+# I/O engines used by the notebooks
+pyarrow==24.0.0      # pandas.read_parquet  (*.parquet.gzip)
+openpyxl==3.1.5      # pandas.read_excel    (*.xlsx)
+
+# --- Plotting ---
+plotly==6.8.0
+
+# --- Notebook execution ---
 ipykernel==7.3.0
+nbformat==5.10.4
