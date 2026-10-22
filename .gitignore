@@ -9,6 +9,7 @@ temp
 CLAUDE.md
 data/zenodo/
 .claude
+.ssh/
 data/03_rebuilt/work/
 .pyc
 # Rebuilt by code/00_ontology/build_disease_distances.py (too large for git)
