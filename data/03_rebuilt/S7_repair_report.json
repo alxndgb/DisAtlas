@@ -1,0 +1,22 @@
+{
+  "top_n": 200000,
+  "top_k": 1500000,
+  "max_bridges_m": 2,
+  "n_islands": 10,
+  "n_islands_bridged": 0,
+  "n_bridges_added": 0,
+  "n_low_data_nodes": 0,
+  "n_unbridged_islands": 10,
+  "unbridged_island_nodes": 24,
+  "escalated": {
+    "top_n": 200000,
+    "top_k": 5530050,
+    "max_bridges_m": 2,
+    "n_islands": 10,
+    "n_islands_bridged": 0,
+    "n_bridges_added": 0,
+    "n_low_data_nodes": 0,
+    "n_unbridged_islands": 10,
+    "unbridged_island_nodes": 24
+  }
+}

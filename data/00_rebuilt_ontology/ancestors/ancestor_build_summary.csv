@@ -1,0 +1,5 @@
+key,n_terms,n_ancestor_rows,d_max,equals_shipped
+go_bp_semi,24129,480463,23,True
+go_mf,10041,73818,18,True
+go_cc,4075,46358,18,True
+hpo,19836,222576,25,True

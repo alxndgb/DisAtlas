@@ -1,0 +1,5 @@
+stratum	auroc	ci_lo	ci_hi	HPO Resnik-BMA | auroc	GO Resnik gene-BMA | auroc	n_pos	n_neg	scope
+rare-rare	0.722438	0.671623	0.772257	0.575251	0.600728	1284	1168	All 4364 pairs
+rare-common	0.758021	0.667615	0.834588	0.533697	0.608960	253	988	All 4364 pairs
+common-common	0.804055	0.654605	0.932883	0.554264	0.576953	645	26	All 4364 pairs
+all	0.764522	0.729179	0.799341	0.544093	0.644596	2182	2182	All 4364 pairs

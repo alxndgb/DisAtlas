@@ -1,0 +1,5 @@
+subset,n,n_pos,n_neg,model,m_lo,m_hi
+all pairs,4364,2182,2182,0.7645,0.7226,0.8044
+both diseases in ORDO,1636,842,794,0.7295,0.6687,0.789
+at least one disease outside ORDO,2728,1340,1388,0.7865,0.7405,0.8285
+"outside ORDO, held-out test-test",696,306,390,0.8098,0.7366,0.8752

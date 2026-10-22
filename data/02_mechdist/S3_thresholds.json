@@ -1,0 +1,15 @@
+{
+  "cut_off_dist_GO_BP": 0.2,
+  "cut_off_dist_HPO": 0.2,
+  "go": {
+    "n": 114621,
+    "mean": 0.06687807829630309,
+    "frac_le_cut": 0.991223248793851
+  },
+  "hpo": {
+    "n": 13207984,
+    "mean": 0.2105342504503367,
+    "frac_le_cut": 0.41104653064388935
+  },
+  "rationale": "HPO 0.2 stays peak-anchored (v3 peak 0.213); GO collapsed toward 0 (99.9% <= 0.2) so gene-sharing candidacy, not the cutoff, is GO selectivity. Legacy 0.2 retained."
+}

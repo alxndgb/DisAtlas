@@ -1,0 +1,6 @@
+method	median	min	max
+DisAtlas (unseen in learning)	0.973048	0.971485	0.976043
+DisAtlas (full)	0.921481	0.912375	0.928463
+Claude Chat (Opus 5.5)	0.532775	0.152167	0.807490
+Claude Sci (Opus 5.5)	0.644624	0.362751	0.830605
+Gemini Pro 3.1	0.554709	0.503558	0.872694

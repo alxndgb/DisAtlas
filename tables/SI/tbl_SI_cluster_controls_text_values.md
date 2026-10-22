@@ -1,0 +1,6 @@
+| quantity | rebuilt | manuscript |
+|---|---|---|
+| co-cluster ratio, test-split IxIDN+ vs IxIDN-, K = 50 | 8.2 | 8.2 |
+| minimum co-cluster ratio over K >= 20 | 5.3 | 5.3 |
+| independent controls: positive / negative / excluded | 6/5/4 | 6/5/4 |
+| NF1-mutant/NF2: other K values at which separated | 13 of 14 | 13 of the 15 (manuscript) |

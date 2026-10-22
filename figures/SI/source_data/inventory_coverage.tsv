@@ -1,0 +1,8 @@
+key	method	pairs_scored	n_pairs	net_diseases	n_net	bench_genes	n_bench_genes
+frozen	DisAtlas (four-channel model)	4364	4364	13021	13021		
+go_only	GO	3565	4364	8989	13021		
+hpo_only	HPO	1519	4364	10259	13021		
+hpa_only	HPA	3989	4364	10188	13021		
+dom_only	Pfam	4086	4364	10812	13021		
+reactome_channel	Reactome pathway membership (channel)	3882	4364	9004	13021	2219	2895
+gocam_causal	GO-CAM causal activity graph	1834	4364	3754	13021	815	2895

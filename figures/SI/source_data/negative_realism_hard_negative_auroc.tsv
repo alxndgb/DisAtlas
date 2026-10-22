@@ -1,0 +1,21 @@
+scope	subset	n_pos	n_neg	pct_neg_kept	auroc_disatlas	ci_lo	ci_hi	auroc_hpo_resnik_bma	auroc_go_resnik_gene_bma	auroc_mondo_simgic
+All 4,364 pairs	All negatives (reference)	2182	2182	100.0	0.7645	0.7257	0.8033			
+All 4,364 pairs	Share an organ system with each other	2182	814	37.3052	0.7208	0.6716	0.7674			
+All 4,364 pairs	Share an ORDO clinical area	2182	762	34.9221	0.7258	0.676	0.7777			
+All 4,364 pairs	MONDO distance <= positive median (ontology-close)	2182	815	37.3511	0.7246	0.6716	0.7709			
+All 4,364 pairs	ORDO distance <= positive median (ontology-close)	2182	232	10.6324	0.6634	0.59	0.7308			
+All 4,364 pairs	HPO Resnik-BMA >= positive median (phenotype-similar)	2182	146	6.6911	0.5413	0.4568	0.6192			
+All 4,364 pairs	GO Resnik gene-BMA >= positive median (function-similar)	2182	476	21.8148	0.6692	0.6056	0.7273			
+All 4,364 pairs	Close or similar on >= 2 of the 4 axes above	2182	366	16.7736	0.6432	0.5742	0.7028			
+All 4,364 pairs	Both classes share an organ system	814	814	37.3052	0.7796	0.7308	0.824	0.585	0.6413	0.583
+All 4,364 pairs	Both classes share an ORDO clinical area	762	762	34.9221	0.7535	0.7001	0.8119	0.6129	0.6153	0.5608
+Test-split pairs	All negatives (reference)	491	603	100.0	0.7823	0.7241	0.8427			
+Test-split pairs	Share an organ system with each other	491	221	36.6501	0.7384	0.6513	0.8118			
+Test-split pairs	Share an ORDO clinical area	491	197	32.67	0.7257	0.6452	0.8002			
+Test-split pairs	MONDO distance <= positive median (ontology-close)	491	193	32.0066	0.734	0.6425	0.8048			
+Test-split pairs	ORDO distance <= positive median (ontology-close)	491	71	11.7745	0.6399	0.5096	0.7486			
+Test-split pairs	HPO Resnik-BMA >= positive median (phenotype-similar)	491	30	4.9751	0.4658	0.3085	0.6452			
+Test-split pairs	GO Resnik gene-BMA >= positive median (function-similar)	491	146	24.2123	0.7332	0.6467	0.8147			
+Test-split pairs	Close or similar on >= 2 of the 4 axes above	491	103	17.0813	0.6639	0.5568	0.7629			
+Test-split pairs	Both classes share an organ system	216	221	36.6501	0.7819	0.6912	0.8674	0.6289	0.6086	0.6122
+Test-split pairs	Both classes share an ORDO clinical area	178	197	32.67	0.7734	0.6666	0.8717	0.6586	0.6377	0.5857

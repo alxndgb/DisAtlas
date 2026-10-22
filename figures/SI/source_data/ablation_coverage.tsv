@@ -1,0 +1,19 @@
+scope	key	pairs_scored	n_pairs	pct_pairs	bench_diseases_scored	n_bench_diseases	pct_bench_diseases	net_diseases	n_net	pct_net
+IxIDN-Matched (all 4,364 pairs)	frozen	4364	4364	100.0	938	938	100.0	13019	13021	99.98
+IxIDN-Matched (all 4,364 pairs)	control	4364	4364	100.0	938	938	100.0	13019	13021	99.98
+IxIDN-Matched (all 4,364 pairs)	crank	4364	4364	100.0	938	938	100.0	13019	13021	99.98
+IxIDN-Matched (all 4,364 pairs)	mean	4364	4364	100.0	938	938	100.0	13019	13021	99.98
+IxIDN-Matched (all 4,364 pairs)	max	4364	4364	100.0	938	938	100.0	13019	13021	99.98
+IxIDN-Matched (all 4,364 pairs)	rra	4364	4364	100.0	938	938	100.0	13019	13021	99.98
+IxIDN-Matched (all 4,364 pairs)	go_only	3565	4364	81.69	835	938	89.02	8985	13021	69.0
+IxIDN-Matched (all 4,364 pairs)	hpo_only	1519	4364	34.81	512	938	54.58	10257	13021	78.77
+IxIDN-Matched (all 4,364 pairs)	hpa_only	3989	4364	91.41	896	938	95.52	10186	13021	78.23
+IxIDN-Matched (all 4,364 pairs)	dom_only	4086	4364	93.63	898	938	95.74	10811	13021	83.03
+IxIDN-Matched (all 4,364 pairs)	go_hpo	4364	4364	100.0	938	938	100.0	13019	13021	99.98
+IxIDN-Matched (all 4,364 pairs)	px_only	4186	4364	95.92	915	938	97.55	10950	13021	84.09
+IxIDN-Matched (all 4,364 pairs)	gene_only	4186	4364	95.92	915	938	97.55	10967	13021	84.23
+IxIDN-Matched (all 4,364 pairs)	gcn	4364	4364	100.0	938	938	100.0	13019	13021	99.98
+IxIDN-Matched (all 4,364 pairs)	sage	4364	4364	100.0	938	938	100.0	13019	13021	99.98
+IxIDN-Matched (all 4,364 pairs)	lap	4364	4364	100.0	938	938	100.0	13019	13021	99.98
+IxIDN-Matched (all 4,364 pairs)	hpo_resnik_bma	1539	4364	35.27	518	938	55.22	10281	13021	78.96
+IxIDN-Matched (all 4,364 pairs)	go_resnik_genebma	4176	4364	95.69	910	938	97.01	10892	13021	83.65

@@ -1,0 +1,114 @@
+{
+  "top_n": 200000,
+  "top_k": 1500000,
+  "max_bridges_m": 2,
+  "n_islands": 10,
+  "n_islands_bridged": 0,
+  "n_bridges_added": 0,
+  "n_low_data_nodes": 0,
+  "n_unbridged_islands": 10,
+  "unbridged_island_nodes": 24,
+  "unbridged_examples": [
+    [
+      "DIS_B1E8EDA0E60",
+      "MONDO:0007475",
+      "MONDO:0018765",
+      "MONDO:0018794"
+    ],
+    [
+      "MONDO:0001040",
+      "MONDO:0002258",
+      "MONDO:0004514"
+    ],
+    [
+      "MONDO:0003778",
+      "MONDO:0035362",
+      "ORPHANET:714423"
+    ],
+    [
+      "MONDO:0044222",
+      "MONDO:0100587"
+    ],
+    [
+      "MONDO:0019060",
+      "MONDO:0021581"
+    ],
+    [
+      "DIS_B696F9CEBF3",
+      "MONDO:0006693"
+    ],
+    [
+      "DIS_BF990CC059C",
+      "MONDO:0005320"
+    ],
+    [
+      "MONDO:0018436",
+      "MONDO:0850067"
+    ],
+    [
+      "MONDO:0004622",
+      "MONDO:0004701"
+    ],
+    [
+      "MONDO:0009789",
+      "DIS_B7FF1C4A84B"
+    ]
+  ],
+  "escalated": {
+    "top_n": 200000,
+    "top_k": 5530050,
+    "max_bridges_m": 2,
+    "n_islands": 10,
+    "n_islands_bridged": 0,
+    "n_bridges_added": 0,
+    "n_low_data_nodes": 0,
+    "n_unbridged_islands": 10,
+    "unbridged_island_nodes": 24,
+    "unbridged_examples": [
+      [
+        "DIS_B1E8EDA0E60",
+        "MONDO:0007475",
+        "MONDO:0018765",
+        "MONDO:0018794"
+      ],
+      [
+        "MONDO:0001040",
+        "MONDO:0002258",
+        "MONDO:0004514"
+      ],
+      [
+        "MONDO:0003778",
+        "MONDO:0035362",
+        "ORPHANET:714423"
+      ],
+      [
+        "MONDO:0044222",
+        "MONDO:0100587"
+      ],
+      [
+        "MONDO:0019060",
+        "MONDO:0021581"
+      ],
+      [
+        "DIS_B696F9CEBF3",
+        "MONDO:0006693"
+      ],
+      [
+        "DIS_BF990CC059C",
+        "MONDO:0005320"
+      ],
+      [
+        "MONDO:0018436",
+        "MONDO:0850067"
+      ],
+      [
+        "MONDO:0004622",
+        "MONDO:0004701"
+      ],
+      [
+        "MONDO:0009789",
+        "DIS_B7FF1C4A84B"
+      ]
+    ]
+  }
+}

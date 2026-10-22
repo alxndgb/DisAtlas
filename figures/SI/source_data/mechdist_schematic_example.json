@@ -1,0 +1,9 @@
+{
+ "disease_a": "MONDO:0016244",
+ "disease_b": "MONDO:0100244",
+ "p": 0.8943004012107849,
+ "rank_of_b_among_a_partners": 37,
+ "rank_of_a_among_b_partners": 7,
+ "frac_random_pairs_below_p": 0.99407,
+ "random_pairs": "200,000 uniformly sampled disease pairs (numpy default_rng seeds 0 and 1)"
+}

@@ -1,25 +1,59 @@
-# Environment for the Dis2Vec-zenodo notebooks
-#   - clustering_rare_and_common.ipynb
-#   - query_UPNA-DDAL_preds_cached.ipynb
+# DisAtlas reproduction environment.
+# Python 3.13.1 (pinned versions below cross-checked against the manuscript's own recorded
+# software stack, sec:methods_software, and the frozen model package's manifest.json
+# "libraries" block -- both sources agreed exactly for every package in the "training" and
+# "inference" sections).
 #
-# Python 3.11 (built/verified on 3.11.15).
-# Reproduce with:
-#   python3.11 -m venv .venv
-#   . .venv/bin/activate
-#   pip install -r requirements.txt
+#   python3.13 -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt
 
-# --- Data handling ---
-pandas==3.0.3
+# --- inference: load the shipped 5-seed Node2Vec embeddings + UPNA-DDAL decoder weights and
+#     score disease pairs (no retraining), via data/zenodo/models/frozen_model_loader.py.
+#     Sufficient for code/04_train_model/04_evaluate_ensemble.py.
+#     NOTE: top-level test_inference.py is a stale pre-reorg script (keras + an .h5 model, a
+#     pickle embedding file, and a disease_id_names.csv that no longer exist in this repo) --
+#     it is not part of this track's provenance_pipeline.json scope and is not updated here;
+#     flagged as a deviation in this track's report. ---
+numpy==2.3.1
+pandas==2.3.0
+networkx==3.5
+torch==2.9.1
+safetensors==0.8.0
+pyarrow==24.0.0        # pandas.read_parquet (*.parquet.gzip, *.parquet.gz)
+
+# --- training: everything above, plus the packages needed to rebuild the MechDist network,
+#     retrain Node2Vec, and retrain the UPNA-DDAL decoder from scratch (code/03_network/,
+#     code/04_train_model/01-03). ---
+scipy==1.16.0
+scikit-learn==1.7.0
+torch-geometric==2.7.0
+torch-cluster==1.6.3
+
+# --- optional, QC/plotting only -- NOT required to reproduce any reported number.
+#     Imported by the source repo's training scripts for sanity-check figures only
+#     (embed_node2vec.py cosine-sanity plot + UMAP projection, upna_ddal.py / benchmark_eval.py
+#     training-curve and ranking figures). Omitted from the two sections above on purpose; the
+#     reproduction scripts in this repo do not import them. ---
+matplotlib==3.10.0
+# umap-learn==0.5.7
+
+# --- clustering / map-layout analysis (manuscript sec:methods_clustering) -- used by
+#     cluster_upna_ddal.py and select_k_bootstrap.py in the source repo, NOT by the MechDist ->
+#     Node2Vec -> UPNA-DDAL chain reproduced in code/03_network/ and code/04_train_model/ here.
+#     Tier B3 in scope_checklist.md; out of scope for this repo's provenance_pipeline.json data
+#     classification (no clustering reproduction script is shipped). Listed for completeness of
+#     the manuscript's overall software paragraph only. ---
+# kmedoids==0.5.5
+
+# --- legacy: packages used only by the pre-existing Dis2Vec-zenodo notebooks
+#     (clustering_rare_and_common.ipynb, query_UPNA-DDAL_preds_cached.ipynb). Not part of the
+#     manuscript's recorded software stack; kept for those notebooks' own reproducibility, not
+#     cross-checked against provenance_pipeline.json. ---
 polars==1.41.2
-
-# I/O engines used by the notebooks
-pyarrow==24.0.0      # pandas.read_parquet  (*.parquet.gzip)
-openpyxl==3.1.5      # pandas.read_excel    (*.xlsx)
-
-# --- Plotting ---
+openpyxl==3.1.5        # pandas.read_excel (*.xlsx)
 plotly==6.8.0
-
-# --- Notebook execution ---
 ipykernel==7.3.0
 nbformat==5.10.4
 tqdm==4.66.5
+statsmodels==0.15.0
+patsy==1.0.3
+pytest==9.1.1

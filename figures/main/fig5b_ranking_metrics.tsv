@@ -1,0 +1,36 @@
+method	metric	value	lo	hi
+DisAtlas (full)	AUROC	0.764522	0.750685	0.778906
+DisAtlas (full)	AUPRC	0.777208	0.760321	0.796637
+DisAtlas (full)	F1@k=#positives	0.708066	0.693354	0.724527
+DisAtlas (full)	Precision@top10%	0.917431	0.892202	0.942661
+DisAtlas (full)	NPV@bottom10%	0.779817	0.743119	0.821101
+DisAtlas (unseen in learning)	AUROC	0.742020	0.727416	0.757429
+DisAtlas (unseen in learning)	AUPRC	0.757435	0.738902	0.776880
+DisAtlas (unseen in learning)	F1@k=#positives	0.680110	0.663174	0.698360
+DisAtlas (unseen in learning)	Precision@top10%	0.912844	0.885321	0.940367
+DisAtlas (unseen in learning)	NPV@bottom10%	0.782110	0.743119	0.824599
+Claude-Chat Opus 5.5	AUROC	0.691840	0.676349	0.706306
+Claude-Chat Opus 5.5	AUPRC	0.739280	0.721226	0.757823
+Claude-Chat Opus 5.5	F1@k=#positives	0.628323	0.612021	0.646025
+Claude-Chat Opus 5.5	Precision@top10%	0.933486	0.910550	0.957626
+Claude-Chat Opus 5.5	NPV@bottom10%	0.635321	0.587312	0.683486
+Claude-Sci Opus 5.5	AUROC	0.685349	0.670651	0.700654
+Claude-Sci Opus 5.5	AUPRC	0.708104	0.688457	0.726196
+Claude-Sci Opus 5.5	F1@k=#positives	0.640467	0.622574	0.657709
+Claude-Sci Opus 5.5	Precision@top10%	0.860092	0.826778	0.894495
+Claude-Sci Opus 5.5	NPV@bottom10%	0.637615	0.597420	0.690367
+Phylo	AUROC	0.626759	0.609120	0.642645
+Phylo	AUPRC	0.664061	0.643196	0.684597
+Phylo	F1@k=#positives	0.595784	0.580020	0.613499
+Phylo	Precision@top10%	0.830275	0.798165	0.869266
+Phylo	NPV@bottom10%	0.500000	0.451835	0.557339
+Gemini Pro 3.1	AUROC	0.497389	0.479342	0.516094
+Gemini Pro 3.1	AUPRC	0.536486	0.514758	0.557436
+Gemini Pro 3.1	F1@k=#positives	0.496792	0.473971	0.516745
+Gemini Pro 3.1	Precision@top10%	0.630734	0.577982	0.667431
+Gemini Pro 3.1	NPV@bottom10%	0.488991	0.442317	0.535203
+TxGNN (published ckpt)	AUROC	0.566366	0.549705	0.582398
+TxGNN (published ckpt)	AUPRC	0.605999	0.586190	0.629001
+TxGNN (published ckpt)	F1@k=#positives	0.541247	0.521978	0.562303
+TxGNN (published ckpt)	Precision@top10%	0.772936	0.733945	0.816514
+TxGNN (published ckpt)	NPV@bottom10%	0.529817	0.472477	0.567718

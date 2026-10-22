@@ -1,0 +1,17 @@
+score	stratum	n	n_pos	n_neg	auroc
+label_mondo_simgic	rare-rare	2448	1283	1165	0.526990
+label_name_tfidf	rare-rare	2452	1284	1168	0.504459
+gene_count_logsum	rare-rare	2452	1284	1168	0.500059
+gene_coverage_min	rare-rare	2452	1284	1168	0.491374
+label_mondo_simgic	rare-common	1238	253	985	0.562228
+label_name_tfidf	rare-common	1241	253	988	0.475680
+gene_count_logsum	rare-common	1241	253	988	0.499770
+gene_coverage_min	rare-common	1241	253	988	0.513922
+label_mondo_simgic	common-common	671	645	26	0.525343
+label_name_tfidf	common-common	671	645	26	0.461270
+gene_count_logsum	common-common	671	645	26	0.547197
+gene_coverage_min	common-common	671	645	26	0.526476
+label_mondo_simgic	all	4357	2181	2176	0.541794
+label_name_tfidf	all	4364	2182	2182	0.506162
+gene_count_logsum	all	4364	2182	2182	0.504332
+gene_coverage_min	all	4364	2182	2182	0.500000

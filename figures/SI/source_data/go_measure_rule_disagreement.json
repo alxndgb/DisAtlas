@@ -1,0 +1,16 @@
+{
+ "namespaces": {
+  "biological_process": {
+   "frac_close_by_min_but_mean_above_median": 0.22686674803062243,
+   "frac_close_by_min_but_bma_above_median": 0.015375938459262547
+  },
+  "molecular_function": {
+   "frac_close_by_min_but_mean_above_median": 0.04544600151100167,
+   "frac_close_by_min_but_bma_above_median": 0.0024980749098734083
+  },
+  "cellular_component": {
+   "frac_close_by_min_but_mean_above_median": 0.08218945918511386,
+   "frac_close_by_min_but_bma_above_median": 0.004738682411625663
+  }
+ }
+}

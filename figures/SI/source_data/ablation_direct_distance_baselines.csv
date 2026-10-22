@@ -1,0 +1,5 @@
+scope,column,n_scorable,coverage_pct,auroc_scorable,ci_lo,ci_hi,model_auroc_same_pairs,m_ci_lo,m_ci_hi,delta_model_minus,d_ci_lo,d_ci_hi,auroc_all_unscorable_last,all_ci_lo,all_ci_hi,model_auroc_all,delta_all,dall_ci_lo,dall_ci_hi
+all,mechdist_go,4176,95.7,0.6098,0.5696,0.6563,0.7664,0.723,0.8084,0.1566,0.1083,0.2007,0.6001,0.5602,0.6425,0.7645,0.1644,0.115,0.2097
+all,mechdist_hpo,1539,35.3,0.7059,0.6456,0.7664,0.7487,0.689,0.8066,0.0428,-0.0143,0.1093,0.5432,0.5049,0.5842,0.7645,0.2213,0.1646,0.2809
+test-test,mechdist_go,1069,97.7,0.6229,0.5524,0.7016,0.7881,0.7214,0.849,0.1651,0.0751,0.2415,0.6007,0.5316,0.6819,0.7823,0.1816,0.0891,0.2559
+test-test,mechdist_hpo,415,37.9,0.7139,0.6135,0.8039,0.7701,0.6702,0.8572,0.0562,-0.0344,0.153,0.5731,0.505,0.6406,0.7823,0.2092,0.1259,0.292

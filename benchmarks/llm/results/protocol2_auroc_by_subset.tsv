@@ -1,0 +1,21 @@
+subset	n	system	auroc
+all pairs	4364	DisAtlas (full)	0.764522
+all pairs	4364	DisAtlas (unseen in learning)	0.742020
+all pairs	4364	Claude Chat (Opus 5.5)	0.691840
+all pairs	4364	Claude Sci (Opus 5.5)	0.685349
+all pairs	4364	Gemini Pro 3.1	0.497389
+held-out test split	1094	DisAtlas (full)	0.782290
+held-out test split	1094	DisAtlas (unseen in learning)	0.754355
+held-out test split	1094	Claude Chat (Opus 5.5)	0.696286
+held-out test split	1094	Claude Sci (Opus 5.5)	0.701751
+held-out test split	1094	Gemini Pro 3.1	0.499828
+oncology	1740	DisAtlas (full)	0.750620
+oncology	1740	DisAtlas (unseen in learning)	0.717720
+oncology	1740	Claude Chat (Opus 5.5)	0.701150
+oncology	1740	Claude Sci (Opus 5.5)	0.723787
+oncology	1740	Gemini Pro 3.1	0.558840
+non-oncology	2624	DisAtlas (full)	0.744019
+non-oncology	2624	DisAtlas (unseen in learning)	0.745400
+non-oncology	2624	Claude Chat (Opus 5.5)	0.671236
+non-oncology	2624	Claude Sci (Opus 5.5)	0.664087
+non-oncology	2624	Gemini Pro 3.1	0.427951

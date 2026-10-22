@@ -1,0 +1,7 @@
+| Control pair | Relationship | Shares cluster at K=50? | Pairwise score vs. median co-investigated pair |
+|---|---|---|---|
+| LAL-D / CESD | Known shared mechanism (illustrative; known before the clustering was finalised) | Yes | Above |
+| NF1 (NF1-mutant) / NF2 | Related but mechanistically distinct (illustrative; known before the clustering was finalised) | Yes | Below |
+| 15 additional controls (8 positive, 7 negative; 6 positive and 5 negative independent of every selection step) | See main text for identities | 4/6 positive pairs share a cluster; 3/5 negative pairs separated (AUROC 0.83 overall) | n/a |
+
+Summary of cluster-validation controls.

@@ -1,0 +1,5 @@
+stratum	n_pos	n_neg	disatlas_auroc	combined_matched_shortcuts_auroc	delta	delta_ci_lo	delta_ci_hi	significant
+rare-rare	1284	1168	0.722438	0.542862	0.179576	0.122228	0.227291	True
+rare-common	253	988	0.758021	0.557064	0.200957	0.074794	0.313928	True
+common-common	645	26	0.804055	0.440489	0.363566	0.103964	0.611218	True
+all	2182	2182	0.764522	0.535598	0.228924	0.180310	0.275121	True

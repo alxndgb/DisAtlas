@@ -1,0 +1,19 @@
+tag,role,origin,a,b,rationale,a_name,b_name,p,p_seed_min,p_seed_max,split_a,split_b,in_ixidn4364,in_selection_eval,independent,pct_ixneg_all,pct_ixpos_all,pct_ixneg_tt,pct_ixpos_tt,pct_random,pct_mondo_sib
+LALD_Wolman-CESD,pos,original,MONDO:0019148,MONDO:0019149,both LIPA deficiency; sebelipase alfa,Wolman disease,cholesteryl ester storage disease,0.9021,0.845,0.9446,test,test,,,False,0.9844,0.8291,0.9867,0.833,0.9949,0.8551
+NF1clin-NF2,neg,original,MONDO:0018975,MONDO:0007039,shared name; NF1 vs NF2 gene,neurofibromatosis type 1,NF2-related schwannomatosis,0.5615,0.2946,0.7334,test,test,,,False,0.939,0.6192,0.9536,0.609,0.9771,0.7167
+NF1mut-NF2,neg,original,MONDO:0018208,MONDO:0007039,shared name; NF1 vs NF2 gene,neurofibromatosis type 1 due to NF1 mutation or intragenic deletion,NF2-related schwannomatosis,0.157,0.0322,0.3541,test,test,,,False,0.8501,0.4377,0.8789,0.4318,0.9355,0.5641
+aHUS-PNH,pos,new,MONDO:0016244,MONDO:0100244,complement C5 inhibition (eculizumab),atypical hemolytic-uremic syndrome,paroxysmal nocturnal hemoglobinuria,0.8943,0.832,0.955,tune,test,,,True,0.9835,0.8167,0.9867,0.8086,0.9945,0.8479
+gMG-NMO,pos,new,MONDO:0009688,MONDO:0019100,complement C5 inhibition (eculizumab),myasthenia gravis,neuromyelitis optica,0.0093,0.0016,0.0203,tune,test,,,True,0.5376,0.2081,0.5456,0.2118,0.706,0.2902
+CAPS-FMF,pos,new,MONDO:0016168,MONDO:0018088,IL-1 blockade (canakinumab),cryopyrin-associated periodic syndrome,familial Mediterranean fever,0.9144,0.8985,0.9279,tune,tune,1.0,tune:1,False,0.9876,0.8515,0.9917,0.8554,0.9955,0.8696
+TSC-LAM,pos,new,MONDO:0001734,MONDO:0011705,mTORC1 activation (sirolimus/everolimus),tuberous sclerosis,lymphangioleiomyomatosis,0.9052,0.8649,0.9391,tune,test,,,True,0.9849,0.8355,0.9884,0.8391,0.995,0.858
+GIST-CML,pos,new,MONDO:0011719,MONDO:0011996,KIT/ABL kinase inhibition (imatinib),gastrointestinal stromal tumor,chronic myeloid leukemia,0.8256,0.6956,0.9333,tune,tune,,tune:1,False,0.9698,0.7479,0.9718,0.7332,0.9903,0.8009
+GIST-SM,pos,new,MONDO:0011719,MONDO:0016586,KIT kinase inhibition (avapritinib),gastrointestinal stromal tumor,systemic mastocytosis,0.9367,0.911,0.9674,tune,test,,,True,0.9927,0.8868,0.995,0.8859,0.9975,0.9065
+Crohn-UC,pos,new,MONDO:0005011,MONDO:0005101,"gut inflammation (anti-TNF, vedolizumab)",Crohn disease,ulcerative colitis,0.9741,0.9604,0.9833,tune,test,,,True,0.9977,0.9821,0.9983,0.9898,0.9999,0.9928
+Psoriasis-PsA,pos,new,MONDO:0005083,MONDO:0011849,IL-23/IL-17 axis,psoriasis,psoriatic arthritis,0.9732,0.9629,0.9816,test,test,1.0,test:1,True,0.9973,0.9771,0.9983,0.9857,0.9999,0.9921
+DI-T2D,neg,new,MONDO:0004782,MONDO:0005148,shared name 'diabetes',diabetes insipidus,type 2 diabetes mellitus,0.0324,0.011,0.0541,test,test,,,True,0.7195,0.2997,0.7579,0.2912,0.8499,0.4143
+SMA-Kennedy,neg,new,MONDO:0001516,MONDO:0010735,'spinal muscular atrophy'; SMN1 vs AR,spinal muscular atrophy,Kennedy disease,,,,tune,tune,,,True,,,,,,
+PKD-PCOS,neg,new,MONDO:0020642,MONDO:0008487,shared name 'polycystic',polycystic kidney disease,polycystic ovary syndrome,0.0265,0.0072,0.0631,test,test,,,True,0.6943,0.286,0.7231,0.2851,0.8323,0.3949
+TSC-MS,neg,new,MONDO:0001734,MONDO:0005301,shared name 'sclerosis',tuberous sclerosis,multiple sclerosis,0.8655,0.7559,0.9353,tune,test,,,True,0.9789,0.7805,0.9818,0.7739,0.9924,0.8258
+ALS-SSc,neg,new,MONDO:0004976,MONDO:0005100,shared name 'sclerosis',amyotrophic lateral sclerosis,systemic sclerosis,0.0021,0.0009,0.0038,tune,tune,,tune:1,False,0.2369,0.0692,0.2322,0.0672,0.3175,0.1081
+DMD-DM1,neg,new,MONDO:0010679,MONDO:0008056,shared name 'dystrophy'; DMD vs DMPK,Duchenne muscular dystrophy,myotonic dystrophy type 1,0.3353,0.1267,0.573,tune,tune,,,True,0.9111,0.5367,0.9254,0.5275,0.9622,0.6488
+OI-Osteopetrosis,neg,new,MONDO:0019019,MONDO:0017198,shared prefix 'osteo'; collagen vs osteoclast,osteogenesis imperfecta,osteopetrosis,0.5773,0.174,0.8638,tune,test,,,True,0.9409,0.6251,0.9536,0.613,0.9781,0.7217

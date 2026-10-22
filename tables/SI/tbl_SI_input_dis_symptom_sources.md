@@ -1,0 +1,8 @@
+| Source | Associations | Diseases | Symptoms | % of 13,080 candidates |
+|---|---|---|---|---|
+| BIKG (HPOA-derived) | 147,952 | 7,031 | 9,622 | 53.8% |
+| OMIM (phenotype HPOA) | 123,388 | 8,099 | 8,800 | 61.9% |
+| **Combined (tier-1, after capping)** | **167,798** | **8,991** | **10,199** | **68.7%** |
+| MONDO-propagation enrichment (secondary augmentation, not an independent source) | 39,894 | 986 | — | 7.5% |
+
+Disease-symptom association sources feeding the DisAtlas pipeline and the MONDO propagation layer. Percentages are of the pipeline's 13,080-candidate universe.

@@ -1,0 +1,4 @@
+set	n_scorable	median	p10	p90	pct_share_ordo_area	pct_share_organ_system
+Random ORDO disease pairs	49976	12	8	15		
+IxIDN-Matched positives	842	6	2	13	34.92	37.31
+IxIDN-Matched negatives	794	8	3	13	34.92	37.31

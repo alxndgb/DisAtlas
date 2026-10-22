@@ -1,0 +1,16 @@
+kind	seeds	overlap
+with vs without Reactome, same seed	4707	0.6821
+with vs without Reactome, same seed	11	0.6804
+with vs without Reactome, same seed	202	0.6841
+with vs without Reactome, same seed	3407	0.6891
+with vs without Reactome, same seed	8191	0.6852
+two seeds of the four-channel model	4707|11	0.6785
+two seeds of the four-channel model	4707|202	0.675
+two seeds of the four-channel model	4707|3407	0.6803
+two seeds of the four-channel model	4707|8191	0.6767
+two seeds of the four-channel model	11|202	0.6797
+two seeds of the four-channel model	11|3407	0.6789
+two seeds of the four-channel model	11|8191	0.6766
+two seeds of the four-channel model	202|3407	0.6803
+two seeds of the four-channel model	202|8191	0.678
+two seeds of the four-channel model	3407|8191	0.6813

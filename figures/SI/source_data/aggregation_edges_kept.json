@@ -1,0 +1,16 @@
+{
+ "arms": {
+  "crank": {
+   "pct_control_edges_kept": 69.7
+  },
+  "mean": {
+   "pct_control_edges_kept": 61.3
+  },
+  "max": {
+   "pct_control_edges_kept": 66.3
+  },
+  "rra": {
+   "pct_control_edges_kept": 79.0
+  }
+ }
+}

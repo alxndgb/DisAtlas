@@ -1,0 +1,3 @@
+Check,DisAtlas AUROC,Ontology-only baseline
+"HPO-only classifier, pairs with phenotype annotations on both diseases (35% of pairs)",0.749 (not significantly higher; +0.03-0.06),0.69-0.72 (HPO)
+"HPO-only classifier, all pairs",--,"0.54 (HPO, undefined for 65% of pairs)"

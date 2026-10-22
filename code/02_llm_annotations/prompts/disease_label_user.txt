@@ -1,0 +1,16 @@
+Label this disease.
+
+disease_id: {disease_id}
+label: {label}
+exact synonyms: {synonyms}
+mapped MONDO ids: {mapped_mondo} ({mapping_kind})
+MONDO parents: {mondo_parents}
+Orphanet prevalence class: {prevalence_class}
+rule signals:
+  two-tier rare rule (Orphanet-verified / GARD): {tier_rare} (tier1_count={tier1_count}, tier2 tags only={tier2_any}, stale Orphanet tag={orphanet_stale}, live ORPHANET id={orphanet_native_live})
+  under MONDO neoplasm branch: {anc_neoplasm}; under MONDO cancer branch: {anc_cancer}
+  name contains a tumour keyword: {name_regex_cancer}
+  expert sheet is_cancer_or_tumor: {curated_is_cancer}
+why you are asked: {route}
+
+Then call submit_labels.

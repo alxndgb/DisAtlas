@@ -1,0 +1,63 @@
+{
+ "name": "submit_labels",
+ "description": "Emit the FINAL labels for this disease. Call exactly once, at the end.",
+ "input_schema": {
+  "type": "object",
+  "properties": {
+   "is_rare": {
+    "type": "string",
+    "enum": [
+     "rare",
+     "common",
+     "uncertain"
+    ],
+    "description": "Rare (prevalence below ~1 in 2,000) or common?"
+   },
+   "is_cancer": {
+    "type": "string",
+    "enum": [
+     "yes",
+     "no",
+     "uncertain"
+    ],
+    "description": "Is this a neoplastic disease (benign or malignant)?"
+   },
+   "is_malignant": {
+    "type": "string",
+    "enum": [
+     "yes",
+     "no",
+     "uncertain"
+    ],
+    "description": "Is it a malignant neoplasm (a cancer)?"
+   },
+   "confidence": {
+    "type": "string",
+    "enum": [
+     "High",
+     "Medium",
+     "Low"
+    ]
+   },
+   "rationale": {
+    "type": "string",
+    "description": "One or two sentences."
+   },
+   "citations": {
+    "type": "array",
+    "items": {
+     "type": "string"
+    },
+    "description": "PMIDs / ORPHAcodes / URLs actually relied on."
+   }
+  },
+  "required": [
+   "is_rare",
+   "is_cancer",
+   "is_malignant",
+   "confidence",
+   "rationale",
+   "citations"
+  ]
+ }
+}

@@ -1,0 +1,44 @@
+method	run_a	run_b	spearman
+DisAtlas (unseen in learning)	p_s4707_u	p_s11_u	0.972930
+DisAtlas (unseen in learning)	p_s4707_u	p_s202_u	0.973047
+DisAtlas (unseen in learning)	p_s4707_u	p_s3407_u	0.973391
+DisAtlas (unseen in learning)	p_s4707_u	p_s8191_u	0.974724
+DisAtlas (unseen in learning)	p_s11_u	p_s202_u	0.971531
+DisAtlas (unseen in learning)	p_s11_u	p_s3407_u	0.972781
+DisAtlas (unseen in learning)	p_s11_u	p_s8191_u	0.976043
+DisAtlas (unseen in learning)	p_s202_u	p_s3407_u	0.971485
+DisAtlas (unseen in learning)	p_s202_u	p_s8191_u	0.974095
+DisAtlas (unseen in learning)	p_s3407_u	p_s8191_u	0.973050
+DisAtlas (full)	p_s4707	p_s11	0.920830
+DisAtlas (full)	p_s4707	p_s202	0.921146
+DisAtlas (full)	p_s4707	p_s3407	0.926516
+DisAtlas (full)	p_s4707	p_s8191	0.921816
+DisAtlas (full)	p_s11	p_s202	0.917771
+DisAtlas (full)	p_s11	p_s3407	0.912375
+DisAtlas (full)	p_s11	p_s8191	0.920483
+DisAtlas (full)	p_s202	p_s3407	0.923771
+DisAtlas (full)	p_s202	p_s8191	0.924541
+DisAtlas (full)	p_s3407	p_s8191	0.928463
+Claude Chat (Opus 5.5)	claude_chat_run1	claude_chat_run2	0.208787
+Claude Chat (Opus 5.5)	claude_chat_run1	claude_chat_run3	0.564303
+Claude Chat (Opus 5.5)	claude_chat_run1	claude_chat_run4	0.473902
+Claude Chat (Opus 5.5)	claude_chat_run1	claude_chat_run5	0.558485
+Claude Chat (Opus 5.5)	claude_chat_run2	claude_chat_run3	0.152167
+Claude Chat (Opus 5.5)	claude_chat_run2	claude_chat_run4	0.338111
+Claude Chat (Opus 5.5)	claude_chat_run2	claude_chat_run5	0.507065
+Claude Chat (Opus 5.5)	claude_chat_run3	claude_chat_run4	0.733161
+Claude Chat (Opus 5.5)	claude_chat_run3	claude_chat_run5	0.639214
+Claude Chat (Opus 5.5)	claude_chat_run4	claude_chat_run5	0.807490
+Claude Sci (Opus 5.5)	claude_sci_run1	claude_sci_run2	0.639469
+Claude Sci (Opus 5.5)	claude_sci_run1	claude_sci_run3	0.362751
+Claude Sci (Opus 5.5)	claude_sci_run1	claude_sci_run4	0.678967
+Claude Sci (Opus 5.5)	claude_sci_run1	claude_sci_run5	0.649778
+Claude Sci (Opus 5.5)	claude_sci_run2	claude_sci_run3	0.599381
+Claude Sci (Opus 5.5)	claude_sci_run2	claude_sci_run4	0.700088
+Claude Sci (Opus 5.5)	claude_sci_run2	claude_sci_run5	0.830605
+Claude Sci (Opus 5.5)	claude_sci_run3	claude_sci_run4	0.481896
+Claude Sci (Opus 5.5)	claude_sci_run3	claude_sci_run5	0.615400
+Claude Sci (Opus 5.5)	claude_sci_run4	claude_sci_run5	0.680920
+Gemini Pro 3.1	gemini_pro_3_1_run1	gemini_pro_3_1_run2	0.872694
+Gemini Pro 3.1	gemini_pro_3_1_run1	gemini_pro_3_1_run3	0.503558
+Gemini Pro 3.1	gemini_pro_3_1_run2	gemini_pro_3_1_run3	0.554709

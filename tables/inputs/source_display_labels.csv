@@ -1,0 +1,8 @@
+table,source_code,display_label,display_order
+disease_gene,SRC_29BFF1D116,OpenTargets,1
+disease_gene,SRC_9F47AC4C6D,GenCC,2
+disease_gene,SRC_95D2C9F3F0,OMIM (direct),3
+disease_gene,SRC_F7D33DAC78,Orphanet,4
+disease_gene,SRC_3910863E20,BIKG (NLP-mined scientific literature),5
+disease_symptom,SRC_46BA6479D6,BIKG (HPOA-derived),1
+disease_symptom,SRC_D31701DD32,OMIM (phenotype HPOA),2

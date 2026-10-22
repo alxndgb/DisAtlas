@@ -1,0 +1,8 @@
+hops	all_pairs	ge3_hops	veto_passing	universe_pool	matched_neg	matched_pos
+1	43112	0	0	0	0	2182
+2	428245	0	0	0	0	0
+3	377119	377119	301729	142595	2100	0
+4	35394	35394	32500	12270	80	0
+5	1323	1323	1308	502	2	0
+6	20	20	20	8	0	0
+no path	64918	0	0	0	0	0

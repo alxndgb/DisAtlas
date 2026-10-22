@@ -1,0 +1,18 @@
+{
+ "mondo_body_system_concordance": {
+  "pair_share_random": 0.25487534127388917,
+  "pair_share_within_cluster": 0.6520723964178385,
+  "pair_share_within_cluster_null_mean": 0.2538473566988311,
+  "pair_share_within_cluster_null_95": [
+   0.2505157162089689,
+   0.2578852657555471
+  ],
+  "ami": 0.3596473070557495,
+  "ami_null_max": 0.0024725306490691024,
+  "n_categories": 19
+ },
+ "within_between_medians": {
+  "median_within_distance": 0.39406516586524853,
+  "median_nearest_other_cluster_distance": 0.6979995571305727
+ }
+}

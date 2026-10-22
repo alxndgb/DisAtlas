@@ -1,0 +1,2 @@
+subset	contrast	delta	lo	hi
+oncology	DisAtlas (unseen in learning) minus Claude Sci (Opus 5.5)	-0.006067	-0.078466	0.066099

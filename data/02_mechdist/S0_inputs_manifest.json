@@ -1,0 +1,36 @@
+{
+  "authoritative_assoc_product": "BPGDS",
+  "gds_products": {
+    "biological_process": {
+      "knob_sig": "73e1d2dd",
+      "evidence_classes": "[\"Experimental evidence codes\", \"Phylogenetically-inferred annotations\"]"
+    },
+    "molecular_function": {
+      "knob_sig": "73e1d2dd",
+      "evidence_classes": "[\"Experimental evidence codes\", \"Phylogenetically-inferred annotations\"]"
+    },
+    "cellular_component": {
+      "knob_sig": "73e1d2dd",
+      "evidence_classes": "[\"Experimental evidence codes\", \"Phylogenetically-inferred annotations\"]"
+    }
+  },
+  "n_dis_gene": 25972,
+  "n_dis_hpo": 244394,
+  "n_diseases": 13147,
+  "dis_gene_by_tier": {
+    "1": 22564,
+    "2": 2152,
+    "3": 1256
+  },
+  "dis_hpo_by_tier": {
+    "1": 204500,
+    "9": 39894
+  },
+  "tier_aware_inputs": true,
+  "gene2go_namespace_counts": {
+    "biological_process": 29689,
+    "molecular_function": 17528,
+    "cellular_component": 12095
+  },
+  "n_genes_with_go": 6169
+}

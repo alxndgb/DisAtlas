@@ -1,0 +1,6 @@
+method	metric	value	lo	hi
+TxGNN (published checkpoint)	AUROC	0.566366	0.549705	0.582398
+TxGNN (published checkpoint)	AUPRC	0.605999	0.586190	0.629001
+TxGNN (published checkpoint)	F1@k=#positives	0.541247	0.521978	0.562303
+TxGNN (published checkpoint)	Precision@top10%	0.772936	0.733945	0.816514
+TxGNN (published checkpoint)	NPV@bottom10%	0.529817	0.472477	0.567718

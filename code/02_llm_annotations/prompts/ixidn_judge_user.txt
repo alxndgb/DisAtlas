@@ -1,0 +1,3 @@
+Pairs:
+{pair_id} | A: {disease_a_name} | B: {disease_b_name} | n_shared_drugs={n_drugs} | max_phase={max_phase} | src={sources} | drugs: {drug_str}
+(one line per pair, 20 pairs per request)

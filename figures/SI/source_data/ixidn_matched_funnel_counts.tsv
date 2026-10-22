@@ -1,0 +1,11 @@
+class	step	pairs
+all	Disease pairs among trial-graph diseases	950131
+IxIDN+	Co-investigated (shared trial drug, 1 hop)	43112
+IxIDN-	>=3 hops apart	413856
+IxIDN-	Co-investigation veto	335557
+IxIDN+	Both diseases in the 985-disease universe	27415
+IxIDN-	Both diseases in the 985-disease universe	155375
+IxIDN+	Has a negative in its 7-key shortcut cell	4302
+IxIDN+	LLM mechanism QC: STRONG or PLAUSIBLE	2182
+IxIDN+	IxIDN-Matched	2182
+IxIDN-	IxIDN-Matched (1:1 exact match to a QC-passed positive)	2182

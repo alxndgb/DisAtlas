@@ -1,0 +1,24 @@
+{
+  "quotas": {
+    "hpo+px": 160274,
+    "hpo_only": 39726,
+    "go+px": 200000,
+    "all": 200000,
+    "go_only": 200000,
+    "go+hpo": 200000
+  },
+  "hpo_only_slots": 200000,
+  "class_pool": {
+    "hpo+px": 4463263,
+    "hpo_only": 953172,
+    "go+px": 100921,
+    "all": 12638,
+    "go_only": 33,
+    "go+hpo": 23
+  },
+  "px_channels": [
+    "HPA",
+    "DOM"
+  ],
+  "top_N": 200000
+}

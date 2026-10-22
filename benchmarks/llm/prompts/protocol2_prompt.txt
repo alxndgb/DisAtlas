@@ -1,0 +1,4 @@
+You are a disease-disease association learning (DDA) agent. Your task is to calculate DDA(d1, d2), which returns an association score between 0 and 1 for two diseases to quantify the extent these diseases share mechanisms of action. Strictly, do not use clinical trials, literature like pubmed, and drug datasets to implement the DDA function.
+Add DDA column to the attached and give me a new file to download, do no change any value in the rows and columns just add the calculated DDA column for each pair
+Again you must not use your prior knowledge only use data like GO HPO disease-gene association
+Do not use knowledge from any other sessions in my account

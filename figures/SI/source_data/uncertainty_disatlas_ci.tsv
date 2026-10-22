@@ -1,0 +1,5 @@
+stratum	system	metric	value	cluster_ci_lo	cluster_ci_hi
+all_pairs	DisAtlas five-seed ensemble	auroc	0.7645217809912114	0.7224068498486124	0.8012903082349321
+all_pairs	DisAtlas five-seed ensemble	auprc	0.777207796753561	0.7210578382209684	0.8271311522066768
+test_split	DisAtlas five-seed ensemble	auroc	0.7822901784357236	0.7180863158130282	0.8408024640417026
+test_split	DisAtlas five-seed ensemble	auprc	0.7715041071269502	0.68837143608076	0.8467740825763722

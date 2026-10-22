@@ -1,0 +1,6 @@
+method	DisAtlas (full)	DisAtlas (unseen in learning)	Claude Chat (Opus 5.5)	Claude Sci (Opus 5.5)	Gemini Pro 3.1
+DisAtlas (full)	1.000000	0.632959	0.256484	0.179973	0.130999
+DisAtlas (unseen in learning)	0.632959	1.000000	0.221289	0.144357	0.095477
+Claude Chat (Opus 5.5)	0.256484	0.221289	1.000000	0.511265	0.144357
+Claude Sci (Opus 5.5)	0.179973	0.144357	0.511265	1.000000	0.148880
+Gemini Pro 3.1	0.130999	0.095477	0.144357	0.148880	1.000000
