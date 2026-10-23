@@ -44,7 +44,6 @@ if want ontology; then
   else in_dir code/00_ontology build_disease_distances.py --skip-hpo; fi
   in_dir code/00_ontology build_ontology_dependency.py
   in_dir code/00_ontology build_hpo_baseline.py
-  in_dir code/00_ontology build_negative_realism.py
 fi
 
 if want ixidn; then
@@ -55,6 +54,8 @@ if want ixidn; then
   else
     PYTHON="$PY" bash "$ROOT/code/01_build_ixidn/run_all.sh"
   fi
+  # negative-set realism (ontology distances of IxIDN-Matched negatives) needs data/01_rebuilt/ixidn_matched.tsv
+  in_dir code/00_ontology build_negative_realism.py
 fi
 
 if want llm; then
