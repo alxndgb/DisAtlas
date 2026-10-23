@@ -2,8 +2,10 @@
 
 One script per computed main-text figure. Each script reads only repo-relative inputs, calls no model or
 external service, and writes `<stem>.png` (300 dpi) and `<stem>.pdf` next to itself. Rebuilt PNGs match the manuscript
-figures: Figures 4 and 6 are bit-identical in every pixel; Figures 2 and 5 differ only by antialiasing (≤ 2 of 255
-intensity levels in < 0.03% of pixels). Figures 1 and 7 are the published images.
+figures: Figure 4 is bit-identical in every pixel; Figure 5 differs only by antialiasing (≤ 2 of 255 intensity levels in
+< 0.03% of pixels); Figures 2 and 6 are bit-identical when rendered with matplotlib 3.11.2 (the version the manuscript
+figures were drawn with), while other matplotlib versions shift their text layout slightly. Figures 1 and 7 are the
+published images.
 
 ```
 python figures/main/fig2.py   # Figure 2  DisAtlas pipeline overview
@@ -17,7 +19,7 @@ Requires numpy, pandas, scipy, matplotlib and pyarrow.
 | Figure | Manuscript section | Script | Output | Inputs |
 |---|---|---|---|---|
 | 1 | Introduction (knowledge transfer between common and rare diseases) | static | `fig1_knowledge_transfer.png` | composed outside Python; shipped as the published image |
-| 2 | Methods overview (DisAtlas pipeline) | `fig2.py` | `fig2_pipeline` | schematic; counts and coverage percentages are the values stated in the text |
+| 2 | Methods overview (DisAtlas pipeline) | `fig2.py` | `fig2_pipeline` | schematic; benchmark counts asserted against `data/08S_eval/ixidn4364_scores.tsv` and network size against `data/03_network/mechdist_network_nodes.parquet.gzip`; coverage percentages are the values stated in the text |
 | 4 | Methods, UPNA-DDAL | `fig4.py` | `fig4_upna_ddal_architecture` | schematic; panel b is illustrative (only the aHUS-PNH edge is a reported result) |
 | 5 | Results, disease map and rarity-stratified transfer | `fig5.py` | `fig5_disease_map`, `fig5c_stratified_auroc.tsv` | `data/fig5_display_map.tsv.gz`, `data/fig5_control_pairs.tsv`, `data/ixidn_matched_go_resnik.tsv.gz`, `data/08S_eval/ixidn4364_scores.tsv`, `data/00_rebuilt_ontology/ixidn_matched_hpo_scores.csv`, `data/00_raw/llm_annotations/disease_labels.parquet` |
 | 6 | Results, cross-system comparison | `fig6.py` | `fig6_method_comparison`, `fig6b_ranking_metrics.tsv`, `fig6c_run_agreement.tsv`, `fig6d_top10_jaccard.tsv` | `data/08S_eval/ixidn4364_scores.tsv`, `benchmarks/llm/data/llm_run_scores.tsv.gz`, `benchmarks/llm/data/disatlas_unseen_per_seed.tsv.gz`, `benchmarks/txgnn/data/txgnn_pair_scores.tsv.gz`, `tables/inputs/comparator_run_scores.tsv` |

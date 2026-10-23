@@ -1,8 +1,8 @@
-	DisAtlas (full)	DisAtlas (unseen in learning)	Claude-Chat Opus 5.5	Claude-Sci Opus 5.5	Phylo	TxGNN (published ckpt)	Gemini Pro 3.1
+	DisAtlas (full)	DisAtlas (unseen in learning)	Claude-Chat Opus 5.5	Claude-Sci Opus 5.5	Phylo Biomni	TxGNN (published ckpt)	Gemini Pro 3.1
 DisAtlas (full)	1.000000	0.632959	0.256484	0.179973	0.201102	0.113665	0.130999
 DisAtlas (unseen in learning)	0.632959	1.000000	0.221289	0.144357	0.141361	0.119384	0.095477
 Claude-Chat Opus 5.5	0.256484	0.221289	1.000000	0.511265	0.258297	0.117949	0.144357
 Claude-Sci Opus 5.5	0.179973	0.144357	0.511265	1.000000	0.261939	0.094103	0.148880
-Phylo	0.201102	0.141361	0.258297	0.261939	1.000000	0.062119	0.189632
+Phylo Biomni	0.201102	0.141361	0.258297	0.261939	1.000000	0.062119	0.189632
 TxGNN (published ckpt)	0.113665	0.119384	0.117949	0.094103	0.062119	1.000000	0.022274
 Gemini Pro 3.1	0.130999	0.095477	0.144357	0.148880	0.189632	0.022274	1.000000
