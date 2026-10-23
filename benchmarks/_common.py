@@ -1,4 +1,4 @@
-"""Shared loaders and metrics for the comparator benchmarks (Results, cross-system comparison; Figure 5).
+"""Shared loaders and metrics for the comparator benchmarks (Results, cross-system comparison; Figure 6).
 
 Reads only repo-relative stored outputs. No network access, no model calls.
 """
@@ -24,7 +24,7 @@ def read_tsv(path):
 
 
 def ranked_last(v):
-    """Unscored pairs are ranked last (Figure 5 convention)."""
+    """Unscored pairs are ranked last (Figure 6 convention)."""
     v = np.asarray(v, float)
     return np.where(np.isnan(v), np.nanmin(v) - 1e-9, v)
 
@@ -51,7 +51,7 @@ METRICS = ["AUROC", "AUPRC", "F1@k=#positives", "Precision@top10%", "NPV@bottom1
 
 
 def ranking_metrics(y, s):
-    """Figure 5b metrics. F1 at k = number of positives equals R-precision."""
+    """Figure 6b metrics. F1 at k = number of positives equals R-precision."""
     kp = int(y.sum()); kk = int(round(0.1 * len(y)))
     return {"AUROC": auc(y, s), "AUPRC": ap(y, s), "F1@k=#positives": exp_prec_at_k(y, s, kp),
             "Precision@top10%": exp_prec_at_k(y, s, kk), "NPV@bottom10%": exp_prec_at_k(1 - y, -s, kk)}
@@ -76,7 +76,7 @@ def topk_weights(v, k):
 
 
 def topk_jaccard(raw_scores, frac=0.1):
-    """Overlap of top-10% pair sets (fractional ties), Figure 5d."""
+    """Overlap of top-10% pair sets (fractional ties), Figure 6d."""
     names = list(raw_scores); n = len(next(iter(raw_scores.values()))); k = int(round(frac * n))
     W = {a: topk_weights(raw_scores[a], k) for a in names}
     J = [[np.minimum(W[a], W[b]).sum() / np.maximum(W[a], W[b]).sum() for b in names] for a in names]
@@ -84,7 +84,7 @@ def topk_jaccard(raw_scores, frac=0.1):
 
 
 def run_agreement(df, cols, method):
-    """Pairwise Spearman rank correlation between repeat runs (or training seeds), Figure 5c."""
+    """Pairwise Spearman rank correlation between repeat runs (or training seeds), Figure 6c."""
     out = []
     for i in range(len(cols)):
         for j in range(i + 1, len(cols)):

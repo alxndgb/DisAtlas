@@ -1,6 +1,6 @@
 """Matched shortcut baselines and the rarity-stratum contrast DisAtlas minus matched shortcuts.
 
-Manuscript: Results (matched shortcut baselines stay close to chance; rarity stratification, Figure 3c),
+Manuscript: Results (matched shortcut baselines stay close to chance; rarity stratification, Figure 5c),
 appendix section "Shortcut audit" and the rare/common summary table ("vs. matched shortcuts" column).
 
 Matched shortcut baselines are the four non-degree pair features, each used directly as a predictor:

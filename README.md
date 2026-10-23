@@ -43,7 +43,7 @@ Set `PYTHON` to choose the interpreter. The pipeline was run with Python 3.11 an
 | 4 network | `code/03_network/` | MechDist distances and network |
 | 5 model | `code/04_train_model/` | benchmark strip, Node2Vec, UPNA-DDAL decoder, five-seed ensemble evaluation (AUROC 0.765 all pairs; 0.782 held-out test split) |
 | 6 figures | `figures/main/`, `figures/SI/` | main-text and Supplementary figures |
-| 7 tables | `tables/`, `benchmarks/`, `notebooks/` | all tables; comparisons with language models and TxGNN (Figure 5); executed exploration notebooks |
+| 7 tables | `tables/`, `benchmarks/`, `notebooks/` | all tables; comparisons with language models and TxGNN (Figure 6); executed exploration notebooks |
 | 8 tests | `tests/` | parity of the rebuilt benchmarks, network and ontology tables with the frozen production files |
 
 Each folder has a README mapping its scripts to manuscript sections, figures and tables.

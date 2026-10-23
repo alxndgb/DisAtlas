@@ -1,7 +1,7 @@
 """Score the published TxGNN checkpoint on IxIDN-Matched from the saved pair scores used in the paper.
 
 Manuscript: Table "protocols" (Protocol 4); Results, "Explainability contrast with a knowledge graph
-foundation model" (AUROC 0.566); Figure 5a, 5b, 5d.
+foundation model" (AUROC 0.566); Figure 6a, 6b, 6d.
 
     python benchmarks/txgnn/score_txgnn.py
 

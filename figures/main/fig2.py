@@ -24,9 +24,9 @@ def arr(p,q,**k):
 def line(xs,ys): ax.plot(xs,ys,color="#333333",lw=1.0,solid_capstyle="butt")
 
 # House panel letters (figures/main/disatlas_style.py): bold lower-case, sized so that
-# at the same print width they match Figure 3 (15 pt in a 15.28 in wide figure -> 7.2 in here).
-FIG3_WIDTH_IN = 4583 / 300          # rendered width of fig3_disease_map.png
-PANEL_LABEL_PT = 15 * 7.2 / FIG3_WIDTH_IN   # = 7.07 pt
+# at the same print width they match Figure 5 (15 pt in a 15.28 in wide figure -> 7.2 in here).
+FIG5_WIDTH_IN = 4583 / 300          # rendered width of fig5_disease_map.png
+PANEL_LABEL_PT = 15 * 7.2 / FIG5_WIDTH_IN   # = 7.07 pt
 def plabel(x, y, letter):
     ax.text(x, y, letter, fontsize=PANEL_LABEL_PT, fontweight="bold", va="baseline", ha="left")
 

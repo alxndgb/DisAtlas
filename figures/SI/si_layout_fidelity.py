@@ -1,12 +1,12 @@
 """Appendix figure #fig:SI_cluster_validation_layout (display layout fidelity, Spearman rho = 0.50).
 
 Hexagonal-binned UPNA-DDAL distance (1 - p) against the distance in the two-dimensional display layout of
-Figure 3 for random disease pairs. Pairs are drawn exactly as in the layout-quality check: 300,000 index pairs
+Figure 5 for random disease pairs. Pairs are drawn exactly as in the layout-quality check: 300,000 index pairs
 from numpy default_rng(0) over the 13,019 diseases in display-map order (self-pairs dropped); map distance is
 rescaled by the least-squares factor s; 20,000 of the pairs are shown.
 
 Inputs
-    figures/main/data/fig3_display_map.tsv.gz              display-layout coordinates (disease_id, cluster, x, y)
+    figures/main/data/fig5_display_map.tsv.gz              display-layout coordinates (disease_id, cluster, x, y)
     source_data/layout_fidelity_random_pairs.tsv.gz        the drawn pairs (a, b) and their UPNA-DDAL distance d = 1 - p
 Options
     --from-model   recompute d with the frozen model package in data/zenodo/models for every pair whose two
@@ -25,7 +25,7 @@ import pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _style import REPO_ROOT, src, save
 
-dm = pd.read_csv(os.path.join(REPO_ROOT, "figures/main/data/fig3_display_map.tsv.gz"), sep="\t")
+dm = pd.read_csv(os.path.join(REPO_ROOT, "figures/main/data/fig5_display_map.tsv.gz"), sep="\t")
 T = pd.read_csv(src("layout_fidelity_random_pairs.tsv.gz"), sep="\t", float_precision="round_trip")
 ids = dm.disease_id.to_numpy(); n = len(ids)
 rng = np.random.default_rng(0)

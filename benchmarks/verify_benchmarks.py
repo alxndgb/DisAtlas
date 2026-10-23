@@ -28,7 +28,7 @@ AUROC = {  # Results (cross-system comparison) and Supplementary "LLM subgroups"
     ("oncology", "Claude Chat (Opus 5.5)"): 0.701, ("oncology", "Gemini Pro 3.1"): 0.559,
 }
 N = {"all pairs": 4364, "oncology": 1740, "non-oncology": 2624}
-AGREE = {  # Figure 5c: median (min-max) pairwise Spearman
+AGREE = {  # Figure 6c: median (min-max) pairwise Spearman
     "DisAtlas (unseen in learning)": (0.973, 0.971, 0.976), "DisAtlas (full)": (0.921, 0.912, 0.928),
     "Claude Sci (Opus 5.5)": (0.645, 0.363, 0.831), "Claude Chat (Opus 5.5)": (0.533, 0.152, 0.807),
     "Gemini Pro 3.1": (0.555, 0.504, 0.873),

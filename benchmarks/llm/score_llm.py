@@ -1,6 +1,6 @@
 """Score the language-model comparator runs on IxIDN-Matched from the stored outputs used in the paper.
 
-Manuscript: Results, cross-system comparison (Protocol 2, Table "protocols"); Figure 5a-d;
+Manuscript: Results, cross-system comparison (Protocol 2, Table "protocols"); Figure 6a-d;
 Supplementary "LLM subgroups".
 
     python benchmarks/llm/score_llm.py               # default: stored outputs only, no network, no key
@@ -78,14 +78,14 @@ def main(argv=None):
                              delta=pt["u"] - pt["c"], lo=np.quantile(dl, .025), hi=np.quantile(dl, .975))])
     write_tsv(onc, os.path.join(out, "protocol2_oncology_contrast.tsv"))
 
-    # ---- Figure 5c: run-to-run agreement ----
+    # ---- Figure 6c: run-to-run agreement ----
     AG = pd.concat([run_agreement(d, [s + "_u" for s in SEEDS], UNSEEN), run_agreement(d, SEEDS, FULL)]
                    + [run_agreement(d, c, nm) for nm, c in SYSTEMS.items()], ignore_index=True)
     write_tsv(AG, os.path.join(out, "run_agreement.tsv"))
     AGs = AG.groupby("method", sort=False).spearman.agg(median="median", min="min", max="max").reset_index()
     write_tsv(AGs, os.path.join(out, "run_agreement_summary.tsv"))
 
-    # ---- Figure 5b/5d: ranking metrics (pair bootstrap) and top-10% overlap ----
+    # ---- Figure 6b/6d: ranking metrics (pair bootstrap) and top-10% overlap ----
     MT = pair_bootstrap_metrics(y, S); write_tsv(MT, os.path.join(out, "ranking_metrics.tsv"))
     J = topk_jaccard(raw); J.index.name = "method"
     write_tsv(J.reset_index(), os.path.join(out, "top10_jaccard.tsv"))
