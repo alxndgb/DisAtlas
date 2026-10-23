@@ -56,7 +56,7 @@ Each folder has a README mapping its scripts to manuscript sections, figures and
 - `data/01_*` to `data/08S_*` hold intermediate and evaluation tables that are small enough for git.
 - `data/zenodo/` (not in git) holds the large files: the OBO ontologies (`00_raw/ontologies/`), the MechDist network
   and distance tables (`network/`), and the frozen five-seed model with its embeddings, decoders and evaluation logits
-  (`models/`). Checksums are in `data/zenodo/models/manifest.json`. The Zenodo record is listed below.
+  (`models/`). Checksums are in `data/zenodo/models/manifest.json` (model package and graph) and `data/ZENODO_SHA256SUMS.txt` (every file in the bundle; check with `cd data/zenodo && sha256sum -c ../ZENODO_SHA256SUMS.txt`). The Zenodo record is listed below.
 
 ## Citation
 
