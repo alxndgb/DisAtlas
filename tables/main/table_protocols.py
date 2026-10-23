@@ -24,28 +24,22 @@ for col in runs.columns:
         systems.setdefault(sysname, []).append(run)
 
 n_runs = {k: len(v) for k, v in systems.items()}
-llm = {"Claude-Sci Opus 5.5": "Claude Sci (Opus 5.5, {} runs)",
-       "Claude-Chat Opus 5.5": "Claude Chat (Opus 5.5, {} runs)",
+llm = {"Claude-Chat Opus 5.5": "Claude Chat (Opus 5.5, {} runs)",
        "Gemini Pro 3.1": "Gemini Pro 3.1 ({} runs)"}
 llm_examples = ", ".join(t.format(n_runs[k]) for k, t in llm.items())
+agentic_examples = f"Claude Sci (Claude Science, Opus 5.5, {n_runs['Claude-Sci Opus 5.5']} runs); Phylo Biomni"
 
-phylo_cols = [f"Phylo|{r}" for r in systems["Phylo"]]
 seeds = sorted(int(re.search(r"seed(\d+)", r).group(1)) for r in systems["Phylo"])
-assert seeds == list(range(seeds[0], seeds[-1] + 1))
-phylo_unscored = int(runs[phylo_cols].isna().all(axis=1).sum())
-assert phylo_unscored == int(runs[phylo_cols].isna().any(axis=1).sum())
+assert seeds == list(range(seeds[0], seeds[-1] + 1)) and len(seeds) == 5
 txgnn_unmapped = int(runs["TxGNN|DistMult"].isna().sum())
 
 rows = [
     ["1", "DisAtlas-UPNA-DDAL", "DisAtlas (unseen diseases)",
      "Trained on MechDist with every benchmark disease withheld from embedding and decoder "
      "training; evaluated on the blinded IxIDN-Matched pairs"],
-    ["2", "LLM (parametric only)", llm_examples,
-     "Structured prompting; DDA score from parametric knowledge only; no tool calls"],
-    ["3", "Graph-embedding baseline (not retrained on IxIDN-Matched)",
-     f"Phylo (Phylo-DeepWalk, mean of seeds {seeds[0]}-{seeds[-1]})",
-     f"Mean score over {['zero','one','two','three','four','five','six'][len(seeds)]} seeds; "
-     f"{phylo_unscored} unscored pairs ranked last"],
+    ["2", "Large language model", llm_examples,
+     "Structured prompt with the blinded pair file; mean score over runs"],
+    ["3", "Agentic AI system", agentic_examples, "Mean score over runs or seeds"],
     ["4", "Knowledge-graph foundation model (published checkpoint)", "TxGNN [@TxGNN]",
      "Published checkpoint, DistMult decoder; not retrained on MechDist or on IxIDN-Matched; "
      f"{txgnn_unmapped} unmapped pairs ranked last"],
@@ -56,12 +50,10 @@ EXPECTED = [
     ["1", "DisAtlas-UPNA-DDAL", "DisAtlas (unseen diseases)",
      "Trained on MechDist with every benchmark disease withheld from embedding and decoder "
      "training; evaluated on the blinded IxIDN-Matched pairs"],
-    ["2", "LLM (parametric only)",
-     "Claude Sci (Opus 5.5, 5 runs), Claude Chat (Opus 5.5, 5 runs), Gemini Pro 3.1 (3 runs)",
-     "Structured prompting; DDA score from parametric knowledge only; no tool calls"],
-    ["3", "Graph-embedding baseline (not retrained on IxIDN-Matched)",
-     "Phylo (Phylo-DeepWalk, mean of seeds 42-46)",
-     "Mean score over five seeds; 291 unscored pairs ranked last"],
+    ["2", "Large language model", "Claude Chat (Opus 5.5, 5 runs), Gemini Pro 3.1 (3 runs)",
+     "Structured prompt with the blinded pair file; mean score over runs"],
+    ["3", "Agentic AI system", "Claude Sci (Claude Science, Opus 5.5, 5 runs); Phylo Biomni",
+     "Mean score over runs or seeds"],
     ["4", "Knowledge-graph foundation model (published checkpoint)", "TxGNN [@TxGNN]",
      "Published checkpoint, DistMult decoder; not retrained on MechDist or on IxIDN-Matched; "
      "213 unmapped pairs ranked last"],

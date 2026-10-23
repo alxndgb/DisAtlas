@@ -44,7 +44,7 @@ matplotlib==3.10.0
 #     the manuscript's overall software paragraph only. ---
 # kmedoids==0.5.5
 
-# --- legacy: packages used only by the pre-existing Dis2Vec-zenodo notebooks
+# --- legacy: packages used only by the pre-existing DisAtlas Zenodo notebooks
 #     (clustering_rare_and_common.ipynb, query_UPNA-DDAL_preds_cached.ipynb). Not part of the
 #     manuscript's recorded software stack; kept for those notebooks' own reproducibility, not
 #     cross-checked against provenance_pipeline.json. ---
