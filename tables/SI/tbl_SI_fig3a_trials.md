@@ -1,0 +1,94 @@
+| Disease | Drug | Trial | Phase | Start | Drugs in trial | Title |
+|---|---|---|---|---|---|---|
+| Alzheimer disease | creatine | NCT05383833 | IV† | 2022 | 1 | Creatine to Augment Bioenergetics in Alzheimer's |
+| Alzheimer disease | pimavanserin | NCT03325556 | III | 2017 | 1 | A Double-blind, Placebo-controlled, Relapse Prevention Study of Pimavanserin for the Treatment of Hallucinations and Delusions Associated With Dementia-related Psychosis. |
+| Alzheimer disease | pimavanserin | NCT03575052 | III | 2018 | 1 | A Phase 3b, Multicenter, Randomized, Double-blind, Placebo-controlled, Safety Study of Pimavanserin Therapy in Adult and Elderly Subjects Experiencing Neuropsychiatric Symptoms Related to Neurodegenerative Disease |
+| Alzheimer disease | pimavanserin | NCT03623321 | III | 2018 | 1 | A 52-Week Open-label Extension Study of Pimavanserin in Adult and Elderly Subjects With Neuropsychiatric Symptoms Related to Neurodegenerative Disease |
+| Alzheimer disease | pimavanserin | – | II | 2010 | 1 | Study of Pimavanserin for Psychosis in Patients with Alzheimer's Disease |
+| Alzheimer disease | pimavanserin | NCT02035553 | II | 2013 | 1 | A Single Center, Double-Blind, Placebo-Controlled Study to Examine the Safety and Efficacy of Pimavanserin for the Treatment of Psychosis in Alzheimer's Disease |
+| Alzheimer disease | pimavanserin | NCT02992132 | II | 2016 | 1 | A Double-Blind, Placebo-Controlled Study to Examine the Safety and Efficacy of Pimavanserin for the Treatment of Agitation and Aggression in Alzheimer’s Disease |
+| Alzheimer disease | pimavanserin | NCT03118947 | II | 2017 | 1 | A 52-Week Open-Label Extension Study of Pimavanserin for the Treatment of Agitation and Aggression in Subjects with Alzheimer’s Disease |
+| Alzheimer disease | prazosin | NCT01126099 | IV† | 2010 | 1 | Prazosin Treatment for Disruptive Agitation in Alzheimer's Disease |
+| Alzheimer disease | prazosin | NCT00161473 | II† | 2001 | 1 | Alzheimer’s In Long-Term Care-Treatment for Agitation |
+| Alzheimer disease | prazosin | NCT03710642 | II | 2018 | 1 | A 24-week Placebo-controlled trial of Prazosin for Disruptive Agitation in Alzheimer's Disease |
+| Alzheimer disease | prazosin | – | II | – | 1 | A Pilot Study to Evaluate Effect of Alpha-1 Adrenoreceptor Antagonist Prazosin for Agitation/Aggression in Alzheimer's Disease |
+| Alzheimer disease | trazodone | NCT05209035 | IV | 2022 | 1 | Randomized-Controlled Trial of Trazodone on Reducing Plasma sST2 Level and Neurodegeneration Progression in Patients With Amnestic Mild Cognitive Impairment and Obstructive Sleep Apnea |
+| Alzheimer disease | trazodone | NCT00898807 | III | 2009 | 6 | A Multi-Center Randomized Placebo-Controlled Clinical Trial Study of Citalopram for the Treatment of Agitation in Alzheimer's Disease |
+| Alzheimer disease | trazodone | NCT01142258 | III | 2010 | 1 | Trazodone for the Treatment of Sleep Disorders in Alzheimer's Disease: A Randomised, Double-blind, Placebo-Controlled Study |
+| Alzheimer disease | trazodone | NCT00000179 | III | – | 3 | Agitation in Alzheimer's Disease: A Randomized, Placebo-Controlled Clinical Trial |
+| Alzheimer disease | trazodone | NCT01584440 | II | 2012 | 5 | A Phase 2, Randomized, Double-dummy, Double-blind, Placebo-controlled Study to Assess the Efficacy, Safety and Tolerability of AVP-923 (Dextromethorphan/Quinidine) for the Treatment of Symptoms of Agitation in Patients with Alzheimer's Disease |
+| Alzheimer disease | trazodone | NCT05282550 | II | 2023 | 1 | RCT Targeting Cognition in Early Alzheimer's Disease by Improving Sleep With Trazodone (REST) |
+| Alzheimer disease | trazodone | – | other | – | 11 | Do CYP3A and ABCB1 Genotypes Influence the Plasma Concentration and Clinical Outcome of Donepezil Treatment? |
+| Lewy body dementia | pimavanserin | NCT05590637 | IV | 2022 | 2 | A Pragmatic Randomized Trial Comparing Antipsychotics in Lewy Body Disease |
+| Lewy body dementia | pimavanserin | NCT05357612 | IV | 2023 | 1 | Characterization of the Serotonin 2A Receptor Selective PET Tracer \[18F\]MH.MZ in Patients With Neurodegenerative Diseases |
+| Lewy body dementia | pimavanserin | NCT03325556 | III | 2017 | 1 | A Double-blind, Placebo-controlled, Relapse Prevention Study of Pimavanserin for the Treatment of Hallucinations and Delusions Associated With Dementia-related Psychosis. |
+| Lewy body dementia | pimavanserin | NCT03575052 | III | 2018 | 1 | A Phase 3b, Multicenter, Randomized, Double-blind, Placebo-controlled, Safety Study of Pimavanserin Therapy in Adult and Elderly Subjects Experiencing Neuropsychiatric Symptoms Related to Neurodegenerative Disease |
+| Lewy body dementia | pimavanserin | NCT03623321 | III | 2018 | 1 | A 52-Week Open-label Extension Study of Pimavanserin in Adult and Elderly Subjects With Neuropsychiatric Symptoms Related to Neurodegenerative Disease |
+| Parkinson disease | creatine | – | IV | – | 2 | The Effect of Creatine and Coenzyme Q10 Combination Therapy on Mild Cognitive Impairment in Parkinson's Disease |
+| Parkinson disease | creatine | – | II | – | 1 | Creatine Supplementation In Parkinson Disease: A Placebo-Controlled Randomized Pilot Trial |
+| Parkinson disease | pimavanserin | NCT03152292 | IV | 2017 | 2 | Management of Parkinson's Disease Psychosis in Actual Practice (The INSYTE Study) |
+| Parkinson disease | pimavanserin | NCT04292223 | IV | 2020 | 1 | A 16-Week Open-Label Study of the Effects of Treatment With Pimavanserin on Activities of Daily Living in Subjects With Parkinson's Disease Psychosis |
+| Parkinson disease | pimavanserin | NCT04373317 | IV | 2022 | 2 | CSP #2015 - Multicenter, Randomized, Double-blind Comparator Study of Antipsychotics Pimavanserin and Quetiapine for Parkinson's Disease Psychosis (C-SAPP) |
+| Parkinson disease | pimavanserin | NCT05590637 | IV | 2022 | 2 | A Pragmatic Randomized Trial Comparing Antipsychotics in Lewy Body Disease |
+| Parkinson disease | pimavanserin | NCT05357612 | IV | 2023 | 1 | Characterization of the Serotonin 2A Receptor Selective PET Tracer \[18F\]MH.MZ in Patients With Neurodegenerative Diseases |
+| Parkinson disease | pimavanserin | NCT00477672 | III | 2007 | 1 | A Multi-Center, Placebo-Controlled, Double-Blind Trial to Examine the Safety and Efficacy of ACP-103 in the Treatment of Psychosis in Parkinson's Disease |
+| Parkinson disease | pimavanserin | NCT00550238 | III | 2007 | 1 | A Multi-Center, Open-Label Extension Study to Examine the Safety and Tolerability of ACP-103 in the Treatment of Psychosis in Parkinson's Disease |
+| Parkinson disease | pimavanserin | NCT00658567 | III | 2008 | 1 | A Multi-Center, Placebo-Controlled, Double-Blind Trial to Examine the Safety and Efficacy of ACP-103 in the Treatment of Psychosis in Parkinson’s Disease |
+| Parkinson disease | pimavanserin | NCT01174004 | III | 2010 | 1 | A Multi-Center, Placebo-Controlled, Double-Blind Trial to Examine the Safety and Efficacy of Pimavanserin in the Treatment of Psychosis in Parkinson's Disease |
+| Parkinson disease | pimavanserin | – | III | 2013 | 1 | A Phase III Pivotal, Confirmatory Study of Pimavanserin in the Treatment of Psychosis in Parkinson's Disease. |
+| Parkinson disease | pimavanserin | EudraCT 2016-003512-12 | III | 2017 | 1 | An Open-Label Extension Study to Examine the Safety and Tolerability of Pimavanserin in the Treatment of Parkinson’s Disease Psychosis |
+| Parkinson disease | pimavanserin | NCT03325556 | III | 2017 | 1 | A Double-blind, Placebo-controlled, Relapse Prevention Study of Pimavanserin for the Treatment of Hallucinations and Delusions Associated With Dementia-related Psychosis. |
+| Parkinson disease | pimavanserin | NCT03575052 | III | 2018 | 1 | A Phase 3b, Multicenter, Randomized, Double-blind, Placebo-controlled, Safety Study of Pimavanserin Therapy in Adult and Elderly Subjects Experiencing Neuropsychiatric Symptoms Related to Neurodegenerative Disease |
+| Parkinson disease | pimavanserin | NCT03623321 | III | 2018 | 1 | A 52-Week Open-label Extension Study of Pimavanserin in Adult and Elderly Subjects With Neuropsychiatric Symptoms Related to Neurodegenerative Disease |
+| Parkinson disease | pimavanserin | NCT06068465 | III | 2023 | 2 | A Multi-Center, Placebo-Controlled, Double-Blind Trial to Examine the Safety and Efficacy of Pimavanserin in the Treatment of Psychosis in Parkinson's Disease |
+| Parkinson disease | pimavanserin | CTR20251027 | III | 2025 | 1 | A multicenter, randomized, double-blind, placebo-controlled, phase III clinical trial of pimavanserin tartrate capsules in the treatment of Parkinson's disease with psychiatric symptoms |
+| Parkinson disease | pimavanserin | CTR20252689 | III | 2025 | 1 | A multicenter, randomized, double-blind, placebo-controlled phase III clinical trial to evaluate the efficacy and safety of pimavanserin tartrate capsules in the treatment of psychotic symptoms in Parkinson's disease |
+| Parkinson disease | pimavanserin | NCT02762591 | III | – | 1 | Expanded Access Program of Pimavanserin in Patients With Parkinson's Disease Psychosis |
+| Parkinson disease | pimavanserin | NCT00086294 | II | 2004 | 2 | 5HT2A/C Serotonin Blockade In Parkinson's Disease. |
+| Parkinson disease | pimavanserin | NCT00087542 | II | 2004 | 2 | A Phase II, Multi-Center, Randomized, Placebo-Controlled, Double-Blind Trial of Four Weeks of ACP-103 Treatment of Psychosis in Parkinson's Disease |
+| Parkinson disease | pimavanserin | NCT01518309 | II | 2004 | 2 | An Open-Label Safety Study of Pimavanserin in Parkinson's Disease Patients |
+| Parkinson disease | pimavanserin | NCT03482882 | II | 2018 | 4 | An Open-label, 8-Week Study of Safety and Efficacy of Pimavanserin Treatment in Adults With Parkinson's Disease and Depression |
+| Parkinson disease | pimavanserin | NCT04164758 | II | 2019 | 3 | A Pilot Randomized, Double-blind, Placebo-controlled Study to Evaluate Safety and Daytime Sedation in Subjects With Parkinson's Disease With Neuropsychiatric Symptoms Treated With Pimavanserin or Low-Dose Quetiapine |
+| Parkinson disease | pimavanserin | NCT03947216 | II | 2020 | 1 | Study of Pimavanserin Efficacy for the Treatment of Impulse Control Disorders in Parkinson's Disease (PIMPARK) |
+| Parkinson disease | pimavanserin | – | II | – | 1 | A Phase II Study to Explore the Potential Sleep Benefits of Pimavanserin in Parkinson's Disease Patients. |
+| Parkinson disease | pimavanserin | – | I/II | – | 1 | Phase Ib/IIa Clinical Trial and PET Study of ACP-103 |
+| Parkinson disease | pimavanserin | – | I | 2003 | 1 | Phase I clinical testing of ACP-103 for the treatment of Parkinson's Disease. |
+| Parkinson disease | pimavanserin | CTR20220014 | I | 2022 | 1 | Bioequivalence pilot study of pimavanserin tartrate capsules 34 mg in a randomized, open-label, two-cycle, two-crossover healthy subjects in fasting and postprandial states |
+| Parkinson disease | pimavanserin | CTR20222082 | I | 2022 | 1 | A randomized, open-label, two-cycle, two-crossover bioequivalence study of pimavanserin tartrate capsules 34 mg in fasting healthy subjects |
+| Parkinson disease | pimavanserin | CTR20222456 | I | 2022 | 1 | Bioequivalence study of pimavanserin tartrate capsules 34 mg randomized, open, two-period, two-crossover healthy subjects in fed state |
+| Parkinson disease | pimavanserin | CTR20222909 | I | 2023 | 1 | A single-center, open-label, randomized, two-preparation, two-sequence, two-cycle, double-crossover human bioequivalence pilot study on single-dose oral administration of pimavanserin tartrate capsules in Chinese healthy subjects under fasting and postprandial conditions |
+| Parkinson disease | pimavanserin | CTR20230288 | I | 2023 | 1 | A bioequivalence pilot study of Pimavanserin tartrate tablets 10 mg randomized, open, two-period, two-crossover in healthy subjects under fasting and postprandial conditions. |
+| Parkinson disease | pimavanserin | CTR20231339 | I | 2023 | 1 | Single-center, open, randomized, two-dose, two-sequence, two-period, double-crossover human bioequivalence study of Pimavanserin Tartrate Capsules in Chinese healthy subjects under fasting and fed states |
+| Parkinson disease | pimavanserin | CTR20232504 | I | 2023 | 1 | Bioequivalence study of pimavanserin tartrate tablets 10 mg in randomized, open-label, two-period, two-crossover healthy subjects under fasting and postprandial states |
+| Parkinson disease | pimavanserin | NCT05796167 | I | 2023 | 1 | Does Pimavanserin (Nuplazid) Improve Sleep in Patients With Parkinson Disease Psychosis? A Pilot Study |
+| Parkinson disease | pimavanserin | CTR20240780 | I | 2024 | 1 | A single-center, open-label, randomized, two-preparation, two-sequence, two-cycle, double-crossover human bioequivalence trial of single-dose oral administration of pimavanserin tartrate capsules in Chinese healthy subjects under fasting and postprandial conditions |
+| Parkinson disease | pimavanserin | CTR20241274 | I | 2024 | 1 | A Randomized, open-label, two-formulation, single-dose, two-cycle, two-sequence bioequivalence trial of Pimavanserin Tartrate capsules in healthy subjects under fasting and postprandial conditions |
+| Parkinson disease | pimavanserin | NCT06450184 | I | 2024 | 1 | An Open-label, Balanced, Randomized, Two Treatment, Two Sequence, Two Period, Two Way Cross-over, Single Dose Bioequivalence Study of Pimavanserin 34 mg Capsule of Humanis Sağlık A.Ş., Turkey and NUPLAZID® (Pimavanserin) Capsules of Acadia Pharmaceuticals Inc. San Diego, CA 92130 USA in Normal, Healthy, Adult, Human Subjects Under Fasting Condition |
+| Parkinson disease | pimavanserin | – | I | – | 1 | A phase 1 study of pimavanserin tartrate Capsules for treatment of hallucinations and delusions associated with Parkinson's disease psychotic disorder. |
+| Parkinson disease | trazodone | IRCT20170821035819N2 | III | 2020 | 3 | Comparison of the effect of Melatonin and Tarazodon on the sleep quality of patients with Parkinson's disease in patients referring to the Neurology Clinic of Roozbeh Hospital |
+| Parkinson disease | trazodone | – | II | 2007 | 6 | Safety of Antidepressant Therapy In Parkinson’s Disease (PD) Patients Treated with Rasagiline |
+| Parkinson disease | trazodone | RBR-4b32m3 | II | 2020 | 1 | Motors Effects in Parkinson's Disease by the action of 5-HT2a/c antagonistic drug mediated by ELF2-alpha factor phosphorylation pathway in humans. A Double-Blind Randomized Controlled Trial. |
+| Parkinson disease | trazodone | – | II | – | 4 | The Use of an Antagonist 5-HT2a/c for Depression and Motor Function in Parkinson' Disease |
+| alcohol abuse | prazosin | NCT00167687 | IV | 2005 | 2 | A Double-Blind Placebo-Controlled Trial of Prazosin for the Treatment of Alcohol Dependence. |
+| alcohol abuse | prazosin | NCT02226367 | IV† | 2015 | 2 | Prazosin Augmentation of Outpatient Treatment of Alcohol Use Disorders in Active Duty Soldiers with and without PTSD |
+| alcohol abuse | prazosin | – | IV | – | 1 | Moderation of Prazosin's Efficacy by Alcohol Withdrawal Symptoms |
+| alcohol abuse | prazosin | NCT00744055 | III | 2009 | 1 | The Use of Prazosin for Treatment of Patients with Alcohol Dependence (AD) and Post Traumatic Stress Disorder (PTSD) |
+| alcohol abuse | prazosin | NCT00240227 | II† | 2004 | 1 | The Role of the Alpha 1-adrenergic Antagonist, Prazosin, in the Reduction of Craving and Relapse in Alcohol and Cocaine-dependent Individuals: a Double-blind, Randomized, Controlled Clinical Trial. |
+| alcohol abuse | prazosin | NCT00762710 | II | 2008 | 1 | Clinical Trial of the Adrenergic Alpha-1 Antagonist Prazosin for Alcohol Dependence |
+| alcohol abuse | prazosin | NCT01518972 | II | 2009 | 1 | A Placebo-Controlled Trial of Prazosin in Individuals with Co-occurring Alcohol Dependence and PTSD Seeking Abstinence |
+| alcohol abuse | prazosin | NCT01916941 | II† | 2013 | 1 | Neural Mechanisms of Change During the Treatment of Alcohol Use Disorders With Prazosin |
+| alcohol abuse | prazosin | NCT02193256 | II† | 2014 | 2 | Pilot Trial of Varenicline and Prazosin to Treat Heavy Drinking Smokers |
+| alcohol abuse | prazosin | NCT02322047 | II | 2015 | 2 | Effect of Prazosin and Naltrexone on Personalized Script-Induced Alcohol Craving in Individuals with Alcohol Use Disorders with and without Comorbid PTSD |
+| alcohol abuse | prazosin | NCT04793685 | II | 2021 | 1 | Prazosin Treatment for Alcohol Use Disorder With Alcohol Withdrawal Symptoms |
+| alcohol abuse | prazosin | NCT00585780 | I/II | 2009 | 2 | Prazosin to Reduce Stress-Induced Alcohol/Drug Craving and Relapse |
+| alcohol abuse | prazosin | NCT02966340 | I/II | 2016 | 1 | Repurposing alpha1 Noradrenergic Antagonists for Alcoholism Treatment |
+| alcohol abuse | prazosin | NCT06147622 | I | 2024 | 3 | A Phase 1, Open-label, Cross-over Study in Healthy Volunteers to Assess the Pharmacokinetic Profile of Prazosin and Cyproheptadine Following Single Dose Oral Administration of KT110 Tablet and Following Administration of Alpress and Periactin Marketed Tablets |
+| alcohol abuse | trazodone | NCT01662297 | IV | 2012 | 2 | Comparison of Quetiapine and Trazodone Treatment for Insomnia in Dually Diagnosed Veterans: an Open (e.g. Unblinded) Randomized Stay-Switch Pilot Trial |
+| alcohol abuse | trazodone | CTRI/2025/08/093625 | IV | 2025 | 2 | Randomized Comparison Trial between low dose Quetiapine and Trazodone for treatment of Short- Term Insomnia in patients with Alcohol Dependence in Early Full Remission |
+| alcohol abuse | trazodone | – | IV | – | 1 | Observation on the efficacy and safety of physical and psychological symptoms in the inpatients with alcohol dependence after Trazodone treatment |
+| alcohol abuse | trazodone | – | IV | – | 1 | Trazodone Teatment in the Sleep Disturbances of Alcohol-Dependent Patients After Detoxification. |
+| alcohol abuse | trazodone | – | II | – | 2 | Open Pilot Study of Gabapentin Versus Trazodone to Treat Insomnia in Alcoholic Outpatients |
+| alcohol abuse | trazodone | – | II | – | 3 | Efficacy and Safety of Topiramate on Alcohol Withdrawal Symptoms |
+| alcohol abuse | trazodone | – | II | – | 2 | Eficacity of Trazodone in Relapse Prevention on Alcohol Dependence. |
+
+Trials behind the disease–drug lines of Figure 3a. The 90 trials linking the four diseases to the four drugs, as recorded in the trial data used to build IxIDN; 61 tested a single drug. Trial gives the public registry identifier (ClinicalTrials.gov, EudraCT, China Drug Trials, IRCT, ReBEC or CTRI; 72 of 90), or – when the trial has none. Phase is the highest phase in the trial data; † marks the 7 trials whose ClinicalTrials.gov record gives a different phase (6 not applicable, 1 phase I). Start is the trial start year (– when not recorded).
