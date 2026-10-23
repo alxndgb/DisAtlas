@@ -2,9 +2,9 @@
 
 One script per computed main-text figure. Each script reads only repo-relative inputs, calls no model or
 external service, and writes `<stem>.png` (300 dpi) and `<stem>.pdf` next to itself. Rebuilt PNGs match the manuscript
-figures: Figure 4 is bit-identical in every pixel; Figure 5 differs only by antialiasing (≤ 2 of 255 intensity levels in
-< 0.03% of pixels); Figures 2 and 6 are bit-identical when rendered with matplotlib 3.11.2 (the version the manuscript
-figures were drawn with), while other matplotlib versions shift their text layout slightly. Figures 1 and 7 are the
+figures in content and layout. With the pinned environment (matplotlib 3.10), Figure 4 is bit-identical in every pixel and
+Figure 5 differs only by antialiasing (≤ 2 of 255 intensity levels in < 0.03% of pixels); Figures 2, 3 and 6 differ only in
+text rasterisation (sub-pixel glyph placement, and for Figure 6 a bounding box a few pixels smaller). Figures 1 and 7 are the
 published images.
 
 ```
