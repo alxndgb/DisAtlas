@@ -60,6 +60,11 @@ for k, v in m.items():
     assert abs(v - T.loc[('frozen', k), 'value']) < 5e-6, (k, v, T.loc[('frozen', k), 'value'])
 assert (COV.n_pairs == 1094).all() and (COV.n_bench_diseases == 447).all() and (COV.n_net == 13021).all()
 assert set(T.index.get_level_values(0)) == {k for _, g in GROUPS for k in g}
+# Appendix text (evidence ablations): conventional similarity on the test split, change vs DisAtlas with 95% CI
+F = T.xs('auroc', level='metric').round(3)
+assert (F.loc['frozen', 'value'], F.loc['hpo_go_resnik_fusion', 'value'], F.loc['go_resnik_genebma', 'value'],
+        F.loc['mondo_simgic', 'value']) == (0.782, 0.673, 0.625, 0.588)
+assert tuple(F.loc['hpo_go_resnik_fusion', ['d_frozen', 'df_lo', 'df_hi']]) == (-0.109, -0.172, -0.046)
 
 norm = TwoSlopeNorm(vmin=-0.25, vcenter=0.0, vmax=0.05); cmap = plt.get_cmap('RdBu')
 nrow = sum(len(g) + 1 for _, g in GROUPS); H = 0.26 * (nrow + 3) + 0.6

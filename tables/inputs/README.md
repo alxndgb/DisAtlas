@@ -11,3 +11,4 @@ Processed outputs used only by the table scripts (one row per pair or disease; i
 - `rare_common_stratified_bootstrap.tsv`, `rare_common_ccplus_bootstrap.tsv` — stored disease-cluster bootstrap summaries (AUROC, 95% CI, DisAtlas minus matched-shortcut-stack delta).
 - `hpo_baselines.csv` — stored HPO-similarity baseline AUROCs on the HPO-scorable pairs with DisAtlas deltas and bootstrap CIs.
 - `source_display_labels.csv` — public display label for each opaque source code in `data/00_raw/associations/`.
+- `umbrella_placement.tsv` — the 444 umbrella disease terms (at least five lexical subtypes): number of subtypes, whether the subtype-average position differs beyond projection noise and lies in another cluster (93), and the released alternative-position flag for the 69 such diseases without own symptom data (subtype-average K = 50 cluster, map shift, projection noise).

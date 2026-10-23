@@ -14,7 +14,8 @@ SCRIPTS = ["main/table_protocols.py",
            "SI/table_SI_ontology_baseline.py",
            "SI/table_SI_cluster_controls.py",
            "SI/table_SI_rare_common_strata.py",
-           "SI/table_SI_sensitivity_post_test.py"]
+           "SI/table_SI_sensitivity_post_test.py",
+           "SI/table_SI_umbrella_placement.py"]
 
 if __name__ == "__main__":
     for s in SCRIPTS:

@@ -15,6 +15,7 @@ python -m pytest tests/test_ixidn_parity.py
 | 3 | `03_build_ixidn_neg.py` | `ixidn_neg_edges.parquet` (335,557 pairs), `ixidn_eval_pairs.parquet`, `ixidn_train_strip_pairs.parquet` | Methods, IxIDN- and E_IxIDN removal (13,021 diseases, 325,837 training edges) |
 | 4 | `04_match_ixidn.py` | `ixidn_matched.tsv` (4,364 pairs) | Methods, IxIDN-Matched |
 | 5 | `05_shortcut_baselines.py` | `ixidn_matched_shortcut_baselines.tsv`, `ixidn_matched_shortcut_stack.tsv` | Results and appendix, matched shortcut baselines; rare/common table contrast |
+| 6 | `06_prematch_shortcuts.py` | `ixidn_universe_prematch_auroc.tsv` | Appendix, shortcut signal before matching (AUROC 0.947 and 0.758) |
 
 `tests/test_ixidn_parity.py` joins the stored model scores (`data/08S_eval/ixidn4364_scores.tsv`)
 to `ixidn_matched.tsv` and checks AUROC 0.765 (all pairs) and 0.782 (held-out test split).
@@ -30,5 +31,9 @@ can differ from the published one.
 coverage); AUROC 0.500–0.542. SimGIC is undefined for 7 pairs (one disease has no SimGIC value);
 those pairs are dropped for its single-score AUROC (0.5418, n = 4,357) and median-filled inside the
 stack. The supplementary common–common rows need `data/00_raw/frozen/ccplus_pair_rows.tsv.gz`.
+
+**Before matching.** Step 6 scores the 27,415 positive and 155,375 negative candidate pairs of the
+evaluation universe: the summed trial-graph degree of the two diseases reaches AUROC 0.947 and MONDO
+SimGIC 0.758 (`ixidn_universe_prematch_auroc.tsv`); matching removes both.
 
 All paths are repository-relative (`ixidn_lib.py`); seeds are fixed, so the default run is deterministic.

@@ -28,6 +28,9 @@ assert len(cl) == 13019 and cl["mds1"].notna().all() and cl["mds2"].notna().all(
 dm = pd.read_parquet(os.path.join(REPO_ROOT, "data/00_raw/llm_annotations/disease_labels.parquet")).set_index("disease_id")
 cl = cl.set_index("disease_id").join(dm[["disease_class", "is_rare"]], how="left")
 assert cl["disease_class"].notna().all()
+assert (int((cl["is_rare"] == 1).sum()), int((cl["is_rare"] == 0).sum())) == (10488, 2531)  # Results and Figure 5 caption
+_net = pd.read_parquet(os.path.join(REPO_ROOT, "data/03_network/mechdist_network_nodes.parquet.gzip")).disease_id.map(dm.is_rare)
+assert (len(_net), int((_net == 1).sum()), int((_net == 0).sum())) == (13021, 10489, 2532)  # Methods, network coverage
 ids = cl.index.to_numpy(); Y = cl[["mds1", "mds2"]].to_numpy(); ix = {d: i for i, d in enumerate(ids)}
 clu_of = cl["cluster"]
 
