@@ -15,6 +15,7 @@ every cell with the value printed in the manuscript (a mismatch stops the run).
 | tbl:SI_cluster_controls (+ co-clustering ratios in the text) | Appendix, The full control list | `SI/table_SI_cluster_controls.py` | `inputs/cluster_labels_by_K.tsv`, `inputs/cluster_control_pairs.csv`, `data/08S_eval/ixidn4364_scores.tsv` |
 | tbl:SI_rare_common_strata | Appendix, rare/common Summary table | `SI/table_SI_rare_common_strata.py` | `data/08S_eval/ixidn4364_scores.tsv`, `inputs/ixidn_matched_ccplus_scores.tsv`, `inputs/rare_common_*_bootstrap.tsv` |
 | tbl:SI_sensitivity_post_test | Appendix, Sensitivity to settings fixed after test-split results | `SI/table_SI_sensitivity_post_test.py` | `inputs/sensitivity_post_test_scores.tsv`, `data/08S_eval/ixidn4364_scores.tsv` |
+| tbl:SI_fig3a_trials | Appendix, Trials behind the Figure 3a example | `SI/table_SI_fig3a_trials.py` | `inputs/si_fig3a_trials.tsv`, `data/00_raw/trials/trial_triples.parquet`, `data/00_raw/diseases/`, `data/00_raw/drugs/` |
 
 No script calls a language model or downloads anything; LLM comparator scores are the stored
 outputs of the runs reported in the paper.

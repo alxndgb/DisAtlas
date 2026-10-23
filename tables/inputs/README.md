@@ -11,3 +11,4 @@ Processed outputs used only by the table scripts (one row per pair or disease; i
 - `rare_common_stratified_bootstrap.tsv`, `rare_common_ccplus_bootstrap.tsv` — stored disease-cluster bootstrap summaries (AUROC, 95% CI, DisAtlas minus matched-shortcut-stack delta).
 - `hpo_baselines.csv` — stored HPO-similarity baseline AUROCs on the HPO-scorable pairs with DisAtlas deltas and bootstrap CIs.
 - `source_display_labels.csv` — public display label for each opaque source code in `data/00_raw/associations/`.
+- `si_fig3a_trials.tsv` — the 90 trials behind the ten disease-drug lines of Figure 3a; columns trial_key (as in `data/00_raw/trials/trial_triples.parquet`), disease_id, drug_id, public_id (public registry identifier, blank when none), phase (as printed), ctgov_phase (phase on the ClinicalTrials.gov record, blank when not looked up), title.

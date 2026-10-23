@@ -7,17 +7,19 @@ intensity levels in < 0.03% of pixels). Figures 1 and 7 are the published images
 
 ```
 python figures/main/fig2.py   # Figure 2  DisAtlas pipeline overview
+python figures/main/fig3.py   # Figure 3  the IxIDN-Matched benchmark
 python figures/main/fig4.py   # Figure 4  UPNA-DDAL architecture
 python figures/main/fig5.py   # Figure 5  disease map and rarity-stratified transfer
 python figures/main/fig6.py   # Figure 6  cross-system comparison on IxIDN-Matched
 ```
 
-Requires numpy, pandas, scipy, matplotlib and pyarrow.
+Requires numpy, pandas, scipy, matplotlib, networkx and pyarrow.
 
 | Figure | Manuscript section | Script | Output | Inputs |
 |---|---|---|---|---|
 | 1 | Introduction (knowledge transfer between common and rare diseases) | static | `fig1_knowledge_transfer.png` | composed outside Python; shipped as the published image |
 | 2 | Methods overview (DisAtlas pipeline) | `fig2.py` | `fig2_pipeline` | schematic; counts and coverage percentages are the values stated in the text |
+| 3 | Results, the IxIDN-Matched benchmark | `fig3.py` | `fig3_ixidn_matched_benchmark` | `data/00_raw/trials/trial_triples.parquet`, `data/00_raw/diseases/`, `data/00_raw/drugs/`, `data/02S_build_IxIDN/ixidn_pos_edges.parquet.gz`, `data/00_raw/frozen/disease_split.tsv.gz`, `data/00_raw/frozen/ixidn_matched_universe_features.parquet`, `data/00_raw/llm_annotations/ixidn_judge_verdicts.parquet`, `data/06S_final_benchmark/ixidn_matched_4364.tsv`, `data/08S_eval/ixidn4364_ci.tsv` |
 | 4 | Methods, UPNA-DDAL | `fig4.py` | `fig4_upna_ddal_architecture` | schematic; panel b is illustrative (only the aHUS-PNH edge is a reported result) |
 | 5 | Results, disease map and rarity-stratified transfer | `fig5.py` | `fig5_disease_map`, `fig5c_stratified_auroc.tsv` | `data/fig5_display_map.tsv.gz`, `data/fig5_control_pairs.tsv`, `data/ixidn_matched_go_resnik.tsv.gz`, `data/08S_eval/ixidn4364_scores.tsv`, `data/00_rebuilt_ontology/ixidn_matched_hpo_scores.csv`, `data/00_raw/llm_annotations/disease_labels.parquet` |
 | 6 | Results, cross-system comparison | `fig6.py` | `fig6_method_comparison`, `fig6b_ranking_metrics.tsv`, `fig6c_run_agreement.tsv`, `fig6d_top10_jaccard.tsv` | `data/08S_eval/ixidn4364_scores.tsv`, `benchmarks/llm/data/llm_run_scores.tsv.gz`, `benchmarks/llm/data/disatlas_unseen_per_seed.tsv.gz`, `benchmarks/txgnn/data/txgnn_pair_scores.tsv.gz`, `tables/inputs/comparator_run_scores.tsv` |
@@ -28,6 +30,12 @@ Shared modules: `disatlas_style.py` (house fonts, sizes, panel letters; strips d
 
 ## Checks built into the scripts
 
+- `fig3.py` recomputes every drawn value: the ten disease-drug lines and their trial counts, the five projected
+  IxIDN links (three of them IxIDN+ benchmark pairs), the funnel (1,379 diseases / 43,112 links; 985-disease
+  universe; 27,415 IxIDN+ and 155,375 IxIDN- candidates; degree-sum AUROC 0.947 on the candidates; 1,285 strong +
+  897 plausible verdicts; 2,182 + 2,182 pairs over 938 diseases), the panel c distances (1, 2, 3 steps) for
+  E01438 / E01435, and the panel d AUROCs (pairs without a MONDO term dropped) with the DisAtlas reference 0.765.
+  The rebuilt PNG differs from the manuscript image only by sub-pixel glyph placement (font build).
 - `fig5.py` asserts the panel c values (AUROC, 95% CI, HPO/GO baselines, n+/n−) against the manuscript and
   re-derives each pair's rarity stratum from the stored disease labels. Panel c CI: disease-level bootstrap,
   1,000 draws, seed 4707, pair weight = product of its two diseases' multiplicities. Baseline pairs without a

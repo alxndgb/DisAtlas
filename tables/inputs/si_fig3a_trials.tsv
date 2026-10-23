@@ -1,0 +1,91 @@
+trial_key	disease_id	drug_id	public_id	phase	ctgov_phase	title
+TRIAL_B01F15DDAB9	MONDO:0005180	CHEMBL:CHEMBL283800		IV		The Effect of Creatine and Coenzyme Q10 Combination Therapy on Mild Cognitive Impairment in Parkinson's Disease
+TRIAL_BBCD126E25E	MONDO:0005180	CHEMBL:CHEMBL283800		II		Creatine Supplementation In Parkinson Disease: A Placebo-Controlled Randomized Pilot Trial
+NCT01518972	MONDO:0002046	CHEMBL:CHEMBL2	NCT01518972	II	II	A Placebo-Controlled Trial of Prazosin in Individuals with Co-occurring Alcohol Dependence and PTSD Seeking Abstinence
+NCT01916941	MONDO:0002046	CHEMBL:CHEMBL2	NCT01916941	II	NA	Neural Mechanisms of Change During the Treatment of Alcohol Use Disorders With Prazosin
+NCT02226367	MONDO:0002046	CHEMBL:CHEMBL2	NCT02226367	IV	NA	Prazosin Augmentation of Outpatient Treatment of Alcohol Use Disorders in Active Duty Soldiers with and without PTSD
+NCT02322047	MONDO:0002046	CHEMBL:CHEMBL2	NCT02322047	II	II	Effect of Prazosin and Naltrexone on Personalized Script-Induced Alcohol Craving in Individuals with Alcohol Use Disorders with and without Comorbid PTSD
+NCT02193256	MONDO:0002046	CHEMBL:CHEMBL2	NCT02193256	II	I	Pilot Trial of Varenicline and Prazosin to Treat Heavy Drinking Smokers
+NCT02966340	MONDO:0002046	CHEMBL:CHEMBL2	NCT02966340	I/II	I/II	Repurposing alpha1 Noradrenergic Antagonists for Alcoholism Treatment
+TRIAL_B0C9E067B41	MONDO:0002046	CHEMBL:CHEMBL2		IV		Moderation of Prazosin's Efficacy by Alcohol Withdrawal Symptoms
+NCT04793685	MONDO:0002046	CHEMBL:CHEMBL2	NCT04793685	II	II	Prazosin Treatment for Alcohol Use Disorder With Alcohol Withdrawal Symptoms
+NCT06147622	MONDO:0002046	CHEMBL:CHEMBL2	NCT06147622	I	I	A Phase 1, Open-label, Cross-over Study in Healthy Volunteers to Assess the Pharmacokinetic Profile of Prazosin and Cyproheptadine Following Single Dose Oral Administration of KT110 Tablet and Following Administration of Alpress and Periactin Marketed Tablets
+NCT00167687	MONDO:0002046	CHEMBL:CHEMBL2	NCT00167687	IV	IV	A Double-Blind Placebo-Controlled Trial of Prazosin for the Treatment of Alcohol Dependence.
+NCT00240227	MONDO:0002046	CHEMBL:CHEMBL2	NCT00240227	II	NA	The Role of the Alpha 1-adrenergic Antagonist, Prazosin, in the Reduction of Craving and Relapse in Alcohol and Cocaine-dependent Individuals: a Double-blind, Randomized, Controlled Clinical Trial.
+NCT00585780	MONDO:0002046	CHEMBL:CHEMBL2	NCT00585780	I/II	I/II	Prazosin to Reduce Stress-Induced Alcohol/Drug Craving and Relapse
+NCT00744055	MONDO:0002046	CHEMBL:CHEMBL2	NCT00744055	III	III	The Use of Prazosin for Treatment of Patients with Alcohol Dependence (AD) and Post Traumatic Stress Disorder (PTSD)
+NCT00762710	MONDO:0002046	CHEMBL:CHEMBL2	NCT00762710	II	II	Clinical Trial of the Adrenergic Alpha-1 Antagonist Prazosin for Alcohol Dependence
+NCT03325556	MONDO:0007488	CHEMBL:CHEMBL2111101	NCT03325556	III	III	A Double-blind, Placebo-controlled, Relapse Prevention Study of Pimavanserin for the Treatment of Hallucinations and Delusions Associated With Dementia-related Psychosis.
+NCT03575052	MONDO:0007488	CHEMBL:CHEMBL2111101	NCT03575052	III	III	A Phase 3b, Multicenter, Randomized, Double-blind, Placebo-controlled, Safety Study of Pimavanserin Therapy in Adult and Elderly Subjects Experiencing Neuropsychiatric Symptoms Related to Neurodegenerative Disease
+NCT03623321	MONDO:0007488	CHEMBL:CHEMBL2111101	NCT03623321	III	III	A 52-Week Open-label Extension Study of Pimavanserin in Adult and Elderly Subjects With Neuropsychiatric Symptoms Related to Neurodegenerative Disease
+NCT05357612	MONDO:0007488	CHEMBL:CHEMBL2111101	NCT05357612	IV	IV	Characterization of the Serotonin 2A Receptor Selective PET Tracer \[18F\]MH.MZ in Patients With Neurodegenerative Diseases
+NCT05590637	MONDO:0007488	CHEMBL:CHEMBL2111101	NCT05590637	IV	IV	A Pragmatic Randomized Trial Comparing Antipsychotics in Lewy Body Disease
+NCT00161473	MONDO:0004975	CHEMBL:CHEMBL2	NCT00161473	II	NA	Alzheimer’s In Long-Term Care-Treatment for Agitation
+NCT01126099	MONDO:0004975	CHEMBL:CHEMBL2	NCT01126099	IV	NA	Prazosin Treatment for Disruptive Agitation in Alzheimer's Disease
+TRIAL_BA6CB6EFEA9	MONDO:0004975	CHEMBL:CHEMBL2		II		A Pilot Study to Evaluate Effect of Alpha-1 Adrenoreceptor Antagonist Prazosin for Agitation/Aggression in Alzheimer's Disease
+NCT03710642	MONDO:0004975	CHEMBL:CHEMBL2	NCT03710642	II	II	A 24-week Placebo-controlled trial of Prazosin for Disruptive Agitation in Alzheimer's Disease
+TRIAL_B41E44FFB42	MONDO:0005180	CHEMBL:CHEMBL2111101	CTR20222909	I		A single-center, open-label, randomized, two-preparation, two-sequence, two-cycle, double-crossover human bioequivalence pilot study on single-dose oral administration of pimavanserin tartrate capsules in Chinese healthy subjects under fasting and postprandial conditions
+TRIAL_B3EA9E47F3F	MONDO:0005180	CHEMBL:CHEMBL2111101	CTR20231339	I		Single-center, open, randomized, two-dose, two-sequence, two-period, double-crossover human bioequivalence study of Pimavanserin Tartrate Capsules in Chinese healthy subjects under fasting and fed states
+TRIAL_B2E201B4BD2	MONDO:0005180	CHEMBL:CHEMBL2111101	CTR20252689	III		A multicenter, randomized, double-blind, placebo-controlled phase III clinical trial to evaluate the efficacy and safety of pimavanserin tartrate capsules in the treatment of psychotic symptoms in Parkinson's disease
+TRIAL_BE982DA858F	MONDO:0005180	CHEMBL:CHEMBL2111101		I/II		Phase Ib/IIa Clinical Trial and PET Study of ACP-103
+NCT00086294	MONDO:0005180	CHEMBL:CHEMBL2111101	NCT00086294	II	II	5HT2A/C Serotonin Blockade In Parkinson's Disease.
+NCT01174004	MONDO:0005180	CHEMBL:CHEMBL2111101	NCT01174004	III	III	A Multi-Center, Placebo-Controlled, Double-Blind Trial to Examine the Safety and Efficacy of Pimavanserin in the Treatment of Psychosis in Parkinson's Disease
+NCT00087542	MONDO:0005180	CHEMBL:CHEMBL2111101	NCT00087542	II	II	A Phase II, Multi-Center, Randomized, Placebo-Controlled, Double-Blind Trial of Four Weeks of ACP-103 Treatment of Psychosis in Parkinson's Disease
+TRIAL_B3E1A04F49B	MONDO:0005180	CHEMBL:CHEMBL2111101		III		A Phase III Pivotal, Confirmatory Study of Pimavanserin in the Treatment of Psychosis in Parkinson's Disease.
+TRIAL_B5EB847EFE4	MONDO:0005180	CHEMBL:CHEMBL2111101		II		A Phase II Study to Explore the Potential Sleep Benefits of Pimavanserin in Parkinson's Disease Patients.
+NCT02762591	MONDO:0005180	CHEMBL:CHEMBL2111101	NCT02762591	III		Expanded Access Program of Pimavanserin in Patients With Parkinson's Disease Psychosis
+NCT03325556	MONDO:0005180	CHEMBL:CHEMBL2111101	NCT03325556	III	III	A Double-blind, Placebo-controlled, Relapse Prevention Study of Pimavanserin for the Treatment of Hallucinations and Delusions Associated With Dementia-related Psychosis.
+NCT03482882	MONDO:0005180	CHEMBL:CHEMBL2111101	NCT03482882	II	II	An Open-label, 8-Week Study of Safety and Efficacy of Pimavanserin Treatment in Adults With Parkinson's Disease and Depression
+NCT03575052	MONDO:0005180	CHEMBL:CHEMBL2111101	NCT03575052	III	III	A Phase 3b, Multicenter, Randomized, Double-blind, Placebo-controlled, Safety Study of Pimavanserin Therapy in Adult and Elderly Subjects Experiencing Neuropsychiatric Symptoms Related to Neurodegenerative Disease
+NCT03623321	MONDO:0005180	CHEMBL:CHEMBL2111101	NCT03623321	III	III	A 52-Week Open-label Extension Study of Pimavanserin in Adult and Elderly Subjects With Neuropsychiatric Symptoms Related to Neurodegenerative Disease
+2016-003512-12	MONDO:0005180	CHEMBL:CHEMBL2111101	EudraCT 2016-003512-12	III		An Open-Label Extension Study to Examine the Safety and Tolerability of Pimavanserin in the Treatment of Parkinson’s Disease Psychosis
+NCT03947216	MONDO:0005180	CHEMBL:CHEMBL2111101	NCT03947216	II	II	Study of Pimavanserin Efficacy for the Treatment of Impulse Control Disorders in Parkinson's Disease (PIMPARK)
+NCT04164758	MONDO:0005180	CHEMBL:CHEMBL2111101	NCT04164758	II	II	A Pilot Randomized, Double-blind, Placebo-controlled Study to Evaluate Safety and Daytime Sedation in Subjects With Parkinson's Disease With Neuropsychiatric Symptoms Treated With Pimavanserin or Low-Dose Quetiapine
+NCT03152292	MONDO:0005180	CHEMBL:CHEMBL2111101	NCT03152292	IV		Management of Parkinson's Disease Psychosis in Actual Practice (The INSYTE Study)
+NCT04292223	MONDO:0005180	CHEMBL:CHEMBL2111101	NCT04292223	IV	IV	A 16-Week Open-Label Study of the Effects of Treatment With Pimavanserin on Activities of Daily Living in Subjects With Parkinson's Disease Psychosis
+NCT04373317	MONDO:0005180	CHEMBL:CHEMBL2111101	NCT04373317	IV	IV	CSP #2015 - Multicenter, Randomized, Double-blind Comparator Study of Antipsychotics Pimavanserin and Quetiapine for Parkinson's Disease Psychosis (C-SAPP)
+TRIAL_B1DB3541C10	MONDO:0005180	CHEMBL:CHEMBL2111101	CTR20220014	I		Bioequivalence pilot study of pimavanserin tartrate capsules 34 mg in a randomized, open-label, two-cycle, two-crossover healthy subjects in fasting and postprandial states
+NCT05357612	MONDO:0005180	CHEMBL:CHEMBL2111101	NCT05357612	IV	IV	Characterization of the Serotonin 2A Receptor Selective PET Tracer \[18F\]MH.MZ in Patients With Neurodegenerative Diseases
+NCT05590637	MONDO:0005180	CHEMBL:CHEMBL2111101	NCT05590637	IV	IV	A Pragmatic Randomized Trial Comparing Antipsychotics in Lewy Body Disease
+TRIAL_B75C995ABA3	MONDO:0005180	CHEMBL:CHEMBL2111101	CTR20222082	I		A randomized, open-label, two-cycle, two-crossover bioequivalence study of pimavanserin tartrate capsules 34 mg in fasting healthy subjects
+TRIAL_B0E7C815D8A	MONDO:0005180	CHEMBL:CHEMBL2111101	CTR20222456	I		Bioequivalence study of pimavanserin tartrate capsules 34 mg randomized, open, two-period, two-crossover healthy subjects in fed state
+TRIAL_B4D4A8DAC5A	MONDO:0005180	CHEMBL:CHEMBL2111101	CTR20230288	I		A bioequivalence pilot study of Pimavanserin tartrate tablets 10 mg randomized, open, two-period, two-crossover in healthy subjects under fasting and postprandial conditions.
+NCT05796167	MONDO:0005180	CHEMBL:CHEMBL2111101	NCT05796167	I	I	Does Pimavanserin (Nuplazid) Improve Sleep in Patients With Parkinson Disease Psychosis? A Pilot Study
+NCT01518309	MONDO:0005180	CHEMBL:CHEMBL2111101	NCT01518309	II	II	An Open-Label Safety Study of Pimavanserin in Parkinson's Disease Patients
+TRIAL_B1CE3297E5A	MONDO:0005180	CHEMBL:CHEMBL2111101	CTR20232504	I		Bioequivalence study of pimavanserin tartrate tablets 10 mg in randomized, open-label, two-period, two-crossover healthy subjects under fasting and postprandial states
+NCT06068465	MONDO:0005180	CHEMBL:CHEMBL2111101	NCT06068465	III	III	A Multi-Center, Placebo-Controlled, Double-Blind Trial to Examine the Safety and Efficacy of Pimavanserin in the Treatment of Psychosis in Parkinson's Disease
+TRIAL_B7B9D12742B	MONDO:0005180	CHEMBL:CHEMBL2111101	CTR20240780	I		A single-center, open-label, randomized, two-preparation, two-sequence, two-cycle, double-crossover human bioequivalence trial of single-dose oral administration of pimavanserin tartrate capsules in Chinese healthy subjects under fasting and postprandial conditions
+TRIAL_BE3972B4E83	MONDO:0005180	CHEMBL:CHEMBL2111101	CTR20241274	I		A Randomized, open-label, two-formulation, single-dose, two-cycle, two-sequence bioequivalence trial of Pimavanserin Tartrate capsules in healthy subjects under fasting and postprandial conditions
+NCT06450184	MONDO:0005180	CHEMBL:CHEMBL2111101	NCT06450184	I	I	An Open-label, Balanced, Randomized, Two Treatment, Two Sequence, Two Period, Two Way Cross-over, Single Dose Bioequivalence Study of Pimavanserin 34 mg Capsule of Humanis Sağlık A.Ş., Turkey and NUPLAZID® (Pimavanserin) Capsules of Acadia Pharmaceuticals Inc. San Diego, CA 92130 USA in Normal, Healthy, Adult, Human Subjects Under Fasting Condition
+TRIAL_BF3A1507913	MONDO:0005180	CHEMBL:CHEMBL2111101	CTR20251027	III		A multicenter, randomized, double-blind, placebo-controlled, phase III clinical trial of pimavanserin tartrate capsules in the treatment of Parkinson's disease with psychiatric symptoms
+NCT00477672	MONDO:0005180	CHEMBL:CHEMBL2111101	NCT00477672	III	III	A Multi-Center, Placebo-Controlled, Double-Blind Trial to Examine the Safety and Efficacy of ACP-103 in the Treatment of Psychosis in Parkinson's Disease
+NCT00550238	MONDO:0005180	CHEMBL:CHEMBL2111101	NCT00550238	III	III	A Multi-Center, Open-Label Extension Study to Examine the Safety and Tolerability of ACP-103 in the Treatment of Psychosis in Parkinson's Disease
+NCT00658567	MONDO:0005180	CHEMBL:CHEMBL2111101	NCT00658567	III	III	A Multi-Center, Placebo-Controlled, Double-Blind Trial to Examine the Safety and Efficacy of ACP-103 in the Treatment of Psychosis in Parkinson’s Disease
+TRIAL_B6A2FCA9138	MONDO:0005180	CHEMBL:CHEMBL2111101		I		Phase I clinical testing of ACP-103 for the treatment of Parkinson's Disease.
+TRIAL_B9ECFE8DF87	MONDO:0005180	CHEMBL:CHEMBL2111101		I		A phase 1 study of pimavanserin tartrate Capsules for treatment of hallucinations and delusions associated with Parkinson's disease psychotic disorder.
+TRIAL_B5A150D20D8	MONDO:0004975	CHEMBL:CHEMBL2111101		II		Study of Pimavanserin for Psychosis in Patients with Alzheimer's Disease
+NCT02035553	MONDO:0004975	CHEMBL:CHEMBL2111101	NCT02035553	II	II	A Single Center, Double-Blind, Placebo-Controlled Study to Examine the Safety and Efficacy of Pimavanserin for the Treatment of Psychosis in Alzheimer's Disease
+NCT02992132	MONDO:0004975	CHEMBL:CHEMBL2111101	NCT02992132	II	II	A Double-Blind, Placebo-Controlled Study to Examine the Safety and Efficacy of Pimavanserin for the Treatment of Agitation and Aggression in Alzheimer’s Disease
+NCT03118947	MONDO:0004975	CHEMBL:CHEMBL2111101	NCT03118947	II	II	A 52-Week Open-Label Extension Study of Pimavanserin for the Treatment of Agitation and Aggression in Subjects with Alzheimer’s Disease
+NCT03325556	MONDO:0004975	CHEMBL:CHEMBL2111101	NCT03325556	III	III	A Double-blind, Placebo-controlled, Relapse Prevention Study of Pimavanserin for the Treatment of Hallucinations and Delusions Associated With Dementia-related Psychosis.
+NCT03575052	MONDO:0004975	CHEMBL:CHEMBL2111101	NCT03575052	III	III	A Phase 3b, Multicenter, Randomized, Double-blind, Placebo-controlled, Safety Study of Pimavanserin Therapy in Adult and Elderly Subjects Experiencing Neuropsychiatric Symptoms Related to Neurodegenerative Disease
+NCT03623321	MONDO:0004975	CHEMBL:CHEMBL2111101	NCT03623321	III	III	A 52-Week Open-label Extension Study of Pimavanserin in Adult and Elderly Subjects With Neuropsychiatric Symptoms Related to Neurodegenerative Disease
+TRIAL_B0FA2C84E1D	MONDO:0005180	CHEMBL:CHEMBL621		II		The Use of an Antagonist 5-HT2a/c for Depression and Motor Function in Parkinson' Disease
+TRIAL_B3D9EC8B4C4	MONDO:0005180	CHEMBL:CHEMBL621	IRCT20170821035819N2	III		Comparison of the effect of Melatonin and Tarazodon on the sleep quality of patients with Parkinson's disease in patients referring to the Neurology Clinic of Roozbeh Hospital
+TRIAL_BE06065E2D3	MONDO:0005180	CHEMBL:CHEMBL621	RBR-4b32m3	II		Motors Effects in Parkinson's Disease by the action of 5-HT2a/c antagonistic drug mediated by ELF2-alpha factor phosphorylation pathway in humans. A Double-Blind Randomized Controlled Trial.
+TRIAL_B3938B6F460	MONDO:0005180	CHEMBL:CHEMBL621		II		Safety of Antidepressant Therapy In Parkinson’s Disease (PD) Patients Treated with Rasagiline
+NCT01662297	MONDO:0002046	CHEMBL:CHEMBL621	NCT01662297	IV	IV	Comparison of Quetiapine and Trazodone Treatment for Insomnia in Dually Diagnosed Veterans: an Open (e.g. Unblinded) Randomized Stay-Switch Pilot Trial
+TRIAL_B30501DC564	MONDO:0002046	CHEMBL:CHEMBL621		IV		Observation on the efficacy and safety of physical and psychological symptoms in the inpatients with alcohol dependence after Trazodone treatment
+TRIAL_BB095B37E98	MONDO:0002046	CHEMBL:CHEMBL621		II		Open Pilot Study of Gabapentin Versus Trazodone to Treat Insomnia in Alcoholic Outpatients
+TRIAL_B938754A3BE	MONDO:0002046	CHEMBL:CHEMBL621		II		Efficacy and Safety of Topiramate on Alcohol Withdrawal Symptoms
+TRIAL_BA4AAE7AB45	MONDO:0002046	CHEMBL:CHEMBL621		II		Eficacity of Trazodone in Relapse Prevention on Alcohol Dependence.
+TRIAL_BD73B914F61	MONDO:0002046	CHEMBL:CHEMBL621	CTRI/2025/08/093625	IV		Randomized Comparison Trial between low dose Quetiapine and Trazodone for treatment of Short- Term Insomnia in patients with Alcohol Dependence in Early Full Remission
+TRIAL_BCCE8DD825C	MONDO:0002046	CHEMBL:CHEMBL621		IV		Trazodone Teatment in the Sleep Disturbances of Alcohol-Dependent Patients After Detoxification.
+NCT05383833	MONDO:0004975	CHEMBL:CHEMBL283800	NCT05383833	IV	NA	Creatine to Augment Bioenergetics in Alzheimer's
+NCT00898807	MONDO:0004975	CHEMBL:CHEMBL621	NCT00898807	III	III	A Multi-Center Randomized Placebo-Controlled Clinical Trial Study of Citalopram for the Treatment of Agitation in Alzheimer's Disease
+NCT01142258	MONDO:0004975	CHEMBL:CHEMBL621	NCT01142258	III	III	Trazodone for the Treatment of Sleep Disorders in Alzheimer's Disease: A Randomised, Double-blind, Placebo-Controlled Study
+TRIAL_B79FE5523B2	MONDO:0004975	CHEMBL:CHEMBL621		OTHER		Do CYP3A and ABCB1 Genotypes Influence the Plasma Concentration and Clinical Outcome of Donepezil Treatment?
+NCT01584440	MONDO:0004975	CHEMBL:CHEMBL621	NCT01584440	II	II	A Phase 2, Randomized, Double-dummy, Double-blind, Placebo-controlled Study to Assess the Efficacy, Safety and Tolerability of AVP-923 (Dextromethorphan/Quinidine) for the Treatment of Symptoms of Agitation in Patients with Alzheimer's Disease
+NCT00000179	MONDO:0004975	CHEMBL:CHEMBL621	NCT00000179	III	III	Agitation in Alzheimer's Disease: A Randomized, Placebo-Controlled Clinical Trial
+NCT05209035	MONDO:0004975	CHEMBL:CHEMBL621	NCT05209035	IV	IV	Randomized-Controlled Trial of Trazodone on Reducing Plasma sST2 Level and Neurodegeneration Progression in Patients With Amnestic Mild Cognitive Impairment and Obstructive Sleep Apnea
+NCT05282550	MONDO:0004975	CHEMBL:CHEMBL621	NCT05282550	II	II	RCT Targeting Cognition in Early Alzheimer's Disease by Improving Sleep With Trazodone (REST)
