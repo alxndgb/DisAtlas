@@ -57,7 +57,7 @@ ND = "DisAtlas node-disjoint"
 SY = ["DisAtlas", ND, "Claude-Chat Opus 5.5", "Claude-Sci Opus 5.5", "Phylo", "Gemini Pro 3.1", "TxGNN published ckpt"]
 C = {"DisAtlas": "#1f4e79", ND: "#5b9bd5", "Claude-Chat Opus 5.5": "#c0504d", "Claude-Sci Opus 5.5": "#e7969c",
      "Phylo": "#2a7f62", "Gemini Pro 3.1": "#7f7f7f", "TxGNN published ckpt": "#8c564b"}
-NM = {"TxGNN published ckpt": "TxGNN (published ckpt)", "DisAtlas": "DisAtlas (full)", ND: "DisAtlas (unseen in learning)"}
+NM = {"TxGNN published ckpt": "TxGNN (published ckpt)", "DisAtlas": "DisAtlas (full)", ND: "DisAtlas (unseen in learning)", "Phylo": "Phylo Biomni"}
 nm = lambda s_: NM.get(s_, s_)
 wrap = lambda s_: {"TxGNN published ckpt": "TxGNN\n(published ckpt)",
                    "DisAtlas": "DisAtlas\n(full)", ND: "DisAtlas\n(unseen in\nlearning)"}.get(s_, nm(s_).replace(" ", "\n", 1))

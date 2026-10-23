@@ -1,8 +1,15 @@
-"""Figure 2 (Methods overview): DisAtlas pipeline schematic. Counts and coverage percentages in the boxes are
-the values reported in the manuscript (Results and Methods, channel coverage).
+"""Figure 2: DisAtlas pipeline schematic (a: evidence channels, fusion, graph, embedding, decoder; b: the
+IxIDN-Matched benchmark and the two evaluation tasks). Channel coverage percentages are the values stated in the
+Results; the benchmark size (4,364 pairs over 938 diseases) and the 13,021 network diseases are checked against the
+shipped data before drawing.
 
     python figures/main/fig2.py      -> figures/main/fig2_pipeline.{png,pdf}
 """
+import os, sys
+import pandas as pd
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from disatlas_style import apply_style, save, REPO_ROOT, PANEL_LABEL_SIZE
+apply_style()
 import matplotlib as mpl, matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
 mpl.rcParams.update({"font.family":"DejaVu Sans","font.size":7,"svg.fonttype":"none","pdf.fonttype":42})
@@ -26,7 +33,7 @@ def line(xs,ys): ax.plot(xs,ys,color="#333333",lw=1.0,solid_capstyle="butt")
 # House panel letters (figures/main/disatlas_style.py): bold lower-case, sized so that
 # at the same print width they match Figure 5 (15 pt in a 15.28 in wide figure -> 7.2 in here).
 FIG5_WIDTH_IN = 4583 / 300          # rendered width of fig5_disease_map.png
-PANEL_LABEL_PT = 15 * 7.2 / FIG5_WIDTH_IN   # = 7.07 pt
+PANEL_LABEL_PT = PANEL_LABEL_SIZE * 7.2 / FIG5_WIDTH_IN   # = 7.07 pt
 def plabel(x, y, letter):
     ax.text(x, y, letter, fontsize=PANEL_LABEL_PT, fontweight="bold", va="baseline", ha="left")
 
@@ -58,9 +65,9 @@ ax.text(cx+cw/2,45.6,"Missing annotations are not imputed",ha="center",va="top",
 plabel(0.8,39.95,"b")
 ax.text(3.0,39.95,"An independent benchmark built from clinical trials",fontsize=8.5,va="baseline")
 ax.add_patch(FancyBboxPatch((0.8,1.0),58.5,34.0,boxstyle="round,pad=0,rounding_size=1.2",fc="#f4f4f4",ec="#9a9a9a",lw=0.8))
-ax.text(30,33.6,"Benchmark pairs from trial co-investigation",ha="center",va="top",fontsize=T,fontweight="bold",color="#333333")
+ax.text(30,33.6,"Benchmark pairs from trial co-investigation (Figure 3)",ha="center",va="top",fontsize=T,fontweight="bold",color="#333333")
 box(2.5,11.5,13.5,12,"Drug–disease\ntrials","",GREY)
-box(19.5,11.5,13.5,12,"Trial graph","diseases linked\nby shared drugs",YEL)
+box(19.5,11.5,13.5,12,"IxIDN","trial graph:\ndiseases linked\nby shared drugs",YEL)
 box(36.5,19.5,21.5,10.0,"Positive pairs (IxIDN⁺)","trialled with\nthe same drug",WHITE)
 box(36.5,4.0,21.5,12.0,"Negative pairs (IxIDN⁻)","≥ 3 links apart, no\nshared-mechanism drug;\nmatched to positives",PINK)
 arr((16,17.5),(19.5,17.5))
@@ -68,12 +75,12 @@ line([33,34.8],[17.5,17.5]); line([34.8,34.8],[10.0,24.5])
 arr((34.8,24.5),(36.5,24.5)); arr((34.8,10.0),(36.5,10.0))
 # benchmark + tasks
 bx,bw=63,36
-box(bx,5.5,bw,11.5,"IxIDN-Matched benchmark","disease-disjoint tune / test split\nmetric: AUROC",WHITE)
+box(bx,5.5,bw,11.5,"IxIDN-Matched benchmark","4,364 pairs over 938 diseases\ndisease-disjoint tune / test split\nmetric: AUROC",WHITE)
 line([58,60.5],[24.5,24.5]); line([58,60.5],[10.0,10.0]); line([60.5,60.5],[10.0,24.5])
 arr((60.5,11.25),(bx,11.25))
 tw,th,ty=17,9.5,23.0
-box(bx,ty,tw,th,"Task 1\nDisease clustering","",GREY,tfs=B+0.4)
-box(bx+bw-tw,ty,tw,th,"Task 2\nDisease–disease\nassociation (DDAL)","",GREY,tfs=B+0.4)
+box(bx,ty,tw,th,"Task 1\nDisease–disease\nassociation (DDAL)","",GREY,tfs=B+0.4)
+box(bx+bw-tw,ty,tw,th,"Task 2\nDisease clustering","",GREY,tfs=B+0.4)
 arr((bx+tw/2,17.0),(bx+tw/2,ty)); arr((bx+bw-tw/2,17.0),(bx+bw-tw/2,ty))
 ax.text(bx+bw/2,20.0,"evaluates",ha="center",va="center",fontsize=B,style="italic",color="#444444")
 # embeddings feed tasks
@@ -83,8 +90,14 @@ arr((bx+tw/2,36.5),(bx+tw/2,ty+th)); arr((bx+bw-tw/2,36.5),(bx+bw-tw/2,ty+th))
 ax.text(ex+0.8,42.5,"DisAtlas\nembeddings",ha="left",va="center",fontsize=B,style="italic",color="#444444")
 
 
+def check_sources():
+    pairs = pd.read_csv(os.path.join(REPO_ROOT, "data", "08S_eval", "ixidn4364_scores.tsv"), sep="\t")
+    n_dis = len(set(pairs["a"]) | set(pairs["b"]))
+    assert len(pairs) == 4364 and int(pairs["y"].sum()) == 2182 and n_dis == 938, (len(pairs), n_dis)
+    nodes = pd.read_parquet(os.path.join(REPO_ROOT, "data", "03_network", "mechdist_network_nodes.parquet.gzip"))
+    assert nodes["disease_id"].nunique() == 13021, len(nodes)
+
+
 if __name__ == "__main__":
-    import os, sys
-    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-    from disatlas_style import save
+    check_sources()
     save(fig, "fig2_pipeline", facecolor="white")

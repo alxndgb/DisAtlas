@@ -2,8 +2,10 @@
 
 One script per computed main-text figure. Each script reads only repo-relative inputs, calls no model or
 external service, and writes `<stem>.png` (300 dpi) and `<stem>.pdf` next to itself. Rebuilt PNGs match the manuscript
-figures: Figures 4 and 6 are bit-identical in every pixel; Figures 2 and 5 differ only by antialiasing (≤ 2 of 255
-intensity levels in < 0.03% of pixels). Figures 1 and 7 are the published images.
+figures: Figure 4 is bit-identical in every pixel; Figure 5 differs only by antialiasing (≤ 2 of 255 intensity levels in
+< 0.03% of pixels); Figures 2 and 6 are bit-identical when rendered with matplotlib 3.11.2 (the version the manuscript
+figures were drawn with), while other matplotlib versions shift their text layout slightly. Figures 1 and 7 are the
+published images.
 
 ```
 python figures/main/fig2.py   # Figure 2  DisAtlas pipeline overview
@@ -18,7 +20,7 @@ Requires numpy, pandas, scipy, matplotlib, networkx and pyarrow.
 | Figure | Manuscript section | Script | Output | Inputs |
 |---|---|---|---|---|
 | 1 | Introduction (knowledge transfer between common and rare diseases) | static | `fig1_knowledge_transfer.png` | composed outside Python; shipped as the published image |
-| 2 | Methods overview (DisAtlas pipeline) | `fig2.py` | `fig2_pipeline` | schematic; counts and coverage percentages are the values stated in the text |
+| 2 | Methods overview (DisAtlas pipeline) | `fig2.py` | `fig2_pipeline` | schematic; benchmark counts asserted against `data/08S_eval/ixidn4364_scores.tsv` and network size against `data/03_network/mechdist_network_nodes.parquet.gzip`; coverage percentages are the values stated in the text |
 | 3 | Results, the IxIDN-Matched benchmark | `fig3.py` | `fig3_ixidn_matched_benchmark` | `data/00_raw/trials/trial_triples.parquet`, `data/00_raw/diseases/`, `data/00_raw/drugs/`, `data/02S_build_IxIDN/ixidn_pos_edges.parquet.gz`, `data/00_raw/frozen/disease_split.tsv.gz`, `data/00_raw/frozen/ixidn_matched_universe_features.parquet`, `data/00_raw/llm_annotations/ixidn_judge_verdicts.parquet`, `data/06S_final_benchmark/ixidn_matched_4364.tsv`, `data/08S_eval/ixidn4364_ci.tsv` |
 | 4 | Methods, UPNA-DDAL | `fig4.py` | `fig4_upna_ddal_architecture` | schematic; panel b is illustrative (only the aHUS-PNH edge is a reported result) |
 | 5 | Results, disease map and rarity-stratified transfer | `fig5.py` | `fig5_disease_map`, `fig5c_stratified_auroc.tsv` | `data/fig5_display_map.tsv.gz`, `data/fig5_control_pairs.tsv`, `data/ixidn_matched_go_resnik.tsv.gz`, `data/08S_eval/ixidn4364_scores.tsv`, `data/00_rebuilt_ontology/ixidn_matched_hpo_scores.csv`, `data/00_raw/llm_annotations/disease_labels.parquet` |

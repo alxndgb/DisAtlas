@@ -42,13 +42,13 @@ Claude-Sci Opus 5.5	claude_sci_run4	claude_sci_run5	0.680920
 Gemini Pro 3.1	gemini_pro_3_1_run1	gemini_pro_3_1_run2	0.872694
 Gemini Pro 3.1	gemini_pro_3_1_run1	gemini_pro_3_1_run3	0.503558
 Gemini Pro 3.1	gemini_pro_3_1_run2	gemini_pro_3_1_run3	0.554709
-Phylo	seed42	seed43	0.760858
-Phylo	seed42	seed44	0.771107
-Phylo	seed42	seed45	0.776293
-Phylo	seed42	seed46	0.778554
-Phylo	seed43	seed44	0.752344
-Phylo	seed43	seed45	0.772389
-Phylo	seed43	seed46	0.766737
-Phylo	seed44	seed45	0.761432
-Phylo	seed44	seed46	0.763744
-Phylo	seed45	seed46	0.782850
+Phylo Biomni	seed42	seed43	0.760858
+Phylo Biomni	seed42	seed44	0.771107
+Phylo Biomni	seed42	seed45	0.776293
+Phylo Biomni	seed42	seed46	0.778554
+Phylo Biomni	seed43	seed44	0.752344
+Phylo Biomni	seed43	seed45	0.772389
+Phylo Biomni	seed43	seed46	0.766737
+Phylo Biomni	seed44	seed45	0.761432
+Phylo Biomni	seed44	seed46	0.763744
+Phylo Biomni	seed45	seed46	0.782850
