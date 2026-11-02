@@ -130,6 +130,9 @@ python3.11 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 ```
 
+`requirements.txt` pins the package versions used to render the figures; with them a fresh run regenerates every committed
+figure byte for byte (other matplotlib versions can shift anti-aliasing by a few grey levels without changing any number).
+
 Download the Zenodo record (DOI: `ZENODO_DOI_TBD`, <https://doi.org/ZENODO_DOI_TBD>) and unpack it so that
 `data/zenodo/` contains `graph/`, `model/`, `scores/`, `figures_main/`, `si_bio/`, `channels_raw/broad/`. Then check it:
 
@@ -236,9 +239,9 @@ Measured on one cluster node (16 cores, 160 GB):
 | `tests/test_cold_exact.py` | COLD: rebuilt channels and graph equal the shipped ones edge for edge |
 | `tests/test_cold_tolerance.py` | COLD: retrained scores within the tolerances above |
 
-A WARM run ends with `286 passed, 13 skipped` (the skipped tests are COLD-only checks) and `DisAtlas pipeline finished (warm)`.
+A WARM run ends with `299 passed, 13 skipped` (the skipped tests are COLD-only checks) and `DisAtlas pipeline finished (warm)`.
 A COLD run first passes the 11 COLD checks on `build/` (`tests/test_cold_exact.py`, `tests/test_cold_tolerance.py`), then the same
-`286 passed, 13 skipped`, and ends with `DisAtlas pipeline finished (cold)`.
+`299 passed, 13 skipped`, and ends with `DisAtlas pipeline finished (cold)`.
 
 ## Troubleshooting
 
