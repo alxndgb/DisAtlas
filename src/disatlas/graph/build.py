@@ -141,7 +141,11 @@ def build(data: str = "data", channels: str | None = None):
     broad = pd.read_parquet(os.path.join(ch, "broad", "broad_edges.parquet"))
     bnodes = set(pd.read_parquet(os.path.join(ch, "broad", "broad_nodes.parquet")).disease_id)
     links = pd.read_parquet(os.path.join(ch, "specific", "disease_module_links.parquet"))
-    classes = pd.read_csv(os.path.join(ch, "specific", "mechanism_node_classes.tsv"), sep="\t")
+    # mechanism-node classes are an input annotation, not a channel output: a rebuilt channel folder may not carry it
+    cf = os.path.join(ch, "specific", "mechanism_node_classes.tsv")
+    if not os.path.exists(cf):
+        cf = os.path.join(data, "raw", "channels", "specific", "mechanism_node_classes.tsv")
+    classes = pd.read_csv(cf, sep="\t")
     fda = pd.read_csv(os.path.join(bm, "fda_repurposing", "fda_repurposing_pairs.tsv"), sep="\t")
     pos = pd.read_parquet(os.path.join(bm, "ixidn", "ixidn_plus_pairs.parquet"))
     neg = pd.read_parquet(os.path.join(bm, "ixidn", "ixidn_minus_pairs.parquet"))
