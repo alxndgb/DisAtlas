@@ -8,6 +8,7 @@ from disatlas import paths
 
 pytestmark = pytest.mark.skipif(paths.MODE != "cold", reason="cold mode only (DISATLAS_DATA_MODE=cold)")
 CH, G = paths.BUILD / "channels", paths.BUILD / "graph"
+OUTPUTS = {"broad": ["broad_edges.parquet", "broad_nodes.parquet"], "specific": ["disease_module_links.parquet"]}
 
 
 def read(p):
@@ -18,7 +19,8 @@ def read(p):
 def test_channel_identical(track):
     if not (CH / track).is_dir():
         pytest.skip(f"{CH / track} not built (channel stage not run)")
-    for ref in sorted((paths.RAW / "channels" / track).iterdir()):
+    for name in OUTPUTS[track]:  # the channel outputs; the other files in data/raw/channels are their inputs
+        ref = paths.RAW / "channels" / track / name
         r, n = read(ref), read(CH / track / ref.name)
         assert list(r.columns) == list(n.columns), ref.name
         key = list(r.columns)
