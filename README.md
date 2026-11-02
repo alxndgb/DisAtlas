@@ -180,7 +180,8 @@ COLD tolerances (`tests/test_cold_tolerance.py`). The retrain uses different ran
 scores are not bit-identical. The test asserts |AUROC(cold) - AUROC(frozen)| <= 0.03 on IxIDN-Matched (all pairs,
 rare-rare, rare-common), IxIDN+/IxIDN- and the FDA development controls, <= 0.04 on the IxIDN-Matched test split, and
 Spearman rho >= 0.90 between cold and frozen ensemble scores on the 4,364 IxIDN-Matched pairs and >= 0.85 on 10^6
-fixed random disease pairs. Observed in a cold retrain: AUROC differences 0.003-0.022, rho 0.946 on IxIDN-Matched.
+fixed random disease pairs. Observed in one cold retrain (5-seed ensemble vs frozen): |AUROC difference| 0.003-0.022 across the six
+benchmark sets above (largest on the IxIDN-Matched test split), Spearman rho 0.946 on IxIDN-Matched.
 
 ## Data and licensing
 
