@@ -191,9 +191,9 @@ benchmark sets above (largest on the IxIDN-Matched test split), Spearman rho 0.9
   stable salted tokens (`T_<12 hex>`, `M_<12 hex>`), so every overlap and graph computation is preserved exactly but
   the token cannot be mapped back. `disatlas.blinding.is_blinded(x)` tells you whether an identifier is a token.
 - Results that depend on licensed trial and approval records are shipped as precomputed tables in `data/derived`.
-- Language-model outputs (IxIDN-Matched curation verdicts, comparator system scores) are stored in
-  `data/raw/benchmarks` and used by default; no model is called. `--use-own-llm-key` is reserved for re-running the
-  stored prompts with your own key and is not needed for parity. <!-- LLM_RERUN_TBD -->
+- LLM-derived inputs (IxIDN-Matched curation verdicts, comparator system scores) are the authors' stored outputs,
+  shipped in `data/raw/benchmarks` and used as-is; no language model is called and there is no option to re-run them.
+  See [data/README.md](data/README.md#llm-derived-inputs), section 'LLM-derived inputs'.
 - Column dictionaries, blinding details and the Zenodo file list: [data/README.md](data/README.md).
   Licences of the data sources: [LICENSES.md](LICENSES.md). <!-- LICENSES_MD_TBD -->
 
