@@ -248,7 +248,7 @@ A COLD run first passes the 11 COLD checks on `build/` (`tests/test_cold_exact.p
 - `data/zenodo missing: download the Zenodo bundle`: unpack the Zenodo record into `data/zenodo` (see Quick start).
 - Checksum failure in `verify`: re-download the listed file; do not edit `data/ZENODO_SHA256SUMS.txt`.
 - Memory: the all-pairs score matrix (13,021 x 13,021) is expanded in memory by several scripts; WARM peaks at about
-  8 GB. On smaller machines run stages one at a time with `--only`.
+  13 GB (measured 12.3-12.6 GiB in fresh-clone runs). On smaller machines run stages one at a time with `--only`.
 - Threads: the retrain stage sets `OMP_NUM_THREADS` to the number of cores divided by five; lower it on shared machines.
 - `disatlas.channels.<track> is not available in this checkout`: resume with `./run_pipeline.sh --cold --from graph`,
   which builds the training graph from the shipped `data/raw/channels`.
