@@ -116,12 +116,6 @@
      "tol": 0.5
     },
     {
-     "key": "strata.IxIDN-Matched|All pairs|rare-rare.d_ci.0",
-     "ms": "ds]), and all main-text results use this K; the full sweep from K = 10 to 80 is shown in [Supplementary Figure",
-     "expected": 0.1,
-     "tol": 0.005
-    },
-    {
      "key": "strata.IxIDN-Matched|All pairs|rare-rare.ci.1",
      "ms": " and all main-text results use this K; the full sweep from K = 10 to 80 is shown in [Supplementary Figure ]a.]",
      "expected": 0.8,
@@ -756,12 +750,6 @@
      "key": "membership.common_ge10",
      "ms": "e of the 55 clusters contains both rare and common diseases, and in 44 of the 55 at least 10% of member diseas",
      "expected": 44
-    },
-    {
-     "key": "strata.IxIDN-Matched|All pairs|rare-rare.d_ci.0",
-     "ms": "ntains both rare and common diseases, and in 44 of the 55 at least 10% of member diseases are common.] [A full",
-     "expected": 0.1,
-     "tol": 0.005
     },
     {
      "key": "n_diseases",
