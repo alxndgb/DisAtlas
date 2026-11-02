@@ -201,9 +201,9 @@ Measured on one cluster node (16 cores, 160 GB):
 
 | Mode | Wall time | Peak memory |
 |---|---|---|
-| WARM | 14 min (tests 1 min); up to 46 min on a node shared with other jobs | 8.7 GB |
+| WARM | 21 min on a fresh clone (tests 7.5 min); up to 46 min on a node shared with other jobs | 10.6 GB |
 | COLD, `--from graph` | 37 min: graph 1 min; retrain 16 min (five seeds in parallel, about 2 GB each); score 7 min, mostly the all-pairs matrix; figures, tables, tests and notebooks 13 min; up to 2 h on a shared node | 10.4 GB |
-| COLD, full run | 53 min on 16 CPUs: channels 10 min (broad 8 min 45 s), then as `--from graph`; measured on a fresh clone | 10.5 GB |
+| COLD, full run | 53 min on 16 CPUs, measured on a fresh clone: verify and channels 11 min (broad 8 min 45 s), graph 1 min, retrain 16.5 min, score 7 min, figures, tables, tests and notebooks 19 min | 10.6 GB |
 
 ## Data and licensing
 
@@ -236,7 +236,9 @@ Measured on one cluster node (16 cores, 160 GB):
 | `tests/test_cold_exact.py` | COLD: rebuilt channels and graph equal the shipped ones edge for edge |
 | `tests/test_cold_tolerance.py` | COLD: retrained scores within the tolerances above |
 
-A WARM run ends with `278 passed, 11 skipped` (the skipped tests are COLD-only checks) and `DisAtlas pipeline finished (warm)`.
+A WARM run ends with `286 passed, 13 skipped` (the skipped tests are COLD-only checks) and `DisAtlas pipeline finished (warm)`.
+A COLD run first passes the 11 COLD checks on `build/` (`tests/test_cold_exact.py`, `tests/test_cold_tolerance.py`), then the same
+`286 passed, 13 skipped`, and ends with `DisAtlas pipeline finished (cold)`.
 
 ## Troubleshooting
 
