@@ -192,8 +192,10 @@ benchmark sets above (largest on the IxIDN-Matched test split), Spearman rho 0.9
   the token cannot be mapped back. `disatlas.blinding.is_blinded(x)` tells you whether an identifier is a token.
 - Results that depend on licensed trial and approval records are shipped as precomputed tables in `data/derived`.
 - LLM-derived inputs (IxIDN-Matched curation verdicts, comparator system scores) are the authors' stored outputs,
-  shipped in `data/raw/benchmarks` and used as-is; no language model is called and there is no option to re-run them.
-  See [data/README.md](data/README.md#llm-derived-inputs), section 'LLM-derived inputs'.
+  shipped in `data/raw/benchmarks` and used as-is; the pipeline calls no language model. The prompts are given in the
+  manuscript and Supplementary Information, and you can run them with your own LLM on the blinded, shuffled benchmark
+  files listed in [data/README.md, 'LLM-derived inputs'](data/README.md#llm-derived-inputs) and compare the results
+  with the stored outputs.
 - Column dictionaries, blinding details and the Zenodo file list: [data/README.md](data/README.md).
   Licences of the data sources: [LICENSES.md](LICENSES.md). <!-- LICENSES_MD_TBD -->
 
