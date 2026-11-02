@@ -1,0 +1,3956 @@
+{
+ "items": [
+  {
+   "label": "SI_event_time_methods",
+   "script": "figures/SI/si_event_time_numbers.py",
+   "numbers": "figures/SI/SI_event_time_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "design_all.n_events",
+     "ms": " MechDist graph built from links dated up to the previous year (74,345 new drug–disease trials in 8,064 drugs;",
+     "expected": 74345
+    },
+    {
+     "key": "design_all.n_drugs",
+     "ms": "dated up to the previous year (74,345 new drug–disease trials in 8,064 drugs; 35,793 trials in 6,496 drugs amo",
+     "expected": 8064
+    },
+    {
+     "key": "design_test.n_events",
+     "ms": "e previous year (74,345 new drug–disease trials in 8,064 drugs; 35,793 trials in 6,496 drugs among test-pool d",
+     "expected": 35793
+    },
+    {
+     "key": "design_test.n_drugs",
+     "ms": "(74,345 new drug–disease trials in 8,064 drugs; 35,793 trials in 6,496 drugs among test-pool diseases, the dis",
+     "expected": 6496
+    },
+    {
+     "key": "subset_pooled_aa_pos_test.pct_s3.2",
+     "ms": "is the share of drugs whose best-ranked new trial falls in the top 10% (higher is better).] [The two pre-regis",
+     "expected": 10.0,
+     "tol": 0.5
+    }
+   ]
+  },
+  {
+   "label": "SI_et_comparison_sets",
+   "script": "figures/SI/si_event_time_numbers.py",
+   "numbers": "figures/SI/SI_event_time_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "years_pct_s3_test.favour",
+     "ms": "ithin popularity × weighted-degree groups, within matched samples of 20 diseases and within popularity groups,",
+     "expected": 20
+    },
+    {
+     "key": "s4_test.vs_popularity.0",
+     "ms": ").] [Without grouping, the DisAtlas advantage over popularity is −3.48 (95% CI −3.63 to −3.28) in the test poo",
+     "expected": -3.48,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_test.vs_popularity.1",
+     "ms": "rouping, the DisAtlas advantage over popularity is −3.48 (95% CI −3.63 to −3.28) in the test pool and −2.66 (9",
+     "expected": -3.63,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_test.vs_popularity.2",
+     "ms": "the DisAtlas advantage over popularity is −3.48 (95% CI −3.63 to −3.28) in the test pool and −2.66 (95% CI −2.",
+     "expected": -3.28,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_all.vs_popularity.0",
+     "ms": "popularity is −3.48 (95% CI −3.63 to −3.28) in the test pool and −2.66 (95% CI −2.79 to −2.53) among all disea",
+     "expected": -2.66,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_all.vs_popularity.1",
+     "ms": " −3.48 (95% CI −3.63 to −3.28) in the test pool and −2.66 (95% CI −2.79 to −2.53) among all diseases, and over",
+     "expected": -2.79,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_all.vs_popularity.2",
+     "ms": "5% CI −3.63 to −3.28) in the test pool and −2.66 (95% CI −2.79 to −2.53) among all diseases, and over weighted",
+     "expected": -2.53,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_test.vs_wAA.0",
+     "ms": "−2.79 to −2.53) among all diseases, and over weighted Adamic–Adar −0.69 (95% CI −0.84 to −0.49) and −0.34 (95%",
+     "expected": -0.69,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_test.vs_wAA.1",
+     "ms": " among all diseases, and over weighted Adamic–Adar −0.69 (95% CI −0.84 to −0.49) and −0.34 (95% CI −0.46 to −0",
+     "expected": -0.84,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_test.vs_wAA.2",
+     "ms": "l diseases, and over weighted Adamic–Adar −0.69 (95% CI −0.84 to −0.49) and −0.34 (95% CI −0.46 to −0.21).] [P",
+     "expected": -0.49,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_all.vs_wAA.0",
+     "ms": " and over weighted Adamic–Adar −0.69 (95% CI −0.84 to −0.49) and −0.34 (95% CI −0.46 to −0.21).] [Popularity a",
+     "expected": -0.34,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_all.vs_wAA.1",
+     "ms": "hted Adamic–Adar −0.69 (95% CI −0.84 to −0.49) and −0.34 (95% CI −0.46 to −0.21).] [Popularity alone places th",
+     "expected": -0.46,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_all.vs_wAA.2",
+     "ms": "mic–Adar −0.69 (95% CI −0.84 to −0.49) and −0.34 (95% CI −0.46 to −0.21).] [Popularity alone places the median",
+     "expected": -0.21,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_test.E1_popularity",
+     "ms": "21).] [Popularity alone places the median new trial at percentile 0.99 in the test pool and 1.27 among all dis",
+     "expected": 0.99,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_all.E1_popularity",
+     "ms": "aces the median new trial at percentile 0.99 in the test pool and 1.27 among all diseases, against 4.47 and 3.",
+     "expected": 1.27,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_test.E1_disatlas",
+     "ms": "entile 0.99 in the test pool and 1.27 among all diseases, against 4.47 and 3.93 for DisAtlas and 3.78 and 3.59",
+     "expected": 4.47,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_all.E1_disatlas",
+     "ms": "99 in the test pool and 1.27 among all diseases, against 4.47 and 3.93 for DisAtlas and 3.78 and 3.59 for weig",
+     "expected": 3.93,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_test.E1_wAA",
+     "ms": "d 1.27 among all diseases, against 4.47 and 3.93 for DisAtlas and 3.78 and 3.59 for weighted Adamic–Adar.] [Co",
+     "expected": 3.78,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_all.E1_wAA",
+     "ms": "ong all diseases, against 4.47 and 3.93 for DisAtlas and 3.78 and 3.59 for weighted Adamic–Adar.] [Comparing e",
+     "expected": 3.59,
+     "tol": 0.005
+    },
+    {
+     "key": "s2_test_vs_wAA.0",
+     "ms": " of the co-primary analyses (advantage over weighted Adamic–Adar +10.71, 95% CI +9.68 to +11.93; +7.05, 95% CI",
+     "expected": 10.71,
+     "tol": 0.005
+    },
+    {
+     "key": "s2_test_vs_wAA.1",
+     "ms": "ary analyses (advantage over weighted Adamic–Adar +10.71, 95% CI +9.68 to +11.93; +7.05, 95% CI +6.29 to +7.71",
+     "expected": 9.68,
+     "tol": 0.005
+    },
+    {
+     "key": "s2_test_vs_wAA.2",
+     "ms": "es (advantage over weighted Adamic–Adar +10.71, 95% CI +9.68 to +11.93; +7.05, 95% CI +6.29 to +7.71).] [Combi",
+     "expected": 11.93,
+     "tol": 0.005
+    },
+    {
+     "key": "s2_all_vs_wAA.0",
+     "ms": "antage over weighted Adamic–Adar +10.71, 95% CI +9.68 to +11.93; +7.05, 95% CI +6.29 to +7.71).] [Combining Di",
+     "expected": 7.05,
+     "tol": 0.005
+    },
+    {
+     "key": "s2_all_vs_wAA.1",
+     "ms": "ighted Adamic–Adar +10.71, 95% CI +9.68 to +11.93; +7.05, 95% CI +6.29 to +7.71).] [Combining DisAtlas with po",
+     "expected": 6.29,
+     "tol": 0.005
+    },
+    {
+     "key": "s2_all_vs_wAA.2",
+     "ms": "damic–Adar +10.71, 95% CI +9.68 to +11.93; +7.05, 95% CI +6.29 to +7.71).] [Combining DisAtlas with popularity",
+     "expected": 7.71,
+     "tol": 0.005
+    },
+    {
+     "key": "s5_test_vs_popularity.E1.0",
+     "ms": "y improves the median percentile slightly over popularity alone (+0.07, 95% CI +0.01 to +0.13; +0.40, 95% CI +",
+     "expected": 0.07,
+     "tol": 0.005
+    },
+    {
+     "key": "s5_test_vs_popularity.E1.1",
+     "ms": " median percentile slightly over popularity alone (+0.07, 95% CI +0.01 to +0.13; +0.40, 95% CI +0.35 to +0.44)",
+     "expected": 0.01,
+     "tol": 0.005
+    },
+    {
+     "key": "s5_test_vs_popularity.E1.2",
+     "ms": "ercentile slightly over popularity alone (+0.07, 95% CI +0.01 to +0.13; +0.40, 95% CI +0.35 to +0.44) but lowe",
+     "expected": 0.13,
+     "tol": 0.005
+    },
+    {
+     "key": "s5_all_vs_popularity.E1.0",
+     "ms": "ile slightly over popularity alone (+0.07, 95% CI +0.01 to +0.13; +0.40, 95% CI +0.35 to +0.44) but lowers the",
+     "expected": 0.4,
+     "tol": 0.005
+    },
+    {
+     "key": "s5_all_vs_popularity.E1.1",
+     "ms": "ver popularity alone (+0.07, 95% CI +0.01 to +0.13; +0.40, 95% CI +0.35 to +0.44) but lowers the top-10% share",
+     "expected": 0.35,
+     "tol": 0.005
+    },
+    {
+     "key": "s5_all_vs_popularity.E1.2",
+     "ms": "arity alone (+0.07, 95% CI +0.01 to +0.13; +0.40, 95% CI +0.35 to +0.44) but lowers the top-10% share (−0.010,",
+     "expected": 0.44,
+     "tol": 0.005
+    },
+    {
+     "key": "p1_all_top10_vs_wAA.1",
+     "ms": "13; +0.40, 95% CI +0.35 to +0.44) but lowers the top-10% share (−0.010, 95% CI −0.013 to −0.008; −0.007, 95% C",
+     "expected": -0.01,
+     "tol": 0.0005
+    },
+    {
+     "key": "s5_test_vs_popularity.E2.1",
+     "ms": "CI +0.35 to +0.44) but lowers the top-10% share (−0.010, 95% CI −0.013 to −0.008; −0.007, 95% CI −0.010 to −0.",
+     "expected": -0.013,
+     "tol": 0.0005
+    },
+    {
+     "key": "s5_test_vs_popularity.E2.2",
+     "ms": "o +0.44) but lowers the top-10% share (−0.010, 95% CI −0.013 to −0.008; −0.007, 95% CI −0.010 to −0.005).] [On",
+     "expected": -0.008,
+     "tol": 0.0005
+    },
+    {
+     "key": "s5_all_vs_popularity.E2.0",
+     "ms": " but lowers the top-10% share (−0.010, 95% CI −0.013 to −0.008; −0.007, 95% CI −0.010 to −0.005).] [On the top",
+     "expected": -0.007,
+     "tol": 0.0005
+    },
+    {
+     "key": "s5_all_vs_popularity.E2.2",
+     "ms": "hare (−0.010, 95% CI −0.013 to −0.008; −0.007, 95% CI −0.010 to −0.005).] [On the top-10% share, both co-prima",
+     "expected": -0.005,
+     "tol": 0.0005
+    },
+    {
+     "key": "p1_all_top10_vs_wAA.0",
+     "ms": "hted-degree groups among all diseases, where the two are level (+0.001, 95% CI −0.010 to +0.011); among all di",
+     "expected": 0.001,
+     "tol": 0.0005
+    },
+    {
+     "key": "p1_all_top10_vs_wAA.2",
+     "ms": "all diseases, where the two are level (+0.001, 95% CI −0.010 to +0.011); among all diseases, shared-gene simil",
+     "expected": 0.011,
+     "tol": 0.0005
+    },
+    {
+     "key": "prec_s4_test_mean_pct.popularity",
+     "ms": "d weighted Adamic–Adar have higher mean precision than DisAtlas (0.80% and 0.59% against 0.57% in the test poo",
+     "expected": 0.8,
+     "tol": 0.005
+    },
+    {
+     "key": "prec_s4_test_mean_pct.wAA",
+     "ms": " Adamic–Adar have higher mean precision than DisAtlas (0.80% and 0.59% against 0.57% in the test pool; 0.51% a",
+     "expected": 0.59,
+     "tol": 0.005
+    },
+    {
+     "key": "prec_s4_test_mean_pct.disatlas",
+     "ms": "ave higher mean precision than DisAtlas (0.80% and 0.59% against 0.57% in the test pool; 0.51% and 0.38% again",
+     "expected": 0.57,
+     "tol": 0.005
+    },
+    {
+     "key": "prec_s4_all_mean_pct.popularity",
+     "ms": "n than DisAtlas (0.80% and 0.59% against 0.57% in the test pool; 0.51% and 0.38% against 0.37% among all disea",
+     "expected": 0.51,
+     "tol": 0.005
+    },
+    {
+     "key": "prec_s4_all_mean_pct.wAA",
+     "ms": "sAtlas (0.80% and 0.59% against 0.57% in the test pool; 0.51% and 0.38% against 0.37% among all diseases), and",
+     "expected": 0.38,
+     "tol": 0.005
+    },
+    {
+     "key": "prec_s4_all_mean_pct.disatlas",
+     "ms": "nd 0.59% against 0.57% in the test pool; 0.51% and 0.38% against 0.37% among all diseases), and within popular",
+     "expected": 0.37,
+     "tol": 0.005
+    },
+    {
+     "key": "prec_s3_test_mean_pct.disatlas",
+     "ms": " within popularity groups DisAtlas has the higher mean precision (9.91% against 8.37% for popularity and 8.42%",
+     "expected": 9.91,
+     "tol": 0.005
+    },
+    {
+     "key": "prec_s3_test_mean_pct.popularity",
+     "ms": "ity groups DisAtlas has the higher mean precision (9.91% against 8.37% for popularity and 8.42% for weighted A",
+     "expected": 8.37,
+     "tol": 0.005
+    },
+    {
+     "key": "prec_s3_test_mean_pct.wAA",
+     "ms": "he higher mean precision (9.91% against 8.37% for popularity and 8.42% for weighted Adamic–Adar in the test po",
+     "expected": 8.42,
+     "tol": 0.005
+    },
+    {
+     "key": "prec_s3_all_mean_pct.disatlas",
+     "ms": " popularity and 8.42% for weighted Adamic–Adar in the test pool; 5.50% against 4.45% and 4.68% among all disea",
+     "expected": 5.5,
+     "tol": 0.005
+    },
+    {
+     "key": "prec_s3_all_mean_pct.popularity",
+     "ms": "arity and 8.42% for weighted Adamic–Adar in the test pool; 5.50% against 4.45% and 4.68% among all diseases).]",
+     "expected": 4.45,
+     "tol": 0.005
+    },
+    {
+     "key": "prec_s3_all_mean_pct.wAA",
+     "ms": "ty and 8.42% for weighted Adamic–Adar in the test pool; 5.50% against 4.45% and 4.68% among all diseases).]",
+     "expected": 4.68,
+     "tol": 0.005
+    }
+   ]
+  },
+  {
+   "label": "SI_et_seeds",
+   "script": "figures/SI/si_event_time_numbers.py",
+   "numbers": "figures/SI/SI_event_time_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "seeds_pct_p1_test.seed_min",
+     "ms": "degree groups, each seed alone gives a median percentile between 24.24 and 25.00 in the test pool (five-seed e",
+     "expected": 24.24,
+     "tol": 0.005
+    },
+    {
+     "key": "seeds_pct_p1_test.seed_max",
+     "ms": "ups, each seed alone gives a median percentile between 24.24 and 25.00 in the test pool (five-seed ensemble 24",
+     "expected": 25.0,
+     "tol": 0.005
+    },
+    {
+     "key": "seeds_pct_p1_test.ens5",
+     "ms": "ile between 24.24 and 25.00 in the test pool (five-seed ensemble 24.00; weighted Adamic–Adar 31.03) and betwee",
+     "expected": 24.0,
+     "tol": 0.005
+    },
+    {
+     "key": "seeds_pct_p1_test.wAA",
+     "ms": " in the test pool (five-seed ensemble 24.00; weighted Adamic–Adar 31.03) and between 22.73 and 23.81 among all",
+     "expected": 31.03,
+     "tol": 0.005
+    },
+    {
+     "key": "seeds_pct_p1_all.seed_min",
+     "ms": "five-seed ensemble 24.00; weighted Adamic–Adar 31.03) and between 22.73 and 23.81 among all diseases (ensemble",
+     "expected": 22.73,
+     "tol": 0.005
+    },
+    {
+     "key": "seeds_pct_p1_all.seed_max",
+     "ms": "nsemble 24.00; weighted Adamic–Adar 31.03) and between 22.73 and 23.81 among all diseases (ensemble 22.45; wei",
+     "expected": 23.81,
+     "tol": 0.005
+    },
+    {
+     "key": "seeds_pct_p1_all.ens5",
+     "ms": "r 31.03) and between 22.73 and 23.81 among all diseases (ensemble 22.45; weighted Adamic–Adar 26.00).] [Within",
+     "expected": 22.45,
+     "tol": 0.005
+    },
+    {
+     "key": "seeds_pct_p1_all.wAA",
+     "ms": "nd 23.81 among all diseases (ensemble 22.45; weighted Adamic–Adar 26.00).] [Within popularity groups the seeds",
+     "expected": 26.0,
+     "tol": 0.005
+    },
+    {
+     "key": "seeds_pct_s3_test.seed_min",
+     "ms": "ed Adamic–Adar 26.00).] [Within popularity groups the seeds give 24.65–25.31 (average 24.68; weighted Adamic–A",
+     "expected": 24.65,
+     "tol": 0.005
+    },
+    {
+     "key": "seeds_pct_s3_test.seed_max",
+     "ms": "mic–Adar 26.00).] [Within popularity groups the seeds give 24.65–25.31 (average 24.68; weighted Adamic–Adar 33",
+     "expected": 25.31,
+     "tol": 0.005
+    },
+    {
+     "key": "seeds_pct_s3_test.ens5",
+     "ms": ".] [Within popularity groups the seeds give 24.65–25.31 (average 24.68; weighted Adamic–Adar 33.78) and 22.07–",
+     "expected": 24.68,
+     "tol": 0.005
+    },
+    {
+     "key": "seeds_pct_s3_test.wAA",
+     "ms": " the seeds give 24.65–25.31 (average 24.68; weighted Adamic–Adar 33.78) and 22.07–22.87 (average 21.72; weight",
+     "expected": 33.78,
+     "tol": 0.005
+    },
+    {
+     "key": "seeds_pct_s3_all.seed_min",
+     "ms": "give 24.65–25.31 (average 24.68; weighted Adamic–Adar 33.78) and 22.07–22.87 (average 21.72; weighted Adamic–A",
+     "expected": 22.07,
+     "tol": 0.005
+    },
+    {
+     "key": "seeds_pct_s3_all.seed_max",
+     "ms": "4.65–25.31 (average 24.68; weighted Adamic–Adar 33.78) and 22.07–22.87 (average 21.72; weighted Adamic–Adar 30",
+     "expected": 22.87,
+     "tol": 0.005
+    },
+    {
+     "key": "seeds_pct_s3_all.ens5",
+     "ms": "rage 24.68; weighted Adamic–Adar 33.78) and 22.07–22.87 (average 21.72; weighted Adamic–Adar 30.19).] [With no",
+     "expected": 21.72,
+     "tol": 0.005
+    },
+    {
+     "key": "seeds_pct_s3_all.wAA",
+     "ms": "Adar 33.78) and 22.07–22.87 (average 21.72; weighted Adamic–Adar 30.19).] [With no grouping the seeds give 4.6",
+     "expected": 30.19,
+     "tol": 0.005
+    },
+    {
+     "key": "seeds_pct_s4_test.seed_min",
+     "ms": "2; weighted Adamic–Adar 30.19).] [With no grouping the seeds give 4.63–4.76 and 4.14–4.26, against 3.78 and 3.",
+     "expected": 4.63,
+     "tol": 0.005
+    },
+    {
+     "key": "seeds_pct_s4_test.seed_max",
+     "ms": "ighted Adamic–Adar 30.19).] [With no grouping the seeds give 4.63–4.76 and 4.14–4.26, against 3.78 and 3.59 fo",
+     "expected": 4.76,
+     "tol": 0.005
+    },
+    {
+     "key": "seeds_pct_s4_all.seed_min",
+     "ms": "amic–Adar 30.19).] [With no grouping the seeds give 4.63–4.76 and 4.14–4.26, against 3.78 and 3.59 for weighte",
+     "expected": 4.14,
+     "tol": 0.005
+    },
+    {
+     "key": "seeds_pct_s4_all.seed_max",
+     "ms": "Adar 30.19).] [With no grouping the seeds give 4.63–4.76 and 4.14–4.26, against 3.78 and 3.59 for weighted Ada",
+     "expected": 4.26,
+     "tol": 0.005
+    },
+    {
+     "key": "seeds_pct_s4_test.wAA",
+     "ms": "[With no grouping the seeds give 4.63–4.76 and 4.14–4.26, against 3.78 and 3.59 for weighted Adamic–Adar and 0",
+     "expected": 3.78,
+     "tol": 0.005
+    },
+    {
+     "key": "seeds_pct_s4_all.wAA",
+     "ms": "grouping the seeds give 4.63–4.76 and 4.14–4.26, against 3.78 and 3.59 for weighted Adamic–Adar and 0.99 and 1",
+     "expected": 3.59,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_test.E1_popularity",
+     "ms": " and 4.14–4.26, against 3.78 and 3.59 for weighted Adamic–Adar and 0.99 and 1.27 for popularity, so every seed",
+     "expected": 0.99,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_all.E1_popularity",
+     "ms": "4.26, against 3.78 and 3.59 for weighted Adamic–Adar and 0.99 and 1.27 for popularity, so every seed gives the",
+     "expected": 1.27,
+     "tol": 0.005
+    }
+   ]
+  },
+  {
+   "label": "SI_et_subsets",
+   "script": "figures/SI/si_event_time_numbers.py",
+   "numbers": "figures/SI/SI_event_time_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "subset_pooled_excl_2020_2021_test.pct_p1.0",
+     "ms": "ighted Adamic–Adar within popularity × weighted-degree groups is +6.65 (95% CI +5.69 to +7.56) in the test poo",
+     "expected": 6.65,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_test.pct_p1.1",
+     "ms": "Adar within popularity × weighted-degree groups is +6.65 (95% CI +5.69 to +7.56) in the test pool and +5.05 (9",
+     "expected": 5.69,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_test.pct_p1.2",
+     "ms": "in popularity × weighted-degree groups is +6.65 (95% CI +5.69 to +7.56) in the test pool and +5.05 (95% CI +4.",
+     "expected": 7.56,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_test_vs_hpo.pct_s4.0",
+     "ms": "ree groups is +6.65 (95% CI +5.69 to +7.56) in the test pool and +5.05 (95% CI +4.36 to +5.62) among all disea",
+     "expected": 5.05,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_all.pct_p1.1",
+     "ms": "+6.65 (95% CI +5.69 to +7.56) in the test pool and +5.05 (95% CI +4.36 to +5.62) among all diseases; with no g",
+     "expected": 4.36,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_all.pct_p1.2",
+     "ms": "% CI +5.69 to +7.56) in the test pool and +5.05 (95% CI +4.36 to +5.62) among all diseases; with no grouping w",
+     "expected": 5.62,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_test.pct_s4.0",
+     "ms": "all diseases; with no grouping weighted Adamic–Adar stays ahead (−0.86, 95% CI −1.02 to −0.65; −0.31, 95% CI −",
+     "expected": -0.86,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_test.pct_s4.1",
+     "ms": "with no grouping weighted Adamic–Adar stays ahead (−0.86, 95% CI −1.02 to −0.65; −0.31, 95% CI −0.45 to −0.17)",
+     "expected": -1.02,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_test.pct_s4.2",
+     "ms": "rouping weighted Adamic–Adar stays ahead (−0.86, 95% CI −1.02 to −0.65; −0.31, 95% CI −0.45 to −0.17) ([Supple",
+     "expected": -0.65,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_all.pct_s4.0",
+     "ms": " weighted Adamic–Adar stays ahead (−0.86, 95% CI −1.02 to −0.65; −0.31, 95% CI −0.45 to −0.17) ([Supplementary",
+     "expected": -0.31,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_all.pct_s4.1",
+     "ms": "ic–Adar stays ahead (−0.86, 95% CI −1.02 to −0.65; −0.31, 95% CI −0.45 to −0.17) ([Supplementary Table ]).] [F",
+     "expected": -0.45,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_all.pct_s4.2",
+     "ms": "tays ahead (−0.86, 95% CI −1.02 to −0.65; −0.31, 95% CI −0.45 to −0.17) ([Supplementary Table ]).] [For drug-y",
+     "expected": -0.17,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_test.pct_p1.0",
+     "ms": "arity × weighted-degree groups favour DisAtlas in the test pool (+2.59, 95% CI +2.05 to +3.81) and show no dif",
+     "expected": 2.59,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_test.pct_p1.1",
+     "ms": "ted-degree groups favour DisAtlas in the test pool (+2.59, 95% CI +2.05 to +3.81) and show no difference among",
+     "expected": 2.05,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_test.pct_p1.2",
+     "ms": " groups favour DisAtlas in the test pool (+2.59, 95% CI +2.05 to +3.81) and show no difference among all disea",
+     "expected": 3.81,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_all.pct_p1.0",
+     "ms": "5% CI +2.05 to +3.81) and show no difference among all diseases (−0.04, 95% CI −0.89 to +0.75); popularity gro",
+     "expected": -0.04,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_all.pct_p1.1",
+     "ms": " +3.81) and show no difference among all diseases (−0.04, 95% CI −0.89 to +0.75); popularity groups favour Dis",
+     "expected": -0.89,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_all.pct_p1.2",
+     "ms": "and show no difference among all diseases (−0.04, 95% CI −0.89 to +0.75); popularity groups favour DisAtlas in",
+     "expected": 0.75,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_test.pct_s3.0",
+     "ms": "0.89 to +0.75); popularity groups favour DisAtlas in both pools (+2.28, 95% CI +1.41 to +3.34; +3.34, 95% CI +",
+     "expected": 2.28,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_test.pct_s3.1",
+     "ms": "; popularity groups favour DisAtlas in both pools (+2.28, 95% CI +1.41 to +3.34; +3.34, 95% CI +2.38 to +4.26)",
+     "expected": 1.41,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_all.pct_s3.0",
+     "ms": "rity groups favour DisAtlas in both pools (+2.28, 95% CI +1.41 to +3.34; +3.34, 95% CI +2.38 to +4.26), and no",
+     "expected": 3.34,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_all.pct_s3.1",
+     "ms": "Atlas in both pools (+2.28, 95% CI +1.41 to +3.34; +3.34, 95% CI +2.38 to +4.26), and no grouping favours weig",
+     "expected": 2.38,
+     "tol": 0.005
+    },
+    {
+     "key": "seeds_pct_s4_all.seed_max",
+     "ms": "both pools (+2.28, 95% CI +1.41 to +3.34; +3.34, 95% CI +2.38 to +4.26), and no grouping favours weighted Adam",
+     "expected": 4.26,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_test.pct_s4.0",
+     "ms": "I +2.38 to +4.26), and no grouping favours weighted Adamic–Adar (−1.70, 95% CI −1.93 to −1.46; −0.77, 95% CI −",
+     "expected": -1.7,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_test.pct_s4.1",
+     "ms": "26), and no grouping favours weighted Adamic–Adar (−1.70, 95% CI −1.93 to −1.46; −0.77, 95% CI −0.96 to −0.62)",
+     "expected": -1.93,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_test.pct_s4.2",
+     "ms": "no grouping favours weighted Adamic–Adar (−1.70, 95% CI −1.93 to −1.46; −0.77, 95% CI −0.96 to −0.62).] [Among",
+     "expected": -1.46,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_all.pct_s4.0",
+     "ms": "ping favours weighted Adamic–Adar (−1.70, 95% CI −1.93 to −1.46; −0.77, 95% CI −0.96 to −0.62).] [Among all di",
+     "expected": -0.77,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_all.pct_s4.1",
+     "ms": "eighted Adamic–Adar (−1.70, 95% CI −1.93 to −1.46; −0.77, 95% CI −0.96 to −0.62).] [Among all diseases, unweig",
+     "expected": -0.96,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_all.pct_s4.2",
+     "ms": "damic–Adar (−1.70, 95% CI −1.93 to −1.46; −0.77, 95% CI −0.96 to −0.62).] [Among all diseases, unweighted Adam",
+     "expected": -0.62,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_single_event_all_AA_p1.0",
+     "ms": "Atlas within popularity × weighted-degree groups in this subset (−2.58, 95% CI −3.16 to −1.59).] [For new dise",
+     "expected": -2.58,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_single_event_all_AA_p1.1",
+     "ms": "opularity × weighted-degree groups in this subset (−2.58, 95% CI −3.16 to −1.59).] [For new diseases that shar",
+     "expected": -3.16,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_single_event_all_AA_p1.2",
+     "ms": " × weighted-degree groups in this subset (−2.58, 95% CI −3.16 to −1.59).] [For new diseases that share no Mech",
+     "expected": -1.59,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_test.pct_p1.0",
+     "ms": "set, including no grouping (popularity × weighted-degree groups +30.79, 95% CI +22.25 to +34.69; +26.84, 95% C",
+     "expected": 30.79,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_test.pct_p1.1",
+     "ms": "no grouping (popularity × weighted-degree groups +30.79, 95% CI +22.25 to +34.69; +26.84, 95% CI +19.71 to +31",
+     "expected": 22.25,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_test.pct_p1.2",
+     "ms": "g (popularity × weighted-degree groups +30.79, 95% CI +22.25 to +34.69; +26.84, 95% CI +19.71 to +31.35; no gr",
+     "expected": 34.69,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_all.pct_p1.0",
+     "ms": "arity × weighted-degree groups +30.79, 95% CI +22.25 to +34.69; +26.84, 95% CI +19.71 to +31.35; no grouping +",
+     "expected": 26.84,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_all.pct_p1.1",
+     "ms": "d-degree groups +30.79, 95% CI +22.25 to +34.69; +26.84, 95% CI +19.71 to +31.35; no grouping +14.12, 95% CI +",
+     "expected": 19.71,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_all.pct_p1.2",
+     "ms": "roups +30.79, 95% CI +22.25 to +34.69; +26.84, 95% CI +19.71 to +31.35; no grouping +14.12, 95% CI +2.94 to +2",
+     "expected": 31.35,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_test.pct_s4.0",
+     "ms": " +22.25 to +34.69; +26.84, 95% CI +19.71 to +31.35; no grouping +14.12, 95% CI +2.94 to +23.93; +12.69, 95% CI",
+     "expected": 14.12,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_test.pct_s4.1",
+     "ms": ".69; +26.84, 95% CI +19.71 to +31.35; no grouping +14.12, 95% CI +2.94 to +23.93; +12.69, 95% CI +3.03 to +21.",
+     "expected": 2.94,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_test.pct_s4.2",
+     "ms": "4, 95% CI +19.71 to +31.35; no grouping +14.12, 95% CI +2.94 to +23.93; +12.69, 95% CI +3.03 to +21.43); for t",
+     "expected": 23.93,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_all.pct_s4.0",
+     "ms": "I +19.71 to +31.35; no grouping +14.12, 95% CI +2.94 to +23.93; +12.69, 95% CI +3.03 to +21.43); for the other",
+     "expected": 12.69,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_all.pct_s4.1",
+     "ms": "31.35; no grouping +14.12, 95% CI +2.94 to +23.93; +12.69, 95% CI +3.03 to +21.43); for the other new diseases",
+     "expected": 3.03,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_all.pct_s4.2",
+     "ms": "rouping +14.12, 95% CI +2.94 to +23.93; +12.69, 95% CI +3.03 to +21.43); for the other new diseases the result",
+     "expected": 21.43,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_pos_test.pct_s4.0",
+     "ms": "er new diseases the results match the main analysis (no grouping −0.67, 95% CI −0.84 to −0.50; −0.34, 95% CI −",
+     "expected": -0.67,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_test.vs_wAA.1",
+     "ms": "s the results match the main analysis (no grouping −0.67, 95% CI −0.84 to −0.50; −0.34, 95% CI −0.46 to −0.21)",
+     "expected": -0.84,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_pos_test.pct_s4.2",
+     "ms": "ults match the main analysis (no grouping −0.67, 95% CI −0.84 to −0.50; −0.34, 95% CI −0.46 to −0.21).] [In th",
+     "expected": -0.5,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_all.vs_wAA.0",
+     "ms": "tch the main analysis (no grouping −0.67, 95% CI −0.84 to −0.50; −0.34, 95% CI −0.46 to −0.21).] [In the subse",
+     "expected": -0.34,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_pos_all.pct_s4.1",
+     "ms": "nalysis (no grouping −0.67, 95% CI −0.84 to −0.50; −0.34, 95% CI −0.46 to −0.21).] [In the subset without a sh",
+     "expected": -0.46,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_pos_all.pct_s4.2",
+     "ms": "no grouping −0.67, 95% CI −0.84 to −0.50; −0.34, 95% CI −0.46 to −0.21).] [In the subset without a shared neig",
+     "expected": -0.21,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_aa_zero_test_p1.popularity.0",
+     "ms": "ools (popularity × weighted-degree groups, test pool: popularity −22.61, 95% CI −41.83 to −16.11; shared genes",
+     "expected": -22.61,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_aa_zero_test_p1.popularity.1",
+     "ms": " × weighted-degree groups, test pool: popularity −22.61, 95% CI −41.83 to −16.11; shared genes −9.29, 95% CI −",
+     "expected": -41.83,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_aa_zero_test_p1.popularity.2",
+     "ms": "d-degree groups, test pool: popularity −22.61, 95% CI −41.83 to −16.11; shared genes −9.29, 95% CI −16.87 to −",
+     "expected": -16.11,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_aa_zero_test_p1.gene_jaccard.0",
+     "ms": "t pool: popularity −22.61, 95% CI −41.83 to −16.11; shared genes −9.29, 95% CI −16.87 to −5.27; HPO −10.15, 95",
+     "expected": -9.29,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_aa_zero_test_p1.gene_jaccard.1",
+     "ms": "rity −22.61, 95% CI −41.83 to −16.11; shared genes −9.29, 95% CI −16.87 to −5.27; HPO −10.15, 95% CI −18.15 to",
+     "expected": -16.87,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_aa_zero_test_p1.gene_jaccard.2",
+     "ms": "1, 95% CI −41.83 to −16.11; shared genes −9.29, 95% CI −16.87 to −5.27; HPO −10.15, 95% CI −18.15 to −6.70; al",
+     "expected": -5.27,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_aa_zero_test_p1.hpo_simgic.0",
+     "ms": "1.83 to −16.11; shared genes −9.29, 95% CI −16.87 to −5.27; HPO −10.15, 95% CI −18.15 to −6.70; all comparison",
+     "expected": -10.15,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_aa_zero_test_p1.hpo_simgic.1",
+     "ms": " shared genes −9.29, 95% CI −16.87 to −5.27; HPO −10.15, 95% CI −18.15 to −6.70; all comparison sets in [Suppl",
+     "expected": -18.15,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_aa_zero_test_p1.hpo_simgic.2",
+     "ms": "genes −9.29, 95% CI −16.87 to −5.27; HPO −10.15, 95% CI −18.15 to −6.70; all comparison sets in [Supplementary",
+     "expected": -6.7,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_test.pct_p1.0",
+     "ms": "ghted Adamic–Adar within popularity × weighted-degree groups is +11.64 (95% CI +10.72 to +12.96) and +6.52 (95",
+     "expected": 11.64,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_test.pct_p1.1",
+     "ms": "ar within popularity × weighted-degree groups is +11.64 (95% CI +10.72 to +12.96) and +6.52 (95% CI +5.69 to +",
+     "expected": 10.72,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_test.pct_p1.2",
+     "ms": "popularity × weighted-degree groups is +11.64 (95% CI +10.72 to +12.96) and +6.52 (95% CI +5.69 to +7.44), and",
+     "expected": 12.96,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_all.pct_p1.0",
+     "ms": "× weighted-degree groups is +11.64 (95% CI +10.72 to +12.96) and +6.52 (95% CI +5.69 to +7.44), and with no gr",
+     "expected": 6.52,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_all.pct_p1.2",
+     "ms": "s is +11.64 (95% CI +10.72 to +12.96) and +6.52 (95% CI +5.69 to +7.44), and with no grouping DisAtlas and wei",
+     "expected": 7.44,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_test.pct_s4.0",
+     "ms": "ith no grouping DisAtlas and weighted Adamic–Adar do not differ (−0.09, 95% CI −0.33 to +0.18; −0.22, 95% CI −",
+     "expected": -0.09,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_test.pct_s4.1",
+     "ms": "g DisAtlas and weighted Adamic–Adar do not differ (−0.09, 95% CI −0.33 to +0.18; −0.22, 95% CI −0.45 to 0.00).",
+     "expected": -0.33,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_test.pct_s4.2",
+     "ms": "s and weighted Adamic–Adar do not differ (−0.09, 95% CI −0.33 to +0.18; −0.22, 95% CI −0.45 to 0.00).] [On the",
+     "expected": 0.18,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_all.pct_s4.0",
+     "ms": "eighted Adamic–Adar do not differ (−0.09, 95% CI −0.33 to +0.18; −0.22, 95% CI −0.45 to 0.00).] [On these dise",
+     "expected": -0.22,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_all.pct_s4.1",
+     "ms": "–Adar do not differ (−0.09, 95% CI −0.33 to +0.18; −0.22, 95% CI −0.45 to 0.00).] [On these diseases HPO pheno",
+     "expected": -0.45,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_all.pct_s4.2",
+     "ms": " not differ (−0.09, 95% CI −0.33 to +0.18; −0.22, 95% CI −0.45 to 0.00).] [On these diseases HPO phenotype sim",
+     "expected": 0.0,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_test_vs_hpo.pct_p1.0",
+     "ms": "ials above DisAtlas within popularity × weighted-degree groups (−10.69, 95% CI −11.50 to −9.74 in the test poo",
+     "expected": -10.69,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_test_vs_hpo.pct_p1.1",
+     "ms": "tlas within popularity × weighted-degree groups (−10.69, 95% CI −11.50 to −9.74 in the test pool and −12.50, 9",
+     "expected": -11.5,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_test_vs_hpo.pct_p1.2",
+     "ms": "in popularity × weighted-degree groups (−10.69, 95% CI −11.50 to −9.74 in the test pool and −12.50, 95% CI −13",
+     "expected": -9.74,
+     "tol": 0.005
+    },
+    {
+     "key": "year_2020_pct_s3_all.1",
+     "ms": "ree groups (−10.69, 95% CI −11.50 to −9.74 in the test pool and −12.50, 95% CI −13.27 to −11.60 among all dise",
+     "expected": -12.5,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_all_vs_hpo.pct_p1.1",
+     "ms": ".69, 95% CI −11.50 to −9.74 in the test pool and −12.50, 95% CI −13.27 to −11.60 among all diseases) and withi",
+     "expected": -13.27,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_all_vs_hpo.pct_p1.2",
+     "ms": "I −11.50 to −9.74 in the test pool and −12.50, 95% CI −13.27 to −11.60 among all diseases) and within populari",
+     "expected": -11.6,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_test_vs_hpo.pct_s3.0",
+     "ms": "13.27 to −11.60 among all diseases) and within popularity groups (−9.92, 95% CI −10.91 to −8.81; −9.83, 95% CI",
+     "expected": -9.92,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_test_vs_hpo.pct_s3.1",
+     "ms": "among all diseases) and within popularity groups (−9.92, 95% CI −10.91 to −8.81; −9.83, 95% CI −10.66 to −9.13",
+     "expected": -10.91,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_test_vs_hpo.pct_s3.2",
+     "ms": " diseases) and within popularity groups (−9.92, 95% CI −10.91 to −8.81; −9.83, 95% CI −10.66 to −9.13), and be",
+     "expected": -8.81,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_all_vs_hpo.pct_s3.0",
+     "ms": "es) and within popularity groups (−9.92, 95% CI −10.91 to −8.81; −9.83, 95% CI −10.66 to −9.13), and below Dis",
+     "expected": -9.83,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_all_vs_hpo.pct_s3.1",
+     "ms": "popularity groups (−9.92, 95% CI −10.91 to −8.81; −9.83, 95% CI −10.66 to −9.13), and below DisAtlas with no g",
+     "expected": -10.66,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_all_vs_hpo.pct_s3.2",
+     "ms": "y groups (−9.92, 95% CI −10.91 to −8.81; −9.83, 95% CI −10.66 to −9.13), and below DisAtlas with no grouping (",
+     "expected": -9.13,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_test_vs_hpo.pct_s4.1",
+     "ms": "66 to −9.13), and below DisAtlas with no grouping (+5.05, 95% CI +4.43 to +5.84; +4.93, 95% CI +4.38 to +5.47)",
+     "expected": 4.43,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_test_vs_hpo.pct_s4.2",
+     "ms": ".13), and below DisAtlas with no grouping (+5.05, 95% CI +4.43 to +5.84; +4.93, 95% CI +4.38 to +5.47).] [Year",
+     "expected": 5.84,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_all_vs_hpo.pct_s4.0",
+     "ms": "d below DisAtlas with no grouping (+5.05, 95% CI +4.43 to +5.84; +4.93, 95% CI +4.38 to +5.47).] [Year by year",
+     "expected": 4.93,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_all_vs_hpo.pct_s4.1",
+     "ms": "as with no grouping (+5.05, 95% CI +4.43 to +5.84; +4.93, 95% CI +4.38 to +5.47).] [Year by year, popularity ×",
+     "expected": 4.38,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_all_vs_hpo.pct_s4.2",
+     "ms": "o grouping (+5.05, 95% CI +4.43 to +5.84; +4.93, 95% CI +4.38 to +5.47).] [Year by year, popularity × weighted",
+     "expected": 5.47,
+     "tol": 0.005
+    },
+    {
+     "key": "years_pct_p1_test.favour",
+     "ms": "ear by year, popularity × weighted-degree groups favour DisAtlas in 19 of the 25 decision years in the test po",
+     "expected": 19
+    },
+    {
+     "key": "years_pct_p1_test.n",
+     "ms": "r, popularity × weighted-degree groups favour DisAtlas in 19 of the 25 decision years in the test pool, with n",
+     "expected": 25
+    },
+    {
+     "key": "years_pct_p1_test.includes0",
+     "ms": "rs in the test pool, with no year favouring weighted Adamic–Adar and 6 years in which the interval includes ze",
+     "expected": 6
+    },
+    {
+     "key": "years_pct_p1_all.favour",
+     "ms": "nd 6 years in which the interval includes zero; among all diseases, 19 years favour DisAtlas, 5 include zero a",
+     "expected": 19
+    },
+    {
+     "key": "years_pct_p1_all.includes0",
+     "ms": "nterval includes zero; among all diseases, 19 years favour DisAtlas, 5 include zero and one, 2020, favours wei",
+     "expected": 5
+    },
+    {
+     "key": "year_2020_pct_p1_all.0",
+     "ms": "las, 5 include zero and one, 2020, favours weighted Adamic–Adar (−8.57, 95% CI −10.81 to −6.61).] [Within popu",
+     "expected": -8.57,
+     "tol": 0.005
+    },
+    {
+     "key": "year_2020_pct_p1_all.1",
+     "ms": "zero and one, 2020, favours weighted Adamic–Adar (−8.57, 95% CI −10.81 to −6.61).] [Within popularity groups t",
+     "expected": -10.81,
+     "tol": 0.005
+    },
+    {
+     "key": "year_2020_pct_p1_all.2",
+     "ms": "one, 2020, favours weighted Adamic–Adar (−8.57, 95% CI −10.81 to −6.61).] [Within popularity groups the counts",
+     "expected": -6.61,
+     "tol": 0.005
+    },
+    {
+     "key": "years_pct_s3_test.favour",
+     "ms": "95% CI −10.81 to −6.61).] [Within popularity groups the counts are 20, 0 and 5 in the test pool and 22, 1 (202",
+     "expected": 20
+    },
+    {
+     "key": "year_1996_pct_s3_test.0",
+     "ms": "% CI −10.81 to −6.61).] [Within popularity groups the counts are 20, 0 and 5 in the test pool and 22, 1 (2020;",
+     "expected": 0.0,
+     "tol": 0.5
+    },
+    {
+     "key": "years_pct_s3_test.includes0",
+     "ms": "10.81 to −6.61).] [Within popularity groups the counts are 20, 0 and 5 in the test pool and 22, 1 (2020; −10.0",
+     "expected": 5
+    },
+    {
+     "key": "years_pct_s3_all.favour",
+     "ms": " popularity groups the counts are 20, 0 and 5 in the test pool and 22, 1 (2020; −10.05, 95% CI −12.50 to −8.12",
+     "expected": 22
+    },
+    {
+     "key": "s5_test_vs_popularity.E1.1",
+     "ms": "popularity groups the counts are 20, 0 and 5 in the test pool and 22, 1 (2020; −10.05, 95% CI −12.50 to −8.12)",
+     "expected": 0.01,
+     "tol": 0.005
+    },
+    {
+     "key": "year_2020_pct_s3_all.0",
+     "ms": "ps the counts are 20, 0 and 5 in the test pool and 22, 1 (2020; −10.05, 95% CI −12.50 to −8.12) and 2 among al",
+     "expected": -10.05,
+     "tol": 0.005
+    },
+    {
+     "key": "year_2020_pct_s3_all.2",
+     "ms": " and 5 in the test pool and 22, 1 (2020; −10.05, 95% CI −12.50 to −8.12) and 2 among all diseases; in the test",
+     "expected": -8.12,
+     "tol": 0.005
+    },
+    {
+     "key": "years_pct_s3_all.includes0",
+     "ms": "n the test pool and 22, 1 (2020; −10.05, 95% CI −12.50 to −8.12) and 2 among all diseases; in the test pool, 2",
+     "expected": 2
+    },
+    {
+     "key": "year_2020_pct_p1_test.0",
+     "ms": "pool, 2020 favours DisAtlas (popularity × weighted-degree groups +8.00, 95% CI +5.55 to +10.12; popularity gro",
+     "expected": 8.0,
+     "tol": 0.005
+    },
+    {
+     "key": "year_2020_pct_p1_test.1",
+     "ms": "ours DisAtlas (popularity × weighted-degree groups +8.00, 95% CI +5.55 to +10.12; popularity groups +11.02, 95",
+     "expected": 5.55,
+     "tol": 0.005
+    },
+    {
+     "key": "year_2020_pct_p1_test.2",
+     "ms": "las (popularity × weighted-degree groups +8.00, 95% CI +5.55 to +10.12; popularity groups +11.02, 95% CI +8.05",
+     "expected": 10.12,
+     "tol": 0.005
+    },
+    {
+     "key": "year_2020_pct_s3_test.0",
+     "ms": "-degree groups +8.00, 95% CI +5.55 to +10.12; popularity groups +11.02, 95% CI +8.05 to +12.84).] [In a post h",
+     "expected": 11.02,
+     "tol": 0.005
+    },
+    {
+     "key": "year_2020_pct_s3_test.1",
+     "ms": " +8.00, 95% CI +5.55 to +10.12; popularity groups +11.02, 95% CI +8.05 to +12.84).] [In a post hoc, explorator",
+     "expected": 8.05,
+     "tol": 0.005
+    },
+    {
+     "key": "year_2020_pct_s3_test.2",
+     "ms": "% CI +5.55 to +10.12; popularity groups +11.02, 95% CI +8.05 to +12.84).] [In a post hoc, exploratory check, 8",
+     "expected": 12.84,
+     "tol": 0.005
+    },
+    {
+     "key": "posthoc_2020_all.n_events_covid",
+     "ms": "1.02, 95% CI +8.05 to +12.84).] [In a post hoc, exploratory check, 883 of the 6,108 new trials among all disea",
+     "expected": 883
+    },
+    {
+     "key": "posthoc_2020_all.n_events",
+     "ms": "+8.05 to +12.84).] [In a post hoc, exploratory check, 883 of the 6,108 new trials among all diseases in 2020 w",
+     "expected": 6108
+    },
+    {
+     "key": "posthoc_2020_all_excl_covid_diseases_narrow_pct_p1.0",
+     "ms": "VID-19, which is not a test-pool disease; leaving them out gives +8.03 (95% CI +6.25 to +9.84) within populari",
+     "expected": 8.03,
+     "tol": 0.005
+    },
+    {
+     "key": "posthoc_2020_all_excl_covid_diseases_narrow_pct_p1.1",
+     "ms": "is not a test-pool disease; leaving them out gives +8.03 (95% CI +6.25 to +9.84) within popularity × weighted-",
+     "expected": 6.25,
+     "tol": 0.005
+    },
+    {
+     "key": "posthoc_2020_all_excl_covid_diseases_narrow_pct_p1.2",
+     "ms": "test-pool disease; leaving them out gives +8.03 (95% CI +6.25 to +9.84) within popularity × weighted-degree gr",
+     "expected": 9.84,
+     "tol": 0.005
+    },
+    {
+     "key": "posthoc_2020_all_excl_covid_diseases_narrow_pct_s3.0",
+     "ms": " +6.25 to +9.84) within popularity × weighted-degree groups and +10.35 (95% CI +8.40 to +12.67) within popular",
+     "expected": 10.35,
+     "tol": 0.005
+    },
+    {
+     "key": "posthoc_2020_all_excl_covid_diseases_narrow_pct_s3.1",
+     "ms": "4) within popularity × weighted-degree groups and +10.35 (95% CI +8.40 to +12.67) within popularity groups for",
+     "expected": 8.4,
+     "tol": 0.005
+    },
+    {
+     "key": "posthoc_2020_all_excl_covid_diseases_narrow_pct_s3.2",
+     "ms": "popularity × weighted-degree groups and +10.35 (95% CI +8.40 to +12.67) within popularity groups for that year",
+     "expected": 12.67,
+     "tol": 0.005
+    },
+    {
+     "key": "n_events_test_1996",
+     "ms": "t year.] [The first two decision years have the fewest new trials (240 and 315 in the test pool, 518 and 679 a",
+     "expected": 240
+    },
+    {
+     "key": "n_events_test_1997",
+     "ms": " [The first two decision years have the fewest new trials (240 and 315 in the test pool, 518 and 679 among all",
+     "expected": 315
+    },
+    {
+     "key": "n_events_all_1996",
+     "ms": "on years have the fewest new trials (240 and 315 in the test pool, 518 and 679 among all diseases, against 3,1",
+     "expected": 518
+    },
+    {
+     "key": "n_events_all_1997",
+     "ms": " have the fewest new trials (240 and 315 in the test pool, 518 and 679 among all diseases, against 3,118 among",
+     "expected": 679
+    },
+    {
+     "key": "n_events_all_2010",
+     "ms": "nd 315 in the test pool, 518 and 679 among all diseases, against 3,118 among all diseases in 2010) and the wid",
+     "expected": 3118
+    },
+    {
+     "key": "year_1996_pct_p1_test.0",
+     "ms": "the widest intervals (popularity × weighted-degree groups, 1996: +1.52, 95% CI −5.56 to +9.40; −3.09, 95% CI −",
+     "expected": 1.52,
+     "tol": 0.005
+    },
+    {
+     "key": "year_1996_pct_p1_test.1",
+     "ms": "ervals (popularity × weighted-degree groups, 1996: +1.52, 95% CI −5.56 to +9.40; −3.09, 95% CI −8.93 to +0.64;",
+     "expected": -5.56,
+     "tol": 0.005
+    },
+    {
+     "key": "year_1996_pct_p1_test.2",
+     "ms": "opularity × weighted-degree groups, 1996: +1.52, 95% CI −5.56 to +9.40; −3.09, 95% CI −8.93 to +0.64; 1997: 0.",
+     "expected": 9.4,
+     "tol": 0.005
+    },
+    {
+     "key": "year_1996_pct_p1_all.0",
+     "ms": "ty × weighted-degree groups, 1996: +1.52, 95% CI −5.56 to +9.40; −3.09, 95% CI −8.93 to +0.64; 1997: 0.00, 95%",
+     "expected": -3.09,
+     "tol": 0.005
+    },
+    {
+     "key": "year_1996_pct_p1_all.1",
+     "ms": "degree groups, 1996: +1.52, 95% CI −5.56 to +9.40; −3.09, 95% CI −8.93 to +0.64; 1997: 0.00, 95% CI −9.89 to +",
+     "expected": -8.93,
+     "tol": 0.005
+    },
+    {
+     "key": "year_1996_pct_p1_all.2",
+     "ms": "oups, 1996: +1.52, 95% CI −5.56 to +9.40; −3.09, 95% CI −8.93 to +0.64; 1997: 0.00, 95% CI −9.89 to +7.05; +0.",
+     "expected": 0.64,
+     "tol": 0.005
+    },
+    {
+     "key": "p1_all_top10_vs_wAA.0",
+     "ms": "+1.52, 95% CI −5.56 to +9.40; −3.09, 95% CI −8.93 to +0.64; 1997: 0.00, 95% CI −9.89 to +7.05; +0.32, 95% CI −",
+     "expected": 0.0,
+     "tol": 0.005
+    },
+    {
+     "key": "year_1997_pct_p1_test.1",
+     "ms": "−5.56 to +9.40; −3.09, 95% CI −8.93 to +0.64; 1997: 0.00, 95% CI −9.89 to +7.05; +0.32, 95% CI −4.17 to +5.57)",
+     "expected": -9.89,
+     "tol": 0.005
+    },
+    {
+     "key": "s2_all_vs_wAA.0",
+     "ms": ".56 to +9.40; −3.09, 95% CI −8.93 to +0.64; 1997: 0.00, 95% CI −9.89 to +7.05; +0.32, 95% CI −4.17 to +5.57).]",
+     "expected": 7.05,
+     "tol": 0.005
+    },
+    {
+     "key": "year_1997_pct_p1_all.0",
+     "ms": ".56 to +9.40; −3.09, 95% CI −8.93 to +0.64; 1997: 0.00, 95% CI −9.89 to +7.05; +0.32, 95% CI −4.17 to +5.57).]",
+     "expected": 0.32,
+     "tol": 0.005
+    },
+    {
+     "key": "year_1997_pct_p1_all.1",
+     "ms": "−3.09, 95% CI −8.93 to +0.64; 1997: 0.00, 95% CI −9.89 to +7.05; +0.32, 95% CI −4.17 to +5.57).]",
+     "expected": -4.17,
+     "tol": 0.005
+    },
+    {
+     "key": "year_1997_pct_p1_all.2",
+     "ms": "% CI −8.93 to +0.64; 1997: 0.00, 95% CI −9.89 to +7.05; +0.32, 95% CI −4.17 to +5.57).]",
+     "expected": 5.57,
+     "tol": 0.005
+    }
+   ]
+  },
+  {
+   "label": "SI_et_census",
+   "script": "figures/SI/si_event_time_numbers.py",
+   "numbers": "figures/SI/SI_event_time_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "years_pct_s3_test.favour",
+     "ms": "[Within popularity × weighted-degree groups, a group needs at least 20 candidate diseases; of the 35,793 test-",
+     "expected": 20
+    },
+    {
+     "key": "design_test.n_events",
+     "ms": "ee groups, a group needs at least 20 candidate diseases; of the 35,793 test-pool trials, 9,620 were compared w",
+     "expected": 35793
+    },
+    {
+     "key": "census_test.p1_merge0",
+     "ms": " at least 20 candidate diseases; of the 35,793 test-pool trials, 9,620 were compared within their own group, 1",
+     "expected": 9620
+    },
+    {
+     "key": "census_test.p1_merge1",
+     "ms": "3 test-pool trials, 9,620 were compared within their own group, 16,125 within that group merged with the adjac",
+     "expected": 16125
+    },
+    {
+     "key": "census_test.p1_merge2",
+     "ms": " that group merged with the adjacent weighted-degree group, and 10,048 within their whole popularity group, of",
+     "expected": 10048
+    },
+    {
+     "key": "census_test.p1_small",
+     "ms": " group, and 10,048 within their whole popularity group, of which 4,236 still had fewer than 20 candidates.] [A",
+     "expected": 4236
+    },
+    {
+     "key": "census_all.p1_merge0",
+     "ms": "d fewer than 20 candidates.] [Among all diseases the counts are 56,931, 15,395, 2,019 and 810 of 74,345.] [For",
+     "expected": 56931
+    },
+    {
+     "key": "census_all.p1_merge1",
+     "ms": "than 20 candidates.] [Among all diseases the counts are 56,931, 15,395, 2,019 and 810 of 74,345.] [For matched",
+     "expected": 15395
+    },
+    {
+     "key": "census_all.p1_merge2",
+     "ms": " candidates.] [Among all diseases the counts are 56,931, 15,395, 2,019 and 810 of 74,345.] [For matched sample",
+     "expected": 2019
+    },
+    {
+     "key": "census_all.p1_small",
+     "ms": "tes.] [Among all diseases the counts are 56,931, 15,395, 2,019 and 810 of 74,345.] [For matched samples, 15,27",
+     "expected": 810
+    },
+    {
+     "key": "design_all.n_events",
+     "ms": "ng all diseases the counts are 56,931, 15,395, 2,019 and 810 of 74,345.] [For matched samples, 15,271 test-poo",
+     "expected": 74345
+    },
+    {
+     "key": "census_test.s2_widen",
+     "ms": "56,931, 15,395, 2,019 and 810 of 74,345.] [For matched samples, 15,271 test-pool and 15,077 all-disease trials",
+     "expected": 15271
+    },
+    {
+     "key": "census_all.s2_widen",
+     "ms": " and 810 of 74,345.] [For matched samples, 15,271 test-pool and 15,077 all-disease trials had fewer than 20 cl",
+     "expected": 15077
+    },
+    {
+     "key": "census_test.s2_short",
+     "ms": "ly matched candidates and were compared with the 20 nearest, and 4,726 and 921 had fewer than 20 candidates in",
+     "expected": 4726
+    },
+    {
+     "key": "census_all.s2_short",
+     "ms": "ed candidates and were compared with the 20 nearest, and 4,726 and 921 had fewer than 20 candidates in their p",
+     "expected": 921
+    },
+    {
+     "key": "subset_pooled_aa_pos_test.pct_s4.2",
+     "ms": "r popularity group and were compared with all of them.] [Across the 50 matched samples, the median per-trial s",
+     "expected": -0.5,
+     "tol": 0.005,
+     "note": "sign differs: manuscript prints the magnitude"
+    },
+    {
+     "key": "census_test.s2_drawsd_median_disatlas",
+     "ms": " median per-trial standard deviation of the DisAtlas percentile is 0.00 in the test pool, where more than half",
+     "expected": 0.0,
+     "tol": 0.005
+    },
+    {
+     "key": "census_all.s2_drawsd_median_disatlas",
+     "ms": "rials were compared with the same candidates in every sample, and 4.57 among all diseases.] [With no grouping,",
+     "expected": 4.57,
+     "tol": 0.005
+    },
+    {
+     "key": "census_test.s4_n_cand_median",
+     "ms": "eases.] [With no grouping, the median new trial was ranked among 2,241 candidate diseases in the test pool and",
+     "expected": 2241
+    },
+    {
+     "key": "census_all.s4_n_cand_median",
+     "ms": "median new trial was ranked among 2,241 candidate diseases in the test pool and 4,541 among all diseases.]",
+     "expected": 4541
+    }
+   ]
+  },
+  {
+   "label": "SI_et_census",
+   "script": "figures/SI/si_event_time_tables.py",
+   "numbers": "figures/SI/SI_event_time_tables_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "years_pct_s4_all.against",
+     "ms": "n their whole popularity group, of which 4,236 still had fewer than 20 candidates.] [Among all diseases the co",
+     "expected": 20
+    }
+   ]
+  },
+  {
+   "label": "SI_et_coverage_text",
+   "script": "figures/SI/si_event_time_tables.py",
+   "status": "exact",
+   "text_checks": [
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "7.03",
+      "6.18",
+      "7.91",
+      "3.55",
+      "2.99",
+      "4.24",
+      "0.068",
+      "0.054",
+      "0.081",
+      "0.001",
+      "-0.010",
+      "0.011"
+     ],
+     "ms": "| Popularity × weighted-degree groups (co-primary) | Weighted Adamic–Adar | +7.03 [+6.18, +7.91] | +3.55 [+2.99, +4.24] | +0.068 [+0.054, +0.081] | +0.001 [−0.0"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "5.82",
+      "5.03",
+      "6.53",
+      "2.55",
+      "1.94",
+      "3.19",
+      "0.014",
+      "0.000",
+      "0.027",
+      "-0.033",
+      "-0.044",
+      "-0.023"
+     ],
+     "ms": "|  | Adamic–Adar | +5.82 [+5.03, +6.53] | +2.55 [+1.94, +3.19] | +0.014 [0.000, +0.027] | −0.033 [−0.044, −0.023] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "9.33",
+      "8.02",
+      "10.78",
+      "13.03",
+      "12.08",
+      "14.14",
+      "0.072",
+      "0.057",
+      "0.087",
+      "0.163",
+      "0.149",
+      "0.175"
+     ],
+     "ms": "|  | Disease popularity | +9.33 [+8.02, +10.78] | +13.03 [+12.08, +14.14] | +0.072 [+0.057, +0.087] | +0.163 [+0.149, +0.175] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "22.88",
+      "21.81",
+      "24.02",
+      "25.55",
+      "24.82",
+      "26.40",
+      "0.182",
+      "0.167",
+      "0.196",
+      "0.159",
+      "0.145",
+      "0.172"
+     ],
+     "ms": "|  | MechDist degree | +22.88 [+21.81, +24.02] | +25.55 [+24.82, +26.40] | +0.182 [+0.167, +0.196] | +0.159 [+0.145, +0.172] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "23.42",
+      "22.43",
+      "24.30",
+      "25.58",
+      "24.90",
+      "26.37",
+      "0.192",
+      "0.176",
+      "0.206",
+      "0.227",
+      "0.213",
+      "0.240"
+     ],
+     "ms": "|  | MechDist weighted degree | +23.42 [+22.43, +24.30] | +25.58 [+24.90, +26.37] | +0.192 [+0.176, +0.206] | +0.227 [+0.213, +0.240] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "10.85",
+      "9.71",
+      "11.88",
+      "8.20",
+      "7.42",
+      "9.01",
+      "0.008",
+      "-0.004",
+      "0.021",
+      "-0.011",
+      "-0.023",
+      "-0.001"
+     ],
+     "ms": "|  | Shared genes | +10.85 [+9.71, +11.88] | +8.20 [+7.42, +9.01] | +0.008 [−0.004, +0.021] | −0.011 [−0.023, −0.001] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "12.36",
+      "11.58",
+      "13.27",
+      "11.58",
+      "10.63",
+      "12.39",
+      "0.046",
+      "0.033",
+      "0.058",
+      "0.036",
+      "0.025",
+      "0.047"
+     ],
+     "ms": "|  | GO biological-process similarity | +12.36 [+11.58, +13.27] | +11.58 [+10.63, +12.39] | +0.046 [+0.033, +0.058] | +0.036 [+0.025, +0.047] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "28.27",
+      "27.51",
+      "29.09",
+      "29.44",
+      "28.86",
+      "30.07",
+      "0.208",
+      "0.194",
+      "0.222",
+      "0.252",
+      "0.239",
+      "0.264"
+     ],
+     "ms": "|  | HPO phenotype similarity | +28.27 [+27.51, +29.09] | +29.44 [+28.86, +30.07] | +0.208 [+0.194, +0.222] | +0.252 [+0.239, +0.264] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "9.10",
+      "8.33",
+      "10.13",
+      "8.46",
+      "7.82",
+      "9.19",
+      "0.040",
+      "0.026",
+      "0.053",
+      "0.060",
+      "0.049",
+      "0.071"
+     ],
+     "ms": "| Popularity groups (co-primary) | Weighted Adamic–Adar | +9.10 [+8.33, +10.13] | +8.46 [+7.82, +9.19] | +0.040 [+0.026, +0.053] | +0.060 [+0.049, +0.071] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "7.82",
+      "7.02",
+      "9.01",
+      "6.96",
+      "6.21",
+      "7.71",
+      "0.004",
+      "-0.008",
+      "0.017",
+      "0.001",
+      "-0.010",
+      "0.011"
+     ],
+     "ms": "|  | Adamic–Adar | +7.82 [+7.02, +9.01] | +6.96 [+6.21, +7.71] | +0.004 [−0.008, +0.017] | +0.001 [−0.010, +0.011] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "7.37",
+      "6.36",
+      "8.85",
+      "11.61",
+      "10.76",
+      "12.60",
+      "0.092",
+      "0.077",
+      "0.107",
+      "0.174",
+      "0.161",
+      "0.187"
+     ],
+     "ms": "|  | Disease popularity | +7.37 [+6.36, +8.85] | +11.61 [+10.76, +12.60] | +0.092 [+0.077, +0.107] | +0.174 [+0.161, +0.187] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "20.05",
+      "19.16",
+      "21.33",
+      "21.13",
+      "20.27",
+      "22.13",
+      "0.172",
+      "0.157",
+      "0.187",
+      "0.223",
+      "0.210",
+      "0.236"
+     ],
+     "ms": "|  | MechDist degree | +20.05 [+19.16, +21.33] | +21.13 [+20.27, +22.13] | +0.172 [+0.157, +0.187] | +0.223 [+0.210, +0.236] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "20.15",
+      "19.44",
+      "21.36",
+      "21.49",
+      "20.65",
+      "22.25",
+      "0.187",
+      "0.172",
+      "0.202",
+      "0.235",
+      "0.221",
+      "0.247"
+     ],
+     "ms": "|  | MechDist weighted degree | +20.15 [+19.44, +21.36] | +21.49 [+20.65, +22.25] | +0.187 [+0.172, +0.202] | +0.235 [+0.221, +0.247] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "8.37",
+      "7.27",
+      "9.40",
+      "6.44",
+      "5.73",
+      "7.08",
+      "-0.001",
+      "-0.013",
+      "0.010",
+      "-0.016",
+      "-0.027",
+      "-0.006"
+     ],
+     "ms": "|  | Shared genes | +8.37 [+7.27, +9.40] | +6.44 [+5.73, +7.08] | −0.001 [−0.013, +0.010] | −0.016 [−0.027, −0.006] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "12.82",
+      "12.03",
+      "13.80",
+      "11.87",
+      "11.17",
+      "12.56",
+      "0.052",
+      "0.041",
+      "0.065",
+      "0.046",
+      "0.035",
+      "0.056"
+     ],
+     "ms": "|  | GO biological-process similarity | +12.82 [+12.03, +13.80] | +11.87 [+11.17, +12.56] | +0.052 [+0.041, +0.065] | +0.046 [+0.035, +0.056] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "27.10",
+      "26.61",
+      "27.98",
+      "28.95",
+      "28.45",
+      "29.44",
+      "0.230",
+      "0.216",
+      "0.243",
+      "0.277",
+      "0.265",
+      "0.288"
+     ],
+     "ms": "|  | HPO phenotype similarity | +27.10 [+26.61, +27.98] | +28.95 [+28.45, +29.44] | +0.230 [+0.216, +0.243] | +0.277 [+0.265, +0.288] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "-2.11",
+      "-2.50",
+      "-1.78",
+      "-1.17",
+      "-1.43",
+      "-0.91",
+      "-0.048",
+      "-0.058",
+      "-0.038",
+      "-0.031",
+      "-0.038",
+      "-0.023"
+     ],
+     "ms": "| Weighted-degree groups only | Weighted Adamic–Adar | −2.11 [−2.50, −1.78] | −1.17 [−1.43, −0.91] | −0.048 [−0.058, −0.038] | −0.031 [−0.038, −0.023] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "-2.00",
+      "-2.35",
+      "-1.67",
+      "-1.07",
+      "-1.34",
+      "-0.79",
+      "-0.045",
+      "-0.055",
+      "-0.036",
+      "-0.031",
+      "-0.039",
+      "-0.023"
+     ],
+     "ms": "|  | Adamic–Adar | −2.00 [−2.35, −1.67] | −1.07 [−1.34, −0.79] | −0.045 [−0.055, −0.036] | −0.031 [−0.039, −0.023] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "-7.28",
+      "-7.61",
+      "-6.97",
+      "-6.49",
+      "-6.76",
+      "-6.22",
+      "-0.161",
+      "-0.171",
+      "-0.151",
+      "-0.111",
+      "-0.120",
+      "-0.102"
+     ],
+     "ms": "|  | Disease popularity | −7.28 [−7.61, −6.97] | −6.49 [−6.76, −6.22] | −0.161 [−0.171, −0.151] | −0.111 [−0.120, −0.102] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "7.91",
+      "7.35",
+      "8.67",
+      "8.96",
+      "8.47",
+      "9.37",
+      "0.072",
+      "0.059",
+      "0.085",
+      "0.087",
+      "0.077",
+      "0.097"
+     ],
+     "ms": "|  | MechDist degree | +7.91 [+7.35, +8.67] | +8.96 [+8.47, +9.37] | +0.072 [+0.059, +0.085] | +0.087 [+0.077, +0.097] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "5.99",
+      "5.40",
+      "6.61",
+      "7.04",
+      "6.61",
+      "7.41",
+      "0.088",
+      "0.075",
+      "0.101",
+      "0.102",
+      "0.092",
+      "0.113"
+     ],
+     "ms": "|  | MechDist weighted degree | +5.99 [+5.40, +6.61] | +7.04 [+6.61, +7.41] | +0.088 [+0.075, +0.101] | +0.102 [+0.092, +0.113] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "7.18",
+      "6.53",
+      "7.83",
+      "5.21",
+      "4.76",
+      "5.70",
+      "0.081",
+      "0.070",
+      "0.093",
+      "0.049",
+      "0.040",
+      "0.058"
+     ],
+     "ms": "|  | Shared genes | +7.18 [+6.53, +7.83] | +5.21 [+4.76, +5.70] | +0.081 [+0.070, +0.093] | +0.049 [+0.040, +0.058] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "5.54",
+      "5.09",
+      "5.97",
+      "5.46",
+      "4.95",
+      "5.81",
+      "0.066",
+      "0.055",
+      "0.076",
+      "0.058",
+      "0.049",
+      "0.067"
+     ],
+     "ms": "|  | GO biological-process similarity | +5.54 [+5.09, +5.97] | +5.46 [+4.95, +5.81] | +0.066 [+0.055, +0.076] | +0.058 [+0.049, +0.067] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "40.49",
+      "40.18",
+      "40.76",
+      "40.58",
+      "40.32",
+      "40.83",
+      "0.427",
+      "0.413",
+      "0.439",
+      "0.422",
+      "0.411",
+      "0.434"
+     ],
+     "ms": "|  | HPO phenotype similarity | +40.49 [+40.18, +40.76] | +40.58 [+40.32, +40.83] | +0.427 [+0.413, +0.439] | +0.422 [+0.411, +0.434] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "20",
+      "10.71",
+      "9.68",
+      "11.93",
+      "7.05",
+      "6.29",
+      "7.71",
+      "0.093",
+      "0.080",
+      "0.107",
+      "0.077",
+      "0.065",
+      "0.087"
+     ],
+     "ms": "| Matched samples of 20 diseases | Weighted Adamic–Adar | +10.71 [+9.68, +11.93] | +7.05 [+6.29, +7.71] | +0.093 [+0.080, +0.107] | +0.077 [+0.065, +0.087] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "8.81",
+      "7.64",
+      "9.98",
+      "4.52",
+      "3.81",
+      "5.29",
+      "0.038",
+      "0.025",
+      "0.052",
+      "0.008",
+      "-0.003",
+      "0.019"
+     ],
+     "ms": "|  | Adamic–Adar | +8.81 [+7.64, +9.98] | +4.52 [+3.81, +5.29] | +0.038 [+0.025, +0.052] | +0.008 [−0.003, +0.019] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "7.70",
+      "6.69",
+      "9.52",
+      "11.81",
+      "10.86",
+      "12.79",
+      "0.044",
+      "0.028",
+      "0.059",
+      "0.128",
+      "0.115",
+      "0.140"
+     ],
+     "ms": "|  | Disease popularity | +7.70 [+6.69, +9.52] | +11.81 [+10.86, +12.79] | +0.044 [+0.028, +0.059] | +0.128 [+0.115, +0.140] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "28.67",
+      "27.43",
+      "30.00",
+      "25.43",
+      "24.64",
+      "26.38",
+      "0.219",
+      "0.204",
+      "0.234",
+      "0.278",
+      "0.265",
+      "0.292"
+     ],
+     "ms": "|  | MechDist degree | +28.67 [+27.43, +30.00] | +25.43 [+24.64, +26.38] | +0.219 [+0.204, +0.234] | +0.278 [+0.265, +0.292] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "31.10",
+      "30.33",
+      "32.14",
+      "30.17",
+      "29.52",
+      "30.86",
+      "0.230",
+      "0.216",
+      "0.246",
+      "0.298",
+      "0.285",
+      "0.311"
+     ],
+     "ms": "|  | MechDist weighted degree | +31.10 [+30.33, +32.14] | +30.17 [+29.52, +30.86] | +0.230 [+0.216, +0.246] | +0.298 [+0.285, +0.311] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "11.48",
+      "10.19",
+      "12.50",
+      "7.38",
+      "6.64",
+      "8.14",
+      "0.006",
+      "-0.006",
+      "0.019",
+      "-0.017",
+      "-0.028",
+      "-0.006"
+     ],
+     "ms": "|  | Shared genes | +11.48 [+10.19, +12.50] | +7.38 [+6.64, +8.14] | +0.006 [−0.006, +0.019] | −0.017 [−0.028, −0.006] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "13.01",
+      "11.90",
+      "14.33",
+      "10.90",
+      "10.19",
+      "11.64",
+      "0.047",
+      "0.034",
+      "0.060",
+      "0.035",
+      "0.025",
+      "0.046"
+     ],
+     "ms": "|  | GO biological-process similarity | +13.01 [+11.90, +14.33] | +10.90 [+10.19, +11.64] | +0.047 [+0.034, +0.060] | +0.035 [+0.025, +0.046] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "26.33",
+      "25.57",
+      "27.38",
+      "27.81",
+      "27.24",
+      "28.43",
+      "0.193",
+      "0.179",
+      "0.207",
+      "0.222",
+      "0.209",
+      "0.233"
+     ],
+     "ms": "|  | HPO phenotype similarity | +26.33 [+25.57, +27.38] | +27.81 [+27.24, +28.43] | +0.193 [+0.179, +0.207] | +0.222 [+0.209, +0.233] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "-0.69",
+      "-0.84",
+      "-0.49",
+      "-0.34",
+      "-0.46",
+      "-0.21",
+      "-0.016",
+      "-0.024",
+      "-0.008",
+      "-0.031",
+      "-0.037",
+      "-0.025"
+     ],
+     "ms": "| All candidate diseases, no grouping | Weighted Adamic–Adar | −0.69 [−0.84, −0.49] | −0.34 [−0.46, −0.21] | −0.016 [−0.024, −0.008] | −0.031 [−0.037, −0.025] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "-0.49",
+      "-0.68",
+      "-0.28",
+      "-0.30",
+      "-0.43",
+      "-0.17",
+      "-0.019",
+      "-0.026",
+      "-0.011",
+      "-0.034",
+      "-0.040",
+      "-0.028"
+     ],
+     "ms": "|  | Adamic–Adar | −0.49 [−0.68, −0.28] | −0.30 [−0.43, −0.17] | −0.019 [−0.026, −0.011] | −0.034 [−0.040, −0.028] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "-3.48",
+      "-3.63",
+      "-3.28",
+      "-2.66",
+      "-2.79",
+      "-2.53",
+      "-0.102",
+      "-0.110",
+      "-0.095",
+      "-0.078",
+      "-0.084",
+      "-0.072"
+     ],
+     "ms": "|  | Disease popularity | −3.48 [−3.63, −3.28] | −2.66 [−2.79, −2.53] | −0.102 [−0.110, −0.095] | −0.078 [−0.084, −0.072] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "2.08",
+      "1.82",
+      "2.35",
+      "2.10",
+      "1.92",
+      "2.27",
+      "0.050",
+      "0.040",
+      "0.061",
+      "0.021",
+      "0.013",
+      "0.030"
+     ],
+     "ms": "|  | MechDist degree | +2.08 [+1.82, +2.35] | +2.10 [+1.92, +2.27] | +0.050 [+0.040, +0.061] | +0.021 [+0.013, +0.030] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "0.94",
+      "0.68",
+      "1.29",
+      "1.36",
+      "1.20",
+      "1.57",
+      "0.074",
+      "0.064",
+      "0.085",
+      "0.047",
+      "0.039",
+      "0.055"
+     ],
+     "ms": "|  | MechDist weighted degree | +0.94 [+0.68, +1.29] | +1.36 [+1.20, +1.57] | +0.074 [+0.064, +0.085] | +0.047 [+0.039, +0.055] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "2.06",
+      "1.74",
+      "2.42",
+      "1.48",
+      "1.29",
+      "1.71",
+      "0.061",
+      "0.052",
+      "0.071",
+      "0.044",
+      "0.037",
+      "0.051"
+     ],
+     "ms": "|  | Shared genes | +2.06 [+1.74, +2.42] | +1.48 [+1.29, +1.71] | +0.061 [+0.052, +0.071] | +0.044 [+0.037, +0.051] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "2.09",
+      "1.87",
+      "2.34",
+      "1.91",
+      "1.74",
+      "2.11",
+      "0.049",
+      "0.040",
+      "0.058",
+      "0.042",
+      "0.035",
+      "0.050"
+     ],
+     "ms": "|  | GO biological-process similarity | +2.09 [+1.87, +2.34] | +1.91 [+1.74, +2.11] | +0.049 [+0.040, +0.058] | +0.042 [+0.035, +0.050] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "46.77",
+      "45.50",
+      "51.71",
+      "46.08",
+      "45.96",
+      "46.21",
+      "0.519",
+      "0.506",
+      "0.532",
+      "0.508",
+      "0.496",
+      "0.518"
+     ],
+     "ms": "|  | HPO phenotype similarity | +46.77 [+45.50, +51.71] | +46.08 [+45.96, +46.21] | +0.519 [+0.506, +0.532] | +0.508 [+0.496, +0.518] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "0.28",
+      "0.23",
+      "0.32",
+      "0.38",
+      "0.35",
+      "0.42",
+      "-0.004",
+      "-0.008",
+      "-0.001",
+      "-0.007",
+      "-0.009",
+      "-0.005"
+     ],
+     "ms": "| Combined with popularity | Weighted Adamic–Adar | +0.28 [+0.23, +0.32] | +0.38 [+0.35, +0.42] | −0.004 [−0.008, −0.001] | −0.007 [−0.009, −0.005] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "0.78",
+      "0.71",
+      "0.84",
+      "0.91",
+      "0.87",
+      "0.95",
+      "0.024",
+      "0.019",
+      "0.029",
+      "0.000",
+      "-0.003",
+      "0.003"
+     ],
+     "ms": "|  | MechDist degree | +0.78 [+0.71, +0.84] | +0.91 [+0.87, +0.95] | +0.024 [+0.019, +0.029] | 0.000 [−0.003, +0.003] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "0.62",
+      "0.56",
+      "0.67",
+      "0.81",
+      "0.77",
+      "0.86",
+      "0.023",
+      "0.018",
+      "0.028",
+      "-0.001",
+      "-0.004",
+      "0.001"
+     ],
+     "ms": "|  | MechDist weighted degree | +0.62 [+0.56, +0.67] | +0.81 [+0.77, +0.86] | +0.023 [+0.018, +0.028] | −0.001 [−0.004, +0.001] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "0.22",
+      "0.17",
+      "0.27",
+      "0.18",
+      "0.15",
+      "0.22",
+      "-0.009",
+      "-0.012",
+      "-0.006",
+      "-0.007",
+      "-0.010",
+      "-0.005"
+     ],
+     "ms": "|  | Shared genes | +0.22 [+0.17, +0.27] | +0.18 [+0.15, +0.22] | −0.009 [−0.012, −0.006] | −0.007 [−0.010, −0.005] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "0.60",
+      "0.55",
+      "0.66",
+      "0.64",
+      "0.60",
+      "0.68",
+      "0.007",
+      "0.003",
+      "0.011",
+      "0.011",
+      "0.007",
+      "0.014"
+     ],
+     "ms": "|  | GO biological-process similarity | +0.60 [+0.55, +0.66] | +0.64 [+0.60, +0.68] | +0.007 [+0.003, +0.011] | +0.011 [+0.007, +0.014] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "12.56",
+      "10.79",
+      "13.28",
+      "4.73",
+      "3.99",
+      "6.34",
+      "0.180",
+      "0.169",
+      "0.190",
+      "0.131",
+      "0.124",
+      "0.139"
+     ],
+     "ms": "|  | HPO phenotype similarity | +12.56 [+10.79, +13.28] | +4.73 [+3.99, +6.34] | +0.180 [+0.169, +0.190] | +0.131 [+0.124, +0.139] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "95"
+     ],
+     "ms": "Positive values mean DisAtlas ranks new trials better; brackets give 95% bootstrap intervals over drugs."
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "2020",
+      "2021",
+      "6.65",
+      "5.69",
+      "7.56",
+      "5.05",
+      "4.36",
+      "5.62"
+     ],
+     "ms": "| Excluding 2020 and 2021 | Weighted Adamic–Adar | Popularity × weighted degree | +6.65 [+5.69, +7.56] | +5.05 [+4.36, +5.62] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "6.95",
+      "6.14",
+      "7.86",
+      "3.50",
+      "2.91",
+      "4.18"
+     ],
+     "ms": "| Diseases with GO biological-process annotation | Weighted Adamic–Adar | Popularity × weighted degree | +6.95 [+6.14, +7.86] | +3.50 [+2.91, +4.18] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "9.02",
+      "8.33",
+      "10.06",
+      "8.34",
+      "7.72",
+      "9.05"
+     ],
+     "ms": "|  |  | Popularity | +9.02 [+8.33, +10.06] | +8.34 [+7.72, +9.05] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "-0.68",
+      "-0.84",
+      "-0.49",
+      "-0.35",
+      "-0.48",
+      "-0.22"
+     ],
+     "ms": "|  |  | No grouping | −0.68 [−0.84, −0.49] | −0.35 [−0.48, −0.22] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "6.95",
+      "6.17",
+      "7.90",
+      "3.48",
+      "2.91",
+      "4.17"
+     ],
+     "ms": "| Diseases with gene annotation | Weighted Adamic–Adar | Popularity × weighted degree | +6.95 [+6.17, +7.90] | +3.48 [+2.91, +4.17] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "9.08",
+      "8.33",
+      "10.15",
+      "8.42",
+      "7.76",
+      "9.12"
+     ],
+     "ms": "|  |  | Popularity | +9.08 [+8.33, +10.15] | +8.42 [+7.76, +9.12] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "-0.68",
+      "-0.83",
+      "-0.49",
+      "-0.35",
+      "-0.48",
+      "-0.22"
+     ],
+     "ms": "|  |  | No grouping | −0.68 [−0.83, −0.49] | −0.35 [−0.48, −0.22] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "1.19",
+      "0.43",
+      "2.32",
+      "0.54",
+      "-0.36",
+      "1.42"
+     ],
+     "ms": "|  |  | Popularity | +1.19 [+0.43, +2.32] | +0.54 [−0.36, +1.42] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "28.24",
+      "22.32",
+      "35.03",
+      "28.79",
+      "21.85",
+      "35.48"
+     ],
+     "ms": "|  |  | Popularity | +28.24 [+22.32, +35.03] | +28.79 [+21.85, +35.48] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "-1.64",
+      "-1.86",
+      "-1.42",
+      "-0.81",
+      "-0.99",
+      "-0.65"
+     ],
+     "ms": "|  |  | No grouping | −1.64 [−1.86, −1.42] | −0.81 [−0.99, −0.65] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "-27.79",
+      "-43.40",
+      "-15.31",
+      "-19.38",
+      "-33.07",
+      "-11.37"
+     ],
+     "ms": "|  |  | Popularity | −27.79 [−43.40, −15.31] | −19.38 [−33.07, −11.37] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "-61.46",
+      "-72.20",
+      "-51.29",
+      "-61.91",
+      "-71.54",
+      "-53.91"
+     ],
+     "ms": "|  |  | No grouping | −61.46 [−72.20, −51.29] | −61.91 [−71.54, −53.91] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "-11.76",
+      "-17.52",
+      "-5.69",
+      "-13.73",
+      "-20.09",
+      "-6.94"
+     ],
+     "ms": "|  |  | Popularity | −11.76 [−17.52, −5.69] | −13.73 [−20.09, −6.94] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "-13.57",
+      "-23.51",
+      "-3.86",
+      "-14.20",
+      "-23.60",
+      "-6.58"
+     ],
+     "ms": "|  |  | No grouping | −13.57 [−23.51, −3.86] | −14.20 [−23.60, −6.58] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "-14.32",
+      "-19.99",
+      "-8.39",
+      "-16.08",
+      "-22.60",
+      "-9.07"
+     ],
+     "ms": "|  |  | Popularity | −14.32 [−19.99, −8.39] | −16.08 [−22.60, −9.07] |"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "-14.07",
+      "-24.24",
+      "-4.27",
+      "-14.78",
+      "-24.15",
+      "-7.16"
+     ],
+     "ms": "|  |  | No grouping | −14.07 [−24.24, −4.27] | −14.78 [−24.15, −7.16] |"
+    }
+   ]
+  },
+  {
+   "label": "SI_et_coverage",
+   "script": "figures/SI/si_event_time_numbers.py",
+   "numbers": "figures/SI/SI_event_time_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "coverage_gene_jaccard_all_pct",
+     "ms": "-gene and GO biological-process similarity could be computed for 99.8% and 99.7% of all new trials (100.0% and",
+     "expected": 99.8,
+     "tol": 0.05
+    },
+    {
+     "key": "coverage_gobp_simgic_all_pct",
+     "ms": " GO biological-process similarity could be computed for 99.8% and 99.7% of all new trials (100.0% and 99.9% in",
+     "expected": 99.7,
+     "tol": 0.05
+    },
+    {
+     "key": "coverage_gobp_simgic_test_pct",
+     "ms": "ld be computed for 99.8% and 99.7% of all new trials (100.0% and 99.9% in the test pool), and HPO phenotype si",
+     "expected": 99.9,
+     "tol": 0.05
+    },
+    {
+     "key": "coverage_hpo_simgic_all_pct",
+     "ms": "0% and 99.9% in the test pool), and HPO phenotype similarity for 32.0% (31.6%); a trial in a disease without t",
+     "expected": 32.0,
+     "tol": 0.05
+    },
+    {
+     "key": "coverage_hpo_simgic_test_pct",
+     "ms": "99.9% in the test pool), and HPO phenotype similarity for 32.0% (31.6%); a trial in a disease without the anno",
+     "expected": 31.6,
+     "tol": 0.05
+    },
+    {
+     "key": "subset_pooled_aa_pos_all.pct_p1.1",
+     "ms": "-primary) | Weighted Adamic–Adar | +7.03 [+6.18, +7.91] | +3.55 [+2.99, +4.24] | +0.068 [+0.054, +0.081] | +0.",
+     "expected": 2.99,
+     "tol": 0.005
+    },
+    {
+     "key": "p1_test_top10_vs_wAA.0",
+     "ms": "ted Adamic–Adar | +7.03 [+6.18, +7.91] | +3.55 [+2.99, +4.24] | +0.068 [+0.054, +0.081] | +0.001 [−0.010, +0.0",
+     "expected": 0.068,
+     "tol": 0.0005
+    },
+    {
+     "key": "p1_test_top10_vs_wAA.1",
+     "ms": "mic–Adar | +7.03 [+6.18, +7.91] | +3.55 [+2.99, +4.24] | +0.068 [+0.054, +0.081] | +0.001 [−0.010, +0.011] | |",
+     "expected": 0.054,
+     "tol": 0.0005
+    },
+    {
+     "key": "p1_test_top10_vs_wAA.2",
+     "ms": "| +7.03 [+6.18, +7.91] | +3.55 [+2.99, +4.24] | +0.068 [+0.054, +0.081] | +0.001 [−0.010, +0.011] | |  | Adami",
+     "expected": 0.081,
+     "tol": 0.0005
+    },
+    {
+     "key": "p1_all_top10_vs_wAA.0",
+     "ms": "6.18, +7.91] | +3.55 [+2.99, +4.24] | +0.068 [+0.054, +0.081] | +0.001 [−0.010, +0.011] | |  | Adamic–Adar | +",
+     "expected": 0.001,
+     "tol": 0.0005
+    },
+    {
+     "key": "p1_all_top10_vs_wAA.1",
+     "ms": ".91] | +3.55 [+2.99, +4.24] | +0.068 [+0.054, +0.081] | +0.001 [−0.010, +0.011] | |  | Adamic–Adar | +5.82 [+5",
+     "expected": -0.01,
+     "tol": 0.0005
+    },
+    {
+     "key": "p1_all_top10_vs_wAA.2",
+     "ms": "3.55 [+2.99, +4.24] | +0.068 [+0.054, +0.081] | +0.001 [−0.010, +0.011] | |  | Adamic–Adar | +5.82 [+5.03, +6.",
+     "expected": 0.011,
+     "tol": 0.0005
+    },
+    {
+     "key": "year_1996_pct_s3_test.0",
+     "ms": "amic–Adar | +5.82 [+5.03, +6.53] | +2.55 [+1.94, +3.19] | +0.014 [0.000, +0.027] | −0.033 [−0.044, −0.023] | |",
+     "expected": 0.0,
+     "tol": 0.0005
+    },
+    {
+     "key": "s5_test_vs_popularity.E2.2",
+     "ms": " Shared genes | +10.85 [+9.71, +11.88] | +8.20 [+7.42, +9.01] | +0.008 [−0.004, +0.021] | −0.011 [−0.023, −0.0",
+     "expected": -0.008,
+     "tol": 0.0005,
+     "note": "sign differs: manuscript prints the magnitude"
+    },
+    {
+     "key": "subset_hpo_all_vs_hpo.pct_p1.1",
+     "ms": ".001] | |  | GO biological-process similarity | +12.36 [+11.58, +13.27] | +11.58 [+10.63, +12.39] | +0.046 [+0",
+     "expected": -13.27,
+     "tol": 0.005,
+     "note": "sign differs: manuscript prints the magnitude"
+    },
+    {
+     "key": "subset_pooled_single_event_all.pct_p1.0",
+     "ms": "ed Adamic–Adar | +9.10 [+8.33, +10.13] | +8.46 [+7.82, +9.19] | +0.040 [+0.026, +0.053] | +0.060 [+0.049, +0.0",
+     "expected": -0.04,
+     "tol": 0.0005,
+     "note": "sign differs: manuscript prints the magnitude"
+    },
+    {
+     "key": "s2_all_vs_wAA.2",
+     "ms": "0.071] | |  | Adamic–Adar | +7.82 [+7.02, +9.01] | +6.96 [+6.21, +7.71] | +0.004 [−0.008, +0.017] | +0.001 [−0",
+     "expected": 7.71,
+     "tol": 0.005
+    },
+    {
+     "key": "s5_all_vs_popularity.E2.1",
+     "ms": ".01] | +6.96 [+6.21, +7.71] | +0.004 [−0.008, +0.017] | +0.001 [−0.010, +0.011] | |  | Disease popularity | +7",
+     "expected": -0.01,
+     "tol": 0.0005
+    },
+    {
+     "key": "subset_aa_zero_all_p1.gene_jaccard.1",
+     "ms": "107] | +0.174 [+0.161, +0.187] | |  | MechDist degree | +20.05 [+19.16, +21.33] | +21.13 [+20.27, +22.13] | +0",
+     "expected": -19.16,
+     "tol": 0.005,
+     "note": "sign differs: manuscript prints the magnitude"
+    },
+    {
+     "key": "s4_all.vs_wAA.2",
+     "ms": "] | +21.13 [+20.27, +22.13] | +0.172 [+0.157, +0.187] | +0.223 [+0.210, +0.236] | |  | MechDist weighted degre",
+     "expected": -0.21,
+     "tol": 0.0005,
+     "note": "sign differs: manuscript prints the magnitude"
+    },
+    {
+     "key": "subset_pooled_aa_zero_test.pct_p1.1",
+     "ms": "ist weighted degree | +20.15 [+19.44, +21.36] | +21.49 [+20.65, +22.25] | +0.187 [+0.172, +0.202] | +0.235 [+0",
+     "expected": 22.25,
+     "tol": 0.005
+    },
+    {
+     "key": "prec_s3_test_mean_pct.popularity",
+     "ms": "[+0.172, +0.202] | +0.235 [+0.221, +0.247] | |  | Shared genes | +8.37 [+7.27, +9.40] | +6.44 [+5.73, +7.08] |",
+     "expected": 8.37,
+     "tol": 0.005
+    },
+    {
+     "key": "year_1996_pct_p1_test.2",
+     "ms": "2] | +0.235 [+0.221, +0.247] | |  | Shared genes | +8.37 [+7.27, +9.40] | +6.44 [+5.73, +7.08] | −0.001 [−0.01",
+     "expected": 9.4,
+     "tol": 0.005
+    },
+    {
+     "key": "s5_test_vs_popularity.E2.1",
+     "ms": "ed genes | +8.37 [+7.27, +9.40] | +6.44 [+5.73, +7.08] | −0.001 [−0.013, +0.010] | −0.016 [−0.027, −0.006] | |",
+     "expected": -0.013,
+     "tol": 0.0005
+    },
+    {
+     "key": "s5_test_vs_popularity.E1.1",
+     "ms": "| +8.37 [+7.27, +9.40] | +6.44 [+5.73, +7.08] | −0.001 [−0.013, +0.010] | −0.016 [−0.027, −0.006] | |  | GO bi",
+     "expected": 0.01,
+     "tol": 0.0005
+    },
+    {
+     "key": "year_1997_pct_s3_all.0",
+     "ms": "gree groups only | Weighted Adamic–Adar | −2.11 [−2.50, −1.78] | −1.17 [−1.43, −0.91] | −0.048 [−0.058, −0.038",
+     "expected": -1.17,
+     "tol": 0.005
+    },
+    {
+     "key": "years_pct_s3_all.includes0",
+     "ms": " [−0.058, −0.038] | −0.031 [−0.038, −0.023] | |  | Adamic–Adar | −2.00 [−2.35, −1.67] | −1.07 [−1.34, −0.79] |",
+     "expected": 2.0,
+     "tol": 0.005,
+     "note": "sign differs: manuscript prints the magnitude"
+    },
+    {
+     "key": "year_1996_pct_s3_test.1",
+     "ms": "| |  | Disease popularity | −7.28 [−7.61, −6.97] | −6.49 [−6.76, −6.22] | −0.161 [−0.171, −0.151] | −0.111 [−0",
+     "expected": -6.22,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_aa_zero_all_p1.hpo_simgic.2",
+     "ms": "| −0.111 [−0.120, −0.102] | |  | MechDist degree | +7.91 [+7.35, +8.67] | +8.96 [+8.47, +9.37] | +0.072 [+0.05",
+     "expected": -8.67,
+     "tol": 0.005,
+     "note": "sign differs: manuscript prints the magnitude"
+    },
+    {
+     "key": "year_2020_pct_p1_all.2",
+     "ms": "[+0.077, +0.097] | |  | MechDist weighted degree | +5.99 [+5.40, +6.61] | +7.04 [+6.61, +7.41] | +0.088 [+0.07",
+     "expected": -6.61,
+     "tol": 0.005,
+     "note": "sign differs: manuscript prints the magnitude"
+    },
+    {
+     "key": "seeds_pct_s4_test.seed_max",
+     "ms": "092, +0.113] | |  | Shared genes | +7.18 [+6.53, +7.83] | +5.21 [+4.76, +5.70] | +0.081 [+0.070, +0.093] | +0.",
+     "expected": 4.76,
+     "tol": 0.005
+    },
+    {
+     "key": "s5_test_vs_popularity.E1.0",
+     "ms": "ed genes | +7.18 [+6.53, +7.83] | +5.21 [+4.76, +5.70] | +0.081 [+0.070, +0.093] | +0.049 [+0.040, +0.058] | |",
+     "expected": 0.07,
+     "tol": 0.0005
+    },
+    {
+     "key": "years_pct_s3_test.favour",
+     "ms": "7 [+0.413, +0.439] | +0.422 [+0.411, +0.434] | | Matched samples of 20 diseases | Weighted Adamic–Adar | +10.7",
+     "expected": 20
+    },
+    {
+     "key": "s2_test_vs_wAA.0",
+     "ms": "434] | | Matched samples of 20 diseases | Weighted Adamic–Adar | +10.71 [+9.68, +11.93] | +7.05 [+6.29, +7.71]",
+     "expected": 10.71,
+     "tol": 0.005
+    },
+    {
+     "key": "s2_test_vs_wAA.1",
+     "ms": " Matched samples of 20 diseases | Weighted Adamic–Adar | +10.71 [+9.68, +11.93] | +7.05 [+6.29, +7.71] | +0.09",
+     "expected": 9.68,
+     "tol": 0.005
+    },
+    {
+     "key": "s2_test_vs_wAA.2",
+     "ms": " samples of 20 diseases | Weighted Adamic–Adar | +10.71 [+9.68, +11.93] | +7.05 [+6.29, +7.71] | +0.093 [+0.08",
+     "expected": 11.93,
+     "tol": 0.005
+    },
+    {
+     "key": "s2_all_vs_wAA.0",
+     "ms": "of 20 diseases | Weighted Adamic–Adar | +10.71 [+9.68, +11.93] | +7.05 [+6.29, +7.71] | +0.093 [+0.080, +0.107",
+     "expected": 7.05,
+     "tol": 0.005
+    },
+    {
+     "key": "s2_all_vs_wAA.1",
+     "ms": "iseases | Weighted Adamic–Adar | +10.71 [+9.68, +11.93] | +7.05 [+6.29, +7.71] | +0.093 [+0.080, +0.107] | +0.",
+     "expected": 6.29,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_test_vs_hpo.pct_s3.2",
+     "ms": " [+0.080, +0.107] | +0.077 [+0.065, +0.087] | |  | Adamic–Adar | +8.81 [+7.64, +9.98] | +4.52 [+3.81, +5.29] |",
+     "expected": -8.81,
+     "tol": 0.005,
+     "note": "sign differs: manuscript prints the magnitude"
+    },
+    {
+     "key": "subset_pooled_single_event_test.pct_p1.2",
+     "ms": ".065, +0.087] | |  | Adamic–Adar | +8.81 [+7.64, +9.98] | +4.52 [+3.81, +5.29] | +0.038 [+0.025, +0.052] | +0.",
+     "expected": 3.81,
+     "tol": 0.005
+    },
+    {
+     "key": "year_2020_pct_s3_all.1",
+     "ms": "| +0.298 [+0.285, +0.311] | |  | Shared genes | +11.48 [+10.19, +12.50] | +7.38 [+6.64, +8.14] | +0.006 [−0.00",
+     "expected": -12.5,
+     "tol": 0.005,
+     "note": "sign differs: manuscript prints the magnitude"
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_test.pct_p1.0",
+     "ms": "-process similarity | +13.01 [+11.90, +14.33] | +10.90 [+10.19, +11.64] | +0.047 [+0.034, +0.060] | +0.035 [+0",
+     "expected": 11.64,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_test.vs_wAA.0",
+     "ms": "| | All candidate diseases, no grouping | Weighted Adamic–Adar | −0.69 [−0.84, −0.49] | −0.34 [−0.46, −0.21] |",
+     "expected": -0.69,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_test.vs_wAA.1",
+     "ms": " candidate diseases, no grouping | Weighted Adamic–Adar | −0.69 [−0.84, −0.49] | −0.34 [−0.46, −0.21] | −0.016",
+     "expected": -0.84,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_test.vs_wAA.2",
+     "ms": "ate diseases, no grouping | Weighted Adamic–Adar | −0.69 [−0.84, −0.49] | −0.34 [−0.46, −0.21] | −0.016 [−0.02",
+     "expected": -0.49,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_all.vs_wAA.0",
+     "ms": "ses, no grouping | Weighted Adamic–Adar | −0.69 [−0.84, −0.49] | −0.34 [−0.46, −0.21] | −0.016 [−0.024, −0.008",
+     "expected": -0.34,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_all.vs_wAA.1",
+     "ms": " grouping | Weighted Adamic–Adar | −0.69 [−0.84, −0.49] | −0.34 [−0.46, −0.21] | −0.016 [−0.024, −0.008] | −0.",
+     "expected": -0.46,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_all.pct_s4.2",
+     "ms": "0.025] | |  | Adamic–Adar | −0.49 [−0.68, −0.28] | −0.30 [−0.43, −0.17] | −0.019 [−0.026, −0.011] | −0.034 [−0",
+     "expected": -0.17,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_test.vs_popularity.0",
+     "ms": "6, −0.011] | −0.034 [−0.040, −0.028] | |  | Disease popularity | −3.48 [−3.63, −3.28] | −2.66 [−2.79, −2.53] |",
+     "expected": -3.48,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_test.vs_popularity.1",
+     "ms": "11] | −0.034 [−0.040, −0.028] | |  | Disease popularity | −3.48 [−3.63, −3.28] | −2.66 [−2.79, −2.53] | −0.102",
+     "expected": -3.63,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_test.vs_popularity.2",
+     "ms": "0.034 [−0.040, −0.028] | |  | Disease popularity | −3.48 [−3.63, −3.28] | −2.66 [−2.79, −2.53] | −0.102 [−0.11",
+     "expected": -3.28,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_all.vs_popularity.0",
+     "ms": ".040, −0.028] | |  | Disease popularity | −3.48 [−3.63, −3.28] | −2.66 [−2.79, −2.53] | −0.102 [−0.110, −0.095",
+     "expected": -2.66,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_all.vs_popularity.1",
+     "ms": "0.028] | |  | Disease popularity | −3.48 [−3.63, −3.28] | −2.66 [−2.79, −2.53] | −0.102 [−0.110, −0.095] | −0.",
+     "expected": -2.79,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_all.vs_popularity.2",
+     "ms": "| |  | Disease popularity | −3.48 [−3.63, −3.28] | −2.66 [−2.79, −2.53] | −0.102 [−0.110, −0.095] | −0.078 [−0",
+     "expected": -2.53,
+     "tol": 0.005
+    },
+    {
+     "key": "year_1997_pct_p1_all.0",
+     "ms": " Combined with popularity | Weighted Adamic–Adar | +0.28 [+0.23, +0.32] | +0.38 [+0.35, +0.42] | −0.004 [−0.00",
+     "expected": 0.32,
+     "tol": 0.005
+    },
+    {
+     "key": "prec_s4_all_mean_pct.wAA",
+     "ms": " with popularity | Weighted Adamic–Adar | +0.28 [+0.23, +0.32] | +0.38 [+0.35, +0.42] | −0.004 [−0.008, −0.001",
+     "expected": 0.38,
+     "tol": 0.005
+    },
+    {
+     "key": "s5_all_vs_popularity.E1.1",
+     "ms": "opularity | Weighted Adamic–Adar | +0.28 [+0.23, +0.32] | +0.38 [+0.35, +0.42] | −0.004 [−0.008, −0.001] | −0.",
+     "expected": 0.35,
+     "tol": 0.005
+    },
+    {
+     "key": "s5_all_vs_popularity.E2.0",
+     "ms": "0.23, +0.32] | +0.38 [+0.35, +0.42] | −0.004 [−0.008, −0.001] | −0.007 [−0.009, −0.005] | |  | Adamic–Adar | +",
+     "expected": -0.007,
+     "tol": 0.0005
+    },
+    {
+     "key": "s5_all_vs_popularity.E2.2",
+     "ms": "0.38 [+0.35, +0.42] | −0.004 [−0.008, −0.001] | −0.007 [−0.009, −0.005] | |  | Adamic–Adar | +0.29 [+0.25, +0.",
+     "expected": -0.005,
+     "tol": 0.0005
+    },
+    {
+     "key": "s5_all_vs_popularity.E1.0",
+     "ms": "007 [−0.009, −0.005] | |  | Adamic–Adar | +0.29 [+0.25, +0.35] | +0.40 [+0.37, +0.44] | 0.000 [−0.004, +0.003]",
+     "expected": 0.4,
+     "tol": 0.005
+    },
+    {
+     "key": "prec_s4_all_mean_pct.disatlas",
+     "ms": ".009, −0.005] | |  | Adamic–Adar | +0.29 [+0.25, +0.35] | +0.40 [+0.37, +0.44] | 0.000 [−0.004, +0.003] | −0.0",
+     "expected": 0.37,
+     "tol": 0.005
+    },
+    {
+     "key": "s5_all_vs_popularity.E1.2",
+     "ms": "0.005] | |  | Adamic–Adar | +0.29 [+0.25, +0.35] | +0.40 [+0.37, +0.44] | 0.000 [−0.004, +0.003] | −0.005 [−0.",
+     "expected": 0.44,
+     "tol": 0.005
+    },
+    {
+     "key": "s5_test_vs_popularity.E1.2",
+     "ms": "0.005 [−0.008, −0.003] | |  | Disease popularity | +0.07 [+0.01, +0.13] | +0.40 [+0.35, +0.44] | −0.010 [−0.01",
+     "expected": 0.13,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_all.pct_s4.2",
+     "ms": ".029] | 0.000 [−0.003, +0.003] | |  | MechDist weighted degree | +0.62 [+0.56, +0.67] | +0.81 [+0.77, +0.86] |",
+     "expected": -0.62,
+     "tol": 0.005,
+     "note": "sign differs: manuscript prints the magnitude"
+    },
+    {
+     "key": "subset_pooled_aa_pos_test.pct_s4.0",
+     "ms": "[−0.003, +0.003] | |  | MechDist weighted degree | +0.62 [+0.56, +0.67] | +0.81 [+0.77, +0.86] | +0.023 [+0.01",
+     "expected": -0.67,
+     "tol": 0.005,
+     "note": "sign differs: manuscript prints the magnitude"
+    },
+    {
+     "key": "subset_pooled_single_event_all.pct_s4.0",
+     "ms": " | |  | MechDist weighted degree | +0.62 [+0.56, +0.67] | +0.81 [+0.77, +0.86] | +0.023 [+0.018, +0.028] | −0.",
+     "expected": -0.77,
+     "tol": 0.005,
+     "note": "sign differs: manuscript prints the magnitude"
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_test.pct_s4.0",
+     "ms": " MechDist weighted degree | +0.62 [+0.56, +0.67] | +0.81 [+0.77, +0.86] | +0.023 [+0.018, +0.028] | −0.001 [−0",
+     "expected": -0.86,
+     "tol": 0.005,
+     "note": "sign differs: manuscript prints the magnitude"
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_all.pct_s4.0",
+     "ms": "[+0.018, +0.028] | −0.001 [−0.004, +0.001] | |  | Shared genes | +0.22 [+0.17, +0.27] | +0.18 [+0.15, +0.22] |",
+     "expected": -0.22,
+     "tol": 0.005,
+     "note": "sign differs: manuscript prints the magnitude"
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_test.pct_s4.2",
+     "ms": "01 [−0.004, +0.001] | |  | Shared genes | +0.22 [+0.17, +0.27] | +0.18 [+0.15, +0.22] | −0.009 [−0.012, −0.006",
+     "expected": 0.18,
+     "tol": 0.005
+    },
+    {
+     "key": "year_1996_pct_p1_all.2",
+     "ms": "| |  | GO biological-process similarity | +0.60 [+0.55, +0.66] | +0.64 [+0.60, +0.68] | +0.007 [+0.003, +0.011",
+     "expected": 0.64,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_test.pct_s3.0",
+     "ms": ".007, +0.014] | |  | HPO phenotype similarity | +12.56 [+10.79, +13.28] | +4.73 [+3.99, +6.34] | +0.180 [+0.16",
+     "expected": 13.28,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_pos_test.pct_s3.2",
+     "ms": "in the share of drugs whose best-ranked new trial falls in the top 10%. Positive values mean DisAtlas ranks ne",
+     "expected": 10.0,
+     "tol": 0.5
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_test.pct_p1.0",
+     "ms": "and 2021 | Weighted Adamic–Adar | Popularity × weighted degree | +6.65 [+5.69, +7.56] | +5.05 [+4.36, +5.62] |",
+     "expected": 6.65,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_test.pct_p1.1",
+     "ms": "021 | Weighted Adamic–Adar | Popularity × weighted degree | +6.65 [+5.69, +7.56] | +5.05 [+4.36, +5.62] | |  |",
+     "expected": 5.69,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_test.pct_p1.2",
+     "ms": "ghted Adamic–Adar | Popularity × weighted degree | +6.65 [+5.69, +7.56] | +5.05 [+4.36, +5.62] | |  |  | Popul",
+     "expected": 7.56,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_test_vs_hpo.pct_s4.0",
+     "ms": "mic–Adar | Popularity × weighted degree | +6.65 [+5.69, +7.56] | +5.05 [+4.36, +5.62] | |  |  | Popularity | +",
+     "expected": 5.05,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_all.pct_p1.1",
+     "ms": "r | Popularity × weighted degree | +6.65 [+5.69, +7.56] | +5.05 [+4.36, +5.62] | |  |  | Popularity | +8.56 [+",
+     "expected": 4.36,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_all.pct_p1.2",
+     "ms": "ularity × weighted degree | +6.65 [+5.69, +7.56] | +5.05 [+4.36, +5.62] | |  |  | Popularity | +8.56 [+7.88, +",
+     "expected": 5.62,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_test.pct_s3.0",
+     "ms": ".65 [+5.69, +7.56] | +5.05 [+4.36, +5.62] | |  |  | Popularity | +8.56 [+7.88, +9.70] | +10.64 [+9.74, +11.35]",
+     "expected": 8.56,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_test.pct_s3.1",
+     "ms": ".69, +7.56] | +5.05 [+4.36, +5.62] | |  |  | Popularity | +8.56 [+7.88, +9.70] | +10.64 [+9.74, +11.35] | |  |",
+     "expected": 7.88,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_test.pct_s3.2",
+     "ms": "7.56] | +5.05 [+4.36, +5.62] | |  |  | Popularity | +8.56 [+7.88, +9.70] | +10.64 [+9.74, +11.35] | |  |  | No",
+     "expected": 9.7,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_all.pct_s3.0",
+     "ms": "05 [+4.36, +5.62] | |  |  | Popularity | +8.56 [+7.88, +9.70] | +10.64 [+9.74, +11.35] | |  |  | No grouping |",
+     "expected": 10.64,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_all.pct_s3.1",
+     "ms": ".36, +5.62] | |  |  | Popularity | +8.56 [+7.88, +9.70] | +10.64 [+9.74, +11.35] | |  |  | No grouping | −0.86",
+     "expected": 9.74,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_all.pct_s3.2",
+     "ms": "62] | |  |  | Popularity | +8.56 [+7.88, +9.70] | +10.64 [+9.74, +11.35] | |  |  | No grouping | −0.86 [−1.02,",
+     "expected": 11.35,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_test.pct_s4.1",
+     "ms": ", +9.70] | +10.64 [+9.74, +11.35] | |  |  | No grouping | −0.86 [−1.02, −0.65] | −0.31 [−0.45, −0.17] | | Drug",
+     "expected": -1.02,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_test.pct_s4.2",
+     "ms": "0] | +10.64 [+9.74, +11.35] | |  |  | No grouping | −0.86 [−1.02, −0.65] | −0.31 [−0.45, −0.17] | | Drug-years",
+     "expected": -0.65,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_all.pct_s4.0",
+     "ms": "64 [+9.74, +11.35] | |  |  | No grouping | −0.86 [−1.02, −0.65] | −0.31 [−0.45, −0.17] | | Drug-years with one",
+     "expected": -0.31,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_excl_2020_2021_all.pct_s4.1",
+     "ms": "4, +11.35] | |  |  | No grouping | −0.86 [−1.02, −0.65] | −0.31 [−0.45, −0.17] | | Drug-years with one new dis",
+     "expected": -0.45,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_test.pct_p1.0",
+     "ms": " disease | Weighted Adamic–Adar | Popularity × weighted degree | +2.59 [+2.05, +3.81] | −0.04 [−0.89, +0.75] |",
+     "expected": 2.59,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_test.pct_p1.1",
+     "ms": "ase | Weighted Adamic–Adar | Popularity × weighted degree | +2.59 [+2.05, +3.81] | −0.04 [−0.89, +0.75] | |  |",
+     "expected": 2.05,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_all.pct_p1.1",
+     "ms": "r | Popularity × weighted degree | +2.59 [+2.05, +3.81] | −0.04 [−0.89, +0.75] | |  |  | Popularity | +2.28 [+",
+     "expected": -0.89,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_all.pct_p1.2",
+     "ms": "ularity × weighted degree | +2.59 [+2.05, +3.81] | −0.04 [−0.89, +0.75] | |  |  | Popularity | +2.28 [+1.41, +",
+     "expected": 0.75,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_test.pct_s3.0",
+     "ms": ".59 [+2.05, +3.81] | −0.04 [−0.89, +0.75] | |  |  | Popularity | +2.28 [+1.41, +3.34] | +3.34 [+2.38, +4.26] |",
+     "expected": 2.28,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_test.pct_s3.1",
+     "ms": "+2.05, +3.81] | −0.04 [−0.89, +0.75] | |  |  | Popularity | +2.28 [+1.41, +3.34] | +3.34 [+2.38, +4.26] | |  |",
+     "expected": 1.41,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_all.pct_s3.0",
+     "ms": ".81] | −0.04 [−0.89, +0.75] | |  |  | Popularity | +2.28 [+1.41, +3.34] | +3.34 [+2.38, +4.26] | |  |  | No gr",
+     "expected": 3.34,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_all.pct_s3.1",
+     "ms": ".89, +0.75] | |  |  | Popularity | +2.28 [+1.41, +3.34] | +3.34 [+2.38, +4.26] | |  |  | No grouping | −1.70 [",
+     "expected": 2.38,
+     "tol": 0.005
+    },
+    {
+     "key": "seeds_pct_s4_all.seed_max",
+     "ms": "0.75] | |  |  | Popularity | +2.28 [+1.41, +3.34] | +3.34 [+2.38, +4.26] | |  |  | No grouping | −1.70 [−1.93,",
+     "expected": 4.26,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_test.pct_s4.0",
+     "ms": "28 [+1.41, +3.34] | +3.34 [+2.38, +4.26] | |  |  | No grouping | −1.70 [−1.93, −1.46] | −0.77 [−0.96, −0.62] |",
+     "expected": -1.7,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_test.pct_s4.1",
+     "ms": "41, +3.34] | +3.34 [+2.38, +4.26] | |  |  | No grouping | −1.70 [−1.93, −1.46] | −0.77 [−0.96, −0.62] | | Dise",
+     "expected": -1.93,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_test.pct_s4.2",
+     "ms": "34] | +3.34 [+2.38, +4.26] | |  |  | No grouping | −1.70 [−1.93, −1.46] | −0.77 [−0.96, −0.62] | | Diseases wi",
+     "expected": -1.46,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_single_event_all.pct_s4.1",
+     "ms": "38, +4.26] | |  |  | No grouping | −1.70 [−1.93, −1.46] | −0.77 [−0.96, −0.62] | | Diseases with a shared Mech",
+     "expected": -0.96,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_pos_test.pct_p1.0",
+     "ms": "eighbour | Weighted Adamic–Adar | Popularity × weighted degree | +6.87 [+6.08, +7.76] | +3.64 [+2.99, +4.23] |",
+     "expected": 6.87,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_pos_test.pct_p1.1",
+     "ms": "our | Weighted Adamic–Adar | Popularity × weighted degree | +6.87 [+6.08, +7.76] | +3.64 [+2.99, +4.23] | |  |",
+     "expected": 6.08,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_pos_test.pct_p1.2",
+     "ms": "ghted Adamic–Adar | Popularity × weighted degree | +6.87 [+6.08, +7.76] | +3.64 [+2.99, +4.23] | |  |  | Popul",
+     "expected": 7.76,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_pos_all.pct_p1.0",
+     "ms": "mic–Adar | Popularity × weighted degree | +6.87 [+6.08, +7.76] | +3.64 [+2.99, +4.23] | |  |  | Popularity | +",
+     "expected": 3.64,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_pos_all.pct_p1.2",
+     "ms": "ularity × weighted degree | +6.87 [+6.08, +7.76] | +3.64 [+2.99, +4.23] | |  |  | Popularity | +8.87 [+8.29, +",
+     "expected": 4.23,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_pos_test.pct_s3.0",
+     "ms": "6.87 [+6.08, +7.76] | +3.64 [+2.99, +4.23] | |  |  | Popularity | +8.87 [+8.29, +10.00] | +8.43 [+7.77, +9.08]",
+     "expected": 8.87,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_pos_test.pct_s3.1",
+     "ms": "6.08, +7.76] | +3.64 [+2.99, +4.23] | |  |  | Popularity | +8.87 [+8.29, +10.00] | +8.43 [+7.77, +9.08] | |  |",
+     "expected": 8.29,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_pos_all.pct_s3.0",
+     "ms": ".64 [+2.99, +4.23] | |  |  | Popularity | +8.87 [+8.29, +10.00] | +8.43 [+7.77, +9.08] | |  |  | No grouping |",
+     "expected": 8.43,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_pos_all.pct_s3.1",
+     "ms": "99, +4.23] | |  |  | Popularity | +8.87 [+8.29, +10.00] | +8.43 [+7.77, +9.08] | |  |  | No grouping | −0.67 [",
+     "expected": 7.77,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_pos_all.pct_s3.2",
+     "ms": ".23] | |  |  | Popularity | +8.87 [+8.29, +10.00] | +8.43 [+7.77, +9.08] | |  |  | No grouping | −0.67 [−0.84,",
+     "expected": 9.08,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_pos_test.pct_s4.2",
+     "ms": "00] | +8.43 [+7.77, +9.08] | |  |  | No grouping | −0.67 [−0.84, −0.50] | −0.34 [−0.46, −0.21] | | Diseases wi",
+     "expected": -0.5,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_test.pct_p1.0",
+     "ms": "ighbour | Weighted Adamic–Adar | Popularity × weighted degree | +30.79 [+22.25, +34.69] | +26.84 [+19.71, +31.",
+     "expected": 30.79,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_test.pct_p1.2",
+     "ms": "ed Adamic–Adar | Popularity × weighted degree | +30.79 [+22.25, +34.69] | +26.84 [+19.71, +31.35] | |  |  | Po",
+     "expected": 34.69,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_all.pct_p1.0",
+     "ms": "Adar | Popularity × weighted degree | +30.79 [+22.25, +34.69] | +26.84 [+19.71, +31.35] | |  |  | Popularity |",
+     "expected": 26.84,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_all.pct_p1.1",
+     "ms": "Popularity × weighted degree | +30.79 [+22.25, +34.69] | +26.84 [+19.71, +31.35] | |  |  | Popularity | +28.24",
+     "expected": 19.71,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_all.pct_p1.2",
+     "ms": "y × weighted degree | +30.79 [+22.25, +34.69] | +26.84 [+19.71, +31.35] | |  |  | Popularity | +28.24 [+22.32,",
+     "expected": 31.35,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_test.pct_s3.0",
+     "ms": "22.25, +34.69] | +26.84 [+19.71, +31.35] | |  |  | Popularity | +28.24 [+22.32, +35.03] | +28.79 [+21.85, +35.",
+     "expected": 28.24,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_test.pct_s3.1",
+     "ms": "+34.69] | +26.84 [+19.71, +31.35] | |  |  | Popularity | +28.24 [+22.32, +35.03] | +28.79 [+21.85, +35.48] | |",
+     "expected": 22.32,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_test.pct_s3.2",
+     "ms": " +26.84 [+19.71, +31.35] | |  |  | Popularity | +28.24 [+22.32, +35.03] | +28.79 [+21.85, +35.48] | |  |  | No",
+     "expected": 35.03,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_all.pct_s3.0",
+     "ms": "+19.71, +31.35] | |  |  | Popularity | +28.24 [+22.32, +35.03] | +28.79 [+21.85, +35.48] | |  |  | No grouping",
+     "expected": 28.79,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_all.pct_s3.1",
+     "ms": "31.35] | |  |  | Popularity | +28.24 [+22.32, +35.03] | +28.79 [+21.85, +35.48] | |  |  | No grouping | +14.12",
+     "expected": 21.85,
+     "tol": 0.005
+    },
+    {
+     "key": "seeds_pct_p1_all.popularity",
+     "ms": " |  |  | Popularity | +28.24 [+22.32, +35.03] | +28.79 [+21.85, +35.48] | |  |  | No grouping | +14.12 [+2.94,",
+     "expected": 35.48,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_test.pct_s4.0",
+     "ms": "2.32, +35.03] | +28.79 [+21.85, +35.48] | |  |  | No grouping | +14.12 [+2.94, +23.93] | +12.69 [+3.03, +21.43",
+     "expected": 14.12,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_test.pct_s4.1",
+     "ms": "35.03] | +28.79 [+21.85, +35.48] | |  |  | No grouping | +14.12 [+2.94, +23.93] | +12.69 [+3.03, +21.43] | | D",
+     "expected": 2.94,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_test.pct_s4.2",
+     "ms": "| +28.79 [+21.85, +35.48] | |  |  | No grouping | +14.12 [+2.94, +23.93] | +12.69 [+3.03, +21.43] | | Diseases",
+     "expected": 23.93,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_all.pct_s4.0",
+     "ms": "21.85, +35.48] | |  |  | No grouping | +14.12 [+2.94, +23.93] | +12.69 [+3.03, +21.43] | | Diseases with HPO p",
+     "expected": 12.69,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_all.pct_s4.1",
+     "ms": "+35.48] | |  |  | No grouping | +14.12 [+2.94, +23.93] | +12.69 [+3.03, +21.43] | | Diseases with HPO phenotyp",
+     "expected": 3.03,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_aa_zero_all.pct_s4.2",
+     "ms": "| |  |  | No grouping | +14.12 [+2.94, +23.93] | +12.69 [+3.03, +21.43] | | Diseases with HPO phenotype annota",
+     "expected": 21.43,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_test.pct_p1.1",
+     "ms": " | Weighted Adamic–Adar | Popularity × weighted degree | +11.64 [+10.72, +12.96] | +6.52 [+5.69, +7.44] | |  |",
+     "expected": 10.72,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_test.pct_p1.2",
+     "ms": "ed Adamic–Adar | Popularity × weighted degree | +11.64 [+10.72, +12.96] | +6.52 [+5.69, +7.44] | |  |  | Popul",
+     "expected": 12.96,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_all.pct_p1.0",
+     "ms": "–Adar | Popularity × weighted degree | +11.64 [+10.72, +12.96] | +6.52 [+5.69, +7.44] | |  |  | Popularity | +",
+     "expected": 6.52,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_all.pct_p1.2",
+     "ms": "rity × weighted degree | +11.64 [+10.72, +12.96] | +6.52 [+5.69, +7.44] | |  |  | Popularity | +13.28 [+11.85,",
+     "expected": 7.44,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_test.pct_s3.1",
+     "ms": ", +12.96] | +6.52 [+5.69, +7.44] | |  |  | Popularity | +13.28 [+11.85, +14.91] | +9.89 [+8.80, +10.99] | |  |",
+     "expected": 11.85,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_test.pct_s3.2",
+     "ms": "] | +6.52 [+5.69, +7.44] | |  |  | Popularity | +13.28 [+11.85, +14.91] | +9.89 [+8.80, +10.99] | |  |  | No g",
+     "expected": 14.91,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_all.pct_s3.0",
+     "ms": " [+5.69, +7.44] | |  |  | Popularity | +13.28 [+11.85, +14.91] | +9.89 [+8.80, +10.99] | |  |  | No grouping |",
+     "expected": 9.89,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_all.pct_s3.1",
+     "ms": "9, +7.44] | |  |  | Popularity | +13.28 [+11.85, +14.91] | +9.89 [+8.80, +10.99] | |  |  | No grouping | −0.09",
+     "expected": 8.8,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_all.pct_s3.2",
+     "ms": "] | |  |  | Popularity | +13.28 [+11.85, +14.91] | +9.89 [+8.80, +10.99] | |  |  | No grouping | −0.09 [−0.33,",
+     "expected": 10.99,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_test.pct_s4.0",
+     "ms": " [+11.85, +14.91] | +9.89 [+8.80, +10.99] | |  |  | No grouping | −0.09 [−0.33, +0.18] | −0.22 [−0.45, 0.00] |",
+     "expected": -0.09,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_pooled_covered_hpo_simgic_test.pct_s4.1",
+     "ms": ", +14.91] | +9.89 [+8.80, +10.99] | |  |  | No grouping | −0.09 [−0.33, +0.18] | −0.22 [−0.45, 0.00] | | Disea",
+     "expected": -0.33,
+     "tol": 0.005
+    },
+    {
+     "key": "p1_all_top10_vs_wAA.0",
+     "ms": ".99] | |  |  | No grouping | −0.09 [−0.33, +0.18] | −0.22 [−0.45, 0.00] | | Diseases with GO biological-proces",
+     "expected": 0.0,
+     "tol": 0.005
+    },
+    {
+     "key": "year_1997_pct_p1_all.1",
+     "ms": "ularity × weighted degree | +6.95 [+6.17, +7.90] | +3.48 [+2.91, +4.17] | |  |  | Popularity | +9.08 [+8.33, +",
+     "expected": -4.17,
+     "tol": 0.005,
+     "note": "sign differs: manuscript prints the magnitude"
+    },
+    {
+     "key": "subset_aa_zero_test_p1.hpo_simgic.0",
+     "ms": "90] | +3.48 [+2.91, +4.17] | |  |  | Popularity | +9.08 [+8.33, +10.15] | +8.42 [+7.76, +9.12] | |  |  | No gr",
+     "expected": -10.15,
+     "tol": 0.005,
+     "note": "sign differs: manuscript prints the magnitude"
+    },
+    {
+     "key": "prec_s3_test_mean_pct.wAA",
+     "ms": ".48 [+2.91, +4.17] | |  |  | Popularity | +9.08 [+8.33, +10.15] | +8.42 [+7.76, +9.12] | |  |  | No grouping |",
+     "expected": 8.42,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_single_event_test_AA_p1.0",
+     "ms": "h one new disease | Adamic–Adar | Popularity × weighted degree | +0.93 [+0.52, +2.25] | −2.58 [−3.16, −1.59] |",
+     "expected": 0.93,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_single_event_test_AA_p1.1",
+     "ms": " new disease | Adamic–Adar | Popularity × weighted degree | +0.93 [+0.52, +2.25] | −2.58 [−3.16, −1.59] | |  |",
+     "expected": 0.52,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_single_event_test_AA_p1.2",
+     "ms": "ase | Adamic–Adar | Popularity × weighted degree | +0.93 [+0.52, +2.25] | −2.58 [−3.16, −1.59] | |  |  | Popul",
+     "expected": 2.25,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_single_event_all_AA_p1.0",
+     "ms": "mic–Adar | Popularity × weighted degree | +0.93 [+0.52, +2.25] | −2.58 [−3.16, −1.59] | |  |  | Popularity | +",
+     "expected": -2.58,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_single_event_all_AA_p1.1",
+     "ms": "r | Popularity × weighted degree | +0.93 [+0.52, +2.25] | −2.58 [−3.16, −1.59] | |  |  | Popularity | +1.19 [+",
+     "expected": -3.16,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_single_event_all_AA_p1.2",
+     "ms": "ularity × weighted degree | +0.93 [+0.52, +2.25] | −2.58 [−3.16, −1.59] | |  |  | Popularity | +1.19 [+0.43, +",
+     "expected": -1.59,
+     "tol": 0.005
+    },
+    {
+     "key": "s4_test.E1_popularity",
+     "ms": "36, +1.42] | |  |  | No grouping | −1.64 [−1.86, −1.42] | −0.81 [−0.99, −0.65] | | Diseases without a shared M",
+     "expected": 0.99,
+     "tol": 0.005,
+     "note": "sign differs: manuscript prints the magnitude"
+    },
+    {
+     "key": "subset_aa_zero_test_p1.popularity.0",
+     "ms": "neighbour | Disease popularity | Popularity × weighted degree | −22.61 [−41.83, −16.11] | −20.78 [−34.26, −11.",
+     "expected": -22.61,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_aa_zero_test_p1.popularity.1",
+     "ms": "ur | Disease popularity | Popularity × weighted degree | −22.61 [−41.83, −16.11] | −20.78 [−34.26, −11.96] | |",
+     "expected": -41.83,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_aa_zero_test_p1.popularity.2",
+     "ms": "ase popularity | Popularity × weighted degree | −22.61 [−41.83, −16.11] | −20.78 [−34.26, −11.96] | |  |  | Po",
+     "expected": -16.11,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_aa_zero_all_p1.popularity.0",
+     "ms": "rity | Popularity × weighted degree | −22.61 [−41.83, −16.11] | −20.78 [−34.26, −11.96] | |  |  | Popularity |",
+     "expected": -20.78,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_aa_zero_all_p1.popularity.1",
+     "ms": "Popularity × weighted degree | −22.61 [−41.83, −16.11] | −20.78 [−34.26, −11.96] | |  |  | Popularity | −27.79",
+     "expected": -34.26,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_aa_zero_all_p1.popularity.2",
+     "ms": "y × weighted degree | −22.61 [−41.83, −16.11] | −20.78 [−34.26, −11.96] | |  |  | Popularity | −27.79 [−43.40,",
+     "expected": -11.96,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_aa_zero_test_p1.gene_jaccard.0",
+     "ms": "chDist neighbour | Shared genes | Popularity × weighted degree | −9.29 [−16.87, −5.27] | −11.41 [−19.16, −8.06",
+     "expected": -9.29,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_aa_zero_test_p1.gene_jaccard.1",
+     "ms": "eighbour | Shared genes | Popularity × weighted degree | −9.29 [−16.87, −5.27] | −11.41 [−19.16, −8.06] | |  |",
+     "expected": -16.87,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_aa_zero_test_p1.gene_jaccard.2",
+     "ms": "r | Shared genes | Popularity × weighted degree | −9.29 [−16.87, −5.27] | −11.41 [−19.16, −8.06] | |  |  | Pop",
+     "expected": -5.27,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_aa_zero_all_p1.gene_jaccard.0",
+     "ms": "d genes | Popularity × weighted degree | −9.29 [−16.87, −5.27] | −11.41 [−19.16, −8.06] | |  |  | Popularity |",
+     "expected": -11.41,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_aa_zero_all_p1.gene_jaccard.2",
+     "ms": "rity × weighted degree | −9.29 [−16.87, −5.27] | −11.41 [−19.16, −8.06] | |  |  | Popularity | −11.76 [−17.52,",
+     "expected": -8.06,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_aa_zero_test_p1.hpo_simgic.1",
+     "ms": "O phenotype similarity | Popularity × weighted degree | −10.15 [−18.15, −6.70] | −12.21 [−19.91, −8.67] | |  |",
+     "expected": -18.15,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_aa_zero_test_p1.hpo_simgic.2",
+     "ms": "type similarity | Popularity × weighted degree | −10.15 [−18.15, −6.70] | −12.21 [−19.91, −8.67] | |  |  | Pop",
+     "expected": -6.7,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_aa_zero_all_p1.hpo_simgic.0",
+     "ms": "larity | Popularity × weighted degree | −10.15 [−18.15, −6.70] | −12.21 [−19.91, −8.67] | |  |  | Popularity |",
+     "expected": -12.21,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_aa_zero_all_p1.hpo_simgic.1",
+     "ms": "Popularity × weighted degree | −10.15 [−18.15, −6.70] | −12.21 [−19.91, −8.67] | |  |  | Popularity | −14.32 [",
+     "expected": -19.91,
+     "tol": 0.005
+    },
+    {
+     "key": "seeds_pct_p1_test.seed_min",
+     "ms": "−8.39] | −16.08 [−22.60, −9.07] | |  |  | No grouping | −14.07 [−24.24, −4.27] | −14.78 [−24.15, −7.16] | | Di",
+     "expected": 24.24,
+     "tol": 0.005,
+     "note": "sign differs: manuscript prints the magnitude"
+    },
+    {
+     "key": "subset_hpo_test_vs_hpo.pct_p1.0",
+     "ms": "ion | HPO phenotype similarity | Popularity × weighted degree | −10.69 [−11.50, −9.74] | −12.50 [−13.27, −11.6",
+     "expected": -10.69,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_test_vs_hpo.pct_p1.1",
+     "ms": "HPO phenotype similarity | Popularity × weighted degree | −10.69 [−11.50, −9.74] | −12.50 [−13.27, −11.60] | |",
+     "expected": -11.5,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_test_vs_hpo.pct_p1.2",
+     "ms": "type similarity | Popularity × weighted degree | −10.69 [−11.50, −9.74] | −12.50 [−13.27, −11.60] | |  |  | Po",
+     "expected": -9.74,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_all_vs_hpo.pct_p1.2",
+     "ms": "ity × weighted degree | −10.69 [−11.50, −9.74] | −12.50 [−13.27, −11.60] | |  |  | Popularity | −9.92 [−10.91,",
+     "expected": -11.6,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_test_vs_hpo.pct_s3.0",
+     "ms": "[−11.50, −9.74] | −12.50 [−13.27, −11.60] | |  |  | Popularity | −9.92 [−10.91, −8.81] | −9.83 [−10.66, −9.13]",
+     "expected": -9.92,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_test_vs_hpo.pct_s3.1",
+     "ms": ", −9.74] | −12.50 [−13.27, −11.60] | |  |  | Popularity | −9.92 [−10.91, −8.81] | −9.83 [−10.66, −9.13] | |  |",
+     "expected": -10.91,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_all_vs_hpo.pct_s3.0",
+     "ms": " [−13.27, −11.60] | |  |  | Popularity | −9.92 [−10.91, −8.81] | −9.83 [−10.66, −9.13] | |  |  | No grouping |",
+     "expected": -9.83,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_all_vs_hpo.pct_s3.1",
+     "ms": ", −11.60] | |  |  | Popularity | −9.92 [−10.91, −8.81] | −9.83 [−10.66, −9.13] | |  |  | No grouping | +5.05 [",
+     "expected": -10.66,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_all_vs_hpo.pct_s3.2",
+     "ms": "60] | |  |  | Popularity | −9.92 [−10.91, −8.81] | −9.83 [−10.66, −9.13] | |  |  | No grouping | +5.05 [+4.43,",
+     "expected": -9.13,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_test_vs_hpo.pct_s4.1",
+     "ms": "1, −8.81] | −9.83 [−10.66, −9.13] | |  |  | No grouping | +5.05 [+4.43, +5.84] | +4.93 [+4.38, +5.47] |  : Eve",
+     "expected": 4.43,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_test_vs_hpo.pct_s4.2",
+     "ms": "1] | −9.83 [−10.66, −9.13] | |  |  | No grouping | +5.05 [+4.43, +5.84] | +4.93 [+4.38, +5.47] |  : Event-time",
+     "expected": 5.84,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_all_vs_hpo.pct_s4.0",
+     "ms": "3 [−10.66, −9.13] | |  |  | No grouping | +5.05 [+4.43, +5.84] | +4.93 [+4.38, +5.47] |  : Event-time holdout:",
+     "expected": 4.93,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_all_vs_hpo.pct_s4.1",
+     "ms": "66, −9.13] | |  |  | No grouping | +5.05 [+4.43, +5.84] | +4.93 [+4.38, +5.47] |  : Event-time holdout: Median",
+     "expected": 4.38,
+     "tol": 0.005
+    },
+    {
+     "key": "subset_hpo_all_vs_hpo.pct_s4.2",
+     "ms": "13] | |  |  | No grouping | +5.05 [+4.43, +5.84] | +4.93 [+4.38, +5.47] |  : Event-time holdout: Median-percen",
+     "expected": 5.47,
+     "tol": 0.005
+    }
+   ]
+  },
+  {
+   "label": "SI_et_coverage",
+   "script": "figures/SI/si_event_time_tables.py",
+   "numbers": "figures/SI/SI_event_time_tables_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "years_pct_s4_all.favour",
+     "ms": "larity could be computed for 99.8% and 99.7% of all new trials (100.0% and 99.9% in the test pool), and HPO ph",
+     "expected": 1.0,
+     "tol": 0.0005
+    }
+   ]
+  }
+ ],
+ "unchecked": [
+  {
+   "section": "SI_event_time_methods",
+   "token": "1996",
+   "reason": "calendar year (slice / release date label)",
+   "ctx": "poral holdout.] [Each new trial of a drug in a disease that started between 1996 and 2021 is ranked, in the year it star"
+  },
+  {
+   "section": "SI_event_time_methods",
+   "token": "2021",
+   "reason": "calendar year (slice / release date label)",
+   "ctx": "dout.] [Each new trial of a drug in a disease that started between 1996 and 2021 is ranked, in the year it started, by t"
+  },
+  {
+   "section": "SI_et_comparison_sets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "ble ]).] [Without grouping, the DisAtlas advantage over popularity is −3.48 (95% CI −3.63 to −3.28) in the test pool and"
+  },
+  {
+   "section": "SI_et_comparison_sets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "over popularity is −3.48 (95% CI −3.63 to −3.28) in the test pool and −2.66 (95% CI −2.79 to −2.53) among all diseases, "
+  },
+  {
+   "section": "SI_et_comparison_sets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": " CI −2.79 to −2.53) among all diseases, and over weighted Adamic–Adar −0.69 (95% CI −0.84 to −0.49) and −0.34 (95% CI −0"
+  },
+  {
+   "section": "SI_et_comparison_sets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "ases, and over weighted Adamic–Adar −0.69 (95% CI −0.84 to −0.49) and −0.34 (95% CI −0.46 to −0.21).] [Popularity alone "
+  },
+  {
+   "section": "SI_et_comparison_sets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "tion of the co-primary analyses (advantage over weighted Adamic–Adar +10.71, 95% CI +9.68 to +11.93; +7.05, 95% CI +6.29"
+  },
+  {
+   "section": "SI_et_comparison_sets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": " (advantage over weighted Adamic–Adar +10.71, 95% CI +9.68 to +11.93; +7.05, 95% CI +6.29 to +7.71).] [Combining DisAtla"
+  },
+  {
+   "section": "SI_et_comparison_sets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "larity improves the median percentile slightly over popularity alone (+0.07, 95% CI +0.01 to +0.13; +0.40, 95% CI +0.35 "
+  },
+  {
+   "section": "SI_et_comparison_sets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "centile slightly over popularity alone (+0.07, 95% CI +0.01 to +0.13; +0.40, 95% CI +0.35 to +0.44) but lowers the top-1"
+  },
+  {
+   "section": "SI_et_comparison_sets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "o +0.13; +0.40, 95% CI +0.35 to +0.44) but lowers the top-10% share (−0.010, 95% CI −0.013 to −0.008; −0.007, 95% CI −0."
+  },
+  {
+   "section": "SI_et_comparison_sets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "0.44) but lowers the top-10% share (−0.010, 95% CI −0.013 to −0.008; −0.007, 95% CI −0.010 to −0.005).] [On the top-10% "
+  },
+  {
+   "section": "SI_et_comparison_sets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": " weighted-degree groups among all diseases, where the two are level (+0.001, 95% CI −0.010 to +0.011); among all disease"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "2020",
+   "reason": "calendar year (slice / release date label)",
+   "ctx": " [Leaving out 2020 and 2021, the years of the COVID-19 tri"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "2021,",
+   "reason": "calendar year (slice / release date label)",
+   "ctx": " [Leaving out 2020 and 2021, the years of the COVID-19 trial surge, "
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "er weighted Adamic–Adar within popularity × weighted-degree groups is +6.65 (95% CI +5.69 to +7.56) in the test pool and"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "d-degree groups is +6.65 (95% CI +5.69 to +7.56) in the test pool and +5.05 (95% CI +4.36 to +5.62) among all diseases; "
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "mong all diseases; with no grouping weighted Adamic–Adar stays ahead (−0.86, 95% CI −1.02 to −0.65; −0.31, 95% CI −0.45 "
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "uping weighted Adamic–Adar stays ahead (−0.86, 95% CI −1.02 to −0.65; −0.31, 95% CI −0.45 to −0.17) ([Supplementary Tabl"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "popularity × weighted-degree groups favour DisAtlas in the test pool (+2.59, 95% CI +2.05 to +3.81) and show no differen"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "59, 95% CI +2.05 to +3.81) and show no difference among all diseases (−0.04, 95% CI −0.89 to +0.75); popularity groups f"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": " CI −0.89 to +0.75); popularity groups favour DisAtlas in both pools (+2.28, 95% CI +1.41 to +3.34; +3.34, 95% CI +2.38 "
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "y groups favour DisAtlas in both pools (+2.28, 95% CI +1.41 to +3.34; +3.34, 95% CI +2.38 to +4.26), and no grouping fav"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "95% CI +2.38 to +4.26), and no grouping favours weighted Adamic–Adar (−1.70, 95% CI −1.93 to −1.46; −0.77, 95% CI −0.96 "
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": " grouping favours weighted Adamic–Adar (−1.70, 95% CI −1.93 to −1.46; −0.77, 95% CI −0.96 to −0.62).] [Among all disease"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "f DisAtlas within popularity × weighted-degree groups in this subset (−2.58, 95% CI −3.16 to −1.59).] [For new diseases "
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "ison set, including no grouping (popularity × weighted-degree groups +30.79, 95% CI +22.25 to +34.69; +26.84, 95% CI +19"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "popularity × weighted-degree groups +30.79, 95% CI +22.25 to +34.69; +26.84, 95% CI +19.71 to +31.35; no grouping +14.12"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "5% CI +22.25 to +34.69; +26.84, 95% CI +19.71 to +31.35; no grouping +14.12, 95% CI +2.94 to +23.93; +12.69, 95% CI +3.0"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "95% CI +19.71 to +31.35; no grouping +14.12, 95% CI +2.94 to +23.93; +12.69, 95% CI +3.03 to +21.43); for the other new "
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "e other new diseases the results match the main analysis (no grouping −0.67, 95% CI −0.84 to −0.50; −0.34, 95% CI −0.46 "
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "ts match the main analysis (no grouping −0.67, 95% CI −0.84 to −0.50; −0.34, 95% CI −0.46 to −0.21).] [In the subset wit"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "th pools (popularity × weighted-degree groups, test pool: popularity −22.61, 95% CI −41.83 to −16.11; shared genes −9.29"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": ", test pool: popularity −22.61, 95% CI −41.83 to −16.11; shared genes −9.29, 95% CI −16.87 to −5.27; HPO −10.15, 95% CI "
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "CI −41.83 to −16.11; shared genes −9.29, 95% CI −16.87 to −5.27; HPO −10.15, 95% CI −18.15 to −6.70; all comparison sets"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "r weighted Adamic–Adar within popularity × weighted-degree groups is +11.64 (95% CI +10.72 to +12.96) and +6.52 (95% CI "
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "rity × weighted-degree groups is +11.64 (95% CI +10.72 to +12.96) and +6.52 (95% CI +5.69 to +7.44), and with no groupin"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "and with no grouping DisAtlas and weighted Adamic–Adar do not differ (−0.09, 95% CI −0.33 to +0.18; −0.22, 95% CI −0.45 "
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "and weighted Adamic–Adar do not differ (−0.09, 95% CI −0.33 to +0.18; −0.22, 95% CI −0.45 to 0.00).] [On these diseases "
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "ew trials above DisAtlas within popularity × weighted-degree groups (−10.69, 95% CI −11.50 to −9.74 in the test pool and"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "d-degree groups (−10.69, 95% CI −11.50 to −9.74 in the test pool and −12.50, 95% CI −13.27 to −11.60 among all diseases)"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "CI −13.27 to −11.60 among all diseases) and within popularity groups (−9.92, 95% CI −10.91 to −8.81; −9.83, 95% CI −10.6"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "iseases) and within popularity groups (−9.92, 95% CI −10.91 to −8.81; −9.83, 95% CI −10.66 to −9.13), and below DisAtlas"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": " −9.83, 95% CI −10.66 to −9.13), and below DisAtlas with no grouping (+5.05, 95% CI +4.43 to +5.84; +4.93, 95% CI +4.38 "
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "), and below DisAtlas with no grouping (+5.05, 95% CI +4.43 to +5.84; +4.93, 95% CI +4.38 to +5.47).] [Year by year, pop"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "2020,",
+   "reason": "calendar year (slice / release date label)",
+   "ctx": "ero; among all diseases, 19 years favour DisAtlas, 5 include zero and one, 2020, favours weighted Adamic–Adar (−8.57, 95"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "DisAtlas, 5 include zero and one, 2020, favours weighted Adamic–Adar (−8.57, 95% CI −10.81 to −6.61).] [Within popularit"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "2020",
+   "reason": "calendar year (slice / release date label)",
+   "ctx": "in popularity groups the counts are 20, 0 and 5 in the test pool and 22, 1 (2020; −10.05, 95% CI −12.50 to −8.12) and 2 "
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": " groups the counts are 20, 0 and 5 in the test pool and 22, 1 (2020; −10.05, 95% CI −12.50 to −8.12) and 2 among all dis"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "2020",
+   "reason": "calendar year (slice / release date label)",
+   "ctx": "−10.05, 95% CI −12.50 to −8.12) and 2 among all diseases; in the test pool, 2020 favours DisAtlas (popularity × weighted"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "test pool, 2020 favours DisAtlas (popularity × weighted-degree groups +8.00, 95% CI +5.55 to +10.12; popularity groups +"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "ghted-degree groups +8.00, 95% CI +5.55 to +10.12; popularity groups +11.02, 95% CI +8.05 to +12.84).] [In a post hoc, e"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "2020",
+   "reason": "calendar year (slice / release date label)",
+   "ctx": "t hoc, exploratory check, 883 of the 6,108 new trials among all diseases in 2020 were in COVID-19, which is not a test-p"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "in COVID-19, which is not a test-pool disease; leaving them out gives +8.03 (95% CI +6.25 to +9.84) within popularity × "
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "5% CI +6.25 to +9.84) within popularity × weighted-degree groups and +10.35 (95% CI +8.40 to +12.67) within popularity g"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "2010",
+   "reason": "calendar year (slice / release date label)",
+   "ctx": "t pool, 518 and 679 among all diseases, against 3,118 among all diseases in 2010) and the widest intervals (popularity ×"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "1996",
+   "reason": "calendar year (slice / release date label)",
+   "ctx": "ses in 2010) and the widest intervals (popularity × weighted-degree groups, 1996: +1.52, 95% CI −5.56 to +9.40; −3.09, 9"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": " and the widest intervals (popularity × weighted-degree groups, 1996: +1.52, 95% CI −5.56 to +9.40; −3.09, 95% CI −8.93 "
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "ularity × weighted-degree groups, 1996: +1.52, 95% CI −5.56 to +9.40; −3.09, 95% CI −8.93 to +0.64; 1997: 0.00, 95% CI −"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "1997",
+   "reason": "calendar year (slice / release date label)",
+   "ctx": "e groups, 1996: +1.52, 95% CI −5.56 to +9.40; −3.09, 95% CI −8.93 to +0.64; 1997: 0.00, 95% CI −9.89 to +7.05; +0.32, 95"
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": "996: +1.52, 95% CI −5.56 to +9.40; −3.09, 95% CI −8.93 to +0.64; 1997: 0.00, 95% CI −9.89 to +7.05; +0.32, 95% CI −4.17 "
+  },
+  {
+   "section": "SI_et_subsets",
+   "token": "95%",
+   "reason": "interval level label",
+   "ctx": " +9.40; −3.09, 95% CI −8.93 to +0.64; 1997: 0.00, 95% CI −9.89 to +7.05; +0.32, 95% CI −4.17 to +5.57).] "
+  }
+ ],
+ "manuscript_mismatch": []
+}

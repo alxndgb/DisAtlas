@@ -1,0 +1,4 @@
+set	n	q1	median	q3	mean
+Random disease pairs	49976	10.0	12.0	14.0	11.78
+IxIDN-Matched negatives	794	6.0	8.0	10.75	8.258
+IxIDN-Matched positives	842	3.0	6.0	10.0	6.817

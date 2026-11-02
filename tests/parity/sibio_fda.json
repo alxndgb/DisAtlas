@@ -1,0 +1,507 @@
+{
+ "items": [
+  {
+   "label": "SI_fda_repurposing",
+   "script": "figures/SI/si_bio_gap_numbers.py",
+   "numbers": "figures/SI/SI_bio_gap_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "fda_benchmark.n_split_dev",
+     "ms": "irs that share an FDA-approved drug indication (development split, 540 pairs; the held-out split was not read)",
+     "expected": 540
+    },
+    {
+     "key": "fda_channel_universe",
+     "ms": " by the full model and by both single-channel models on the same 5,192-disease set, so all three are ranked ag",
+     "expected": 5192
+    },
+    {
+     "key": "explainability.Case1.score",
+     "ms": ".]  [With both channels, DisAtlas recovers 91.9% of the 321 pairs (95% CI 88.8–94.7%).] [The specific (mechani",
+     "expected": 0.95,
+     "tol": 0.005
+    },
+    {
+     "key": "fda_benchmark.n_pairs",
+     "ms": "from IxIDN⁺ whose shared drug is launched for both diseases form 2,000 positive controls over 401 diseases; th",
+     "expected": 2000
+    },
+    {
+     "key": "fda_benchmark.n_diseases",
+     "ms": "ug is launched for both diseases form 2,000 positive controls over 401 diseases; the benchmark has no negative",
+     "expected": 401
+    },
+    {
+     "key": "fda_benchmark.n_hard",
+     "ms": "mark has no negative pairs. Pairs are split into a hard stratum (1,104 pairs with no shared gene, HPO or GO li",
+     "expected": 1104
+    },
+    {
+     "key": "fda_benchmark.n_easy",
+     "ms": "4 pairs with no shared gene, HPO or GO link) and an easy stratum (896, the rest). The hard pairs are split int",
+     "expected": 896
+    },
+    {
+     "key": "fda_benchmark.n_split_holdout",
+     "ms": "est). The hard pairs are split into development (540) and held-out (560) sets that share no drug or mechanism,",
+     "expected": 560
+    }
+   ]
+  },
+  {
+   "label": "SI_fda_repurposing",
+   "script": "figures/SI/si_fda_channels.py",
+   "numbers": "figures/SI/SI_fda_channels_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "n_scored_all_models",
+     "ms": "nt split, 540 pairs; the held-out split was not read).] [Of these, 321 pairs could be scored by the full model",
+     "expected": 321
+    },
+    {
+     "key": "a_full@broad_off_nodes_pct99.1",
+     "ms": "sease pairs.] [A pair counts as recovered when it ranks in the top 25% of random pairs (chance 25%).]  [With b",
+     "expected": 0.25,
+     "tol": 0.005
+    },
+    {
+     "key": "a_full@broad_off_nodes_recovered.0",
+     "ms": "ndom pairs (chance 25%).]  [With both channels, DisAtlas recovers 91.9% of the 321 pairs (95% CI 88.8–94.7%).]",
+     "expected": 0.919,
+     "tol": 0.0005
+    },
+    {
+     "key": "a_broad_off_recovered.2",
+     "ms": "h both channels, DisAtlas recovers 91.9% of the 321 pairs (95% CI 88.8–94.7%).] [The specific (mechanism) chan",
+     "expected": 0.888,
+     "tol": 0.0005
+    },
+    {
+     "key": "a_full@broad_off_nodes_recovered.2",
+     "ms": " channels, DisAtlas recovers 91.9% of the 321 pairs (95% CI 88.8–94.7%).] [The specific (mechanism) channel al",
+     "expected": 0.947,
+     "tol": 0.0005
+    },
+    {
+     "key": "a_broad_off_recovered.0",
+     "ms": "I 88.8–94.7%).] [The specific (mechanism) channel alone recovers 85.0% (81.0–88.8%) and the broad (shared-grap",
+     "expected": 0.85,
+     "tol": 0.0005
+    },
+    {
+     "key": "a_broad_off_recovered.1",
+     "ms": "–94.7%).] [The specific (mechanism) channel alone recovers 85.0% (81.0–88.8%) and the broad (shared-graph) cha",
+     "expected": 0.81,
+     "tol": 0.0005
+    },
+    {
+     "key": "a_spec_off@broad_off_nodes_recovered.0",
+     "ms": "rs 85.0% (81.0–88.8%) and the broad (shared-graph) channel alone 75.1% (70.1–79.8%) ([Supplementary Figure ]a)",
+     "expected": 0.751,
+     "tol": 0.0005
+    },
+    {
+     "key": "a_spec_off@broad_off_nodes_recovered.1",
+     "ms": "0% (81.0–88.8%) and the broad (shared-graph) channel alone 75.1% (70.1–79.8%) ([Supplementary Figure ]a).] [Th",
+     "expected": 0.701,
+     "tol": 0.0005
+    },
+    {
+     "key": "a_spec_off@broad_off_nodes_recovered.2",
+     "ms": "1.0–88.8%) and the broad (shared-graph) channel alone 75.1% (70.1–79.8%) ([Supplementary Figure ]a).] [The gap",
+     "expected": 0.798,
+     "tol": 0.0005
+    },
+    {
+     "key": "a_full@broad_off_nodes_pct99.0",
+     "ms": "he gap widens at stricter cut-offs: in the top 1%, the rates are 29.9%, 21.2% and 5.9%.] [The channels are par",
+     "expected": 0.299,
+     "tol": 0.0005
+    },
+    {
+     "key": "a_broad_off_pct99.0",
+     "ms": "widens at stricter cut-offs: in the top 1%, the rates are 29.9%, 21.2% and 5.9%.] [The channels are partly com",
+     "expected": 0.212,
+     "tol": 0.0005
+    },
+    {
+     "key": "a_spec_off@broad_off_nodes_pct99.0",
+     "ms": " stricter cut-offs: in the top 1%, the rates are 29.9%, 21.2% and 5.9%.] [The channels are partly complementar",
+     "expected": 0.059,
+     "tol": 0.0005
+    },
+    {
+     "key": "a_broad_off_pct95.0",
+     "ms": "els are partly complementary.] [The specific channel alone recovers 61 pairs that the broad channel misses, an",
+     "expected": 0.61,
+     "tol": 0.005
+    },
+    {
+     "key": "b_quadrants.broad_only",
+     "ms": "that the broad channel misses, and the broad channel alone recovers 29 that the specific channel misses ([Supp",
+     "expected": 29
+    }
+   ]
+  },
+  {
+   "label": "SI_fda_prioritisation_text",
+   "script": "figures/SI/si_fda_prioritisation_text.py",
+   "status": "exact",
+   "text_checks": [
+    {
+     "file": "figures/SI/SI_fda_prioritisation_text.md",
+     "numbers": [
+      "10",
+      "10"
+     ],
+     "ms": "The endpoint is the share of targets ranked in the top 10% of these candidates (random expectation 10%).]{custom-style=\"RevisionBlue\"}"
+    },
+    {
+     "file": "figures/SI/SI_fda_prioritisation_text.md",
+     "numbers": [
+      "540",
+      "7",
+      "41",
+      "238",
+      "84"
+     ],
+     "ms": "**Pairs.** Of 540 development pairs, 7 have no trial date, 41 have a first trial before the earliest dated graph, 238 have an anchor or target that is not yet a"
+    },
+    {
+     "file": "figures/SI/SI_fda_prioritisation_text.md",
+     "numbers": [
+      "166",
+      "73",
+      "150",
+      "66"
+     ],
+     "ms": "That leaves 166 scorable pairs from 73 drugs at the primary cut-off and 150 pairs from 66 drugs at the stricter cut-off.]{custom-style=\"RevisionBlue\"}"
+    },
+    {
+     "file": "figures/SI/SI_fda_prioritisation_text.md",
+     "numbers": [
+      "-6.2",
+      "95",
+      "-11.1",
+      "-1.8"
+     ],
+     "ms": "The shared-neighbour count ranks above DisAtlas at this cut-off: its top-10% share is higher, the paired-difference interval excludes zero, and its mean percent"
+    },
+    {
+     "file": "figures/SI/SI_fda_prioritisation_text.md",
+     "numbers": [
+      "10",
+      "-6.6",
+      "-12.6",
+      "-2.5"
+     ],
+     "ms": "At the stricter cut-off, DisAtlas and the shared-neighbour count place the same share of targets in the top 10%, the shared-neighbour count keeps the higher mea"
+    },
+    {
+     "file": "figures/SI/SI_fda_prioritisation_text.md",
+     "numbers": [
+      "5",
+      "64.5",
+      "54.3",
+      "72.3",
+      "94.6",
+      "66.7",
+      "55.7",
+      "73.9",
+      "94.8"
+     ],
+     "ms": "| DisAtlas (5 seeds) | 64.5% (54.3–72.3) | 94.6 | — | 66.7% (55.7–73.9) | 94.8 | — |"
+    },
+    {
+     "file": "figures/SI/SI_fda_prioritisation_text.md",
+     "numbers": [
+      "53.6",
+      "43.2",
+      "64.9",
+      "90.8",
+      "10.8",
+      "-3.2",
+      "22.1",
+      "42.7",
+      "33.7",
+      "52.7",
+      "88.6",
+      "24.0",
+      "8.6",
+      "36.1"
+     ],
+     "ms": "| disease degree | 53.6% (43.2–64.9) | 90.8 | +10.8 (−3.2 to +22.1) | 42.7% (33.7–52.7) | 88.6 | +24.0 (+8.6 to +36.1) |"
+    },
+    {
+     "file": "figures/SI/SI_fda_prioritisation_text.md",
+     "numbers": [
+      "74.1",
+      "60.0",
+      "83.5",
+      "95.1",
+      "-9.6",
+      "-15.8",
+      "-0.7",
+      "66.7",
+      "54.1",
+      "73.7",
+      "94.1",
+      "0.0",
+      "-7.0",
+      "9.7"
+     ],
+     "ms": "| shared graph neighbours | 74.1% (60.0–83.5) | 95.1 | −9.6 (−15.8 to −0.7) | 66.7% (54.1–73.7) | 94.1 | 0.0 (−7.0 to +9.7) |"
+    },
+    {
+     "file": "figures/SI/SI_fda_prioritisation_text.md",
+     "numbers": [
+      "69.3",
+      "53.9",
+      "79.6",
+      "96.7",
+      "-4.8",
+      "-12.1",
+      "6.1",
+      "70.7",
+      "52.0",
+      "82.5",
+      "96.2",
+      "-4.0",
+      "-13.1",
+      "10.8"
+     ],
+     "ms": "| shared literature genes | 69.3% (53.9–79.6) | 96.7 | −4.8 (−12.1 to +6.1) | 70.7% (52.0–82.5) | 96.2 | −4.0 (−13.1 to +10.8) |"
+    },
+    {
+     "file": "figures/SI/SI_fda_prioritisation_text.md",
+     "numbers": [
+      "19.9",
+      "20",
+      "49.4",
+      "44.5",
+      "35.7",
+      "51.8",
+      "18.3",
+      "20",
+      "49.2",
+      "48.4",
+      "39.0",
+      "55.6"
+     ],
+     "ms": "| matched decoy diseases | 19.9% (20 per pair) | 49.4 | +44.5 (+35.7 to +51.8) | 18.3% (20 per pair) | 49.2 | +48.4 (+39.0 to +55.6) |"
+    }
+   ]
+  },
+  {
+   "label": "SI_fda_prioritisation",
+   "script": "figures/SI/si_fda_channels.py",
+   "numbers": "figures/SI/SI_fda_channels_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "d_decoy.0",
+     "ms": "red with the anchor (counted only up to the cut-off year), and up to 20 degree-matched decoy targets per pair,",
+     "expected": 0.2,
+     "tol": 0.005
+    },
+    {
+     "key": "b_full_recovered_neither_single",
+     "ms": "held-out split was not read.]  [**Pairs.** Of 540 development pairs, 7 have no trial date, 41 have a first tri",
+     "expected": 7
+    },
+    {
+     "key": "d_shared_nbr.2",
+     "ms": " an anchor or target that is not yet a node in the dated graph, and 84 have a target already trialled with a d",
+     "expected": 0.84,
+     "tol": 0.005
+    },
+    {
+     "key": "d_n",
+     "ms": "rget already trialled with a drug of the same class.] [That leaves 166 scorable pairs from 73 drugs at the pri",
+     "expected": 166
+    },
+    {
+     "key": "a_full@broad_off_nodes_pct95.2",
+     "ms": "ith a drug of the same class.] [That leaves 166 scorable pairs from 73 drugs at the primary cut-off and 150 pa",
+     "expected": 0.73,
+     "tol": 0.005
+    },
+    {
+     "key": "a_full@broad_off_nodes_recovered.2",
+     "ms": "ferences = DisAtlas better.]  | Method | Top 10%, primary cut-off (95% CI) | Median percentile, primary | DisA",
+     "expected": 0.95,
+     "tol": 0.005
+    },
+    {
+     "key": "d_disatlas_ens.0",
+     "ms": " stricter | |---|---|---|---|---|---|---| | DisAtlas (5 seeds) | 64.5% (54.3–72.3) | 94.6 | — | 66.7% (55.7–73",
+     "expected": 0.645,
+     "tol": 0.0005
+    },
+    {
+     "key": "d_disatlas_ens.1",
+     "ms": "cter | |---|---|---|---|---|---|---| | DisAtlas (5 seeds) | 64.5% (54.3–72.3) | 94.6 | — | 66.7% (55.7–73.9) |",
+     "expected": 0.543,
+     "tol": 0.0005
+    },
+    {
+     "key": "d_disatlas_ens.2",
+     "ms": "| |---|---|---|---|---|---|---| | DisAtlas (5 seeds) | 64.5% (54.3–72.3) | 94.6 | — | 66.7% (55.7–73.9) | 94.8",
+     "expected": 0.723,
+     "tol": 0.0005
+    },
+    {
+     "key": "a_broad_off_pct95.2",
+     "ms": "-|---|---| | DisAtlas (5 seeds) | 64.5% (54.3–72.3) | 94.6 | — | 66.7% (55.7–73.9) | 94.8 | — | | disease degr",
+     "expected": 0.667,
+     "tol": 0.0005
+    },
+    {
+     "key": "d_deg.0",
+     "ms": ") | 94.6 | — | 66.7% (55.7–73.9) | 94.8 | — | | disease degree | 53.6% (43.2–64.9) | 90.8 | +10.8 (−3.2 to +22",
+     "expected": 0.536,
+     "tol": 0.0005
+    },
+    {
+     "key": "d_deg.1",
+     "ms": "4.6 | — | 66.7% (55.7–73.9) | 94.8 | — | | disease degree | 53.6% (43.2–64.9) | 90.8 | +10.8 (−3.2 to +22.1) |",
+     "expected": 0.432,
+     "tol": 0.0005
+    },
+    {
+     "key": "d_deg.2",
+     "ms": "— | 66.7% (55.7–73.9) | 94.8 | — | | disease degree | 53.6% (43.2–64.9) | 90.8 | +10.8 (−3.2 to +22.1) | 42.7%",
+     "expected": 0.649,
+     "tol": 0.0005
+    },
+    {
+     "key": "d_shared_nbr.0",
+     "ms": ".7) | 88.6 | +24.0 (+8.6 to +36.1) | | shared graph neighbours | 74.1% (60.0–83.5) | 95.1 | −9.6 (−15.8 to −0.",
+     "expected": 0.741,
+     "tol": 0.0005
+    },
+    {
+     "key": "d_shared_nbr.1",
+     "ms": "88.6 | +24.0 (+8.6 to +36.1) | | shared graph neighbours | 74.1% (60.0–83.5) | 95.1 | −9.6 (−15.8 to −0.7) | 6",
+     "expected": 0.6,
+     "tol": 0.0005
+    },
+    {
+     "key": "d_shared_nbr.2",
+     "ms": " | +24.0 (+8.6 to +36.1) | | shared graph neighbours | 74.1% (60.0–83.5) | 95.1 | −9.6 (−15.8 to −0.7) | 66.7%",
+     "expected": 0.835,
+     "tol": 0.0005
+    },
+    {
+     "key": "d_shared_nbr.0",
+     "ms": "ared graph neighbours | 74.1% (60.0–83.5) | 95.1 | −9.6 (−15.8 to −0.7) | 66.7% (54.1–73.7) | 94.1 | 0.0 (−7.0",
+     "expected": 0.7,
+     "tol": 0.05,
+     "note": "sign differs: manuscript prints the magnitude"
+    },
+    {
+     "key": "a_spec_off@broad_off_nodes_pct99.1",
+     "ms": "0–83.5) | 95.1 | −9.6 (−15.8 to −0.7) | 66.7% (54.1–73.7) | 94.1 | 0.0 (−7.0 to +9.7) | | shared literature ge",
+     "expected": 0.0,
+     "tol": 0.05
+    },
+    {
+     "key": "d_lit_shared.0",
+     "ms": "–73.7) | 94.1 | 0.0 (−7.0 to +9.7) | | shared literature genes | 69.3% (53.9–79.6) | 96.7 | −4.8 (−12.1 to +6.",
+     "expected": 0.693,
+     "tol": 0.0005
+    },
+    {
+     "key": "d_lit_shared.1",
+     "ms": " | 94.1 | 0.0 (−7.0 to +9.7) | | shared literature genes | 69.3% (53.9–79.6) | 96.7 | −4.8 (−12.1 to +6.1) | 7",
+     "expected": 0.539,
+     "tol": 0.0005
+    },
+    {
+     "key": "d_lit_shared.2",
+     "ms": "4.1 | 0.0 (−7.0 to +9.7) | | shared literature genes | 69.3% (53.9–79.6) | 96.7 | −4.8 (−12.1 to +6.1) | 70.7%",
+     "expected": 0.796,
+     "tol": 0.0005
+    },
+    {
+     "key": "d_decoy.0",
+     "ms": "82.5) | 96.2 | −4.0 (−13.1 to +10.8) | | matched decoy diseases | 19.9% (20 per pair) | 49.4 | +44.5 (+35.7 to",
+     "expected": 0.199,
+     "tol": 0.0005
+    }
+   ]
+  },
+  {
+   "label": "SI_fda_prioritisation",
+   "script": "figures/SI/si_bio_gap_numbers.py",
+   "numbers": "figures/SI/SI_bio_gap_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "fda_benchmark.n_pairs",
+     "ms": "ence intervals are cluster bootstrap intervals over drug groups (2,000 resamples).] [The design, endpoints and",
+     "expected": 2000
+    },
+    {
+     "key": "fda_benchmark.n_split_dev",
+     "ms": "ore scoring, and the held-out split was not read.]  [**Pairs.** Of 540 development pairs, 7 have no trial date",
+     "expected": 540
+    },
+    {
+     "key": "explainability.Case1.score",
+     "ms": "s also higher (DisAtlas − shared neighbours −6.2 percentile points, 95% CI −11.1 to −1.8).] [Shared literature",
+     "expected": 0.95,
+     "tol": 0.005
+    },
+    {
+     "key": "explainability.Case3.score",
+     "ms": "s | 74.1% (60.0–83.5) | 95.1 | −9.6 (−15.8 to −0.7) | 66.7% (54.1–73.7) | 94.1 | 0.0 (−7.0 to +9.7) | | shared",
+     "expected": 0.737,
+     "tol": 0.0005
+    },
+    {
+     "key": "fda_benchmark.n_hard_complement",
+     "ms": "–79.6) | 96.7 | −4.8 (−12.1 to +6.1) | 70.7% (52.0–82.5) | 96.2 | −4.0 (−13.1 to +10.8) | | matched decoy dise",
+     "expected": 4.0,
+     "tol": 0.05,
+     "note": "sign differs: manuscript prints the magnitude"
+    }
+   ]
+  }
+ ],
+ "unchecked": [
+  {
+   "token": "1%",
+   "reason": "evaluation cut-off (design constant)",
+   "ms": "([Supplementary Figure ]a).] [The gap widens at stricter cut-offs: in the top 1%, the rates are 29.9%, 21.2% and 5.9%.] "
+  },
+  {
+   "token": "20,000",
+   "reason": "design constant: size of the random disease-pair reference of the precomputed percentiles",
+   "ms": "d complement pairs set apart. Each pair is scored as a percentile against 20,000 random disease pairs and counts as reco"
+  },
+  {
+   "token": "5%",
+   "reason": "evaluation cut-off (design constant)",
+   "ms": "ed repurposing pairs.** **a**, Share of approved pairs ranked in the top 25%, 5% and 1% of random disease pairs by the f"
+  },
+  {
+   "token": "1%",
+   "reason": "evaluation cut-off (design constant)",
+   "ms": "rposing pairs.** **a**, Share of approved pairs ranked in the top 25%, 5% and 1% of random disease pairs by the full mod"
+  },
+  {
+   "token": "10%",
+   "reason": "evaluation cut-off (design constant)",
+   "ms": "e first trial of the later indication: share of later indications in the top 10% of candidate diseases for DisAtlas and "
+  },
+  {
+   "token": "10%",
+   "reason": "evaluation cut-off (design constant)",
+   "ms": "lines, with matched decoy diseases as a negative control (random expectation 10%); error bars are 95% bootstrap interval"
+  }
+ ],
+ "manuscript_mismatch": []
+}

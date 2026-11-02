@@ -1,0 +1,9 @@
+panel	stratum	disatlas_auroc	ci_lo	ci_hi	comparator1	comparator2	n_pos_or_anchors	n_neg_or_pairs	source
+a	Rare–rare	0.775	0.701	0.847	0.61	0.605	301	321	DisAtlas+CI: ccplus strata (IxIDN-Matched, Test split pairs, B=2000); HPO/GO: r4mc3 table
+a	Rare–common	0.937	0.863	0.983	0.574	0.505	68	279	DisAtlas+CI: ccplus strata (IxIDN-Matched, Test split pairs, B=2000); HPO/GO: r4mc3 table
+a	Common–common						122	3	test split; < 20 negatives, not plotted
+a	Allpairs	0.859	0.801	0.907	0.576	0.625	491	603	DisAtlas+CI: ccplus strata (IxIDN-Matched, Test split pairs, B=2000); HPO/GO: r4mc3 table
+b	Rare anchor, common partners	0.781	0.646	0.9	0.516	0.627	31	120	per-anchor table, anchor bootstrap B=2000 seed 4707 (on-disk B=1000 CI 0.649-0.898)
+b	Common anchor, rare partners	0.878	0.831	0.917	0.557	0.627	104	934	per-anchor table, anchor bootstrap B=2000 seed 4707 (on-disk B=1000 CI 0.831-0.917)
+b	Rare anchor, rare partners	0.738	0.711	0.764	0.587	0.676	452	2251	per-anchor table, anchor bootstrap B=2000 seed 4707 (on-disk B=1000 CI 0.710-0.763)
+b	Common anchor, common partners	0.799	0.682	0.902	0.533	0.489	22	213	per-anchor table, anchor bootstrap B=2000 seed 4707 (on-disk B=1000 CI 0.679-0.902)

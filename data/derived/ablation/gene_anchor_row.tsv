@@ -1,0 +1,2 @@
+arm	n_lost	frac_lost	frac_lost_lo	frac_lost_hi	mean_delta	auroc_arm	auroc_A	d_auroc	d_auroc_ci_lo	d_auroc_ci_hi	ci_excludes_0	gmpc_k_JAK	group
+gene_anchor	13	0.0817610062893081	0.0222023809523809	0.1698177384161211	-0.0384146988954184	0.8588793979863074	0.859088805801272	-0.0002094078149645	-0.0071300349433019	0.0073228916045417	False		edge layer / weighting

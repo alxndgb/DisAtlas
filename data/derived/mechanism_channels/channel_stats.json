@@ -1,0 +1,82 @@
+{
+ "union_edges": 498155,
+ "union_nodes": 13021,
+ "broad_edges": 331234,
+ "spec_edges": 190007,
+ "overlap_edges": 23086,
+ "broad_only_edges": 308148,
+ "spec_only_edges": 166921,
+ "broad_nodes": 13020,
+ "spec_nodes": 5194,
+ "diseases_broad_only": 7827,
+ "overlap_frac_of_spec": 0.1215007868131174,
+ "overlap_frac_of_broad": 0.06969695139991668,
+ "walk_mass_frac_spec_arm": 0.5735773321264255,
+ "broad_degree_median": 23.0,
+ "spec_degree_median": 63.0,
+ "broad_edge_attr_keys": [
+  "channel_class",
+  "crank",
+  "evidence_tier",
+  "origin",
+  "tier_conf",
+  "weight"
+ ],
+ "broad_golden_md5": "cdad8125d708cd90391bb771f59a7a09",
+ "spec_links": 422804,
+ "spec_link_diseases": 5198,
+ "spec_modules": 6746,
+ "spec_by_type": {
+  "Curated gene sets": {
+   "links": 9732,
+   "modules": 18,
+   "diseases": 1641
+  },
+  "Literature GO processes": {
+   "links": 37036,
+   "modules": 1505,
+   "diseases": 2432
+  },
+  "Literature mechanism entities": {
+   "links": 10167,
+   "modules": 57,
+   "diseases": 1377
+  },
+  "Literature pathways": {
+   "links": 6347,
+   "modules": 201,
+   "diseases": 1243
+  },
+  "Mechanism nodes": {
+   "links": 129953,
+   "modules": 282,
+   "diseases": 3501
+  },
+  "Pathology text": {
+   "links": 87947,
+   "modules": 3333,
+   "diseases": 2865
+  },
+  "Reactome pathway enrichment": {
+   "links": 141622,
+   "modules": 1350,
+   "diseases": 3756
+  }
+ },
+ "litpw_reactome_links": 6000,
+ "mechnode_rhsa_links": 127526,
+ "spec_edges_with_shared_module": 190007,
+ "spec_edges_share_reactome_any": 159163,
+ "spec_edges_share_reactome_ora": 121600,
+ "spec_edges_reactome_only": 91472,
+ "spec_edges_by_shared_type": {
+  "Reactome pathway enrichment": 121600,
+  "Mechanism nodes": 116740,
+  "Pathology text": 74894,
+  "Literature GO processes": 59729,
+  "Curated gene sets": 55077,
+  "Literature mechanism entities": 42611,
+  "Literature pathways": 28990
+ },
+ "reactome_ora_pathways": 1397
+}

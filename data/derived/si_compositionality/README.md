@@ -1,0 +1,11 @@
+# Compositionality (barycentre of parent embeddings) analysis outputs
+
+Small precomputed tables that cannot be regenerated inside this repository (upstream model runs or benchmark construction). Each line gives the content and the scripts that read the file.
+
+- `compositionality_summary.json`: written by figures/SI/si_compositionality_recompute.py from the released embeddings (seeds 4707-4711); si_compositionality.py renders from them without recomputation. Read by: si_compositionality.py, si_compositionality_recompute.py.
+- `examples.tsv`: written by figures/SI/si_compositionality_recompute.py from the released embeddings (seeds 4707-4711); si_compositionality.py renders from them without recomputation. Read by: si_compositionality.py, si_compositionality_recompute.py.
+- `examples_null_draws.tsv.gz`: written by figures/SI/si_compositionality_recompute.py from the released embeddings (seeds 4707-4711); si_compositionality.py renders from them without recomputation. Read by: si_compositionality.py, si_compositionality_recompute.py.
+- `systematic_mondo_multiparent.tsv`: written by figures/SI/si_compositionality_recompute.py from the released embeddings (seeds 4707-4711); si_compositionality.py renders from them without recomputation. Read by: si_compositionality.py, si_compositionality_recompute.py.
+- `systematic_summary.tsv`: written by figures/SI/si_compositionality_recompute.py from the released embeddings (seeds 4707-4711); si_compositionality.py renders from them without recomputation. Read by: si_compositionality.py, si_compositionality_recompute.py.
+- `mondo_nodes.tsv`: MONDO term, name and embedded is_a parents of each of the 13,021 embedded nodes (node_id, mondo_id, name, is_a_embedded; ';'-separated), the slice of MONDO the compositionality analysis uses; derived from the MONDO release by scripts/maintainer/build_mondo_nodes.py so that the full ontology file need not be shipped. Read by: si_compositionality_recompute.py (via disatlas.mondo_nodes; set MONDO_OBO to use a full mondo.obo instead).
+- `mondo_nodes.source.json`: md5 of the MONDO file mondo_nodes.tsv was derived from, recorded as the mondo.obo input in compositionality_summary.json. Read by: si_compositionality_recompute.py.

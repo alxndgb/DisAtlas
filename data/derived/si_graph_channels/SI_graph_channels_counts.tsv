@@ -1,0 +1,46 @@
+quantity	value	how
+broad_gene_rows	25972	broad.slice_gene_rows
+broad_gene_dis	11096	broad.slice_gene_diseases
+broad_hpo_rows	244394	broad.slice_hpo_rows
+broad_hpo_dis	10307	broad.slice_hpo_diseases
+broad_edges	331234	in_broad edges
+broad_nodes	13020	diseases on in_broad edges
+spec_links	422804	keep & module shared by >=2 diseases
+spec_dis	5198	diseases in kept links
+spec_mods	6746	modules in kept links
+links_gene	151354	kept links, module group gene
+mods_gene	1368	modules, group gene
+links_lit	53550	kept links, module group lit
+mods_lit	1763	modules, group lit
+links_path	87947	kept links, module group path
+mods_path	3333	modules, group path
+links_mech	129953	kept links, module group mech
+mods_mech	282	modules, group mech
+mods_mech_curated	5	curated complement mechanism nodes
+spec_proj_edges	191019	projected edges (top-50, in broad universe)
+spec_proj_nodes	5194	diseases on projected edges
+spec_edges	190007	in_spec edges (benchmark pairs removed)
+both_edges	23086	in_broad & in_spec
+union_edges	498155	rows
+union_nodes	13021	distinct diseases
+raised_edges	20049	f > 1
+mech_classes	33	rows
+st1_broad_edges	332082	stage 1: broad graph as built
+st1_broad_dis	13021	stage 1: diseases in the broad graph
+st2_proj_raw	191298	stage 2: top-50 projection
+st2_proj_drop	279	stage 2: dropped, disease outside broad graph
+st2_proj_kept	191019	stage 2: projection kept
+st2_proj_dis	5194	stage 2: diseases on kept projection
+st3_comb_edges	499359	stage 3: broad + specific before control removal
+st4_ctrl_total	1204	stage 4: FDA repurposing control pairs removed
+st4_ctrl_broad	848	stage 4: of which broad
+st4_ctrl_spec	1012	stage 4: of which specific
+st4_ctrl_both	656	stage 4: control edges present in both channels (broad + specific - total = stage 3 both - stage 5 both)
+st5_dis_broad	13020	stage 5: diseases with a broad edge
+st6_pos	6393	stage 6: benchmark positive pairs removed by trainer
+st6_neg	3659	stage 6: benchmark negative pairs removed by trainer
+st6_total	10052	stage 6: total removed by trainer
+st7_train_edges	488103	stage 7: training graph edges
+st7_train_dis	13021	stage 7: training graph diseases
+bench_removed_build	1204	fda_pairs_stripped.total
+train_edges	488103	edge set after benchmark-pair stripping (asserted on card)

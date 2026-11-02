@@ -1,0 +1,18 @@
+pair	role	tag	id_a	id_b	indexed	cluster_a	cluster_b	same_cluster_k55	disatlas_pair_score	percentile_among_all_pairs
+Crohn disease – ulcerative colitis	positive	Crohn-UC	MONDO:0005011	MONDO:0005101	True	12	12	yes	0.975	100.0
+atypical hemolytic-uremic syndrome – paroxysmal nocturnal hemoglobinuria	positive	aHUS-PNH	MONDO:0016244	MONDO:0100244	True	23	23	yes	0.955	99.94
+psoriasis – psoriatic arthritis	positive	Psoriasis-PsA	MONDO:0005083	MONDO:0011849	True	12	12	yes	0.954	99.93
+tuberous sclerosis – lymphangioleiomyomatosis	positive	TSC-LAM	MONDO:0001734	MONDO:0011705	True	33	33	yes	0.953	99.92
+cryopyrin-associated periodic syndrome – familial Mediterranean fever	positive	CAPS-FMF	MONDO:0016168	MONDO:0018088	True	44	43	no	0.931	99.72
+Wolman disease – cholesteryl ester storage disease	positive	LALD_Wolman-CESD	MONDO:0019148	MONDO:0019149	True	4	26	no	0.915	99.57
+myasthenia gravis – neuromyelitis optica	positive	gMG-NMO	MONDO:0009688	MONDO:0019100	True	23	43	no	0.906	99.49
+gastrointestinal stromal tumor – chronic myelogenous leukemia, BCR-ABL1 positive	positive	GIST-CML	MONDO:0011719	MONDO:0011996	True	33	33	yes	0.814	98.82
+gastrointestinal stromal tumor – systemic mastocytosis	positive	GIST-SM	MONDO:0011719	MONDO:0016586	True	33	38	no	0.75	98.39
+tuberous sclerosis – multiple sclerosis	negative	TSC-MS	MONDO:0001734	MONDO:0005301	True	33	12	no	0.651	97.72
+polycystic kidney disease – polycystic ovary syndrome	negative	PKD-PCOS	MONDO:0020642	MONDO:0008487	True	33	12	no	0.163	91.19
+neurofibromatosis type 1 due to NF1 mutation or intragenic deletion – NF2-related schwannomatosis	negative	NF1mut-NF2	MONDO:0018208	MONDO:0007039	True	29	33	no	0.145	90.49
+amyotrophic lateral sclerosis – systemic sclerosis	negative	ALS-SSc	MONDO:0004976	MONDO:0005100	True	27	12	no	0.145	90.51
+Duchenne muscular dystrophy – Fuchs' endothelial dystrophy	negative	DMD-FECD	MONDO:0010679	MONDO:0005321	True	21	52	no	0.105	88.34
+diabetes insipidus – type 2 diabetes mellitus	negative	DI-T2D	MONDO:0004782	MONDO:0005148	True	51	12	no	0.079	86.22
+spinal muscular atrophy – Kennedy disease	negative	SMA-Kennedy	MONDO:0001516	MONDO:0010735	True	27	51	no	0.068	84.9
+osteogenesis imperfecta – osteopetrosis	negative	OI-Osteopetrosis	MONDO:0019019	MONDO:0017198	True	52	33	no	0.033	76.74

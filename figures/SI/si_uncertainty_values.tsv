@@ -1,0 +1,23 @@
+panel	stratum	quantity	value	source
+A	All pairs	seed SD of AUROC	0.0017391406603919	data/derived/uncertainty/seed_vs_sample_sd.tsv:seed_sd
+A	All pairs	disease-cluster bootstrap SD of AUROC	0.0185890749535373	data/derived/uncertainty/seed_vs_sample_sd.tsv:sample_sd_cluster
+A	All pairs	ratio (label rounded)	10.688655251926784	derived
+A	Test split	seed SD of AUROC	0.0031287643492935	data/derived/uncertainty/seed_vs_sample_sd.tsv:seed_sd
+A	Test split	disease-cluster bootstrap SD of AUROC	0.0260719732713722	data/derived/uncertainty/seed_vs_sample_sd.tsv:sample_sd_cluster
+A	Test split	ratio (label rounded)	8.332993591306888	derived
+B	All pairs	AUROC	0.8317	data/derived/uncertainty/headline_core_values.tsv
+B	All pairs	AUROC 95% CI low	0.7919	data/derived/uncertainty/headline_core_values.tsv
+B	All pairs	AUROC 95% CI high	0.865	data/derived/uncertainty/headline_core_values.tsv
+B	All pairs	AUROC no-skill line	0.5	0.5
+B	All pairs	AUPRC	0.842	data/derived/uncertainty/headline_core_values.tsv
+B	All pairs	AUPRC 95% CI low	0.794	data/derived/uncertainty/headline_core_values.tsv
+B	All pairs	AUPRC 95% CI high	0.8813	data/derived/uncertainty/headline_core_values.tsv
+B	All pairs	AUPRC no-skill line	0.5	data/derived/uncertainty/headline_core_values.tsv:n_pos/n
+B	Test split	AUROC	0.8591	data/derived/uncertainty/headline_core_values.tsv
+B	Test split	AUROC 95% CI low	0.8034	data/derived/uncertainty/headline_core_values.tsv
+B	Test split	AUROC 95% CI high	0.9053	data/derived/uncertainty/headline_core_values.tsv
+B	Test split	AUROC no-skill line	0.5	0.5
+B	Test split	AUPRC	0.8449	data/derived/uncertainty/headline_core_values.tsv
+B	Test split	AUPRC 95% CI low	0.7723	data/derived/uncertainty/headline_core_values.tsv
+B	Test split	AUPRC 95% CI high	0.9022	data/derived/uncertainty/headline_core_values.tsv
+B	Test split	AUPRC no-skill line	0.44881170018281535	data/derived/uncertainty/headline_core_values.tsv:n_pos/n

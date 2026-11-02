@@ -1,0 +1,119 @@
+{
+ "internal": {
+  "silhouette_all": 0.35639694398649047,
+  "median_within": 0.34120946771958294,
+  "median_nearest_other": 0.6009160300899792,
+  "share_diseases_negative_silhouette": 0.11020658935565625,
+  "n_clusters_negative_mean_silhouette": 1,
+  "min_cluster_size": 97,
+  "max_cluster_size": 500
+ },
+ "m3_external": {
+  "categories": [
+   "disorder of orbital region",
+   "integumentary system disorder",
+   "musculoskeletal system disorder",
+   "urinary system disorder",
+   "syndromic disease",
+   "auditory system disorder",
+   "breast disorder",
+   "connective tissue disorder",
+   "digestive system disorder",
+   "cardiovascular disorder",
+   "reproductive system disorder",
+   "immune system disorder",
+   "nervous system disorder",
+   "respiratory system disorder",
+   "endocrine system disorder",
+   "hematologic disorder",
+   "mouth disorder",
+   "disorder of visual system",
+   "otorhinolaryngologic disease"
+  ],
+  "category_counts": [
+   910,
+   907,
+   1965,
+   388,
+   2308,
+   223,
+   52,
+   347,
+   526,
+   828,
+   546,
+   847,
+   3621,
+   313,
+   808,
+   747,
+   91,
+   981,
+   66
+  ],
+  "criterion": "MONDO body-system classes (direct is_a children of MONDO:7770006 'disease by body system or component'), ancestors via is_a",
+  "n_categories": 19,
+  "diseases_with_category": 10133,
+  "pair_share_random": 0.2537533971212913,
+  "pair_share_within_cluster": 0.6199763370686602,
+  "pair_share_within_cluster_null_mean": 0.25361008228664617,
+  "pair_share_within_cluster_null_95": [
+   0.2505176139524882,
+   0.2564672510056559
+  ],
+  "perm_p_within": 0.004975124378109453,
+  "clusters_with_enriched_category": 54,
+  "clusters_with_enriched_category_null_max": 1,
+  "clusters_with_enriched_category_null_mean": 0.04,
+  "n_null_perm_enrichment": 50,
+  "n_null_perm_pairs": 200,
+  "enrichment_rule": "hypergeometric, k>=5 members and >=2-fold over background, BH q<0.05 over all clusters x categories",
+  "single_category_diseases": 5734,
+  "ami": 0.33192403565167267,
+  "ari": 0.10431685096044475,
+  "ami_null_max": 0.00245240454022875,
+  "ami_null_mean": 3.368983628931799e-05
+ },
+ "mixing": {
+  "n_clusters": 55,
+  "both_rare_and_common": 55,
+  "common_share_ge_10pct": 44,
+  "min_common_share": 0.03296703296703297,
+  "n_rare": 10489,
+  "n_common": 2532,
+  "n_other": 0
+ },
+ "cocluster": {
+  "test": {
+   "pool": "test",
+   "n_pos": 491,
+   "n_neg": 603,
+   "cocl_pos": 0.2973523421588595,
+   "cocl_neg": 0.03316749585406302,
+   "ratio": 8.965173116089613
+  },
+  "cross": {
+   "pool": "cross",
+   "n_pos": 1069,
+   "n_neg": 1098,
+   "cocl_pos": 0.29653882132834425,
+   "cocl_neg": 0.040983606557377046,
+   "ratio": 7.2355472404116
+  }
+ },
+ "layout": {
+  "spearman": 0.4204544904502501,
+  "n_pairs": 1999833
+ },
+ "phylo": {
+  "median": 0.7693705093870877,
+  "min": 0.7537608210322096,
+  "max": 0.783023385514343,
+  "n_run_pairs": 10,
+  "n_pairs": 4357,
+  "n_both_scored_min": 4066,
+  "n_both_scored_max": 4066,
+  "n_any_missing": 291
+ },
+ "secs": 11.471870183944702
+}

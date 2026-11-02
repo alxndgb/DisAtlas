@@ -1,0 +1,31 @@
+{
+ "definitions": [
+  "Definitions (a gene is GO-CAM-covered if a human GO-CAM model has it as an enabled_by product):",
+  "  genes    : genes associated with any disease of the 4,364 benchmark pairs (network disease-gene table); % covered",
+  "  pairs    : benchmark pairs in which both diseases carry >=1 covered gene; % of 4,364"
+ ],
+ "gocam_release": "d36c6d9",
+ "n_gocam_human_products": 5784,
+ "n_gocam_human_ensg": 5757,
+ "n_network_diseases": 13021,
+ "n_network_diseases_with_genes": 10994,
+ "n_network_diseases_gocam": 5921,
+ "pct_network_diseases_gocam": 45.5,
+ "n_network_genes": 6253,
+ "n_network_genes_gocam": 2534,
+ "pct_network_genes_gocam": 40.5,
+ "n_bench_pairs": 4364,
+ "n_bench_diseases": 938,
+ "n_bench_diseases_in_network": 938,
+ "n_bench_genes": 2895,
+ "n_bench_genes_gocam": 1296,
+ "pct_bench_genes_gocam": 44.8,
+ "n_bench_pairs_both_gocam": 2793,
+ "pct_bench_pairs_both_gocam": 64.0,
+ "n_test_pairs": 1094,
+ "pct_test_pairs_both_gocam": 64.6,
+ "edge_columns": [
+  "u",
+  "v"
+ ]
+}

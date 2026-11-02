@@ -1,0 +1,4 @@
+stratum	n_diseases_a	n_diseases_b	all_pairs	negative_pool	selected_negatives
+rare-rare	804	804	322806	102629	1168
+rare-common	804	181	145524	51526	988
+common-common	181	181	16290	1220	26

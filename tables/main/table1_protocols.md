@@ -1,0 +1,8 @@
+| Protocol | System type | Examples | Evaluation approach |
+|---|---|---|---|
+| 1 | DisAtlas | DisAtlas (benchmark diseases held out of training, node-disjoint) | Benchmark diseases withheld at every step of network construction and training, five seeds per fold; evaluated on the blinded IxIDN-Matched pairs |
+| 2 | Large language model | Claude Chat (Opus 5.5, 5 runs), Gemini Pro 3.1 (3 runs) | Structured prompt with the blinded pair file; mean score over runs |
+| 3 | Agentic AI system | Claude Sci (Claude Science, Opus 5.5, 5 runs); Phylo Biomni | Mean score over runs or seeds |
+| 4 | Knowledge-graph foundation model (published checkpoint) | TxGNN | Published checkpoint, DistMult decoder; not retrained on MechDist or on IxIDN-Matched; 213 unmapped pairs ranked last |
+
+Summary of cross-evidence generalization protocols applied across system categories.

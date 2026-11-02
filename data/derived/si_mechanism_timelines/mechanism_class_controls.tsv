@@ -1,0 +1,12 @@
+mechanism	n_cases	k_recovered_majority	median_case_pct_cm	k_per_seed
+JAK	6	5	93.1	6,4,5,5,6
+BTK	6	6	96.2	6,6,6,6,6
+PD1_PDL1	6	6	98.9	6,6,6,6,6
+complement_C5	6	6	95.7	6,6,6,6,6
+TNF	5	5	96.7	5,5,5,5,5
+IL6_IL6R	5	5	98.9	5,5,5,5,5
+IL1	4	4	92.0	4,4,4,4,4
+IL4R_IL13	4	4	97.7	4,4,4,4,4
+IL5_IL5R	4	3	89.1	4,3,2,4,3
+IgE	3	3	98.0	3,3,3,3,3
+FcRn	1	1	75.8	1,1,1,0,0

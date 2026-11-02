@@ -1,0 +1,171 @@
+{
+ "items": [
+  {
+   "label": "SI_compositionality_systematic",
+   "script": "figures/SI/si_compositionality.py",
+   "numbers": "figures/SI/SI_compositionality_preview_values.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "n",
+     "ms": "ps, rather than relying only on hand-picked examples.]  [For the 2,535 diseases with two or more MONDO parents",
+     "expected": 2535
+    },
+    {
+     "key": "top1.Random parents.lo",
+     "ms": "O parents in the embedding, the disease itself is among the nearest 1% of diseases to the average of its paren",
+     "expected": 0.01,
+     "tol": 0.005
+    },
+    {
+     "key": "top1.Barycentre of real parents.share",
+     "ms": "rest 1% of diseases to the average of its parents' embeddings in 47.5% of cases, against 1.3% when the parents",
+     "expected": 0.475,
+     "tol": 0.0005
+    },
+    {
+     "key": "top1.Random parents.share",
+     "ms": "the average of its parents' embeddings in 47.5% of cases, against 1.3% when the parents are replaced by random",
+     "expected": 0.013,
+     "tol": 0.0005
+    },
+    {
+     "key": "top1.One real parent + random others.share",
+     "ms": "gainst 1.3% when the parents are replaced by random diseases and 33.3% when all but one parent is replaced (Wi",
+     "expected": 0.333,
+     "tol": 0.0005
+    },
+    {
+     "key": "top1.Best single real parent.share",
+     "ms": ", chosen after the fact, places the disease in the nearest 1% in 55.8% of cases and ranks it higher than the p",
+     "expected": 0.558,
+     "tol": 0.0005
+    },
+    {
+     "key": "bary_worse",
+     "ms": " 55.8% of cases and ranks it higher than the parents' average for 71.2% of diseases, so this systematic result",
+     "expected": 0.712,
+     "tol": 0.0005
+    }
+   ]
+  },
+  {
+   "label": "SI_compositionality_examples",
+   "script": "figures/SI/si_compositionality.py",
+   "numbers": "figures/SI/SI_compositionality_preview_values.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "examples.0.out_of",
+     "ms": "ases' embeddings ranks Mixed Connective Tissue Disease 704th of 13,015 other diseases (within the nearest 5.4%",
+     "expected": 13015
+    },
+    {
+     "key": "examples.0.pct",
+     "ms": "Tissue Disease 704th of 13,015 other diseases (within the nearest 5.4%; p = 0.051 against 1,000 random combina",
+     "expected": 0.054,
+     "tol": 0.0005
+    },
+    {
+     "key": "examples.0.p",
+     "ms": "ase 704th of 13,015 other diseases (within the nearest 5.4%; p = 0.051 against 1,000 random combinations of fi",
+     "expected": 0.051,
+     "tol": 0.0005
+    },
+    {
+     "key": "examples.1.out_of",
+     "ms": " Gravis and Dermatomyositis embeddings ranks Thymoma 2,137th of 13,018 other diseases (p = 0.152 against 1,000",
+     "expected": 13018
+    },
+    {
+     "key": "examples.1.p",
+     "ms": "s embeddings ranks Thymoma 2,137th of 13,018 other diseases (p = 0.152 against 1,000 random pairs of diseases)",
+     "expected": 0.152,
+     "tol": 0.0005
+    }
+   ]
+  },
+  {
+   "label": "SI_compositionality_summary",
+   "script": "figures/SI/si_compositionality.py",
+   "numbers": "figures/SI/SI_compositionality_preview_values.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "n",
+     "ms": "y.]  ![**[Compositionality of DisAtlas space.]** [**a**, For the 2,535 MONDO diseases with two or more parents",
+     "expected": 2535
+    },
+    {
+     "key": "top1.Random parents.share",
+     "ms": "n the embedding, the share whose own embedding is among the nearest 1% of all diseases to each query, with 95%",
+     "expected": 0.01,
+     "tol": 0.005
+    },
+    {
+     "key": "top1.Random parents.lo",
+     "ms": " query across all 2,535 diseases; the dashed line marks the nearest 1%. Averages are taken per model seed on u",
+     "expected": 0.01,
+     "tol": 0.005
+    }
+   ]
+  },
+  {
+   "label": "SI_compositionality_summary",
+   "script": "figures/SI/si_bio_gap_numbers.py",
+   "numbers": "figures/SI/SI_bio_gap_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "explainability.Case1.score",
+     "ms": "edding is among the nearest 1% of all diseases to each query, with 95% Wilson confidence intervals: the averag",
+     "expected": 0.95,
+     "tol": 0.005
+    }
+   ]
+  },
+  {
+   "label": "SI_compositionality_systematic_bounds",
+   "script": "figures/SI/si_compositionality_recompute.py",
+   "numbers": "data/derived/si_compositionality/compositionality_summary.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "wilcoxon_bary_vs_one_real_rest_random_p",
+     "op": "lt",
+     "bound": 1e-30,
+     "ms": "Wilcoxon signed-rank p < 10^-30 for both comparisons"
+    },
+    {
+     "key": "wilcoxon_bary_vs_random_p",
+     "op": "lt",
+     "bound": 1e-30,
+     "ms": "Wilcoxon signed-rank p < 10^-30 for both comparisons"
+    },
+    {
+     "key": "n_null_examples",
+     "expected": 1000,
+     "ms": "against 1,000 random combinations / pairs of diseases"
+    }
+   ]
+  }
+ ],
+ "unchecked": [
+  {
+   "token": "10",
+   "reason": "checked as a bound p < 1e-30",
+   "ms": "eases and 33.3% when all but one parent is replaced (Wilcoxon signed-rank p < 10⁻³⁰ for both comparisons), so a disease'"
+  },
+  {
+   "token": "1,000",
+   "reason": "checked (n_null_examples)",
+   "ms": "704th of 13,015 other diseases (within the nearest 5.4%; p = 0.051 against 1,000 random combinations of five diseases), "
+  },
+  {
+   "token": "1,000",
+   "reason": "checked (n_null_examples)",
+   "ms": "beddings ranks Thymoma 2,137th of 13,018 other diseases (p = 0.152 against 1,000 random pairs of diseases), while Myasth"
+  }
+ ],
+ "manuscript_mismatch": []
+}

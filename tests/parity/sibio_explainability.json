@@ -1,0 +1,229 @@
+{
+ "items": [
+  {
+   "label": "SI_explainability",
+   "script": "figures/SI/si_bio_gap_numbers.py",
+   "numbers": "figures/SI/SI_bio_gap_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "explainability.Case1.score",
+     "ms": "sease pairs: Marfan syndrome–TAA at the 99.9th percentile (score 0.950), MODY type 1–type 2 diabetes at the 99",
+     "expected": 0.95,
+     "tol": 0.0005
+    },
+    {
+     "key": "explainability.Case2.score",
+     "ms": "centile (score 0.950), MODY type 1–type 2 diabetes at the 99.3rd (0.881), and Gaucher disease due to saposin C",
+     "expected": 0.881,
+     "tol": 0.0005
+    },
+    {
+     "key": "explainability.Case3.score",
+     "ms": " due to saposin C deficiency–Parkinson disease 24 at the 98.3rd (0.737).] [Among the roughly 13,000 diseases s",
+     "expected": 0.737,
+     "tol": 0.0005
+    },
+    {
+     "key": "explainability.Case1.score",
+     "ms": "isease, alongside the top TxGNN drug predictions (confidence above 0.9). TxGNN's top predictions are unrelated",
+     "expected": 0.9,
+     "tol": 0.05
+    }
+   ]
+  },
+  {
+   "label": "SI_explainability_bounds",
+   "script": "figures/SI/si_bio_gap_numbers.py",
+   "numbers": "figures/SI/SI_bio_gap_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "explainability.Case1.pct",
+     "op": "ge",
+     "bound": 98,
+     "ms": "ranks all three pairs in the top 2%"
+    },
+    {
+     "key": "explainability.Case2.pct",
+     "op": "ge",
+     "bound": 98,
+     "ms": "ranks all three pairs in the top 2%"
+    },
+    {
+     "key": "explainability.Case3.pct",
+     "op": "ge",
+     "bound": 98,
+     "ms": "ranks all three pairs in the top 2%"
+    },
+    {
+     "key": "explainability.n_diseases",
+     "expected": 13000,
+     "tol": 500,
+     "ms": "roughly 13,000 diseases scored against each rare disease"
+    }
+   ]
+  }
+ ],
+ "unchecked": [
+  {
+   "section": "SI_explainability",
+   "token": "1",
+   "reason": "list ordinal",
+   "ctx": "t a performance ranking.] [We used three disease pairs from the literature:]  [1. **Marfan syndrome and thoracic aortic "
+  },
+  {
+   "section": "SI_explainability",
+   "token": "2",
+   "reason": "list ordinal",
+   "ctx": " FBN1 mutations, informs the role of extracellular-matrix defects in TAA [].] [2. **Maturity-onset diabetes of the young"
+  },
+  {
+   "section": "SI_explainability",
+   "token": "2",
+   "reason": "part of a disease, trial-phase or class name",
+   "ctx": "defects in TAA [].] [2. **Maturity-onset diabetes of the young (MODY) and type 2 diabetes.** MODY, a rare monogenic diab"
+  },
+  {
+   "section": "SI_explainability",
+   "token": "1,",
+   "reason": "part of a disease, trial-phase or class name",
+   "ctx": "(MODY) and type 2 diabetes.** MODY, a rare monogenic diabetes (here MODY type 1, caused by HNF4A mutations), has clarifi"
+  },
+  {
+   "section": "SI_explainability",
+   "token": "2",
+   "reason": "part of a disease, trial-phase or class name",
+   "ctx": " caused by HNF4A mutations), has clarified beta-cell pathways relevant to type 2 diabetes [].] [3. **Gaucher disease and"
+  },
+  {
+   "section": "SI_explainability",
+   "token": "3",
+   "reason": "list ordinal",
+   "ctx": "mutations), has clarified beta-cell pathways relevant to type 2 diabetes [].] [3. **Gaucher disease and Parkinson diseas"
+  },
+  {
+   "section": "SI_explainability",
+   "token": "2",
+   "reason": "part of a disease, trial-phase or class name",
+   "ctx": "Explorer [], the native explainability module of TxGNN, connected MODY to type 2 diabetes but returned no biologically p"
+  },
+  {
+   "section": "SI_explainability",
+   "token": "1",
+   "reason": "part of a disease, trial-phase or class name",
+   "ctx": "e pairs: Marfan syndrome–TAA at the 99.9th percentile (score 0.950), MODY type 1–type 2 diabetes at the 99.3rd (0.881), "
+  },
+  {
+   "section": "SI_explainability",
+   "token": "2",
+   "reason": "part of a disease, trial-phase or class name",
+   "ctx": ": Marfan syndrome–TAA at the 99.9th percentile (score 0.950), MODY type 1–type 2 diabetes at the 99.3rd (0.881), and Gau"
+  },
+  {
+   "section": "SI_explainability",
+   "token": "1",
+   "reason": "part of a disease, trial-phase or class name",
+   "ctx": "as ranks all three pairs in the top 2% of disease pairs. Case 2 uses MODY type 1 (HNF4A). Case 3 uses Gaucher disease du"
+  },
+  {
+   "token": "24,",
+   "reason": "part of a disease name (Parkinson disease 24)",
+   "ms": " a rare GBA-independent form caused by PSAP mutations, and Parkinson disease 24, which is also linked to PSAP.]  [TxGNN "
+  },
+  {
+   "token": "2%",
+   "reason": "checked as a bound (SI_explainability_bounds)",
+   "ms": "dedicated disease-level representation.] [It ranks all three pairs in the top 2% of the 84.7 million disease pairs: Marf"
+  },
+  {
+   "token": "84.7",
+   "reason": "manuscript_mismatch entry (n_pairs_all)",
+   "ms": "sease-level representation.] [It ranks all three pairs in the top 2% of the 84.7 million disease pairs: Marfan syndrome–"
+  },
+  {
+   "token": "24",
+   "reason": "part of a disease name (Parkinson disease 24)",
+   "ms": "rd (0.881), and Gaucher disease due to saposin C deficiency–Parkinson disease 24 at the 98.3rd (0.737).] [Among the roug"
+  },
+  {
+   "token": "13,000",
+   "reason": "checked with tolerance (SI_explainability_bounds)",
+   "ms": "eficiency–Parkinson disease 24 at the 98.3rd (0.737).] [Among the roughly 13,000 diseases scored against each rare disea"
+  },
+  {
+   "token": "84.7",
+   "reason": "manuscript_mismatch entry (n_pairs_all)",
+   "ms": "mon disease pairs.** **a**, DisAtlas pair scores, with the percentile among 84.7 million disease pairs and the rank of t"
+  },
+  {
+   "token": "1",
+   "reason": "case ordinal",
+   "ms": "t indication for the two pairs involving sparsely studied rare diseases (cases 1 and 3) and relevant for the well-studie"
+  },
+  {
+   "token": "3",
+   "reason": "case ordinal",
+   "ms": "cation for the two pairs involving sparsely studied rare diseases (cases 1 and 3) and relevant for the well-studied MODY"
+  },
+  {
+   "token": "2,",
+   "reason": "case ordinal",
+   "ms": "re diseases (cases 1 and 3) and relevant for the well-studied MODY pair (case 2, diazoxide). DisAtlas ranks all three pa"
+  },
+  {
+   "token": "2%",
+   "reason": "checked as a bound (SI_explainability_bounds)",
+   "ms": "died MODY pair (case 2, diazoxide). DisAtlas ranks all three pairs in the top 2% of disease pairs. Case 2 uses MODY type"
+  },
+  {
+   "token": "2",
+   "reason": "case ordinal",
+   "ms": "iazoxide). DisAtlas ranks all three pairs in the top 2% of disease pairs. Case 2 uses MODY type 1 (HNF4A). Case 3 uses G"
+  },
+  {
+   "token": "3",
+   "reason": "case ordinal",
+   "ms": "ee pairs in the top 2% of disease pairs. Case 2 uses MODY type 1 (HNF4A). Case 3 uses Gaucher disease due to saposin C d"
+  },
+  {
+   "token": "1",
+   "reason": "case ordinal",
+   "ms": "r disease []. **b**, Sub-networks behind each prediction. DisAtlas links cases 1 and 2 through pathway-level genes and p"
+  },
+  {
+   "token": "2",
+   "reason": "case ordinal",
+   "ms": "ase []. **b**, Sub-networks behind each prediction. DisAtlas links cases 1 and 2 through pathway-level genes and phenoty"
+  },
+  {
+   "token": "1",
+   "reason": "case ordinal",
+   "ms": "GNN relies on broad phenotypes such as autosomal dominant inheritance in cases 1 and 2, reaching the related diabetes co"
+  },
+  {
+   "token": "2,",
+   "reason": "case ordinal",
+   "ms": "ies on broad phenotypes such as autosomal dominant inheritance in cases 1 and 2, reaching the related diabetes context i"
+  },
+  {
+   "token": "2",
+   "reason": "case ordinal",
+   "ms": "nt inheritance in cases 1 and 2, reaching the related diabetes context in case 2 only through islet cell adenomatosis, a"
+  },
+  {
+   "token": "3",
+   "reason": "case ordinal",
+   "ms": "ase 2 only through islet cell adenomatosis, and predicts no meta-path for case 3. TxGNN is shown with its published chec"
+  }
+ ],
+ "manuscript_mismatch": [
+  {
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "key": "n_pairs_all",
+   "data_value": 84766710,
+   "ms_value": "84.7 million",
+   "reason": "13,021 × 13,020 / 2 = 84,766,710 disease pairs, which rounds to 84.8 million"
+  }
+ ]
+}

@@ -1,0 +1,4 @@
+set	n	q1	median	q3	mean	source
+Random disease pairs	49976	10.000	12.000	14.000	11.780	data/derived/ixidn_robustness/random_pairs_ordo_distance.tsv.gz
+IxIDN-Matched negatives	794	6.000	8.000	10.750	8.258	data/derived/ixidn_robustness/ixidn4364_ontology_distance.tsv
+IxIDN-Matched positives	842	3.000	6.000	10.000	6.817	data/derived/ixidn_robustness/ixidn4364_ontology_distance.tsv

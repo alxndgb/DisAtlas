@@ -1,0 +1,13 @@
+{
+ "n": 13019,
+ "n_rare": 10488,
+ "n_common": 2531,
+ "nperm": 1000,
+ "median_first_common_rank_for_rare": 8.0,
+ "median_first_rare_rank_for_common": 1.0,
+ "n_rare_no_common_in_50": 713,
+ "check_k10_other_frac": {
+  "rare": 0.13558352402745996,
+  "common": 0.6176610035559067
+ }
+}

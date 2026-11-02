@@ -1,0 +1,64 @@
+{
+ "n": 2535,
+ "top1": {
+  "Random parents": {
+   "k": 32,
+   "share": 0.0126232741617357,
+   "lo": 0.0089558649009935,
+   "hi": 0.0177655590161931,
+   "median_pct": 0.50699032109387
+  },
+  "One real parent + random others": {
+   "k": 843,
+   "share": 0.3325443786982248,
+   "lo": 0.3144700582743023,
+   "hi": 0.3511254451274343,
+   "median_pct": 0.023657731008526
+  },
+  "Barycentre of real parents": {
+   "k": 1205,
+   "share": 0.4753451676528599,
+   "lo": 0.4559569598137031,
+   "hi": 0.494807984738967,
+   "median_pct": 0.0114448114294492
+  },
+  "Best single real parent": {
+   "k": 1414,
+   "share": 0.5577909270216963,
+   "lo": 0.5383845002349392,
+   "hi": 0.5770224697336017,
+   "median_pct": 0.0071434057915354
+  }
+ },
+ "bary_better_than_best_single": 0.2552268244575937,
+ "bary_ties": 0.03234714003944773,
+ "bary_worse": 0.7124260355029586,
+ "examples": [
+  {
+   "example": "Mixed connective tissue disease",
+   "target_id": "MONDO:0005854",
+   "target": "mixed connective tissue disease",
+   "components": "systemic lupus erythematosus (MONDO:0007915); systemic sclerosis (MONDO:0005100); Sjogren syndrome (MONDO:0010030); systemic-onset juvenile idiopathic arthritis (MONDO:0019434); polymyositis (MONDO:0019127)",
+   "n_components": 5,
+   "rank": 704,
+   "out_of": 13015,
+   "pct": 0.0540914329619669,
+   "null_median_rank": 6255.5,
+   "p": 0.0509490509490509
+  },
+  {
+   "example": "Thymoma",
+   "target_id": "MONDO:0006456",
+   "target": "thymoma",
+   "components": "myasthenia gravis (MONDO:0009688); dermatomyositis (MONDO:0016367)",
+   "n_components": 2,
+   "rank": 2137,
+   "out_of": 13018,
+   "pct": 0.1641573206329697,
+   "null_median_rank": 7711.5,
+   "p": 0.1518481518481518
+  }
+ ],
+ "png_bytes": 287177,
+ "overlaps": []
+}

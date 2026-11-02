@@ -1,0 +1,3 @@
+example	target_id	target	components	n_components	rank	out_of	pct	null_median_rank	p
+Mixed connective tissue disease	MONDO:0005854	mixed connective tissue disease	systemic lupus erythematosus (MONDO:0007915); systemic sclerosis (MONDO:0005100); Sjogren syndrome (MONDO:0010030); systemic-onset juvenile idiopathic arthritis (MONDO:0019434); polymyositis (MONDO:0019127)	5	704	13015	0.05409143296196696	6255.5	0.05094905094905095
+Thymoma	MONDO:0006456	thymoma	myasthenia gravis (MONDO:0009688); dermatomyositis (MONDO:0016367)	2	2137	13018	0.16415732063296973	7711.5	0.15184815184815184

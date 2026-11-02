@@ -1,0 +1,29 @@
+{
+ "n_targets": 2535,
+ "parents_median": 2.0,
+ "share_bary_better_than_best_single": 0.2552268244575937,
+ "share_bary_ties_best_single": 0.03234714003944773,
+ "share_bary_worse_than_best_single": 0.7124260355029586,
+ "wilcoxon_bary_vs_one_real_rest_random_p": 4.8424479085264924e-33,
+ "wilcoxon_bary_vs_random_p": 0.0,
+ "wilcoxon_bary_vs_best_single_p": 9.477063906398674e-160,
+ "inputs": {
+  "nodes.txt": "bc5226cd1aa64ada2b8b57d7b261408e",
+  "mondo.obo": "efc0b05f58b8c29feedd175bc97bc132",
+  "node2vec_s4707.npz": "83b5a05c4c5949bb10d0326d1e2835be",
+  "node2vec_s4708.npz": "59a3512f15b079c4ae06aafd14957f4c",
+  "node2vec_s4709.npz": "d64374d19970eb53f7c54682c1f2854b",
+  "node2vec_s4710.npz": "f39ed8591acd29c2bfa4667114b945a2",
+  "node2vec_s4711.npz": "f95fa2dafb8c14f2ab64ba72422acb90"
+ },
+ "seeds": [
+  4707,
+  4708,
+  4709,
+  4710,
+  4711
+ ],
+ "rng_examples": 7,
+ "rng_systematic": 20261011,
+ "n_null_examples": 1000
+}

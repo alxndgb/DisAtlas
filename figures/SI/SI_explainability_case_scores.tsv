@@ -1,0 +1,4 @@
+case	id_a	label_a	id_b	label_b	score	percentile_all_pairs	n_diseases
+Case1	MONDO:0007947	Marfan syndrome	MONDO:0005396	thoracic aortic aneurysm	0.9499	99.9	13021
+Case2	MONDO:0007452	maturity-onset diabetes of the young type 1	MONDO:0005148	type 2 diabetes mellitus	0.8806	99.29	13021
+Case3	MONDO:0012517	Gaucher disease due to saposin C deficiency	MONDO:0859183	Parkinson disease 24, autosomal dominant	0.7367	98.3	13021

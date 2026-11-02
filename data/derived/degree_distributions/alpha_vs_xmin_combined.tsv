@@ -1,0 +1,5 @@
+implementation	graph	xmin	alpha	sigma	D	n_tail
+Python powerlaw 2.0.0 (alpha range [1,10]), xmin fixed	combined	104	2.9832	0.0349	0.04778	3233
+Python powerlaw 2.0.0 (alpha range [1,10]), xmin fixed	combined	113	3.0752	0.0388	0.03583	2855
+Python powerlaw 2.0.0 (alpha range [1,10]), xmin fixed	combined	204	3.5733	0.0848	0.03605	921
+Python powerlaw 2.0.0 (alpha range [1,10]), xmin fixed	combined	295	3.9852	0.1514	0.03468	389

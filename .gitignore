@@ -1,0 +1,11 @@
+.venv
+data/zenodo
+__pycache__/
+*.pyc
+CLAUDE.md
+scratch_*/
+.ipynb_checkpoints/
+.ssh/
+.claude/scheduled_tasks.lock
+.blinding_salt
+slurm-*.out

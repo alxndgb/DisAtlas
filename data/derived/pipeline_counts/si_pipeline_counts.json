@@ -1,0 +1,77 @@
+{
+ "union_sha256": "fa3eb90f4460e42ea67674b741857faaa4d7b4d2721514016108272630589b62",
+ "graph": {
+  "edges": 498155,
+  "diseases": 13021,
+  "broad_edges": 331234,
+  "broad_diseases": 13020,
+  "spec_edges": 190007,
+  "spec_diseases": 5194,
+  "both": 23086
+ },
+ "bipartite": {
+  "Mechanisms": {
+   "diseases": 3677,
+   "entities": 357,
+   "links": 149852
+  },
+  "Pathways": {
+   "diseases": 3839,
+   "entities": 1642,
+   "links": 148060
+  },
+  "Pathways_Reactome": {
+   "diseases": 3757,
+   "entities": 1377,
+   "links": 141649
+  },
+  "Pathways_literature": {
+   "diseases": 1245,
+   "entities": 265,
+   "links": 6411
+  },
+  "Biological_processes": {
+   "diseases": 2437,
+   "entities": 2234,
+   "links": 37765
+  },
+  "Anatomical_sites": {
+   "diseases": 2448,
+   "entities": 2819,
+   "links": 47411
+  },
+  "Cell_types": {
+   "diseases": 1406,
+   "entities": 464,
+   "links": 12958
+  },
+  "Phenotype_terms": {
+   "diseases": 2249,
+   "entities": 1088,
+   "links": 28616
+  },
+  "Phenotype_terms_HP_only": {
+   "diseases": 2249,
+   "entities": 1087,
+   "links": 28615
+  },
+  "mechanism_all_groups": {
+   "diseases": 4965,
+   "entities": 4233,
+   "links": 335677
+  },
+  "pathology_all": {
+   "diseases": 2867,
+   "entities": 4371,
+   "links": 88985
+  }
+ },
+ "frame_pair_example": "MONDO:0002076__MONDO:0008259",
+ "broad_edges_matched_in_frame": 331234,
+ "disease_with_channel": {
+  "GO": 10983,
+  "HPA": 10283,
+  "Pfam": 10905,
+  "HPO": 10307
+ }
+}

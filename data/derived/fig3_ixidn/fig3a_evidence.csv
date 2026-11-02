@@ -1,0 +1,11 @@
+kind,a,a_id,b,b_id,phase,n_trials,via,benchmark_pos,role_in_fig3a
+disease-drug,Alzheimer disease,MONDO:0004975,PIMAVANSERIN,CHEMBL:CHEMBL2111101,3.0,7.0,,,black line
+disease-drug,Parkinson disease,MONDO:0005180,PIMAVANSERIN,CHEMBL:CHEMBL2111101,4.0,39.0,,,black line
+disease-drug,Lewy body dementia,MONDO:0007488,PIMAVANSERIN,CHEMBL:CHEMBL2111101,4.0,5.0,,,black line
+disease-drug,alcohol abuse,MONDO:0002046,PRAZOSIN,CHEMBL:CHEMBL2,4.0,14.0,,,black line
+disease-drug,Alzheimer disease,MONDO:0004975,PRAZOSIN,CHEMBL:CHEMBL2,4.0,4.0,,,black line
+disease-drug,Alzheimer disease,MONDO:0004975,CREATINE,CHEMBL:CHEMBL283800,4.0,1.0,,,black line
+disease-drug,Parkinson disease,MONDO:0005180,CREATINE,CHEMBL:CHEMBL283800,4.0,2.0,,,black line
+disease-drug,alcohol abuse,MONDO:0002046,TRAZODONE,CHEMBL:CHEMBL621,4.0,7.0,,,black line
+disease-drug,Alzheimer disease,MONDO:0004975,TRAZODONE,CHEMBL:CHEMBL621,4.0,7.0,,,black line
+disease-drug,Parkinson disease,MONDO:0005180,TRAZODONE,CHEMBL:CHEMBL621,3.0,4.0,,,black line

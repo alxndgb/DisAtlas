@@ -1,0 +1,85 @@
+{
+  "compositionality_single": {
+    "MCTD": {
+      "MONDO:0005100": 1735,
+      "MONDO:0007915": 1077,
+      "MONDO:0010030": 552,
+      "MONDO:0019127": 480,
+      "MONDO:0019434": 741,
+      "barycentre": 704
+    },
+    "thymoma": {
+      "MONDO:0009688": 1216,
+      "MONDO:0016367": 4471,
+      "barycentre": 2137
+    }
+  },
+  "explainability": {
+    "Case1": {
+      "pct": 99.9,
+      "score": 0.95
+    },
+    "Case2": {
+      "pct": 99.3,
+      "score": 0.881
+    },
+    "Case3": {
+      "pct": 98.3,
+      "score": 0.737
+    },
+    "n_diseases": 13021
+  },
+  "fda_benchmark": {
+    "n_diseases": 401,
+    "n_easy": 896,
+    "n_hard": 1104,
+    "n_hard_complement": 4,
+    "n_pairs": 2000,
+    "n_split_complement_six": 6,
+    "n_split_dev": 540,
+    "n_split_easy_unsplit": 894,
+    "n_split_holdout": 560
+  },
+  "fda_channel_universe": 5192,
+  "gene_anchor_ablation": {
+    "fda_lost": [
+      13,
+      159
+    ],
+    "ixidn_delta": [
+      0.001,
+      -0.003,
+      0.005
+    ],
+    "targets": [
+      18,
+      18
+    ],
+    "top100_pct": [
+      79.8,
+      86.6
+    ]
+  },
+  "mechanism_classes": {
+    "median_pct_range": [
+      75.8,
+      98.9
+    ],
+    "n_cases": 50,
+    "n_classes": 11,
+    "n_recovered": 48
+  },
+  "single_gene": {
+    "broad_only_share_of_failures_pct": 95,
+    "fail_pct": 20,
+    "hub_fail_pct": [
+      36,
+      16
+    ],
+    "n_pairs": 14805,
+    "umbrella_fail_pct": [
+      34,
+      17
+    ]
+  }
+}

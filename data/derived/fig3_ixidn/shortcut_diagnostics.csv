@@ -1,0 +1,10 @@
+feature,expanded_auroc,shipped_910_auroc,matched_by_designA,note
+dsum,0.5282,0.562,True,
+lgp,0.5043,,True,
+name_tfidf_cos,0.5062,0.534,True,
+mondo_simgic,0.5418,0.544,True,
+gmin,0.5011,0.502,True,
+disease_identity_loo,0.8691,0.7806,False,leave-one-out label rate per disease; NOT matched by Design A; not comparable across sets of differing density
+oncology_name_terms,0.69,0.6723,False,oncology term in either disease name; NOT matched by Design A; 13.2% of positives vs 52.3% of negatives
+disease_name_length,0.5964,0.5195,False,total characters in both names; NOT matched by Design A
+blank_disease_name,0.5,,False,was 0.6212 before the missing-name defect was fixed; now zero blanks

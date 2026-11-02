@@ -1,0 +1,5 @@
+group	label	n_anchors_total	n_anchors	n_anchor_partner_rows	n_pairs	n_pos	n_neg	mean_auroc	ci_lo	ci_hi	mean_auroc_hpo	mean_auroc_go
+rare_anchor_rank_common_partners	Rare anchor, common partners	424	31	120	120	45	75	0.7811	0.6488	0.8982	0.5164	0.6274
+common_anchor_rank_rare_partners	Common anchor, rare partners	174	104	934	934	237	697	0.8779	0.8308	0.9167	0.5569	0.6272
+rare_anchor_rank_rare_partners	Rare anchor, rare partners	742	452	3645	2251	1173	1078	0.7381	0.7103	0.7626	0.5866	0.6756
+common_anchor_rank_common_partners	Common anchor, common partners	170	22	229	213	191	22	0.7992	0.6794	0.9023	0.5329	0.4895

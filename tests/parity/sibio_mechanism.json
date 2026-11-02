@@ -1,0 +1,204 @@
+{
+ "items": [
+  {
+   "label": "SI_mechanism_coverage_text",
+   "script": "figures/SI/si_fda_prioritisation_text.py",
+   "status": "exact",
+   "text_checks": [
+    {
+     "file": "figures/SI/SI_fda_prioritisation_text.md",
+     "numbers": [
+      "2000"
+     ],
+     "ms": "Each case pair is ranked against a reference set of 2,000 random disease pairs whose members are drawn from the same training-graph degree groups as the two cas"
+    }
+   ]
+  },
+  {
+   "label": "SI_mechanism_coverage",
+   "script": "figures/SI/si_bio_gap_numbers.py",
+   "numbers": "figures/SI/SI_bio_gap_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "mechanism_classes.n_classes",
+     "ms": "pplementary Figure ].]  [**Mechanism-class positive controls.** For 11 mechanism classes (JAK, BTK, PD-1/PD-L1",
+     "expected": 11
+    },
+    {
+     "key": "mechanism_classes.n_cases",
+     "ms": "/IL-6R, IL-1, IL-4R/IL-13, IL-5/IL-5R, IgE and FcRn), the cases are 50 pairs of diseases in which drugs of the",
+     "expected": 50
+    },
+    {
+     "key": "fda_benchmark.n_pairs",
+     "ms": "nhibitors).] [Each case pair is ranked against a reference set of 2,000 random disease pairs whose members are",
+     "expected": 2000
+    },
+    {
+     "key": "mechanism_classes.n_recovered",
+     "ms": "th percentile of this reference set in a majority of the five seeds; 48 of the 50 cases are recovered, and the",
+     "expected": 48
+    },
+    {
+     "key": "mechanism_classes.median_pct_range.0",
+     "ms": " cases are recovered, and the class median percentiles range from 75.8 to 98.9.]  [**Coverage in dated graph s",
+     "expected": 75.8,
+     "tol": 0.05
+    },
+    {
+     "key": "mechanism_classes.median_pct_range.1",
+     "ms": "re recovered, and the class median percentiles range from 75.8 to 98.9.]  [**Coverage in dated graph slices.**",
+     "expected": 98.9,
+     "tol": 0.05
+    }
+   ]
+  },
+  {
+   "label": "SI_mechanism_coverage",
+   "script": "figures/SI/si_mechanism_coverage_slices.py",
+   "numbers": "figures/SI/SI_mechanism_coverage_slices_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "expansion.cross",
+     "ms": "ered trial and is not yet linked to the drug's earlier indications: 84 of 94 such expansions (89%) reach the 7",
+     "expected": 84
+    },
+    {
+     "key": "expansion.n",
+     "ms": "rial and is not yet linked to the drug's earlier indications: 84 of 94 such expansions (89%) reach the 75th pe",
+     "expected": 94
+    },
+    {
+     "key": "expansion.cross_pct",
+     "ms": "linked to the drug's earlier indications: 84 of 94 such expansions (89%) reach the 75th percentile in at least",
+     "expected": 89
+    },
+    {
+     "key": "failed.cross",
+     "ms": "iled indications that meet the same rule reach it at a similar rate (75 of 87, 86%), so this figure shows that",
+     "expected": 75
+    },
+    {
+     "key": "failed.n",
+     "ms": "ications that meet the same rule reach it at a similar rate (75 of 87, 86%), so this figure shows that the gra",
+     "expected": 87
+    },
+    {
+     "key": "failed.cross_pct",
+     "ms": "ions that meet the same rule reach it at a similar rate (75 of 87, 86%), so this figure shows that the graph c",
+     "expected": 86
+    },
+    {
+     "key": "expansion.first_scorable",
+     "ms": "ercentile in at least one slice: approved expansions 84 of 94 (89%; 55 already in the first scorable slice), f",
+     "expected": 55
+    },
+    {
+     "key": "failed.first_scorable",
+     "ms": "ady in the first scorable slice), failed indications 75 of 87 (86%; 41 in the first scorable slice). Markers s",
+     "expected": 41
+    },
+    {
+     "key": "expansion.decoy_mean",
+     "ms": " slice). Markers show the mean share for matched decoy diseases (35.7% and 33.8%). Because approved and failed",
+     "expected": 0.357,
+     "tol": 0.0005
+    },
+    {
+     "key": "failed.decoy_mean",
+     "ms": "arkers show the mean share for matched decoy diseases (35.7% and 33.8%). Because approved and failed indicatio",
+     "expected": 0.338,
+     "tol": 0.0005
+    }
+   ]
+  },
+  {
+   "label": "SI_mechanism_coverage",
+   "script": "figures/SI/si_complement_milestones.py",
+   "numbers": "figures/SI/SI_complement_milestones_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "drugs",
+     "ms": " inhibitors by drug and indication.]** [46 drug–indication rows for 12 complement inhibitors: 24 approved (fir",
+     "expected": 12
+    },
+    {
+     "key": "approved",
+     "ms": "dication.]** [46 drug–indication rows for 12 complement inhibitors: 24 approved (first registered trial, first",
+     "expected": 24
+    },
+    {
+     "key": "ongoing",
+     "ms": "om openFDA); 10 failed (Phase 2 or later, stopped for efficacy) and 12 ongoing with an active Phase 3 trial, s",
+     "expected": 12
+    }
+   ]
+  }
+ ],
+ "unchecked": [
+  {
+   "section": "SI_mechanism_coverage",
+   "token": "3",
+   "reason": "part of a disease, trial-phase or class name",
+   "ctx": "for 12 complement inhibitors: 24 approved (first registered trial, first Phase 3 trial, first trial publication in PubMe"
+  },
+  {
+   "section": "SI_mechanism_coverage",
+   "token": "3",
+   "reason": "part of a disease, trial-phase or class name",
+   "ctx": "d (Phase 2 or later, stopped for efficacy) and 12 ongoing with an active Phase 3 trial, shown in grey (not approved). Ec"
+  },
+  {
+   "section": "SI_mechanism_coverage",
+   "token": "2007",
+   "reason": "calendar year (slice / release date label)",
+   "ctx": "ed. The original eculizumab approval (paroxysmal nocturnal haemoglobinuria, 2007) is taken from the openFDA submission r"
+  },
+  {
+   "token": "5",
+   "reason": "design constant: number of model seeds",
+   "ms": "ns that meet the same rule (87) are the control. Each slice is scored with the 5-seed mean popularity-matched percentile"
+  },
+  {
+   "token": "46",
+   "reason": "manuscript_mismatch entry (complement milestones caption)",
+   "ms": "![**[Clinical milestones of complement inhibitors by drug and indication.]** [46 drug–indication rows for 12 complement "
+  },
+  {
+   "token": "10",
+   "reason": "manuscript_mismatch entry (complement milestones caption)",
+   "ms": "Phase 3 trial, first trial publication in PubMed, FDA approval from openFDA); 10 failed (Phase 2 or later, stopped for e"
+  },
+  {
+   "token": "130",
+   "reason": "manuscript_mismatch entry (complement milestones caption)",
+   "ms": "is dated after the approval, so its trial markers are not shown. Each of the 130 plotted dates is listed with its source"
+  }
+ ],
+ "manuscript_mismatch": [
+  {
+   "numbers": "figures/SI/SI_complement_milestones_numbers.json",
+   "key": "rows",
+   "data_value": 45,
+   "ms_value": "46 drug–indication rows",
+   "reason": "caption predates dropping one failed row whose stop reason is not efficacy (failed_rows_dropped_stop_reason_not_efficacy); figure and upstream output show 45"
+  },
+  {
+   "numbers": "figures/SI/SI_complement_milestones_numbers.json",
+   "key": "failed",
+   "data_value": 9,
+   "ms_value": "10 failed",
+   "reason": "same dropped row; figure shows 9 failed"
+  },
+  {
+   "numbers": "figures/SI/SI_complement_milestones_numbers.json",
+   "key": "dated_events",
+   "data_value": 131,
+   "ms_value": "130 plotted dates",
+   "reason": "figure and the dates table carry 131 dated events; the caption's claim that avacopan trial markers are omitted is also stale (trial_markers_omitted is empty)"
+  }
+ ]
+}

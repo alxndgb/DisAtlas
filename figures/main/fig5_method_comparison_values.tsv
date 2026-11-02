@@ -1,0 +1,43 @@
+key	value
+auroc|DisAtlas (full)	0.8316662199934302
+auroc|DisAtlas (benchmark diseases held out)	0.7844296160692613
+auroc|Claude (chat)	0.6918395740165557
+auroc|Claude (science agent)	0.6853485647506765
+auroc|Phylo Biomni	0.6267586183430636
+auroc|TxGNN	0.5663663664294397
+auroc|Gemini Pro	0.49738895689337226
+AUROC|DisAtlas (full)	0.8316662199934302
+AUPRC|DisAtlas (full)	0.842048517894431
+F1@k=#positives|DisAtlas (full)	0.7598533455545371
+Precision@top10%|DisAtlas (full)	0.9564220183486238
+NPV@bottom10%|DisAtlas (full)	0.8669724770642202
+AUROC|DisAtlas (benchmark diseases held out)	0.7844296160692613
+AUPRC|DisAtlas (benchmark diseases held out)	0.788781077170978
+F1@k=#positives|DisAtlas (benchmark diseases held out)	0.7189362677670793
+Precision@top10%|DisAtlas (benchmark diseases held out)	0.9128440366972477
+NPV@bottom10%|DisAtlas (benchmark diseases held out)	0.8509174311926605
+AUROC|Claude (chat)	0.6918395740165557
+AUPRC|Claude (chat)	0.7392801286453521
+F1@k=#positives|Claude (chat)	0.6283226397800183
+Precision@top10%|Claude (chat)	0.9334862385321101
+NPV@bottom10%|Claude (chat)	0.6353211009174312
+AUROC|Claude (science agent)	0.6853485647506765
+AUPRC|Claude (science agent)	0.7081039361386766
+F1@k=#positives|Claude (science agent)	0.6404674610449129
+Precision@top10%|Claude (science agent)	0.8600917431192661
+NPV@bottom10%|Claude (science agent)	0.6376146788990825
+AUROC|Phylo Biomni	0.6267586183430636
+AUPRC|Phylo Biomni	0.6640606713412316
+F1@k=#positives|Phylo Biomni	0.5957836846929423
+Precision@top10%|Phylo Biomni	0.8302752293577982
+NPV@bottom10%|Phylo Biomni	0.5
+AUROC|Gemini Pro	0.49738895689337226
+AUPRC|Gemini Pro	0.5364864023126312
+F1@k=#positives|Gemini Pro	0.49679193400549954
+Precision@top10%|Gemini Pro	0.6307339449541285
+NPV@bottom10%|Gemini Pro	0.4889908256880734
+AUROC|TxGNN	0.5663663664294397
+AUPRC|TxGNN	0.6059986769104819
+F1@k=#positives|TxGNN	0.5412465627864345
+Precision@top10%|TxGNN	0.7729357798165137
+NPV@bottom10%|TxGNN	0.5298165137614679

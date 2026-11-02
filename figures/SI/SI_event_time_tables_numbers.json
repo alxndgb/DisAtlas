@@ -1,0 +1,114 @@
+{
+ "cells": 87,
+ "other_rows": [
+  [
+   "pooled_single_event",
+   "adamic_adar"
+  ],
+  [
+   "pooled_aa_zero",
+   "popularity"
+  ],
+  [
+   "pooled_aa_zero",
+   "gene_jaccard"
+  ],
+  [
+   "pooled_aa_zero",
+   "hpo_simgic"
+  ],
+  [
+   "pooled_covered_hpo_simgic",
+   "hpo_simgic"
+  ]
+ ],
+ "years_pct_p1_test": {
+  "n": 25,
+  "favour": 19,
+  "against": 0,
+  "against_years": [],
+  "includes0": 6
+ },
+ "years_pct_p1_all": {
+  "n": 25,
+  "favour": 19,
+  "against": 1,
+  "against_years": [
+   "2020"
+  ],
+  "includes0": 5
+ },
+ "years_pct_s3_test": {
+  "n": 25,
+  "favour": 20,
+  "against": 0,
+  "against_years": [],
+  "includes0": 5
+ },
+ "years_pct_s3_all": {
+  "n": 25,
+  "favour": 22,
+  "against": 1,
+  "against_years": [
+   "2020"
+  ],
+  "includes0": 2
+ },
+ "years_pct_s4_test": {
+  "n": 25,
+  "favour": 0,
+  "against": 21,
+  "against_years": [
+   "1996",
+   "1997",
+   "1999",
+   "2000",
+   "2001",
+   "2002",
+   "2003",
+   "2004",
+   "2005",
+   "2006",
+   "2007",
+   "2008",
+   "2009",
+   "2010",
+   "2011",
+   "2012",
+   "2013",
+   "2014",
+   "2015",
+   "2017",
+   "2019"
+  ],
+  "includes0": 4
+ },
+ "years_pct_s4_all": {
+  "n": 25,
+  "favour": 1,
+  "against": 20,
+  "against_years": [
+   "1996",
+   "1997",
+   "1999",
+   "2000",
+   "2001",
+   "2002",
+   "2003",
+   "2004",
+   "2005",
+   "2006",
+   "2007",
+   "2008",
+   "2009",
+   "2010",
+   "2011",
+   "2012",
+   "2013",
+   "2014",
+   "2015",
+   "2020"
+  ],
+  "includes0": 4
+ }
+}

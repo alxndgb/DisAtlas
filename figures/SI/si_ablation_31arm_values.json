@@ -1,0 +1,22 @@
+{
+ "png_bytes": 474859,
+ "overlaps": [],
+ "n_arms": 32,
+ "n_sig_ixidn": 1,
+ "sig_arms": [
+  "spec_off"
+ ],
+ "jak_fail": [
+  "unweighted",
+  "bikg_ge100",
+  "mech_none",
+  "mech_M1M5",
+  "drop_REACTOME",
+  "broad_noHPA",
+  "drop_fam_cytokine_inflammatory"
+ ],
+ "checks_not_run": [
+  "gene_anchor"
+ ],
+ "ref_auroc": 0.859088805801272
+}

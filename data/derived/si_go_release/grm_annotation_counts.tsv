@@ -1,0 +1,11 @@
+arm	slice	gene2go_file	gene2go_md5	gene_go_pairs	annotated_genes	go_terms	slice_disease_genes	slice_disease_genes_annotated	slice_gene_go_pairs	slice_go_terms
+ctrl	S2008	gene2go_all_ns.parquet.gzip	92d4aabadfd85088fbe071c8c122cfc4	59312	6169	9736	3882	3788	41743	8426
+ctrl	S2016	gene2go_all_ns.parquet.gzip	92d4aabadfd85088fbe071c8c122cfc4	59312	6169	9736	5199	5061	51423	9218
+gafnow_acc	S2008	gene2go_gaf_2026-05-19_last.parquet.gzip	fc440794d11fe171213417dfc44ce5d0	81071	6139	11412	3882	3792	56788	9835
+gafnow_acc	S2016	gene2go_gaf_2026-05-19_last.parquet.gzip	fc440794d11fe171213417dfc44ce5d0	81071	6139	11412	5199	5015	69775	10766
+gafrel_acc	S2008	gene2go_gaf_2009-01-01_last.parquet.gzip	39a42b41246e0b0eab632b0e2d0d7ddd	12235	3152	2986	3882	2191	9587	2638
+gafrel_acc	S2016	gene2go_gaf_2017-01-01_last.parquet.gzip	f54e68ddc5221bd3e06f820369426d9d	53125	5670	8989	5199	4703	46457	8514
+gafnow	S2008	gene2go_gaf_2026-05-19_last.parquet.gzip	fc440794d11fe171213417dfc44ce5d0	81071	6139	11412	3882	3792	56788	9835
+gafnow	S2016	gene2go_gaf_2026-05-19_last.parquet.gzip	fc440794d11fe171213417dfc44ce5d0	81071	6139	11412	5199	5015	69775	10766
+gafrel	S2008	gene2go_gaf_2009-01-01_last.parquet.gzip	42b65fe2c0810f784ee05a65e137b982	12215	3140	2985	3882	2188	9576	2634
+gafrel	S2016	gene2go_gaf_2017-01-01_last.parquet.gzip	80b4565728166af39b48afbff080a7ea	53069	5660	8983	5199	4695	46407	8509

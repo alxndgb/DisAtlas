@@ -1,0 +1,3 @@
+path	sha256	bytes	description
+si_bio/go_release_event_percentiles.tsv.gz	7948c9c6b823ceb80ddc2071116f16e37edf6d4bc7eb6d71015712e38c823d26	724846	event-level candidate percentiles of the four GO-release arms (read by figures/SI/si_go_release_table.py)
+si_bio/layout_pairs_13021.npz	5ae27e67c4667547bea291ded4cbe2cc84777405da06251b118d7a85db4a3ba3	13513503	sampled disease pairs: 2-D layout distance and model distance (read by figures/SI/si_cluster_map_vs_model.py)

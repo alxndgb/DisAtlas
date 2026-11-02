@@ -1,0 +1,51 @@
+quantity	scope	n_pairs	n_pos	estimate	ci_lo	ci_hi	B_used	note
+AUROC p	all	4364	2182	0.8317	0.7919	0.865	2000	
+AUPRC p	all	4364	2182	0.842	0.794	0.8813	2000	
+AUROC p	test	1094	491	0.8591	0.8034	0.9053	2000	
+AUPRC p	test	1094	491	0.8449	0.7723	0.9022	2000	
+AUROC p	non-oncology	2624	1796	0.7971	0.749	0.8413	2000	
+AUPRC p	non-oncology	2624	1796	0.8926	0.8486	0.9269	2000	
+AUROC p	oncology	1740	386	0.8009	0.7329	0.8585	2000	
+AUPRC p	oncology	1740	386	0.606	0.4758	0.7344	2000	
+AUROC p	all rare-rare	2452	1284	0.7535	0.7063	0.7994	2000	
+AUROC p	all rare-common	1241	253	0.8892	0.8259	0.9353	2000	
+AUROC p	all common-common	671	645	0.8091	0.6208	0.9437	1999	
+AUROC p	test rare-rare	622	301	0.7752	0.6991	0.8456	2000	
+AUROC p	test rare-common	347	68	0.937	0.8601	0.9847	2000	
+AUROC p	test common-common	125	122				0	too few negatives
+AUROC nd	node-disjoint pairs all	4357	2181	0.7844	0.7428	0.8207	2000	
+AUROC p	node-disjoint pairs all	4357	2181	0.8318	0.7943	0.8638	2000	
+AUROC delta nd - p	node-disjoint pairs all	4357	2181	-0.0473	-0.0674	-0.0274	2000	
+AUROC nd	node-disjoint pairs test	1093	491	0.8135	0.7469	0.867	2000	
+AUROC p	node-disjoint pairs test	1093	491	0.8591	0.7991	0.9062	2000	
+AUROC delta nd - p	node-disjoint pairs test	1093	491	-0.0456	-0.0817	-0.0128	2000	
+AUROC nd	node-disjoint pairs rare-rare	2448	1283	0.7376	0.6848	0.7863	2000	
+AUROC p	node-disjoint pairs rare-rare	2448	1283	0.7535	0.7042	0.8	2000	
+AUROC delta nd - p	node-disjoint pairs rare-rare	2448	1283	-0.016	-0.0399	0.0086	2000	
+AUROC nd	node-disjoint pairs rare-common	1238	253	0.8082	0.7356	0.8697	2000	
+AUROC p	node-disjoint pairs rare-common	1238	253	0.8893	0.832	0.9375	2000	
+AUROC delta nd - p	node-disjoint pairs rare-common	1238	253	-0.0811	-0.1396	-0.0312	2000	
+AUROC nd	node-disjoint pairs non-oncology	2624	1796	0.7698	0.7243	0.8153	2000	
+AUROC p	node-disjoint pairs non-oncology	2624	1796	0.7971	0.7515	0.8418	2000	
+AUROC delta nd - p	node-disjoint pairs non-oncology	2624	1796	-0.0273	-0.0481	-0.0048	2000	
+seed SD of AUROC (5 seeds)	all	4364	2182	0.0017	0.8257	0.8304	0	lo/hi = min/max seed AUROC
+cluster-bootstrap SD of ensemble AUROC	all	4364	2182	0.0186			2000	
+ratio cluster-bootstrap SD / seed SD	all	4364	2182	10.6887			2000	
+partner percentile DisAtlas	common anchor, rare candidates	68	68	0.9344	0.8587	0.9752	2000	
+partner percentile cosine	common anchor, rare candidates	68	68	0.934	0.8582	0.9758	2000	
+partner percentile delta DisAtlas - cosine	common anchor, rare candidates	68	68	0.0004	-0.0056	0.011	2000	
+partner percentile common_neighbours	common anchor, rare candidates	68	68	0.9447	0.8766	0.9795	2000	
+partner percentile delta DisAtlas - common_neighbours	common anchor, rare candidates	68	68	-0.0104	-0.0736	0.0472	2000	
+partner percentile adamic_adar	common anchor, rare candidates	68	68	0.9478	0.8799	0.9815	2000	
+partner percentile delta DisAtlas - adamic_adar	common anchor, rare candidates	68	68	-0.0135	-0.0762	0.044	2000	
+partner percentile partner_degree	common anchor, rare candidates	68	68	0.8264	0.7562	0.8851	2000	
+partner percentile delta DisAtlas - partner_degree	common anchor, rare candidates	68	68	0.108	0.0046	0.1932	2000	
+partner percentile DisAtlas	rare anchor, common candidates	68	68	0.8971	0.8296	0.9478	2000	
+partner percentile cosine	rare anchor, common candidates	68	68	0.8958	0.8264	0.9468	2000	
+partner percentile delta DisAtlas - cosine	rare anchor, common candidates	68	68	0.0013	-0.0039	0.0093	2000	
+partner percentile common_neighbours	rare anchor, common candidates	68	68	0.9139	0.8517	0.959	2000	
+partner percentile delta DisAtlas - common_neighbours	rare anchor, common candidates	68	68	-0.0168	-0.0542	0.0274	2000	
+partner percentile adamic_adar	rare anchor, common candidates	68	68	0.9162	0.8542	0.9608	2000	
+partner percentile delta DisAtlas - adamic_adar	rare anchor, common candidates	68	68	-0.0191	-0.0555	0.0235	2000	
+partner percentile partner_degree	rare anchor, common candidates	68	68	0.8142	0.7475	0.8766	2000	
+partner percentile delta DisAtlas - partner_degree	rare anchor, common candidates	68	68	0.0828	0.0009	0.1615	2000	

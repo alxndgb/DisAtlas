@@ -1,0 +1,11 @@
+drug	indication	nct	overall_status	why_stopped	stopped_for_lack_of_efficacy
+danicopan	membranoproliferative glomerulonephritis	NCT03459443	TERMINATED	The reason for terminating study early was inconclusive efficacy results. No safety findings were identified.	True
+danicopan	glomerulonephritis	NCT03459443	TERMINATED	The reason for terminating study early was inconclusive efficacy results. No safety findings were identified.	True
+danicopan	age-related macular degeneration	NCT05019521	TERMINATED	Lack of efficacy.	True
+danicopan	C3 glomerulonephritis	NCT03459443	TERMINATED	The reason for terminating study early was inconclusive efficacy results. No safety findings were identified.	True
+danicopan	complement 3 glomerulopathy	NCT03459443	TERMINATED	The reason for terminating study early was inconclusive efficacy results. No safety findings were identified.	True
+danicopan	dense deposit disease	NCT03459443	TERMINATED	The reason for terminating study early was inconclusive efficacy results. No safety findings were identified.	True
+narsoplimab	glomerulonephritis	NCT03608033	TERMINATED	IA did not meet the prespecified primary endpoint.	True
+narsoplimab	IgA glomerulonephritis	NCT03608033	TERMINATED	IA did not meet the prespecified primary endpoint.	True
+pozelimab	paroxysmal nocturnal hemoglobinuria	NCT05131204	TERMINATED	Sponsor decision not related to efficacy or safety.	False
+ravulizumab	COVID-19	NCT04369469	TERMINATED	Met futility bar at interim analysis	True

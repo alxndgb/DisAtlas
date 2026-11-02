@@ -1,0 +1,2 @@
+scope	n_pairs	n_pos	auroc	ci_lo	ci_hi	B
+test	1094	491	0.8591	0.8034	0.9053	2000

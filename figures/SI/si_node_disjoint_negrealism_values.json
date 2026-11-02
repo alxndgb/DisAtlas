@@ -1,0 +1,17 @@
+{
+ "B": 2000,
+ "unit": "disease",
+ "thresholds": {
+  "mondo": 8.0,
+  "ordo": 6.0,
+  "hpo": 1.6148080825805664,
+  "go": 1.7266721725463867
+ },
+ "n_nd_pairs": 4357,
+ "inputs": [
+  "data/derived/ixidn_robustness/ixidn4364_per_pair_scores.tsv.gz",
+  "data/derived/ixidn_robustness/ixidn4364_ontology_distance.tsv",
+  "data/derived/ixidn_robustness/ixidn4364_semantic_similarity.tsv",
+  "data/derived/ixidn_robustness/random_pairs_ordo_distance.tsv.gz"
+ ]
+}

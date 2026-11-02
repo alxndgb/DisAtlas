@@ -1,0 +1,11 @@
+stage	class	step	pairs	what	source
+0	all	Disease pairs among trial-graph diseases	950131	all unordered pairs of the 1379 diseases in G_IxIDN	G_IxIDN nodes
+1	IxIDN+	Co-investigated (1 hop)	43112	same drug tested in trials for both diseases	G_IxIDN_6786ec2d_edges.parquet.gz
+1	IxIDN-	>=3 hops apart	413856	no shared trial drug and no co-trialled intermediate disease in G_IxIDN	G_IxIDN_neg_f8c776ac_edges.parquet.gz
+2	IxIDN-	Co-investigation veto	335557	drop pairs sharing a mechanism-of-action trial drug before pruning, directly or via a MONDO parent/child	G_IxIDN_neg_77ff32d8_edges.parquet.gz
+3	IxIDN+	Evaluation universe (985 diseases)	27415	both diseases scored by the model (pinned universe)	F_designA.parquet
+3	IxIDN-	Evaluation universe (985 diseases)	155375	pinned universe negatives that are in the veto-passing set	F_designA.parquet
+4	IxIDN+	Matchable candidates	4302	positives that have a same-cell negative (sum of min(n+, n-) over 7-key cells)	designA_candidates.parquet
+5	IxIDN+	LLM shared-drug QC: STRONG/PLAUSIBLE	2182	"verdicts {""WEAK"": 1354, ""STRONG"": 1285, ""PLAUSIBLE"": 897, ""SUSPECT"": 709, ""NOT_IN_GRAPH"": 57}"	qc_expanded_all_verdicts.csv
+6	IxIDN+	IxIDN-Matched	2182	938 diseases	ixidn_expanded_designA.tsv
+6	IxIDN-	IxIDN-Matched	2182	exact 7-key cell match to each QC-passed positive	ixidn_expanded_designA.tsv

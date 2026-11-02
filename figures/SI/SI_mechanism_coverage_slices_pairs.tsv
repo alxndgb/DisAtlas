@@ -1,0 +1,95 @@
+mechanism_label	drug	target_id	target_label	anchors	first_trial_date	first_trial_nct	first_cross_slice
+BTK	acalabrutinib	MONDO:0004948	B-cell chronic lymphocytic leukemia	mantle cell lymphoma	2014-01-06	NCT02029443	1996.0
+BTK	ibrutinib	MONDO:0100280	Waldenstrom macroglobulinemia	mantle cell lymphoma	2009-02-20	NCT00849654	2005.0
+BTK	ibrutinib	MONDO:0004948	B-cell chronic lymphocytic leukemia	mantle cell lymphoma	2010-04-13	NCT01105247	1996.0
+BTK	ibrutinib	MONDO:0017604	marginal zone lymphoma	mantle cell lymphoma	2011-11-01	NCT01479842	2008.0
+BTK	ibrutinib	MONDO:0013730	graft versus host disease	mantle cell lymphoma	2013-03-04	NCT01804686	1996.0
+BTK	pirtobrutinib	MONDO:0004948	B-cell chronic lymphocytic leukemia	mantle cell lymphoma	2018-08-20	NCT03666000	1996.0
+BTK	zanubrutinib	MONDO:0004948	B-cell chronic lymphocytic leukemia	mantle cell lymphoma	2016-09-12	NCT02914938	1996.0
+BTK	zanubrutinib	MONDO:0017604	marginal zone lymphoma	mantle cell lymphoma	2016-09-12	NCT02914938	2008.0
+BTK	zanubrutinib	MONDO:0018906	follicular lymphoma	mantle cell lymphoma	2016-09-12	NCT02914938	1996.0
+BTK	zanubrutinib	MONDO:0100280	Waldenstrom macroglobulinemia	mantle cell lymphoma	2017-02-07	NCT03053440	2005.0
+IL-1	anakinra	MONDO:0016168	cryopyrin-associated periodic syndrome	rheumatoid arthritis	2003-09-22	NCT00069329	
+IL-1	canakinumab	MONDO:0019434	systemic-onset juvenile idiopathic arthritis	cryopyrin-associated periodic syndrome	2007-01-23	NCT00426218	2006.0
+IL-1	canakinumab	MONDO:0005393	gout	cryopyrin-associated periodic syndrome	2008-04-18	NCT00663169	2006.0
+IL-1	canakinumab	MONDO:0018088	familial Mediterranean fever	cryopyrin-associated periodic syndrome	2010-03-16	NCT01088880	2006.0
+IL-1	canakinumab	MONDO:0007727	TNF receptor 1-associated periodic fever syndrome	cryopyrin-associated periodic syndrome	2010-11-16	NCT01242813	2006.0
+IL-4R/IL-13	dupilumab	MONDO:0004979	asthma	atopic eczema	2011-03-09	NCT01312961	1995.0
+IL-4R/IL-13	dupilumab	MONDO:0005361	eosinophilic esophagitis	atopic eczema	2015-02-27	NCT02379052	2006.0
+IL-4R/IL-13	dupilumab	MONDO:0005002	chronic obstructive pulmonary disease	atopic eczema	2019-04-26	NCT03930732	1996.0
+IL-4R/IL-13	dupilumab	MONDO:0019082	bullous pemphigoid	atopic eczema	2019-12-18	NCT04206553	1995.0
+IL-5/IL-5R	benralizumab	MONDO:0015691	hypereosinophilic syndrome	asthma	2014-04-03	NCT02130882	2008.0
+IL-5/IL-5R	mepolizumab	MONDO:0005002	chronic obstructive pulmonary disease	asthma	2014-04-03	NCT02105948	1996.0
+IL-6/IL-6R	sarilumab	MONDO:0011429	juvenile idiopathic arthritis	rheumatoid arthritis	2016-05-16	NCT02776735	2002.0
+IL-6/IL-6R	tocilizumab	MONDO:0011429	juvenile idiopathic arthritis	rheumatoid arthritis	2005-09-02	NCT00144664	2002.0
+IL-6/IL-6R	tocilizumab	MONDO:0008538	temporal arteritis	rheumatoid arthritis	2011-10-03	NCT01450137	
+IL-6/IL-6R	tocilizumab	MONDO:0600008	cytokine release syndrome	rheumatoid arthritis	2013-12-05	NCT02007239	2007.0
+IL-6/IL-6R	tocilizumab	MONDO:0100096	COVID-19	rheumatoid arthritis	2015-12-11	NCT02735707	2002.0
+IL-6/IL-6R	tocilizumab	MONDO:0015925	interstitial lung disease	rheumatoid arthritis	2022-12-25	NCT05963048	2008.0
+IgE	omalizumab	MONDO:0700226	food allergy	asthma	2009-07-29	NCT00949078	1995.0
+JAK	baricitinib	MONDO:0100096	COVID-19	rheumatoid arthritis	2015-12-11	NCT02735707	2002.0
+JAK	baricitinib	MONDO:0005340	alopecia areata	rheumatoid arthritis	2018-06-18	NCT03570749	2010.0
+JAK	ruxolitinib	MONDO:0013730	graft versus host disease	myelofibrosis	2015-03-06	NCT02386800	2011.0
+JAK	ruxolitinib	MONDO:0008661	vitiligo	myelofibrosis	2016-06-20	NCT02809976	2002.0
+JAK	ruxolitinib	MONDO:0004980	atopic eczema	myelofibrosis	2017-01-03	NCT03011892	
+JAK	tofacitinib	MONDO:0005101	ulcerative colitis	rheumatoid arthritis	2011-10-21	NCT01470612	1996.0
+JAK	tofacitinib	MONDO:0011429	juvenile idiopathic arthritis	rheumatoid arthritis	2011-12-22	NCT01500551	2002.0
+JAK	tofacitinib	MONDO:0011849	psoriatic arthritis	rheumatoid arthritis	2011-12-22	NCT01519089	1995.0
+JAK	tofacitinib	MONDO:0005306	ankylosing spondylitis	rheumatoid arthritis	2013-02-06	NCT01786668	2002.0
+JAK	upadacitinib	MONDO:0005011	Crohn disease	rheumatoid arthritis	2015-02-16	NCT02365649	1995.0
+JAK	upadacitinib	MONDO:0005101	ulcerative colitis	rheumatoid arthritis	2016-06-28	NCT02819635	1996.0
+JAK	upadacitinib	MONDO:0004980	atopic eczema	rheumatoid arthritis	2016-10-04	NCT02925117	1996.0
+JAK	upadacitinib	MONDO:0011849	psoriatic arthritis	rheumatoid arthritis	2017-04-04	NCT03104374	1995.0
+JAK	upadacitinib	MONDO:0005306	ankylosing spondylitis	rheumatoid arthritis	2017-06-05	NCT03178487	2002.0
+JAK	upadacitinib	MONDO:0008538	temporal arteritis	rheumatoid arthritis	2018-10-27	NCT03725202	
+JAK	upadacitinib	MONDO:0011429	juvenile idiopathic arthritis	rheumatoid arthritis	2018-10-27	NCT03725007	2002.0
+PD-1/PD-L1	atezolizumab	MONDO:0005105	melanoma	urothelial carcinoma	2011-10-18	NCT01455103	
+PD-1/PD-L1	atezolizumab	MONDO:0005233	non-small cell lung carcinoma	urothelial carcinoma	2013-05-01	NCT01846416	
+PD-1/PD-L1	atezolizumab	MONDO:0007254	breast cancer	urothelial carcinoma	2013-06-27	NCT01898117	
+PD-1/PD-L1	atezolizumab	MONDO:0008433	small cell lung carcinoma	urothelial carcinoma	2016-02-02	NCT02748889	2006.0
+PD-1/PD-L1	atezolizumab	MONDO:0011655	alveolar soft part sarcoma	urothelial carcinoma	2017-05-03	NCT03141684	2006.0
+PD-1/PD-L1	atezolizumab	MONDO:0007256	hepatocellular carcinoma	urothelial carcinoma	2017-05-23	NCT03170960	2013.0
+PD-1/PD-L1	avelumab	MONDO:0040679	urothelial carcinoma	cutaneous neuroendocrine carcinoma	2015-11-09	NCT02603432	2006.0
+PD-1/PD-L1	avelumab	MONDO:0005086	renal cell carcinoma	cutaneous neuroendocrine carcinoma	2016-12-14	NCT03013946	1998.0
+PD-1/PD-L1	cemiplimab	MONDO:0005233	non-small cell lung carcinoma	skin squamous cell carcinoma	2017-03-03	NCT03088540	1998.0
+PD-1/PD-L1	cemiplimab	MONDO:0020804	basal cell carcinoma	skin squamous cell carcinoma	2017-04-24	NCT03132636	1998.0
+PD-1/PD-L1	durvalumab	MONDO:0005233	non-small cell lung carcinoma	urothelial carcinoma	2013-11-12	NCT01993810	
+PD-1/PD-L1	durvalumab	MONDO:0001056	gastric cancer	urothelial carcinoma	2015-01-14	NCT02340975	2008.0
+PD-1/PD-L1	durvalumab	MONDO:0007256	hepatocellular carcinoma	urothelial carcinoma	2015-07-30	NCT02519348	2013.0
+PD-1/PD-L1	durvalumab	MONDO:0008433	small cell lung carcinoma	urothelial carcinoma	2016-01-11	NCT02658214	2006.0
+PD-1/PD-L1	durvalumab	MONDO:0011962	endometrial cancer	urothelial carcinoma	2016-03-23	NCT02725489	2006.0
+PD-1/PD-L1	nivolumab	MONDO:0005575	colorectal cancer	melanoma	2007-02-27	NCT00441337	
+PD-1/PD-L1	nivolumab	MONDO:0005086	renal cell carcinoma	melanoma	2008-08-04	NCT00730639	1998.0
+PD-1/PD-L1	nivolumab	MONDO:0005233	non-small cell lung carcinoma	melanoma	2008-08-04	NCT00730639	1998.0
+PD-1/PD-L1	nivolumab	MONDO:0008433	small cell lung carcinoma	melanoma	2014-01-17	NCT02046733	1995.0
+PD-1/PD-L1	nivolumab	MONDO:0007576	esophageal cancer	melanoma	2014-08-01	NCT02213289	2008.0
+PD-1/PD-L1	nivolumab	MONDO:0040679	urothelial carcinoma	melanoma	2015-02-26	NCT02387996	2011.0
+PD-1/PD-L1	pembrolizumab	MONDO:0005575	colorectal cancer	melanoma	2010-07-31	NCT01174121	
+PD-1/PD-L1	pembrolizumab	MONDO:0008170	ovarian cancer	melanoma	2010-07-31	NCT01174121	1995.0
+PD-1/PD-L1	pembrolizumab	MONDO:0005233	non-small cell lung carcinoma	melanoma	2011-02-10	NCT01295827	1998.0
+PD-1/PD-L1	pembrolizumab	MONDO:0008433	small cell lung carcinoma	melanoma	2013-04-23	NCT01840579	1995.0
+PD-1/PD-L1	pembrolizumab	MONDO:0005086	renal cell carcinoma	melanoma	2013-12-02	NCT02009449	1998.0
+PD-1/PD-L1	pembrolizumab	MONDO:0040679	urothelial carcinoma	melanoma	2014-01-19	NCT02043665	2011.0
+PD-1/PD-L1	pembrolizumab	MONDO:0019210	cutaneous neuroendocrine carcinoma	melanoma	2014-10-14	NCT02267603	1998.0
+PD-1/PD-L1	pembrolizumab	MONDO:0007576	esophageal cancer	melanoma	2014-12-08	NCT02318901	2005.0
+PD-1/PD-L1	pembrolizumab	MONDO:0020323	primary mediastinal large B-cell lymphoma	melanoma	2015-02-07	NCT02362035	2008.0
+PD-1/PD-L1	pembrolizumab	MONDO:0002974	cervical cancer	melanoma	2015-12-04	NCT02635360	1998.0
+PD-1/PD-L1	retifanlimab	MONDO:0006082	anal squamous cell carcinoma	cutaneous neuroendocrine carcinoma	2020-07-13	NCT04472429	2013.0
+TNF	adalimumab	MONDO:0005083	psoriasis	Crohn disease;ankylosing spondylitis;psoriatic arthritis;rheumatoid arthritis	2005-09-13	NCT00195676	1995.0
+TNF	adalimumab	MONDO:0005101	ulcerative colitis	Crohn disease;ankylosing spondylitis;psoriatic arthritis;rheumatoid arthritis	2006-10-09	NCT00385736	1995.0
+TNF	certolizumab	MONDO:0005083	psoriasis	Crohn disease;rheumatoid arthritis	2005-10-26	NCT00245765	1995.0
+TNF	certolizumab	MONDO:0011849	psoriatic arthritis	Crohn disease;rheumatoid arthritis	2010-03-15	NCT01087788	1995.0
+TNF	certolizumab	MONDO:0011429	juvenile idiopathic arthritis	Crohn disease;rheumatoid arthritis	2012-03-07	NCT01550003	2002.0
+TNF	certolizumab	MONDO:0005306	ankylosing spondylitis	Crohn disease;rheumatoid arthritis	2013-12-18	NCT02019602	2002.0
+TNF	golimumab	MONDO:0005101	ulcerative colitis	ankylosing spondylitis;psoriatic arthritis;rheumatoid arthritis	2007-06-14	NCT00487539	1996.0
+TNF	golimumab	MONDO:0011429	juvenile idiopathic arthritis	ankylosing spondylitis;psoriatic arthritis;rheumatoid arthritis	2010-10-28	NCT01230827	2002.0
+Complement (C5)	eculizumab	MONDO:0009688	myasthenia gravis	paroxysmal nocturnal hemoglobinuria	2008-07-30	NCT00727194	2003.0
+Complement (C5)	eculizumab	MONDO:0016244	atypical hemolytic-uremic syndrome	paroxysmal nocturnal hemoglobinuria	2009-02-03	NCT00838513	1995.0
+Complement (C5)	eculizumab	MONDO:0019100	neuromyelitis optica	paroxysmal nocturnal hemoglobinuria	2009-05-18	NCT00904826	2006.0
+Complement (C5)	ravulizumab	MONDO:0016244	atypical hemolytic-uremic syndrome	paroxysmal nocturnal hemoglobinuria	2016-10-25	NCT02949128	1995.0
+Complement (C5)	ravulizumab	MONDO:0009688	myasthenia gravis	paroxysmal nocturnal hemoglobinuria	2019-04-16	NCT03920293	2003.0
+Complement (C5)	ravulizumab	MONDO:0019100	neuromyelitis optica	paroxysmal nocturnal hemoglobinuria	2019-12-11	NCT04201262	2006.0
+Complement (other)	iptacopan	MONDO:0018013	complement 3 glomerulopathy	paroxysmal nocturnal hemoglobinuria	2019-05-03	NCT03955445	1998.0
+Complement (other)	iptacopan	MONDO:0005342	IgA glomerulonephritis	paroxysmal nocturnal hemoglobinuria	2020-09-09	NCT04578834	1995.0
+Complement (other)	pegcetacoplan	MONDO:0005150	age-related macular degeneration	paroxysmal nocturnal hemoglobinuria	2015-06-02	NCT02461771	2002.0
+Complement (other)	pegcetacoplan	MONDO:0018013	complement 3 glomerulopathy	paroxysmal nocturnal hemoglobinuria	2020-09-29	NCT04572854	1998.0

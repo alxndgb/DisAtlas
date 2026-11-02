@@ -1,0 +1,17 @@
+{
+ "rows": 45,
+ "approved": 24,
+ "failed": 9,
+ "ongoing": 12,
+ "drugs": 12,
+ "failed_rows_dropped_stop_reason_not_efficacy": [
+  [
+   "pozelimab",
+   "paroxysmal nocturnal hemoglobinuria"
+  ]
+ ],
+ "trial_markers_omitted": [],
+ "dated_events": 131,
+ "png_bytes": 582952,
+ "overlaps": []
+}

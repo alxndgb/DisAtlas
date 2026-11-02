@@ -1,0 +1,9 @@
+quantity	pairs
+universe IxIDN- pairs (pinned universe file)	197054
+  in the veto-passing graph 77ff32d8 (kept)	155375
+  in pinned graph f8c776ac but not in 77ff32d8 (removed by the veto)	35884
+  in neither graph (universe built on an older graph; dropped by the not-in-veto-set test)	5795
+dropped by capacity3.py 'not in veto set' test (= removed + in neither)	41679
+veto-passing pairs with both diseases in the 985 universe	155375
+pinned negatives with both diseases in the 985 universe	191259
+universe IxIDN+ pairs that are current IxIDN+ edges	27168

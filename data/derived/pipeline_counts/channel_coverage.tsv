@@ -1,0 +1,13 @@
+basis	channel	n	covered	pct
+rank-mean candidate pairs	GO	5530050	113615	2.1
+rank-mean candidate pairs	HPA	5530050	3629947	65.6
+rank-mean candidate pairs	Pfam	5530050	4473121	80.9
+rank-mean candidate pairs	HPO	5530050	5429096	98.2
+broad edges in the final graph	GO	331234	112784	34.0
+broad edges in the final graph	HPA	331234	269468	81.4
+broad edges in the final graph	Pfam	331234	277047	83.6
+broad edges in the final graph	HPO	331234	231048	69.8
+IxIDN-Matched pairs (both diseases annotated)	GO	4364	4179	95.8
+IxIDN-Matched pairs (both diseases annotated)	HPA	4364	3989	91.4
+IxIDN-Matched pairs (both diseases annotated)	Pfam	4364	4086	93.6
+IxIDN-Matched pairs (both diseases annotated)	HPO	4364	1539	35.3

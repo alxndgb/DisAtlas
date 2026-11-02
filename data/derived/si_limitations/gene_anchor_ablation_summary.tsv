@@ -1,0 +1,11 @@
+quantity	value
+classic_pairs_n	14805
+classic_top100_released	0.797906
+classic_top100_arm	0.866194
+target_pairs_n	18
+target_pairs_score_up	18
+fda_dev_pairs_n	159
+fda_dev_pairs_lost	13
+ixidn_auroc_delta	0.000725879
+ixidn_auroc_delta_lo	-0.00314647
+ixidn_auroc_delta_hi	0.00469595

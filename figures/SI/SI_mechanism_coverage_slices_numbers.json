@@ -1,0 +1,18 @@
+{
+ "expansion": {
+  "n": 94,
+  "cross": 84,
+  "first_scorable": 55,
+  "decoy_mean": 0.357,
+  "cross_pct": 89
+ },
+ "failed": {
+  "n": 87,
+  "cross": 75,
+  "first_scorable": 41,
+  "decoy_mean": 0.338,
+  "cross_pct": 86
+ },
+ "png_bytes": 762431,
+ "overlaps": []
+}

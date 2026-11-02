@@ -1,0 +1,114 @@
+{
+ "a_full@broad_off_nodes_recovered": [
+  0.919,
+  0.888,
+  0.947
+ ],
+ "a_full@broad_off_nodes_pct95": [
+  0.679,
+  0.629,
+  0.729
+ ],
+ "a_full@broad_off_nodes_pct99": [
+  0.299,
+  0.249,
+  0.349
+ ],
+ "a_spec_off@broad_off_nodes_recovered": [
+  0.751,
+  0.701,
+  0.798
+ ],
+ "a_spec_off@broad_off_nodes_pct95": [
+  0.324,
+  0.274,
+  0.374
+ ],
+ "a_spec_off@broad_off_nodes_pct99": [
+  0.059,
+  0.034,
+  0.087
+ ],
+ "a_broad_off_recovered": [
+  0.85,
+  0.81,
+  0.888
+ ],
+ "a_broad_off_pct95": [
+  0.614,
+  0.561,
+  0.667
+ ],
+ "a_broad_off_pct99": [
+  0.212,
+  0.168,
+  0.259
+ ],
+ "b_quadrants": {
+  "both": 212,
+  "broad_only": 29,
+  "spec_only": 61,
+  "neither": 19
+ },
+ "n_scored_all_models": 321,
+ "b_missed_by_both_channels_model": 26,
+ "b_single_channel_recovered_but_full_missed": 14,
+ "b_full_recovered_neither_single": 7,
+ "c_full@broad_off_nodes": {
+  "oncology_pan_target": 99.2,
+  "tissue_shared": 88.1,
+  "unassigned": 84.8,
+  "symptomatic_physiological": 75.0,
+  "convergent_effector": 96.3,
+  "near_duplicate": 94.4,
+  "pathogen_targeted": 87.5
+ },
+ "c_spec_off@broad_off_nodes": {
+  "oncology_pan_target": 81.9,
+  "tissue_shared": 68.7,
+  "unassigned": 65.2,
+  "symptomatic_physiological": 64.3,
+  "convergent_effector": 88.9,
+  "near_duplicate": 77.8,
+  "pathogen_targeted": 62.5
+ },
+ "c_broad_off": {
+  "oncology_pan_target": 92.9,
+  "tissue_shared": 86.6,
+  "unassigned": 69.6,
+  "symptomatic_physiological": 71.4,
+  "convergent_effector": 88.9,
+  "near_duplicate": 83.3,
+  "pathogen_targeted": 75.0
+ },
+ "c_spec_ge_broad_all_classes": true,
+ "d_disatlas_ens": [
+  0.645,
+  0.543,
+  0.723
+ ],
+ "d_shared_nbr": [
+  0.741,
+  0.6,
+  0.835
+ ],
+ "d_lit_shared": [
+  0.693,
+  0.539,
+  0.796
+ ],
+ "d_deg": [
+  0.536,
+  0.432,
+  0.649
+ ],
+ "d_decoy": [
+  0.199,
+  0.161,
+  0.227
+ ],
+ "d_n": 166,
+ "d_groups": 73,
+ "png_bytes": 338480,
+ "overlaps": []
+}

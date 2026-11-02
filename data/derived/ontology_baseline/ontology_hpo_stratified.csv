@@ -1,0 +1,13 @@
+hpo,quintile,n,frac_pos,model_auroc,hpo_auroc_within
+mechdist_hpo,1,308,0.3052,0.7591,0.4744
+mechdist_hpo,2,308,0.3766,0.7007,0.5919
+mechdist_hpo,3,307,0.5016,0.6304,0.5122
+mechdist_hpo,4,308,0.6688,0.718,0.549
+mechdist_hpo,5,308,0.7727,0.746,0.6486
+mechdist_hpo,weighted,1539,,0.7109,0.5553
+hpo_simgic,1,308,0.3149,0.8071,0.522
+hpo_simgic,2,308,0.4058,0.6954,0.4818
+hpo_simgic,3,307,0.5277,0.6352,0.4943
+hpo_simgic,4,308,0.5617,0.6852,0.5798
+hpo_simgic,5,308,0.8149,0.7203,0.665
+hpo_simgic,weighted,1539,,0.7087,0.5486

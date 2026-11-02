@@ -1,0 +1,7 @@
+pool	method	n_events	n_covered	n_drugs	frac_covered
+all	gene_jaccard	74345	74204	8064	0.9981
+all	gobp_simgic	74345	74153	8064	0.9974
+all	hpo_simgic	74345	23789	8064	0.32
+test	gene_jaccard	35793	35787	6496	0.9998
+test	gobp_simgic	35793	35754	6496	0.9989
+test	hpo_simgic	35793	11325	6496	0.3164

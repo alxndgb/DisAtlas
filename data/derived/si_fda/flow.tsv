@@ -1,0 +1,7 @@
+pop	design	n_pairs	undated	left_censored	n_not_in_slice_nodes	n_scored	n_target_pretrialled	n_same_v3_node
+dev	D1	540	7	41	238.0	166	84.0	4.0
+dev	D2	540	7	109	244.0	150	26.0	4.0
+complement_six	D1	6	0	0		6		
+complement_six	D2	6	0	0	1.0	5		
+easy_unsplit	D1	894	11	134	124.0	410	215.0	
+easy_unsplit	D2	894	11	355	139.0	351	38.0	

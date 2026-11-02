@@ -1,0 +1,6 @@
+arm	n_nodes
+full	13019
+spec_off	13019
+broad_off	5194
+full@broad_off_nodes	5192
+spec_off@broad_off_nodes	5192

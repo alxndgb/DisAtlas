@@ -1,0 +1,837 @@
+{
+ "items": [
+  {
+   "label": "SI_cluster_validation_distance",
+   "script": "figures/SI/si_cluster_rarecommon_numbers.py",
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "controls_auroc",
+     "ms": "s are clustered by k-medoids on the learned disease–disease distance 1 − p ([Methods]).]  [This learned distan",
+     "expected": 1.0,
+     "tol": 0.5
+    },
+    {
+     "key": "sil_learned",
+     "ms": "ases better than the embedding alone: at K = 55 the silhouette is 0.356 on the learned distance, against 0.240",
+     "expected": 0.356,
+     "tol": 0.0005
+    },
+    {
+     "key": "sil_cosine",
+     "ms": " K = 55 the silhouette is 0.356 on the learned distance, against 0.240 when k-medoids clustering is run on the",
+     "expected": 0.24,
+     "tol": 0.0005
+    },
+    {
+     "key": "ari_cos_vs_learned",
+     "ms": "en DisAtlas embeddings; the two partitions agree with an adjusted Rand index of 0.70.]",
+     "expected": 0.7,
+     "tol": 0.005
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_distance",
+   "script": "figures/SI/si_cluster_validation.py",
+   "numbers": "figures/SI/extended_cluster_validation_values.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "k_one_se",
+     "ms": " distance separates diseases better than the embedding alone: at K = 55 the silhouette is 0.356 on the learned",
+     "expected": 55
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_k",
+   "script": "figures/SI/si_cluster_validation.py",
+   "numbers": "figures/SI/extended_cluster_validation_values.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "k_one_se",
+     "ms": ", without reference to any control disease or benchmark pair.] [K = 55 is the smallest K whose mean silhouette",
+     "expected": 55
+    },
+    {
+     "key": "best_mean",
+     "ms": "tary Figure ]a.] [The best mean silhouette is reached at K = 65 (0.359, standard deviation 0.004 across subsam",
+     "expected": 0.359,
+     "tol": 0.0005
+    },
+    {
+     "key": "best_sd",
+     "ms": "t mean silhouette is reached at K = 65 (0.359, standard deviation 0.004 across subsamples); K = 55, 60, 65 and",
+     "expected": 0.004,
+     "tol": 0.0005
+    },
+    {
+     "key": "within_1sd.1",
+     "ms": " = 65 (0.359, standard deviation 0.004 across subsamples); K = 55, 60, 65 and 70 lie within one standard devia",
+     "expected": 60
+    },
+    {
+     "key": "within_1sd.2",
+     "ms": "65 (0.359, standard deviation 0.004 across subsamples); K = 55, 60, 65 and 70 lie within one standard deviatio",
+     "expected": 65
+    },
+    {
+     "key": "within_1sd.3",
+     "ms": "59, standard deviation 0.004 across subsamples); K = 55, 60, 65 and 70 lie within one standard deviation of it",
+     "expected": 70
+    },
+    {
+     "key": "k55_mean",
+     "ms": "ne standard deviation of it, and K = 55 has a mean silhouette of 0.356 (2.5–97.5% range across subsamples 0.34",
+     "expected": 0.356,
+     "tol": 0.0005
+    },
+    {
+     "key": "k55_lo",
+     "ms": "t, and K = 55 has a mean silhouette of 0.356 (2.5–97.5% range across subsamples 0.348 to 0.365).]",
+     "expected": 0.348,
+     "tol": 0.0005
+    },
+    {
+     "key": "k55_hi",
+     "ms": "= 55 has a mean silhouette of 0.356 (2.5–97.5% range across subsamples 0.348 to 0.365).]",
+     "expected": 0.365,
+     "tol": 0.0005
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_k",
+   "script": "figures/SI/si_cluster_rarecommon_numbers.py",
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "controls.0.pct",
+     "ms": "chmark pair.] [K = 55 is the smallest K whose mean silhouette over 100 subsample re-clusterings lies within on",
+     "expected": 100.0,
+     "tol": 0.5
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-rare.d_ci.0",
+     "ms": "ds]), and all main-text results use this K; the full sweep from K = 10 to 80 is shown in [Supplementary Figure",
+     "expected": 0.1,
+     "tol": 0.005
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-rare.ci.1",
+     "ms": " and all main-text results use this K; the full sweep from K = 10 to 80 is shown in [Supplementary Figure ]a.]",
+     "expected": 0.8,
+     "tol": 0.005
+    },
+    {
+     "key": "ksel_best_mean_K",
+     "ms": "pplementary Figure ]a.] [The best mean silhouette is reached at K = 65 (0.359, standard deviation 0.004 across",
+     "expected": 65
+    },
+    {
+     "key": "controls.0.score",
+     "ms": " deviation of it, and K = 55 has a mean silhouette of 0.356 (2.5–97.5% range across subsamples 0.348 to 0.365)",
+     "expected": 0.975,
+     "tol": 0.0005
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_controls",
+   "script": "figures/SI/si_cluster_rarecommon_numbers.py",
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "controls_n_pos",
+     "ms": "[We list every control disease pair: 9 positive pairs, expected to share mecha",
+     "expected": 9
+    },
+    {
+     "key": "controls_n_neg",
+     "ms": "rol disease pair: 9 positive pairs, expected to share mechanism, and 8 negative pairs, expected to differ in m",
+     "expected": 8
+    },
+    {
+     "key": "strata.IxIDN-Matched-CC+|All pairs|common-common.d_ci.0",
+     "ms": "pite similar names or organ systems ([Supplementary Table ]).] [All 17 pairs are scored on the 13,021 diseases",
+     "expected": -0.17,
+     "tol": 0.005,
+     "note": "sign differs: manuscript prints the magnitude"
+    },
+    {
+     "key": "n_diseases",
+     "ms": "stems ([Supplementary Table ]).] [All 17 pairs are scored on the 13,021 diseases.] [At K = 55, 5 of 9 positive",
+     "expected": 13021
+    },
+    {
+     "key": "strata.IxIDN-Matched-CC+|Test split pairs|common-common.neg",
+     "ms": "ble ]).] [All 17 pairs are scored on the 13,021 diseases.] [At K = 55, 5 of 9 positive pairs share a cluster a",
+     "expected": 55
+    },
+    {
+     "key": "controls_pos_same_cluster",
+     "ms": "e ]).] [All 17 pairs are scored on the 13,021 diseases.] [At K = 55, 5 of 9 positive pairs share a cluster and",
+     "expected": 5
+    },
+    {
+     "key": "controls_neg_separated",
+     "ms": "021 diseases.] [At K = 55, 5 of 9 positive pairs share a cluster and 8 of 8 negative pairs are separated.] [Cl",
+     "expected": 8
+    },
+    {
+     "key": "strata.IxIDN-Matched-CC+|All pairs|common-common.d_stack",
+     "ms": "ted.] [Cluster membership is a coarse summary of the link score: the 4 positive pairs that k-medoids clusterin",
+     "expected": -0.04,
+     "tol": 0.005,
+     "note": "sign differs: manuscript prints the magnitude"
+    },
+    {
+     "key": "n_pairs_all",
+     "ms": "splits still score at or above the 98.4th percentile of all 84,766,710 scored disease pairs, and the link scor",
+     "expected": 84766710
+    },
+    {
+     "key": "controls_auroc",
+     "ms": "eparates the positive from the negative controls with an AUROC of 1.00: every positive pair scores above every",
+     "expected": 1.0,
+     "tol": 0.005
+    },
+    {
+     "key": "median_link_score_all_pairs",
+     "ms": "ecause most disease pairs score close to zero (median link score 0.009 over all 84,766,710 pairs), a high perc",
+     "expected": 0.009,
+     "tol": 0.0005
+    },
+    {
+     "key": "n_scored_partners",
+     "ms": "ation; the rank that each disease gives the other among its own 13,020 scored partners is the more informative",
+     "expected": 13020
+    },
+    {
+     "key": "controls_pos_top100",
+     "ms": "r among its own 13,020 scored partners is the more informative scale: 7 of the 9 positive pairs lie within the",
+     "expected": 7
+    },
+    {
+     "key": "controls.0.pct",
+     "ms": "re informative scale: 7 of the 9 positive pairs lie within the top 100 partners of at least one of the two dis",
+     "expected": 100.0,
+     "tol": 0.5
+    },
+    {
+     "key": "controls.1.best_rank",
+     "ms": "n the top 100 partners of at least one of the two diseases (best rank 1 to 255 across all 9), whereas the best",
+     "expected": 1
+    },
+    {
+     "key": "controls.7.best_rank",
+     "ms": "p 100 partners of at least one of the two diseases (best rank 1 to 255 across all 9), whereas the best rank of",
+     "expected": 255
+    },
+    {
+     "key": "controls.5.best_rank",
+     "ms": "s of at least one of the two diseases (best rank 1 to 255 across all 9), whereas the best rank of every negati",
+     "expected": 9
+    },
+    {
+     "key": "controls.9.best_rank",
+     "ms": " all 9), whereas the best rank of every negative pair lies between 306 and 2,611 ([Supplementary Table ]).] [I",
+     "expected": 306
+    },
+    {
+     "key": "controls.16.best_rank",
+     "ms": "hereas the best rank of every negative pair lies between 306 and 2,611 ([Supplementary Table ]).] [Independent",
+     "expected": 2611
+    },
+    {
+     "key": "cocluster_test.ratio",
+     "ms": "e, co-investigated IxIDN-Matched test-split pairs share a cluster 8.97 times as often as their matched negativ",
+     "expected": 8.97,
+     "tol": 0.005
+    },
+    {
+     "key": "cocluster_test.pos",
+     "ms": "luster 8.97 times as often as their matched negatives at K = 55 (29.7% of 491 positive pairs against 3.3% of 6",
+     "expected": 29.7,
+     "tol": 0.05
+    },
+    {
+     "key": "strata.IxIDN-Matched|Test split pairs|all.pos",
+     "ms": "8.97 times as often as their matched negatives at K = 55 (29.7% of 491 positive pairs against 3.3% of 603 nega",
+     "expected": 491
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|common-common.d_stack",
+     "ms": " matched negatives at K = 55 (29.7% of 491 positive pairs against 3.3% of 603 negative pairs), which gives a c",
+     "expected": 0.033,
+     "tol": 0.0005
+    },
+    {
+     "key": "strata.IxIDN-Matched|Test split pairs|all.neg",
+     "ms": "d negatives at K = 55 (29.7% of 491 positive pairs against 3.3% of 603 negative pairs), which gives a control-",
+     "expected": 603
+    },
+    {
+     "key": "controls.0.score",
+     "ms": ":| | Crohn disease – ulcerative colitis | positive | yes | yes | 0.975 | 100.0 | 2 | | atypical hemolytic-urem",
+     "expected": 0.975,
+     "tol": 0.0005
+    },
+    {
+     "key": "controls.0.best_rank",
+     "ms": "disease – ulcerative colitis | positive | yes | yes | 0.975 | 100.0 | 2 | | atypical hemolytic-uremic syndrome",
+     "expected": 2
+    },
+    {
+     "key": "controls.1.score",
+     "ms": "e – paroxysmal nocturnal hemoglobinuria | positive | yes | yes | 0.955 | 99.9 | 1 | | psoriasis – psoriatic ar",
+     "expected": 0.955,
+     "tol": 0.0005
+    },
+    {
+     "key": "controls.1.pct",
+     "ms": "oxysmal nocturnal hemoglobinuria | positive | yes | yes | 0.955 | 99.9 | 1 | | psoriasis – psoriatic arthritis",
+     "expected": 99.9,
+     "tol": 0.05
+    },
+    {
+     "key": "controls.2.score",
+     "ms": "| 1 | | psoriasis – psoriatic arthritis | positive | yes | yes | 0.954 | 99.9 | 78 | | tuberous sclerosis – ly",
+     "expected": 0.954,
+     "tol": 0.0005
+    },
+    {
+     "key": "controls.2.best_rank",
+     "ms": "iasis – psoriatic arthritis | positive | yes | yes | 0.954 | 99.9 | 78 | | tuberous sclerosis – lymphangioleio",
+     "expected": 78
+    },
+    {
+     "key": "controls.3.score",
+     "ms": "us sclerosis – lymphangioleiomyomatosis | positive | yes | yes | 0.953 | 99.9 | 1 | | cryopyrin-associated per",
+     "expected": 0.953,
+     "tol": 0.0005
+    },
+    {
+     "key": "controls.4.score",
+     "ms": "c syndrome – familial Mediterranean fever | positive | no | no | 0.931 | 99.7 | 17 | | Wolman disease – choles",
+     "expected": 0.931,
+     "tol": 0.0005
+    },
+    {
+     "key": "controls.4.pct",
+     "ms": "ome – familial Mediterranean fever | positive | no | no | 0.931 | 99.7 | 17 | | Wolman disease – cholesteryl e",
+     "expected": 99.7,
+     "tol": 0.05
+    },
+    {
+     "key": "controls.4.best_rank",
+     "ms": "– familial Mediterranean fever | positive | no | no | 0.931 | 99.7 | 17 | | Wolman disease – cholesteryl ester",
+     "expected": 17
+    },
+    {
+     "key": "controls.5.score",
+     "ms": "sease – cholesteryl ester storage disease | positive | no | no | 0.915 | 99.6 | 9 | | myasthenia gravis – neur",
+     "expected": 0.915,
+     "tol": 0.0005
+    },
+    {
+     "key": "controls.5.pct",
+     "ms": " cholesteryl ester storage disease | positive | no | no | 0.915 | 99.6 | 9 | | myasthenia gravis – neuromyelit",
+     "expected": 99.6,
+     "tol": 0.05
+    },
+    {
+     "key": "controls.6.score",
+     "ms": " myasthenia gravis – neuromyelitis optica | positive | no | no | 0.906 | 99.5 | 3 | | gastrointestinal stromal",
+     "expected": 0.906,
+     "tol": 0.0005
+    },
+    {
+     "key": "controls.6.pct",
+     "ms": "henia gravis – neuromyelitis optica | positive | no | no | 0.906 | 99.5 | 3 | | gastrointestinal stromal tumor",
+     "expected": 99.5,
+     "tol": 0.05
+    },
+    {
+     "key": "controls.6.best_rank",
+     "ms": " gravis – neuromyelitis optica | positive | no | no | 0.906 | 99.5 | 3 | | gastrointestinal stromal tumor – ch",
+     "expected": 3
+    },
+    {
+     "key": "controls.7.score",
+     "ms": "myelogenous leukemia, BCR-ABL1 positive | positive | yes | yes | 0.814 | 98.8 | 255 | | gastrointestinal strom",
+     "expected": 0.814,
+     "tol": 0.0005
+    },
+    {
+     "key": "controls.7.pct",
+     "ms": "nous leukemia, BCR-ABL1 positive | positive | yes | yes | 0.814 | 98.8 | 255 | | gastrointestinal stromal tumo",
+     "expected": 98.8,
+     "tol": 0.05
+    },
+    {
+     "key": "controls.8.score",
+     "ms": "nal stromal tumor – systemic mastocytosis | positive | no | no | 0.750 | 98.4 | 184 | | tuberous sclerosis – m",
+     "expected": 0.75,
+     "tol": 0.0005
+    },
+    {
+     "key": "controls.8.pct",
+     "ms": "omal tumor – systemic mastocytosis | positive | no | no | 0.750 | 98.4 | 184 | | tuberous sclerosis – multiple",
+     "expected": 98.4,
+     "tol": 0.05
+    },
+    {
+     "key": "controls.8.best_rank",
+     "ms": "umor – systemic mastocytosis | positive | no | no | 0.750 | 98.4 | 184 | | tuberous sclerosis – multiple scler",
+     "expected": 184
+    },
+    {
+     "key": "controls.9.score",
+     "ms": " tuberous sclerosis – multiple sclerosis | negative | no | yes | 0.651 | 97.7 | 306 | | polycystic kidney dise",
+     "expected": 0.651,
+     "tol": 0.0005
+    },
+    {
+     "key": "controls.9.pct",
+     "ms": "us sclerosis – multiple sclerosis | negative | no | yes | 0.651 | 97.7 | 306 | | polycystic kidney disease – p",
+     "expected": 97.7,
+     "tol": 0.05
+    },
+    {
+     "key": "controls.10.score",
+     "ms": "dney disease – polycystic ovary syndrome | negative | no | yes | 0.163 | 91.2 | 924 | | neurofibromatosis type",
+     "expected": 0.163,
+     "tol": 0.0005
+    },
+    {
+     "key": "controls.10.pct",
+     "ms": "isease – polycystic ovary syndrome | negative | no | yes | 0.163 | 91.2 | 924 | | neurofibromatosis type 1 due",
+     "expected": 91.2,
+     "tol": 0.05
+    },
+    {
+     "key": "controls.10.best_rank",
+     "ms": "– polycystic ovary syndrome | negative | no | yes | 0.163 | 91.2 | 924 | | neurofibromatosis type 1 due to NF1",
+     "expected": 924
+    },
+    {
+     "key": "controls.11.score",
+     "ms": "c deletion – NF2-related schwannomatosis | negative | no | yes | 0.145 | 90.5 | 813 | | amyotrophic lateral sc",
+     "expected": 0.145,
+     "tol": 0.0005
+    },
+    {
+     "key": "controls.11.pct",
+     "ms": "ion – NF2-related schwannomatosis | negative | no | yes | 0.145 | 90.5 | 813 | | amyotrophic lateral sclerosis",
+     "expected": 90.5,
+     "tol": 0.05
+    },
+    {
+     "key": "controls.11.best_rank",
+     "ms": "NF2-related schwannomatosis | negative | no | yes | 0.145 | 90.5 | 813 | | amyotrophic lateral sclerosis – sys",
+     "expected": 813
+    },
+    {
+     "key": "controls.12.best_rank",
+     "ms": "osis – systemic sclerosis | negative | no | yes | 0.145 | 90.5 | 1,157 | | Duchenne muscular dystrophy – Fuchs",
+     "expected": 1157
+    },
+    {
+     "key": "controls.13.score",
+     "ms": "dystrophy – Fuchs' endothelial dystrophy | negative | no | yes | 0.105 | 88.3 | 1,343 | | diabetes insipidus –",
+     "expected": 0.105,
+     "tol": 0.0005
+    },
+    {
+     "key": "controls.13.pct",
+     "ms": "hy – Fuchs' endothelial dystrophy | negative | no | yes | 0.105 | 88.3 | 1,343 | | diabetes insipidus – type 2",
+     "expected": 88.3,
+     "tol": 0.05
+    },
+    {
+     "key": "controls.13.best_rank",
+     "ms": "hs' endothelial dystrophy | negative | no | yes | 0.105 | 88.3 | 1,343 | | diabetes insipidus – type 2 diabete",
+     "expected": 1343
+    },
+    {
+     "key": "controls.14.score",
+     "ms": "tes insipidus – type 2 diabetes mellitus | negative | no | yes | 0.079 | 86.2 | 1,774 | | spinal muscular atro",
+     "expected": 0.079,
+     "tol": 0.0005
+    },
+    {
+     "key": "controls.14.pct",
+     "ms": "ipidus – type 2 diabetes mellitus | negative | no | yes | 0.079 | 86.2 | 1,774 | | spinal muscular atrophy – K",
+     "expected": 86.2,
+     "tol": 0.05
+    },
+    {
+     "key": "controls.14.best_rank",
+     "ms": " type 2 diabetes mellitus | negative | no | yes | 0.079 | 86.2 | 1,774 | | spinal muscular atrophy – Kennedy d",
+     "expected": 1774
+    },
+    {
+     "key": "controls.15.score",
+     "ms": "pinal muscular atrophy – Kennedy disease | negative | no | yes | 0.068 | 84.9 | 1,662 | | osteogenesis imperfe",
+     "expected": 0.068,
+     "tol": 0.0005
+    },
+    {
+     "key": "controls.15.pct",
+     "ms": "uscular atrophy – Kennedy disease | negative | no | yes | 0.068 | 84.9 | 1,662 | | osteogenesis imperfecta – o",
+     "expected": 84.9,
+     "tol": 0.05
+    },
+    {
+     "key": "controls.15.best_rank",
+     "ms": "atrophy – Kennedy disease | negative | no | yes | 0.068 | 84.9 | 1,662 | | osteogenesis imperfecta – osteopetr",
+     "expected": 1662
+    },
+    {
+     "key": "controls.16.score",
+     "ms": " osteogenesis imperfecta – osteopetrosis | negative | no | yes | 0.033 | 76.7 | 2,611 |  : [Positive and negat",
+     "expected": 0.033,
+     "tol": 0.0005
+    },
+    {
+     "key": "controls.16.pct",
+     "ms": "enesis imperfecta – osteopetrosis | negative | no | yes | 0.033 | 76.7 | 2,611 |  : [Positive and negative con",
+     "expected": 76.7,
+     "tol": 0.05
+    },
+    {
+     "key": "median_link_score_all_pairs",
+     "ms": "pair link score $p$ (mean of five seeds; the clustering distance is $1-p$); percentile: rank of that score amo",
+     "expected": 0.01,
+     "tol": 0.005
+    },
+    {
+     "key": "dmd_dm1.0",
+     "ms": "the same oligonucleotide-delivery platforms.] [Its link score is 0.874 (99.2nd percentile); the two diseases f",
+     "expected": 0.874,
+     "tol": 0.0005
+    },
+    {
+     "key": "membership.n_clusters",
+     "ms": "2nd percentile); the two diseases fall in different clusters at K = 55.] [Its replacement keeps Duchenne muscu",
+     "expected": 55
+    },
+    {
+     "key": "dmd_eligible.0",
+     "ms": "ith the most gene associations (Fuchs' endothelial dystrophy).] [All 51 eligible diseases score below the 92nd",
+     "expected": 51
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_controls",
+   "script": "figures/SI/si_cluster_validation.py",
+   "numbers": "figures/SI/extended_cluster_validation_values.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "k_one_se",
+     "ms": "ally relevant signal.]  | Control pair | Role | Same cluster at K = 55 | Control holds at K = 55 | DisAtlas pa",
+     "expected": 55
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_internal",
+   "script": "figures/SI/si_cluster_rarecommon_numbers.py",
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "n_diseases",
+     "ms": "[Over the 13,021 clustered diseases, the overall silhoue",
+     "expected": 13021
+    },
+    {
+     "key": "median_link_score_all_pairs",
+     "ms": "clustered diseases, the overall silhouette is 0.36, on a scale from −1 to 1.]  [The median distance of a disea",
+     "expected": 0.01,
+     "tol": 0.005,
+     "note": "sign differs: manuscript prints the magnitude"
+    },
+    {
+     "key": "internal.nearest_other",
+     "ms": "of a disease to the other members of its cluster is 0.34, against 0.60 to the nearest other cluster ([Suppleme",
+     "expected": 0.6,
+     "tol": 0.005
+    },
+    {
+     "key": "internal.share_neg_sil",
+     "ms": "] [One of the 55 clusters has a negative average silhouette, and 11.0% of diseases have a negative silhouette,",
+     "expected": 11.0,
+     "tol": 0.05
+    },
+    {
+     "key": "internal.size_range.0",
+     "ms": "cluster boundaries are not sharp for every disease.] [Cluster sizes range from 97 to 500 diseases.]",
+     "expected": 97
+    },
+    {
+     "key": "internal.size_range.1",
+     "ms": "er boundaries are not sharp for every disease.] [Cluster sizes range from 97 to 500 diseases.]",
+     "expected": 500
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_internal",
+   "script": "figures/SI/si_cluster_validation.py",
+   "numbers": "figures/SI/extended_cluster_validation_values.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "k55_mean",
+     "ms": "[Over the 13,021 clustered diseases, the overall silhouette is 0.36, on a scale from −1 to 1.]  [The median",
+     "expected": 0.36,
+     "tol": 0.005
+    },
+    {
+     "key": "med_within",
+     "ms": "dian distance of a disease to the other members of its cluster is 0.34, against 0.60 to the nearest other clus",
+     "expected": 0.34,
+     "tol": 0.005
+    },
+    {
+     "key": "k_one_se",
+     "ms": " the nearest other cluster ([Supplementary Figure ]b).] [One of the 55 clusters has a negative average silhoue",
+     "expected": 55
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_external",
+   "script": "figures/SI/si_cluster_rarecommon_numbers.py",
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "external.n_categories",
+     "ms": " external reference not used in fitting the clustering, we used the 19 body-system classes of the MONDO diseas",
+     "expected": 19
+    },
+    {
+     "key": "external.n_with_category",
+     "ms": "ody-system classes of the MONDO disease ontology, available for 10,133 of the clustered diseases.]  [Two disea",
+     "expected": 10133
+    },
+    {
+     "key": "external.same_cluster_share",
+     "ms": "seases drawn from the same cluster share a MONDO body-system class 62% of the time, against 25% for randomly p",
+     "expected": 62
+    },
+    {
+     "key": "external.random_share",
+     "ms": "e cluster share a MONDO body-system class 62% of the time, against 25% for randomly paired diseases (permutati",
+     "expected": 25
+    },
+    {
+     "key": "external.perm_p",
+     "ms": " time, against 25% for randomly paired diseases (permutation p = 0.005, the floor achievable with 200 permutat",
+     "expected": 0.005,
+     "tol": 0.0005
+    },
+    {
+     "key": "external.n_perm",
+     "ms": " paired diseases (permutation p = 0.005, the floor achievable with 200 permutations).]  [In 54 of the 55 clust",
+     "expected": 200
+    },
+    {
+     "key": "external.clusters_enriched",
+     "ms": "ation p = 0.005, the floor achievable with 200 permutations).]  [In 54 of the 55 clusters at least one body-sy",
+     "expected": 54
+    },
+    {
+     "key": "recovery.common anchor, rare candidates.d_adamic_adar.2",
+     "ms": "east five members and two-fold enrichment, Benjamini–Hochberg q < 0.05), against at most one cluster in 50 lab",
+     "expected": 0.05,
+     "tol": 0.005
+    },
+    {
+     "key": "external.n_shuffles",
+     "ms": "hment, Benjamini–Hochberg q < 0.05), against at most one cluster in 50 label shuffles, and the adjusted mutual",
+     "expected": 50
+    },
+    {
+     "key": "external.ami",
+     "ms": " mutual information between cluster membership and MONDO class is 0.33, against at most 0.002 under shuffled l",
+     "expected": 0.33,
+     "tol": 0.005
+    },
+    {
+     "key": "external.ami_null_max",
+     "ms": "ween cluster membership and MONDO class is 0.33, against at most 0.002 under shuffled labels ([Supplementary F",
+     "expected": 0.002,
+     "tol": 0.0005
+    },
+    {
+     "key": "membership.n_clusters",
+     "ms": "uette results above, this external concordance supports reading the 55 clusters as capturing structure that ge",
+     "expected": 55
+    },
+    {
+     "key": "controls_auroc",
+     "ms": "** Mean silhouette of k-medoids clustering on the DisAtlas distance (1 − p) for each K, over 100 subsamples of",
+     "expected": 1.0,
+     "tol": 0.5
+    },
+    {
+     "key": "ksel_n_subsamples",
+     "ms": "doids clustering on the DisAtlas distance (1 − p) for each K, over 100 subsamples of 80% of diseases (band: 2.",
+     "expected": 100
+    },
+    {
+     "key": "ksel_K_range.1",
+     "ms": "n the DisAtlas distance (1 − p) for each K, over 100 subsamples of 80% of diseases (band: 2.5–97.5% range acro",
+     "expected": 80
+    },
+    {
+     "key": "controls.0.score",
+     "ms": "p) for each K, over 100 subsamples of 80% of diseases (band: 2.5–97.5% range across subsamples). The dashed li",
+     "expected": 0.975,
+     "tol": 0.0005
+    },
+    {
+     "key": "n_diseases",
+     "ms": ", the smallest K that reaches that line. **(b)** For each of the 13,021 clustered diseases at K = 55, the mean",
+     "expected": 13021
+    },
+    {
+     "key": "internal.nearest_other",
+     "ms": "he nearest other cluster; dashed lines mark the medians (0.34 and 0.60). **(c)** Concordance with the 19 MONDO",
+     "expected": 0.6,
+     "tol": 0.005
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_external",
+   "script": "figures/SI/si_cluster_validation.py",
+   "numbers": "figures/SI/extended_cluster_validation_values.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "k_one_se",
+     "ms": "0.005, the floor achievable with 200 permutations).]  [In 54 of the 55 clusters at least one body-system class",
+     "expected": 55
+    },
+    {
+     "key": "med_within",
+     "ms": " and to the nearest other cluster; dashed lines mark the medians (0.34 and 0.60). **(c)** Concordance with the",
+     "expected": 0.34,
+     "tol": 0.005
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_membership",
+   "script": "figures/SI/si_cluster_validation.py",
+   "numbers": "figures/SI/extended_cluster_validation_values.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "k_one_se",
+     "ms": "[Every one of the 55 clusters contains both rare and common",
+     "expected": 55
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_membership",
+   "script": "figures/SI/si_cluster_rarecommon_numbers.py",
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "membership.common_ge10",
+     "ms": "e of the 55 clusters contains both rare and common diseases, and in 44 of the 55 at least 10% of member diseas",
+     "expected": 44
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-rare.d_ci.0",
+     "ms": "ntains both rare and common diseases, and in 44 of the 55 at least 10% of member diseases are common.] [A full",
+     "expected": 0.1,
+     "tol": 0.005
+    },
+    {
+     "key": "n_diseases",
+     "ms": "a per-disease table giving the assigned cluster for each of the 13,021 diseases at K = 55 are available as sep",
+     "expected": 13021
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_layout",
+   "script": "figures/SI/si_cluster_rarecommon_numbers.py",
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "internal.n_clusters_neg",
+     "ms": "for display only, and clusters are assigned on the learned distance $1-p$.] [Over 1,999,833 random disease pai",
+     "expected": 1
+    },
+    {
+     "key": "layout.spearman",
+     "ms": "and the learned distance have a Spearman rank correlation of ρ = 0.420, so the map preserves the broad arrange",
+     "expected": 0.42,
+     "tol": 0.0005
+    },
+    {
+     "key": "controls_auroc",
+     "ms": "ity.]** [Hexagonal-binned relationship between the learned distance (1 − p; x-axis) and the distance in the tw",
+     "expected": 1.0,
+     "tol": 0.5
+    },
+    {
+     "key": "n_diseases",
+     "ms": "main text (y-axis) for 1,999,833 random disease pairs among the 13,021 diseases; the orange line is the median",
+     "expected": 13021
+    },
+    {
+     "key": "controls_pos_same_cluster",
+     "ms": "13,021 diseases; the orange line is the median map distance in each 5% bin of model distance. Spearman ρ = 0.4",
+     "expected": 5
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_layout",
+   "script": "figures/SI/si_cluster_map_vs_model.py",
+   "numbers": "figures/SI/SI_cluster_map_vs_model_distance_values.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "n_pairs",
+     "ms": "d clusters are assigned on the learned distance $1-p$.] [Over 1,999,833 random disease pairs, map distance and",
+     "expected": 1999833
+    }
+   ]
+  }
+ ],
+ "unchecked": [
+  {
+   "section": "SI_cluster_validation_k",
+   "token": "2.5",
+   "reason": "interval level label",
+   "ctx": "hin one standard deviation of it, and K = 55 has a mean silhouette of 0.356 (2.5–97.5% range across subsamples 0.348 to "
+  },
+  {
+   "section": "SI_cluster_validation_external",
+   "token": "2.5",
+   "reason": "interval level label",
+   "ctx": "s distance (1 − p) for each K, over 100 subsamples of 80% of diseases (band: 2.5–97.5% range across subsamples). The das"
+  }
+ ],
+ "manuscript_mismatch": []
+}
