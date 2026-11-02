@@ -136,11 +136,11 @@ axA.axvline(0, color="black", lw=0.7, zorder=1)
 axA.set_yticks(yticks, ylabels)
 axA.tick_params(axis="y", length=0)
 axA.set_ylim(y - gap + 0.2, -1.4)
-axA.set_xlabel("DisAtlas advantage over comparator\n(within-stratum median percentile, points)")
+axA.set_xlabel("DisAtlas advantage over reference score\n(within-stratum median percentile, points)")
 axA.margins(x=0.04)
 xl = axA.get_xlim(); axA.set_xlim(min(xl[0], -1.5), xl[1])
 # family brackets (left, outside tick labels)
-for fam, txt in (("graph", "Disease-graph baselines"), ("annot", "Annotation-based")):
+for fam, txt in (("graph", "Disease-graph scores"), ("annot", "Annotation-based")):
     spans = [s for s in group_spans if s[2] == fam]
     y0, y1 = spans[0][0] - 0.4, spans[-1][1] + 0.4
     axA.annotate("", xy=(-0.70, y0), xycoords=("axes fraction", "data"), xytext=(-0.70, y1),
@@ -148,7 +148,7 @@ for fam, txt in (("graph", "Disease-graph baselines"), ("annot", "Annotation-bas
                  arrowprops=dict(arrowstyle="-", color=GREY, lw=0.7), annotation_clip=False)
     axA.text(-0.735, (y0 + y1) / 2, txt, transform=mpl.transforms.blended_transform_factory(axA.transAxes, axA.transData),
              rotation=90, ha="center", va="center", fontsize=6, color=GREY)
-TITLE[axA] = (0.01, "Within popularity strata, DisAtlas ranks later-trialled indications\nhigher than every comparator, in every cell")
+TITLE[axA] = (0.01, "Within popularity strata, DisAtlas ranks later-trialled indications\nhigher than every reference score, in every cell")
 axA.text(0.98, 0.005, "DisAtlas better →", transform=axA.transAxes, fontsize=6, color=GREY, ha="right", va="bottom")
 
 # legend (cutoff colour, pool marker, primary band)

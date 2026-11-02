@@ -1,0 +1,3 @@
+key	system	n_runs	n_pairs	n_unscored	auroc_all
+txgnn	TxGNN published ckpt	1	4364	213	0.5664
+disatlas_fig6	DisAtlas	1	4364	0	0.8317
