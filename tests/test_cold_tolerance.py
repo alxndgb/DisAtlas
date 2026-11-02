@@ -1,6 +1,7 @@
-"""Cold mode: the retrained ensemble (build/model, build/scores) agrees with the frozen record (data/zenodo)
-statistically. The retrain uses different random streams from the frozen run, so scores are not bit-identical.
-Tolerances come from a cold retrain of seeds 4707-4711 on the cluster (README, "Cold run")."""
+"""Cold mode: the retrained ensemble (build/model, build/scores) agrees with the frozen record (data/zenodo).
+The retrain repeats the frozen recipe with the same random streams; only floating-point rounding differs (thread
+count, BLAS build), so scores agree closely but not bit for bit. Observed values come from cold retrains of
+seeds 4707-4711 on the cluster with 32, 8 and 3 torch threads (README, "Cold run")."""
 import json
 
 import numpy as np
@@ -12,11 +13,12 @@ from disatlas import paths
 
 pytestmark = pytest.mark.skipif(paths.MODE != "cold", reason="cold mode only (DISATLAS_DATA_MODE=cold)")
 SC = paths.BUILD / "scores"
-# observed |cold - frozen| for the 5-seed ensemble: 0.015, 0.022, 0.003, 0.014, 0.014, 0.007 (same order)
-TOL_AUROC = {"ixidn_matched": 0.03, "ixidn_matched|test": 0.04, "ixidn_matched|rare-rare": 0.03,
-             "ixidn_matched|rare-common": 0.03, "ixidn_pm": 0.03, "fda_dev": 0.03}
-MIN_RHO_MATCHED = 0.90  # Spearman, ensemble scores of the 4,364 IxIDN-Matched pairs (observed 0.946)
-MIN_RHO_ALL = 0.65      # Spearman, ensemble scores of 10^6 fixed random disease pairs (observed 0.726)
+# observed max |cold - frozen| for the 5-seed ensemble over retrains with 32, 8 and 3 torch threads: <= 0.0004,
+# fda_dev 0.0008
+TOL_AUROC = dict.fromkeys(["ixidn_matched", "ixidn_matched|test", "ixidn_matched|rare-rare",
+                           "ixidn_matched|rare-common", "ixidn_pm", "fda_dev"], 0.005)
+MIN_RHO_MATCHED = 0.99  # Spearman, ensemble scores of the 4,364 IxIDN-Matched pairs (observed >= 0.99996)
+MIN_RHO_ALL = 0.99      # Spearman, ensemble scores of 10^6 fixed random disease pairs (observed >= 0.9997)
 
 
 @pytest.fixture(scope="module")

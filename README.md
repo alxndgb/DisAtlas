@@ -35,22 +35,24 @@ benchmark and all-pairs scores (`build/scores`), then compares `build/` with the
 `data/zenodo`. The channel stage needs `disatlas.channels.broad/specific`; without them, start at
 `--from graph`, which uses the shipped `data/raw/channels`. Figures, tables, notebooks and the manuscript
 numbers are always produced from the frozen record (they need `data/zenodo`), because a retrained ensemble
-reproduces the published scores only statistically.
+reproduces the published scores closely but not bit for bit.
 
 - **Exact** (`tests/test_cold_exact.py`): channel files equal the shipped ones; broad 13,021 diseases /
   332,082 edges, specific 422,804 links / 191,019 edges, union 498,155 and training 488,103 edges, and the
   training edge set equals the Zenodo graph (SHA-256 and edge for edge).
-- **Statistical** (`tests/test_cold_tolerance.py`): retraining uses different random streams from the
-  frozen run, so scores are not bit-identical. Benchmark AUROCs of the retrained ensemble must lie within
-  0.03 of the frozen ensemble (0.04 for the IxIDN-Matched test split), and ensemble pair scores must be
-  rank-correlated with the frozen ones (Spearman >= 0.90 on the 4,364 IxIDN-Matched pairs, >= 0.65 on
-  10^6 random pairs). Observed on the cluster (seeds 4707-4711): AUROC deltas -0.015 (IxIDN-Matched),
-  -0.022 (test), -0.003 (rare-rare), -0.014 (rare-common), +0.014 (IxIDN+/-), -0.007 (FDA dev controls);
-  Spearman 0.946 on IxIDN-Matched and 0.726 on random pairs (frozen seeds agree with each other at
-  0.75-0.77 on random pairs, retrained seeds at 0.62-0.64). Two independent retrains gave the same deltas
-  within 0.001.
+- **Close** (`tests/test_cold_tolerance.py`): the retrain repeats the frozen recipe with the same random
+  streams (walks, decoder pairs, validation split and initial weights are identical); only floating-point
+  rounding differs (torch thread count, BLAS build), so embeddings agree to about 2e-7 but not bit for bit.
+  Benchmark AUROCs of the retrained ensemble must lie within 0.005 of the frozen ensemble, and ensemble pair
+  scores must be rank-correlated with the frozen ones (Spearman >= 0.99 on the 4,364 IxIDN-Matched pairs and
+  on 10^6 random pairs). Observed on the cluster (seeds 4707-4711, retrains with 32, 8 and 3 torch threads,
+  the last from this pipeline on 16 cores): |AUROC delta| <= 0.0004 on IxIDN-Matched, its test, rare-rare and
+  rare-common splits and IxIDN+/-, <= 0.0008 on the FDA dev controls; Spearman >= 0.99996 on IxIDN-Matched
+  and >= 0.9997 on random pairs (two frozen seeds agree with each other at 0.964-0.967 on IxIDN-Matched).
+  A run is deterministic for a fixed thread count: two 32-thread runs of seed 4707 gave bit-identical
+  embeddings.
 - The warm test suite then runs as in a warm run, so the manuscript numbers stay exact.
 
 Measured on one cluster node (16 cores, 160 GB), `--cold --from graph`: 37 min wall, 10.4 GB peak memory
-(graph 1 min; retrain 18 min with the five seeds in parallel, about 1.6 GB each; score 5 min, mostly the
+(graph 1 min; retrain 16 min with the five seeds in parallel, about 2 GB each; score 7 min, mostly the
 all-pairs matrix; figures, tables, tests and notebooks 13 min); up to 2 h on a node shared with other jobs.
