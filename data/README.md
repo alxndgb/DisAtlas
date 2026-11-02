@@ -60,6 +60,12 @@ publication identifiers or evidence sentences are included. Disease identifiers 
 | | families_group | evidence families at group level |
 | disease_target_mechanism.parquet | disease_id, mechanism_node, target, target_type, source_group, evidence_count | disease-target evidence placed on mechanism nodes |
 | mechanism_node_classes.tsv | node, mechanism_class | mechanism class of each mechanism node (used for class balancing) |
+| gene_set_counts.parquet | disease_id, module_id, module_order | disease x gene set: REACTOME leaf pathways with 5-500 background genes and at least one disease gene (all tested pathways, enriched or not), and kept NAMED gene sets |
+| | n_genes, docs_max, families | disease genes in the set, maximum supporting-document count over them, evidence families present (no gene identifiers) |
+| reactome_background.parquet | kind, id, n_genes | enrichment background: `all` = background genes N, `pathway` = pathway size K, `disease` = disease genes n |
+| direct_module_evidence.parquet | disease_id, module_id, module_order, family, docs | kept literature, pathology-text (`M_` tokens) and mechanism-node modules per evidence family; docs = dated-document count (no document ids, dates or text) |
+
+`python -m disatlas.channels.specific --out DIR` rebuilds disease_module_links.parquet from the last three tables (hypergeometric REACTOME enrichment, BH q < 0.05 over the pathways with k >= 1; keep n_fam >= 2 or docs >= 2); tests/test_specific_channel.py asserts it equals the shipped file.
 
 ### raw/benchmarks
 
