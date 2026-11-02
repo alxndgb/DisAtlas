@@ -20,7 +20,7 @@ the frozen ones to about 2e-7, not bit for bit (with --threads 8 all five seeds 
 epoch).
 
     python -m disatlas.retrain --out runs/retrain --seeds 4707 4708 4709 4710 4711
-    python -m disatlas.retrain --out runs/smoke --seeds 4707 --epochs 1 --num-walks 2
+    python -m disatlas.retrain --out runs/smoke --seeds 4707 --epochs 1 --num-walks 2 --dec-epochs 1
 """
 from __future__ import annotations
 
