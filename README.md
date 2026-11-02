@@ -19,7 +19,8 @@ The graph stage rebuilds the training graph from `data/raw/channels` and checks 
 the Zenodo graph. Every number is **exact**: the tests compare each manuscript and SI number with the
 value recomputed from these files.
 
-Measured on one cluster node (16 cores): 46 min wall, 8.6 GB peak memory (tests 4 min).
+Measured on one cluster node (16 cores, 160 GB): 14 min wall, 8.7 GB peak memory (tests 1 min); up to 46 min
+on a node shared with other jobs.
 
 ## Cold run
 
@@ -50,6 +51,6 @@ reproduces the published scores only statistically.
   within 0.001.
 - The warm test suite then runs as in a warm run, so the manuscript numbers stay exact.
 
-Measured on one cluster node (16 cores), `--cold --from graph`: 1 h 59 min wall, 10.4 GB peak memory
-(graph 3 min; retrain 63 min with the five seeds in parallel, about 1.6 GB each; score 16 min, mostly the
-all-pairs matrix; figures, tables, tests and notebooks 38 min). One seed alone takes about 15 min on 8 cores.
+Measured on one cluster node (16 cores, 160 GB), `--cold --from graph`: 37 min wall, 10.4 GB peak memory
+(graph 1 min; retrain 18 min with the five seeds in parallel, about 1.6 GB each; score 5 min, mostly the
+all-pairs matrix; figures, tables, tests and notebooks 13 min); up to 2 h on a node shared with other jobs.
