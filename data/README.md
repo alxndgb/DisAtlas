@@ -117,4 +117,4 @@ record. Retraining uses different random streams from the frozen run, so the gra
 but the scores only statistically (`tests/test_cold_tolerance.py`). Single steps:
 `python -m disatlas.retrain --out build/model/disatlas_v3.2_ensemble` and
 `python -m disatlas.rescore --out build/scores --all-pairs` (with `DISATLAS_DATA_MODE=cold`). Smoke test:
-`python -m disatlas.retrain --out runs/smoke --seeds 4707 --max-nodes 600 --epochs 1 --num-walks 2`.
+`python -m disatlas.retrain --out runs/smoke --seeds 4707 --epochs 1 --num-walks 2`.
