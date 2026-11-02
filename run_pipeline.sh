@@ -3,11 +3,13 @@
 #   ./run_pipeline.sh              verify Zenodo bundle, rebuild graph check, figures, tables, parity tests, notebooks
 #   ./run_pipeline.sh --retrain    additionally retrain the 5-seed ensemble into retrain_out/ (slow; scores match
 #                                  the shipped model statistically, not bit for bit)
+#   ./run_pipeline.sh --cold-qc    additionally rerun the IxIDN-Matched language-model QC (needs ANTHROPIC_API_KEY
+#                                  and QC_MODEL) and rebuild IxIDN-Matched from the new verdicts into build/qc/
 set -euo pipefail
 cd "$(dirname "$0")"
 PY=${PYTHON:-.venv/bin/python}
 export PYTHONPATH="$PWD/src${PYTHONPATH:+:$PYTHONPATH}" MPLBACKEND=Agg
-RETRAIN=0; for a in "$@"; do case $a in --retrain) RETRAIN=1;; esac; done
+RETRAIN=0 COLDQC=0; for a in "$@"; do case $a in --retrain) RETRAIN=1;; --cold-qc) COLDQC=1;; esac; done
 stage(){ echo; echo "== $*"; }
 
 stage "1/6 Zenodo bundle checksums"
@@ -16,6 +18,13 @@ SUMS="$PWD/data/ZENODO_SHA256SUMS.txt"; (cd data/zenodo && sha256sum --quiet -c 
 
 stage "2/6 training graph rebuilt from broad and specific channels"
 $PY -m disatlas.graph.build --check
+
+stage "2b/6 IxIDN-Matched rebuilt from the stored QC verdicts"
+$PY -m disatlas.benchmarks.ixidn_matched --out build/ixidn_matched --check
+if [ $COLDQC = 1 ]; then
+  $PY -m disatlas.benchmarks.matched_qc --out build/qc --model "${QC_MODEL:?set QC_MODEL to a model identifier}"
+  $PY -m disatlas.benchmarks.ixidn_matched --out build/qc --verdicts build/qc/llm_curation_verdicts.tsv --check
+fi
 
 stage "3/6 main figures and Table 1"
 for f in figures/main/fig*.py tables/main/*.py; do echo "-- $f"; $PY "$f"; done
