@@ -5,7 +5,8 @@ Panels:
      (four positive, two negative) joined by coloured lines; an inset shows the four eculizumab-approved diseases
      (aHUS, PNH and generalised MG in one cluster, NMOSD in the neighbouring cluster, dotted line).
   b) Common / rare disease map with five rare-common examples from different therapeutic areas.
-  c) Benchmark AUROC by pair-rarity stratum: DisAtlas vs weighted Adamic-Adar (training disease graph, no training).
+  c) Benchmark AUROC by pair-rarity stratum: DisAtlas and TxGNN (published checkpoint; scores and protocol of the
+     cross-system figure, Figure 6), one set of disease-cluster bootstrap draws.
   d) DisAtlas score distributions (true pair vs non-pair) by stratum; white dots = medians, coloured bars = control pairs.
 
 Inputs (data/derived/):
@@ -13,15 +14,16 @@ Inputs (data/derived/):
                                                label, disease class / rarity / name. map_x/map_y are the layout after a
                                                similarity transform (rotation/reflection, uniform scale, shift) used for
                                                display orientation only.
-  fig5_clustering/ixidn_matched_pair_scores.tsv  4,364 IxIDN-Matched pairs with the DisAtlas score p and the weighted
-                                               Adamic-Adar score waa.
-  fig5_clustering/waa_auroc_by_stratum.tsv     weighted Adamic-Adar point estimates (cross-check).
+  fig5_clustering/ixidn_matched_pair_scores.tsv  4,364 IxIDN-Matched pairs with the DisAtlas score p.
+  fig5_clustering/fig5c_txgnn_pair_scores.tsv  TxGNN score of each pair (fig5c_export_txgnn_scores.py).
+  fig6_comparison/per_run_scores.tsv           disease order of the bootstrap clusters (shared with the SI).
   control_pairs/fig5_panel_a_pairs_p.tsv       DisAtlas scores of the six panel-a control pairs.
 The cluster labels, layout and pair scores are regenerated from the released model by
 pipeline/clustering (Zenodo pair-score matrix); this script only draws.
 
     python figures/main/fig5_disease_clustering_map.py [OUTDIR]     (B bootstrap draws: FIG5_B, default 2000)
-Writes disease_clustering_map.png/.pdf, fig5_panel_c_auroc.tsv, fig5_panel_c_waa_auroc.tsv, disease_clustering_map_values.tsv.
+Writes disease_clustering_map.png/.pdf, fig5_panel_c_auroc.tsv, fig5_panel_c_txgnn_auroc.tsv,
+fig5_panel_c_paired_differences.tsv, disease_clustering_map_values.tsv.
 """
 import os, sys, json, textwrap
 import numpy as np
@@ -558,34 +560,69 @@ def draw_panel_rarecommon(ax, targets, panel_letter, title_suffix):
 
 
 # ---- Panels C/D: rarity-stratified transfer AUROC (All IxIDN-Matched pairs only; test-split dropped) + anchored ----
-# Panel c baseline: weighted Adamic-Adar on the training disease graph (fig5_waa_baseline.py; no training), same strata/bootstrap.
-WAA = pd.read_csv(os.path.join(DV, "fig5_clustering", "waa_auroc_by_stratum.tsv"), sep="\t").set_index("stratum")
+# Panel c comparators: extra score series drawn beside DisAtlas, with the same strata and the same bootstrap draws.
+# Each entry: dict(key=<short id; output table OUTDIR/fig5_panel_c_<key>_auroc.tsv>, label=<legend text>,
+#   scores=<TSV with blind_id and the score column, one row per benchmark pair, no missing values>, column=<score column,
+#   higher = more likely co-investigated>, color, marker).
+# TxGNN (published checkpoint), the knowledge-graph foundation model, with the scores and protocol of the cross-system
+# figure (fig5c_export_txgnn_scores.py; its 213 unmappable pairs ranked last). DisAtlas keeps the orange of this figure;
+# TxGNN is dark brown #5c3317 (luminance contrast 3.7:1 against the orange).
+PANEL_C_COMPARATORS = [
+    dict(key="txgnn", label="TxGNN", scores=os.path.join(DV, "fig5_clustering", "fig5c_txgnn_pair_scores.tsv"), column="score",
+         color="#5c3317", marker="^"),
+]
+PANEL_C_DISATLAS_COLOR = "#d9822b"   # DisAtlas colour of this figure
+assert len({c_["key"] for c_ in PANEL_C_COMPARATORS}) == len(PANEL_C_COMPARATORS), "duplicate comparator key"
 
 # ---- Panel D data: DisAtlas score p(i,j) by stratum on the 4,364 IxIDN-Matched pairs (y=1 true pair, y=0 non-pair).
 S_SCORES = pd.read_csv(os.path.join(DV, "fig5_clustering", "ixidn_matched_pair_scores.tsv"), sep="\t")
-assert len(S_SCORES) == 4364 and S_SCORES.a.isin(ix).all() and S_SCORES.b.isin(ix).all() and S_SCORES.waa.notna().all()
+assert len(S_SCORES) == 4364 and S_SCORES.a.isin(ix).all() and S_SCORES.b.isin(ix).all()
+# the figure reads p back from the released distance matrix (d = 1 - p, float32): p = 1 - d in float32
+S_SCORES["p"] = (np.float32(1) - (np.float32(1) - S_SCORES.p.to_numpy(np.float32))).astype(float)
 from sklearn.metrics import roc_auc_score
-# 95% CIs: disease-level bootstrap (each disease resampled with all its pairs, pair weight w_a*w_b; B = FIG5_B draws,
-# default 2,000, seed 4707), one set of draws shared by DisAtlas and weighted Adamic-Adar and by every stratum.
-_B=int(os.environ.get("FIG5_B","2000")); _rng=np.random.default_rng(4707)
-_nodes=pd.unique(S_SCORES[["a","b"]].values.ravel()); _nix={d_:i for i,d_ in enumerate(_nodes)}
-_ai=S_SCORES.a.map(_nix).to_numpy(); _bi=S_SCORES.b.map(_nix).to_numpy()
-_WB=[np.bincount(_rng.integers(0,len(_nodes),len(_nodes)),minlength=len(_nodes)) for _ in range(_B)]
-_rows=[]; _wrows=[]
+# 95% CIs: disease-cluster bootstrap (each disease with all its pairs is one resampling cluster, pair weight w_a*w_b),
+# one set of draws shared by DisAtlas, every comparator series and every stratum, and by the SI TxGNN comparison and the
+# SI rarity strata: disease order = pd.unique over (a, b) of the cross-system per-run table
+# (data/derived/fig6_comparison/per_run_scores.tsv), 10 shards of B/10 draws, shard s seeded np.random.default_rng([4707, s]).
+_B=int(os.environ.get("FIG5_B","2000")); assert _B%10==0, "FIG5_B must be a multiple of the 10 shards"
+for _cmp in PANEL_C_COMPARATORS:
+    _W=pd.read_csv(_cmp["scores"],sep="\t"); _col=_cmp["column"]
+    _m=S_SCORES[["blind_id"]].merge(_W[["blind_id",_col]],on="blind_id",how="left",validate="one_to_one")
+    assert len(_m)==len(S_SCORES) and _m[_col].notna().all(), ("comparator must score every benchmark pair", _cmp["key"])
+    S_SCORES["cmp_"+_cmp["key"]]=_m[_col].to_numpy(float)
+_SERIES=["p"]+["cmp_"+_cmp["key"] for _cmp in PANEL_C_COMPARATORS]
+_PR=pd.read_csv(os.path.join(DV, "fig6_comparison", "per_run_scores.tsv"),sep="\t",usecols=["a","b"]); _nodes=pd.unique(_PR[["a","b"]].values.ravel())
+assert set(_nodes)==set(pd.unique(S_SCORES[["a","b"]].values.ravel())), "cluster set differs from the SI bootstrap"
+assert set(map(frozenset,_PR[["a","b"]].values))==set(map(frozenset,S_SCORES[["a","b"]].values)), "pair set differs"
+_WB=[]
+for _s in range(10):
+    _rg=np.random.default_rng([4707,_s]); _WB+=[np.bincount(_rg.integers(0,len(_nodes),len(_nodes)),minlength=len(_nodes)) for _ in range(_B//10)]
+_nix={d_:i for i,d_ in enumerate(_nodes)}
+_ai=S_SCORES.a.map(_nix).to_numpy(); _bi=S_SCORES.b.map(_nix).to_numpy(); print("panel c bootstrap B",len(_WB),"clusters",len(_nodes))
+_res={c_:[] for c_ in _SERIES}; _diff=[]
 for _st in ["rare-rare","rare-common","common-common","all"]:
     _k=np.ones(len(S_SCORES),bool) if _st=="all" else (S_SCORES.rare_common_pair==_st).to_numpy()
-    y_=S_SCORES.y.to_numpy()[_k]; sc_={c_:S_SCORES[c_].to_numpy()[_k] for c_ in ("p","waa")}; bs={"p":[],"waa":[]}
+    y_=S_SCORES.y.to_numpy()[_k]; sc_={c_:S_SCORES[c_].to_numpy()[_k] for c_ in _SERIES}; bs={c_:[] for c_ in _SERIES}
     for w_ in _WB:
         ww_=(w_[_ai]*w_[_bi])[_k].astype(float); q_=ww_>0
         if len(set(y_[q_]))<2: continue
         for c_ in bs: bs[c_].append(roc_auc_score(y_[q_],sc_[c_][q_],sample_weight=ww_[q_]))
-    for c_,rr_ in (("p",_rows),("waa",_wrows)):
-        rr_.append(dict(stratum=_st,auroc=roc_auc_score(y_,sc_[c_]),ci_lo=np.percentile(bs[c_],2.5),ci_hi=np.percentile(bs[c_],97.5),
+    for c_ in _SERIES[1:]:
+        _d=np.asarray(bs["p"])-np.asarray(bs[c_])
+        _diff.append(dict(stratum=_st,comparator=c_[4:],disatlas=roc_auc_score(y_,sc_["p"]),comparator_auroc=roc_auc_score(y_,sc_[c_]),
+                          diff=roc_auc_score(y_,sc_["p"])-roc_auc_score(y_,sc_[c_]),ci_lo=np.percentile(_d,2.5),ci_hi=np.percentile(_d,97.5),
+                          n_boot=len(_d)))
+    for c_ in _SERIES:
+        _res[c_].append(dict(stratum=_st,auroc=roc_auc_score(y_,sc_[c_]),ci_lo=np.percentile(bs[c_],2.5),ci_hi=np.percentile(bs[c_],97.5),
                         n_pos=int((y_==1).sum()),n_neg=int((y_==0).sum()),n_boot=len(bs[c_])))
-AUC32=pd.DataFrame(_rows).set_index("stratum"); AUC32.to_csv(f"{OUT}/fig5_panel_c_auroc.tsv",sep="\t"); print(AUC32)
-_WAA_DB=pd.DataFrame(_wrows).set_index("stratum")
-assert np.allclose(_WAA_DB.auroc.to_numpy(),WAA.loc[_WAA_DB.index,"auroc"].to_numpy(),atol=1e-9), "weighted Adamic-Adar point estimates changed"
-WAA=_WAA_DB; WAA.to_csv(f"{OUT}/fig5_panel_c_waa_auroc.tsv",sep="\t"); print(WAA)
+AUC32=pd.DataFrame(_res["p"]).set_index("stratum"); AUC32.to_csv(f"{OUT}/fig5_panel_c_auroc.tsv",sep="\t"); print(AUC32)
+CMP_AUC={}
+PAIRED_DIFF=pd.DataFrame(_diff)
+if PANEL_C_COMPARATORS:
+    PAIRED_DIFF.to_csv(f"{OUT}/fig5_panel_c_paired_differences.tsv",sep="\t",index=False); print(PAIRED_DIFF)
+for _cmp in PANEL_C_COMPARATORS:
+    CMP_AUC[_cmp["key"]]=pd.DataFrame(_res["cmp_"+_cmp["key"]]).set_index("stratum")
+    CMP_AUC[_cmp["key"]].to_csv(f"{OUT}/fig5_panel_c_{_cmp['key']}_auroc.tsv",sep="\t"); print(_cmp["key"]); print(CMP_AUC[_cmp["key"]])
 assert {"a", "b", "p", "y", "rare_common_pair"}.issubset(S_SCORES.columns)
 
 
@@ -610,7 +647,6 @@ for _nameA, _idA, _nameB, _idB, _role in PANEL_A_PAIRS:
     _stratum = "rare-rare" if (_rareA and _rareB) else ("common-common" if not (_rareA or _rareB) else "rare-common")
     CONTROL_PAIR_SCORES.append(dict(name=f"{_nameA} / {_nameB}", p=_p_ctrl, logit=_logit([_p_ctrl])[0],
                                      role=_role, stratum=_stratum))
-WAA_COL = "#6b7f99"
 for _d in CONTROL_PAIR_SCORES:
     print("control", _d["name"], _d["role"], _d["stratum"], round(_d["p"], 4))
     assert not (_d["role"] == "pos" and _d["p"] < 0.5), ("positive control below 0.5 -- report before rendering", _d)
@@ -624,27 +660,36 @@ HOLLOW_C = {"common-common"}
 
 def draw_panel_c_allpairs(ax, panel_letter):
     assert [st for st, _ in ST] == list(N_EXP)
+    DIS_COL = PANEL_C_DISATLAS_COLOR
+    # series: DisAtlas first, then the configured comparators; offsets spread symmetrically around each stratum
+    series = [dict(tab=AUC32, label="DisAtlas", color=DIS_COL, marker="o", ms=6, lw=1.4, mew=1.4)] + \
+             [dict(tab=CMP_AUC[c_["key"]], label=c_["label"], color=c_.get("color", "#6b7f99"), marker=c_.get("marker", "s"),
+                   ms=5.5, lw=1.2, mew=1.3) for c_ in PANEL_C_COMPARATORS]
+    offs = (np.arange(len(series)) - (len(series) - 1) / 2) * 0.18
+    # lower axis limit: 0.30 unless a CI reaches below it (then the next 0.05 step under the lowest CI)
+    ymin = min(0.30, np.floor((min(s_["tab"].ci_lo.min() for s_ in series) - 0.02) * 20) / 20)
     for i, (st, lab) in enumerate(ST):
-        q = AUC32.loc[st]; w = WAA.loc[st]
-        assert (int(q.n_pos), int(q.n_neg)) == N_EXP[st] == (int(w.n_pos), int(w.n_neg)), st
         hol = st in HOLLOW_C
-        ax.errorbar(i - 0.09, q.auroc, yerr=[[q.auroc - q.ci_lo], [q.ci_hi - q.auroc]], fmt="o", color="#d9822b",
-                    ms=6, capsize=3, lw=1.4, zorder=3, label="DisAtlas" if i == 0 else None,
-                    mfc="white" if hol else "#d9822b", mec="#d9822b", mew=1.4)
-        ax.errorbar(i + 0.09, w.auroc, yerr=[[w.auroc - w.ci_lo], [w.ci_hi - w.auroc]], fmt="s", color=WAA_COL,
-                    ms=5.5, capsize=3, lw=1.2, zorder=3, label="Weighted Adamic\u2013Adar" if i == 0 else None,
-                    mfc="white" if hol else WAA_COL, mec=WAA_COL, mew=1.3)
-        ax.text(i, 0.33, f"{int(q.n_pos)}/{int(q.n_neg)}", ha="center", fontsize=9.5, color="0.35")
+        for s_, dx in zip(series, offs):
+            q = s_["tab"].loc[st]
+            assert (int(q.n_pos), int(q.n_neg)) == N_EXP[st], (st, s_["label"])
+            ax.errorbar(i + dx, q.auroc, yerr=[[q.auroc - q.ci_lo], [q.ci_hi - q.auroc]], fmt=s_["marker"], color=s_["color"],
+                        ms=s_["ms"], capsize=3, lw=s_["lw"], zorder=3, label=s_["label"] if i == 0 else None,
+                        mfc="white" if hol else s_["color"], mec=s_["color"], mew=s_["mew"])
+        q = AUC32.loc[st]
+        ax.text(i, ymin + 0.03, f"{int(q.n_pos)}/{int(q.n_neg)}", ha="center", fontsize=9.5, color="0.35", zorder=5,
+                bbox=dict(facecolor="white", edgecolor="none", pad=1.0))
         if hol:
-            ax.text(i, max(q.ci_hi, w.ci_hi) + 0.025, f"hollow = few\nnegatives (n = {int(q.n_neg)})", ha="center", va="bottom",
+            top = max(s_["tab"].loc[st].ci_hi for s_ in series)
+            ax.text(i, top + 0.025, f"hollow = few\nnegatives (n = {int(q.n_neg)})", ha="center", va="bottom",
                     fontsize=9, color="0.35", linespacing=1.1)
     ax.axhline(0.5, color="0.8", ls="--", lw=0.9)
     ax.set_xticks(range(4)); ax.set_xticklabels([l for _, l in ST])
-    ax.set_ylim(0.30, 1.08); ax.set_xlim(-0.5, 3.5)
+    ax.set_ylim(ymin, 1.08); ax.set_xlim(-0.5, 3.5)
     ax.set_ylabel("AUROC (95% CI)")
     ax.set_title("All benchmark pairs, by pair rarity", loc="left", fontsize=12)
     panel_label(ax, panel_letter)
-    ax.legend(loc="upper left", frameon=False, fontsize=10.5, bbox_to_anchor=(0.0, 1.02), ncol=2)
+    ax.legend(loc="upper left", frameon=False, fontsize=10.5, bbox_to_anchor=(0.0, 1.02), ncol=len(series), handletextpad=0.3, columnspacing=1.0)
 
 
 def draw_panel_d_scoredist(ax, panel_letter):
@@ -722,6 +767,9 @@ from disatlas.parity import write_values
 _V = {"n_diseases": n, "n_clusters": 55}
 for _st in AUC32.index:
     for _c_ in ("auroc", "ci_lo", "ci_hi", "n_pos", "n_neg"):
-        _V[f"disatlas|{_st}|{_c_}"] = AUC32.loc[_st, _c_]; _V[f"waa|{_st}|{_c_}"] = WAA.loc[_st, _c_]
+        _V[f"disatlas|{_st}|{_c_}"] = AUC32.loc[_st, _c_]
+        for _k_, _t_ in CMP_AUC.items(): _V[f"{_k_}|{_st}|{_c_}"] = _t_.loc[_st, _c_]
+for _r_ in PAIRED_DIFF.itertuples():
+    for _c_ in ("diff", "ci_lo", "ci_hi"): _V[f"diff_{_r_.comparator}|{_r_.stratum}|{_c_}"] = getattr(_r_, _c_)
 for _d in CONTROL_PAIR_SCORES: _V[f"control|{_d['name']}"] = round(_d["p"], 6)
 write_values(f"{OUT}/disease_clustering_map_values.tsv", _V)
