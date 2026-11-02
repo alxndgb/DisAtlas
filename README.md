@@ -200,13 +200,13 @@ What COLD reproduces:
   embeddings.
 - The warm test suite then runs as in a warm run, so the manuscript numbers stay exact.
 
-Measured on one cluster node (16 cores, 160 GB):
+Measured on fresh clones, one cluster node each (peak memory is the Slurm MaxRSS of the job):
 
-| Mode | Wall time | Peak memory |
-|---|---|---|
-| WARM | 21 min on a fresh clone (tests 7.5 min); up to 46 min on a node shared with other jobs | 10.6 GB |
-| COLD, `--from graph` | 37 min: graph 1 min; retrain 16 min (five seeds in parallel, about 2 GB each); score 7 min, mostly the all-pairs matrix; figures, tables, tests and notebooks 13 min; up to 2 h on a shared node | 10.4 GB |
-| COLD, full run | 53 min on 16 CPUs, measured on a fresh clone: verify and channels 11 min (broad 8 min 45 s), graph 1 min, retrain 16.5 min, score 7 min, figures, tables, tests and notebooks 19 min | 10.6 GB |
+| Mode | Wall time | CPUs (memory allocated) | Peak memory |
+|---|---|---|---|
+| WARM | 14 min 54 s; up to 46 min on a node shared with other jobs | 16 (64 GB) | 12.3 GiB |
+| COLD, `--from graph` | 37 min: graph 1 min; retrain 16 min (five seeds in parallel, about 2 GB each); score 7 min, mostly the all-pairs matrix; figures, tables, tests and notebooks 13 min; up to 2 h on a shared node | 16 | 10.4 GB |
+| COLD, full run | 43 min 52 s: verify and channels 11 min, graph and qc 1 min, retrain 15 min, score 2 min, figures and tables 9 min, tests and notebooks 6 min (stage times from output timestamps) | 40 (160 GB) | 12.4 GiB |
 
 ## Data and licensing
 

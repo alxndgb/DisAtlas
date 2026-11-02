@@ -1,10 +1,8 @@
 """SI figure: component ablation of DisAtlas (31 arms plus the gene-anchored specific-layer arm; five-seed ensembles per arm).
-Input: EXPERIMENTAL_ablation_per_arm_all_readouts_FINAL.tsv. Panel a: paired change in test-split IxIDN-Matched AUROC
-against the released model (disease-cluster bootstrap, B = 1,000). Panel b: share of the 159 FDA development pairs
-recovered by the released model (score >= 0.5) that the arm no longer recovers (paired disease-cluster bootstrap).
-The gene-anchored arm row is read from <gene_anchor_row_tsv> (written by score_gene_anchor.py / make_arm_row.py); its
-mechanism-class controls were not run (no time-slice trainings), so it carries no JAK marker.
-Usage: python si_ablation_gene_anchor.py <per_arm_tsv> <gene_anchor_row_tsv> <out_dir>"""
+Inputs: data/derived/ablation/ablation_per_arm_readouts.tsv and gene_anchor_row.tsv. Panel a: paired change in test-split
+IxIDN-Matched AUROC against the released model (disease-cluster bootstrap, B = 1,000). Panel b: share of the 159 FDA
+development pairs recovered by the released model (score >= 0.5) that the arm no longer recovers (paired disease-cluster
+bootstrap). The gene-anchored arm has no mechanism-class controls (no time-slice trainings), so it carries no JAK marker."""
 import sys, json, os
 import numpy as np, pandas as pd, matplotlib
 matplotlib.use("Agg"); import matplotlib.pyplot as plt
@@ -15,14 +13,8 @@ from disatlas.figstyle_si import apply_figure_style, overlap_check, save
 apply_figure_style()
 DV = REPO / "data" / "derived" / "ablation"
 T = pd.read_csv(DV / "ablation_per_arm_readouts.tsv", sep="\t"); assert len(T) == 31
-# Paired change in test-split AUROC and its 95% CI: disease-cluster bootstrap, B = 2000, shared replicates.
-CI = pd.read_csv(DV / "ablation_paired_delta_vs_released_B2000.tsv", sep="\t").query("case_set == 'test'").set_index("arm")
-for c in ["d_auroc", "d_auroc_ci_lo", "d_auroc_ci_hi", "ci_excludes_0"]:
-    T[c] = T.arm.map(CI[c])
+# Panel a: paired change in test-split AUROC with its 95% disease-cluster bootstrap CI as stored per arm (B = 1,000).
 GR = pd.read_csv(DV / "gene_anchor_row.tsv", sep="\t"); assert len(GR) == 1
-ga = pd.read_csv(DV / "gene_anchor_benchmark_auroc.tsv", sep="\t").query("set == 'IxIDN-Matched 4,364' and scope == 'test'").iloc[0]
-GR["d_auroc"], GR["d_auroc_ci_lo"], GR["d_auroc_ci_hi"] = ga.delta, ga.delta_lo, ga.delta_hi
-GR["ci_excludes_0"] = bool(ga.delta_lo > 0 or ga.delta_hi < 0)
 T = pd.concat([T, GR], ignore_index=True); OUT = str(HERE)
 LAB = {"gene_anchor": "Gene-anchored specific edges added", "spec_off": "Specific-edge layer removed", "broad_off": "Broad evidence edges removed",
        "unweighted": "All edge weights set to 1",
