@@ -44,7 +44,8 @@ def model_dir() -> Path:
     """Released v3.2 model package (5-seed ensemble). Zenodo layout: data/zenodo/model/<MODEL_NAME>."""
     env = os.environ.get("DISATLAS_MODEL_DIR")
     cands = [Path(env)] if env else []
-    cands += [ZENODO / "model" / MODEL_NAME, ZENODO / "model"]
+    from disatlas.paths import model_dir as _md
+    cands += [_md(), _md().parent]
     for c in cands:
         if (c / "nodes.txt").exists() and (c / "embeddings").is_dir():
             return c

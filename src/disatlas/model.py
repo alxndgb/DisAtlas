@@ -21,7 +21,9 @@ import os
 import numpy as np
 import pandas as pd
 
-DEFAULT_DIR = os.path.join("data", "zenodo", "model", "disatlas_v3.2_ensemble")
+from disatlas.paths import model_dir as _model_dir
+
+DEFAULT_DIR = str(_model_dir())  # data/zenodo/model/... (warm) or build/model/... (cold)
 
 
 def _sha256(path: str) -> str:

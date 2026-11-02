@@ -27,6 +27,8 @@ import os
 import numpy as np
 import pandas as pd
 
+from disatlas.paths import processed
+
 RECIPE = dict(dim=32, walk_length=20, num_walks=20, window=2, p=1.0, q=0.5, epochs=25, lr=0.01, neg=5,
               batch_size=128, dec_hidden=128, dec_dropout=0.3, dec_lr=1e-3, dec_wd=1e-4, dec_neg=5,
               dec_epochs=200, dec_patience=10, val_frac=0.1)
@@ -178,17 +180,20 @@ def train_decoder(X, edges, cfg, seed):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--graph", default=os.path.join("data", "zenodo", "graph", "training_graph_edges.parquet"))
+    ap.add_argument("--graph", default=str(processed("graph", "training_graph_edges.parquet")))
     ap.add_argument("--out", required=True)
     ap.add_argument("--seeds", type=int, nargs="+", default=[4707, 4708, 4709, 4710, 4711])
     ap.add_argument("--max-nodes", type=int, default=None, help="smoke test on a BFS subgraph")
     for k in ("epochs", "num_walks", "dec_epochs"):
         ap.add_argument("--" + k.replace("_", "-"), type=int, default=None)
+    ap.add_argument("--config-only", action="store_true", help="only (re)write model_config.json for the seeds in --out")
     a = ap.parse_args()
     cfg = dict(RECIPE)
     for k in ("epochs", "num_walks", "dec_epochs"):
         if getattr(a, k) is not None:
             cfg[k] = getattr(a, k)
+    if a.config_only:
+        return write_config(a.out, load_graph(a.graph, a.max_nodes, 0)[0], cfg)
     from safetensors.torch import save_file
     for s in a.seeds:
         ids, indptr, nbr, w, edges = load_graph(a.graph, a.max_nodes, s)
@@ -208,6 +213,18 @@ def main():
         info = dict(seed=s, nodes=len(ids), edges=int(len(edges)), walks=len(W), val_loss=vl, recipe=cfg)
         json.dump(info, open(os.path.join(a.out, f"retrain_s{s}.json"), "w"), indent=1)
         print(json.dumps({k: info[k] for k in ("seed", "nodes", "edges", "walks", "val_loss")}))
+        write_config(a.out, ids, cfg)
+
+
+def write_config(out, ids, cfg):
+    """model_config.json + nodes.txt so disatlas.model.load_ensemble(out) reads the retrained seeds."""
+    from disatlas.model import _sha256
+    seeds = sorted(int(f[9:-12]) for f in os.listdir(os.path.join(out, "decoders")) if f.endswith(".safetensors"))
+    files = [f"embeddings/node2vec_s{s}.npz" for s in seeds] + [f"decoders/decoder_s{s}.safetensors" for s in seeds]
+    open(os.path.join(out, "nodes.txt"), "w").write("\n".join(ids) + "\n")
+    json.dump(dict(model="DisAtlas ensemble retrained with disatlas.retrain", seeds=seeds, recipe=cfg,
+                   files={f: _sha256(os.path.join(out, f)) for f in files}),
+              open(os.path.join(out, "model_config.json"), "w"), indent=1)
 
 
 if __name__ == "__main__":

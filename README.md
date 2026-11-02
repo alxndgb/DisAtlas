@@ -115,7 +115,10 @@ notebooks/               four exploratory notebooks (data and channels, IxIDN be
 tests/                   parity tests and the main-text number registry
 scripts/                 notebook runner; scripts/maintainer/ shows how the shipped data were exported (not needed to reproduce)
 ```
-<!-- ONTOLOGY_TBD: data/raw/ontology is empty on main; filled by the broad-channel track -->
+`data/raw/ontology/hp.obo` is a field slice of the Human Phenotype Ontology read by the cold broad-channel rebuild:
+20,413 term stanzas with only `id`, `alt_id`, `is_a`, `is_obsolete`, `replaced_by` and `consider` (no header,
+release tag, dates, names or definitions). The Gene Ontology is not shipped: the GO-, HPA- and Pfam-based pair
+distances ship precomputed in `data/zenodo/channels_raw/broad/pair_gene_distances.parquet`.
 
 ## Quick start
 
@@ -141,49 +144,64 @@ To run a single script by hand: `export PYTHONPATH=$PWD/src MPLBACKEND=Agg` and 
 
 ## Run modes
 
-<!-- RUN_MODES_BRANCH: --cold, --from, --only, build/, disatlas.rescore and tests/test_cold_*.py are on the run-modes branch -->
-
 | Mode | Command | What it does | Agreement with the manuscript |
 |---|---|---|---|
-| WARM (default) | `./run_pipeline.sh` | Uses the processed data and frozen 5-seed model from `data/zenodo`; rebuilds the training graph as a check | exact |
-| COLD | `./run_pipeline.sh --cold` | Rebuilds the channels and the training graph from `data/raw`, retrains the 5-seed ensemble and re-scores the benchmarks into `build/`, then makes all figures and tables and runs the tests | channels and graph exact; retrained scores statistical (tolerances below) |
-| COLD QC (opt-in) | `./run_pipeline.sh --cold-qc` | WARM always rebuilds IxIDN-Matched from the stored QC verdicts and checks it equals the shipped file; `--cold-qc` also reruns the QC with your own key (`ANTHROPIC_API_KEY`, `QC_MODEL`) into `build/qc/` using a prompt reconstructed from the Methods; drug names and trial phases from the licensed trial source are optional inputs (`--drugs`, `--phases`) | stored verdicts exact; rerun at a tolerance (`tests/test_ixidn_matched_qc.py`) |
+| WARM (default) | `./run_pipeline.sh` | Uses the processed data and frozen 5-seed model from `data/zenodo` (training graph, model, benchmark and all-pairs scores); rebuilds the training graph and IxIDN-Matched as checks | exact |
+| COLD | `./run_pipeline.sh --cold` | Rebuilds the channels and the training graph from `data/raw` into `build/`, retrains the 5-seed ensemble and re-scores the benchmarks, compares `build/` with the frozen record, then makes all figures and tables and runs the tests | channels and graph exact; retrained scores statistical (tolerances below) |
+| QC rerun (opt-in) | `./run_pipeline.sh --cold-qc` (either mode) | Stage `qc` always rebuilds IxIDN-Matched from the stored QC verdicts and checks it equals the shipped file; `--cold-qc` also reruns the QC with your own key (`ANTHROPIC_API_KEY`, `QC_MODEL`) into `build/qc/` using a prompt reconstructed from the Methods; drug names and trial phases from the licensed trial source are optional inputs (`--drugs`, `--phases`) | stored verdicts exact; rerun at a tolerance (`tests/test_ixidn_matched_qc.py`) |
+
+Figures, tables, notebooks and the manuscript numbers always come from the frozen record (they need
+`data/zenodo`), in both modes, because a retrained ensemble reproduces the published scores only statistically.
 
 Stages, in order:
 
 | Mode | Stages |
 |---|---|
-| WARM | `verify graph figures si tests notebooks` |
-| COLD | `verify channels graph retrain score figures si tests notebooks` |
+| WARM | `verify graph qc figures si tests notebooks` |
+| COLD | `verify channels graph qc retrain score figures si tests notebooks` |
 
-- `verify`: checks `data/zenodo` against `data/ZENODO_SHA256SUMS.txt` (in COLD mode it is skipped with a message if `data/zenodo` is absent).
+- `verify`: checks `data/zenodo` against `data/ZENODO_SHA256SUMS.txt` (in COLD mode it is skipped with a message if `data/zenodo` is absent; comparisons with the frozen record are then skipped).
 - `channels` (COLD): `python -m disatlas.channels.<broad|specific> --out build/channels/<track> --cold`.
-  The cold run rebuilds the specific channel from raw; broad channel source: see [data/README.md](data/README.md).
-  <!-- BROAD_COLD_TBD -->
+  - specific: rebuilt from the post-filter evidence in `data/raw/channels/specific`.
+  - broad: recomputes the phenotype distance `dist_HPO` from `data/raw/channels/broad/disease_phenotype.parquet`
+    and `data/raw/ontology/hp.obo`, joins the shipped gene-based pair distances (`dist_GO`, `px_HPA`, `px_DOM`,
+    `data/zenodo/channels_raw/broad/pair_gene_distances.parquet`), then applies the CRank/rank-mean fusion,
+    class quotas, floor and repair. The result equals the shipped broad channel edge for edge (13,021 diseases,
+    332,082 edges). The broad channel stage alone takes 8 min 45 s wall and 4.2 GB peak memory.
 - `graph`: `python -m disatlas.graph.build` (WARM: `--check` against the shipped graph; COLD: from `build/channels`, or from `data/raw/channels` if the channel stage was not run).
-- `retrain` (COLD): one process per seed (4707-4711), node2vec dim 32, walk length 20, window 2, p = 1, q = 0.5, Hadamard MLP decoder.
+- `qc`: `python -m disatlas.benchmarks.ixidn_matched --out build/ixidn_matched --check` (stored verdicts); with `--cold-qc` also `python -m disatlas.benchmarks.matched_qc --out build/qc --model $QC_MODEL`.
+- `retrain` (COLD): one process per seed (4707-4711) in parallel, node2vec dim 32, walk length 20, window 2, p = 1, q = 0.5, Hadamard MLP decoder.
 - `score` (COLD): `python -m disatlas.rescore --out build/scores --all-pairs`.
 - `figures`, `si`: all scripts in `figures/main`, `tables/main`, then `figures/SI`, `tables/SI`.
-- `tests`: `pytest tests` (in COLD mode also `tests/test_cold_exact.py` and `tests/test_cold_tolerance.py`).
+- `tests`: `pytest tests` (in COLD mode first `tests/test_cold_exact.py` and `tests/test_cold_tolerance.py` on `build/`).
 - `notebooks`: executes the four notebooks.
 
 Start at a stage with `--from STAGE` and run one stage with `--only STAGE`, for example
 `./run_pipeline.sh --only tests` or `./run_pipeline.sh --cold --from retrain`.
 
-Measured on a 16-core node (Linux):
+What COLD reproduces:
+
+- **Exact** (`tests/test_cold_exact.py`): channel files equal the shipped ones; broad 13,021 diseases /
+  332,082 edges, specific 422,804 links / 191,019 edges, union 498,155 and training 488,103 edges, and the
+  training edge set equals the Zenodo graph (SHA-256 and edge for edge).
+- **Statistical** (`tests/test_cold_tolerance.py`): retraining uses different random streams from the
+  frozen run, so scores are not bit-identical. Benchmark AUROCs of the retrained ensemble must lie within
+  0.03 of the frozen ensemble (0.04 for the IxIDN-Matched test split), and ensemble pair scores must be
+  rank-correlated with the frozen ones (Spearman >= 0.90 on the 4,364 IxIDN-Matched pairs, >= 0.65 on
+  10^6 random pairs). Observed on the cluster (seeds 4707-4711): AUROC deltas -0.015 (IxIDN-Matched),
+  -0.022 (test), -0.003 (rare-rare), -0.014 (rare-common), +0.014 (IxIDN+/-), -0.007 (FDA dev controls);
+  Spearman 0.946 on IxIDN-Matched and 0.726 on random pairs (frozen seeds agree with each other at
+  0.75-0.77 on random pairs, retrained seeds at 0.62-0.64). Two independent retrains gave the same deltas
+  within 0.001.
+- The warm test suite then runs as in a warm run, so the manuscript numbers stay exact.
+
+Measured on one cluster node (16 cores, 160 GB):
 
 | Mode | Wall time | Peak memory |
 |---|---|---|
-| WARM | 45 min | 8.3 GB |
-| COLD, retrain stage | 15-17 min per seed (8 threads, seeds in parallel) | 1.4 GB per seed |
-| COLD, full run | TBD | TBD |
-
-COLD tolerances (`tests/test_cold_tolerance.py`). The retrain uses different random streams from the frozen run, so
-scores are not bit-identical. The test asserts |AUROC(cold) - AUROC(frozen)| <= 0.03 on IxIDN-Matched (all pairs,
-rare-rare, rare-common), IxIDN+/IxIDN- and the FDA development controls, <= 0.04 on the IxIDN-Matched test split, and
-Spearman rho >= 0.90 between cold and frozen ensemble scores on the 4,364 IxIDN-Matched pairs and >= 0.85 on 10^6
-fixed random disease pairs. Observed in one cold retrain (5-seed ensemble vs frozen): |AUROC difference| 0.003-0.022 across the six
-benchmark sets above (largest on the IxIDN-Matched test split), Spearman rho 0.946 on IxIDN-Matched.
+| WARM | 14 min (tests 1 min); up to 46 min on a node shared with other jobs | 8.7 GB |
+| COLD, `--from graph` | 37 min: graph 1 min; retrain 18 min (five seeds in parallel, about 1.6 GB each); score 5 min, mostly the all-pairs matrix; figures, tables, tests and notebooks 13 min; up to 2 h on a shared node | 10.4 GB |
+| COLD, full run | <!-- COLD_FULL_TBD --> | |
 
 ## Data and licensing
 
