@@ -7,12 +7,6 @@
    "status": "exact",
    "checks": [
     {
-     "key": "controls_auroc",
-     "ms": "s are clustered by k-medoids on the learned disease–disease distance 1 − p ([Methods]).]  [This learned distan",
-     "expected": 1.0,
-     "tol": 0.5
-    },
-    {
      "key": "sil_learned",
      "ms": "ases better than the embedding alone: at K = 55 the silhouette is 0.356 on the learned distance, against 0.240",
      "expected": 0.356,
@@ -116,21 +110,9 @@
      "tol": 0.5
     },
     {
-     "key": "strata.IxIDN-Matched|All pairs|rare-rare.ci.1",
-     "ms": " and all main-text results use this K; the full sweep from K = 10 to 80 is shown in [Supplementary Figure ]a.]",
-     "expected": 0.8,
-     "tol": 0.005
-    },
-    {
      "key": "ksel_best_mean_K",
      "ms": "pplementary Figure ]a.] [The best mean silhouette is reached at K = 65 (0.359, standard deviation 0.004 across",
      "expected": 65
-    },
-    {
-     "key": "controls.0.score",
-     "ms": " deviation of it, and K = 55 has a mean silhouette of 0.356 (2.5–97.5% range across subsamples 0.348 to 0.365)",
-     "expected": 0.975,
-     "tol": 0.0005
     }
    ]
   },
@@ -151,21 +133,9 @@
      "expected": 8
     },
     {
-     "key": "strata.IxIDN-Matched-CC+|All pairs|common-common.d_ci.0",
-     "ms": "pite similar names or organ systems ([Supplementary Table ]).] [All 17 pairs are scored on the 13,021 diseases",
-     "expected": -0.17,
-     "tol": 0.005,
-     "note": "sign differs: manuscript prints the magnitude"
-    },
-    {
      "key": "n_diseases",
      "ms": "stems ([Supplementary Table ]).] [All 17 pairs are scored on the 13,021 diseases.] [At K = 55, 5 of 9 positive",
      "expected": 13021
-    },
-    {
-     "key": "strata.IxIDN-Matched-CC+|Test split pairs|common-common.neg",
-     "ms": "ble ]).] [All 17 pairs are scored on the 13,021 diseases.] [At K = 55, 5 of 9 positive pairs share a cluster a",
-     "expected": 55
     },
     {
      "key": "controls_pos_same_cluster",
@@ -176,13 +146,6 @@
      "key": "controls_neg_separated",
      "ms": "021 diseases.] [At K = 55, 5 of 9 positive pairs share a cluster and 8 of 8 negative pairs are separated.] [Cl",
      "expected": 8
-    },
-    {
-     "key": "strata.IxIDN-Matched-CC+|All pairs|common-common.d_stack",
-     "ms": "ted.] [Cluster membership is a coarse summary of the link score: the 4 positive pairs that k-medoids clusterin",
-     "expected": -0.04,
-     "tol": 0.005,
-     "note": "sign differs: manuscript prints the magnitude"
     },
     {
      "key": "n_pairs_all",
@@ -210,12 +173,6 @@
      "key": "controls_pos_top100",
      "ms": "r among its own 13,020 scored partners is the more informative scale: 7 of the 9 positive pairs lie within the",
      "expected": 7
-    },
-    {
-     "key": "controls.0.pct",
-     "ms": "re informative scale: 7 of the 9 positive pairs lie within the top 100 partners of at least one of the two dis",
-     "expected": 100.0,
-     "tol": 0.5
     },
     {
      "key": "controls.1.best_rank",
@@ -258,12 +215,6 @@
      "key": "strata.IxIDN-Matched|Test split pairs|all.pos",
      "ms": "8.97 times as often as their matched negatives at K = 55 (29.7% of 491 positive pairs against 3.3% of 603 nega",
      "expected": 491
-    },
-    {
-     "key": "strata.IxIDN-Matched|All pairs|common-common.d_stack",
-     "ms": " matched negatives at K = 55 (29.7% of 491 positive pairs against 3.3% of 603 negative pairs), which gives a c",
-     "expected": 0.033,
-     "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|Test split pairs|all.neg",
@@ -500,12 +451,6 @@
      "tol": 0.05
     },
     {
-     "key": "median_link_score_all_pairs",
-     "ms": "pair link score $p$ (mean of five seeds; the clustering distance is $1-p$); percentile: rank of that score amo",
-     "expected": 0.01,
-     "tol": 0.005
-    },
-    {
      "key": "dmd_dm1.0",
      "ms": "the same oligonucleotide-delivery platforms.] [Its link score is 0.874 (99.2nd percentile); the two diseases f",
      "expected": 0.874,
@@ -546,13 +491,6 @@
      "key": "n_diseases",
      "ms": "[Over the 13,021 clustered diseases, the overall silhoue",
      "expected": 13021
-    },
-    {
-     "key": "median_link_score_all_pairs",
-     "ms": "clustered diseases, the overall silhouette is 0.36, on a scale from −1 to 1.]  [The median distance of a disea",
-     "expected": 0.01,
-     "tol": 0.005,
-     "note": "sign differs: manuscript prints the magnitude"
     },
     {
      "key": "internal.nearest_other",
@@ -646,12 +584,6 @@
      "expected": 54
     },
     {
-     "key": "recovery.common anchor, rare candidates.d_adamic_adar.2",
-     "ms": "east five members and two-fold enrichment, Benjamini–Hochberg q < 0.05), against at most one cluster in 50 lab",
-     "expected": 0.05,
-     "tol": 0.005
-    },
-    {
      "key": "external.n_shuffles",
      "ms": "hment, Benjamini–Hochberg q < 0.05), against at most one cluster in 50 label shuffles, and the adjusted mutual",
      "expected": 50
@@ -674,26 +606,14 @@
      "expected": 55
     },
     {
-     "key": "controls_auroc",
-     "ms": "** Mean silhouette of k-medoids clustering on the DisAtlas distance (1 − p) for each K, over 100 subsamples of",
-     "expected": 1.0,
-     "tol": 0.5
-    },
-    {
      "key": "ksel_n_subsamples",
      "ms": "doids clustering on the DisAtlas distance (1 − p) for each K, over 100 subsamples of 80% of diseases (band: 2.",
      "expected": 100
     },
     {
      "key": "ksel_K_range.1",
-     "ms": "n the DisAtlas distance (1 − p) for each K, over 100 subsamples of 80% of diseases (band: 2.5–97.5% range acro",
+     "ms": "methods_clustering)), and all main-text results use this K; the full sweep from K = 10 to 80 is shown in [Supp",
      "expected": 80
-    },
-    {
-     "key": "controls.0.score",
-     "ms": "p) for each K, over 100 subsamples of 80% of diseases (band: 2.5–97.5% range across subsamples). The dashed li",
-     "expected": 0.975,
-     "tol": 0.0005
     },
     {
      "key": "n_diseases",
@@ -776,20 +696,9 @@
      "tol": 0.0005
     },
     {
-     "key": "controls_auroc",
-     "ms": "ity.]** [Hexagonal-binned relationship between the learned distance (1 − p; x-axis) and the distance in the tw",
-     "expected": 1.0,
-     "tol": 0.5
-    },
-    {
      "key": "n_diseases",
      "ms": "main text (y-axis) for 1,999,833 random disease pairs among the 13,021 diseases; the orange line is the median",
      "expected": 13021
-    },
-    {
-     "key": "controls_pos_same_cluster",
-     "ms": "13,021 diseases; the orange line is the median map distance in each 5% bin of model distance. Spearman ρ = 0.4",
-     "expected": 5
     }
    ]
   },

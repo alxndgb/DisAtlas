@@ -31,11 +31,6 @@
      "expected": 50
     },
     {
-     "key": "fda_benchmark.n_pairs",
-     "ms": "nhibitors).] [Each case pair is ranked against a reference set of 2,000 random disease pairs whose members are",
-     "expected": 2000
-    },
-    {
      "key": "mechanism_classes.n_recovered",
      "ms": "th percentile of this reference set in a majority of the five seeds; 48 of the 50 cases are recovered, and the",
      "expected": 48

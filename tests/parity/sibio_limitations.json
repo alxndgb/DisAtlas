@@ -18,12 +18,6 @@
      "tol": 0.0005
     },
     {
-     "key": "controls.0.pct",
-     "ms": "e has more than three such genes, 20% are not ranked within the top 100 partners of either disease.] [Failures",
-     "expected": 100.0,
-     "tol": 0.5
-    },
-    {
      "key": "ksel_K55.0",
      "ms": "erm (34% against 17%) or is highly connected in the training graph (36% against 16%), and 95% of failing pairs",
      "expected": 0.36,
@@ -33,12 +27,6 @@
      "key": "strata.IxIDN-Matched|All pairs|all.d_ci.0",
      "ms": "nst 17%) or is highly connected in the training graph (36% against 16%), and 95% of failing pairs are linked o",
      "expected": 0.16,
-     "tol": 0.005
-    },
-    {
-     "key": "strata.IxIDN-Matched|Test split pairs|all.d_ci.0",
-     "ms": " within the top 100 from 79.8% to 86.6% and raises the score of all 18 example pairs of this kind, while leavi",
-     "expected": 0.18,
      "tol": 0.005
     },
     {

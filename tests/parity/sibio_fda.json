@@ -17,12 +17,6 @@
      "expected": 5192
     },
     {
-     "key": "explainability.Case1.score",
-     "ms": ".]  [With both channels, DisAtlas recovers 91.9% of the 321 pairs (95% CI 88.8–94.7%).] [The specific (mechani",
-     "expected": 0.95,
-     "tol": 0.005
-    },
-    {
      "key": "fda_benchmark.n_pairs",
      "ms": "from IxIDN⁺ whose shared drug is launched for both diseases form 2,000 positive controls over 401 diseases; th",
      "expected": 2000
@@ -59,12 +53,6 @@
      "key": "n_scored_all_models",
      "ms": "nt split, 540 pairs; the held-out split was not read).] [Of these, 321 pairs could be scored by the full model",
      "expected": 321
-    },
-    {
-     "key": "a_full@broad_off_nodes_pct99.1",
-     "ms": "sease pairs.] [A pair counts as recovered when it ranks in the top 25% of random pairs (chance 25%).]  [With b",
-     "expected": 0.25,
-     "tol": 0.005
     },
     {
      "key": "a_full@broad_off_nodes_recovered.0",
@@ -131,12 +119,6 @@
      "ms": " stricter cut-offs: in the top 1%, the rates are 29.9%, 21.2% and 5.9%.] [The channels are partly complementar",
      "expected": 0.059,
      "tol": 0.0005
-    },
-    {
-     "key": "a_broad_off_pct95.0",
-     "ms": "els are partly complementary.] [The specific channel alone recovers 61 pairs that the broad channel misses, an",
-     "expected": 0.61,
-     "tol": 0.005
     },
     {
      "key": "b_quadrants.broad_only",
@@ -302,32 +284,14 @@
    "status": "exact",
    "checks": [
     {
-     "key": "d_decoy.0",
-     "ms": "red with the anchor (counted only up to the cut-off year), and up to 20 degree-matched decoy targets per pair,",
-     "expected": 0.2,
-     "tol": 0.005
-    },
-    {
      "key": "b_full_recovered_neither_single",
      "ms": "held-out split was not read.]  [**Pairs.** Of 540 development pairs, 7 have no trial date, 41 have a first tri",
      "expected": 7
     },
     {
-     "key": "d_shared_nbr.2",
-     "ms": " an anchor or target that is not yet a node in the dated graph, and 84 have a target already trialled with a d",
-     "expected": 0.84,
-     "tol": 0.005
-    },
-    {
      "key": "d_n",
      "ms": "rget already trialled with a drug of the same class.] [That leaves 166 scorable pairs from 73 drugs at the pri",
      "expected": 166
-    },
-    {
-     "key": "a_full@broad_off_nodes_pct95.2",
-     "ms": "ith a drug of the same class.] [That leaves 166 scorable pairs from 73 drugs at the primary cut-off and 150 pa",
-     "expected": 0.73,
-     "tol": 0.005
     },
     {
      "key": "a_full@broad_off_nodes_recovered.2",
@@ -396,13 +360,6 @@
      "tol": 0.0005
     },
     {
-     "key": "d_shared_nbr.0",
-     "ms": "ared graph neighbours | 74.1% (60.0–83.5) | 95.1 | −9.6 (−15.8 to −0.7) | 66.7% (54.1–73.7) | 94.1 | 0.0 (−7.0",
-     "expected": 0.7,
-     "tol": 0.05,
-     "note": "sign differs: manuscript prints the magnitude"
-    },
-    {
      "key": "a_spec_off@broad_off_nodes_pct99.1",
      "ms": "0–83.5) | 95.1 | −9.6 (−15.8 to −0.7) | 66.7% (54.1–73.7) | 94.1 | 0.0 (−7.0 to +9.7) | | shared literature ge",
      "expected": 0.0,
@@ -441,33 +398,9 @@
    "status": "exact",
    "checks": [
     {
-     "key": "fda_benchmark.n_pairs",
-     "ms": "ence intervals are cluster bootstrap intervals over drug groups (2,000 resamples).] [The design, endpoints and",
-     "expected": 2000
-    },
-    {
      "key": "fda_benchmark.n_split_dev",
      "ms": "ore scoring, and the held-out split was not read.]  [**Pairs.** Of 540 development pairs, 7 have no trial date",
      "expected": 540
-    },
-    {
-     "key": "explainability.Case1.score",
-     "ms": "s also higher (DisAtlas − shared neighbours −6.2 percentile points, 95% CI −11.1 to −1.8).] [Shared literature",
-     "expected": 0.95,
-     "tol": 0.005
-    },
-    {
-     "key": "explainability.Case3.score",
-     "ms": "s | 74.1% (60.0–83.5) | 95.1 | −9.6 (−15.8 to −0.7) | 66.7% (54.1–73.7) | 94.1 | 0.0 (−7.0 to +9.7) | | shared",
-     "expected": 0.737,
-     "tol": 0.0005
-    },
-    {
-     "key": "fda_benchmark.n_hard_complement",
-     "ms": "–79.6) | 96.7 | −4.8 (−12.1 to +6.1) | 70.7% (52.0–82.5) | 96.2 | −4.0 (−13.1 to +10.8) | | matched decoy dise",
-     "expected": 4.0,
-     "tol": 0.05,
-     "note": "sign differs: manuscript prints the magnitude"
     }
    ]
   }

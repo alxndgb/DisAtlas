@@ -381,11 +381,6 @@
      "expected": 213
     },
     {
-     "key": "controls_pos_same_cluster",
-     "ms": "= 2,000); numbers give anchors and pairs, and groups with fewer than 5 qualifying anchors are not shown. Hollo",
-     "expected": 5
-    },
-    {
      "key": "controls.2.score",
      "ms": "shortcut baselines (diamonds); numbers give the difference and its 95% CI, in bold where the CI excludes zero.",
      "expected": 0.95,
@@ -488,22 +483,9 @@
      "tol": 0.005
     },
     {
-     "key": "recovery.common anchor, rare candidates.d_common_neighbours.0",
-     "ms": " among their k nearest neighbours in the DisAtlas embedding, for k = 1–50, compared with the unrestricted, deg",
-     "expected": -0.01,
-     "tol": 0.005,
-     "note": "sign differs: manuscript prints the magnitude"
-    },
-    {
      "key": "external.n_shuffles",
      "ms": "ng their k nearest neighbours in the DisAtlas embedding, for k = 1–50, compared with the unrestricted, degree-",
      "expected": 50
-    },
-    {
-     "key": "controls.0.score",
-     "ms": "h-matched nulls (lines: mean over 1,000 permutations; bands: 2.5–97.5% range). **(b)** The same for common dis",
-     "expected": 0.975,
-     "tol": 0.0005
     }
    ]
   },

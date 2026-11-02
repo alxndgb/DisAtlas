@@ -23,12 +23,6 @@
      "ms": " due to saposin C deficiency–Parkinson disease 24 at the 98.3rd (0.737).] [Among the roughly 13,000 diseases s",
      "expected": 0.737,
      "tol": 0.0005
-    },
-    {
-     "key": "explainability.Case1.score",
-     "ms": "isease, alongside the top TxGNN drug predictions (confidence above 0.9). TxGNN's top predictions are unrelated",
-     "expected": 0.9,
-     "tol": 0.05
     }
    ]
   },
