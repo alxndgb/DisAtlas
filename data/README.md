@@ -66,8 +66,9 @@ publication identifiers or evidence sentences are included. Disease identifiers 
 | file | columns |
 |---|---|
 | ixidn/ixidn_plus_pairs.parquet, ixidn_minus_pairs.parquet | disease_a, disease_b |
-| ixidn_matched/ixidn_matched_pairs.tsv | pair_id, disease_a, disease_b, y (1 positive / 0 negative), split (tune / test), pair_class (rare/common composition) |
-| ixidn_matched/llm_curation_verdicts.tsv | disease_a, disease_b, verdict, rejudged, first_pass_verdict, keep (kept positives = IxIDN-Matched positives) |
+| ixidn_matched/ixidn_matched_pairs.tsv | pair_id, disease_a, disease_b, y (1 positive / 0 negative), split (tune / test / cross: both diseases in the tune half, both in the test half, or one in each), pair_class (rare/common composition) |
+| ixidn_matched/llm_curation_verdicts.tsv | disease_a, disease_b, verdict, rejudged, first_pass_verdict, keep (kept positives = IxIDN-Matched positives): the stored language-model QC of the 4,302 candidate positives; NOT_IN_GRAPH = no shared trial drug, assigned without a call; first_pass_verdict = earlier verdict of the 944 re-judged pairs (961 filled) |
+| ixidn_matched_qc/matching_pairs.parquet | disease_a, disease_b, y, cell, pair_id: veto-passing IxIDN- pairs (y=0) and the QC candidate positives (y=1) in the frozen row order of the seeded (seed 0) cell match; cell = seven matching keys joined by '\|' (lower/higher disease degree decile, shared organ system, shared Orphanet area, name-similarity bin, semantic-similarity bin, gene coverage); pair_id = benchmark pair id or empty. `python -m disatlas.benchmarks.ixidn_matched` rebuilds ixidn_matched_pairs.tsv from it and the verdicts |
 | fda_repurposing/fda_repurposing_pairs.tsv | disease_a, disease_b: all 2,000 control pairs, unlabelled, removed from the training graph (needed to rebuild it exactly) |
 | fda_repurposing/fda_repurposing_controls.tsv | disease_a, disease_b, stratum (hard / easy), pair_class, split (dev / easy_unsplit / complement_six), fda_verified_pair, in_model; the 560 holdout pairs are sealed and not included |
 | ordo/ixidn_matched_ontology_distance.tsv | pair_id, ordo_dist (-1 = undefined), mondo_dist |

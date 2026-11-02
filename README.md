@@ -55,6 +55,7 @@ every plotted or quoted number; the tests read those files.
 | Figure S3 | Distance to lowest common ancestor (schematic) | none | not shipped |
 | Figure S4 | From the MechDist network to embeddings (schematic) | none | not shipped |
 | Figure S5 | Construction of IxIDN-Matched and its shortcut audit | `si_ixidn_matched_funnel.py` | `si_ixidn_matched_funnel.{png,pdf}` |
+| Methods, Figure 3b, Figure S5 | IxIDN-Matched quality control: language-model verdicts on the 4,302 candidate positives (1,285 strong + 897 plausible kept; repeat check 84.7%) and the seeded cell match | `src/disatlas/benchmarks/ixidn_matched.py` (stored verdicts `data/raw/benchmarks/ixidn_matched/llm_curation_verdicts.tsv`), rerun `src/disatlas/benchmarks/matched_qc.py`, `tests/test_ixidn_matched_qc.py` | `data/derived/fig3_ixidn/qc_verdict_summary.tsv` (kept/removed by reason) |
 | Figure S6 | Broad and specific evidence channels | `si_mechanism_sensitivity.py` | `si_mechanism_sensitivity.{png,pdf}` |
 | Figure S7 | Degree in each graph of the MechDist network | `si_mechdist_degree_by_channel.py` | `si_mechdist_degree_by_channel.{png,pdf}` |
 | Figure S8 | Threshold sensitivity | `si_threshold_sensitivity.py` | `si_threshold_sensitivity.{png,pdf}` |
@@ -146,6 +147,7 @@ To run a single script by hand: `export PYTHONPATH=$PWD/src MPLBACKEND=Agg` and 
 |---|---|---|---|
 | WARM (default) | `./run_pipeline.sh` | Uses the processed data and frozen 5-seed model from `data/zenodo`; rebuilds the training graph as a check | exact |
 | COLD | `./run_pipeline.sh --cold` | Rebuilds the channels and the training graph from `data/raw`, retrains the 5-seed ensemble and re-scores the benchmarks into `build/`, then makes all figures and tables and runs the tests | channels and graph exact; retrained scores statistical (tolerances below) |
+| COLD QC (opt-in) | `./run_pipeline.sh --cold-qc` | WARM always rebuilds IxIDN-Matched from the stored QC verdicts and checks it equals the shipped file; `--cold-qc` also reruns the QC with your own key (`ANTHROPIC_API_KEY`, `QC_MODEL`) into `build/qc/` using a prompt reconstructed from the Methods; drug names and trial phases from the licensed trial source are optional inputs (`--drugs`, `--phases`) | stored verdicts exact; rerun at a tolerance (`tests/test_ixidn_matched_qc.py`) |
 
 Stages, in order:
 
