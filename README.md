@@ -40,8 +40,8 @@ every plotted or quoted number; the tests read those files.
 | Figure 2 | DisAtlas pipeline and its two evaluations | `figures/main/fig2_disatlas_pipeline.py` | `figures/main/disatlas_pipeline.{png,pdf}` |
 | Figure 3 | The IxIDN-Matched benchmark | `figures/main/fig3_ixidn_benchmark.py` | `figures/main/ixidn_benchmark.{png,pdf}` |
 | Figure 4 | Embedding and decoder architecture | `figures/main/fig4_upna_ddal_architecture.py` | `figures/main/UPNA_DDAL_architecture.{png,pdf,svg}` |
-| Figure 5 | Disease map, clusters and rarity-stratified performance | `figures/main/fig5_disease_clustering_map.py` | `figures/main/disease_clustering_map.{png,pdf}` |
-| Figure 6 | Cross-system comparison on IxIDN-Matched | `figures/main/fig6_method_comparison.py` | `figures/main/fig5_method_comparison.{png,pdf}` (file name kept from the submission) |
+| Figure 5 | Disease map, clusters, and DisAtlas vs TxGNN by disease rarity (panel c) | `figures/main/fig5_disease_clustering_map.py` | `figures/main/disease_clustering_map.{png,pdf}` |
+| Figure 6 | Cross-system comparison on IxIDN-Matched | `figures/main/fig6_method_comparison.py` | `figures/main/fig5_method_comparison.{png,pdf}` (same file name as the manuscript figure) |
 | Figure 7 | Simulated prospective (event-time) test | `figures/main/fig7_prospective.py` | `figures/main/fig7_prospective.{png,pdf}` |
 | Table 1 | Protocols of the cross-system comparison | `tables/main/table1_protocols.py` | `tables/main/table1_protocols.{md,tsv}` |
 | Main-text numbers | All 560 number tokens of the main text, each with its kind and check | `tests/main_quantities.py`, `tests/test_main_parity.py` | registry `tests/main_text_numbers.tsv` |
@@ -66,7 +66,7 @@ every plotted or quoted number; the tests read those files.
 | Figure S13 | Negative-set realism and hard negatives | `si_node_disjoint_negrealism.py` | `si_negrealism.{png,pdf}` |
 | Figure S14 | Extended cluster validation | `si_cluster_validation.py` | `extended_cluster_validation.{png,pdf}` |
 | Figure S15 | Display layout fidelity | `si_cluster_map_vs_model.py` | `SI_cluster_map_vs_model_distance.{png,pdf}` |
-| Figure S16 | Performance by disease rarity and anchor disease | `si_rare_common_transfer.py` | `SI_rare_common_transfer.{png,pdf}` |
+| Figure S16 | Performance by disease rarity and anchor disease; TxGNN recovery of documented rare-common partners | `si_rare_common_transfer.py` | `SI_rare_common_transfer.{png,pdf}` |
 | Figure S17 | Rare-common neighbour coverage | `si_rare_common_neighbour_coverage.py` | `SI_rare_common_neighbour_coverage.{png,pdf}` |
 | Figure S18 | Later-trialled diseases within popularity strata | `si_popularity_strata.py` | `si_popularity_strata.{png,pdf}` |
 | Figure S19 | Approved-repurposing benchmark (schematic) | `si_fda_schematic.py` | `SI_approved_repurposing_schematic.{png,pdf}` |
@@ -122,7 +122,7 @@ distances ship precomputed in `data/zenodo/channels_raw/broad/pair_gene_distance
 
 ## Quick start
 
-Requirements: Linux or macOS, Python 3.11, about 16 GB of RAM, and about 1 GB of disk for the Zenodo bundle (TBD once the channel inputs are added).
+Requirements: Linux or macOS, Python 3.11, about 16 GB of RAM, and about 0.5 GB of disk for the Zenodo bundle (409 MB unpacked).
 
 ```bash
 git clone <repository URL> DisAtlas && cd DisAtlas
@@ -131,7 +131,7 @@ python3.11 -m venv .venv
 ```
 
 Download the Zenodo record (DOI: `ZENODO_DOI_TBD`, <https://doi.org/ZENODO_DOI_TBD>) and unpack it so that
-`data/zenodo/` contains `INDEX.tsv`, `graph/`, `model/`, `scores/`, `figures_main/`, `si_bio/`. Then check it:
+`data/zenodo/` contains `graph/`, `model/`, `scores/`, `figures_main/`, `si_bio/`, `channels_raw/broad/`. Then check it:
 
 ```bash
 cd data/zenodo && sha256sum -c ../ZENODO_SHA256SUMS.txt && cd ../..   # macOS: shasum -a 256 -c

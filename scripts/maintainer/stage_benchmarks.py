@@ -1,13 +1,11 @@
 """Maintainer-only: stage the manuscript benchmarks (minimal columns) into data/raw/benchmarks, comparator
-and DisAtlas benchmark scores into data/zenodo/scores, and precomputed event-time result tables into
-data/derived/event_time. Source locations are passed on the command line as KEY=PATH (never tracked).
+and DisAtlas benchmark scores into data/zenodo/scores. Source locations are passed on the command line as KEY=PATH (never tracked).
 
 usage: python scripts/maintainer/stage_benchmarks.py <data dir> scores4364=... per_run=... nodedisjoint=...
-       judge=... labels=... event_time=... ordo_pairs=... ordo_summary=... fda=...
+       judge=... labels=... ordo_pairs=... ordo_summary=... fda=...
 """
 import json
 import os
-import shutil
 import sys
 
 import numpy as np
@@ -18,7 +16,7 @@ data = sys.argv[1]
 src = dict(a.split("=", 1) for a in sys.argv[2:])
 B = os.path.join(data, "raw", "benchmarks")
 Z = os.path.join(data, "zenodo", "scores")
-for d in (B + "/ixidn_matched", B + "/comparators", Z, os.path.join(data, "derived", "event_time")):
+for d in (B + "/ixidn_matched", B + "/comparators", Z):
     os.makedirs(d, exist_ok=True)
 SEEDS = [4707, 4708, 4709, 4710, 4711]
 log = {}
@@ -107,10 +105,4 @@ if "fda" in src:
     log["fda"] = dict(pairs=len(F), split=F.split.value_counts().to_dict(),
                       dev_verified_in_model=int((F.split.eq("dev") & F.fda_verified_pair & F.in_model).sum()))
 
-# event-time evaluation: precomputed result tables (inputs are proprietary trial evidence)
-ET = src["event_time"]
-for f in ("coverage.tsv", "coverage_by_year.tsv", "deltas.tsv",
-          "merge_and_matching_census.tsv", "per_year_vs_wAA.tsv", "point_estimates_all.tsv",
-          "point_estimates_test.tsv", "table_pooled_E1_E2.tsv", "table_pooled_top10_precision.tsv"):
-    shutil.copyfile(os.path.join(ET, f), os.path.join(data, "derived", "event_time", f))
 print(json.dumps(log, indent=1, default=str))

@@ -2,8 +2,8 @@
 
 The small tables live in this repository under `data/raw` and `data/derived`. The training graph, the
 frozen model and the large score files are in the Zenodo record and unpack into `data/zenodo`, which is
-not tracked by git. A warm run (default) reads them; a cold run rebuilds them into `build/` (`README.md`). `data/zenodo/INDEX.tsv` lists every Zenodo file, and `data/ZENODO_SHA256SUMS.txt`
-gives their checksums (`cd data/zenodo && sha256sum -c ../ZENODO_SHA256SUMS.txt`).
+not tracked by git. A warm run (default) reads them; a cold run rebuilds them into `build/` (`README.md`). `data/ZENODO_SHA256SUMS.txt`
+lists every Zenodo file with its checksum (`cd data/zenodo && sha256sum -c ../ZENODO_SHA256SUMS.txt`).
 
 ## Folder map
 
@@ -22,8 +22,7 @@ data/
       ordo/             ontology distances for IxIDN-Matched pairs
       comparators/      blinded comparator input and stored per-run comparator outputs on IxIDN-Matched
       disease_labels.tsv
-  derived/
-    event_time/     event-time (prospective) evaluation result tables, precomputed
+  derived/          intermediate and result tables behind the figures, tables and quoted numbers (one folder per item)
   zenodo/           (download) graph/, model/, scores/, figures_main/, si_bio/, channels_raw/broad/
                     (graph, model and scores: warm run; a cold run rebuilds them into build/)
 ```
@@ -120,13 +119,6 @@ definitions). The Gene Ontology is not shipped; the gene-based distances ship pr
 | comparators/ixidn_matched_blind_input.tsv | blind_id (= pair_id), a, b, disease_a_name, disease_b_name: the blinded, row-shuffled file given to the comparator systems |
 | comparators/ixidn_matched_comparator_scores.tsv | pair_id, then one column per `system\|run` |
 | disease_labels.tsv | disease_id, is_rare, is_cancer, is_malignant, disease_class |
-
-### derived/event_time
-
-Result tables of the event-time evaluation (E1: percentile rank of the later indication among candidates;
-E2: precision measures), per pool, scope (pooled or year), analysis and comparator, with bootstrap
-confidence intervals. The trial and approval events behind them come from a licensed source and are not
-redistributed, so these tables are provided precomputed.
 
 ### zenodo/graph
 

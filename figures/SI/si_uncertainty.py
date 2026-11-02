@@ -4,10 +4,10 @@
 Layout matches the earlier FIGURES/uncertainty_quantification.png: (A) SD of AUROC across the five training seeds vs
 across the disease-cluster bootstrap (B = 2,000), all pairs and test split, annotated with the ratio; (B) AUROC/AUPRC of
 the ensemble with 95% disease-cluster bootstrap CIs and the no-skill line (0.5 for AUROC, positive fraction for AUPRC).
-Inputs (current model only):
-  SD   : disatlas/v3_revised_manuscript/si_figures/ixidn_si/v3.2.0/R3M5_seed_vs_sample_v3.2.0.tsv  (seed_sd, sample_sd_cluster)
-  CI   : revision/v32_rewrite/headline_swap/out/core/headline_core_values.tsv (B = 2,000 disease-cluster bootstrap; n, n_pos)
-         cross-checked against R3M5_ci_pair_vs_cluster_v3.2.0.tsv (cluster_ci_lo/hi), must agree to 1e-3.
+Inputs (data/derived/uncertainty):
+  seed_vs_sample_sd.tsv     seed SD and disease-cluster bootstrap SD of each metric (seed_sd, sample_sd_cluster)
+  headline_core_values.tsv  ensemble value and 95% disease-cluster bootstrap CI (B = 2,000; n, n_pos)
+  ci_pair_vs_cluster.tsv    pair- and cluster-bootstrap CIs; cross-check of the cluster CI, must agree to 1e-3
 usage: python figures/SI/si_uncertainty.py
 """
 import sys as _s, pathlib as _p; _s.path.insert(0, str(_p.Path(__file__).resolve().parents[2] / "src")); import disatlas.deterministic  # noqa: E402,F401  reproducible PDF/SVG bytes
@@ -31,7 +31,7 @@ hc.columns = ["metric", "stratum", "n", "n_pos", "value", "lo", "hi", "B"]
 hc = hc[hc.metric.isin(["AUROC p", "AUPRC p"]) & hc.stratum.isin(["all", "test"])].copy()
 hc["metric"] = hc.metric.str.split().str[0]
 assert len(hc) == 4 and (hc.B.astype(int) == 2000).all(), hc
-cc = pd.read_csv(CIC, sep="\t").query("system == 'dis2vec_ensemble'").set_index(["stratum", "metric"])
+cc = pd.read_csv(CIC, sep="\t").query("system == 'disatlas_ensemble'").set_index(["stratum", "metric"])
 for r in hc.itertuples():
     k = (STR[r.stratum][0], r.metric.lower()); c = cc.loc[k]
     assert abs(c.value - r.value) < 1e-3 and abs(c.cluster_ci_lo - r.lo) < 1e-3 and abs(c.cluster_ci_hi - r.hi) < 1e-3, (k, r)

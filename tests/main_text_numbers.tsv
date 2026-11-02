@@ -292,7 +292,7 @@ M272	Data sources	409	2026	year					sease associations; OMIM (June 2026); GenCC 
 M273	Disease set	413	13,080	data_track					er applying these filters, we obtained a total of 13,080 candidate diseases.]
 M274	Disease set	414	69.0%	data_track					varies by evidence channel: the GO channel covers 69.0% of these diseases (81.7% of t
 M275	Disease set	414	81.7%	data_track					l: the GO channel covers 69.0% of these diseases (81.7% of the 5,530,050 candidate pa
-M571	Disease set	414	5,530,050	data_track				broad channel: candidate pairs (data/derived/pipeline_counts/channel_coverage.tsv)	nnel covers 69.0% of these diseases (81.7% of the 5,530,050 candidate pairs defined below
+M571	Disease set	414	5,530,050	data_track				broad channel: candidate pairs (rows of zenodo/channels_raw/broad/pair_gene_distances.parquet)	nnel covers 69.0% of these diseases (81.7% of the 5,530,050 candidate pairs defined below
 M276	Disease set	414	78.2%	data_track					low), the HPA cell-type expression channel covers 78.2% of diseases (91.4% of pairs),
 M277	Disease set	414	91.4%	data_track					type expression channel covers 78.2% of diseases (91.4% of pairs), the Pfam domain ch
 M278	Disease set	414	83.0%	data_track					 (91.4% of pairs), the Pfam domain channel covers 83.0% of diseases (93.6% of pairs),
