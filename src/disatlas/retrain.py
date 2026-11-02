@@ -186,11 +186,14 @@ def main():
     ap.add_argument("--max-nodes", type=int, default=None, help="smoke test on a BFS subgraph")
     for k in ("epochs", "num_walks", "dec_epochs"):
         ap.add_argument("--" + k.replace("_", "-"), type=int, default=None)
+    ap.add_argument("--config-only", action="store_true", help="only (re)write model_config.json for the seeds in --out")
     a = ap.parse_args()
     cfg = dict(RECIPE)
     for k in ("epochs", "num_walks", "dec_epochs"):
         if getattr(a, k) is not None:
             cfg[k] = getattr(a, k)
+    if a.config_only:
+        return write_config(a.out, load_graph(a.graph, a.max_nodes, 0)[0], cfg)
     from safetensors.torch import save_file
     for s in a.seeds:
         ids, indptr, nbr, w, edges = load_graph(a.graph, a.max_nodes, s)

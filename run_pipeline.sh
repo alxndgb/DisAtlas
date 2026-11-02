@@ -3,11 +3,12 @@
 #   ./run_pipeline.sh                 WARM (default): verify the Zenodo bundle and use its processed data (training
 #                                     graph, frozen 5-seed model, scores); figures, tables, parity tests, notebooks
 #   ./run_pipeline.sh --cold          COLD: rebuild channels and training graph from data/raw, retrain the 5-seed
-#                                     ensemble and re-score the benchmarks into build/, then figures, tables, tests
+#                                     ensemble and re-score the benchmarks into build/, compare build/ with the
+#                                     frozen record (exact graph, statistical scores); figures, tables and the
+#                                     manuscript numbers always come from the frozen record
 #   --from STAGE   start at STAGE     --only STAGE   run STAGE alone
 #   stages  warm: verify graph figures si tests notebooks
 #           cold: verify channels graph retrain score figures si tests notebooks
-#   --use-own-llm-key   see README: reruns the stored LLM prompts with your own key (not needed for parity)
 set -euo pipefail
 cd "$(dirname "$0")"
 PY=${PYTHON:-.venv/bin/python}
@@ -15,9 +16,8 @@ export PYTHONPATH="$PWD/src${PYTHONPATH:+:$PYTHONPATH}" MPLBACKEND=Agg
 MODE=warm FROM= ONLY=
 while [ $# -gt 0 ]; do case $1 in
   --cold) MODE=cold;; --from) FROM=$2; shift;; --only) ONLY=$2; shift;;
-  --use-own-llm-key) echo "see README (LLM rerun)"; exit 0;;
   *) echo "unknown option $1"; exit 2;; esac; shift; done
-export DISATLAS_DATA_MODE=$MODE
+export DISATLAS_DATA_MODE=warm   # figures, tables, notebooks: frozen record
 if [ $MODE = cold ]; then STAGES="verify channels graph retrain score figures si tests notebooks"
 else STAGES="verify graph figures si tests notebooks"; fi
 for s in $FROM $ONLY; do case " $STAGES " in *" $s "*) ;; *) echo "unknown $MODE stage '$s' ($STAGES)"; exit 2;; esac; done
@@ -53,10 +53,10 @@ stage_graph(){
 
 stage_retrain(){  # one process per seed, in parallel
   M=$B/model/disatlas_v3.2_ensemble; mkdir -p $M; T=$(( $(nproc) / 5 )); [ $T -ge 1 ] || T=1
-  for s in $SEEDS; do OMP_NUM_THREADS=$T $PY -m disatlas.retrain --out $M --seeds $s > $M/retrain_s$s.log 2>&1 & done
-  wait; cat $M/retrain_s*.log; }
+  for s in $SEEDS; do OMP_NUM_THREADS=$T DISATLAS_DATA_MODE=cold $PY -m disatlas.retrain --out $M --seeds $s > $M/retrain_s$s.log 2>&1 & done
+  wait; cat $M/retrain_s*.log; DISATLAS_DATA_MODE=cold $PY -m disatlas.retrain --out $M --config-only; }
 
-stage_score(){ $PY -m disatlas.rescore --out $B/scores --all-pairs; }
+stage_score(){ DISATLAS_DATA_MODE=cold $PY -m disatlas.rescore --out $B/scores --all-pairs; }
 
 stage_figures(){ for f in figures/main/fig*.py tables/main/*.py; do echo "-- $f"; $PY "$f"; done; }
 stage_si(){ for f in figures/SI/si_*.py tables/SI/table_*.py; do echo "-- $f"; $PY "$f"; done; }
@@ -64,8 +64,8 @@ stage_si(){ for f in figures/SI/si_*.py tables/SI/table_*.py; do echo "-- $f"; $
 stage_tests(){
   if [ $MODE = warm ]; then $PY -m pytest -q tests; return; fi
   [ -d data/zenodo/model ] || { echo "data/zenodo absent: no frozen record to compare with"; return 0; }
-  DISATLAS_DATA_MODE=warm $PY -m pytest -q tests      # manuscript numbers from the frozen record (exact)
-  $PY -m pytest -q tests/test_cold_exact.py tests/test_cold_tolerance.py; }  # build/ vs frozen record
+  DISATLAS_DATA_MODE=cold $PY -m pytest -q tests/test_cold_exact.py tests/test_cold_tolerance.py  # build/ vs record
+  $PY -m pytest -q tests; }                            # manuscript numbers from the frozen record (exact)
 
 stage_notebooks(){ for nb in notebooks/*.ipynb; do echo "-- $nb"; $PY scripts/run_notebook.py "$nb"; done; }
 

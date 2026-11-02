@@ -12,10 +12,11 @@ from disatlas import paths
 
 pytestmark = pytest.mark.skipif(paths.MODE != "cold", reason="cold mode only (DISATLAS_DATA_MODE=cold)")
 SC = paths.BUILD / "scores"
-TOL_AUROC = {"ixidn_matched": 0.03, "ixidn_matched|test": 0.04, "ixidn_matched|rare-rare": 0.05,
-             "ixidn_matched|rare-common": 0.05, "ixidn_pm": 0.03, "fda_dev": 0.08}
-MIN_RHO_MATCHED = 0.6   # Spearman, ensemble scores of the 4,364 IxIDN-Matched pairs
-MIN_RHO_ALL = 0.6       # Spearman, ensemble scores of 10^6 fixed random disease pairs
+# observed |cold - frozen| for the 5-seed ensemble: 0.015, 0.022, 0.003, 0.014, 0.014, 0.007 (same order)
+TOL_AUROC = {"ixidn_matched": 0.03, "ixidn_matched|test": 0.04, "ixidn_matched|rare-rare": 0.03,
+             "ixidn_matched|rare-common": 0.03, "ixidn_pm": 0.03, "fda_dev": 0.03}
+MIN_RHO_MATCHED = 0.90  # Spearman, ensemble scores of the 4,364 IxIDN-Matched pairs (observed 0.946)
+MIN_RHO_ALL = 0.65      # Spearman, ensemble scores of 10^6 fixed random disease pairs (observed 0.726)
 
 
 @pytest.fixture(scope="module")

@@ -2,7 +2,7 @@
 
 The small tables live in this repository under `data/raw` and `data/derived`. The training graph, the
 frozen model and the large score files are in the Zenodo record and unpack into `data/zenodo`, which is
-not tracked by git. `data/zenodo/INDEX.tsv` lists every Zenodo file, and `data/ZENODO_SHA256SUMS.txt`
+not tracked by git. A warm run (default) reads them; a cold run rebuilds them into `build/` (`README.md`). `data/zenodo/INDEX.tsv` lists every Zenodo file, and `data/ZENODO_SHA256SUMS.txt`
 gives their checksums (`cd data/zenodo && sha256sum -c ../ZENODO_SHA256SUMS.txt`).
 
 ## Folder map
@@ -22,7 +22,7 @@ data/
       disease_labels.tsv
   derived/
     event_time/     event-time (prospective) evaluation result tables, precomputed
-  zenodo/           (download) graph/, model/, scores/
+  zenodo/           (download) graph/, model/, scores/  (warm run; a cold run rebuilds these into build/)
 ```
 
 ## Licence and blinding
@@ -107,10 +107,14 @@ returns the ensemble probability and `top_partners(d, k)` the highest-scoring pa
 | ixidn_matched_disatlas_full_scores.tsv | pair_id, p_s4707..p_s4711, p_ensemble (benchmark diseases in training, benchmark pairs removed) |
 | ixidn_matched_disatlas_nodedisjoint_scores.tsv | same, benchmark diseases held out of training (five folds) |
 
-## Retraining (optional)
+## Retraining (cold run)
 
-`python -m disatlas.retrain --out runs/retrain` re-runs the published recipe (node2vec dim 32, walk length
-20, window 2, p = 1, q = 0.5, seeds 4707-4711, Hadamard MLP decoder) on the shipped training graph. It is
-not needed to reproduce any result. Its random streams differ from the frozen run, so the retrained
-scores match the shipped ones statistically, not exactly. Smoke test:
+`./run_pipeline.sh --cold` rebuilds the training graph from `data/raw/channels`, retrains the 5-seed
+ensemble with the published recipe (node2vec dim 32, walk length 20, window 2, p = 1, q = 0.5, seeds
+4707-4711, Hadamard MLP decoder) and re-scores the benchmarks, all into `build/` (see `README.md`, "Cold
+run"). It is not needed to reproduce any result: the frozen model in `data/zenodo/model` is the model of
+record. Retraining uses different random streams from the frozen run, so the graph is reproduced exactly
+but the scores only statistically (`tests/test_cold_tolerance.py`). Single steps:
+`python -m disatlas.retrain --out build/model/disatlas_v3.2_ensemble` and
+`python -m disatlas.rescore --out build/scores --all-pairs` (with `DISATLAS_DATA_MODE=cold`). Smoke test:
 `python -m disatlas.retrain --out runs/smoke --seeds 4707 --max-nodes 600 --epochs 1 --num-walks 2`.
