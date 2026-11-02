@@ -7,7 +7,8 @@ Summarises the per-baseline results into the ranges quoted in the table:
   - the least-concordant subsets where ORDO and HPO distances disagree most;
   - the outside-Orphanet control (at least one disease without an ORDO mapping).
 
-Inputs: data/derived/ontology_baseline/ontology_{baselines,correlations,discordant,orphanet}.csv
+Inputs: data/derived/ontology_baseline/ontology_{baselines,correlations,discordant,orphanet}.csv,
+        data/derived/ixidn_robustness/ixidn4364_{per_pair_scores.tsv.gz,ontology_distance.tsv}
 Output: table_ontology_baseline.md and table_ontology_baseline_values.json next to this script
 """
 import json
@@ -50,8 +51,15 @@ v["discordant_ordo"] = rng(disc[disc.ontology == "neg_ordo_dist"].ontology_auroc
 v["discordant_hpo"] = rng(disc.hpo_auroc)
 out = O.loc["at least one disease outside ORDO"]; out_t = O.loc["outside ORDO, held-out test-test"]
 v["outside_orphanet_pct"] = round(100 * out.n / O.loc["all pairs"].n)
-v["outside_orphanet_model"] = r3(out.model)
-v["outside_orphanet_model_test"] = r3(out_t.model)
+# Point AUROCs for the outside-Orphanet control are recomputed from the per-pair scores: the csv stores them at 4 dp,
+# and rounding 0.9095 again would print 0.910 where the full-precision value 0.90949 gives 0.909.
+from sklearn.metrics import roc_auc_score
+_P = pd.read_csv(HERE.parents[1] / "data/derived/ixidn_robustness/ixidn4364_per_pair_scores.tsv.gz", sep="\t").merge(
+    pd.read_csv(HERE.parents[1] / "data/derived/ixidn_robustness/ixidn4364_ontology_distance.tsv", sep="\t"), on="blind_id")
+_out = ~(_P.ordo_dist >= 0); _tt = (_P.split_a == "test") & (_P.split_b == "test")
+assert (int(_out.sum()), int((_out & _tt).sum())) == (out.n, out_t.n)
+v["outside_orphanet_model"] = r3(roc_auc_score(_P.y[_out], _P.p[_out]))
+v["outside_orphanet_model_test"] = r3(roc_auc_score(_P.y[_out & _tt], _P.p[_out & _tt]))
 oh = C[(C.x == "neg_ordo_dist") & C.y.isin(["mechdist_hpo", "hpo_simgic"]) & (C.subset == "pooled")].spearman_rho
 v["spearman_ordo_hpo"] = rng(oh)
 assert float(v["hpo_all_pairs_range"].split("-")[0]) >= 0.535 and float(v["hpo_all_pairs_range"].split("-")[1]) < 0.545

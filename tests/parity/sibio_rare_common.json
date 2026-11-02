@@ -60,7 +60,7 @@
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|common-common.n",
-     "ms": "1 rare–common pairs ([Supplementary Figure ]c; [Figure ]c).]  [The 671 common–common pairs give 0.809 (0.644–0",
+     "ms": "1 rare–common pairs ([Supplementary Figure ]c; [Figure ]c).]  [The 671 common–common pairs give 0.809 (0.624–0",
      "expected": 671
     },
     {
@@ -968,6 +968,103 @@
      "ms": "xed connective tissue disease (; mean p = 0.032, seed range 0.016–0.059) does not.] [Classical dermatomyositis",
      "expected": 0.059,
      "tol": 0.0005
+    }
+   ]
+  },
+  {
+   "label": "SI_rare_common_txgnn_recovery",
+   "script": "figures/SI/si_cluster_rarecommon_numbers.py",
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "recovery.rare anchor, common candidates.TxGNN",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.725,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery.common anchor, rare candidates.TxGNN",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.716,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery.rare anchor, common candidates.d_TxGNN.0",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.173,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery.rare anchor, common candidates.d_TxGNN.1",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.044,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery.rare anchor, common candidates.d_TxGNN.2",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.304,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery.common anchor, rare candidates.d_TxGNN.0",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.218,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery.common anchor, rare candidates.d_TxGNN.1",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.096,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery.common anchor, rare candidates.d_TxGNN.2",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.359,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery_txgnn_mapped.rare anchor, common candidates.d_TxGNN.0",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.147,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery_txgnn_mapped.rare anchor, common candidates.d_TxGNN.1",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.024,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery_txgnn_mapped.rare anchor, common candidates.d_TxGNN.2",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.268,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery_txgnn_mapped.common anchor, rare candidates.d_TxGNN.0",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.199,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery_txgnn_mapped.common anchor, rare candidates.d_TxGNN.1",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.079,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery_txgnn_mapped.common anchor, rare candidates.d_TxGNN.2",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.327,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery_txgnn_mapped.rare anchor, common candidates.n",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 65
     }
    ]
   }

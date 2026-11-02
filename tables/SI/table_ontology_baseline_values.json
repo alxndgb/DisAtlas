@@ -15,6 +15,6 @@
  "discordant_hpo": "0.67-0.73",
  "outside_orphanet_pct": 63,
  "outside_orphanet_model": "0.876",
- "outside_orphanet_model_test": "0.910",
+ "outside_orphanet_model_test": "0.909",
  "spearman_ordo_hpo": "0.51-0.62"
 }
