@@ -11,6 +11,8 @@ Small precomputed tables that cannot be regenerated inside this repository (upst
 - `headline_test_auroc.tsv`: main-text headline test-split AUROC and disease-cluster bootstrap interval, as quoted in the SI. Read by: si_cluster_rarecommon_numbers.py.
 - `ixidn_negative_pool_funnel.tsv`: IxIDN benchmark construction: within-stratum pairs, post-veto negative pool and selected negatives per stratum (model independent). Read by: si_cluster_rarecommon_numbers.py.
 - `partner_percentile_per_pair.tsv`: per-pair partner percentiles for the 68 test rare-common pairs (input to the two-way disease bootstrap). Read by: si_cluster_rarecommon_numbers.py.
+- `partner_percentile_per_pair_txgnn.tsv`: TxGNN partner percentile for the same 68 pairs and two directions (published checkpoint, scored as in the IxIDN-Matched comparison; pairs it cannot map ranked last; TxGNN_pair_mapped flags the 65 mapped pairs). Written by scripts/maintainer/txgnn_partner_percentile.py. Read by: si_cluster_rarecommon_numbers.py.
+- `partner_universe.tsv`: candidate universe of the partner percentiles (disease_id in score-matrix order, disease_class). Written by scripts/maintainer/stage_partner_universe.py. Read by: scripts/maintainer/txgnn_partner_percentile.py.
 - `per_disease_first_other_class.tsv.gz`: rank of the first other-class neighbour per disease. Read by: si_rare_common_neighbour_coverage.py.
 - `r4mc3.tsv`: stratified method comparison table. Read by: si_rare_common_transfer.py.
 - `rare_anchor_rank_common_partners.tsv`: documented-partner ranks by anchor and partner class. Read by: si_rare_common_transfer.py.

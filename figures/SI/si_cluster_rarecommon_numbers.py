@@ -157,24 +157,37 @@ N["median_first_common_rank_for_rare"] = RM["median_first_common_rank_for_rare"]
 _obs = CV[(CV.k == 10) & (CV.model == "observed") & (CV.anchor_class == "rare")]["mean"].iloc[0]
 N["coverage_k10_rare_none_pct"] = round(100 * (1 - _obs))   # rare diseases with no common disease among 10 nearest
 # documented-partner recovery (68 test rare-common pairs): two-way disease-cluster bootstrap, B = 2000, seed 0;
-# each draw resamples diseases with replacement and weights a pair by w[anchor] * w[partner]
+# each draw resamples diseases with replacement and weights a pair by w[anchor] * w[partner]. The draws do not depend
+# on the method columns, so adding TxGNN leaves the other methods' values unchanged. TxGNN column: published checkpoint
+# scored as in the IxIDN-Matched comparison, pairs it cannot map ranked last (partner_percentile_per_pair_txgnn.tsv).
 PP = pd.read_csv(derived("si_rare_common") / "partner_percentile_per_pair.tsv", sep="\t")
-meth = ["DisAtlas", "cosine", "common_neighbours", "adamic_adar", "partner_degree"]
-rec = {}
-for dirn, gq in PP.groupby("direction", sort=False):
-    rng = np.random.default_rng(0)
-    dis = np.unique(np.r_[gq.anchor.values, gq.partner.values]); pos_ = {d: i for i, d in enumerate(dis)}
-    a = gq.anchor.map(pos_).values; b = gq.partner.map(pos_).values; X = gq[meth].values
-    est = {m: float(gq[m].mean()) for m in meth}; BS = []
-    for _ in range(2000):
-        w = rng.multinomial(len(dis), np.ones(len(dis)) / len(dis)).astype(float); ww = w[a] * w[b]
-        BS.append((ww[:, None] * X).sum(0) / ww.sum())
-    BS = np.array(BS); bs = {m: BS[:, k] for k, m in enumerate(meth)}
-    out = {m: r3(est[m]) for m in meth}
-    for m in meth[1:]:
-        d = np.array(bs["DisAtlas"]) - np.array(bs[m]); out[f"d_{m}"] = [r3(est["DisAtlas"] - est[m]), r3(np.percentile(d, 2.5)), r3(np.percentile(d, 97.5))]
-    out["n"] = len(gq); rec[dirn] = out
-N["recovery"] = rec
+TX = pd.read_csv(derived("si_rare_common") / "partner_percentile_per_pair_txgnn.tsv", sep="\t")
+PP = PP.merge(TX, on=["direction", "anchor", "partner"], how="left", validate="1:1")
+assert PP.TxGNN.notna().all()
+meth = ["DisAtlas", "cosine", "common_neighbours", "adamic_adar", "partner_degree", "TxGNN"]
+
+
+def recovery(PP):
+    rec = {}
+    for dirn, gq in PP.groupby("direction", sort=False):
+        rng = np.random.default_rng(0)
+        dis = np.unique(np.r_[gq.anchor.values, gq.partner.values]); pos_ = {d: i for i, d in enumerate(dis)}
+        a = gq.anchor.map(pos_).values; b = gq.partner.map(pos_).values; X = gq[meth].values
+        est = {m: float(gq[m].mean()) for m in meth}; BS = []
+        for _ in range(2000):
+            w = rng.multinomial(len(dis), np.ones(len(dis)) / len(dis)).astype(float); ww = w[a] * w[b]
+            BS.append((ww[:, None] * X).sum(0) / ww.sum())
+        BS = np.array(BS); bs = {m: BS[:, k] for k, m in enumerate(meth)}
+        out = {m: r3(est[m]) for m in meth}
+        for m in meth[1:]:
+            d = np.array(bs["DisAtlas"]) - np.array(bs[m]); out[f"d_{m}"] = [r3(est["DisAtlas"] - est[m]), r3(np.percentile(d, 2.5)), r3(np.percentile(d, 97.5))]
+        out["n"] = len(gq); out["n_diseases"] = len(dis); rec[dirn] = out
+    return rec
+
+
+N["recovery"] = recovery(PP)
+# sensitivity: only the pairs whose two diseases TxGNN can map (a different pair set, so the draws are redone on it)
+N["recovery_txgnn_mapped"] = recovery(PP[PP.TxGNN_pair_mapped])
 # IxIDN negative-pool funnel (benchmark construction; data/derived/si_rare_common/README.md)
 FN = pd.read_csv(derived("si_rare_common") / "ixidn_negative_pool_funnel.tsv", sep="\t").set_index("stratum")
 N["eligible_share_pct"] = {k: round(100 * r.negative_pool / r.all_pairs, 1) for k, r in FN.iterrows()}
