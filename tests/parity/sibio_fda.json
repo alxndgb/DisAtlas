@@ -164,10 +164,11 @@
       "540",
       "7",
       "41",
+      "4",
       "238",
       "84"
      ],
-     "ms": "**Pairs.** Of 540 development pairs, 7 have no trial date, 41 have a first trial before the earliest dated graph, 238 have an anchor or target that is not yet a"
+     "ms": "**Pairs.** Of 540 development pairs, 7 have no trial date, 41 have a first trial before the earliest dated graph, 4 have an anchor and a target that map to the "
     },
     {
      "file": "figures/SI/SI_fda_prioritisation_text.md",

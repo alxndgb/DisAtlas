@@ -380,6 +380,13 @@ def test_decoder_vs_embedding():
     assert (R(t["neg_emb_dist"]["d"], 3), R(t["neg_emb_dist"]["dlo"], 3), R(t["neg_emb_dist"]["dhi"], 3)) == (0.001, -0.003, 0.006)
 
 
+
+def test_decoder_vs_embedding_simgic_reference():
+    """'For reference, MONDO SimGIC similarity reaches 0.542 on all pairs and 0.588 on the test split' (SI ablations)."""
+    b = pd.read_csv(DV / "ontology_baseline/ontology_baselines.csv").set_index(["scope", "column"])
+    assert (R(b.loc[("all", "mondo_simgic"), "auroc_scorable"], 3), R(b.loc[("test-test", "mondo_simgic"), "auroc_scorable"], 3)) == (0.542, 0.588)
+
+
 # --------------------------------------------------------------- Methods / SI numbers added in the revision
 def test_methods_si_revision_numbers():
     """Shortcut audit (leave-pair-out 0.869, oncology 0.690, 13.2% vs 52.3%), node-disjoint unscored pairs
