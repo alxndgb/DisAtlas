@@ -3,7 +3,7 @@
 Input: one row per candidate pair (GO or HPO distance <= 0.2) with dist_GO, dist_HPO, px_HPA, px_DOM
 (NaN = channel absent). The gene-based distances ship in data/zenodo/channels_raw/broad/pair_gene_distances.parquet;
 dist_HPO ships in pair_hpo_distances.parquet (warm) or is recomputed from disease_phenotype + hp.obo (--cold).
-Output: broad_edges.parquet (u, v) on the largest connected component.
+Output: broad_edges.parquet (u, v) on the largest connected component and broad_nodes.parquet (disease_id, sorted).
 
 usage: python -m disatlas.channels.broad --out DIR [--cold]
 """
@@ -188,13 +188,14 @@ def build(cold=False, raw=RAW, zen=ZEN):
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Rebuild the broad channel (broad_edges.parquet).")
+    ap = argparse.ArgumentParser(description="Rebuild the broad channel (broad_edges.parquet, broad_nodes.parquet).")
     ap.add_argument("--out", required=True)
     ap.add_argument("--cold", action="store_true", help="recompute dist_HPO from disease_phenotype + hp.obo")
     a = ap.parse_args()
     e, q = build(a.cold)
     os.makedirs(a.out, exist_ok=True)
     e.to_parquet(os.path.join(a.out, "broad_edges.parquet"), index=False)
+    pd.DataFrame({"disease_id": sorted(set(e.u) | set(e.v))}).to_parquet(os.path.join(a.out, "broad_nodes.parquet"), index=False)
     print({"nodes": len(set(e.u) | set(e.v)), "edges": len(e), "quotas": q})
 
 
