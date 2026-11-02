@@ -9,7 +9,7 @@ Steps (Methods, "MechDist network"):
      balancing factor f (classes with less walk mass than the complement class raised by at most 10x).
   4. training graph = union minus every edge joining a full IxIDN+ or IxIDN- pair.
 
-usage: python -m disatlas.graph.build [--data data] [--out data/zenodo/graph] [--check]
+usage: python -m disatlas.graph.build [--data data] [--channels data/raw/channels] [--out data/zenodo/graph] [--check]
 """
 from __future__ import annotations
 
@@ -135,8 +135,8 @@ def edgeset_sha256(u, v) -> str:
                           .encode()).hexdigest()
 
 
-def build(data: str = "data"):
-    ch = os.path.join(data, "raw", "channels")
+def build(data: str = "data", channels: str | None = None):
+    ch = channels or os.path.join(data, "raw", "channels")
     bm = os.path.join(data, "raw", "benchmarks")
     broad = pd.read_parquet(os.path.join(ch, "broad", "broad_edges.parquet"))
     bnodes = set(pd.read_parquet(os.path.join(ch, "broad", "broad_nodes.parquet")).disease_id)
@@ -173,10 +173,11 @@ def check_against(arm: pd.DataFrame, tr: pd.DataFrame, graph_dir: str):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--data", default="data")
+    ap.add_argument("--channels", default=None, help="channel folder with broad/ and specific/ (default data/raw/channels)")
     ap.add_argument("--out", default=None, help="write training_graph_edges.parquet etc. here")
     ap.add_argument("--check", action="store_true", help="compare with data/zenodo/graph/training_graph_edges.parquet")
     a = ap.parse_args()
-    arm, tr, F, stats = build(a.data)
+    arm, tr, F, stats = build(a.data, a.channels)
     cols = ["u", "v", "in_broad", "in_spec", "w_spec", "f", "w_arm"]
     if a.out:
         os.makedirs(a.out, exist_ok=True)

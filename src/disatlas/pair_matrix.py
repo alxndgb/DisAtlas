@@ -14,9 +14,14 @@ import numpy as np
 
 
 def seed_matrix(seed: int, out: str, model_dir=None, block: int = 512):
-    import torch
     from disatlas.model import DEFAULT_DIR, load_ensemble
-    m = load_ensemble(model_dir or DEFAULT_DIR)
+    P = seed_P(load_ensemble(model_dir or DEFAULT_DIR), seed, block)
+    os.makedirs(out, exist_ok=True)
+    np.save(os.path.join(out, f"P_s{seed}.npy"), P)
+
+
+def seed_P(m, seed: int, block: int = 512):
+    import torch
     ids = m.ids
     X = m.emb[seed][[m.idx[seed][i] for i in ids]]
     n = len(ids)
@@ -28,8 +33,7 @@ def seed_matrix(seed: int, out: str, model_dir=None, block: int = 512):
         for i in range(0, n, block):
             F = (Xt[i:i + block, None, :] * Xt[None, :, :]).reshape(-1, X.shape[1])
             P[i:i + block] = torch.sigmoid(net(F)).reshape(-1, n).numpy()
-    os.makedirs(out, exist_ok=True)
-    np.save(os.path.join(out, f"P_s{seed}.npy"), P)
+    return P
 
 
 def combine(tmp: str, out: str, seeds=(4707, 4708, 4709, 4710, 4711)):
