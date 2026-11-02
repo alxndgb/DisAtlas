@@ -4,7 +4,7 @@ Post hoc robustness check on the 2008 and 2016 slices (decision years 2009 and 2
 Inputs: data/zenodo/si_bio/go_release_event_percentiles.tsv.gz (event-level matched percentiles of the original models,
 weighted Adamic-Adar, and the current-release and dated-release GO models) and data/derived/si_go_release/ (annotation
 counts, common-node census, eculizumab case summary). Drug-cluster bootstrap, B = 2000, numpy default_rng(4707), the same
-draws for every arm so differences are paired. Positive = DisAtlas better (E1 = weighted AA - DisAtlas median percentile;
+draws for every arm so differences are paired; drugs (opaque compound_id) are resampled in drug_order. Positive = DisAtlas better (E1 = weighted AA - DisAtlas median percentile;
 E2 = (DisAtlas - weighted AA) share of drugs with the best new trial in the top 10%, x 100).
 """
 from pathlib import Path as _Path
@@ -37,7 +37,8 @@ for pool in ("all", "test"):
     X = {a: g.set_index(["y", "compound_id", "event_v3"]).sort_index() for a, g in EV[EV.pool == pool].groupby("arm")}
     k0 = X["orig"].index
     assert all(X[a].index.equals(k0) for a in X), "event sets differ"
-    drugs = np.array(sorted(k0.get_level_values("compound_id").unique())); nd = len(drugs)
+    order = EV.drop_duplicates("compound_id").set_index("compound_id").drug_order  # drug order of the stored bootstrap
+    drugs = order.loc[k0.get_level_values("compound_id").unique()].sort_values().index.to_numpy(); nd = len(drugs)
     rng = np.random.default_rng(SEED); W = np.ones((B + 1, nd)); W[1:] = [np.bincount(rng.integers(0, nd, nd), minlength=nd) for _ in range(B)]
     for scope in ["pooled"] + list(YEARS):
         est = {}

@@ -1,7 +1,7 @@
 """Stable blinding of licence-restricted identifiers.
 
 DisAtlas ships Open Targets evidence with real target identifiers. Evidence from
-licence-restricted sources (METABASE, CTD and internal NLP / literature /
+licence-restricted sources (METABASE, CTD and NLP-mined literature, pathology-text and
 knowledge-graph derived channels) ships with blinded target identifiers: a
 stable salted-hash token ``T_<12 hex>``. The same raw identifier always maps to
 the same token in every file, so shared-target structure (and therefore the
