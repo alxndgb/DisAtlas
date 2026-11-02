@@ -413,9 +413,15 @@
   "recovery": {
     "common anchor, rare candidates": {
       "DisAtlas": 0.934,
+      "TxGNN": 0.716,
       "adamic_adar": 0.948,
       "common_neighbours": 0.945,
       "cosine": 0.934,
+      "d_TxGNN": [
+        0.218,
+        0.096,
+        0.359
+      ],
       "d_adamic_adar": [
         -0.013,
         -0.08,
@@ -437,13 +443,20 @@
         0.2
       ],
       "n": 68,
+      "n_diseases": 83,
       "partner_degree": 0.826
     },
     "rare anchor, common candidates": {
       "DisAtlas": 0.897,
+      "TxGNN": 0.725,
       "adamic_adar": 0.916,
       "common_neighbours": 0.914,
       "cosine": 0.896,
+      "d_TxGNN": [
+        0.173,
+        0.044,
+        0.304
+      ],
       "d_adamic_adar": [
         -0.019,
         -0.056,
@@ -465,7 +478,80 @@
         0.166
       ],
       "n": 68,
+      "n_diseases": 83,
       "partner_degree": 0.814
+    }
+  },
+  "recovery_txgnn_mapped": {
+    "common anchor, rare candidates": {
+      "DisAtlas": 0.932,
+      "TxGNN": 0.733,
+      "adamic_adar": 0.946,
+      "common_neighbours": 0.943,
+      "cosine": 0.931,
+      "d_TxGNN": [
+        0.199,
+        0.079,
+        0.327
+      ],
+      "d_adamic_adar": [
+        -0.014,
+        -0.078,
+        0.04
+      ],
+      "d_common_neighbours": [
+        -0.011,
+        -0.078,
+        0.044
+      ],
+      "d_cosine": [
+        0.0,
+        -0.006,
+        0.011
+      ],
+      "d_partner_degree": [
+        0.104,
+        0.003,
+        0.188
+      ],
+      "n": 65,
+      "n_diseases": 81,
+      "partner_degree": 0.827
+    },
+    "rare anchor, common candidates": {
+      "DisAtlas": 0.893,
+      "TxGNN": 0.746,
+      "adamic_adar": 0.913,
+      "common_neighbours": 0.911,
+      "cosine": 0.892,
+      "d_TxGNN": [
+        0.147,
+        0.024,
+        0.268
+      ],
+      "d_adamic_adar": [
+        -0.02,
+        -0.057,
+        0.018
+      ],
+      "d_common_neighbours": [
+        -0.018,
+        -0.056,
+        0.023
+      ],
+      "d_cosine": [
+        0.001,
+        -0.004,
+        0.009
+      ],
+      "d_partner_degree": [
+        0.077,
+        -0.002,
+        0.156
+      ],
+      "n": 65,
+      "n_diseases": 81,
+      "partner_degree": 0.816
     }
   },
   "sil_cosine": 0.24,
@@ -603,11 +689,11 @@
       "added": 0,
       "auroc": 0.832,
       "ci": [
-        0.794,
-        0.864
+        0.793,
+        0.865
       ],
       "d_ci": [
-        0.163,
+        0.162,
         0.247
       ],
       "d_stack": 0.205,
@@ -619,12 +705,12 @@
       "added": 0,
       "auroc": 0.809,
       "ci": [
-        0.644,
-        0.938
+        0.624,
+        0.949
       ],
       "d_ci": [
-        -0.165,
-        0.258
+        -0.172,
+        0.275
       ],
       "d_stack": 0.033,
       "n": 671,
@@ -635,12 +721,12 @@
       "added": 0,
       "auroc": 0.889,
       "ci": [
-        0.829,
-        0.938
+        0.825,
+        0.935
       ],
       "d_ci": [
-        0.147,
-        0.336
+        0.143,
+        0.34
       ],
       "d_stack": 0.241,
       "n": 1241,
@@ -651,12 +737,12 @@
       "added": 0,
       "auroc": 0.754,
       "ci": [
-        0.704,
-        0.801
+        0.703,
+        0.8
       ],
       "d_ci": [
-        0.095,
-        0.213
+        0.094,
+        0.214
       ],
       "d_stack": 0.155,
       "n": 2452,

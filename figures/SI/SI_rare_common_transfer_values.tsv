@@ -7,3 +7,7 @@ b	Rare anchor, common partners	0.781	0.646	0.9	0.516	0.627	31	120	per-anchor tab
 b	Common anchor, rare partners	0.878	0.831	0.917	0.557	0.627	104	934	per-anchor table, anchor bootstrap B=2000 seed 4707 (on-disk B=1000 CI 0.831-0.917)
 b	Rare anchor, rare partners	0.738	0.711	0.764	0.587	0.676	452	2251	per-anchor table, anchor bootstrap B=2000 seed 4707 (on-disk B=1000 CI 0.710-0.763)
 b	Common anchor, common partners	0.799	0.682	0.902	0.533	0.489	22	213	per-anchor table, anchor bootstrap B=2000 seed 4707 (on-disk B=1000 CI 0.679-0.902)
+c	Rare–rare	0.754	0.703	0.8	0.598	delta 0.155 (0.094 to 0.214)	1284	1168	ccplus strata (IxIDN-Matched, All pairs, B=2000)
+c	Rare–common	0.889	0.825	0.935	0.648	delta 0.241 (0.143 to 0.340)	253	988	ccplus strata (IxIDN-Matched, All pairs, B=2000)
+c	Common–common	0.809	0.624	0.949	0.777	delta 0.033 (-0.172 to 0.275)	645	26	ccplus strata (IxIDN-Matched, All pairs, B=2000)
+c	Common–common, added negatives	0.845	0.748	0.922	0.883	delta -0.037 (-0.167 to 0.058)	645	335	ccplus strata (IxIDN-Matched-CC+, All pairs, B=2000)

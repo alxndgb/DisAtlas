@@ -11,11 +11,14 @@ frozen previous-release inputs). Layout, panels, markers, colours and annotation
      partner of the stated class), from the per-anchor tables r4mc3_*_per_anchor_v3.2.0.tsv; 95% CI = anchor
      bootstrap recomputed here with B = 2000 (seed 4707; the on-disk SI_anchored_four_groups table used B = 1000).
      Groups with < 50 negative pairs are drawn hollow.
-  c  (only with --with-shortcuts) all IxIDN-Matched pairs by stratum plus the supplementary common-common benchmark
+  c  (omitted with --two-panel) all IxIDN-Matched pairs by stratum plus the supplementary common-common benchmark
      with added matched negatives: DisAtlas AUROC (95% CI, B = 2000) against the combined matched-shortcut stack;
-     the difference and its 95% CI are printed above each stratum (ixidn_ccplus_strata.tsv).
-Outputs: next to this script: SI_rare_common_transfer{,_3panel}.{png,pdf} and *_values.tsv
-    python si_rare_common_transfer.py [--with-shortcuts]
+     the difference and its 95% CI are printed above each stratum (ccplus_strata.tsv). The IxIDN-Matched all-pairs
+     intervals (DisAtlas and the paired difference) are on the Figure 5c disease-cluster draws (938 clusters);
+     test-split and common-common benchmark rows keep their per-stratum disease-cluster intervals.
+Outputs: next to this script: SI_rare_common_transfer.{png,pdf} (the three-panel Supplementary Figure) and
+    SI_rare_common_transfer_values.tsv; --two-panel writes panels a-b only as SI_rare_common_transfer_2panel.*
+    python si_rare_common_transfer.py [--two-panel]
 """
 from pathlib import Path as _Path
 import sys as _sys
@@ -33,8 +36,8 @@ from disatlas.disatlas_style import apply_style, panel_label, ANNOT_SIZE  # hous
 L = DERIVED / "si_rare_common"
 SRC = dict(ccplus=f"{L}/ccplus_strata.tsv", r4mc3=f"{L}/r4mc3.tsv", four=f"{L}/four.tsv", per_anchor=f"{L}/{{g}}.tsv")
 OUTDIR = str(HERE)
-WITH_C = "--with-shortcuts" in sys.argv
-NAME = "SI_rare_common_transfer_3panel" if WITH_C else "SI_rare_common_transfer"
+WITH_C = "--two-panel" not in sys.argv
+NAME = "SI_rare_common_transfer" if WITH_C else "SI_rare_common_transfer_2panel"
 
 C = pd.read_csv(SRC["ccplus"], sep="\t")
 T = pd.read_csv(SRC["r4mc3"], sep="\t")
