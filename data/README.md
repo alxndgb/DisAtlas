@@ -18,7 +18,7 @@ data/
       ixidn_matched/    IxIDN-Matched evaluation pairs (4,364) and the language-model curation verdicts
       fda_repurposing/  FDA-approved repurposing positive controls (holdout split withheld)
       ordo/             ontology distances for IxIDN-Matched pairs
-      comparators/      stored per-run outputs of the comparator systems on IxIDN-Matched
+      comparators/      blinded comparator input and stored per-run comparator outputs on IxIDN-Matched
       disease_labels.tsv
   derived/
     event_time/     event-time (prospective) evaluation result tables, precomputed
@@ -35,6 +35,20 @@ all graph computations are preserved exactly, but the token cannot be mapped bac
 salt. For these rows the source is given only at group level (`source_group`, `families_group`). No
 publication identifiers or evidence sentences are included. Disease identifiers are MONDO identifiers (EFO where no MONDO term exists).
 `disatlas.blinding.is_blinded(x)` tells you whether an identifier is a token.
+
+## LLM-derived inputs
+
+Four inputs come from language-model or agent runs made by the authors. The pipeline uses these stored
+outputs as they are and makes no language-model calls. No prompts or rerun code are shipped. Where a
+prompt is printed in the manuscript, users who want to can run it with their own LLM on the input file
+below and compare the result with the stored output.
+
+| table | what the model produced | prompt in the manuscript | input file | stored output (columns) |
+|---|---|---|---|---|
+| comparator scores | a pair score for each IxIDN-Matched pair, per run (Claude Sci, Claude Chat, Gemini Pro; Phylo Biomni agent seeds) | Methods, "Comparator systems" (sec:methods_comparators), Protocol 2 and Claude Sci; Phylo Biomni (Protocol 3) is described there without a prompt | `raw/benchmarks/comparators/ixidn_matched_blind_input.tsv` (blind_id, a, b, disease_a_name, disease_b_name; rows shuffled, no labels) | `raw/benchmarks/comparators/ixidn_matched_comparator_scores.tsv` (pair_id = blind_id, one column per `system\|run`); read via `derived/fig6_comparison/per_run_scores.tsv` |
+| IxIDN-Matched curation verdicts | STRONG / PLAUSIBLE / WEAK / SUSPECT / NOT_IN_GRAPH for each of the 4,302 candidate positives | not printed; described in Methods, "IxIDN-Matched benchmark" (sec:methods_ixidn_matched) and SI, "How IxIDN-Matched is built" (sec:SI_ixidn_matched_build) | none shipped (the shared-drug evidence comes from licence-restricted trial data) | `raw/benchmarks/ixidn_matched/llm_curation_verdicts.tsv` (disease_a, disease_b, verdict, rejudged, first_pass_verdict, keep); read via `derived/fig3_ixidn/matched_candidate_verdicts.tsv` (pair_id, verdict) |
+| disease labels | rare / common and cancer flags for diseases whose rule signals were missing or conflicting (literature-tool agent) | not printed; described in Methods, "Disease set" (sec:methods_disease_set) | none shipped (the agent used literature lookups) | `raw/benchmarks/disease_labels.tsv` (disease_id, is_rare, is_cancer, is_malignant, disease_class) and `derived/fig5_clustering/disease_map_k55.tsv.gz` (disease_class, is_rare) |
+| approved indications per label version | the diseases named in each version of a drug's public US label, used for first-label dates | not printed; SI, "Mechanism coverage of approved indication expansions" (sec:SI_mechanism_coverage) | none shipped (public DailyMed label versions) | `derived/si_mechanism_timelines/mechanism_timeline_approved_indications.tsv` (disease_id, first_label_date, first_label_setid, first_label_version and the milestone columns) |
 
 ## Column dictionaries
 
@@ -78,7 +92,8 @@ publication identifiers or evidence sentences are included. Disease identifiers 
 | fda_repurposing/fda_repurposing_controls.tsv | disease_a, disease_b, stratum (hard / easy), pair_class, split (dev / easy_unsplit / complement_six), fda_verified_pair, in_model; the 560 holdout pairs are sealed and not included |
 | ordo/ixidn_matched_ontology_distance.tsv | pair_id, ordo_dist (-1 = undefined), mondo_dist |
 | ordo/ordo_distance_summary.tsv | set, n, q1, median, q3, mean (random-pair reference distribution) |
-| comparators/ixidn_matched_comparator_scores.tsv | pair_id, then one column per `system|run` |
+| comparators/ixidn_matched_blind_input.tsv | blind_id (= pair_id), a, b, disease_a_name, disease_b_name: the blinded, row-shuffled file given to the comparator systems |
+| comparators/ixidn_matched_comparator_scores.tsv | pair_id, then one column per `system\|run` |
 | disease_labels.tsv | disease_id, is_rare, is_cancer, is_malignant, disease_class |
 
 ### derived/event_time

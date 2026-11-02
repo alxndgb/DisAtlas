@@ -3,13 +3,11 @@
 #   ./run_pipeline.sh              verify Zenodo bundle, rebuild graph check, figures, tables, parity tests, notebooks
 #   ./run_pipeline.sh --retrain    additionally retrain the 5-seed ensemble into retrain_out/ (slow; scores match
 #                                  the shipped model statistically, not bit for bit)
-#   ./run_pipeline.sh --use-own-llm-key   see README: reruns the stored LLM prompts with your own key (not needed
-#                                  for parity; stored outputs in data/raw/benchmarks are used by default)
 set -euo pipefail
 cd "$(dirname "$0")"
 PY=${PYTHON:-.venv/bin/python}
 export PYTHONPATH="$PWD/src${PYTHONPATH:+:$PYTHONPATH}" MPLBACKEND=Agg
-RETRAIN=0; for a in "$@"; do case $a in --retrain) RETRAIN=1;; --use-own-llm-key) echo "see README (LLM rerun)"; exit 0;; esac; done
+RETRAIN=0; for a in "$@"; do case $a in --retrain) RETRAIN=1;; esac; done
 stage(){ echo; echo "== $*"; }
 
 stage "1/6 Zenodo bundle checksums"
