@@ -32,9 +32,12 @@ def bma(gg):
     return 0.5 * (np.nanmin(gg[r], 1).mean() + np.nanmin(gg[:, c], 0).mean())
 
 
-def gene_terms(go, ns, idx, genes):
-    """{gene: sorted term rows}; terms annotated to > HUB_FRAC of the genes are masked unless a gene has no other."""
-    s = go[(go.namespace == ns) & go.go_id.isin(idx.keys())].drop_duplicates(["gene", "go_id"])
+def gene_terms(go, ns, idx, genes, remap=None):
+    """{gene: sorted term rows}; obsolete/alt ids remapped first; terms annotated to > HUB_FRAC of the genes
+    are masked unless a gene has no other."""
+    s = go[go.namespace == ns]
+    s = s.assign(go_id=s.go_id.map(lambda t: (remap or {}).get(t, t)))
+    s = s[s.go_id.isin(idx.keys())].drop_duplicates(["gene", "go_id"])
     frac = s[s.gene.isin(genes)].groupby("go_id").gene.size() / s[s.gene.isin(genes)].gene.nunique()
     hub = set(frac.index[frac > HUB_FRAC])
     out, only_hub = {}, {}
@@ -45,14 +48,14 @@ def gene_terms(go, ns, idx, genes):
     return {g: np.array(sorted(set(v)), dtype=np.int64) for g, v in out.items()}
 
 
-def go_distance(pairs, dg, go, mats):
-    """mats: {namespace: (term list, matrix, d_max)} -> dist_GO per pair."""
+def go_distance(pairs, dg, go, mats, remap=None):
+    """mats: {namespace: (term list, matrix, d_max)}; remap: obsolete/alt -> current GO id. -> dist_GO per pair."""
     genes = dg.groupby("disease_id").target.apply(lambda s: sorted(set(s))).to_dict()
     total = np.zeros(len(pairs))
     seen = np.zeros(len(pairs), dtype=bool)
     for ns, w in NS.items():
         terms, M, dmax = mats[ns]
-        rows = gene_terms(go, ns, {t: i for i, t in enumerate(terms)}, set(dg.target))
+        rows = gene_terms(go, ns, {t: i for i, t in enumerate(terms)}, set(dg.target), remap)
         cache = {}
         for k, (a, b) in enumerate(pairs):
             g1 = [g for g in genes[a] if g in rows]
@@ -118,10 +121,10 @@ def px_distance(pairs, dg, hpa, pfam):
     return out[:, 0], out[:, 1]
 
 
-def candidates(dg, dp, go, hpa, pfam, go_mats, hpo_mat):
+def candidates(dg, dp, go, hpa, pfam, go_mats, hpo_mat, go_remap=None):
     """Candidate frame: pair ('a__b', sorted), dist_HPO, dist_GO, px_HPA, px_DOM."""
     gp = pairs_sharing(dg, "target")
-    g = pd.DataFrame({"pair": [f"{a}__{b}" for a, b in gp], "dist_GO": go_distance(gp, dg, go, go_mats)})
+    g = pd.DataFrame({"pair": [f"{a}__{b}" for a, b in gp], "dist_GO": go_distance(gp, dg, go, go_mats, go_remap)})
     hp = pairs_sharing(dp, "hpo_id")
     h = pd.DataFrame({"pair": [f"{a}__{b}" for a, b in hp], "dist_HPO": hpo_distance(hp, dp, *hpo_mat)})
     g, h = g[g.dist_GO <= CUT], h[h.dist_HPO <= CUT]
@@ -130,4 +133,3 @@ def candidates(dg, dp, go, hpa, pfam, go_mats, hpo_mat):
     ab = m.pair.str.split("__", n=1, expand=True)
     m["px_HPA"], m["px_DOM"] = px_distance(list(zip(ab[0], ab[1])), dg, hpa, pfam)
     return m
-

@@ -1,8 +1,11 @@
 """Broad channel: fuse four disease-disease distances and select the broad edges.
 
-Input: one row per candidate pair (GO or HPO distance <= 0.2) with columns
-pair ('a__b'), dist_GO, dist_HPO, px_HPA, px_DOM (NaN = channel absent).
+Input: one row per candidate pair (GO or HPO distance <= 0.2) with dist_GO, dist_HPO, px_HPA, px_DOM
+(NaN = channel absent). The gene-based distances ship in data/zenodo/channels_raw/broad/pair_gene_distances.parquet;
+dist_HPO ships in pair_hpo_distances.parquet (warm) or is recomputed from disease_phenotype + hp.obo (--cold).
 Output: broad_edges.parquet (u, v) on the largest connected component.
+
+usage: python -m disatlas.channels.broad --out DIR [--cold]
 """
 import argparse
 import os
@@ -147,18 +150,53 @@ def _repair(G, comps, band):
     return unbridged
 
 
+RAW = os.path.join("data", "raw")
+ZEN = os.path.join("data", "zenodo", "channels_raw", "broad")
+GENE_COLS = ["dist_GO", "px_HPA", "px_DOM"]
+CUT = 0.2
+
+
+def _with_pair(df):
+    return df.assign(pair=df.disease_a + "__" + df.disease_b).drop(columns=["disease_a", "disease_b"])
+
+
+def phenotype_distances(obo, dp):
+    """dist_HPO (<= CUT) for every pair of diseases sharing a phenotype term, from hp.obo + disease_phenotype."""
+    from disatlas.channels import broad_dist, ontology
+    (nodes, M), _ = ontology.hpo_matrix(obo)
+    pairs = broad_dist.pairs_sharing(dp, "hpo_id")
+    d = broad_dist.hpo_distance(pairs, dp, nodes, M, float(M.max()))
+    h = pd.DataFrame({"pair": [f"{a}__{b}" for a, b in pairs], "dist_HPO": d})
+    return h[h.dist_HPO <= CUT]
+
+
+def candidate_frame(cold=False, raw=RAW, zen=ZEN):
+    """Candidate pairs with the four distances; gene-based ones are shipped, dist_HPO shipped (warm) or recomputed (cold)."""
+    m = _with_pair(pd.read_parquet(os.path.join(zen, "pair_gene_distances.parquet")))
+    if cold:
+        dp = pd.read_parquet(os.path.join(raw, "channels", "broad", "disease_phenotype.parquet"), columns=["disease_id", "hpo_id"])
+        h = phenotype_distances(os.path.join(raw, "ontology", "hp.obo"), dp)
+    else:
+        h = _with_pair(pd.read_parquet(os.path.join(zen, "pair_hpo_distances.parquet")))
+    m = m.merge(h, on="pair", how="left", validate="1:1")  # keeps the shipped (sorted) pair order
+    return m[["pair", "dist_HPO", "dist_GO"] + PX]
+
+
+def build(cold=False, raw=RAW, zen=ZEN):
+    m, quotas = fuse(candidate_frame(cold, raw, zen))
+    return select(m, quotas), quotas
+
+
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--pairs", required=True)
+    ap = argparse.ArgumentParser(description="Rebuild the broad channel (broad_edges.parquet).")
     ap.add_argument("--out", required=True)
+    ap.add_argument("--cold", action="store_true", help="recompute dist_HPO from disease_phenotype + hp.obo")
     a = ap.parse_args()
-    m, q = fuse(pd.read_parquet(a.pairs, columns=["pair", "dist_GO", "dist_HPO"] + PX))
-    e = select(m, q)
+    e, q = build(a.cold)
     os.makedirs(a.out, exist_ok=True)
     e.to_parquet(os.path.join(a.out, "broad_edges.parquet"), index=False)
-    print(len(m), q, len(set(e.u) | set(e.v)), len(e))
+    print({"nodes": len(set(e.u) | set(e.v)), "edges": len(e), "quotas": q})
 
 
 if __name__ == "__main__":
     main()
-
