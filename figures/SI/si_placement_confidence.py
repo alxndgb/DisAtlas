@@ -1,10 +1,9 @@
 """SI figure: benchmark AUROC after excluding diseases by placement-confidence flag (#fig:SI_placement_confidence).
 All 20 rows of the exclusion table are drawn (4 benchmarks x 5 rules); none is selected.
-Input: disatlas/v3_revised_manuscript/si_figures/ixidn_si/v3.2.0/dq_exclusion_sensitivity.tsv
-       (revision/disease_data_quality_audit/code/s_exclusion_sensitivity.py; disease-cluster bootstrap CIs).
+Input: data/derived/placement_confidence/exclusion_sensitivity.tsv (20 rows; 95% CIs from a disease-cluster bootstrap).
 Panel a: change in AUROC after exclusion (kept minus full), 95% CI; grey bar = 95% range when the same number of
 diseases is removed at random (null columns of the table). Panel b: AUROC of the excluded pairs vs the kept pairs.
-Usage: si_placement_confidence.py <dq_exclusion_sensitivity.tsv> <outdir>
+Usage: python figures/SI/si_placement_confidence.py   (writes next to this script)
 """
 import sys, os, json
 import numpy as np, pandas as pd, matplotlib

@@ -1,15 +1,15 @@
 stage	class	pairs	file	sha256	note
-1_graph	IxIDN+	43112	stage1_ixidn_pos.tsv.gz	77599e7ea58c9d29d16900cca92bc2c26840f07443edb6886b98ee58152aaca0	all IxIDN+ edges of G_IxIDN_6786ec2d
-1_graph	IxIDN-	413856		6e6ba4bb3cffcda0dc64b1c75a49cea8291b126e69acf3ba350031925357e82d	candidate negatives of the pinned (unvetoed) G_IxIDN_neg_f8c776ac; the frozen model's strip used this one
-1_graph	IxIDN-	335557		13013ef85e7822d1ce4655c4df0ca9056fbeb59eac5d3d9d3957545548675245	candidate negatives with the co-investigation veto applied; VETOED for training-strip use
-2_universe_coverage	IxIDN+	27168		57645540fccfbc9a7f68ddb822771f5db4748e0ce82e49f2dc4cb80c75e5bd0e	both endpoints among the 985 universe diseases (degree>0 in that variant's G_train)
-2_universe_coverage	IxIDN-	191259		da284c548296a47e63a8b9aa0d3635c3bf95379d854c67d1bdaeed784d9ed850	same endpoint restriction applied to the pinned negatives
+1_graph	IxIDN+	43112	stage1_ixidn_pos.tsv.gz	77599e7ea58c9d29d16900cca92bc2c26840f07443edb6886b98ee58152aaca0	all IxIDN+ edges of G_IxIDN
+1_graph	IxIDN-	413856			candidate negatives of the pinned, unvetoed IxIDN- candidate graph; the frozen model's strip used this one
+1_graph	IxIDN-	335557			candidate negatives with the co-investigation veto applied; VETOED for training-strip use
+2_universe_coverage	IxIDN+	27168			both endpoints among the 985 universe diseases (degree>0 in that variant's G_train)
+2_universe_coverage	IxIDN-	191259			same endpoint restriction applied to the pinned negatives
 2_universe_coverage	diseases	985	stage2_universe_diseases.tsv.gz	63d0a02def2985abe1f455f0d83173bce06cbd1d04c7d06813416fa4edce317a	the 985 retained diseases with their md5-parity split
 3_pinned_universe	IxIDN+	27415	stage3_ixidn_pos.tsv.gz	d4afa31cab089d531928d6b8776b01a33e2694a07a68d668d9783cbcf9683210	frozen evaluation universe with its covariates (deg, organsys, ORDO area, name tf-idf, SimGIC, genecov)
 3_pinned_universe	IxIDN-	197054	stage3_ixidn_neg.tsv.gz	cb0ee6249fe2826a446784ed8f2a05d830f841c3e4b30d875a795ba9ab5381f2	frozen evaluation universe with its covariates (deg, organsys, ORDO area, name tf-idf, SimGIC, genecov)
-4_noncross_orig_all	IxIDN+	13721		5fb5f2814be1d02c2ac13578974dbd0536971b129365f9624958896043339112	orig_all_coinv: cross-split pairs dropped, co-investigation veto applied; split column is the md5-parity disease split
-4_noncross_orig_all	IxIDN-	80543		db3a981895476df3ccdce4d0d00364251226ef3b383b25c30174a6e2c6b20636	orig_all_coinv: cross-split pairs dropped, co-investigation veto applied; split column is the md5-parity disease split
-5_degree_matched_tune	IxIDN+	6997		18127fb55f2b72f824f5f806fa1e5c3b20d01daf514372f6a24ffcd1075d4b5d	1:1 degree-matched tune set used by the frozen model (dm==1)
-5_degree_matched_tune	IxIDN-	6997		b1b34a9ab506d466eb85845a7ba4285ffb37ddc23bac76da2d543b63673adf0b	1:1 degree-matched tune set used by the frozen model (dm==1)
-5_degree_matched_test	IxIDN+	6724		255315c7decd32cb5427fb8d6ae9d82bf39a59f3fc8c56d1bb84728213935d21	1:1 degree-matched test set used by the frozen model (dm==1)
-5_degree_matched_test	IxIDN-	6724		53ba87a374c66c9a8a58743689dfd550362f3c843b1b51e3c170127ea427893d	1:1 degree-matched test set used by the frozen model (dm==1)
+4_noncross_orig_all	IxIDN+	13721			orig_all_coinv: cross-split pairs dropped, co-investigation veto applied; split column is the md5-parity disease split
+4_noncross_orig_all	IxIDN-	80543			orig_all_coinv: cross-split pairs dropped, co-investigation veto applied; split column is the md5-parity disease split
+5_degree_matched_tune	IxIDN+	6997			1:1 degree-matched tune set used by the frozen model (dm==1)
+5_degree_matched_tune	IxIDN-	6997			1:1 degree-matched tune set used by the frozen model (dm==1)
+5_degree_matched_test	IxIDN+	6724			1:1 degree-matched test set used by the frozen model (dm==1)
+5_degree_matched_test	IxIDN-	6724			1:1 degree-matched test set used by the frozen model (dm==1)

@@ -4,7 +4,9 @@ tests/main_text_numbers.tsv lists each number token of the manuscript main text 
   computed     reproduced here from repo data (data/derived) or from the figure/table value tables written by
                figures/main/*.py and tables/main/*.py; asserted at the printed precision (op eq), as an upper
                bound (op le, "rank N or better") or within a stated tolerance (op approx, Monte-Carlo quantities)
-  data_track   network-construction and annotation counts, asserted by tests/test_data_parity.py
+  data_track   network-construction and annotation counts; the channel, graph and benchmark counts among them are
+               asserted by tests/test_broad_channel.py, tests/test_specific_channel.py and tests/test_data_model.py
+               (and, in COLD mode, tests/test_cold_exact.py)
   si_track     numbers quoted from Supplementary analyses, asserted by the SI parity tests
   parameter, notation, version, date, year, name, identifier, history
                settings, conventions and citations; not data-derived, kept in the registry so every token is
