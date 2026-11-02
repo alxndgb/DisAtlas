@@ -33,6 +33,16 @@ def test_broad_cold():
     _check(cold=True)
 
 
+def test_fda_controls_removed_from_broad():
+    from disatlas.graph.build import pair_key
+    b = pd.read_parquet("data/raw/channels/broad/broad_edges.parquet")
+    f = pd.read_csv("data/raw/benchmarks/fda_repurposing/fda_repurposing_pairs.tsv", sep="\t")
+    hit = pair_key(b.u, b.v).isin(set(pair_key(f.disease_a, f.disease_b))).values
+    kept = b[~hit]
+    assert int(hit.sum()) == 848 and len(kept) == 331_234
+    assert len(set(b.u) | set(b.v)) == 13_021 and len(set(kept.u) | set(kept.v)) == 13_020
+
+
 def test_crank_ranks_weakest_pair_last():
     import numpy as np
     r = broad.crank(np.array([[0.9, 0.9], [0.9, 0.9], [0.1, 0.2]]))
