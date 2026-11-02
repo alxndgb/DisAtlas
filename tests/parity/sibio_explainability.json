@@ -63,6 +63,26 @@
      "ms": "roughly 13,000 diseases scored against each rare disease"
     }
    ]
+  },
+  {
+   "label": "SI_explainability_pair_count",
+   "script": "figures/SI/si_cluster_rarecommon_numbers.py",
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "n_pairs_all",
+     "ms": "sease-level representation.] [It ranks all three pairs in the top 2% of the 84.8 million disease pairs: Marfan syndrome–",
+     "expected": 84800000,
+     "tol": 50000
+    },
+    {
+     "key": "n_pairs_all",
+     "ms": "**(a)** DisAtlas pair scores, with the percentile among 84.8 million disease pairs and [the rank of",
+     "expected": 84800000,
+     "tol": 50000
+    }
+   ]
   }
  ],
  "unchecked": [
@@ -137,11 +157,6 @@
    "ms": "dedicated disease-level representation.] [It ranks all three pairs in the top 2% of the 84.7 million disease pairs: Marf"
   },
   {
-   "token": "84.7",
-   "reason": "manuscript_mismatch entry (n_pairs_all)",
-   "ms": "sease-level representation.] [It ranks all three pairs in the top 2% of the 84.7 million disease pairs: Marfan syndrome–"
-  },
-  {
    "token": "24",
    "reason": "part of a disease name (Parkinson disease 24)",
    "ms": "rd (0.881), and Gaucher disease due to saposin C deficiency–Parkinson disease 24 at the 98.3rd (0.737).] [Among the roug"
@@ -150,11 +165,6 @@
    "token": "13,000",
    "reason": "checked with tolerance (SI_explainability_bounds)",
    "ms": "eficiency–Parkinson disease 24 at the 98.3rd (0.737).] [Among the roughly 13,000 diseases scored against each rare disea"
-  },
-  {
-   "token": "84.7",
-   "reason": "manuscript_mismatch entry (n_pairs_all)",
-   "ms": "mon disease pairs.** **a**, DisAtlas pair scores, with the percentile among 84.7 million disease pairs and the rank of t"
   },
   {
    "token": "1",
@@ -215,15 +225,6 @@
    "token": "3",
    "reason": "case ordinal",
    "ms": "ase 2 only through islet cell adenomatosis, and predicts no meta-path for case 3. TxGNN is shown with its published chec"
-  }
- ],
- "manuscript_mismatch": [
-  {
-   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
-   "key": "n_pairs_all",
-   "data_value": 84766710,
-   "ms_value": "84.7 million",
-   "reason": "13,021 × 13,020 / 2 = 84,766,710 disease pairs, which rounds to 84.8 million"
   }
  ]
 }

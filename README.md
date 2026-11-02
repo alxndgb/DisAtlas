@@ -44,7 +44,7 @@ every plotted or quoted number; the tests read those files.
 | Figure 6 | Cross-system comparison on IxIDN-Matched | `figures/main/fig6_method_comparison.py` | `figures/main/fig5_method_comparison.{png,pdf}` (file name kept from the submission) |
 | Figure 7 | Simulated prospective (event-time) test | `figures/main/fig7_prospective.py` | `figures/main/fig7_prospective.{png,pdf}` |
 | Table 1 | Protocols of the cross-system comparison | `tables/main/table1_protocols.py` | `tables/main/table1_protocols.{md,tsv}` |
-| Main-text numbers | All 536 number tokens of the main text, each with its kind and check | `tests/main_quantities.py`, `tests/test_main_parity.py` | registry `tests/main_text_numbers.tsv` |
+| Main-text numbers | All 560 number tokens of the main text, each with its kind and check | `tests/main_quantities.py`, `tests/test_main_parity.py` | registry `tests/main_text_numbers.tsv` |
 
 ### Supplementary figures
 

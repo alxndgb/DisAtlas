@@ -68,6 +68,8 @@ def test_shortcut_audit(pairs):
         m = pairs[col].notna()
         assert R(_auc(pairs.y[m], pairs[col][m]), 3) == v, col
     assert R(_auc(pairs.y, pairs.p), 3) == 0.832
+    t = pairs[(pairs.pool == "test") & pairs.mondo_simgic.notna()]
+    assert R(_auc(t.y, t.mondo_simgic), 3) == 0.588  # MONDO SimGIC on the test split
     assert pairs.rare_common_pair.value_counts().to_dict() == {"rare-rare": 2452, "rare-common": 1241, "common-common": 671}
 
 
@@ -80,7 +82,7 @@ def test_ontology_baseline():
     assert v["hpo_auroc"] == "0.69-0.72" and v["hpo_all_pairs"] == "0.54"
     assert v["discordant_model"] == "0.68-0.76" and v["discordant_hpo"] == "0.67-0.73"
     assert v["outside_orphanet_pct"] == 63
-    assert v["outside_orphanet_model"] == "0.876" and v["outside_orphanet_model_test"] == "0.910"
+    assert v["outside_orphanet_model"] == "0.876" and v["outside_orphanet_model_test"] == "0.909"
     assert v["spearman_ordo_hpo"] == "0.51-0.62"
     b = pd.read_csv(DV / "ontology_baseline/ontology_baselines.csv")
     lin = b[(b.scope == "all") & (b.baseline == "HPO Lin-BMA")].iloc[0]
@@ -409,4 +411,6 @@ SI_BENCH_GAPS = [
     "SI_ixidn_matched_shortcuts: pre-matching AUROCs (0.947, 0.758), top-third 0.888",
     "SI_threshold_lca: alternative GO-distance arms",
     "SI_umbrella_placement: umbrella-term counts",
+    "SI_uncertainty: larger cross-system set (9,944 pairs over 1,321 diseases, 3,694 positive, AUROC 0.8976, CI 0.860-0.932, Cliff's delta 0.795, 0.720-0.865, pair-level CI 5.4x narrower); no shipped per-pair table for that set",
+    "SI_cluster_validation_controls: co-cluster ratio floor (at least 5.8 times at every K >= 20); the per-K co-cluster sweep is not shipped (only K = 55)",
 ]

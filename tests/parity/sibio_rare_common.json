@@ -8,76 +8,76 @@
    "checks": [
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-rare.auroc",
-     "ms": "[On IxIDN-Matched, DisAtlas reaches an AUROC of 0.754 (95% CI 0.704–0.801) on 2,452 rare–rare",
+     "ms": "[On IxIDN-Matched, DisAtlas reaches an AUROC of 0.754 (95% CI 0.703–0.800) on 2,452 rare–rare",
      "expected": 0.754,
      "tol": 0.0005
     },
     {
      "key": "recovery.common anchor, rare candidates.adamic_adar",
-     "ms": "[On IxIDN-Matched, DisAtlas reaches an AUROC of 0.754 (95% CI 0.704–0.801) on 2,452 rare–rare pair",
+     "ms": "[On IxIDN-Matched, DisAtlas reaches an AUROC of 0.754 (95% CI 0.703–0.800) on 2,452 rare–rare pair",
      "expected": 0.95,
      "tol": 0.005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-rare.ci.0",
-     "ms": "[On IxIDN-Matched, DisAtlas reaches an AUROC of 0.754 (95% CI 0.704–0.801) on 2,452 rare–rare pairs and 0.8",
-     "expected": 0.704,
+     "ms": "[On IxIDN-Matched, DisAtlas reaches an AUROC of 0.754 (95% CI 0.703–0.800) on 2,452 rare–rare pairs and 0.8",
+     "expected": 0.703,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-rare.ci.1",
-     "ms": " IxIDN-Matched, DisAtlas reaches an AUROC of 0.754 (95% CI 0.704–0.801) on 2,452 rare–rare pairs and 0.889 (0.",
-     "expected": 0.801,
+     "ms": " IxIDN-Matched, DisAtlas reaches an AUROC of 0.754 (95% CI 0.703–0.800) on 2,452 rare–rare pairs and 0.889 (0.",
+     "expected": 0.8,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-rare.n",
-     "ms": "ched, DisAtlas reaches an AUROC of 0.754 (95% CI 0.704–0.801) on 2,452 rare–rare pairs and 0.889 (0.829–0.938)",
+     "ms": "ched, DisAtlas reaches an AUROC of 0.754 (95% CI 0.703–0.800) on 2,452 rare–rare pairs and 0.889 (0.825–0.935)",
      "expected": 2452
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-common.auroc",
-     "ms": "AUROC of 0.754 (95% CI 0.704–0.801) on 2,452 rare–rare pairs and 0.889 (0.829–0.938) on 1,241 rare–common pair",
+     "ms": "AUROC of 0.754 (95% CI 0.703–0.800) on 2,452 rare–rare pairs and 0.889 (0.825–0.935) on 1,241 rare–common pair",
      "expected": 0.889,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-common.ci.0",
-     "ms": "f 0.754 (95% CI 0.704–0.801) on 2,452 rare–rare pairs and 0.889 (0.829–0.938) on 1,241 rare–common pairs ([Sup",
-     "expected": 0.829,
+     "ms": "f 0.754 (95% CI 0.703–0.800) on 2,452 rare–rare pairs and 0.889 (0.825–0.935) on 1,241 rare–common pairs ([Sup",
+     "expected": 0.825,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-common.ci.1",
-     "ms": "4 (95% CI 0.704–0.801) on 2,452 rare–rare pairs and 0.889 (0.829–0.938) on 1,241 rare–common pairs ([Supplemen",
-     "expected": 0.938,
+     "ms": "4 (95% CI 0.703–0.800) on 2,452 rare–rare pairs and 0.889 (0.825–0.935) on 1,241 rare–common pairs ([Supplemen",
+     "expected": 0.935,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-common.n",
-     "ms": "0.704–0.801) on 2,452 rare–rare pairs and 0.889 (0.829–0.938) on 1,241 rare–common pairs ([Supplementary Figur",
+     "ms": "0.703–0.800) on 2,452 rare–rare pairs and 0.889 (0.825–0.935) on 1,241 rare–common pairs ([Supplementary Figur",
      "expected": 1241
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|common-common.n",
-     "ms": "1 rare–common pairs ([Supplementary Figure ]c; [Figure ]c).]  [The 671 common–common pairs give 0.809 (0.644–0",
+     "ms": "1 rare–common pairs ([Supplementary Figure ]c; [Figure ]c).]  [The 671 common–common pairs give 0.809 (0.624–0",
      "expected": 671
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|common-common.auroc",
-     "ms": "tary Figure ]c; [Figure ]c).]  [The 671 common–common pairs give 0.809 (0.644–0.938), an imprecise estimate, b",
+     "ms": "tary Figure ]c; [Figure ]c).]  [The 671 common–common pairs give 0.809 (0.624–0.949), an imprecise estimate, b",
      "expected": 0.809,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|common-common.ci.0",
-     "ms": "igure ]c; [Figure ]c).]  [The 671 common–common pairs give 0.809 (0.644–0.938), an imprecise estimate, because",
-     "expected": 0.644,
+     "ms": "igure ]c; [Figure ]c).]  [The 671 common–common pairs give 0.809 (0.624–0.949), an imprecise estimate, because",
+     "expected": 0.624,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|common-common.neg",
-     "ms": "pairs give 0.809 (0.644–0.938), an imprecise estimate, because only 26 of them are negatives against 645 posit",
+     "ms": "pairs give 0.809 (0.624–0.949), an imprecise estimate, because only 26 of them are negatives against 645 posit",
      "expected": 26
     },
     {
@@ -122,56 +122,56 @@
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-rare.d_stack",
-     "ms": "baselines, DisAtlas is significantly higher on rare–rare pairs, +0.155 (95% CI +0.095 to +0.213), and on rare–",
+     "ms": "baselines, DisAtlas is significantly higher on rare–rare pairs, +0.155 (95% CI +0.094 to +0.214), and on rare–",
      "expected": 0.155,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-rare.d_ci.0",
-     "ms": "tlas is significantly higher on rare–rare pairs, +0.155 (95% CI +0.095 to +0.213), and on rare–common pairs, +",
-     "expected": 0.095,
+     "ms": "tlas is significantly higher on rare–rare pairs, +0.155 (95% CI +0.094 to +0.214), and on rare–common pairs, +",
+     "expected": 0.094,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-rare.d_ci.1",
-     "ms": "gnificantly higher on rare–rare pairs, +0.155 (95% CI +0.095 to +0.213), and on rare–common pairs, +0.241 (+0.",
-     "expected": 0.213,
+     "ms": "gnificantly higher on rare–rare pairs, +0.155 (95% CI +0.094 to +0.214), and on rare–common pairs, +0.241 (+0.",
+     "expected": 0.214,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-common.d_stack",
-     "ms": "rs, +0.155 (95% CI +0.095 to +0.213), and on rare–common pairs, +0.241 (+0.147 to +0.336); on common–common pa",
+     "ms": "rs, +0.155 (95% CI +0.094 to +0.214), and on rare–common pairs, +0.241 (+0.143 to +0.340); on common–common pa",
      "expected": 0.241,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-common.d_ci.0",
-     "ms": "155 (95% CI +0.095 to +0.213), and on rare–common pairs, +0.241 (+0.147 to +0.336); on common–common pairs the",
-     "expected": 0.147,
+     "ms": "155 (95% CI +0.094 to +0.214), and on rare–common pairs, +0.241 (+0.143 to +0.340); on common–common pairs the",
+     "expected": 0.143,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-common.d_ci.1",
-     "ms": " +0.095 to +0.213), and on rare–common pairs, +0.241 (+0.147 to +0.336); on common–common pairs the difference",
-     "expected": 0.336,
+     "ms": " +0.094 to +0.214), and on rare–common pairs, +0.241 (+0.143 to +0.340); on common–common pairs the difference",
+     "expected": 0.34,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|common-common.d_stack",
-     "ms": ".241 (+0.147 to +0.336); on common–common pairs the difference, +0.033 (−0.165 to +0.258), is not significant.",
+     "ms": ".241 (+0.143 to +0.340); on common–common pairs the difference, +0.033 (−0.172 to +0.275), is not significant.",
      "expected": 0.033,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|common-common.d_ci.0",
-     "ms": ".147 to +0.336); on common–common pairs the difference, +0.033 (−0.165 to +0.258), is not significant.]  [Perf",
-     "expected": -0.165,
+     "ms": ".147 to +0.336); on common–common pairs the difference, +0.033 (−0.172 to +0.275), is not significant.]  [Perf",
+     "expected": -0.172,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|common-common.d_ci.1",
-     "ms": ".336); on common–common pairs the difference, +0.033 (−0.165 to +0.258), is not significant.]  [Performance th",
-     "expected": 0.258,
+     "ms": ".336); on common–common pairs the difference, +0.033 (−0.172 to +0.275), is not significant.]  [Performance th",
+     "expected": 0.275,
      "tol": 0.0005
     },
     {
@@ -416,12 +416,6 @@
      "expected": 10
     },
     {
-     "key": "strata.IxIDN-Matched|All pairs|rare-rare.d_ci.0",
-     "ms": "l.]  [This comparison is a negative finding: among a rare disease's 10 nearest neighbours, other-class (common",
-     "expected": 0.1,
-     "tol": 0.005
-    },
-    {
      "key": "enrichment_k10.observed|rare.0",
      "ms": "lass (common) diseases are less frequent than the nulls predict (0.136 observed against 0.173 expected), and t",
      "expected": 0.136,
@@ -642,129 +636,129 @@
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-rare.n",
-     "ms": ":|--------------:|:------------------------------| | Rare–rare | 2,452 | 0.754 | 0.704–0.801 | [+0.155 (+0.095",
+     "ms": ":|--------------:|:------------------------------| | Rare–rare | 2,452 | 0.754 | 0.703–0.800 | [+0.155 (+0.095",
      "expected": 2452
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-rare.auroc",
-     "ms": "--------:|:------------------------------| | Rare–rare | 2,452 | 0.754 | 0.704–0.801 | [+0.155 (+0.095 to +0.2",
+     "ms": "--------:|:------------------------------| | Rare–rare | 2,452 | 0.754 | 0.703–0.800 | [+0.155 (+0.095 to +0.2",
      "expected": 0.754,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-rare.ci.0",
-     "ms": ":|:------------------------------| | Rare–rare | 2,452 | 0.754 | 0.704–0.801 | [+0.155 (+0.095 to +0.213)] | |",
-     "expected": 0.704,
+     "ms": ":|:------------------------------| | Rare–rare | 2,452 | 0.754 | 0.703–0.800 | [+0.155 (+0.094 to +0.214)] | |",
+     "expected": 0.703,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-rare.ci.1",
-     "ms": "---------------------------| | Rare–rare | 2,452 | 0.754 | 0.704–0.801 | [+0.155 (+0.095 to +0.213)] | | Rare–",
-     "expected": 0.801,
+     "ms": "---------------------------| | Rare–rare | 2,452 | 0.754 | 0.703–0.800 | [+0.155 (+0.094 to +0.214)] | | Rare–",
+     "expected": 0.8,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-rare.d_stack",
-     "ms": "-----------------| | Rare–rare | 2,452 | 0.754 | 0.704–0.801 | [+0.155 (+0.095 to +0.213)] | | Rare–common | 1",
+     "ms": "-----------------| | Rare–rare | 2,452 | 0.754 | 0.703–0.800 | [+0.155 (+0.094 to +0.214)] | | Rare–common | 1",
      "expected": 0.155,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-rare.d_ci.0",
-     "ms": "---------| | Rare–rare | 2,452 | 0.754 | 0.704–0.801 | [+0.155 (+0.095 to +0.213)] | | Rare–common | 1,241 | 0",
-     "expected": 0.095,
+     "ms": "---------| | Rare–rare | 2,452 | 0.754 | 0.703–0.800 | [+0.155 (+0.094 to +0.214)] | | Rare–common | 1,241 | 0",
+     "expected": 0.094,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-rare.d_ci.1",
-     "ms": " | Rare–rare | 2,452 | 0.754 | 0.704–0.801 | [+0.155 (+0.095 to +0.213)] | | Rare–common | 1,241 | 0.889 | 0.8",
-     "expected": 0.213,
+     "ms": " | Rare–rare | 2,452 | 0.754 | 0.703–0.800 | [+0.155 (+0.094 to +0.214)] | | Rare–common | 1,241 | 0.889 | 0.8",
+     "expected": 0.214,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-common.n",
-     "ms": "54 | 0.704–0.801 | [+0.155 (+0.095 to +0.213)] | | Rare–common | 1,241 | 0.889 | 0.829–0.938 | [+0.241 (+0.147",
+     "ms": "54 | 0.703–0.800 | [+0.155 (+0.094 to +0.214)] | | Rare–common | 1,241 | 0.889 | 0.825–0.935 | [+0.241 (+0.147",
      "expected": 1241
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-common.auroc",
-     "ms": "04–0.801 | [+0.155 (+0.095 to +0.213)] | | Rare–common | 1,241 | 0.889 | 0.829–0.938 | [+0.241 (+0.147 to +0.3",
+     "ms": "04–0.801 | [+0.155 (+0.094 to +0.214)] | | Rare–common | 1,241 | 0.889 | 0.825–0.935 | [+0.241 (+0.147 to +0.3",
      "expected": 0.889,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-common.ci.0",
-     "ms": " | [+0.155 (+0.095 to +0.213)] | | Rare–common | 1,241 | 0.889 | 0.829–0.938 | [+0.241 (+0.147 to +0.336)] | |",
-     "expected": 0.829,
+     "ms": " | [+0.155 (+0.094 to +0.214)] | | Rare–common | 1,241 | 0.889 | 0.825–0.935 | [+0.241 (+0.143 to +0.340)] | |",
+     "expected": 0.825,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-common.ci.1",
-     "ms": ".155 (+0.095 to +0.213)] | | Rare–common | 1,241 | 0.889 | 0.829–0.938 | [+0.241 (+0.147 to +0.336)] | | Commo",
-     "expected": 0.938,
+     "ms": ".155 (+0.094 to +0.214)] | | Rare–common | 1,241 | 0.889 | 0.825–0.935 | [+0.241 (+0.143 to +0.340)] | | Commo",
+     "expected": 0.935,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-common.d_stack",
-     "ms": "95 to +0.213)] | | Rare–common | 1,241 | 0.889 | 0.829–0.938 | [+0.241 (+0.147 to +0.336)] | | Common–common (",
+     "ms": "95 to +0.213)] | | Rare–common | 1,241 | 0.889 | 0.825–0.935 | [+0.241 (+0.143 to +0.340)] | | Common–common (",
      "expected": 0.241,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-common.d_ci.0",
-     "ms": ".213)] | | Rare–common | 1,241 | 0.889 | 0.829–0.938 | [+0.241 (+0.147 to +0.336)] | | Common–common (IxIDN-Ma",
-     "expected": 0.147,
+     "ms": ".213)] | | Rare–common | 1,241 | 0.889 | 0.825–0.935 | [+0.241 (+0.143 to +0.340)] | | Common–common (IxIDN-Ma",
+     "expected": 0.143,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-common.d_ci.1",
-     "ms": " Rare–common | 1,241 | 0.889 | 0.829–0.938 | [+0.241 (+0.147 to +0.336)] | | Common–common (IxIDN-Matched) | 6",
-     "expected": 0.336,
+     "ms": " Rare–common | 1,241 | 0.889 | 0.825–0.935 | [+0.241 (+0.143 to +0.340)] | | Common–common (IxIDN-Matched) | 6",
+     "expected": 0.34,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|common-common.n",
-     "ms": " | [+0.241 (+0.147 to +0.336)] | | Common–common (IxIDN-Matched) | 671 (645 / 26) | 0.809 | 0.644–0.938 | [+0.",
+     "ms": " | [+0.241 (+0.143 to +0.340)] | | Common–common (IxIDN-Matched) | 671 (645 / 26) | 0.809 | 0.624–0.949 | [+0.",
      "expected": 671
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|common-common.pos",
-     "ms": "0.241 (+0.147 to +0.336)] | | Common–common (IxIDN-Matched) | 671 (645 / 26) | 0.809 | 0.644–0.938 | [+0.033 (",
+     "ms": "0.241 (+0.143 to +0.340)] | | Common–common (IxIDN-Matched) | 671 (645 / 26) | 0.809 | 0.624–0.949 | [+0.033 (",
      "expected": 645
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|common-common.neg",
-     "ms": " (+0.147 to +0.336)] | | Common–common (IxIDN-Matched) | 671 (645 / 26) | 0.809 | 0.644–0.938 | [+0.033 (−0.16",
+     "ms": " (+0.143 to +0.340)] | | Common–common (IxIDN-Matched) | 671 (645 / 26) | 0.809 | 0.624–0.949 | [+0.033 (−0.16",
      "expected": 26
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|common-common.auroc",
-     "ms": "to +0.336)] | | Common–common (IxIDN-Matched) | 671 (645 / 26) | 0.809 | 0.644–0.938 | [+0.033 (−0.165 to +0.2",
+     "ms": "to +0.336)] | | Common–common (IxIDN-Matched) | 671 (645 / 26) | 0.809 | 0.624–0.949 | [+0.033 (−0.165 to +0.2",
      "expected": 0.809,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|common-common.ci.0",
-     "ms": "6)] | | Common–common (IxIDN-Matched) | 671 (645 / 26) | 0.809 | 0.644–0.938 | [+0.033 (−0.165 to +0.258; 26 n",
-     "expected": 0.644,
+     "ms": "6)] | | Common–common (IxIDN-Matched) | 671 (645 / 26) | 0.809 | 0.624–0.949 | [+0.033 (−0.172 to +0.275; 26 n",
+     "expected": 0.624,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|common-common.d_stack",
-     "ms": "ommon (IxIDN-Matched) | 671 (645 / 26) | 0.809 | 0.644–0.938 | [+0.033 (−0.165 to +0.258; 26 negatives; not si",
+     "ms": "ommon (IxIDN-Matched) | 671 (645 / 26) | 0.809 | 0.624–0.949 | [+0.033 (−0.172 to +0.275; 26 negatives; not si",
      "expected": 0.033,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|common-common.d_ci.0",
-     "ms": "xIDN-Matched) | 671 (645 / 26) | 0.809 | 0.644–0.938 | [+0.033 (−0.165 to +0.258; 26 negatives; not significan",
-     "expected": -0.165,
+     "ms": "xIDN-Matched) | 671 (645 / 26) | 0.809 | 0.624–0.949 | [+0.033 (−0.172 to +0.275; 26 negatives; not significan",
+     "expected": -0.172,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|common-common.d_ci.1",
-     "ms": "ed) | 671 (645 / 26) | 0.809 | 0.644–0.938 | [+0.033 (−0.165 to +0.258; 26 negatives; not significant)] | | Co",
-     "expected": 0.258,
+     "ms": "ed) | 671 (645 / 26) | 0.809 | 0.624–0.949 | [+0.033 (−0.172 to +0.275; 26 negatives; not significant)] | | Co",
+     "expected": 0.275,
      "tol": 0.0005
     },
     {
@@ -880,6 +874,103 @@
      "ms": "xed connective tissue disease (; mean p = 0.032, seed range 0.016–0.059) does not.] [Classical dermatomyositis",
      "expected": 0.059,
      "tol": 0.0005
+    }
+   ]
+  },
+  {
+   "label": "SI_rare_common_txgnn_recovery",
+   "script": "figures/SI/si_cluster_rarecommon_numbers.py",
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "recovery.rare anchor, common candidates.TxGNN",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.725,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery.common anchor, rare candidates.TxGNN",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.716,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery.rare anchor, common candidates.d_TxGNN.0",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.173,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery.rare anchor, common candidates.d_TxGNN.1",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.044,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery.rare anchor, common candidates.d_TxGNN.2",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.304,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery.common anchor, rare candidates.d_TxGNN.0",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.218,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery.common anchor, rare candidates.d_TxGNN.1",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.096,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery.common anchor, rare candidates.d_TxGNN.2",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.359,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery_txgnn_mapped.rare anchor, common candidates.d_TxGNN.0",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.147,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery_txgnn_mapped.rare anchor, common candidates.d_TxGNN.1",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.024,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery_txgnn_mapped.rare anchor, common candidates.d_TxGNN.2",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.268,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery_txgnn_mapped.common anchor, rare candidates.d_TxGNN.0",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.199,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery_txgnn_mapped.common anchor, rare candidates.d_TxGNN.1",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.079,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery_txgnn_mapped.common anchor, rare candidates.d_TxGNN.2",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 0.327,
+     "tol": 0.0005
+    },
+    {
+     "key": "recovery_txgnn_mapped.rare anchor, common candidates.n",
+     "ms": "TxGNN ... places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327)",
+     "expected": 65
     }
    ]
   }

@@ -97,6 +97,7 @@ def q_ixidn():
              test_half_diseases=int((_tsv("fig3_ixidn", "disease_split.tsv").split == "test").sum()),
              test_pair_diseases=len(ted), shortcut_auroc_min=float(sc.min()), shortcut_auroc_max=float(sc.max()))
     q.update({f"shortcut_auroc|{f}": float(v) for f, v in zip(SD.feature, SD.expanded_auroc)})
+    q["ixidn_diseases_in_disatlas"] = int(np.isin(pd.unique(S1.values.ravel()), disease_map().mondo_id).sum())
     q["funnel_pinned_pos"] = int(F[(F.stage == "3_pinned_universe") & (F["class"] == "IxIDN+")].pairs.iloc[0])
     return q
 
@@ -179,6 +180,7 @@ def q_callouts():
         i, j = sorted((ix[a], ix[b])); s = float(P[i * n - i * (i + 1) // 2 + (j - i - 1)])
         q[f"callout_p|{t}"] = s
         q[f"callout_pct|{t}"] = 100 * np.searchsorted(Ps, s, "left") / len(P)
+    q["n_all_pairs"] = len(P)
     return q
 
 
