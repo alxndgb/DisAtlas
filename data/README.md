@@ -159,8 +159,8 @@ returns the ensemble probability and `top_partners(d, k)` the highest-scoring pa
 ensemble with the published recipe (node2vec dim 32, walk length 20, window 2, p = 1, q = 0.5, seeds
 4707-4711, Hadamard MLP decoder) and re-scores the benchmarks, all into `build/` (see `README.md`, "Run
 modes"). It is not needed to reproduce any result: the frozen model in `data/zenodo/model` is the model of
-record. Retraining uses different random streams from the frozen run, so the graph is reproduced exactly
-but the scores only statistically (`tests/test_cold_tolerance.py`). Single steps:
+record. Retraining repeats the frozen recipe with the same random streams, so the graph is reproduced exactly
+and the scores closely but not bit for bit (`tests/test_cold_tolerance.py`). Single steps:
 `python -m disatlas.retrain --out build/model/disatlas_v3.2_ensemble` and
 `python -m disatlas.rescore --out build/scores --all-pairs` (with `DISATLAS_DATA_MODE=cold`). Smoke test:
-`python -m disatlas.retrain --out runs/smoke --seeds 4707 --max-nodes 600 --epochs 1 --num-walks 2`.
+`python -m disatlas.retrain --out runs/smoke --seeds 4707 --epochs 1 --num-walks 2 --dec-epochs 1`.

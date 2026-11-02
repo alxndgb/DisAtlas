@@ -4,7 +4,7 @@
 #                                     graph, frozen 5-seed model, scores); figures, tables, parity tests, notebooks
 #   ./run_pipeline.sh --cold          COLD: rebuild channels and training graph from data/raw, retrain the 5-seed
 #                                     ensemble and re-score the benchmarks into build/, compare build/ with the
-#                                     frozen record (exact graph, statistical scores); figures, tables and the
+#                                     frozen record (exact graph, close scores); figures, tables and the
 #                                     manuscript numbers always come from the frozen record
 #   --cold-qc      opt-in, either mode: in stage qc, additionally rerun the IxIDN-Matched language-model QC
 #                  (needs ANTHROPIC_API_KEY and QC_MODEL) and rebuild IxIDN-Matched from the new verdicts into
