@@ -26,5 +26,5 @@ Rare diseases, k = 10	7 common among 10 nearest	10.0	0.008
 Rare diseases, k = 10	8 common among 10 nearest	10.0	0.0061			
 Rare diseases, k = 10	9 common among 10 nearest	10.0	0.0031			
 Rare diseases, k = 10	10 common among 10 nearest	10.0	0.0012			
-text	median rank of first common neighbour (rare)		8.0			
+text	median rank of first common neighbor (rare)		8.0			
 text	n rare / n common		10488.0		2531.0	

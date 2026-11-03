@@ -72,7 +72,7 @@ c.set_xlim(0, 100); c.set_xlabel("Approved pairs recovered, top 25% (%)")
 c.set_title("In every pair class, the specific channel recovers\nat least as many pairs as the broad channel", loc="left")
 N["c_spec_ge_broad_all_classes"] = bool(all(N["c_broad_off"][o] >= N["c_spec_off@broad_off_nodes"][o] for o in order))
 # ---- d: dated (pre-trial) prioritisation
-ML = [("disatlas_ens", "DisAtlas", "#0072B2"), ("shared_nbr", "Shared graph neighbours", "#777"), ("lit_shared", "Shared literature genes", "#777"),
+ML = [("disatlas_ens", "DisAtlas", "#0072B2"), ("shared_nbr", "Shared graph neighbors", "#777"), ("lit_shared", "Shared literature genes", "#777"),
       ("deg", "Disease degree", "#777"), ("decoy", "Matched decoy diseases", "#BBB")]
 Ed = E[(E["pop"] == "dev") & (E.design == "D1")].set_index("method")
 for i, (m, lab, col) in enumerate(ML):
@@ -81,7 +81,7 @@ for i, (m, lab, col) in enumerate(ML):
     N[f"d_{m}"] = [round(r.top10, 3), round(r.top10_lo, 3) if not np.isnan(r.top10_lo) else None, round(r.top10_hi, 3) if not np.isnan(r.top10_hi) else None]
 d.set_yticks(range(len(ML)), [x[1] for x in ML]); d.invert_yaxis(); d.set_xlim(0, 100)
 d.set_xlabel("Later indication in top 10% of candidates (%)")
-d.set_title(f"Trained on evidence before the trial ({int(Ed.loc['disatlas_ens'].n)} pairs),\na shared-neighbour count ranks them higher than DisAtlas", loc="left")
+d.set_title(f"Trained on evidence before the trial ({int(Ed.loc['disatlas_ens'].n)} pairs),\na shared-neighbor count ranks them higher than DisAtlas", loc="left")
 N["d_n"] = int(Ed.loc["disatlas_ens"].n); N["d_groups"] = int(Ed.loc["disatlas_ens"].n_groups)
 for ax, L in zip([a, b, c, d], "abcd"):
     ax.text(-.02, 1.07 if L in "ab" else 1.09, L, transform=ax.transAxes, fontsize=9, fontweight="bold", ha="right", va="bottom")

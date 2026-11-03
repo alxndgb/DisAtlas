@@ -62,8 +62,8 @@ for a, cls, other, ttl in ((ax[0], "rare", "common", "Rare diseases"), (ax[1], "
     for k in (1, 5, 10, 20, 50):
         VAL.append((ttl, "observed", k, o[o.k == k]["mean"].item(), np.nan, np.nan, np.nan))
     a.set_xlim(0, 51); a.set_ylim(0, 1.03); a.yaxis.set_major_formatter(PercentFormatter(1, decimals=0))
-    a.set_xlabel("Nearest neighbours considered (k)")
-    a.set_ylabel(f"{cls.capitalize()} diseases with ≥1 {other}\ndisease among neighbours")
+    a.set_xlabel("Nearest neighbors considered (k)")
+    a.set_ylabel(f"{cls.capitalize()} diseases with ≥1 {other}\ndisease among neighbors")
     a.set_title(ttl, loc="left"); a.tick_params(labelsize=8.5)
 
 c = ax[2]
@@ -75,7 +75,7 @@ for n_, v in frac.items():
     VAL.append(("Rare diseases, k = 10", f"{n_} common among 10 nearest", 10, v, np.nan, np.nan, np.nan))
 c.set_xticks(range(0, 11, 2)); c.set_xlim(-0.7, 10.7)
 c.yaxis.set_major_formatter(PercentFormatter(1, decimals=0))
-c.set_xlabel("Common diseases among\nthe 10 nearest neighbours", fontsize=11); c.set_ylabel("Rare diseases")
+c.set_xlabel("Common diseases among\nthe 10 nearest neighbors", fontsize=11); c.set_ylabel("Rare diseases")
 c.set_title("Rare diseases, k = 10", loc="left"); c.tick_params(labelsize=8.5)
 for a_, l in zip(ax, "abc"):
     panel_label(a_, l, xy=(-0.18 if l != "c" else -0.28, 1.03))
@@ -89,7 +89,7 @@ for ext in ("png", "pdf"):
     fig.savefig(f"{OUTDIR}/{NAME}.{ext}", dpi=300, bbox_inches="tight")
 V = pd.DataFrame(VAL, columns=["panel", "series", "k", "value", "lo", "hi", "p_lower"]).round(4)
 med = float(np.median(rare.first_other_class_rank))
-extra = pd.DataFrame([("text", "median rank of first common neighbour (rare)", np.nan, med, np.nan, np.nan, np.nan),
+extra = pd.DataFrame([("text", "median rank of first common neighbor (rare)", np.nan, med, np.nan, np.nan, np.nan),
                       ("text", "n rare / n common", np.nan, len(rare), np.nan, len(common), np.nan)], columns=V.columns)
 pd.concat([V, extra]).to_csv(f"{OUTDIR}/{NAME}_values.tsv", sep="\t", index=False)
 print(f"{OUTDIR}/{NAME}.png")

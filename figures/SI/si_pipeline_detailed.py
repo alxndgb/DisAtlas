@@ -143,7 +143,7 @@ kb = dict(tfs=8.6, bfs=7.0, gap=3.6)
 tr = rbox(2, 58, 16.5, 39, GREY_F, GREY_E, "Drug\u2013disease trials",
           "all trial records:\n419,240 trials,\n38,389 drugs,\n1,593 diseases\n\nremoved in turn:\n38 non-disease\nindications\n2,266 drugs with no\nspecific mechanism\nof action\n52,056 trials of\n> 2 drugs\n\nkept: 299,122 trials,\n32,023 drugs,\n1,437 diseases", **kb)
 ix = rbox(20.5, 58, 12, 39, YEL_F, YEL_E, "IxIDN",
-          "trial graph:\ndiseases linked\nwhen the same\ndrug was trialled\nfor both\n\n1,379 diseases\n43,112 links", tfs=8.6, bfs=7.2, gap=3.6)
+          "trial graph:\ndiseases linked\nwhen the same\ndrug was trialed\nfor both\n\n1,379 diseases\n43,112 links", tfs=8.6, bfs=7.2, gap=3.6)
 po = rbox(35, 78.5, 19.5, 18.5, WHT_F, RED_E, "Positive pairs (IxIDN\u207a)",
           "linked in IxIDN: 27,415 candidate\npairs in the 985-disease\nevaluation universe; 4,302 with\na matched negative were checked\nby a language model; 2,182 kept\n(1,285 strong, 897 plausible)", **kb)
 ne = rbox(35, 58, 19.5, 18.5, PINK_F, RED_E, "Negative pairs (IxIDN\u207b)",
@@ -175,7 +175,7 @@ d1 = rbox(0.5, yb, 16, hb, SIDE_F, SIDE_E, "Dated edges", "each graph edge in (a
 d2 = rbox(19, yb, 17, hb, SIDE_F, SIDE_E, "Yearly graph\nsnapshots", "for each decision year y,\n1996\u20132021: evidence\nup to the end of\nyear y\u22121 only", gap=6.6, **kw)
 d3 = rbox(38.5, yb, 16.5, hb, SIDE_F, SIDE_E, "Snapshot\nembeddings", "DisAtlas retrained\non each snapshot", gap=6.6, **kw)
 d4 = rbox(57.5, yb, 20, hb, SIDE_F, SIDE_E, "Score each drug",
-          "candidates: diseases in that\nyear\u2019s model not yet trialled\nwith the drug (median 2,241\nin the test pool); score =\nmaximum similarity to the\ndrug\u2019s earlier trial diseases", gap=3.6, **kw)
+          "candidates: diseases in that\nyear\u2019s model not yet trialed\nwith the drug (median 2,241\nin the test pool); score =\nmaximum similarity to the\ndrug\u2019s earlier trial diseases", gap=3.6, **kw)
 d5 = rbox(80, yb, 21.5, hb, SIDE_F, SIDE_E, "Rank its new trials",
           "event = a drug\u2019s first trial in\na new disease in year y;\npercentile of that disease\namong comparison candidates", gap=3.6, **kw)
 for p, q in [(d1, d2), (d2, d3), (d3, d4), (d4, d5)]:

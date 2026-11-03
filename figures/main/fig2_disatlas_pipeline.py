@@ -95,9 +95,9 @@ subpanel(48.5 + DY, 22, "Trial co-investigation (IxIDN)")
 tr = rbox(2, 54 + DY, 9.5, 9.5, GREY_F, GREY_E, "Drug\u2013\ndisease\ntrials", tfs=8.8)
 ix = rbox(13.5, 53 + DY, 11.5, 11.5, YEL_F, YEL_E, "IxIDN", "trial graph:\ndiseases linked\nby shared drugs", bfs=7.8)
 po = rbox(27.5, 59.5 + DY, 20, 8.5, WHT_F, RED_E, "Positive pairs (IxIDN\u207a)",
-          "trialled with the same drug;\ndated by first joint trial", tfs=8.8, bfs=7.8, gap=3.7)
+          "trialed with the same drug;\ndated by first joint trial", tfs=8.8, bfs=7.8, gap=3.7)
 ne = rbox(27.5, 50 + DY, 20, 8.5, PINK_F, RED_E, "Negative pairs (IxIDN\u207b)",
-          "\u2265 3 links apart, no shared-\nmechanism drug; matched", tfs=8.8, bfs=7.8, gap=3.7)
+          "\u2265 3 links apart, no shared-\nmechanism drug;\nconfounder-matched", tfs=8.8, bfs=7.8, gap=3.0)
 bm = rbox(50.5, 50 + DY, 17.5, 18, WHT_F, RED_E, "IxIDN-Matched\nbenchmark",
           "disease-disjoint\ntune / test split\n\nmetric: AUROC\n\ntime-censored",
           tfs=8.8, bfs=7.8, gap=6.4)
@@ -130,7 +130,7 @@ d1 = rbox(0.5, yb, 15, hb, SIDE_F, SIDE_E, "Dated edges", "each graph edge in (a
 d2 = rbox(18.5, yb, 16, hb, SIDE_F, SIDE_E, "Yearly graph\nsnapshots", "evidence up to the\nend of year y\u22121", gap=6.6, **kw)
 d3 = rbox(37.5, yb, 16, hb, SIDE_F, SIDE_E, "Snapshot\nembeddings", "DisAtlas retrained\non each snapshot", gap=6.6, **kw)
 d4 = rbox(56.5, yb, 20, hb, SIDE_F, SIDE_E, "Score each drug",
-          "candidates: diseases not yet\ntrialled with the drug; score =\nhighest similarity to the\ndrug\u2019s earlier trial diseases", gap=3.9, **kw)
+          "candidates: diseases not yet\ntrialed with the drug; score =\nhighest similarity to the\ndrug\u2019s earlier trial diseases", gap=3.9, **kw)
 d5 = rbox(79.5, yb, 22, hb, SIDE_F, SIDE_E, "Rank its new trials",
           "percentile of each disease the\ndrug first enters in year y,\namong diseases of similar\ntrial activity (and degree),\nvs weighted Adamic\u2013Adar", gap=3.4, bfs=7.2, tfs=8.8, ls="-", tc=SIDE_T, bc=BODY_T)
 for p, q in [(d1, d2), (d2, d3), (d3, d4), (d4, d5)]:

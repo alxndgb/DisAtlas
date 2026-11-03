@@ -67,7 +67,7 @@ PANEL_A_SINGLES = []
 # Five rare-common examples from five therapeutic areas; each rare monogenic disease sits in the cluster of a related
 # common disease (asserted below).
 PANEL_B_PAIRS = [  # (rare label, rare id, common label, common id)
-    ("CESD (LAL-D)", "MONDO:0019149", "familial hypercholesterolaemia", "MONDO:0005439"),
+    ("CESD (LAL-D)", "MONDO:0019149", "familial hypercholesterolemia", "MONDO:0005439"),
     ("Crigler\u2013Najjar type 2", "MONDO:0011725", "Gilbert syndrome", "MONDO:0007745"),
     ("CPVT1", "MONDO:0010975", "sudden arrhythmic death syndrome", "MONDO:0054866"),
     ("Huntington disease", "MONDO:0007739", "Parkinson disease", "MONDO:0005180"),
@@ -452,10 +452,10 @@ def draw_panel_A_pairs(ax, pairs, singles, panel_letter, title_suffix,
     ax.set_aspect("equal"); ax.set_xlim(x0 - 1.35, x1 + 0.20); ax.set_ylim(y0 - 0.08, y1 + 0.02)  # same y range (scale) as panel b
     ax.xaxis.set_major_locator(MultipleLocator(0.6)); ax.yaxis.set_major_locator(MultipleLocator(0.3))
     ax.set_xlabel("Isomap 1", labelpad=3); ax.set_ylabel("Isomap 2", labelpad=2)
-    ax.set_title(f"Diseases coloured by cluster (K = {n_clusters}) \u2013 {title_suffix}", loc="left", fontsize=12)
+    ax.set_title(f"Diseases colored by cluster (K = {n_clusters}) \u2013 {title_suffix}", loc="left", fontsize=12)
     panel_label(ax, panel_letter)
     legA_handles = [Line2D([], [], color=GOOD, lw=2.0, label="positive control, same cluster"),
-                    Line2D([], [], color=GOOD, lw=2.0, ls=(0, (1.2, 1.6)), label="positive control, neighbouring cluster"),
+                    Line2D([], [], color=GOOD, lw=2.0, ls=(0, (1.2, 1.6)), label="positive control, neighboring cluster"),
                     Line2D([], [], color=BAD, lw=2.0, label="negative control"),
                     Line2D([], [], marker="o", color="none", markerfacecolor="#f2c400", markeredgecolor="k", markersize=7,
                            label="NMOSD (eculizumab-approved)")]
@@ -479,7 +479,7 @@ def draw_panel_rarecommon(ax, targets, panel_letter, title_suffix):
     x0, x1 = Y[:, 0].min(), Y[:, 0].max(); y0, y1 = Y[:, 1].min(), Y[:, 1].max()
     is_rare = (cl["disease_class"].to_numpy() == "rare")
     # rare drawn first and semi-transparent; common drawn over it, opaque and slightly larger,
-    # so the minority common class stays visible inside dense rare regions (author request)
+    # so the minority common class stays visible inside dense rare regions
     ax.scatter(Y[is_rare, 0], Y[is_rare, 1], c=RARE_COL, s=1.4, lw=0, alpha=0.35, rasterized=True, zorder=1, label="Rare")
     ax.scatter(Y[~is_rare, 0], Y[~is_rare, 1], c=COMMON_COL, s=2.0, lw=0, alpha=1.0, rasterized=True, zorder=2, label="Common")
     items, anchors = [], []

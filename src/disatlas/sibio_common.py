@@ -19,7 +19,7 @@ ZENODO_SIBIO = ZENODO / "si_bio"
 MODEL_NAME = "disatlas_v3.2_ensemble"
 SEEDS = (4707, 4708, 4709, 4710, 4711)
 
-try:  # shared blinding helper (written by the data track)
+try:  # shared blinding helper
     from disatlas.blinding import blind_target  # type: ignore  # noqa: F401
 except Exception:  # pragma: no cover - import guard until the helper lands
     def blind_target(raw_id: str, salt: str = "DisAtlas") -> str:

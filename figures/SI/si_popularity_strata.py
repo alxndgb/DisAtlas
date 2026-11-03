@@ -148,7 +148,7 @@ for fam, txt in (("graph", "Disease-graph scores"), ("annot", "Annotation-based"
                  arrowprops=dict(arrowstyle="-", color=GREY, lw=0.7), annotation_clip=False)
     axA.text(-0.735, (y0 + y1) / 2, txt, transform=mpl.transforms.blended_transform_factory(axA.transAxes, axA.transData),
              rotation=90, ha="center", va="center", fontsize=6, color=GREY)
-TITLE[axA] = (0.01, "Within popularity strata, DisAtlas ranks later-trialled indications\nhigher than every reference score, in every cell")
+TITLE[axA] = (0.01, "Within popularity strata, DisAtlas ranks later-trialed indications\nhigher than every reference score, in every cell")
 axA.text(0.98, 0.005, "DisAtlas better →", transform=axA.transAxes, fontsize=6, color=GREY, ha="right", va="bottom")
 
 # legend (cutoff colour, pool marker, primary band)
