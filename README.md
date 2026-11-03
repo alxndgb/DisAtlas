@@ -42,9 +42,9 @@ every plotted or quoted number; the tests read those files.
 | Figure 4 | Embedding and decoder architecture | `figures/main/fig4_upna_ddal_architecture.py` | `figures/main/UPNA_DDAL_architecture.{png,pdf,svg}` |
 | Figure 5 | Disease map, clusters, and DisAtlas vs TxGNN by disease rarity (panel c) | `figures/main/fig5_disease_clustering_map.py` | `figures/main/disease_clustering_map.{png,pdf}` |
 | Figure 6 | Cross-system comparison on IxIDN-Matched | `figures/main/fig6_method_comparison.py` | `figures/main/fig5_method_comparison.{png,pdf}` (same file name as the manuscript figure) |
-| Figure 7 | Simulated prospective (event-time) test | `figures/main/fig7_prospective.py` | `figures/main/fig7_prospective.{png,pdf}` |
+| Figure 7 | Event-time test: rank of the case-study disease and conditional-logit odds ratios by year and method (update pending with the event-time analysis) | `figures/main/fig7_prospective.py` | `figures/main/fig7_prospective.{png,pdf}` |
 | Table 1 | Protocols of the cross-system comparison | `tables/main/table1_protocols.py` | `tables/main/table1_protocols.{md,tsv}` |
-| Main-text numbers | All 560 number tokens of the main text, each with its kind and check | `tests/main_quantities.py`, `tests/test_main_parity.py` | registry `tests/main_text_numbers.tsv` |
+| Main-text numbers | All 568 registered number tokens of the main text, each with its kind and check (44 event-time tokens pending the Figure 7 value table) | `tests/main_quantities.py`, `tests/test_main_parity.py` | registry `tests/main_text_numbers.tsv` |
 
 ### Supplementary figures
 
@@ -68,14 +68,17 @@ every plotted or quoted number; the tests read those files.
 | Figure S15 | Display layout fidelity | `si_cluster_map_vs_model.py` | `SI_cluster_map_vs_model_distance.{png,pdf}` |
 | Figure S16 | Performance by disease rarity and anchor disease; TxGNN recovery of documented rare-common partners | `si_rare_common_transfer.py` | `SI_rare_common_transfer.{png,pdf}` |
 | Figure S17 | Rare-common neighbour coverage | `si_rare_common_neighbour_coverage.py` | `SI_rare_common_neighbour_coverage.{png,pdf}` |
-| Figure S18 | Later-trialled diseases within popularity strata | `si_popularity_strata.py` | `si_popularity_strata.{png,pdf}` |
-| Figure S19 | Approved-repurposing benchmark (schematic) | `si_fda_schematic.py` | `SI_approved_repurposing_schematic.{png,pdf}` |
-| Figure S20 | Evidence channels on FDA-approved repurposing pairs | `si_fda_channels.py` | `SI_fda_channels.{png,pdf}` |
-| Figure S21 | Mechanism coverage of approved expansions in dated graph slices | `si_mechanism_coverage_slices.py` | `SI_mechanism_coverage_slices.{png,pdf}` |
-| Figure S22 | Clinical milestones of complement inhibitors | `si_complement_milestones.py` | `SI_complement_milestones.{png,pdf}` |
-| Figure S23 | Evidence behind three rare-common case pairs | `si_bio_gap_numbers.py` (case scores) | `SI_explainability.png` (static), `SI_explainability_case_scores.tsv` |
-| Figure S24 | How the training graph is built and scored | `si_graph_channels_schematic.py` | `SI_graph_channels_schematic.{png,pdf}` |
-| Figure S25 | Test of compositionality | `si_compositionality_recompute.py` (tables), `si_compositionality.py` (figure) | `SI_compositionality.{png,pdf}` |
+| Figure S18 | Event-time holdout: per-drug probability by method and decision year (matched analysis) | pending (added with the event-time analysis update) | pending (added with the event-time analysis update) |
+| Figure S19 | Event-time holdout: top-10% share by decision year, with and without matching | pending (added with the event-time analysis update) | pending (added with the event-time analysis update) |
+| Figure S20 | Event-time holdout: top-10% share weighted for disease popularity (post hoc) | pending (added with the event-time analysis update) | pending (added with the event-time analysis update) |
+| Figure S21 | Later-trialled diseases within popularity strata | `si_popularity_strata.py` | `si_popularity_strata.{png,pdf}` |
+| Figure S22 | Approved-repurposing benchmark (schematic) | `si_fda_schematic.py` | `SI_approved_repurposing_schematic.{png,pdf}` |
+| Figure S23 | Evidence channels on FDA-approved repurposing pairs | `si_fda_channels.py` | `SI_fda_channels.{png,pdf}` |
+| Figure S24 | Mechanism coverage of approved expansions in dated graph slices | `si_mechanism_coverage_slices.py` | `SI_mechanism_coverage_slices.{png,pdf}` |
+| Figure S25 | Clinical milestones of complement inhibitors | `si_complement_milestones.py` | `SI_complement_milestones.{png,pdf}` |
+| Figure S26 | Evidence behind three rare-common case pairs | `si_bio_gap_numbers.py` (case scores) | `SI_explainability.png` (static), `SI_explainability_case_scores.tsv` |
+| Figure S27 | How the training graph is built and scored | `si_graph_channels_schematic.py` | `SI_graph_channels_schematic.{png,pdf}` |
+| Figure S28 | Test of compositionality | `si_compositionality_recompute.py` (tables), `si_compositionality.py` (figure) | `SI_compositionality.{png,pdf}` |
 
 ### Supplementary tables
 
@@ -87,11 +90,13 @@ every plotted or quoted number; the tests read those files.
 | Table S4 | Ontology-only baselines | `tables/SI/table_ontology_baseline.py` | `tables/SI/table_ontology_baseline.md` |
 | Table S5 | Node-disjoint DisAtlas vs language-model systems by subgroup | `tables/SI/table_llm_subgroups.py` | `tables/SI/table_llm_subgroups.{md,tsv}` |
 | Table S6 | Degree-matched and within-disease AUROC | `tables/SI/table_degree_controls.py` | `tables/SI/table_degree_controls.{md,tsv}` |
-| Table S7 | Positive and negative control pairs | `figures/SI/si_cluster_rarecommon_numbers.py` | `figures/SI/SI_cluster_rarecommon_numbers.json` (key `controls`) |
-| Table S8 | AUROC by disease-rarity pairing | `figures/SI/si_cluster_rarecommon_numbers.py` | `figures/SI/SI_cluster_rarecommon_numbers.json` |
-| Tables S9, S10 | Event-time holdout: pooled advantages; subsets | `figures/SI/si_event_time_tables.py` | `figures/SI/SI_event_time_tables.md` |
-| Table S11 | Advantage with current and slice-dated GO annotations | `figures/SI/si_go_release_table.py` | `figures/SI/SI_go_release_table.{md,tsv}` |
-| Table S12 | FDA-approved pairs scored with dated models | `figures/SI/si_fda_prioritisation_text.py` | `figures/SI/SI_fda_prioritisation_text.md` |
+| Table S7 | Positive and negative control pairs | `tables/SI/table_cluster_controls.py` | `tables/SI/table_cluster_controls.{md,tsv}` |
+| Table S8 | Theme of each of the 55 disease clusters | `tables/SI/table_cluster_themes.py` | `tables/SI/table_cluster_themes.{md,tsv}`, `table_cluster_themes_numbers.json` |
+| Table S9 | AUROC by disease-rarity pairing | `tables/SI/table_rare_common_strata.py` | `tables/SI/table_rare_common_strata.{md,tsv}` |
+| Tables S10, S11 | Event-time holdout: pooled advantages; subsets of new trials | `figures/SI/si_event_time_tables.py` | `figures/SI/SI_event_time_tables.md` |
+| Tables S12–S17 | Event-time: NMO rank by slice; yearly odds ratios; AUROC (pooled and yearly); early decision years; small comparison sets | pending (added with the event-time analysis update) | pending (added with the event-time analysis update) |
+| Table S18 | Advantage with current and slice-dated GO annotations | `figures/SI/si_go_release_table.py` | `figures/SI/SI_go_release_table.{md,tsv}` |
+| Table S19 | FDA-approved pairs scored with dated models | `figures/SI/si_fda_prioritisation_text.py` | `figures/SI/SI_fda_prioritisation_text.md` |
 | SI numbers | Numbers quoted in the SI text | `figures/SI/si_*_numbers.py` | `figures/SI/SI_*_numbers.json`; asserted by `tests/test_sibench_parity.py`, `tests/test_sibio_parity.py` (specs in `tests/parity/`) |
 
 ## Repository structure
@@ -239,9 +244,9 @@ Measured on fresh clones, one cluster node each (peak memory is the Slurm MaxRSS
 | `tests/test_cold_exact.py` | COLD: rebuilt channels and graph equal the shipped ones edge for edge |
 | `tests/test_cold_tolerance.py` | COLD: retrained scores within the tolerances above |
 
-A WARM run ends with `299 passed, 13 skipped` (the skipped tests are COLD-only checks) and `DisAtlas pipeline finished (warm)`.
+A WARM run ends with `247 passed, 57 skipped` (13 COLD-only checks, and 44 event-time main-text numbers that wait for the updated Figure 7 value table) and `DisAtlas pipeline finished (warm)`.
 A COLD run first passes the 11 COLD checks on `build/` (`tests/test_cold_exact.py`, `tests/test_cold_tolerance.py`), then the same
-`299 passed, 13 skipped`, and ends with `DisAtlas pipeline finished (cold)`.
+`247 passed, 57 skipped`, and ends with `DisAtlas pipeline finished (cold)`.
 
 ## Troubleshooting
 

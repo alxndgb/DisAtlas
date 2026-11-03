@@ -1,4 +1,4 @@
-| Comparison set | Comparator | Median-percentile advantage, test pool | Median-percentile advantage, all diseases | Top-10% advantage, test pool | Top-10% advantage, all diseases |
+| Comparison set | Reference score | Median-percentile advantage, test pool | Median-percentile advantage, all diseases | Top-10% advantage, test pool | Top-10% advantage, all diseases |
 |:--|:--|--:|--:|--:|--:|
 | Popularity × weighted-degree groups (co-primary) | Weighted Adamic–Adar | +7.03 [+6.18, +7.91] | +3.55 [+2.99, +4.24] | +0.068 [+0.054, +0.081] | +0.001 [−0.010, +0.011] |
 |  | Adamic–Adar | +5.82 [+5.03, +6.53] | +2.55 [+1.94, +3.19] | +0.014 [0.000, +0.027] | −0.033 [−0.044, −0.023] |
@@ -49,54 +49,55 @@
 |  | GO biological-process similarity | +0.60 [+0.55, +0.66] | +0.64 [+0.60, +0.68] | +0.007 [+0.003, +0.011] | +0.011 [+0.007, +0.014] |
 |  | HPO phenotype similarity | +12.56 [+10.79, +13.28] | +4.73 [+3.99, +6.34] | +0.180 [+0.169, +0.190] | +0.131 [+0.124, +0.139] |
 
-: Event-time holdout, all decision years pooled: advantage of DisAtlas over each comparator in every comparison set and both candidate pools.
-Median-percentile advantage is the comparator's median percentile minus that of DisAtlas, in percentile points; top-10% advantage is DisAtlas minus the comparator in the share of drugs whose best-ranked new trial falls in the top 10%.
+: Event-time holdout, all decision years pooled: advantage of DisAtlas over each reference score in every comparison set and both candidate pools.
+Median-percentile advantage is the reference score's median percentile minus that of DisAtlas, in percentile points; top-10% advantage is DisAtlas minus the reference score in the share of drugs whose best-ranked new trial falls in the top 10%.
 Positive values mean DisAtlas ranks new trials better; brackets give 95% bootstrap intervals over drugs.
-In the combined-with-popularity set each comparator is also combined with popularity, and the popularity row compares with popularity alone. {#tbl:SI_event_time_deltas}
+In the combined-with-popularity set each reference score is also combined with popularity, and the popularity row compares with popularity alone. {#tbl:SI_event_time_deltas}
 
-| Subset of new trials | Comparator | Comparison set | Median-percentile advantage, test pool | Median-percentile advantage, all diseases |
+| Subset of new trials | Reference score | Comparison set | Median-percentile advantage, test pool | Median-percentile advantage, all diseases |
 |:--|:--|:--|--:|--:|
-| All decision years (main analysis) | Weighted Adamic–Adar | Popularity × weighted degree | +7.03 [+6.18, +7.91] | +3.55 [+2.99, +4.24] |
-|  |  | Popularity | +9.10 [+8.33, +10.13] | +8.46 [+7.82, +9.19] |
-|  |  | No grouping | −0.69 [−0.84, −0.49] | −0.34 [−0.46, −0.21] |
-| Excluding 2020 and 2021 | Weighted Adamic–Adar | Popularity × weighted degree | +6.65 [+5.69, +7.56] | +5.05 [+4.36, +5.62] |
-|  |  | Popularity | +8.56 [+7.88, +9.70] | +10.64 [+9.74, +11.35] |
-|  |  | No grouping | −0.86 [−1.02, −0.65] | −0.31 [−0.45, −0.17] |
-| Drug-years with one new disease | Weighted Adamic–Adar | Popularity × weighted degree | +2.59 [+2.05, +3.81] | −0.04 [−0.89, +0.75] |
-|  |  | Popularity | +2.28 [+1.41, +3.34] | +3.34 [+2.38, +4.26] |
-|  |  | No grouping | −1.70 [−1.93, −1.46] | −0.77 [−0.96, −0.62] |
-| Diseases with a shared MechDist neighbour | Weighted Adamic–Adar | Popularity × weighted degree | +6.87 [+6.08, +7.76] | +3.64 [+2.99, +4.23] |
-|  |  | Popularity | +8.87 [+8.29, +10.00] | +8.43 [+7.77, +9.08] |
-|  |  | No grouping | −0.67 [−0.84, −0.50] | −0.34 [−0.46, −0.21] |
-| Diseases without a shared MechDist neighbour | Weighted Adamic–Adar | Popularity × weighted degree | +30.79 [+22.25, +34.69] | +26.84 [+19.71, +31.35] |
-|  |  | Popularity | +28.24 [+22.32, +35.03] | +28.79 [+21.85, +35.48] |
-|  |  | No grouping | +14.12 [+2.94, +23.93] | +12.69 [+3.03, +21.43] |
-| Diseases with HPO phenotype annotation | Weighted Adamic–Adar | Popularity × weighted degree | +11.64 [+10.72, +12.96] | +6.52 [+5.69, +7.44] |
-|  |  | Popularity | +13.28 [+11.85, +14.91] | +9.89 [+8.80, +10.99] |
-|  |  | No grouping | −0.09 [−0.33, +0.18] | −0.22 [−0.45, 0.00] |
-| Diseases with GO biological-process annotation | Weighted Adamic–Adar | Popularity × weighted degree | +6.95 [+6.14, +7.86] | +3.50 [+2.91, +4.18] |
-|  |  | Popularity | +9.02 [+8.33, +10.06] | +8.34 [+7.72, +9.05] |
-|  |  | No grouping | −0.68 [−0.84, −0.49] | −0.35 [−0.48, −0.22] |
-| Diseases with gene annotation | Weighted Adamic–Adar | Popularity × weighted degree | +6.95 [+6.17, +7.90] | +3.48 [+2.91, +4.17] |
-|  |  | Popularity | +9.08 [+8.33, +10.15] | +8.42 [+7.76, +9.12] |
-|  |  | No grouping | −0.68 [−0.83, −0.49] | −0.35 [−0.48, −0.22] |
-| *Other comparators ahead of DisAtlas in a subset under a co-primary set* | | | | |
-| Drug-years with one new disease | Adamic–Adar | Popularity × weighted degree | +0.93 [+0.52, +2.25] | −2.58 [−3.16, −1.59] |
-|  |  | Popularity | +1.19 [+0.43, +2.32] | +0.54 [−0.36, +1.42] |
-|  |  | No grouping | −1.64 [−1.86, −1.42] | −0.81 [−0.99, −0.65] |
-| Diseases without a shared MechDist neighbour | Disease popularity | Popularity × weighted degree | −22.61 [−41.83, −16.11] | −20.78 [−34.26, −11.96] |
-|  |  | Popularity | −27.79 [−43.40, −15.31] | −19.38 [−33.07, −11.37] |
-|  |  | No grouping | −61.46 [−72.20, −51.29] | −61.91 [−71.54, −53.91] |
-| Diseases without a shared MechDist neighbour | Shared genes | Popularity × weighted degree | −9.29 [−16.87, −5.27] | −11.41 [−19.16, −8.06] |
-|  |  | Popularity | −11.76 [−17.52, −5.69] | −13.73 [−20.09, −6.94] |
-|  |  | No grouping | −13.57 [−23.51, −3.86] | −14.20 [−23.60, −6.58] |
-| Diseases without a shared MechDist neighbour | HPO phenotype similarity | Popularity × weighted degree | −10.15 [−18.15, −6.70] | −12.21 [−19.91, −8.67] |
-|  |  | Popularity | −14.32 [−19.99, −8.39] | −16.08 [−22.60, −9.07] |
-|  |  | No grouping | −14.07 [−24.24, −4.27] | −14.78 [−24.15, −7.16] |
-| Diseases with HPO phenotype annotation | HPO phenotype similarity | Popularity × weighted degree | −10.69 [−11.50, −9.74] | −12.50 [−13.27, −11.60] |
-|  |  | Popularity | −9.92 [−10.91, −8.81] | −9.83 [−10.66, −9.13] |
-|  |  | No grouping | +5.05 [+4.43, +5.84] | +4.93 [+4.38, +5.47] |
+| All decision years (main analysis, Supplementary Table S10) | Weighted Adamic–Adar | Popularity × weighted-degree groups | +7.03 [+6.18, +7.91] | +3.55 [+2.99, +4.24] |
+|  |  | Popularity groups | +9.10 [+8.33, +10.13] | +8.46 [+7.82, +9.19] |
+|  |  | All candidate diseases, no grouping | −0.69 [−0.84, −0.49] | −0.34 [−0.46, −0.21] |
+| Excluding 2020 and 2021 | Weighted Adamic–Adar | Popularity × weighted-degree groups | +6.65 [+5.69, +7.56] | +5.05 [+4.36, +5.62] |
+|  |  | Popularity groups | +8.56 [+7.88, +9.70] | +10.64 [+9.74, +11.35] |
+|  |  | All candidate diseases, no grouping | −0.86 [−1.02, −0.65] | −0.31 [−0.45, −0.17] |
+| Drug-years with one new disease | Weighted Adamic–Adar | Popularity × weighted-degree groups | +2.59 [+2.05, +3.81] | −0.04 [−0.89, +0.75] |
+|  |  | Popularity groups | +2.28 [+1.41, +3.34] | +3.34 [+2.38, +4.26] |
+|  |  | All candidate diseases, no grouping | −1.70 [−1.93, −1.46] | −0.77 [−0.96, −0.62] |
+| Diseases with a shared MechDist neighbor | Weighted Adamic–Adar | Popularity × weighted-degree groups | +6.87 [+6.08, +7.76] | +3.64 [+2.99, +4.23] |
+|  |  | Popularity groups | +8.87 [+8.29, +10.00] | +8.43 [+7.77, +9.08] |
+|  |  | All candidate diseases, no grouping | −0.67 [−0.84, −0.50] | −0.34 [−0.46, −0.21] |
+| Diseases without a shared MechDist neighbor | Weighted Adamic–Adar | Popularity × weighted-degree groups | +30.79 [+22.25, +34.69] | +26.84 [+19.71, +31.35] |
+|  |  | Popularity groups | +28.24 [+22.32, +35.03] | +28.79 [+21.85, +35.48] |
+|  |  | All candidate diseases, no grouping | +14.12 [+2.94, +23.93] | +12.69 [+3.03, +21.43] |
+| Diseases with HPO phenotype annotation | Weighted Adamic–Adar | Popularity × weighted-degree groups | +11.64 [+10.72, +12.96] | +6.52 [+5.69, +7.44] |
+|  |  | Popularity groups | +13.28 [+11.85, +14.91] | +9.89 [+8.80, +10.99] |
+|  |  | All candidate diseases, no grouping | −0.09 [−0.33, +0.18] | −0.22 [−0.45, 0.00] |
+| Diseases with GO biological-process annotation | Weighted Adamic–Adar | Popularity × weighted-degree groups | +6.95 [+6.14, +7.86] | +3.50 [+2.91, +4.18] |
+|  |  | Popularity groups | +9.02 [+8.33, +10.06] | +8.34 [+7.72, +9.05] |
+|  |  | All candidate diseases, no grouping | −0.68 [−0.84, −0.49] | −0.35 [−0.48, −0.22] |
+| Diseases with gene annotation | Weighted Adamic–Adar | Popularity × weighted-degree groups | +6.95 [+6.17, +7.90] | +3.48 [+2.91, +4.17] |
+|  |  | Popularity groups | +9.08 [+8.33, +10.15] | +8.42 [+7.76, +9.12] |
+|  |  | All candidate diseases, no grouping | −0.68 [−0.83, −0.49] | −0.35 [−0.48, −0.22] |
+| *Other reference scores ahead of DisAtlas in a subset under a co-primary set* | | | | |
+| Drug-years with one new disease | Adamic–Adar | Popularity × weighted-degree groups | +0.93 [+0.52, +2.25] | −2.58 [−3.16, −1.59] |
+|  |  | Popularity groups | +1.19 [+0.43, +2.32] | +0.54 [−0.36, +1.42] |
+|  |  | All candidate diseases, no grouping | −1.64 [−1.86, −1.42] | −0.81 [−0.99, −0.65] |
+| Diseases without a shared MechDist neighbor | Disease popularity | Popularity × weighted-degree groups | −22.61 [−41.83, −16.11] | −20.78 [−34.26, −11.96] |
+|  |  | Popularity groups | −27.79 [−43.40, −15.31] | −19.38 [−33.07, −11.37] |
+|  |  | All candidate diseases, no grouping | −61.46 [−72.20, −51.29] | −61.91 [−71.54, −53.91] |
+| Diseases without a shared MechDist neighbor | Shared genes | Popularity × weighted-degree groups | −9.29 [−16.87, −5.27] | −11.41 [−19.16, −8.06] |
+|  |  | Popularity groups | −11.76 [−17.52, −5.69] | −13.73 [−20.09, −6.94] |
+|  |  | All candidate diseases, no grouping | −13.57 [−23.51, −3.86] | −14.20 [−23.60, −6.58] |
+| Diseases without a shared MechDist neighbor | HPO phenotype similarity | Popularity × weighted-degree groups | −10.15 [−18.15, −6.70] | −12.21 [−19.91, −8.67] |
+|  |  | Popularity groups | −14.32 [−19.99, −8.39] | −16.08 [−22.60, −9.07] |
+|  |  | All candidate diseases, no grouping | −14.07 [−24.24, −4.27] | −14.78 [−24.15, −7.16] |
+| Diseases with HPO phenotype annotation | HPO phenotype similarity | Popularity × weighted-degree groups | −10.69 [−11.50, −9.74] | −12.50 [−13.27, −11.60] |
+|  |  | Popularity groups | −9.92 [−10.91, −8.81] | −9.83 [−10.66, −9.13] |
+|  |  | All candidate diseases, no grouping | +5.05 [+4.43, +5.84] | +4.93 [+4.38, +5.47] |
 
-: Event-time holdout: Median-percentile advantage of DisAtlas (comparator minus DisAtlas, percentile points) on subsets of new trials, for the two co-primary comparison sets and for ranking with no grouping.
-The upper block compares with weighted Adamic–Adar; the lower block lists every other subset and comparator for which the comparator ranks new trials above DisAtlas under either co-primary set in either pool.
+: Event-time holdout: Median-percentile advantage of DisAtlas (reference score minus DisAtlas, percentile points) on subsets of new trials, for the two co-primary comparison sets and for ranking with no grouping.
+A shared MechDist neighbor means that the new disease and at least one of the drug's earlier indications share a neighbor in the MechDist graph, the condition under which Adamic–Adar is non-zero.
+The upper block compares with weighted Adamic–Adar; the lower block lists every other subset and reference score for which the reference score ranks new trials above DisAtlas under either co-primary set in either pool.
 Positive values mean DisAtlas ranks new trials better; brackets give 95% bootstrap intervals over drugs. {#tbl:SI_event_time_subsets}
