@@ -164,13 +164,13 @@
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|common-common.d_ci.0",
-     "ms": ".147 to +0.336); on common–common pairs the difference, +0.033 (−0.172 to +0.275), is not significant.]  [Perf",
+     "ms": "0.340); on common–common pairs the difference, +0.033 (−0.172 to +0.275), is not significant (Supplementary Ta",
      "expected": -0.172,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|common-common.d_ci.1",
-     "ms": ".336); on common–common pairs the difference, +0.033 (−0.172 to +0.275), is not significant.]  [Performance th",
+     "ms": "common–common pairs the difference, +0.033 (−0.172 to +0.275), is not significant (Supplementary Table ). Per",
      "expected": 0.275,
      "tol": 0.0005
     },
@@ -401,48 +401,48 @@
     },
     {
      "key": "recovery.rare anchor, common candidates.partner_degree",
-     "ms": "are, so a randomly chosen neighbour is rare with probability near 0.81, which means a simple nearest-neighbour",
+     "ms": "eighbor in the embedding is rare with probability near 0.81, which means a simple nearest-neighbor count alone",
      "expected": 0.81,
      "tol": 0.005
     },
     {
      "key": "ksel_K_range.0",
-     "ms": "f the embedded disease set.]  [We therefore compared each disease's 10 nearest neighbours against three null m",
+     "ms": "dded disease set. We therefore compared each disease's 10 nearest neighbors against three null models: an unre",
      "expected": 10
     },
     {
      "key": "enrichment_k10.observed|rare.0",
-     "ms": "lass (common) diseases are less frequent than the nulls predict (0.136 observed against 0.173 expected), and t",
+     "ms": "dding that are common is lower than the nulls predict (0.136 observed against 0.173 expected), and the share o",
      "expected": 0.136,
      "tol": 0.0005
     },
     {
      "key": "enrichment_k10.null_annotation|rare.0",
-     "ms": "are less frequent than the nulls predict (0.136 observed against 0.173 expected), and the same holds for a com",
+     "ms": "s lower than the nulls predict (0.136 observed against 0.173 expected), and the share of a common disease's 10",
      "expected": 0.173,
      "tol": 0.0005
     },
     {
      "key": "enrichment_k10.observed|common.0",
-     "ms": "expected), and the same holds for a common disease's neighbours (0.618 observed against 0.778 expected other-c",
+     "ms": "se's 10 nearest neighbors that are rare is also lower (0.618 against 0.778; p = 0.001 for both). This is a neg",
      "expected": 0.618,
      "tol": 0.0005
     },
     {
      "key": "enrichment_k10.null_annotation|common.0",
-     "ms": " holds for a common disease's neighbours (0.618 observed against 0.778 expected other-class, i.e. its 10 neare",
+     "ms": "t neighbors that are rare is also lower (0.618 against 0.778; p = 0.001 for both). This is a negative finding.",
      "expected": 0.778,
      "tol": 0.0005
     },
     {
      "key": "coverage_k10.null_degree|rare.1",
-     "ms": "its 10 nearest neighbours are rare less often than expected; p = 0.001 for both).]  [We report this as a negat",
+     "ms": "that are rare is also lower (0.618 against 0.778; p = 0.001 for both). This is a negative finding. Neither cl",
      "expected": 0.001,
      "tol": 0.0005
     },
     {
      "key": "coverage_k10.observed|rare.0",
-     "ms": "s ([Supplementary Figure ]).]  [Among their 10 nearest neighbours, 59% of rare diseases have at least one comm",
+     "ms": "plementary Figure ). Among their 10 nearest neighbors, 59% of rare diseases have at least one common disease,",
      "expected": 59
     },
     {
@@ -467,12 +467,12 @@
     },
     {
      "key": "coverage_k10.observed|common.0",
-     "ms": "neighbour.]  [Common diseases almost always have a rare neighbour (97% within the 10 nearest, against essentia",
+     "ms": "r. Common diseases almost always have a rare neighbor (97% within the 10 nearest, against essentially 100% und",
      "expected": 97
     },
     {
      "key": "external.enriched_null_max",
-     "ms": " a rare neighbour (97% within the 10 nearest, against essentially 100% under every null), which follows from r",
+     "ms": "ighbor (97% within the 10 nearest, against essentially 100% under every null), which follows from rare disease",
      "expected": 1.0,
      "tol": 0.005
     },
@@ -484,7 +484,7 @@
     },
     {
      "key": "external.n_shuffles",
-     "ms": "ng their k nearest neighbours in the DisAtlas embedding, for k = 1–50, compared with the unrestricted, degree-",
+     "ms": "nearest neighbors in the DisAtlas embedding, for k = 1–50, compared with the unrestricted, degree-matched and",
      "expected": 50
     }
    ]
@@ -497,7 +497,7 @@
    "checks": [
     {
      "key": "strata.IxIDN-Matched|Test split pairs|rare-common.pos",
-     "ms": "class diseases appear among nearest neighbours in general.]  [On the 68 rare–common pairs in the IxIDN-Matched",
+     "ms": "ases appear among nearest neighbors in general. On the 68 rare–common pairs in the IxIDN-Matched test split, t",
      "expected": 68
     },
     {
@@ -520,25 +520,25 @@
     },
     {
      "key": "recovery.rare anchor, common candidates.adamic_adar",
-     "ms": "ap scores on the unweighted training graph: against Adamic–Adar (0.916 and 0.948) the paired differences are −",
+     "ms": "graph (unweighted edges) without learning. Against it (0.916 and 0.948) the paired differences are −0.019 (95%",
      "expected": 0.916,
      "tol": 0.0005
     },
     {
      "key": "recovery.common anchor, rare candidates.adamic_adar",
-     "ms": "on the unweighted training graph: against Adamic–Adar (0.916 and 0.948) the paired differences are −0.019 (95%",
+     "ms": "eighted edges) without learning. Against it (0.916 and 0.948) the paired differences are −0.019 (95% disease-c",
      "expected": 0.948,
      "tol": 0.0005
     },
     {
      "key": "recovery.rare anchor, common candidates.d_adamic_adar.0",
-     "ms": "gainst Adamic–Adar (0.916 and 0.948) the paired differences are −0.019 (95% disease-cluster CI −0.056 to +0.02",
+     "ms": "gainst it (0.916 and 0.948) the paired differences are −0.019 (95% disease-cluster CI −0.056 to +0.023) and −0",
      "expected": -0.019,
      "tol": 0.0005
     },
     {
      "key": "recovery.common anchor, rare candidates.adamic_adar",
-     "ms": "t Adamic–Adar (0.916 and 0.948) the paired differences are −0.019 (95% disease-cluster CI −0.056 to +0.023) an",
+     "ms": "t (0.916 and 0.948) the paired differences are −0.019 (95% disease-cluster CI −0.056 to +0.023) and −0.014 (−0",
      "expected": 0.95,
      "tol": 0.005
     },
@@ -706,18 +706,18 @@
    "checks": [
     {
      "key": "controls.2.score",
-     "ms": "| Stratum | Pairs | AUROC | 95% CI | vs. matched shortcuts | |:--------",
+     "ms": "mmon_table). Summary table | Stratum | Pairs | AUROC | 95% CI | DisAtlas − combined matched-shortcut baselines",
      "expected": 0.95,
      "tol": 0.005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-rare.n",
-     "ms": ":|--------------:|:------------------------------| | Rare–rare | 2,452 | 0.754 | 0.703–0.800 | [+0.155 (+0.095",
+     "ms": "---:|:---------------------------------| | Rare–rare | 2,452 | 0.754 | 0.703–0.800 | +0.155 (+0.094 to +0.214)",
      "expected": 2452
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-rare.auroc",
-     "ms": "--------:|:------------------------------| | Rare–rare | 2,452 | 0.754 | 0.703–0.800 | [+0.155 (+0.095 to +0.2",
+     "ms": "-------------------------------| | Rare–rare | 2,452 | 0.754 | 0.703–0.800 | +0.155 (+0.094 to +0.214) | | Rar",
      "expected": 0.754,
      "tol": 0.0005
     },
@@ -753,12 +753,12 @@
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-common.n",
-     "ms": "54 | 0.703–0.800 | [+0.155 (+0.094 to +0.214)] | | Rare–common | 1,241 | 0.889 | 0.825–0.935 | [+0.241 (+0.147",
+     "ms": "03–0.800 | +0.155 (+0.094 to +0.214) | | Rare–common | 1,241 | 0.889 | 0.825–0.935 | +0.241 (+0.143 to +0.340)",
      "expected": 1241
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-common.auroc",
-     "ms": "04–0.801 | [+0.155 (+0.094 to +0.214)] | | Rare–common | 1,241 | 0.889 | 0.825–0.935 | [+0.241 (+0.147 to +0.3",
+     "ms": "| +0.155 (+0.094 to +0.214) | | Rare–common | 1,241 | 0.889 | 0.825–0.935 | +0.241 (+0.143 to +0.340) | | Com",
      "expected": 0.889,
      "tol": 0.0005
     },
@@ -776,13 +776,13 @@
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-common.d_stack",
-     "ms": "95 to +0.213)] | | Rare–common | 1,241 | 0.889 | 0.825–0.935 | [+0.241 (+0.143 to +0.340)] | | Common–common (",
+     "ms": "0.214) | | Rare–common | 1,241 | 0.889 | 0.825–0.935 | +0.241 (+0.143 to +0.340) | | Common–common (IxIDN-Matc",
      "expected": 0.241,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|rare-common.d_ci.0",
-     "ms": ".213)] | | Rare–common | 1,241 | 0.889 | 0.825–0.935 | [+0.241 (+0.143 to +0.340)] | | Common–common (IxIDN-Ma",
+     "ms": "| Rare–common | 1,241 | 0.889 | 0.825–0.935 | +0.241 (+0.143 to +0.340) | | Common–common (IxIDN-Matched) | 6",
      "expected": 0.143,
      "tol": 0.0005
     },
@@ -804,18 +804,18 @@
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|common-common.neg",
-     "ms": " (+0.143 to +0.340)] | | Common–common (IxIDN-Matched) | 671 (645 / 26) | 0.809 | 0.624–0.949 | [+0.033 (−0.16",
+     "ms": "+0.340) | | Common–common (IxIDN-Matched) | 671 (645 / 26) | 0.809 | 0.624–0.949 | +0.033 (−0.172 to +0.275; 2",
      "expected": 26
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|common-common.auroc",
-     "ms": "to +0.336)] | | Common–common (IxIDN-Matched) | 671 (645 / 26) | 0.809 | 0.624–0.949 | [+0.033 (−0.165 to +0.2",
+     "ms": ") | | Common–common (IxIDN-Matched) | 671 (645 / 26) | 0.809 | 0.624–0.949 | +0.033 (−0.172 to +0.275; 26 nega",
      "expected": 0.809,
      "tol": 0.0005
     },
     {
      "key": "strata.IxIDN-Matched|All pairs|common-common.ci.0",
-     "ms": "6)] | | Common–common (IxIDN-Matched) | 671 (645 / 26) | 0.809 | 0.624–0.949 | [+0.033 (−0.172 to +0.275; 26 n",
+     "ms": "mmon–common (IxIDN-Matched) | 671 (645 / 26) | 0.809 | 0.624–0.949 | +0.033 (−0.172 to +0.275; 26 negatives; n",
      "expected": 0.624,
      "tol": 0.0005
     },
@@ -881,73 +881,73 @@
     },
     {
      "key": "ra_case.polymyositis.mean",
-     "ms": "the 13,021-disease index is reported.] [Polymyositis (; mean p = 0.807, seed range 0.736–0.879), antisynthetas",
+     "ms": "e index is reported. Polymyositis (ORPHA:732; mean p = 0.807, seed range 0.736–0.879), antisynthetase syndrome",
      "expected": 0.807,
      "tol": 0.0005
     },
     {
      "key": "ra_case.polymyositis.lo",
-     "ms": " index is reported.] [Polymyositis (; mean p = 0.807, seed range 0.736–0.879), antisynthetase syndrome (; 0.73",
+     "ms": "d. Polymyositis (ORPHA:732; mean p = 0.807, seed range 0.736–0.879), antisynthetase syndrome (ORPHA:81; 0.733,",
      "expected": 0.736,
      "tol": 0.0005
     },
     {
      "key": "ra_case.polymyositis.hi",
-     "ms": " is reported.] [Polymyositis (; mean p = 0.807, seed range 0.736–0.879), antisynthetase syndrome (; 0.733, 0.6",
+     "ms": "ymyositis (ORPHA:732; mean p = 0.807, seed range 0.736–0.879), antisynthetase syndrome (ORPHA:81; 0.733, 0.651",
      "expected": 0.879,
      "tol": 0.0005
     },
     {
      "key": "ra_case.antisynthetase.mean",
-     "ms": "n p = 0.807, seed range 0.736–0.879), antisynthetase syndrome (; 0.733, 0.651–0.860) and dermatomyositis as th",
+     "ms": "range 0.736–0.879), antisynthetase syndrome (ORPHA:81; 0.733, 0.651–0.860) and dermatomyositis as the MONDO pa",
      "expected": 0.733,
      "tol": 0.0005
     },
     {
      "key": "ra_case.antisynthetase.lo",
-     "ms": ".807, seed range 0.736–0.879), antisynthetase syndrome (; 0.733, 0.651–0.860) and dermatomyositis as the MONDO",
+     "ms": ".736–0.879), antisynthetase syndrome (ORPHA:81; 0.733, 0.651–0.860) and dermatomyositis as the MONDO parent te",
      "expected": 0.651,
      "tol": 0.0005
     },
     {
      "key": "ra_case.antisynthetase.hi",
-     "ms": "seed range 0.736–0.879), antisynthetase syndrome (; 0.733, 0.651–0.860) and dermatomyositis as the MONDO paren",
+     "ms": ".879), antisynthetase syndrome (ORPHA:81; 0.733, 0.651–0.860) and dermatomyositis as the MONDO parent term (MO",
      "expected": 0.86,
      "tol": 0.0005
     },
     {
      "key": "ra_case.dermatomyositis_mondo.mean",
-     "ms": "33, 0.651–0.860) and dermatomyositis as the MONDO parent term (; 0.880, 0.854–0.934) have strong predicted ass",
+     "ms": "rmatomyositis as the MONDO parent term (MONDO:0016367; 0.880, 0.854–0.934) have strong predicted associations",
      "expected": 0.88,
      "tol": 0.0005
     },
     {
      "key": "ra_case.dermatomyositis_mondo.lo",
-     "ms": "51–0.860) and dermatomyositis as the MONDO parent term (; 0.880, 0.854–0.934) have strong predicted associatio",
+     "ms": "ositis as the MONDO parent term (MONDO:0016367; 0.880, 0.854–0.934) have strong predicted associations with RA",
      "expected": 0.854,
      "tol": 0.0005
     },
     {
      "key": "ra_case.dermatomyositis_mondo.hi",
-     "ms": "60) and dermatomyositis as the MONDO parent term (; 0.880, 0.854–0.934) have strong predicted associations wit",
+     "ms": "as the MONDO parent term (MONDO:0016367; 0.880, 0.854–0.934) have strong predicted associations with RA. Mixe",
      "expected": 0.934,
      "tol": 0.0005
     },
     {
      "key": "ra_case.mctd.mean",
-     "ms": "ociations with RA.] [Mixed connective tissue disease (; mean p = 0.032, seed range 0.016–0.059) does not.] [Cl",
+     "ms": ". Mixed connective tissue disease (ORPHA:809; mean p = 0.032, seed range 0.016–0.059) does not. Classical derm",
      "expected": 0.032,
      "tol": 0.0005
     },
     {
      "key": "ra_case.mctd.lo",
-     "ms": "] [Mixed connective tissue disease (; mean p = 0.032, seed range 0.016–0.059) does not.] [Classical dermatomyo",
+     "ms": "tissue disease (ORPHA:809; mean p = 0.032, seed range 0.016–0.059) does not. Classical dermatomyositis (ORPHA",
      "expected": 0.016,
      "tol": 0.0005
     },
     {
      "key": "ra_case.mctd.hi",
-     "ms": "xed connective tissue disease (; mean p = 0.032, seed range 0.016–0.059) does not.] [Classical dermatomyositis",
+     "ms": "e disease (ORPHA:809; mean p = 0.032, seed range 0.016–0.059) does not. Classical dermatomyositis (ORPHA:64561",
      "expected": 0.059,
      "tol": 0.0005
     }

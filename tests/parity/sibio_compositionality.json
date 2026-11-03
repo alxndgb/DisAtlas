@@ -8,7 +8,7 @@
    "checks": [
     {
      "key": "n",
-     "ms": "ps, rather than relying only on hand-picked examples.]  [For the 2,535 diseases with two or more MONDO parents",
+     "ms": "ource of expected compositional relationships. For the 2,535 diseases with two or more MONDO parents in the em",
      "expected": 2535
     },
     {
@@ -51,29 +51,29 @@
    "checks": [
     {
      "key": "examples.0.out_of",
-     "ms": "ases' embeddings ranks Mixed Connective Tissue Disease 704th of 13,015 other diseases (within the nearest 5.4%",
+     "ms": "eddings ranks Mixed Connective Tissue Disease 704th of 13,015 other diseases, excluding the five diseases aver",
      "expected": 13015
     },
     {
      "key": "examples.0.pct",
-     "ms": "Tissue Disease 704th of 13,015 other diseases (within the nearest 5.4%; p = 0.051 against 1,000 random combina",
+     "ms": "cluding the five diseases averaged (within the nearest 5.4%; p = 0.051 against 1,000 random combinations of fi",
      "expected": 0.054,
      "tol": 0.0005
     },
     {
      "key": "examples.0.p",
-     "ms": "ase 704th of 13,015 other diseases (within the nearest 5.4%; p = 0.051 against 1,000 random combinations of fi",
+     "ms": "e five diseases averaged (within the nearest 5.4%; p = 0.051 against 1,000 random combinations of five disease",
      "expected": 0.051,
      "tol": 0.0005
     },
     {
      "key": "examples.1.out_of",
-     "ms": " Gravis and Dermatomyositis embeddings ranks Thymoma 2,137th of 13,018 other diseases (p = 0.152 against 1,000",
+     "ms": "nd Dermatomyositis embeddings ranks Thymoma 2,137th of 13,018 other diseases, excluding the two diseases avera",
      "expected": 13018
     },
     {
      "key": "examples.1.p",
-     "ms": "s embeddings ranks Thymoma 2,137th of 13,018 other diseases (p = 0.152 against 1,000 random pairs of diseases)",
+     "ms": "her diseases, excluding the two diseases averaged (p = 0.152 against 1,000 random pairs of diseases), while My",
      "expected": 0.152,
      "tol": 0.0005
     }
@@ -87,7 +87,7 @@
    "checks": [
     {
      "key": "n",
-     "ms": "y.]  ![**[Compositionality of DisAtlas space.]** [**a**, For the 2,535 MONDO diseases with two or more parents",
+     "ms": "ource of expected compositional relationships. For the 2,535 diseases with two or more MONDO parents in the em",
      "expected": 2535
     }
    ]
@@ -102,18 +102,18 @@
      "key": "wilcoxon_bary_vs_one_real_rest_random_p",
      "op": "lt",
      "bound": 1e-30,
-     "ms": "Wilcoxon signed-rank p < 10^-30 for both comparisons"
+     "ms": "Wilcoxon signed-rank p < 10⁻³⁰ for both comparisons),"
     },
     {
      "key": "wilcoxon_bary_vs_random_p",
      "op": "lt",
      "bound": 1e-30,
-     "ms": "Wilcoxon signed-rank p < 10^-30 for both comparisons"
+     "ms": "Wilcoxon signed-rank p < 10⁻³⁰ for both comparisons),"
     },
     {
      "key": "n_null_examples",
      "expected": 1000,
-     "ms": "against 1,000 random combinations / pairs of diseases"
+     "ms": "s averaged (within the nearest 5.4%; p = 0.051 against 1,000 random combinations of five diseases), while Poly"
     }
    ]
   }
@@ -127,12 +127,12 @@
   {
    "token": "1,000",
    "reason": "checked (n_null_examples)",
-   "ms": "704th of 13,015 other diseases (within the nearest 5.4%; p = 0.051 against 1,000 random combinations of five diseases), "
+   "ms": "e Disease 704th of 13,015 other diseases, excluding the five diseases averaged (within the nearest 5.4%; p = 0.051 against 1,000 rand"
   },
   {
    "token": "1,000",
    "reason": "checked (n_null_examples)",
-   "ms": "beddings ranks Thymoma 2,137th of 13,018 other diseases (p = 0.152 against 1,000 random pairs of diseases), while Myasth"
+   "ms": " ranks Thymoma 2,137th of 13,018 other diseases, excluding the two diseases averaged (p = 0.152 against 1,000 random pai"
   }
  ],
  "manuscript_mismatch": []

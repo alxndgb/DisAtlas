@@ -13,7 +13,7 @@ pc = lambda x: f"{100 * x:.1f}%"; pp = lambda x: "0.0" if abs(x) < 5e-4 else f"{
 def e(d, m, col="top10"): r = E[(E["pop"] == "dev") & (E.design == d) & (E.method == m)]; assert len(r) == 1; return r.iloc[0]
 def p(d, m): r = P[(P["pop"] == "dev") & (P.design == d) & (P.comparison == f"disatlas_ens - {m}")]; assert len(r) == 1; return r.iloc[0]
 def f(d): r = F[(F["pop"] == "dev") & (F.design == d)]; assert len(r) == 1; return r.iloc[0]
-NAME = dict(disatlas_ens="DisAtlas (5 seeds)", deg="disease degree", shared_nbr="shared graph neighbours", lit_shared="shared literature genes", decoy="matched decoy diseases")
+NAME = dict(disatlas_ens="DisAtlas (5 seeds)", deg="disease degree", shared_nbr="shared graph neighbors", lit_shared="shared literature genes", decoy="matched decoy diseases")
 for d in ("D1", "D2"): assert e(d, "disatlas_ens").n == e(d, "shared_nbr").n == p(d, "shared_nbr").n
 f1, f2, a1, a2 = f("D1"), f("D2"), e("D1", "disatlas_ens"), e("D2", "disatlas_ens")
 s1, s2 = p("D1", "shared_nbr"), p("D2", "shared_nbr")

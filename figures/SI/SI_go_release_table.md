@@ -1,11 +1,11 @@
 | Comparison set | Diseases | Endpoint | Drugs | New trials | Current GO release | GO release dated to the slice | Change (dated − current) |
 |:--|:--|:--|--:|--:|--:|--:|--:|
-| Popularity and weighted-degree groups | Test-pool diseases | E1 (percentile points) | 1,566 | 3,309 | +5.73 [+3.45, +7.61] | +4.55 [+2.63, +6.82] | −1.19 [−2.14, +0.00] |
-| Popularity and weighted-degree groups | Test-pool diseases | E2 (percentage points) | 1,566 | 3,309 | +5.7 [+2.8, +8.7] | +5.4 [+2.4, +8.4] | −0.3 [−1.8, +1.1] |
-| Popularity and weighted-degree groups | All diseases | E1 (percentile points) | 2,288 | 6,823 | +3.79 [+2.49, +5.08] | +4.10 [+2.54, +5.57] | +0.31 [−0.56, +1.12] |
-| Popularity and weighted-degree groups | All diseases | E2 (percentage points) | 2,288 | 6,823 | +1.7 [−0.5, +4.1] | +1.3 [−0.9, +3.8] | −0.4 [−1.7, +1.0] |
-| Popularity groups | Test-pool diseases | E1 (percentile points) | 1,566 | 3,309 | +6.63 [+4.57, +8.33] | +5.77 [+3.95, +7.62] | −0.85 [−1.45, +0.12] |
-| Popularity groups | Test-pool diseases | E2 (percentage points) | 1,566 | 3,309 | +1.4 [−1.4, +4.2] | +1.7 [−1.1, +4.5] | +0.3 [−1.1, +1.7] |
-| Popularity groups | All diseases | E1 (percentile points) | 2,288 | 6,823 | +8.24 [+6.90, +10.24] | +8.36 [+7.14, +10.29] | +0.13 [−0.73, +0.85] |
-| Popularity groups | All diseases | E2 (percentage points) | 2,288 | 6,823 | +2.8 [+0.5, +5.2] | +2.1 [−0.3, +4.5] | −0.7 [−1.9, +0.5] |
+| Popularity × weighted-degree groups | Test-pool diseases | Median percentile (percentile points) | 1,566 | 3,309 | +5.73 [+3.45, +7.61] | +4.55 [+2.63, +6.82] | −1.19 [−2.14, +0.00] |
+|  | Test-pool diseases | Top-10% share (percentage points) | 1,566 | 3,309 | +5.7 [+2.8, +8.7] | +5.4 [+2.4, +8.4] | −0.3 [−1.8, +1.1] |
+|  | All diseases | Median percentile (percentile points) | 2,288 | 6,823 | +3.79 [+2.49, +5.08] | +4.10 [+2.54, +5.57] | +0.31 [−0.56, +1.12] |
+|  | All diseases | Top-10% share (percentage points) | 2,288 | 6,823 | +1.7 [−0.5, +4.1] | +1.3 [−0.9, +3.8] | −0.4 [−1.7, +1.0] |
+| Popularity groups | Test-pool diseases | Median percentile (percentile points) | 1,566 | 3,309 | +6.63 [+4.57, +8.33] | +5.77 [+3.95, +7.62] | −0.85 [−1.45, +0.12] |
+|  | Test-pool diseases | Top-10% share (percentage points) | 1,566 | 3,309 | +1.4 [−1.4, +4.2] | +1.7 [−1.1, +4.5] | +0.3 [−1.1, +1.7] |
+|  | All diseases | Median percentile (percentile points) | 2,288 | 6,823 | +8.24 [+6.90, +10.24] | +8.36 [+7.14, +10.29] | +0.13 [−0.73, +0.85] |
+|  | All diseases | Top-10% share (percentage points) | 2,288 | 6,823 | +2.8 [+0.5, +5.2] | +2.1 [−0.3, +4.5] | −0.7 [−1.9, +0.5] |
 | Eculizumab case: PNH → NMO, 2008 slice | All diseases | Percentile of NMO among matched candidate diseases, mean of five seeds | — | — | 95.22 (range 90.05–97.60) | not assessed (NMO absent from the graph) | not assessed |

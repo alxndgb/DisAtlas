@@ -1,20 +1,20 @@
 {
  "hpo_coverage_pct": 35,
  "model_hpo_pairs": 0.78,
- "delta_hpo_pairs": "+0.06-0.08",
+ "delta_hpo_pairs": "+0.06\u20130.08",
  "n_ci_excl_zero": 3,
  "model_hpo_pairs_test": 0.81,
- "delta_hpo_pairs_test": "+0.07-0.12",
+ "delta_hpo_pairs_test": "+0.07\u20130.12",
  "n_ci_excl_zero_test": 1,
- "hpo_auroc": "0.69-0.72",
+ "hpo_auroc": "0.69\u20130.72",
  "hpo_all_pairs": "0.54",
- "hpo_all_pairs_range": "0.54-0.54",
+ "hpo_all_pairs_range": "0.54\u20130.54",
  "hpo_undefined_pct": 65,
- "discordant_model": "0.68-0.76",
- "discordant_ordo": "0.44-0.53",
- "discordant_hpo": "0.67-0.73",
+ "discordant_model": "0.68\u20130.76",
+ "discordant_ordo": "0.44\u20130.53",
+ "discordant_hpo": "0.67\u20130.73",
  "outside_orphanet_pct": 63,
  "outside_orphanet_model": "0.876",
  "outside_orphanet_model_test": "0.909",
- "spearman_ordo_hpo": "0.51-0.62"
+ "spearman_ordo_hpo": "0.51\u20130.62"
 }

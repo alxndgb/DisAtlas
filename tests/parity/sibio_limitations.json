@@ -31,7 +31,7 @@
     },
     {
      "key": "controls.2.score",
-     "ms": "his kind, while leaving the IxIDN-Matched AUROC unchanged (+0.001, 95% CI −0.003 to +0.005).] [The gain is con",
+     "ms": "connected in the training graph (36% against 16%), and 95% of failing pairs are linked only in the broad layer",
      "expected": 0.95,
      "tol": 0.005
     }
@@ -70,42 +70,42 @@
     },
     {
      "key": "gene_anchor_ablation.top100_pct.0",
-     "ms": "m raises the share of these pairs ranked within the top 100 from 79.8% to 86.6% and raises the score of all 18",
+     "ms": "of these pairs ranked within the top 100 partners from 79.8% to 86.6% and leaves the IxIDN-Matched AUROC uncha",
      "expected": 79.8,
      "tol": 0.05
     },
     {
      "key": "gene_anchor_ablation.top100_pct.1",
-     "ms": " the share of these pairs ranked within the top 100 from 79.8% to 86.6% and raises the score of all 18 example",
+     "ms": "pairs ranked within the top 100 partners from 79.8% to 86.6% and leaves the IxIDN-Matched AUROC unchanged, but",
      "expected": 86.6,
      "tol": 0.05
     },
     {
      "key": "gene_anchor_ablation.ixidn_delta.0",
-     "ms": " of this kind, while leaving the IxIDN-Matched AUROC unchanged (+0.001, 95% CI −0.003 to +0.005).] [The gain i",
+     "ms": "4,364 pairs, as for the released model (paired change +0.001, 95% CI −0.003 to +0.005; seed standard deviation",
      "expected": 0.001,
      "tol": 0.0005
     },
     {
      "key": "gene_anchor_ablation.ixidn_delta.1",
-     "ms": "while leaving the IxIDN-Matched AUROC unchanged (+0.001, 95% CI −0.003 to +0.005).] [The gain is confined to p",
+     "ms": "4,364 pairs, as for the released model (paired change +0.001, 95% CI −0.003 to +0.005; seed standard deviation",
      "expected": -0.003,
      "tol": 0.0005
     },
     {
      "key": "gene_anchor_ablation.ixidn_delta.2",
-     "ms": "ving the IxIDN-Matched AUROC unchanged (+0.001, 95% CI −0.003 to +0.005).] [The gain is confined to pairs that",
+     "ms": "4,364 pairs, as for the released model (paired change +0.001, 95% CI −0.003 to +0.005; seed standard deviation",
      "expected": 0.005,
      "tol": 0.0005
     },
     {
      "key": "gene_anchor_ablation.fda_lost.0",
-     "ms": "at receive the new link, and the retrained model no longer recovers 13 of the 159 FDA-approved repurposing pai",
+     "ms": "unchanged, but the retrained model no longer recovers 13 of the 159 development-split FDA-approved repurposin",
      "expected": 13
     },
     {
      "key": "gene_anchor_ablation.fda_lost.1",
-     "ms": "the new link, and the retrained model no longer recovers 13 of the 159 FDA-approved repurposing pairs (Supplem",
+     "ms": ", but the retrained model no longer recovers 13 of the 159 development-split FDA-approved repurposing pairs th",
      "expected": 159
     }
    ]

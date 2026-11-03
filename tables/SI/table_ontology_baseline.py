@@ -26,7 +26,7 @@ O = pd.read_csv(DV / "ontology_orphanet.csv").set_index("subset")
 
 HPO = ["hpo_resnik_bma", "hpo_lin_bma", "hpo_simgic", "mechdist_hpo"]
 r3 = lambda x: str(Decimal(str(x)).quantize(Decimal("0.001"), rounding=ROUND_HALF_UP))  # inputs are stored at 4 dp
-rng = lambda s, k=2: f"{s.min():.{k}f}-{s.max():.{k}f}"
+rng = lambda s, k=2: f"{s.min():.{k}f}–{s.max():.{k}f}"
 
 h_all = B[(B.scope == "all") & B.column.isin(HPO)]
 h_tst = B[(B.scope == "test-test") & B.column.isin(HPO)]
@@ -62,7 +62,7 @@ v["outside_orphanet_model"] = r3(roc_auc_score(_P.y[_out], _P.p[_out]))
 v["outside_orphanet_model_test"] = r3(roc_auc_score(_P.y[_out & _tt], _P.p[_out & _tt]))
 oh = C[(C.x == "neg_ordo_dist") & C.y.isin(["mechdist_hpo", "hpo_simgic"]) & (C.subset == "pooled")].spearman_rho
 v["spearman_ordo_hpo"] = rng(oh)
-assert float(v["hpo_all_pairs_range"].split("-")[0]) >= 0.535 and float(v["hpo_all_pairs_range"].split("-")[1]) < 0.545
+assert float(v["hpo_all_pairs_range"].split("–")[0]) >= 0.535 and float(v["hpo_all_pairs_range"].split("–")[1]) < 0.545
 assert disc[disc.ontology == "neg_ordo_dist"].ontology_auroc.between(0.40, 0.56).all()  # reported as "chance"
 
 rows = [

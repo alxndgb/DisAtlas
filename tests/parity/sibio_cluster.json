@@ -1,40 +1,14 @@
 {
  "items": [
   {
-   "label": "SI_cluster_validation_distance",
-   "script": "figures/SI/si_cluster_rarecommon_numbers.py",
-   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
-   "status": "exact",
-   "checks": [
-    {
-     "key": "sil_learned",
-     "ms": "ases better than the embedding alone: at K = 55 the silhouette is 0.356 on the learned distance, against 0.240",
-     "expected": 0.356,
-     "tol": 0.0005
-    },
-    {
-     "key": "sil_cosine",
-     "ms": " K = 55 the silhouette is 0.356 on the learned distance, against 0.240 when k-medoids clustering is run on the",
-     "expected": 0.24,
-     "tol": 0.0005
-    },
-    {
-     "key": "ari_cos_vs_learned",
-     "ms": "en DisAtlas embeddings; the two partitions agree with an adjusted Rand index of 0.70.]",
-     "expected": 0.7,
-     "tol": 0.005
-    }
-   ]
-  },
-  {
-   "label": "SI_cluster_validation_distance",
+   "label": "SI_cluster_validation_k",
    "script": "figures/SI/si_cluster_validation.py",
    "numbers": "figures/SI/extended_cluster_validation_values.json",
    "status": "exact",
    "checks": [
     {
      "key": "k_one_se",
-     "ms": " distance separates diseases better than the embedding alone: at K = 55 the silhouette is 0.356 on the learned",
+     "ms": " or benchmark pair. K = 55 is the smallest K whose mean silhouette over 100 subsample re-clusterings lies with",
      "expected": 55
     }
    ]
@@ -134,27 +108,27 @@
     },
     {
      "key": "n_diseases",
-     "ms": "stems ([Supplementary Table ]).] [All 17 pairs are scored on the 13,021 diseases.] [At K = 55, 5 of 9 positive",
+     "ms": "ry Table ). Every disease of the 17 pairs is among the 13,021 clustered diseases, so every pair has a link sco",
      "expected": 13021
     },
     {
      "key": "controls_pos_same_cluster",
-     "ms": "e ]).] [All 17 pairs are scored on the 13,021 diseases.] [At K = 55, 5 of 9 positive pairs share a cluster and",
+     "ms": "has a link score and a cluster assignment. At K = 55, 5 of 9 positive pairs share a cluster and 8 of 8 negati",
      "expected": 5
     },
     {
      "key": "controls_neg_separated",
-     "ms": "021 diseases.] [At K = 55, 5 of 9 positive pairs share a cluster and 8 of 8 negative pairs are separated.] [Cl",
+     "ms": ". At K = 55, 5 of 9 positive pairs share a cluster and 8 of 8 negative pairs are separated. Cluster membership",
      "expected": 8
     },
     {
      "key": "n_pairs_all",
-     "ms": "splits still score at or above the 98.4th percentile of all 84,766,710 scored disease pairs, and the link scor",
+     "ms": "ce is $1-p$); percentile: rank of that score among all 84,766,710 scored disease pairs, of which half score be",
      "expected": 84766710
     },
     {
      "key": "controls_auroc",
-     "ms": "eparates the positive from the negative controls with an AUROC of 1.00: every positive pair scores above every",
+     "ms": "e positive from the negative controls with an AUROC of 1.00, and every positive pair, including the 4 that k-m",
      "expected": 1.0,
      "tol": 0.005
     },
@@ -166,37 +140,37 @@
     },
     {
      "key": "n_scored_partners",
-     "ms": "ation; the rank that each disease gives the other among its own 13,020 scored partners is the more informative",
+     "ms": ", the rank that each disease gives the other among all 13,020 other diseases ordered by link score; because ev",
      "expected": 13020
     },
     {
      "key": "controls_pos_top100",
-     "ms": "r among its own 13,020 scored partners is the more informative scale: 7 of the 9 positive pairs lie within the",
+     "ms": "not be a neighbor in the training graph. On this scale 7 of the 9 positive pairs have a best partner rank of 1",
      "expected": 7
     },
     {
      "key": "controls.1.best_rank",
-     "ms": "n the top 100 partners of at least one of the two diseases (best rank 1 to 255 across all 9), whereas the best",
+     "ms": "best partner rank of 100 or better (best partner rank 1 to 255 across all 9), whereas the best partner rank o",
      "expected": 1
     },
     {
      "key": "controls.7.best_rank",
-     "ms": "p 100 partners of at least one of the two diseases (best rank 1 to 255 across all 9), whereas the best rank of",
+     "ms": "partner rank of 100 or better (best partner rank 1 to 255 across all 9), whereas the best partner rank of eve",
      "expected": 255
     },
     {
      "key": "controls.5.best_rank",
-     "ms": "s of at least one of the two diseases (best rank 1 to 255 across all 9), whereas the best rank of every negati",
+     "ms": "f 100 or better (best partner rank 1 to 255 across all 9), whereas the best partner rank of every negative pai",
      "expected": 9
     },
     {
      "key": "controls.9.best_rank",
-     "ms": " all 9), whereas the best rank of every negative pair lies between 306 and 2,611 ([Supplementary Table ]).] [I",
+     "ms": "best partner rank of every negative pair lies between 306 and 2,611 (Supplementary Table ). Independently of",
      "expected": 306
     },
     {
      "key": "controls.16.best_rank",
-     "ms": "hereas the best rank of every negative pair lies between 306 and 2,611 ([Supplementary Table ]).] [Independent",
+     "ms": "rtner rank of every negative pair lies between 306 and 2,611 (Supplementary Table ). Independently of any cont",
      "expected": 2611
     },
     {
@@ -218,235 +192,235 @@
     },
     {
      "key": "strata.IxIDN-Matched|Test split pairs|all.neg",
-     "ms": "d negatives at K = 55 (29.7% of 491 positive pairs against 3.3% of 603 negative pairs), which gives a control-",
+     "ms": "at K = 55 (29.7% of 491 positive pairs against 3.3% of 603 negative pairs), and at least 5.8 times as often at",
      "expected": 603
     },
     {
      "key": "controls.0.score",
-     "ms": ":| | Crohn disease – ulcerative colitis | positive | yes | yes | 0.975 | 100.0 | 2 | | atypical hemolytic-urem",
+     "ms": "Crohn disease – ulcerative colitis | positive | yes | 0.975 | 100.0 | 2 | | atypical hemolytic-uremic syndrom",
      "expected": 0.975,
      "tol": 0.0005
     },
     {
      "key": "controls.0.best_rank",
-     "ms": "disease – ulcerative colitis | positive | yes | yes | 0.975 | 100.0 | 2 | | atypical hemolytic-uremic syndrome",
+     "ms": "ulcerative colitis | positive | yes | 0.975 | 100.0 | 2 | | atypical hemolytic-uremic syndrome – paroxysmal n",
      "expected": 2
     },
     {
      "key": "controls.1.score",
-     "ms": "e – paroxysmal nocturnal hemoglobinuria | positive | yes | yes | 0.955 | 99.9 | 1 | | psoriasis – psoriatic ar",
+     "ms": "paroxysmal nocturnal hemoglobinuria | positive | yes | 0.955 | 99.9 | 1 | | psoriasis – psoriatic arthritis |",
      "expected": 0.955,
      "tol": 0.0005
     },
     {
      "key": "controls.1.pct",
-     "ms": "oxysmal nocturnal hemoglobinuria | positive | yes | yes | 0.955 | 99.9 | 1 | | psoriasis – psoriatic arthritis",
+     "ms": "al nocturnal hemoglobinuria | positive | yes | 0.955 | 99.9 | 1 | | psoriasis – psoriatic arthritis | positive",
      "expected": 99.9,
      "tol": 0.05
     },
     {
      "key": "controls.2.score",
-     "ms": "| 1 | | psoriasis – psoriatic arthritis | positive | yes | yes | 0.954 | 99.9 | 78 | | tuberous sclerosis – ly",
+     "ms": "| | psoriasis – psoriatic arthritis | positive | yes | 0.954 | 99.9 | 78 | | tuberous sclerosis – lymphangiole",
      "expected": 0.954,
      "tol": 0.0005
     },
     {
      "key": "controls.2.best_rank",
-     "ms": "iasis – psoriatic arthritis | positive | yes | yes | 0.954 | 99.9 | 78 | | tuberous sclerosis – lymphangioleio",
+     "ms": "psoriatic arthritis | positive | yes | 0.954 | 99.9 | 78 | | tuberous sclerosis – lymphangioleiomyomatosis |",
      "expected": 78
     },
     {
      "key": "controls.3.score",
-     "ms": "us sclerosis – lymphangioleiomyomatosis | positive | yes | yes | 0.953 | 99.9 | 1 | | cryopyrin-associated per",
+     "ms": "clerosis – lymphangioleiomyomatosis | positive | yes | 0.953 | 99.9 | 1 | | cryopyrin-associated periodic synd",
      "expected": 0.953,
      "tol": 0.0005
     },
     {
      "key": "controls.4.score",
-     "ms": "c syndrome – familial Mediterranean fever | positive | no | no | 0.931 | 99.7 | 17 | | Wolman disease – choles",
+     "ms": "drome – familial Mediterranean fever | positive | no | 0.931 | 99.7 | 17 | | Wolman disease – cholesteryl este",
      "expected": 0.931,
      "tol": 0.0005
     },
     {
      "key": "controls.4.pct",
-     "ms": "ome – familial Mediterranean fever | positive | no | no | 0.931 | 99.7 | 17 | | Wolman disease – cholesteryl e",
+     "ms": "familial Mediterranean fever | positive | no | 0.931 | 99.7 | 17 | | Wolman disease – cholesteryl ester storag",
      "expected": 99.7,
      "tol": 0.05
     },
     {
      "key": "controls.4.best_rank",
-     "ms": "– familial Mediterranean fever | positive | no | no | 0.931 | 99.7 | 17 | | Wolman disease – cholesteryl ester",
+     "ms": "l Mediterranean fever | positive | no | 0.931 | 99.7 | 17 | | Wolman disease – cholesteryl ester storage disea",
      "expected": 17
     },
     {
      "key": "controls.5.score",
-     "ms": "sease – cholesteryl ester storage disease | positive | no | no | 0.915 | 99.6 | 9 | | myasthenia gravis – neur",
+     "ms": "– cholesteryl ester storage disease | positive | no | 0.915 | 99.6 | 9 | | myasthenia gravis – neuromyelitis",
      "expected": 0.915,
      "tol": 0.0005
     },
     {
      "key": "controls.5.pct",
-     "ms": " cholesteryl ester storage disease | positive | no | no | 0.915 | 99.6 | 9 | | myasthenia gravis – neuromyelit",
+     "ms": "steryl ester storage disease | positive | no | 0.915 | 99.6 | 9 | | myasthenia gravis – neuromyelitis optica |",
      "expected": 99.6,
      "tol": 0.05
     },
     {
      "key": "controls.6.score",
-     "ms": " myasthenia gravis – neuromyelitis optica | positive | no | no | 0.906 | 99.5 | 3 | | gastrointestinal stromal",
+     "ms": "thenia gravis – neuromyelitis optica | positive | no | 0.906 | 99.5 | 3 | | gastrointestinal stromal tumor – c",
      "expected": 0.906,
      "tol": 0.0005
     },
     {
      "key": "controls.6.pct",
-     "ms": "henia gravis – neuromyelitis optica | positive | no | no | 0.906 | 99.5 | 3 | | gastrointestinal stromal tumor",
+     "ms": "ravis – neuromyelitis optica | positive | no | 0.906 | 99.5 | 3 | | gastrointestinal stromal tumor – chronic m",
      "expected": 99.5,
      "tol": 0.05
     },
     {
      "key": "controls.6.best_rank",
-     "ms": " gravis – neuromyelitis optica | positive | no | no | 0.906 | 99.5 | 3 | | gastrointestinal stromal tumor – ch",
+     "ms": "neuromyelitis optica | positive | no | 0.906 | 99.5 | 3 | | gastrointestinal stromal tumor – chronic myelogen",
      "expected": 3
     },
     {
      "key": "controls.7.score",
-     "ms": "myelogenous leukemia, BCR-ABL1 positive | positive | yes | yes | 0.814 | 98.8 | 255 | | gastrointestinal strom",
+     "ms": "ogenous leukemia, BCR-ABL1 positive | positive | yes | 0.814 | 98.8 | 255 | | gastrointestinal stromal tumor –",
      "expected": 0.814,
      "tol": 0.0005
     },
     {
      "key": "controls.7.pct",
-     "ms": "nous leukemia, BCR-ABL1 positive | positive | yes | yes | 0.814 | 98.8 | 255 | | gastrointestinal stromal tumo",
+     "ms": "leukemia, BCR-ABL1 positive | positive | yes | 0.814 | 98.8 | 255 | | gastrointestinal stromal tumor – systemi",
      "expected": 98.8,
      "tol": 0.05
     },
     {
      "key": "controls.8.score",
-     "ms": "nal stromal tumor – systemic mastocytosis | positive | no | no | 0.750 | 98.4 | 184 | | tuberous sclerosis – m",
+     "ms": "tromal tumor – systemic mastocytosis | positive | no | 0.750 | 98.4 | 184 | | tuberous sclerosis – multiple sc",
      "expected": 0.75,
      "tol": 0.0005
     },
     {
      "key": "controls.8.pct",
-     "ms": "omal tumor – systemic mastocytosis | positive | no | no | 0.750 | 98.4 | 184 | | tuberous sclerosis – multiple",
+     "ms": "umor – systemic mastocytosis | positive | no | 0.750 | 98.4 | 184 | | tuberous sclerosis – multiple sclerosis",
      "expected": 98.4,
      "tol": 0.05
     },
     {
      "key": "controls.8.best_rank",
-     "ms": "umor – systemic mastocytosis | positive | no | no | 0.750 | 98.4 | 184 | | tuberous sclerosis – multiple scler",
+     "ms": "systemic mastocytosis | positive | no | 0.750 | 98.4 | 184 | | tuberous sclerosis – multiple sclerosis | negat",
      "expected": 184
     },
     {
      "key": "controls.9.score",
-     "ms": " tuberous sclerosis – multiple sclerosis | negative | no | yes | 0.651 | 97.7 | 306 | | polycystic kidney dise",
+     "ms": "erous sclerosis – multiple sclerosis | negative | no | 0.651 | 97.7 | 306 | | polycystic kidney disease – poly",
      "expected": 0.651,
      "tol": 0.0005
     },
     {
      "key": "controls.9.pct",
-     "ms": "us sclerosis – multiple sclerosis | negative | no | yes | 0.651 | 97.7 | 306 | | polycystic kidney disease – p",
+     "ms": "lerosis – multiple sclerosis | negative | no | 0.651 | 97.7 | 306 | | polycystic kidney disease – polycystic o",
      "expected": 97.7,
      "tol": 0.05
     },
     {
      "key": "controls.10.score",
-     "ms": "dney disease – polycystic ovary syndrome | negative | no | yes | 0.163 | 91.2 | 924 | | neurofibromatosis type",
+     "ms": "disease – polycystic ovary syndrome | negative | no | 0.163 | 91.2 | 924 | | neurofibromatosis type 1 due to",
      "expected": 0.163,
      "tol": 0.0005
     },
     {
      "key": "controls.10.pct",
-     "ms": "isease – polycystic ovary syndrome | negative | no | yes | 0.163 | 91.2 | 924 | | neurofibromatosis type 1 due",
+     "ms": "– polycystic ovary syndrome | negative | no | 0.163 | 91.2 | 924 | | neurofibromatosis type 1 due to NF1 muta",
      "expected": 91.2,
      "tol": 0.05
     },
     {
      "key": "controls.10.best_rank",
-     "ms": "– polycystic ovary syndrome | negative | no | yes | 0.163 | 91.2 | 924 | | neurofibromatosis type 1 due to NF1",
+     "ms": "cystic ovary syndrome | negative | no | 0.163 | 91.2 | 924 | | neurofibromatosis type 1 due to NF1 mutation or",
      "expected": 924
     },
     {
      "key": "controls.11.score",
-     "ms": "c deletion – NF2-related schwannomatosis | negative | no | yes | 0.145 | 90.5 | 813 | | amyotrophic lateral sc",
+     "ms": "letion – NF2-related schwannomatosis | negative | no | 0.145 | 90.5 | 813 | | amyotrophic lateral sclerosis –",
      "expected": 0.145,
      "tol": 0.0005
     },
     {
      "key": "controls.11.pct",
-     "ms": "ion – NF2-related schwannomatosis | negative | no | yes | 0.145 | 90.5 | 813 | | amyotrophic lateral sclerosis",
+     "ms": "NF2-related schwannomatosis | negative | no | 0.145 | 90.5 | 813 | | amyotrophic lateral sclerosis – systemic",
      "expected": 90.5,
      "tol": 0.05
     },
     {
      "key": "controls.11.best_rank",
-     "ms": "NF2-related schwannomatosis | negative | no | yes | 0.145 | 90.5 | 813 | | amyotrophic lateral sclerosis – sys",
+     "ms": "lated schwannomatosis | negative | no | 0.145 | 90.5 | 813 | | amyotrophic lateral sclerosis – systemic sclero",
      "expected": 813
     },
     {
      "key": "controls.12.best_rank",
-     "ms": "osis – systemic sclerosis | negative | no | yes | 0.145 | 90.5 | 1,157 | | Duchenne muscular dystrophy – Fuchs",
+     "ms": "– systemic sclerosis | negative | no | 0.145 | 90.5 | 1,157 | | Duchenne muscular dystrophy – Fuchs' endothel",
      "expected": 1157
     },
     {
      "key": "controls.13.score",
-     "ms": "dystrophy – Fuchs' endothelial dystrophy | negative | no | yes | 0.105 | 88.3 | 1,343 | | diabetes insipidus –",
+     "ms": "rophy – Fuchs' endothelial dystrophy | negative | no | 0.105 | 88.3 | 1,343 | | diabetes insipidus – type 2 di",
      "expected": 0.105,
      "tol": 0.0005
     },
     {
      "key": "controls.13.pct",
-     "ms": "hy – Fuchs' endothelial dystrophy | negative | no | yes | 0.105 | 88.3 | 1,343 | | diabetes insipidus – type 2",
+     "ms": "Fuchs' endothelial dystrophy | negative | no | 0.105 | 88.3 | 1,343 | | diabetes insipidus – type 2 diabetes m",
      "expected": 88.3,
      "tol": 0.05
     },
     {
      "key": "controls.13.best_rank",
-     "ms": "hs' endothelial dystrophy | negative | no | yes | 0.105 | 88.3 | 1,343 | | diabetes insipidus – type 2 diabete",
+     "ms": "endothelial dystrophy | negative | no | 0.105 | 88.3 | 1,343 | | diabetes insipidus – type 2 diabetes mellitus",
      "expected": 1343
     },
     {
      "key": "controls.14.score",
-     "ms": "tes insipidus – type 2 diabetes mellitus | negative | no | yes | 0.079 | 86.2 | 1,774 | | spinal muscular atro",
+     "ms": "insipidus – type 2 diabetes mellitus | negative | no | 0.079 | 86.2 | 1,774 | | spinal muscular atrophy – Kenn",
      "expected": 0.079,
      "tol": 0.0005
     },
     {
      "key": "controls.14.pct",
-     "ms": "ipidus – type 2 diabetes mellitus | negative | no | yes | 0.079 | 86.2 | 1,774 | | spinal muscular atrophy – K",
+     "ms": "s – type 2 diabetes mellitus | negative | no | 0.079 | 86.2 | 1,774 | | spinal muscular atrophy – Kennedy dise",
      "expected": 86.2,
      "tol": 0.05
     },
     {
      "key": "controls.14.best_rank",
-     "ms": " type 2 diabetes mellitus | negative | no | yes | 0.079 | 86.2 | 1,774 | | spinal muscular atrophy – Kennedy d",
+     "ms": "e 2 diabetes mellitus | negative | no | 0.079 | 86.2 | 1,774 | | spinal muscular atrophy – Kennedy disease | n",
      "expected": 1774
     },
     {
      "key": "controls.15.score",
-     "ms": "pinal muscular atrophy – Kennedy disease | negative | no | yes | 0.068 | 84.9 | 1,662 | | osteogenesis imperfe",
+     "ms": "l muscular atrophy – Kennedy disease | negative | no | 0.068 | 84.9 | 1,662 | | osteogenesis imperfecta – oste",
      "expected": 0.068,
      "tol": 0.0005
     },
     {
      "key": "controls.15.pct",
-     "ms": "uscular atrophy – Kennedy disease | negative | no | yes | 0.068 | 84.9 | 1,662 | | osteogenesis imperfecta – o",
+     "ms": "ar atrophy – Kennedy disease | negative | no | 0.068 | 84.9 | 1,662 | | osteogenesis imperfecta – osteopetrosi",
      "expected": 84.9,
      "tol": 0.05
     },
     {
      "key": "controls.15.best_rank",
-     "ms": "atrophy – Kennedy disease | negative | no | yes | 0.068 | 84.9 | 1,662 | | osteogenesis imperfecta – osteopetr",
+     "ms": "phy – Kennedy disease | negative | no | 0.068 | 84.9 | 1,662 | | osteogenesis imperfecta – osteopetrosis | neg",
      "expected": 1662
     },
     {
      "key": "controls.16.score",
-     "ms": " osteogenesis imperfecta – osteopetrosis | negative | no | yes | 0.033 | 76.7 | 2,611 |  : [Positive and negat",
+     "ms": "eogenesis imperfecta – osteopetrosis | negative | no | 0.033 | 76.7 | 2,611 | : Positive and negative control",
      "expected": 0.033,
      "tol": 0.0005
     },
     {
      "key": "controls.16.pct",
-     "ms": "enesis imperfecta – osteopetrosis | negative | no | yes | 0.033 | 76.7 | 2,611 |  : [Positive and negative con",
+     "ms": "s imperfecta – osteopetrosis | negative | no | 0.033 | 76.7 | 2,611 | : Positive and negative control disease",
      "expected": 76.7,
      "tol": 0.05
     },
@@ -476,7 +450,7 @@
    "checks": [
     {
      "key": "k_one_se",
-     "ms": "ally relevant signal.]  | Control pair | Role | Same cluster at K = 55 | Control holds at K = 55 | DisAtlas pa",
+     "ms": "nt signal. | Control pair | Role | Same cluster at K = 55 | DisAtlas pair link score | Percentile among all pa",
      "expected": 55
     }
    ]
@@ -686,7 +660,7 @@
    "checks": [
     {
      "key": "internal.n_clusters_neg",
-     "ms": "for display only, and clusters are assigned on the learned distance $1-p$.] [Over 1,999,833 random disease pai",
+     "ms": "bel is computed separately, from the learned distance $1-p$, so the map does not affect the labels. Of the fiv",
      "expected": 1
     },
     {
@@ -710,8 +684,185 @@
    "checks": [
     {
      "key": "n_pairs",
-     "ms": "d clusters are assigned on the learned distance $1-p$.] [Over 1,999,833 random disease pairs, map distance and",
+     "ms": "stochastic neighbor embedding kept 71, 70 and 66. Over 1,999,833 random disease pairs, map distance and the le",
      "expected": 1999833
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_layout",
+   "script": "figures/SI/si_cluster_rarecommon_numbers.py",
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "layout_controls.isomap",
+     "ms": "ayouts we compared, Isomap kept every related control pair closer on the map than every unrelated one (72 of 72 comparisons), as did principal component analysi",
+     "expected": 72
+    },
+    {
+     "key": "layout_controls.pca",
+     "ms": "ayouts we compared, Isomap kept every related control pair closer on the map than every unrelated one (72 of 72 comparisons), as did principal component analysi",
+     "expected": 72
+    },
+    {
+     "key": "layout_controls.cmds",
+     "ms": "ayouts we compared, Isomap kept every related control pair closer on the map than every unrelated one (72 of 72 comparisons), as did principal component analysis; classical multidimensional scaling, uniform manifold approximation and projection, and t-distributed stochastic neighbor embedding kept 71, 70 and 66. Over 1,999,833 r",
+     "expected": 71
+    },
+    {
+     "key": "layout_controls.umap",
+     "ms": "ayouts we compared, Isomap kept every related control pair closer on the map than every unrelated one (72 of 72 comparisons), as did principal component analysis; classical multidimensional scaling, uniform manifold approximation and projection, and t-distributed stochastic neighbor embedding kept 71, 70 and 66. Over 1,999,833 r",
+     "expected": 70
+    },
+    {
+     "key": "layout_controls.tsne",
+     "ms": "ayouts we compared, Isomap kept every related control pair closer on the map than every unrelated one (72 of 72 comparisons), as did principal component analysis; classical multidimensional scaling, uniform manifold approximation and projection, and t-distributed stochastic neighbor embedding kept 71, 70 and 66. Over 1,999,833 r",
+     "expected": 66
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_themes",
+   "script": "tables/SI/table_cluster_themes.py",
+   "numbers": "tables/SI/table_cluster_themes_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "counts.anatomy",
+     "ms": "est are unresolved. Of the 55 clusters, 20 are dominated by a body system alone (5,337 diseases), 8 meet both definitions (1,807), 11 are enriched for a mechanism or process alone (2,407), 6 are neoplasm clusters (1,201) and 10 are unresolved (2,269) (Supplementary Table ). Varying the share thresho",
+     "expected": 20
+    },
+    {
+     "key": "diseases.anatomy",
+     "ms": "est are unresolved. Of the 55 clusters, 20 are dominated by a body system alone (5,337 diseases), 8 meet both definitions (1,807), 11 are enriched for a mechanism or process alone (2,407), 6 are neoplasm clusters (1,201) and 10 are unresolved (2,269) (Supplementary Table ). Varying the share thresho",
+     "expected": 5337
+    },
+    {
+     "key": "counts.mixed",
+     "ms": "est are unresolved. Of the 55 clusters, 20 are dominated by a body system alone (5,337 diseases), 8 meet both definitions (1,807), 11 are enriched for a mechanism or process alone (2,407), 6 are neoplasm clusters (1,201) and 10 are unresolved (2,269) (Supplementary Table ). Varying the share thresho",
+     "expected": 8
+    },
+    {
+     "key": "diseases.mixed",
+     "ms": "est are unresolved. Of the 55 clusters, 20 are dominated by a body system alone (5,337 diseases), 8 meet both definitions (1,807), 11 are enriched for a mechanism or process alone (2,407), 6 are neoplasm clusters (1,201) and 10 are unresolved (2,269) (Supplementary Table ). Varying the share thresho",
+     "expected": 1807
+    },
+    {
+     "key": "counts.process",
+     "ms": "est are unresolved. Of the 55 clusters, 20 are dominated by a body system alone (5,337 diseases), 8 meet both definitions (1,807), 11 are enriched for a mechanism or process alone (2,407), 6 are neoplasm clusters (1,201) and 10 are unresolved (2,269) (Supplementary Table ). Varying the share thresho",
+     "expected": 11
+    },
+    {
+     "key": "diseases.process",
+     "ms": "est are unresolved. Of the 55 clusters, 20 are dominated by a body system alone (5,337 diseases), 8 meet both definitions (1,807), 11 are enriched for a mechanism or process alone (2,407), 6 are neoplasm clusters (1,201) and 10 are unresolved (2,269) (Supplementary Table ). Varying the share thresho",
+     "expected": 2407
+    },
+    {
+     "key": "counts.neoplasm",
+     "ms": "est are unresolved. Of the 55 clusters, 20 are dominated by a body system alone (5,337 diseases), 8 meet both definitions (1,807), 11 are enriched for a mechanism or process alone (2,407), 6 are neoplasm clusters (1,201) and 10 are unresolved (2,269) (Supplementary Table ). Varying the share thresho",
+     "expected": 6
+    },
+    {
+     "key": "diseases.neoplasm",
+     "ms": "est are unresolved. Of the 55 clusters, 20 are dominated by a body system alone (5,337 diseases), 8 meet both definitions (1,807), 11 are enriched for a mechanism or process alone (2,407), 6 are neoplasm clusters (1,201) and 10 are unresolved (2,269) (Supplementary Table ). Varying the share thresho",
+     "expected": 1201
+    },
+    {
+     "key": "counts.unresolved",
+     "ms": "est are unresolved. Of the 55 clusters, 20 are dominated by a body system alone (5,337 diseases), 8 meet both definitions (1,807), 11 are enriched for a mechanism or process alone (2,407), 6 are neoplasm clusters (1,201) and 10 are unresolved (2,269) (Supplementary Table ). Varying the share thresho",
+     "expected": 10
+    },
+    {
+     "key": "diseases.unresolved",
+     "ms": "est are unresolved. Of the 55 clusters, 20 are dominated by a body system alone (5,337 diseases), 8 meet both definitions (1,807), 11 are enriched for a mechanism or process alone (2,407), 6 are neoplasm clusters (1,201) and 10 are unresolved (2,269) (Supplementary Table ). Varying the share thresho",
+     "expected": 2269
+    },
+    {
+     "key": "grid_body_system_min",
+     "ms": "eshold 0.10 higher) gives 23–32 body-system-dominated and 15–22 mechanism- or process-enriched clusters. Within-cluster pairs in the 20 clusters defin",
+     "expected": 23
+    },
+    {
+     "key": "grid_body_system_max",
+     "ms": "eshold 0.10 higher) gives 23–32 body-system-dominated and 15–22 mechanism- or process-enriched clusters. Within-cluster pairs in the 20 clusters defin",
+     "expected": 32
+    },
+    {
+     "key": "grid_process_min",
+     "ms": "eshold 0.10 higher) gives 23–32 body-system-dominated and 15–22 mechanism- or process-enriched clusters. Within-cluster pairs in the 20 clusters defin",
+     "expected": 15
+    },
+    {
+     "key": "grid_process_max",
+     "ms": "eshold 0.10 higher) gives 23–32 body-system-dominated and 15–22 mechanism- or process-enriched clusters. Within-cluster pairs in the 20 clusters defin",
+     "expected": 22
+    },
+    {
+     "key": "mann_whitney_anatomy_vs_process.pairs_hpo_jaccard_fold.median_anatomy",
+     "ms": "p over random pairs 4.5-fold against 2.1-fold; two-sided Mann–Whitney p = 0.015), and less strongly share genes (7.5-fold against 17.6-fold; p = 0.026) and biological processes (2.0-fold against 3.7-fold; p = 0.003). | Cluster | Diseases | Theme | Dominant bod",
+     "expected": 4.5,
+     "tol": 0.05
+    },
+    {
+     "key": "mann_whitney_anatomy_vs_process.pairs_hpo_jaccard_fold.median_process",
+     "ms": "p over random pairs 4.5-fold against 2.1-fold; two-sided Mann–Whitney p = 0.015), and less strongly share genes (7.5-fold against 17.6-fold; p = 0.026) and biological processes (2.0-fold against 3.7-fold; p = 0.003). | Cluster | Diseases | Theme | Dominant bod",
+     "expected": 2.1,
+     "tol": 0.05
+    },
+    {
+     "key": "mann_whitney_anatomy_vs_process.pairs_hpo_jaccard_fold.p",
+     "ms": "p over random pairs 4.5-fold against 2.1-fold; two-sided Mann–Whitney p = 0.015), and less strongly share genes (7.5-fold against 17.6-fold; p = 0.026) and biological processes (2.0-fold against 3.7-fold; p = 0.003). | Cluster | Diseases | Theme | Dominant bod",
+     "expected": 0.015,
+     "tol": 0.0005
+    },
+    {
+     "key": "mann_whitney_anatomy_vs_process.pairs_gene_share_fold.median_anatomy",
+     "ms": "p over random pairs 4.5-fold against 2.1-fold; two-sided Mann–Whitney p = 0.015), and less strongly share genes (7.5-fold against 17.6-fold; p = 0.026) and biological processes (2.0-fold against 3.7-fold; p = 0.003). | Cluster | Diseases | Theme | Dominant bod",
+     "expected": 7.5,
+     "tol": 0.05
+    },
+    {
+     "key": "mann_whitney_anatomy_vs_process.pairs_gene_share_fold.median_process",
+     "ms": "p over random pairs 4.5-fold against 2.1-fold; two-sided Mann–Whitney p = 0.015), and less strongly share genes (7.5-fold against 17.6-fold; p = 0.026) and biological processes (2.0-fold against 3.7-fold; p = 0.003). | Cluster | Diseases | Theme | Dominant bod",
+     "expected": 17.6,
+     "tol": 0.05
+    },
+    {
+     "key": "mann_whitney_anatomy_vs_process.pairs_gene_share_fold.p",
+     "ms": "p over random pairs 4.5-fold against 2.1-fold; two-sided Mann–Whitney p = 0.015), and less strongly share genes (7.5-fold against 17.6-fold; p = 0.026) and biological processes (2.0-fold against 3.7-fold; p = 0.003). | Cluster | Diseases | Theme | Dominant bod",
+     "expected": 0.026,
+     "tol": 0.0005
+    },
+    {
+     "key": "mann_whitney_anatomy_vs_process.pairs_gobp_jaccard_fold.median_anatomy",
+     "ms": "p over random pairs 4.5-fold against 2.1-fold; two-sided Mann–Whitney p = 0.015), and less strongly share genes (7.5-fold against 17.6-fold; p = 0.026) and biological processes (2.0-fold against 3.7-fold; p = 0.003). | Cluster | Diseases | Theme | Dominant bod",
+     "expected": 2.0,
+     "tol": 0.05
+    },
+    {
+     "key": "mann_whitney_anatomy_vs_process.pairs_gobp_jaccard_fold.median_process",
+     "ms": "p over random pairs 4.5-fold against 2.1-fold; two-sided Mann–Whitney p = 0.015), and less strongly share genes (7.5-fold against 17.6-fold; p = 0.026) and biological processes (2.0-fold against 3.7-fold; p = 0.003). | Cluster | Diseases | Theme | Dominant bod",
+     "expected": 3.7,
+     "tol": 0.05
+    },
+    {
+     "key": "mann_whitney_anatomy_vs_process.pairs_gobp_jaccard_fold.p",
+     "ms": "p over random pairs 4.5-fold against 2.1-fold; two-sided Mann–Whitney p = 0.015), and less strongly share genes (7.5-fold against 17.6-fold; p = 0.026) and biological processes (2.0-fold against 3.7-fold; p = 0.003). | Cluster | Diseases | Theme | Dominant bod",
+     "expected": 0.003,
+     "tol": 0.0005
+    },
+    {
+     "key": "body_system_dominated",
+     "ms": "Of the 55 clusters, 28 were dominated by a single body system, with at least 60% of annotated members in one MONDO body-system class (for example eye, skin, heart or nervous system), and 19 were enriched for a named mechanism or biological process, such as mitochondrial disease, ciliopathy, complement deficiency, DNA repair, lys",
+     "expected": 28,
+     "note": "main-text summary (Unsupervised clustering section)"
+    },
+    {
+     "key": "process_enriched",
+     "ms": "Of the 55 clusters, 28 were dominated by a single body system, with at least 60% of annotated members in one MONDO body-system class (for example eye, skin, heart or nervous system), and 19 were enriched for a named mechanism or biological process, such as mitochondrial disease, ciliopathy, complement deficiency, DNA repair, lys",
+     "expected": 19,
+     "note": "main-text summary (Unsupervised clustering section)"
     }
    ]
   }
@@ -728,6 +879,42 @@
    "token": "2.5",
    "reason": "interval level label",
    "ctx": "s distance (1 − p) for each K, over 100 subsamples of 80% of diseases (band: 2.5–97.5% range across subsamples). The das"
+  },
+  {
+   "section": "SI_cluster_validation_themes",
+   "token": "60%",
+   "reason": "classification-rule threshold (parameter)",
+   "ctx": "syndromic diseases, covers at least 60% of its annotated members, with at least two-fold enrichment and Benjam"
+  },
+  {
+   "section": "SI_cluster_validation_themes",
+   "token": "15%",
+   "reason": "classification-rule threshold (parameter)",
+   "ctx": "n error of immunity covers at least 15% of members with at least ten-fold enrichment and q < 0.05, or when the"
+  },
+  {
+   "section": "SI_cluster_validation_themes",
+   "token": "25%",
+   "reason": "classification-rule threshold (parameter)",
+   "ctx": "r a system process) covers at least 25% of members with at least ten-fold enrichment and q < 0.05. Clusters me"
+  },
+  {
+   "section": "SI_cluster_validation_themes",
+   "token": "40%",
+   "reason": "classification-rule threshold (parameter)",
+   "ctx": "er or benign tumors make up at least 40% of members and no mechanism term passes are counted as neoplasm clust"
+  },
+  {
+   "section": "SI_cluster_validation_themes",
+   "token": "0.05",
+   "reason": "classification-rule threshold (parameter)",
+   "ctx": " Benjamini–Hochberg q < 0.05), against at most one cluster in 50 label shuffles, and the adjusted mutual infor"
+  },
+  {
+   "section": "SI_cluster_validation_themes",
+   "token": "0.5",
+   "reason": "classification-rule threshold (parameter)",
+   "ctx": "e share thresholds (body system 0.5, 0.6 or 0.7; mechanism 0.10, 0.15 or 0.20, with the process threshold 0.10"
   }
  ],
  "manuscript_mismatch": []

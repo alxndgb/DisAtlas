@@ -30,7 +30,7 @@
       "-2.14",
       "0.00"
      ],
-     "ms": "| Popularity and weighted-degree groups | Test-pool diseases | Median percentile (percentile points) | 1,566 | 3,309 | +5.73 [+3.45, +7.61] | +4.55 [+2.63, +6.8"
+     "ms": "| Popularity × weighted-degree groups | Test-pool diseases | Median percentile (percentile points) | 1,566 | 3,309 | +5.73 [+3.45, +7.61] | +4.55 [+2.63, +6.8"
     },
     {
      "file": "figures/SI/SI_event_time_tables.md",
@@ -54,7 +54,7 @@
       "-1.8",
       "1.1"
      ],
-     "ms": "| Popularity and weighted-degree groups | Test-pool diseases | Top-10% share (percentage points) | 1,566 | 3,309 | +5.7 [+2.8, +8.7] | +5.4 [+2.4, +8.4] | −0.3 "
+     "ms": " +0.00 | | | Test-pool diseases | Top-10% share (percentage points) | 1,566 | 3,309 | +5.7 +2.8, +8.7 | +5.4 +2.4, +8.4 | −0.3 −1.8, +1.1 | | | All diseases | M"
     }
    ]
   },
@@ -66,13 +66,13 @@
    "checks": [
     {
      "key": "table.pct_p1.test.E1.change.0",
-     "ms": "test-pool diseases within popularity and weighted-degree groups (−1.19 percentile points, 95% CI −2.14 to 0.00",
+     "ms": "l diseases within popularity × weighted-degree groups (−1.19 percentile points, 95% CI −2.14 to 0.00); no chan",
      "expected": -1.19,
      "tol": 0.005
     },
     {
      "key": "table.pct_p1.test.E1.change.1",
-     "ms": "arity and weighted-degree groups (−1.19 percentile points, 95% CI −2.14 to 0.00); no change in either endpoint",
+     "ms": "eighted-degree groups (−1.19 percentile points, 95% CI −2.14 to 0.00); no change in either endpoint has a CI t",
      "expected": -2.14,
      "tol": 0.005
     },
@@ -133,19 +133,19 @@
     },
     {
      "key": "table.pct_p1.test.E1.gafrel.1",
-     "ms": "rcentile points) | 1,566 | 3,309 | +5.73 [+3.45, +7.61] | +4.55 [+2.63, +6.82] | −1.19 [−2.14, +0.00] | | Popu",
+     "ms": "e points) | 1,566 | 3,309 | +5.73 +3.45, +7.61 | +4.55 +2.63, +6.82 | −1.19 −2.14, +0.00 | | | Test-pool disea",
      "expected": 2.63,
      "tol": 0.005
     },
     {
      "key": "table.pct_p1.test.E1.gafrel.2",
-     "ms": "le points) | 1,566 | 3,309 | +5.73 [+3.45, +7.61] | +4.55 [+2.63, +6.82] | −1.19 [−2.14, +0.00] | | Popularity",
+     "ms": "s) | 1,566 | 3,309 | +5.73 +3.45, +7.61 | +4.55 +2.63, +6.82 | −1.19 −2.14, +0.00 | | | Test-pool diseases | T",
      "expected": 6.82,
      "tol": 0.005
     },
     {
      "key": "nmo_dated_scored",
-     "ms": "09 | +5.73 [+3.45, +7.61] | +4.55 [+2.63, +6.82] | −1.19 [−2.14, +0.00] | | Popularity and weighted-degree gro",
+     "ms": "+5.73 +3.45, +7.61 | +4.55 +2.63, +6.82 | −1.19 −2.14, +0.00 | | | Test-pool diseases | Top-10% share (percent",
      "expected": 0.0,
      "tol": 0.005
     },
@@ -169,43 +169,43 @@
     },
     {
      "key": "table.pct_p1.test.E2.gafrel.0",
-     "ms": "% share (percentage points) | 1,566 | 3,309 | +5.7 [+2.8, +8.7] | +5.4 [+2.4, +8.4] | −0.3 [−1.8, +1.1] | | Po",
+     "ms": "percentage points) | 1,566 | 3,309 | +5.7 +2.8, +8.7 | +5.4 +2.4, +8.4 | −0.3 −1.8, +1.1 | | | All diseases |",
      "expected": 5.4,
      "tol": 0.05
     },
     {
      "key": "table.pct_p1.test.E2.gafrel.1",
-     "ms": "e (percentage points) | 1,566 | 3,309 | +5.7 [+2.8, +8.7] | +5.4 [+2.4, +8.4] | −0.3 [−1.8, +1.1] | | Populari",
+     "ms": "ntage points) | 1,566 | 3,309 | +5.7 +2.8, +8.7 | +5.4 +2.4, +8.4 | −0.3 −1.8, +1.1 | | | All diseases | Media",
      "expected": 2.4,
      "tol": 0.05
     },
     {
      "key": "table.pct_s3.all.E1.gafrel.0",
-     "ms": "centage points) | 1,566 | 3,309 | +5.7 [+2.8, +8.7] | +5.4 [+2.4, +8.4] | −0.3 [−1.8, +1.1] | | Popularity and",
+     "ms": "points) | 1,566 | 3,309 | +5.7 +2.8, +8.7 | +5.4 +2.4, +8.4 | −0.3 −1.8, +1.1 | | | All diseases | Median perc",
      "expected": 8.4,
      "tol": 0.05
     },
     {
      "key": "table.pct_s3.all.E2.gafrel.1",
-     "ms": "points) | 1,566 | 3,309 | +5.7 [+2.8, +8.7] | +5.4 [+2.4, +8.4] | −0.3 [−1.8, +1.1] | | Popularity and weighte",
+     "ms": "| 1,566 | 3,309 | +5.7 +2.8, +8.7 | +5.4 +2.4, +8.4 | −0.3 −1.8, +1.1 | | | All diseases | Median percentile",
      "expected": -0.3,
      "tol": 0.05
     },
     {
      "key": "table.pct_p1.test.E2.change.1",
-     "ms": ") | 1,566 | 3,309 | +5.7 [+2.8, +8.7] | +5.4 [+2.4, +8.4] | −0.3 [−1.8, +1.1] | | Popularity and weighted-degr",
+     "ms": "566 | 3,309 | +5.7 +2.8, +8.7 | +5.4 +2.4, +8.4 | −0.3 −1.8, +1.1 | | | All diseases | Median percentile (perc",
      "expected": -1.8,
      "tol": 0.05
     },
     {
      "key": "table.pct_p1.all.E1.change.2",
-     "ms": "566 | 3,309 | +5.7 [+2.8, +8.7] | +5.4 [+2.4, +8.4] | −0.3 [−1.8, +1.1] | | Popularity and weighted-degree gro",
+     "ms": "3,309 | +5.7 +2.8, +8.7 | +5.4 +2.4, +8.4 | −0.3 −1.8, +1.1 | | | All diseases | Median percentile (percentile",
      "expected": 1.1,
      "tol": 0.05
     },
     {
      "key": "table.pct_p1.all.E1.n_drugs",
-     "ms": "e groups | All diseases | Median percentile (percentile points) | 2,288 | 6,823 | +3.79 [+2.49, +5.08] | +4.10",
+     "ms": "All diseases | Median percentile (percentile points) | 2,288 | 6,823 | +3.79 +2.49, +5.08 | +4.10 +2.54, +5.57",
      "expected": 2288
     },
     {
@@ -239,31 +239,31 @@
     },
     {
      "key": "table.pct_p1.all.E1.gafrel.1",
-     "ms": "rcentile points) | 2,288 | 6,823 | +3.79 [+2.49, +5.08] | +4.10 [+2.54, +5.57] | +0.31 [−0.56, +1.12] | | Popu",
+     "ms": "e points) | 2,288 | 6,823 | +3.79 +2.49, +5.08 | +4.10 +2.54, +5.57 | +0.31 −0.56, +1.12 | | | All diseases |",
      "expected": 2.54,
      "tol": 0.005
     },
     {
      "key": "table.pct_p1.all.E1.gafrel.2",
-     "ms": "le points) | 2,288 | 6,823 | +3.79 [+2.49, +5.08] | +4.10 [+2.54, +5.57] | +0.31 [−0.56, +1.12] | | Popularity",
+     "ms": "s) | 2,288 | 6,823 | +3.79 +2.49, +5.08 | +4.10 +2.54, +5.57 | +0.31 −0.56, +1.12 | | | All diseases | Top-10%",
      "expected": 5.57,
      "tol": 0.005
     },
     {
      "key": "table.pct_p1.all.E1.change.0",
-     "ms": " | 2,288 | 6,823 | +3.79 [+2.49, +5.08] | +4.10 [+2.54, +5.57] | +0.31 [−0.56, +1.12] | | Popularity and weigh",
+     "ms": "88 | 6,823 | +3.79 +2.49, +5.08 | +4.10 +2.54, +5.57 | +0.31 −0.56, +1.12 | | | All diseases | Top-10% share (",
      "expected": 0.31,
      "tol": 0.005
     },
     {
      "key": "table.pct_p1.all.E1.change.1",
-     "ms": "8 | 6,823 | +3.79 [+2.49, +5.08] | +4.10 [+2.54, +5.57] | +0.31 [−0.56, +1.12] | | Popularity and weighted-deg",
+     "ms": ",823 | +3.79 +2.49, +5.08 | +4.10 +2.54, +5.57 | +0.31 −0.56, +1.12 | | | All diseases | Top-10% share (percen",
      "expected": -0.56,
      "tol": 0.005
     },
     {
      "key": "table.pct_p1.all.E1.change.2",
-     "ms": "23 | +3.79 [+2.49, +5.08] | +4.10 [+2.54, +5.57] | +0.31 [−0.56, +1.12] | | Popularity and weighted-degree gro",
+     "ms": "+3.79 +2.49, +5.08 | +4.10 +2.54, +5.57 | +0.31 −0.56, +1.12 | | | All diseases | Top-10% share (percentage po",
      "expected": 1.12,
      "tol": 0.005
     },
@@ -342,31 +342,31 @@
     },
     {
      "key": "table.pct_s3.test.E1.gafrel.1",
-     "ms": "rcentile points) | 1,566 | 3,309 | +6.63 [+4.57, +8.33] | +5.77 [+3.95, +7.62] | −0.85 [−1.45, +0.12] | | Popu",
+     "ms": "e points) | 1,566 | 3,309 | +6.63 +4.57, +8.33 | +5.77 +3.95, +7.62 | −0.85 −1.45, +0.12 | | | Test-pool disea",
      "expected": 3.95,
      "tol": 0.005
     },
     {
      "key": "table.pct_s3.test.E1.gafrel.2",
-     "ms": "le points) | 1,566 | 3,309 | +6.63 [+4.57, +8.33] | +5.77 [+3.95, +7.62] | −0.85 [−1.45, +0.12] | | Popularity",
+     "ms": "s) | 1,566 | 3,309 | +6.63 +4.57, +8.33 | +5.77 +3.95, +7.62 | −0.85 −1.45, +0.12 | | | Test-pool diseases | T",
      "expected": 7.62,
      "tol": 0.005
     },
     {
      "key": "table.pct_s3.test.E1.change.0",
-     "ms": ") | 1,566 | 3,309 | +6.63 [+4.57, +8.33] | +5.77 [+3.95, +7.62] | −0.85 [−1.45, +0.12] | | Popularity groups |",
+     "ms": "66 | 3,309 | +6.63 +4.57, +8.33 | +5.77 +3.95, +7.62 | −0.85 −1.45, +0.12 | | | Test-pool diseases | Top-10% s",
      "expected": -0.85,
      "tol": 0.005
     },
     {
      "key": "table.pct_s3.test.E1.change.1",
-     "ms": "6 | 3,309 | +6.63 [+4.57, +8.33] | +5.77 [+3.95, +7.62] | −0.85 [−1.45, +0.12] | | Popularity groups | Test-po",
+     "ms": ",309 | +6.63 +4.57, +8.33 | +5.77 +3.95, +7.62 | −0.85 −1.45, +0.12 | | | Test-pool diseases | Top-10% share (",
      "expected": -1.45,
      "tol": 0.005
     },
     {
      "key": "table.pct_s3.test.E1.change.2",
-     "ms": "09 | +6.63 [+4.57, +8.33] | +5.77 [+3.95, +7.62] | −0.85 [−1.45, +0.12] | | Popularity groups | Test-pool dise",
+     "ms": "+6.63 +4.57, +8.33 | +5.77 +3.95, +7.62 | −0.85 −1.45, +0.12 | | | Test-pool diseases | Top-10% share (percent",
      "expected": 0.12,
      "tol": 0.005
     },
@@ -390,19 +390,19 @@
     },
     {
      "key": "table.pct_s3.test.E2.change.1",
-     "ms": "e (percentage points) | 1,566 | 3,309 | +1.4 [−1.4, +4.2] | +1.7 [−1.1, +4.5] | +0.3 [−1.1, +1.7] | | Populari",
+     "ms": "ntage points) | 1,566 | 3,309 | +1.4 −1.4, +4.2 | +1.7 −1.1, +4.5 | +0.3 −1.1, +1.7 | | | All diseases | Media",
      "expected": -1.1,
      "tol": 0.05
     },
     {
      "key": "table.pct_s3.all.E2.gafrel.2",
-     "ms": "centage points) | 1,566 | 3,309 | +1.4 [−1.4, +4.2] | +1.7 [−1.1, +4.5] | +0.3 [−1.1, +1.7] | | Popularity gro",
+     "ms": "points) | 1,566 | 3,309 | +1.4 −1.4, +4.2 | +1.7 −1.1, +4.5 | +0.3 −1.1, +1.7 | | | All diseases | Median perc",
      "expected": 4.5,
      "tol": 0.05
     },
     {
      "key": "table.pct_p1.all.E1.change.0",
-     "ms": "points) | 1,566 | 3,309 | +1.4 [−1.4, +4.2] | +1.7 [−1.1, +4.5] | +0.3 [−1.1, +1.7] | | Popularity groups | Al",
+     "ms": "| 1,566 | 3,309 | +1.4 −1.4, +4.2 | +1.7 −1.1, +4.5 | +0.3 −1.1, +1.7 | | | All diseases | Median percentile",
      "expected": 0.3,
      "tol": 0.05
     },
@@ -432,31 +432,31 @@
     },
     {
      "key": "table.pct_s3.all.E1.gafrel.1",
-     "ms": "centile points) | 2,288 | 6,823 | +8.24 [+6.90, +10.24] | +8.36 [+7.14, +10.29] | +0.13 [−0.73, +0.85] | | Pop",
+     "ms": "points) | 2,288 | 6,823 | +8.24 +6.90, +10.24 | +8.36 +7.14, +10.29 | +0.13 −0.73, +0.85 | | | All diseases |",
      "expected": 7.14,
      "tol": 0.005
     },
     {
      "key": "table.pct_s3.all.E1.gafrel.2",
-     "ms": " points) | 2,288 | 6,823 | +8.24 [+6.90, +10.24] | +8.36 [+7.14, +10.29] | +0.13 [−0.73, +0.85] | | Popularity",
+     "ms": ") | 2,288 | 6,823 | +8.24 +6.90, +10.24 | +8.36 +7.14, +10.29 | +0.13 −0.73, +0.85 | | | All diseases | Top-10",
      "expected": 10.29,
      "tol": 0.005
     },
     {
      "key": "table.pct_s3.all.E1.change.0",
-     "ms": "| 2,288 | 6,823 | +8.24 [+6.90, +10.24] | +8.36 [+7.14, +10.29] | +0.13 [−0.73, +0.85] | | Popularity groups |",
+     "ms": "| 6,823 | +8.24 +6.90, +10.24 | +8.36 +7.14, +10.29 | +0.13 −0.73, +0.85 | | | All diseases | Top-10% share (",
      "expected": 0.13,
      "tol": 0.005
     },
     {
      "key": "table.pct_s3.all.E1.change.1",
-     "ms": "| 6,823 | +8.24 [+6.90, +10.24] | +8.36 [+7.14, +10.29] | +0.13 [−0.73, +0.85] | | Popularity groups | All dis",
+     "ms": "23 | +8.24 +6.90, +10.24 | +8.36 +7.14, +10.29 | +0.13 −0.73, +0.85 | | | All diseases | Top-10% share (percen",
      "expected": -0.73,
      "tol": 0.005
     },
     {
      "key": "table.pct_s3.all.E1.change.2",
-     "ms": " | +8.24 [+6.90, +10.24] | +8.36 [+7.14, +10.29] | +0.13 [−0.73, +0.85] | | Popularity groups | All diseases |",
+     "ms": ".24 +6.90, +10.24 | +8.36 +7.14, +10.29 | +0.13 −0.73, +0.85 | | | All diseases | Top-10% share (percentage po",
      "expected": 0.85,
      "tol": 0.005
     },
@@ -603,7 +603,7 @@
    "section": "SI_go_release",
    "token": "2009",
    "reason": "calendar year (slice / release date label)",
-   "ctx": "nocturnal haemoglobinuria (PNH) row against matched candidate diseases; the 2009 release does not annotate enough genes "
+   "ctx": "e of NMO in the PNH row against matched candidate diseases; the 2009 release does not annotate enoug"
   }
  ],
  "manuscript_mismatch": []

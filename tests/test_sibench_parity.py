@@ -77,13 +77,13 @@ def test_shortcut_audit(pairs):
 def test_ontology_baseline():
     v = json.load(open(REPO / "tables/SI/table_ontology_baseline_values.json"))
     assert v["hpo_coverage_pct"] == 35 and v["hpo_undefined_pct"] == 65
-    assert v["model_hpo_pairs"] == 0.78 and v["delta_hpo_pairs"] == "+0.06-0.08" and v["n_ci_excl_zero"] == 3
-    assert v["model_hpo_pairs_test"] == 0.81 and v["delta_hpo_pairs_test"] == "+0.07-0.12" and v["n_ci_excl_zero_test"] == 1
-    assert v["hpo_auroc"] == "0.69-0.72" and v["hpo_all_pairs"] == "0.54"
-    assert v["discordant_model"] == "0.68-0.76" and v["discordant_hpo"] == "0.67-0.73"
+    assert v["model_hpo_pairs"] == 0.78 and v["delta_hpo_pairs"] == "+0.06–0.08" and v["n_ci_excl_zero"] == 3
+    assert v["model_hpo_pairs_test"] == 0.81 and v["delta_hpo_pairs_test"] == "+0.07–0.12" and v["n_ci_excl_zero_test"] == 1
+    assert v["hpo_auroc"] == "0.69–0.72" and v["hpo_all_pairs"] == "0.54"
+    assert v["discordant_model"] == "0.68–0.76" and v["discordant_hpo"] == "0.67–0.73"
     assert v["outside_orphanet_pct"] == 63
     assert v["outside_orphanet_model"] == "0.876" and v["outside_orphanet_model_test"] == "0.909"
-    assert v["spearman_ordo_hpo"] == "0.51-0.62"
+    assert v["spearman_ordo_hpo"] == "0.51–0.62"
     b = pd.read_csv(DV / "ontology_baseline/ontology_baselines.csv")
     lin = b[(b.scope == "all") & (b.baseline == "HPO Lin-BMA")].iloc[0]
     assert (R(lin.d_ci_lo, 3), R(lin.d_ci_hi, 3)) == (-0.001, 0.122) or (R(lin.d_ci_lo, 3), R(lin.d_ci_hi, 2)) == (-0.001, 0.12)

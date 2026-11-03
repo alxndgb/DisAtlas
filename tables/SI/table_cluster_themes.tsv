@@ -1,0 +1,56 @@
+Cluster	Diseases	Theme	Dominant body-system class (share)	Mechanism or process term (share, fold)
+c1	302	anatomy	nervous system disorder (89%)	—
+c3	124	anatomy	cardiovascular disorder (78%)	—
+c9	274	anatomy	nervous system disorder (88%)	—
+c10	458	anatomy	integumentary system disorder (86%)	—
+c11	250	anatomy	disorder of visual system (91%)	—
+c21	273	anatomy	nervous system disorder (91%)	—
+c22	361	anatomy	nervous system disorder (91%)	—
+c25	208	anatomy	musculoskeletal system disorder (74%)	—
+c30	210	anatomy	nervous system disorder (96%)	—
+c31	280	anatomy	nervous system disorder (97%)	—
+c32	394	anatomy	musculoskeletal system disorder (79%)	—
+c34	216	anatomy	musculoskeletal system disorder (92%)	—
+c36	261	anatomy	nervous system disorder (96%)	—
+c38	156	anatomy	hematologic disorder (80%)	—
+c39	153	anatomy	musculoskeletal system disorder (70%)	—
+c45	434	anatomy	disorder of visual system (93%)	—
+c46	285	anatomy	nervous system disorder (82%)	—
+c49	189	anatomy	musculoskeletal system disorder (60%)	—
+c50	119	anatomy	urinary system disorder (80%)	—
+c51	390	anatomy	endocrine system disorder (74%)	—
+c5	187	mixed	reproductive system disorder (66%)	primary ciliary dyskinesia (30%, 67×)
+c15	230	mixed	hematologic disorder (70%)	blood coagulation (40%, 12×; GO)
+c16	173	mixed	digestive system disorder (68%)	inborn disorder of bilirubin metabolism (16%, 63×)
+c17	196	mixed	hematologic disorder (70%)	erythrocyte homeostasis (49%, 31×; GO)
+c19	255	mixed	cardiovascular disorder (73%)	regulation of heart contraction (55%, 19×; GO)
+c27	139	mixed	nervous system disorder (83%)	synapse organization (50%, 22×; GO)
+c44	500	mixed	immune system disorder (78%)	inborn error of immunity (23%, 15×)
+c47	127	mixed	endocrine system disorder (73%)	monogenic diabetes (24%, 97×)
+c0	303	process	—	inborn mitochondrial metabolism disorder (54%, 21×)
+c6	269	process	—	ciliopathy (47%, 28×)
+c12	343	process	—	cytokine production (47%, 22×; GO)
+c20	150	process	—	regulation of SMAD protein signal transduction (26%, 12×; GO)
+c23	176	process	—	complement deficiency (18%, 67×)
+c24	185	process	—	DNA repair disease (20%, 38×)
+c26	221	process	—	inherited lipid metabolism disorder (21%, 10×)
+c35	195	process	—	cellular response to fibroblast growth factor stimulus (42%, 21×; GO)
+c37	194	process	—	lysosomal storage disease (20%, 17×)
+c52	274	process	—	extracellular matrix organization (44%, 15×; GO)
+c53	97	process	—	nuclear envelope organization (52%, 43×; GO)
+c13	125	neoplasm (42% cancer or benign tumor)	—	—
+c14	184	neoplasm (40% cancer or benign tumor)	—	—
+c28	116	neoplasm (82% cancer or benign tumor)	—	negative regulation of protein modification process (62%, 17×; GO)
+c29	243	neoplasm (70% cancer or benign tumor)	—	—
+c33	320	neoplasm (81% cancer or benign tumor)	—	response to UV (37%, 10×; GO)
+c41	213	neoplasm (86% cancer or benign tumor)	—	—
+c2	164	unresolved	—	—
+c4	256	unresolved	—	—
+c7	260	unresolved	—	—
+c8	128	unresolved	—	—
+c18	413	unresolved	—	—
+c40	153	unresolved	—	—
+c42	253	unresolved	—	—
+c43	224	unresolved	—	—
+c48	179	unresolved	—	—
+c54	239	unresolved	—	—

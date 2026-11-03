@@ -12,7 +12,7 @@ Supplementary Table: dated FDA-pair prioritisation (development split). Positive
 |---|---|---|---|---|---|---|
 | DisAtlas (5 seeds) | 64.5% (54.3–72.3) | 94.6 | — | 66.7% (55.7–73.9) | 94.8 | — |
 | disease degree | 53.6% (43.2–64.9) | 90.8 | +10.8 (−3.2 to +22.1) | 42.7% (33.7–52.7) | 88.6 | +24.0 (+8.6 to +36.1) |
-| shared graph neighbours | 74.1% (60.0–83.5) | 95.1 | −9.6 (−15.8 to −0.7) | 66.7% (54.1–73.7) | 94.1 | 0.0 (−7.0 to +9.7) |
+| shared graph neighbors | 74.1% (60.0–83.5) | 95.1 | −9.6 (−15.8 to −0.7) | 66.7% (54.1–73.7) | 94.1 | 0.0 (−7.0 to +9.7) |
 | shared literature genes | 69.3% (53.9–79.6) | 96.7 | −4.8 (−12.1 to +6.1) | 70.7% (52.0–82.5) | 96.2 | −4.0 (−13.1 to +10.8) |
 | matched decoy diseases | 19.9% (20 per pair) | 49.4 | +44.5 (+35.7 to +51.8) | 18.3% (20 per pair) | 49.2 | +48.4 (+39.0 to +55.6) |
 

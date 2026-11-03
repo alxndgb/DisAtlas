@@ -40,6 +40,13 @@ for sc, lab in SCOPES:
 T = pd.DataFrame(rows)
 T.to_csv(HERE / "table_llm_subgroups.tsv", sep="\t", index=False)
 md = ["| " + " | ".join(T.columns) + " |", "|" + "|".join([":--", "--:", ":--", ":--", ":--", ":--"]) + "|"]
-md += ["| " + " | ".join(map(str, r)) + " |" for r in T.itertuples(index=False)]
+# the subgroup, its size and the DisAtlas AUROC are printed once per subgroup, as in the manuscript
+seen = set()
+for r in T.itertuples(index=False):
+    r = list(map(str, r))
+    if r[0] in seen:
+        r[:3] = ["", "", ""]
+    seen.add(r[0])
+    md.append("| " + " | ".join(r) + " |")
 (HERE / "table_llm_subgroups.md").write_text("\n".join(md) + "\n")
 print("\n".join(md))

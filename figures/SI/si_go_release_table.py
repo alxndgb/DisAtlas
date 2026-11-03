@@ -14,7 +14,7 @@ from disatlas.sibio_common import DERIVED, ZENODO_SIBIO, write_numbers  # noqa: 
 import numpy as np, pandas as pd
 
 B, SEED, YEARS = 2000, 4707, (2009, 2017)
-AN = {"pct_p1": "Popularity and weighted-degree groups", "pct_s3": "Popularity groups", "pct_s4": "No grouping"}
+AN = {"pct_p1": "Popularity × weighted-degree groups", "pct_s3": "Popularity groups", "pct_s4": "No grouping"}
 POOL = {"test": "Test-pool diseases", "all": "All diseases"}
 EV = pd.read_csv(ZENODO_SIBIO / "go_release_event_percentiles.tsv.gz", sep="\t")
 SRC = DERIVED / "si_go_release"
@@ -69,7 +69,7 @@ P = R[R.scope == "pooled"].set_index(["analysis", "pool", "endpoint", "quantity"
 rows, nums = [], {}
 for an in ("pct_p1", "pct_s3"):
     for pool in ("test", "all"):
-        for ep, lab, d in (("E1", "E1 (percentile points)", 2), ("E2", "E2 (percentage points)", 1)):
+        for ep, lab, d in (("E1", "Median percentile (percentile points)", 2), ("E2", "Top-10% share (percentage points)", 1)):
             g = {q: P.loc[(an, pool, ep, q)] for q in ("gafnow", "gafrel", "change")}
             rows.append([AN[an], POOL[pool], lab, f"{int(g['gafnow'].n_drugs):,}", f"{int(g['gafnow'].n_events):,}",
                          cell(g["gafnow"], d), cell(g["gafrel"], d), cell(g["change"], d)])
@@ -83,7 +83,9 @@ COLS = ["Comparison set", "Diseases", "Endpoint", "Drugs", "New trials", "Curren
 T = pd.DataFrame(rows, columns=COLS); T.to_csv(HERE / "SI_go_release_table.tsv", sep="\t", index=False)
 with open(HERE / "SI_go_release_table.md", "w", encoding="utf-8") as fh:
     fh.write("| " + " | ".join(COLS) + " |\n|:--|:--|:--|--:|--:|--:|--:|--:|\n")
-    for r in rows: fh.write("| " + " | ".join(r) + " |\n")
+    prev = None
+    for r in rows:  # the comparison set is printed once per block, as in the manuscript
+        fh.write("| " + " | ".join([""] + r[1:] if r[0] == prev else r) + " |\n"); prev = r[0]
 # change cells whose interval excludes zero, any pool / control / endpoint, pooled years
 ch = R[(R.quantity == "change") & (R.scope == "pooled") & (R.analysis != "pct_s4")]
 e1_orig = R[(R.quantity.isin(["gafnow", "gafrel"])) & (R.endpoint == "E1") & (R.scope == "pooled") & (R.analysis != "pct_s4")]

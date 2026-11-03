@@ -57,17 +57,17 @@
    "checks": [
     {
      "key": "expansion.cross",
-     "ms": "ered trial and is not yet linked to the drug's earlier indications: 84 of 94 such expansions (89%) reach the 7",
+     "ms": "not yet linked to the drug's earlier indications, and 84 of 94 such expansions (89%) reach the 75th percentil",
      "expected": 84
     },
     {
      "key": "expansion.n",
-     "ms": "rial and is not yet linked to the drug's earlier indications: 84 of 94 such expansions (89%) reach the 75th pe",
+     "ms": "et linked to the drug's earlier indications, and 84 of 94 such expansions (89%) reach the 75th percentile in a",
      "expected": 94
     },
     {
      "key": "expansion.cross_pct",
-     "ms": "linked to the drug's earlier indications: 84 of 94 such expansions (89%) reach the 75th percentile in at least",
+     "ms": "g's earlier indications, and 84 of 94 such expansions (89%) reach the 75th percentile in at least one slice. F",
      "expected": 89
     },
     {
@@ -97,13 +97,13 @@
     },
     {
      "key": "expansion.decoy_mean",
-     "ms": " slice). Markers show the mean share for matched decoy diseases (35.7% and 33.8%). Because approved and failed",
+     "ms": "arkers show the mean share for matched decoy diseases (35.7% and 33.8%).(FIGURES/SI_mechanism_coverage_slices.",
      "expected": 0.357,
      "tol": 0.0005
     },
     {
      "key": "failed.decoy_mean",
-     "ms": "arkers show the mean share for matched decoy diseases (35.7% and 33.8%). Because approved and failed indicatio",
+     "ms": "w the mean share for matched decoy diseases (35.7% and 33.8%).(FIGURES/SI_mechanism_coverage_slices.png) !**Cl",
      "expected": 0.338,
      "tol": 0.0005
     }
@@ -144,18 +144,13 @@
    "section": "SI_mechanism_coverage",
    "token": "3",
    "reason": "part of a disease, trial-phase or class name",
-   "ctx": "d (Phase 2 or later, stopped for efficacy) and 12 ongoing with an active Phase 3 trial, shown in grey (not approved). Ec"
+   "ctx": "enFDA); 10 failed (Phase 2 or later, stopped for efficacy) and 12 ongoing with an active Phase 3 trial, shown in gray (n"
   },
   {
    "section": "SI_mechanism_coverage",
    "token": "2007",
    "reason": "calendar year (slice / release date label)",
-   "ctx": "ed. The original eculizumab approval (paroxysmal nocturnal haemoglobinuria, 2007) is taken from the openFDA submission r"
-  },
-  {
-   "token": "5",
-   "reason": "design constant: number of model seeds",
-   "ms": "ns that meet the same rule (87) are the control. Each slice is scored with the 5-seed mean popularity-matched percentile"
+   "ctx": "ed. The original eculizumab approval (paroxysmal nocturnal hemoglobinuria, 2007) is taken from the openFDA submission r"
   },
   {
    "token": "46",

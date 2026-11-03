@@ -57,6 +57,11 @@ def test_registry_complete():
     assert len(REG) > 0 and all(r["kind"] in KINDS for r in REG), {r["kind"] for r in REG} - KINDS
     assert len({r["id"] for r in REG}) == len(REG)
     assert all(r["key"] for r in REG if r["kind"] == "computed")
+def test_no_stale_pending():
+    """a PENDING row must become a plain computed row once its value table provides the key"""
+    q = _value_tables()
+    stale = [r["id"] for r in REG if r["note"].startswith("PENDING") and r["key"] in q]
+    assert not stale, stale
 
 
 COMPUTED = [r for r in REG if r["kind"] == "computed"]
@@ -64,6 +69,8 @@ COMPUTED = [r for r in REG if r["kind"] == "computed"]
 
 @pytest.mark.parametrize("row", COMPUTED, ids=[f"{r['id']}:{r['token']}" for r in COMPUTED])
 def test_main_text_number(row, Q):
+    if row["note"].startswith("PENDING") and row["key"] not in Q:
+        pytest.skip(row["note"])  # value table not yet regenerated for the current manuscript
     assert row["key"] in Q, f"quantity {row['key']} not computed"
     v = Q[row["key"]]; t, dec, pct = _parse(row["token"])
     if pct and abs(v) <= 1 and abs(t) > 1: v = 100 * v

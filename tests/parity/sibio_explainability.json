@@ -20,7 +20,7 @@
     },
     {
      "key": "explainability.Case3.score",
-     "ms": " due to saposin C deficiency–Parkinson disease 24 at the 98.3rd (0.737).] [Among the roughly 13,000 diseases s",
+     "ms": "posin C deficiency–Parkinson disease 24 at the 98.3rd (0.737). When the roughly 13,000 other diseases are orde",
      "expected": 0.737,
      "tol": 0.0005
     }
@@ -54,7 +54,7 @@
      "key": "explainability.n_diseases",
      "expected": 13000,
      "tol": 500,
-     "ms": "roughly 13,000 diseases scored against each rare disease"
+     "ms": "son disease 24 at the 98.3rd (0.737). When the roughly 13,000 other diseases are ordered by their DisAtlas lin"
     }
    ]
   },
@@ -148,17 +148,18 @@
   {
    "token": "2%",
    "reason": "checked as a bound (SI_explainability_bounds)",
-   "ms": "dedicated disease-level representation.] [It ranks all three pairs in the top 2% of the 84.7 million disease pairs: Marf"
+   "ms": "dedicated disease-level representation.] [It ranks all three pairs in the top 2% of the 84.7 million disease pairs: Marf",
+   "ctx": "dedicated disease-level representation. It ranks all three pairs in the top 2% of the 84.8 million d"
   },
   {
    "token": "24",
    "reason": "part of a disease name (Parkinson disease 24)",
-   "ms": "rd (0.881), and Gaucher disease due to saposin C deficiency–Parkinson disease 24 at the 98.3rd (0.737).] [Among the roug"
+   "ms": "t the 99.3rd (0.881), and Gaucher disease due to saposin C deficiency–Parkinson disease 24 at the 98.3rd (0.737). When t"
   },
   {
    "token": "13,000",
    "reason": "checked with tolerance (SI_explainability_bounds)",
-   "ms": "eficiency–Parkinson disease 24 at the 98.3rd (0.737).] [Among the roughly 13,000 diseases scored against each rare disea"
+   "ms": "aposin C deficiency–Parkinson disease 24 at the 98.3rd (0.737). When the roughly 13,000 other diseases are ordered by th"
   },
   {
    "token": "1",
@@ -178,7 +179,8 @@
   {
    "token": "2%",
    "reason": "checked as a bound (SI_explainability_bounds)",
-   "ms": "died MODY pair (case 2, diazoxide). DisAtlas ranks all three pairs in the top 2% of disease pairs. Case 2 uses MODY type"
+   "ms": "died MODY pair (case 2, diazoxide). DisAtlas ranks all three pairs in the top 2% of disease pairs. Case 2 uses MODY type",
+   "ctx": "dedicated disease-level representation. It ranks all three pairs in the top 2% of the 84.8 million d"
   },
   {
    "token": "2",

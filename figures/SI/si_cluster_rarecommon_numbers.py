@@ -130,6 +130,11 @@ N["membership"] = dict(n_clusters=Mx["n_clusters"], both=Mx["both_rare_and_commo
 cc = V["cocluster"]["test"]
 N["cocluster_test"] = dict(ratio=round(cc["ratio"], 2), pos=round(100 * cc["cocl_pos"], 1), neg=round(100 * cc["cocl_neg"], 1), n_pos=cc["n_pos"], n_neg=cc["n_neg"])
 N["layout"] = dict(spearman=r3(V["layout"]["spearman"]), n_pairs=V["layout"]["n_pairs"])
+# five display layouts: of the 9 x 8 = 72 positive-negative control comparisons, the number in which the positive
+# pair lies nearer on the map (layout_comparison_summary.tsv; Isomap is the released map)
+LC = pd.read_csv(derived("si_cluster") / "layout_comparison_summary.tsv", sep="\t").set_index("space")
+N["layout_controls"] = {m: int(round(72 * LC.at[m, "pos_nearer"])) for m in ["isomap", "pca", "cmds", "umap", "tsne"]}
+assert N["layout_controls"]["isomap"] == 72
 # rare-common strata (IxIDN-Matched + CC+ supplementary)
 S = pd.read_csv(derived("si_rare_common") / "ccplus_strata.tsv", sep="\t")
 st = {}

@@ -18,12 +18,12 @@
     },
     {
      "key": "fda_benchmark.n_pairs",
-     "ms": "from IxIDN⁺ whose shared drug is launched for both diseases form 2,000 positive controls over 401 diseases; th",
+     "ms": "⁺ whose shared drug is approved for both diseases form 2,000 positive controls over 401 diseases; the benchmar",
      "expected": 2000
     },
     {
      "key": "fda_benchmark.n_diseases",
-     "ms": "ug is launched for both diseases form 2,000 positive controls over 401 diseases; the benchmark has no negative",
+     "ms": "ed for both diseases form 2,000 positive controls over 401 diseases; the benchmark has no negative pairs. Pair",
      "expected": 401
     },
     {
@@ -74,49 +74,49 @@
     },
     {
      "key": "a_broad_off_recovered.0",
-     "ms": "I 88.8–94.7%).] [The specific (mechanism) channel alone recovers 85.0% (81.0–88.8%) and the broad (shared-grap",
+     "ms": "4.7%). The specific (mechanism) channel alone recovers 85.0% (81.0–88.8%) and the broad channel alone 75.1% (7",
      "expected": 0.85,
      "tol": 0.0005
     },
     {
      "key": "a_broad_off_recovered.1",
-     "ms": "–94.7%).] [The specific (mechanism) channel alone recovers 85.0% (81.0–88.8%) and the broad (shared-graph) cha",
+     "ms": "The specific (mechanism) channel alone recovers 85.0% (81.0–88.8%) and the broad channel alone 75.1% (70.1–79.",
      "expected": 0.81,
      "tol": 0.0005
     },
     {
      "key": "a_spec_off@broad_off_nodes_recovered.0",
-     "ms": "rs 85.0% (81.0–88.8%) and the broad (shared-graph) channel alone 75.1% (70.1–79.8%) ([Supplementary Figure ]a)",
+     "ms": "ecovers 85.0% (81.0–88.8%) and the broad channel alone 75.1% (70.1–79.8%) (Supplementary Figure a). The gap wi",
      "expected": 0.751,
      "tol": 0.0005
     },
     {
      "key": "a_spec_off@broad_off_nodes_recovered.1",
-     "ms": "0% (81.0–88.8%) and the broad (shared-graph) channel alone 75.1% (70.1–79.8%) ([Supplementary Figure ]a).] [Th",
+     "ms": "85.0% (81.0–88.8%) and the broad channel alone 75.1% (70.1–79.8%) (Supplementary Figure a). The gap widens at",
      "expected": 0.701,
      "tol": 0.0005
     },
     {
      "key": "a_spec_off@broad_off_nodes_recovered.2",
-     "ms": "1.0–88.8%) and the broad (shared-graph) channel alone 75.1% (70.1–79.8%) ([Supplementary Figure ]a).] [The gap",
+     "ms": "% (81.0–88.8%) and the broad channel alone 75.1% (70.1–79.8%) (Supplementary Figure a). The gap widens at stri",
      "expected": 0.798,
      "tol": 0.0005
     },
     {
      "key": "a_full@broad_off_nodes_pct99.0",
-     "ms": "he gap widens at stricter cut-offs: in the top 1%, the rates are 29.9%, 21.2% and 5.9%.] [The channels are par",
+     "ms": "ens at stricter cut-offs. In the top 1%, the rates are 29.9%, 21.2% and 5.9%. The channels are partly compleme",
      "expected": 0.299,
      "tol": 0.0005
     },
     {
      "key": "a_broad_off_pct99.0",
-     "ms": "widens at stricter cut-offs: in the top 1%, the rates are 29.9%, 21.2% and 5.9%.] [The channels are partly com",
+     "ms": "stricter cut-offs. In the top 1%, the rates are 29.9%, 21.2% and 5.9%. The channels are partly complementary.",
      "expected": 0.212,
      "tol": 0.0005
     },
     {
      "key": "a_spec_off@broad_off_nodes_pct99.0",
-     "ms": " stricter cut-offs: in the top 1%, the rates are 29.9%, 21.2% and 5.9%.] [The channels are partly complementar",
+     "ms": "ut-offs. In the top 1%, the rates are 29.9%, 21.2% and 5.9%. The channels are partly complementary. The specif",
      "expected": 0.059,
      "tol": 0.0005
     },
@@ -138,7 +138,7 @@
       "10",
       "10"
      ],
-     "ms": "The endpoint is the share of targets ranked in the top 10% of these candidates (random expectation 10%).]{custom-style=\"RevisionBlue\"}"
+     "ms": "The endpoint is the share of targets ranked in the top 10% of these candidates (random expectation 10%)."
     },
     {
      "file": "figures/SI/SI_fda_prioritisation_text.md",
@@ -160,7 +160,7 @@
       "150",
       "66"
      ],
-     "ms": "That leaves 166 scorable pairs from 73 drugs at the primary cut-off and 150 pairs from 66 drugs at the stricter cut-off.]{custom-style=\"RevisionBlue\"}"
+     "ms": "That leaves 166 scorable pairs from 73 drugs at the primary cut-off and 150 pairs from 66 drugs at the stricter cut-off."
     },
     {
      "file": "figures/SI/SI_fda_prioritisation_text.md",
@@ -170,7 +170,7 @@
       "-11.1",
       "-1.8"
      ],
-     "ms": "The shared-neighbour count ranks above DisAtlas at this cut-off: its top-10% share is higher, the paired-difference interval excludes zero, and its mean percent"
+     "ms": "he table does not list, is also higher (DisAtlas − shared neighbors −6.2 percentile points, 95% CI −11.1 to −1"
     },
     {
      "file": "figures/SI/SI_fda_prioritisation_text.md",
@@ -180,7 +180,7 @@
       "-12.6",
       "-2.5"
      ],
-     "ms": "At the stricter cut-off, DisAtlas and the shared-neighbour count place the same share of targets in the top 10%, the shared-neighbour count keeps the higher mea"
+     "ms": "At the stricter cut-off, DisAtlas and the shared-neighbor count place the same share of targets in the top 10%; the shared-neighbor count keeps the higher mean percentile, again not listed in the table (−6.6 percentile points, −12.6 to −2.5); and DisAtlas rank"
     },
     {
      "file": "figures/SI/SI_fda_prioritisation_text.md",
@@ -235,7 +235,7 @@
       "-7.0",
       "9.7"
      ],
-     "ms": "| shared graph neighbours | 74.1% (60.0–83.5) | 95.1 | −9.6 (−15.8 to −0.7) | 66.7% (54.1–73.7) | 94.1 | 0.0 (−7.0 to +9.7) |"
+     "ms": "| shared graph neighbors | 74.1% (60.0–83.5) | 95.1 | −9.6 (−15.8 to −0.7) | 66.7% (54.1–73.7) | 94.1 | 0.0 (−7.0 to +9.7) |"
     },
     {
      "file": "figures/SI/SI_fda_prioritisation_text.md",
@@ -290,12 +290,12 @@
     },
     {
      "key": "d_n",
-     "ms": "rget already trialled with a drug of the same class.] [That leaves 166 scorable pairs from 73 drugs at the pri",
+     "ms": "ady trialed with a drug of the same class. That leaves 166 scorable pairs from 73 drugs at the primary cut-off",
      "expected": 166
     },
     {
      "key": "a_full@broad_off_nodes_recovered.2",
-     "ms": "ferences = DisAtlas better.]  | Method | Top 10%, primary cut-off (95% CI) | Median percentile, primary | DisA",
+     "ms": "ve that baseline. | Method | Top 10%, primary cut-off (95% CI) | Median percentile, primary | DisAtlas − metho",
      "expected": 0.95,
      "tol": 0.005
     },
@@ -343,19 +343,19 @@
     },
     {
      "key": "d_shared_nbr.0",
-     "ms": ".7) | 88.6 | +24.0 (+8.6 to +36.1) | | shared graph neighbours | 74.1% (60.0–83.5) | 95.1 | −9.6 (−15.8 to −0.",
+     "ms": "6 | +24.0 (+8.6 to +36.1) | | shared graph neighbors | 74.1% (60.0–83.5) | 95.1 | −9.6 (−15.8 to −0.7) | 66.7%",
      "expected": 0.741,
      "tol": 0.0005
     },
     {
      "key": "d_shared_nbr.1",
-     "ms": "88.6 | +24.0 (+8.6 to +36.1) | | shared graph neighbours | 74.1% (60.0–83.5) | 95.1 | −9.6 (−15.8 to −0.7) | 6",
+     "ms": ".0 (+8.6 to +36.1) | | shared graph neighbors | 74.1% (60.0–83.5) | 95.1 | −9.6 (−15.8 to −0.7) | 66.7% (54.1–",
      "expected": 0.6,
      "tol": 0.0005
     },
     {
      "key": "d_shared_nbr.2",
-     "ms": " | +24.0 (+8.6 to +36.1) | | shared graph neighbours | 74.1% (60.0–83.5) | 95.1 | −9.6 (−15.8 to −0.7) | 66.7%",
+     "ms": "8.6 to +36.1) | | shared graph neighbors | 74.1% (60.0–83.5) | 95.1 | −9.6 (−15.8 to −0.7) | 66.7% (54.1–73.7)",
      "expected": 0.835,
      "tol": 0.0005
     },
@@ -409,7 +409,7 @@
   {
    "token": "1%",
    "reason": "evaluation cut-off (design constant)",
-   "ms": "([Supplementary Figure ]a).] [The gap widens at stricter cut-offs: in the top 1%, the rates are 29.9%, 21.2% and 5.9%.] "
+   "ms": "p widens at stricter cut-offs. In the top 1%, the rates are 29.9%, 21.2% and 5.9%. The channels are partly complementary"
   },
   {
    "token": "20,000",
@@ -434,7 +434,7 @@
   {
    "token": "10%",
    "reason": "evaluation cut-off (design constant)",
-   "ms": "lines, with matched decoy diseases as a negative control (random expectation 10%); error bars are 95% bootstrap interval"
+   "ms": "ictive value in the bottom 10% (Methods(#sec:methods_statistics)). Dots are values, bars are 95% confidence intervals fr"
   }
  ],
  "manuscript_mismatch": []

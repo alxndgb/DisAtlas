@@ -345,6 +345,13 @@
     "n_pairs": 1999833,
     "spearman": 0.42
   },
+  "layout_controls": {
+    "cmds": 71,
+    "isomap": 72,
+    "pca": 72,
+    "tsne": 66,
+    "umap": 70
+  },
   "median_first_common_rank_for_rare": 8.0,
   "median_link_score_all_pairs": 0.009,
   "membership": {

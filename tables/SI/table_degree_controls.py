@@ -50,7 +50,8 @@ for sc, lab in SCOPES:
         rows.append([lab, name, ci(r.dm_auroc, r.dm_ci_lo, r.dm_ci_hi), delta(r.dm_delta_heldout_minus_system, r.dm_delta_ci_lo, r.dm_delta_ci_hi),
                      ci(r.within_auroc, r.within_ci_lo, r.within_ci_hi),
                      delta(r.within_delta_heldout_minus_system, r.within_delta_ci_lo, r.within_delta_ci_hi)])
-cols = ["Pairs", "System", "Degree-matched AUROC (95% CI)", "Held out − system (95% CI)", "Within-disease AUROC (95% CI)", "Held out − system (95% CI)"]
+cols = ["Pairs", "System", "Degree-matched AUROC (95% CI)", "Held out − system, degree-matched (95% CI)", "Within-disease AUROC (95% CI)",
+        "Held out − system, within-disease (95% CI)"]
 pd.DataFrame(rows, columns=cols).to_csv(HERE / "table_degree_controls.tsv", sep="\t", index=False)
 md = ["| " + " | ".join(cols) + " |", "|:---------|:--------------------------|----------------:|--------------:|---------------:|--------------:|"]
 md += ["| " + " | ".join(r) + " |" for r in rows]

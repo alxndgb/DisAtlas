@@ -1,561 +1,569 @@
 id	section	line	token	kind	key	op	tol	note	context
-M000	Abstract	100	13,021	computed	n_diseases	eq			[The resulting space places 13,021 diseases, 10,489 rare and 2,5
-M001	Abstract	100	10,489	computed	n_rare	eq			[The resulting space places 13,021 diseases, 10,489 rare and 2,532 common, along 
-M002	Abstract	100	2,532	computed	n_common	eq			ing space places 13,021 diseases, 10,489 rare and 2,532 common, along shared mechanis
-M003	Significance Statement	110	13,021	computed	n_diseases	eq			[The resulting representations of 13,021 diseases formed biologically 
-M004	Disease to Vector	167	13,021	computed	n_diseases	eq			y diseases lack comprehensive annotations: of the 13,021 diseases in our disease set, 
-M005	Disease to Vector	167	4,767	data_track				disease set: annotation coverage	tions: of the 13,021 diseases in our disease set, 4,767 (36.6%) lack either a gene-le
-M006	Disease to Vector	167	36.6%	data_track				disease set: annotation coverage	of the 13,021 diseases in our disease set, 4,767 (36.6%) lack either a gene-level or 
-M007	Disease to Vector	175	32	computed	embedding_dim	eq			2Vec  to generate the final [DisAtlas embeddings (32-dimensional; see [Methods](#s
-M008	Disease to Vector	181	32	computed	embedding_dim	eq			full graph, pooling evidence from all years, into 32-dimensional DisAtlas embeddin
-M009	Validation of DisAtlas Representations A	202	10%	history				literature figure	For example, only about 10% of druggable human proteins a
-M010	Validation of DisAtlas Representations A	209	0.501	computed	shortcut_auroc_min	eq		min over matched shortcut features	s positives from negatives only marginally (AUROC 0.501 to 0.542, where 0.5 is chance
-M011	Validation of DisAtlas Representations A	209	0.542	computed	shortcut_auroc_max	eq			es from negatives only marginally (AUROC 0.501 to 0.542, where 0.5 is chance; [Figure
-M012	Validation of DisAtlas Representations A	209	0.5	notation				chance level	ives only marginally (AUROC 0.501 to 0.542, where 0.5 is chance; [Figure @fig:ixidn
-M013	Validation of DisAtlas Representations A	212	1,379	computed	ixidn_diseases	eq			 specific mechanism of action are removed, giving 1,379 diseases and 43,112 links ([M
-M014	Validation of DisAtlas Representations A	212	43,112	computed	ixidn_links	eq			 of action are removed, giving 1,379 diseases and 43,112 links ([Methods](#sec:methods
-M015	Validation of DisAtlas Representations A	214	2,182	computed	bench_pos	eq			ug evidence it judged strong or plausible, giving 2,182 IxIDN⁺ and 2,182 IxIDN⁻ pairs
-M016	Validation of DisAtlas Representations A	214	2,182	computed	bench_neg	eq			dged strong or plausible, giving 2,182 IxIDN⁺ and 2,182 IxIDN⁻ pairs over 938 disease
-M017	Validation of DisAtlas Representations A	214	938	computed	bench_diseases	eq			, giving 2,182 IxIDN⁺ and 2,182 IxIDN⁻ pairs over 938 diseases ([Methods](#sec:meth
-M018	Validation of DisAtlas Representations A	218	0.832	computed	auroc_full	eq			l benchmark (dashed line, chance), with DisAtlas (0.832) for reference; organ system,
-M019	DisAtlas Enables Accurate Disease-Diseas	228	0	notation					turns this combination into a probability between 0 and 1.]
-M020	DisAtlas Enables Accurate Disease-Diseas	228	1	notation					this combination into a probability between 0 and 1.]
-M021	DisAtlas Enables Accurate Disease-Diseas	231	4,364	computed	bench_pairs	eq			s removed from the training network, not only the 4,364 IxIDN-Matched pairs, and unde
-M022	DisAtlas Enables Accurate Disease-Diseas	234	0.955	computed	ctrl_p|aHUS-PNH	eq			) and paroxysmal nocturnal haemoglobinuria (PNH) (0.955), Crohn disease and ulcerativ
-M023	DisAtlas Enables Accurate Disease-Diseas	234	0.975	computed	ctrl_p|Crohn-UC	eq			H) (0.955), Crohn disease and ulcerative colitis (0.975), and psoriasis and psoriatic
-M024	DisAtlas Enables Accurate Disease-Diseas	234	0.954	computed	ctrl_p|Psoriasis-PsA	eq			s (0.975), and psoriasis and psoriatic arthritis (0.954).] [It gives low probabilitie
-M025	DisAtlas Enables Accurate Disease-Diseas	234	2	name					nisms differ, such as diabetes insipidus and type 2 diabetes mellitus (0.079), po
-M026	DisAtlas Enables Accurate Disease-Diseas	234	0.079	computed	ctrl_p|DI-T2D	eq			 diabetes insipidus and type 2 diabetes mellitus (0.079), polycystic kidney disease a
-M027	DisAtlas Enables Accurate Disease-Diseas	234	0.163	computed	ctrl_p|PKD-PCOS	eq			tic kidney disease and polycystic ovary syndrome (0.163), and amyotrophic lateral scl
-M028	DisAtlas Enables Accurate Disease-Diseas	234	0.145	computed	ctrl_p|ALS-SSc	eq			trophic lateral sclerosis and systemic sclerosis (0.145).] [Solid edges mark pairs kn
-M029	DisAtlas Enables Accurate Disease-Diseas	236	0.832	computed	auroc_full	eq			eceiver Operating Characteristic Curve (AUROC) of 0.832 (95% disease-cluster CI 0.794
-M030	DisAtlas Enables Accurate Disease-Diseas	236	95%	notation				interval level	 Operating Characteristic Curve (AUROC) of 0.832 (95% disease-cluster CI 0.794–0.86
-M031	DisAtlas Enables Accurate Disease-Diseas	236	0.794	computed	full_lo	eq			ic Curve (AUROC) of 0.832 (95% disease-cluster CI 0.794–0.865, from a bootstrap in wh
-M032	DisAtlas Enables Accurate Disease-Diseas	236	0.865	computed	full_hi	eq			ve (AUROC) of 0.832 (95% disease-cluster CI 0.794–0.865, from a bootstrap in which di
-M033	DisAtlas Enables Accurate Disease-Diseas	236	4,364	computed	bench_pairs	eq			es are resampled with all their pairs) across all 4,364 IxIDN-Matched pairs, and 0.85
-M034	DisAtlas Enables Accurate Disease-Diseas	236	0.859	computed	auroc_full_test	eq			 pairs) across all 4,364 IxIDN-Matched pairs, and 0.859 (0.803–0.905) on the 1,094-pa
-M035	DisAtlas Enables Accurate Disease-Diseas	236	0.803	computed	full_test_lo	eq			 across all 4,364 IxIDN-Matched pairs, and 0.859 (0.803–0.905) on the 1,094-pair held
-M036	DisAtlas Enables Accurate Disease-Diseas	236	0.905	computed	full_test_hi	eq			s all 4,364 IxIDN-Matched pairs, and 0.859 (0.803–0.905) on the 1,094-pair held-out t
-M037	DisAtlas Enables Accurate Disease-Diseas	236	1,094	computed	test_pairs	eq			IDN-Matched pairs, and 0.859 (0.803–0.905) on the 1,094-pair held-out test split whos
-M038	DisAtlas Enables Accurate Disease-Diseas	237	0.501	computed	shortcut_auroc_min	eq		min over matched shortcut features	hortcut scores), also stay close to chance (AUROC 0.501–0.542), indicating that this 
-M039	DisAtlas Enables Accurate Disease-Diseas	237	0.542	computed	shortcut_auroc_max	eq			t scores), also stay close to chance (AUROC 0.501–0.542), indicating that this perfor
-M040	DisAtlas Enables Accurate Disease-Diseas	238	0.784	computed	auroc_nd	eq			der the stricter node-disjoint protocol, AUROC is 0.784 (95% CI 0.746–0.822) on the 4
-M041	DisAtlas Enables Accurate Disease-Diseas	238	95%	notation				interval level	 stricter node-disjoint protocol, AUROC is 0.784 (95% CI 0.746–0.822) on the 4,357 
-M042	DisAtlas Enables Accurate Disease-Diseas	238	0.746	computed	nd_lo	eq			er node-disjoint protocol, AUROC is 0.784 (95% CI 0.746–0.822) on the 4,357 pairs tha
-M043	DisAtlas Enables Accurate Disease-Diseas	238	0.822	computed	nd_hi	eq			e-disjoint protocol, AUROC is 0.784 (95% CI 0.746–0.822) on the 4,357 pairs that can 
-M044	DisAtlas Enables Accurate Disease-Diseas	238	4,357	computed	nd_scored	eq			tocol, AUROC is 0.784 (95% CI 0.746–0.822) on the 4,357 pairs that can be scored, aga
-M045	DisAtlas Enables Accurate Disease-Diseas	238	0.832	computed	auroc_full_on_nd_pairs	eq			2) on the 4,357 pairs that can be scored, against 0.832 for the full model on the sam
-M046	DisAtlas Enables Accurate Disease-Diseas	238	−0.047	computed	delta_nd_minus_full	eq			e full model on the same pairs (paired difference −0.047, 95% CI −0.068 to −0.028), so
-M047	DisAtlas Enables Accurate Disease-Diseas	238	95%	notation				interval level	odel on the same pairs (paired difference −0.047, 95% CI −0.068 to −0.028), so the 
-M048	DisAtlas Enables Accurate Disease-Diseas	238	−0.068	computed	delta_lo	eq			 the same pairs (paired difference −0.047, 95% CI −0.068 to −0.028), so the model stil
-M049	DisAtlas Enables Accurate Disease-Diseas	238	−0.028	computed	delta_hi	eq			pairs (paired difference −0.047, 95% CI −0.068 to −0.028), so the model still ranks pa
-M050	DisAtlas Enables Accurate Disease-Diseas	240	4,364	computed	bench_pairs	eq			[The full model scores every one of the 4,364 pairs, whereas annotation-bas
-M051	DisAtlas Enables Accurate Disease-Diseas	240	35	data_track				annotation-based similarity coverage	s annotation-based similarity measures score only 35-98% of pairs because of gaps 
-M052	DisAtlas Enables Accurate Disease-Diseas	240	98%	data_track				annotation-based similarity coverage	nnotation-based similarity measures score only 35-98% of pairs because of gaps in a
-M053	DisAtlas Enables Accurate Disease-Diseas	242	0.754	computed	stratum_auroc|rare-rare	eq			Performance holds across disease rarity: AUROC is 0.754 on pairs of two rare diseases
-M054	DisAtlas Enables Accurate Disease-Diseas	242	0.889	computed	stratum_auroc|rare-common	eq			 AUROC is 0.754 on pairs of two rare diseases and 0.889 on rare–common pairs ([Figure
-M055	DisAtlas Enables Accurate Disease-Diseas	242	26	computed	stratum_nneg|common-common	eq			a)), whereas the common–common stratum, with only 26 negative pairs, is too imprec
-M550	DisAtlas Enables Accurate Disease-Diseas	243	0.540	computed	fig5_panel_c_txgnn_auroc:rare-rare|auroc	eq		Fig 5c TxGNN by rarity	NN, the knowledge-graph foundation model, reaches 0.540 on rare–rare and 0.615 on rar
-M551	DisAtlas Enables Accurate Disease-Diseas	243	0.615	computed	fig5_panel_c_txgnn_auroc:rare-common|auroc	eq		Fig 5c TxGNN by rarity	 foundation model, reaches 0.540 on rare–rare and 0.615 on rare–common pairs, and Dis
-M552	DisAtlas Enables Accurate Disease-Diseas	243	0.213	computed	fig5_panel_c_paired_differences:rare-rare|diff	eq		Fig 5c TxGNN by rarity	las exceeds it in both strata (paired differences 0.213, 95% CI 0.143 to 0.285, and 0
-M553	DisAtlas Enables Accurate Disease-Diseas	243	95%	notation				interval level	eeds it in both strata (paired differences 0.213, 95% CI 0.143 to 0.285, and 0.274,
-M554	DisAtlas Enables Accurate Disease-Diseas	243	0.143	computed	fig5_panel_c_paired_differences:rare-rare|ci_lo	eq		Fig 5c TxGNN by rarity	 in both strata (paired differences 0.213, 95% CI 0.143 to 0.285, and 0.274, 0.176 to
-M555	DisAtlas Enables Accurate Disease-Diseas	243	0.285	computed	fig5_panel_c_paired_differences:rare-rare|ci_hi	eq		Fig 5c TxGNN by rarity	strata (paired differences 0.213, 95% CI 0.143 to 0.285, and 0.274, 0.176 to 0.378; d
-M556	DisAtlas Enables Accurate Disease-Diseas	243	0.274	computed	fig5_panel_c_paired_differences:rare-common|diff	eq		Fig 5c TxGNN by rarity	red differences 0.213, 95% CI 0.143 to 0.285, and 0.274, 0.176 to 0.378; disease-clus
-M557	DisAtlas Enables Accurate Disease-Diseas	243	0.176	computed	fig5_panel_c_paired_differences:rare-common|ci_lo	eq		Fig 5c TxGNN by rarity	ferences 0.213, 95% CI 0.143 to 0.285, and 0.274, 0.176 to 0.378; disease-cluster boo
-M558	DisAtlas Enables Accurate Disease-Diseas	243	0.378	computed	fig5_panel_c_paired_differences:rare-common|ci_hi	eq		Fig 5c TxGNN by rarity	0.213, 95% CI 0.143 to 0.285, and 0.274, 0.176 to 0.378; disease-cluster bootstrap; [
-M058	DisAtlas Enables Accurate Disease-Diseas	249	68	si_track				SI rare-common recovery	[They do: for the rare disease of each of the 68 test-split rare-common pairs,
-M056	DisAtlas Enables Accurate Disease-Diseas	249	0.897	si_track				partner mean percentile, rare-common test pairs	gated common disease sits at a mean percentile of 0.897; ranking all rare diseases fo
-M057	DisAtlas Enables Accurate Disease-Diseas	249	0.934	si_track				SI rare-common recovery	isease places its co-investigated rare disease at 0.934 (percentiles on a 0-1 scale; 
-M559	DisAtlas Enables Accurate Disease-Diseas	249	0	notation				percentile scale	estigated rare disease at 0.934 (percentiles on a 0-1 scale; 0.5 = chance).]
-M560	DisAtlas Enables Accurate Disease-Diseas	249	1	notation				percentile scale	tigated rare disease at 0.934 (percentiles on a 0-1 scale; 0.5 = chance).]
-M059	DisAtlas Enables Accurate Disease-Diseas	249	0.5	notation				chance level	are disease at 0.934 (percentiles on a 0-1 scale; 0.5 = chance).]
-M561	Case Study: Decoding Shared Mechanisms	258	0.955	computed	callout_p|PNH-aHUS	eq			network and do not share causal genes; its score, 0.955, lies at the 99.9th percentil
-M562	Case Study: Decoding Shared Mechanisms	258	99.9	computed	callout_pct|PNH-aHUS	eq			share causal genes; its score, 0.955, lies at the 99.9th percentile of all disease p
-M060	Case Study: Bridging Rare and Common Dis	263	81	identifier					yopathies (IIMs) , Antisynthetase Syndrome (ORPHA:81) and Polymyositis (ORPHA:732)
-M061	Case Study: Bridging Rare and Common Dis	263	732	identifier					etase Syndrome (ORPHA:81) and Polymyositis (ORPHA:732).]
-M062	Case Study: Bridging Rare and Common Dis	265	0.807	si_track				case study: seed ranges	the five seeded decoders: the mean probability is 0.807 for polymyositis (range acros
-M063	Case Study: Bridging Rare and Common Dis	265	0.736	si_track				case study: seed ranges	ity is 0.807 for polymyositis (range across seeds 0.736 to 0.879) and 0.733 for antis
-M064	Case Study: Bridging Rare and Common Dis	265	0.879	si_track				case study: seed ranges	807 for polymyositis (range across seeds 0.736 to 0.879) and 0.733 for antisynthetase
-M065	Case Study: Bridging Rare and Common Dis	265	0.733	si_track				case study: seed ranges	ymyositis (range across seeds 0.736 to 0.879) and 0.733 for antisynthetase syndrome (
-M066	Case Study: Bridging Rare and Common Dis	265	0.651	si_track				case study: seed ranges	 to 0.879) and 0.733 for antisynthetase syndrome (0.651 to 0.860); scores for the wid
-M067	Case Study: Bridging Rare and Common Dis	265	0.860	si_track				case study: seed ranges	) and 0.733 for antisynthetase syndrome (0.651 to 0.860); scores for the wider group 
-M563	Unsupervised Clustering via DisAtlas Rev	270	1	notation					[We cluster diseases on the distance $1-p$, where $p$ is the DisAtlas
-M069	Unsupervised Clustering via DisAtlas Rev	271	55,	computed	n_clusters	eq			[We chose K = 55, the smallest number of cluste
-M070	Unsupervised Clustering via DisAtlas Rev	276	500	computed	cluster_size|44	eq			[A representative example is cluster c44 (500 diseases), which contains a d
-M071	Unsupervised Clustering via DisAtlas Rev	280	13,021	computed	n_diseases	eq			**(a)** [13,021 diseases on a two-dimensional
-M072	Unsupervised Clustering via DisAtlas Rev	280	55	computed	n_clusters	eq			n a two-dimensional map, coloured by cluster (K = 55); the map is for display only
-M073	Unsupervised Clustering via DisAtlas Rev	282	23	computed	cluster|MONDO:0016244	eq			emoglobinuria (PNH) (eculizumab), sharing cluster 23; tuberous sclerosis complex (
-M074	Unsupervised Clustering via DisAtlas Rev	282	33	computed	cluster|MONDO:0001734	eq			leiomyomatosis (LAM) (sirolimus), sharing cluster 33; and Crohn disease and ulcera
-M075	Unsupervised Clustering via DisAtlas Rev	282	12	computed	cluster|MONDO:0005011	eq			dalimumab, etanercept), each pair sharing cluster 12.]
-M076	Unsupervised Clustering via DisAtlas Rev	283	2	name					negative pairs (red): diabetes insipidus and type 2 diabetes (T2D), placed in dif
-M077	Unsupervised Clustering via DisAtlas Rev	283	51	computed	cluster|MONDO:0004782	eq			e 2 diabetes (T2D), placed in different clusters (51 and 12) despite their similar
-M078	Unsupervised Clustering via DisAtlas Rev	283	12	computed	cluster|MONDO:0005148	eq			betes (T2D), placed in different clusters (51 and 12) despite their similar-soundi
-M079	Unsupervised Clustering via DisAtlas Rev	283	29	computed	cluster|MONDO:0018208	eq		control NF1mut-NF2	istinct pathogenic mechanisms, placed in clusters 29 and 33.]
-M080	Unsupervised Clustering via DisAtlas Rev	283	33	computed	cluster|MONDO:0007039	eq		control NF1mut-NF2	 pathogenic mechanisms, placed in clusters 29 and 33.]
-M528	Unsupervised Clustering via DisAtlas Rev	284	0.955	computed	callout_p|PNH-aHUS	eq			 eculizumab-approved diseases: aHUS and PNH score 0.955 (99.9th percentile of all 84,
-M529	Unsupervised Clustering via DisAtlas Rev	284	99.9	computed	callout_pct|PNH-aHUS	eq			umab-approved diseases: aHUS and PNH score 0.955 (99.9th percentile of all 84,766,71
-M564	Unsupervised Clustering via DisAtlas Rev	284	84,766,710	computed	n_all_pairs	eq			HUS and PNH score 0.955 (99.9th percentile of all 84,766,710 disease pairs, every pair bei
-M081	Unsupervised Clustering via DisAtlas Rev	284	23	computed	cluster|MONDO:0009688	eq			pairs, every pair being scored) and share cluster 23 with generalised myasthenia g
-M530	Unsupervised Clustering via DisAtlas Rev	284	0.808	computed	callout_p|PNH-NMOSD	eq			SD, yellow), also approved for eculizumab, scores 0.808 with PNH (98.8th percentile) 
-M531	Unsupervised Clustering via DisAtlas Rev	284	98.8	computed	callout_pct|PNH-NMOSD	eq			o approved for eculizumab, scores 0.808 with PNH (98.8th percentile) and sits in the
-M532	Unsupervised Clustering via DisAtlas Rev	284	43,	computed	cluster|MONDO:0019100	eq			 percentile) and sits in the neighbouring cluster 43, joined to PNH by a dotted lin
-M083	Unsupervised Clustering via DisAtlas Rev	284	55,	computed	n_clusters	eq			 by a dotted line; all cluster numbers are at K = 55, the number of clusters shown.
-M084	Unsupervised Clustering via DisAtlas Rev	285	13,021	computed	n_diseases	eq			**(b)** [The same 13,021-disease map, coloured by dise
-M085	Unsupervised Clustering via DisAtlas Rev	285	2,532	computed	n_common	eq			me 13,021-disease map, coloured by disease class (2,532 common, 10,489 rare). Five ra
-M086	Unsupervised Clustering via DisAtlas Rev	285	10,489	computed	n_rare	eq			ase map, coloured by disease class (2,532 common, 10,489 rare). Five rare diseases (re
-M533	Unsupervised Clustering via DisAtlas Rev	285	26	computed	cluster|MONDO:0005439	eq			AL-D) and familial hypercholesterolaemia (cluster 26); Crigler–Najjar syndrome typ
-M534	Unsupervised Clustering via DisAtlas Rev	285	2	name					laemia (cluster 26); Crigler–Najjar syndrome type 2 and Gilbert syndrome (cluster
-M535	Unsupervised Clustering via DisAtlas Rev	285	16	computed	cluster|MONDO:0007745	eq			jar syndrome type 2 and Gilbert syndrome (cluster 16); catecholaminergic polymorph
-M536	Unsupervised Clustering via DisAtlas Rev	285	1	name					cholaminergic polymorphic ventricular tachycardia 1 (CPVT1) and sudden arrhythmic
-M537	Unsupervised Clustering via DisAtlas Rev	285	19	computed	cluster|MONDO:0054866	eq			T1) and sudden arrhythmic death syndrome (cluster 19); Huntington disease and Park
-M538	Unsupervised Clustering via DisAtlas Rev	285	27	computed	cluster|MONDO:0005180	eq			Huntington disease and Parkinson disease (cluster 27); and congenital fibrosis of 
-M539	Unsupervised Clustering via DisAtlas Rev	285	6	computed	cluster|MONDO:0000728	eq			e muscles, and ptosis, a drooping eyelid (cluster 6).]
-M565	Unsupervised Clustering via DisAtlas Rev	286	213	computed	unscored|txgnn	eq			 in [Figure @fig:benchmark_DDAL_ROC_DD], with the 213 pairs it cannot map ranked la
-M097	Unsupervised Clustering via DisAtlas Rev	286	95%	notation				interval level	the 213 pairs it cannot map ranked last. Bars are 95% confidence intervals from the
-M098	Unsupervised Clustering via DisAtlas Rev	286	2,000,	parameter				bootstrap replicates	with all its pairs is one resampling cluster (B = 2,000, one set of draws shared by bo
-M100	Unsupervised Clustering via DisAtlas Rev	286	26	computed	stratum_nneg|common-common	eq			); hollow markers mark common-common pairs, whose 26 matched negatives make the es
-M101	Unsupervised Clustering via DisAtlas Rev	287	1	notation					res ($p_{i,j}$, logit scale) for IxIDN⁺ pairs ($y=1$) versus their matched IxIDN⁻
-M102	Unsupervised Clustering via DisAtlas Rev	287	0	notation					irs ($y=1$) versus their matched IxIDN⁻ pairs ($y=0$), split by the same four rar
-M566	Unsupervised Clustering via DisAtlas Rev	287	2	name					se–ulcerative colitis and diabetes insipidus–type 2 diabetes mellitus both fall i
-M103	Unsupervised Clustering via DisAtlas Rev	289	8.97	computed	cocluster_ratio	eq			ed IxIDN-Matched test-split pairs share a cluster 8.97 times as often as their match
-M104	Unsupervised Clustering via DisAtlas Rev	289	55	computed	n_clusters	eq			s as often as their matched negative pairs at K = 55 (29.7% of 491 positive pairs 
-M105	Unsupervised Clustering via DisAtlas Rev	289	29.7%	computed	cocluster_pos_pct	eq			 often as their matched negative pairs at K = 55 (29.7% of 491 positive pairs against
-M106	Unsupervised Clustering via DisAtlas Rev	289	491	computed	test_pos	eq			 their matched negative pairs at K = 55 (29.7% of 491 positive pairs against 3.3% o
-M107	Unsupervised Clustering via DisAtlas Rev	289	3.3%	computed	cocluster_neg_pct	eq			rs at K = 55 (29.7% of 491 positive pairs against 3.3% of 603 negative pairs), and a
-M108	Unsupervised Clustering via DisAtlas Rev	289	603	computed	test_neg	eq			= 55 (29.7% of 491 positive pairs against 3.3% of 603 negative pairs), and at least
-M109	Unsupervised Clustering via DisAtlas Rev	289	5.8	si_track				other K	against 3.3% of 603 negative pairs), and at least 5.8 times as often at every K ≥ 2
-M110	Unsupervised Clustering via DisAtlas Rev	289	20,	si_track				other K	rs), and at least 5.8 times as often at every K ≥ 20, directly linking the unsuperv
-M111	Unsupervised Clustering via DisAtlas Rev	292	44	computed	mixed_clusters	eq			ng]b), consistent with our central hypothesis: in 44 of the 55 clusters each class
-M112	Unsupervised Clustering via DisAtlas Rev	292	55	computed	n_clusters	eq			sistent with our central hypothesis: in 44 of the 55 clusters each class makes up 
-M113	Unsupervised Clustering via DisAtlas Rev	292	10%	parameter					4 of the 55 clusters each class makes up at least 10% of the members, and these 44 
-M114	Unsupervised Clustering via DisAtlas Rev	292	44	computed	mixed_clusters	eq			s makes up at least 10% of the members, and these 44 clusters hold 91.8% of the co
-M115	Unsupervised Clustering via DisAtlas Rev	292	91.8%	computed	mixed_pct_common	eq			st 10% of the members, and these 44 clusters hold 91.8% of the common and 73.9% of th
-M116	Unsupervised Clustering via DisAtlas Rev	292	73.9%	computed	mixed_pct_rare	eq			nd these 44 clusters hold 91.8% of the common and 73.9% of the rare diseases.]
-M540	Unsupervised Clustering via DisAtlas Rev	293	0.904	computed	callout_p|CESD-FH	eq			s with familial hypercholesterolaemia (c26, score 0.904); Crigler–Najjar syndrome typ
-M541	Unsupervised Clustering via DisAtlas Rev	293	2	name					 (c26, score 0.904); Crigler–Najjar syndrome type 2 with Gilbert syndrome, both c
-M542	Unsupervised Clustering via DisAtlas Rev	293	0.957	computed	callout_p|CN2-Gilbert	eq			rt syndrome, both caused by UGT1A1 variants (c16, 0.957); catecholaminergic polymorph
-M543	Unsupervised Clustering via DisAtlas Rev	293	1	name					cholaminergic polymorphic ventricular tachycardia 1 with sudden arrhythmic death 
-M544	Unsupervised Clustering via DisAtlas Rev	293	0.960	computed	callout_p|CPVT1-SADS	eq			hythmic death syndrome, both linked to RYR2 (c19, 0.960); Huntington disease with Par
-M545	Unsupervised Clustering via DisAtlas Rev	293	0.941	computed	callout_p|HD-PD	eq			; Huntington disease with Parkinson disease (c27, 0.941); and congenital fibrosis of 
-M546	Unsupervised Clustering via DisAtlas Rev	293	0.942	computed	callout_p|CFEOM-ptosis	eq			llows from its faulty eye-muscle innervation (c6, 0.942).]
-M120	Unsupervised Clustering via DisAtlas Rev	294	15	si_track				umbrella placement	ts subtypes rather than to the umbrella term; all 15 of its numbered subtypes, inc
-M121	Unsupervised Clustering via DisAtlas Rev	294	5,	name					ts numbered subtypes, including Parkinson disease 5, sit in c30 with essential tre
-M122	Unsupervised Clustering via DisAtlas Rev	299	0.915	computed	ctrl_p|LALD_Wolman-CESD	eq			holesteryl ester storage disease, with a score of 0.915 (99.6th percentile of all dis
-M123	Unsupervised Clustering via DisAtlas Rev	299	99.6	computed	ctrl_pct|LALD_Wolman-CESD	eq			ryl ester storage disease, with a score of 0.915 (99.6th percentile of all disease p
-M124	Unsupervised Clustering via DisAtlas Rev	300	55	computed	n_clusters	eq			[At K = 55 the clustering places them in
-M125	Unsupervised Clustering via DisAtlas Rev	300	4	computed	n_pos_split	eq			in separate clusters (c4 and c26), as it does for 4 of the 9 positive control pai
-M126	Unsupervised Clustering via DisAtlas Rev	300	9	computed	n_pos_controls	eq			te clusters (c4 and c26), as it does for 4 of the 9 positive control pairs, all o
-M127	Unsupervised Clustering via DisAtlas Rev	300	98.4	computed	min_pos_pct	eq			l pairs, all of which still score at or above the 98.4th percentile (Supplementary [
-M128	Unsupervised Clustering via DisAtlas Rev	304	0.145	computed	ctrl_p|NF1mut-NF2	eq			[DisAtlas gives this pair a low link score (0.145, below every positive control
-M129	Unsupervised Clustering via DisAtlas Rev	304	55	computed	n_clusters	eq			es them in separate clusters (c29 and c33) at K = 55 and at every K from 35 to 80;
-M130	Unsupervised Clustering via DisAtlas Rev	304	35	si_track				other K	sters (c29 and c33) at K = 55 and at every K from 35 to 80; all 8 negative control
-M131	Unsupervised Clustering via DisAtlas Rev	304	80	si_track				other K	(c29 and c33) at K = 55 and at every K from 35 to 80; all 8 negative control pairs
-M132	Unsupervised Clustering via DisAtlas Rev	304	8	computed	n_neg_controls	eq			 c33) at K = 55 and at every K from 35 to 80; all 8 negative control pairs are se
-M133	Unsupervised Clustering via DisAtlas Rev	304	55	computed	n_clusters	eq			all 8 negative control pairs are separated at K = 55 (Supplementary [](#sec:SI_clu
-M134	[Comparing DisAtlas with Language-Model 	310	4,364	computed	bench_pairs	eq			[We gave the same 4,364 blinded IxIDN-Matched pairs t
-M135	[Comparing DisAtlas with Language-Model 	310	3.1	version					large language models (Claude Chat and Gemini Pro 3.1), two agentic AI systems (Cla
-M136	[Comparing DisAtlas with Language-Model 	314	3.1	version					ately than Claude Chat, Claude Sci and Gemini Pro 3.1 ([Figure @fig:benchmark_DDAL_
-M137	[Comparing DisAtlas with Language-Model 	319	3.1	version					compared with Claude Chat, Claude Sci, Gemini Pro 3.1, Phylo Biomni and TxGNN (its 
-M138	[Comparing DisAtlas with Language-Model 	319	4,364	computed	bench_pairs	eq			xGNN (its originally published checkpoint) on all 4,364 pairs of IxIDN-Matched, half 
-M139	[Comparing DisAtlas with Language-Model 	319	3.1	version					thods_ixidn_matched)). Claude Chat and Gemini Pro 3.1 (Protocol 2) and the agentic 
-M140	[Comparing DisAtlas with Language-Model 	319	2	notation				protocol number	tched)). Claude Chat and Gemini Pro 3.1 (Protocol 2) and the agentic system Claud
-M141	[Comparing DisAtlas with Language-Model 	319	3	notation				protocol number	ol 2) and the agentic system Claude Sci (Protocol 3) scored each pair from the sa
-M142	[Comparing DisAtlas with Language-Model 	319	7	computed	nd_unscored	eq			xcept for the node-disjoint DisAtlas model, whose 7 pairs it cannot score are lef
-M143	[Comparing DisAtlas with Language-Model 	319	4,357	computed	nd_scored	eq			nnot score are left out of its curve and metrics (4,357 pairs; [Methods](#sec:methods
-M144	[Comparing DisAtlas with Language-Model 	319	10%	parameter				top/bottom 10% definition	tive as there are positives, precision in the top 10% and negative predictive value
-M145	[Comparing DisAtlas with Language-Model 	319	10%	parameter				top/bottom 10% definition	p 10% and negative predictive value in the bottom 10% ([Methods](#sec:methods_stati
-M146	[Comparing DisAtlas with Language-Model 	319	95%	notation				interval level	c:methods_statistics)). Dots are values, bars are 95% confidence intervals from a d
-M147	[Comparing DisAtlas with Language-Model 	319	2,000	parameter				bootstrap replicates	 diseases are resampled with all their pairs (B = 2,000), and dashed lines mark rando
-M148	[Comparing DisAtlas with Language-Model 	319	1.5	notation					 = interquartile range, line = median, whiskers = 1.5x the interquartile range; no 
-M149	[Comparing DisAtlas with Language-Model 	319	10%	parameter				top/bottom 10% definition	s not shown. **(d)** Overlap between methods' top-10% pairs (436 of 4,364 pairs eac
-M150	[Comparing DisAtlas with Language-Model 	319	436	computed	topk	eq			. **(d)** Overlap between methods' top-10% pairs (436 of 4,364 pairs each), as the 
-M151	[Comparing DisAtlas with Language-Model 	319	4,364	computed	bench_pairs	eq			** Overlap between methods' top-10% pairs (436 of 4,364 pairs each), as the Jaccard i
-M152	[Comparing DisAtlas with Language-Model 	319	10%	parameter				top/bottom 10% definition	ch), as the Jaccard index; two independent random 10% sets would give ≈0.05.]](FIGU
-M153	[Comparing DisAtlas with Language-Model 	319	0.05	computed	jaccard_random	approx	0.005	text: approximately	ndex; two independent random 10% sets would give ≈0.05.]](FIGURES/fig5_method_compar
-M154	[Rebuilt from Earlier Evidence, DisAtlas	331	6,496	computed	n_drugs	eq			[Across 6,496 drugs and 35,793 new drug–dis
-M155	[Rebuilt from Earlier Evidence, DisAtlas	331	35,793	computed	n_events	eq			[Across 6,496 drugs and 35,793 new drug–disease trials in di
-M156	[Rebuilt from Earlier Evidence, DisAtlas	331	7.0	computed	pooled_adv	eq			xt trialled disease above weighted Adamic–Adar by 7.0 percentile points over all ye
-M157	[Rebuilt from Earlier Evidence, DisAtlas	331	95%	notation				interval level	mic–Adar by 7.0 percentile points over all years (95% CI 6.2–7.9; paired bootstrap 
-M158	[Rebuilt from Earlier Evidence, DisAtlas	331	6.2	computed	pooled_adv_lo	eq			r by 7.0 percentile points over all years (95% CI 6.2–7.9; paired bootstrap over dr
-M159	[Rebuilt from Earlier Evidence, DisAtlas	331	7.9	computed	pooled_adv_hi	eq			 7.0 percentile points over all years (95% CI 6.2–7.9; paired bootstrap over drugs,
-M160	[Rebuilt from Earlier Evidence, DisAtlas	331	2,000	parameter				bootstrap replicates	ars (95% CI 6.2–7.9; paired bootstrap over drugs, 2,000 replicates; [Figure @fig:even
-M567	[Rebuilt from Earlier Evidence, DisAtlas	332	95%	notation				interval level	[The pre-specified decision rule required the 95% interval of this difference t
-M161	[Rebuilt from Earlier Evidence, DisAtlas	333	95%	notation				interval level	[It also recurs across years: the yearly 95% interval lies above zero in 1
-M162	[Rebuilt from Earlier Evidence, DisAtlas	333	19	computed	years_ci_above0	eq			years: the yearly 95% interval lies above zero in 19 of the 25 decision years scor
-M163	[Rebuilt from Earlier Evidence, DisAtlas	333	25	computed	n_years	eq			 yearly 95% interval lies above zero in 19 of the 25 decision years scored (each s
-M164	[Rebuilt from Earlier Evidence, DisAtlas	334	10%	parameter				top/bottom 10% definition	rugs whose best-ranked new trial falls in the top 10% of the ranking follows the sa
-M165	[Rebuilt from Earlier Evidence, DisAtlas	338	4	name					d from multiple sclerosis, first by the aquaporin-4 antibody and then by the 2006
-M166	[Rebuilt from Earlier Evidence, DisAtlas	338	2006	year					first by the aquaporin-4 antibody and then by the 2006 NMO criteria, multiple sclero
-M167	[Rebuilt from Earlier Evidence, DisAtlas	339	7	history				trial history (cited)	[About 7 years before eculizumab's fir
-M168	[Rebuilt from Earlier Evidence, DisAtlas	339	2009,	year					 7 years before eculizumab's first NMOSD trial in 2009, when the drug was in its firs
-M169	[Rebuilt from Earlier Evidence, DisAtlas	339	3	computed	ms_rank	eq			 study in PNH, DisAtlas ranked multiple sclerosis 3rd of 25 diseases with similar
-M170	[Rebuilt from Earlier Evidence, DisAtlas	339	25	computed	ms_pool	eq			in PNH, DisAtlas ranked multiple sclerosis 3rd of 25 diseases with similar numbers
-M171	[Rebuilt from Earlier Evidence, DisAtlas	340	2	history				trial history (cited)	[About 2 years before that trial, with
-M172	[Rebuilt from Earlier Evidence, DisAtlas	340	2	computed	nmo_rank	eq			trial, with NMO in the graph, DisAtlas ranked NMO 2nd and weighted Adamic–Adar ra
-M173	[Rebuilt from Earlier Evidence, DisAtlas	340	3	computed	nmo_rank_aa	eq			ranked NMO 2nd and weighted Adamic–Adar ranked it 3rd among NMO and the 24 diseas
-M174	[Rebuilt from Earlier Evidence, DisAtlas	340	24	computed	n_other	eq			ghted Adamic–Adar ranked it 3rd among NMO and the 24 diseases with similar numbers
-M175	[Rebuilt from Earlier Evidence, DisAtlas	341	2019	year					[Approval for NMOSD followed in 2019 .]
-M176	[Rebuilt from Earlier Evidence, DisAtlas	345	2000	year					ph-only reference rests on panel b. Top, timeline 2000–2020. NMO was treated as a fo
-M177	[Rebuilt from Earlier Evidence, DisAtlas	345	2020	year					ly reference rests on panel b. Top, timeline 2000–2020. NMO was treated as a form of
-M178	[Rebuilt from Earlier Evidence, DisAtlas	345	2004	year					tinguished it from multiple sclerosis in December 2004 ; in 2005 its target was iden
-M179	[Rebuilt from Earlier Evidence, DisAtlas	345	2005	year					 it from multiple sclerosis in December 2004 ; in 2005 its target was identified as 
-M180	[Rebuilt from Earlier Evidence, DisAtlas	345	4	name					n 2005 its target was identified as the aquaporin-4 (AQP4) water channel . Revise
-M181	[Rebuilt from Earlier Evidence, DisAtlas	345	2006	year					nel . Revised NMO diagnostic criteria followed in 2006  and international consensus 
-M182	[Rebuilt from Earlier Evidence, DisAtlas	345	2015	year					sus criteria for NMO spectrum disorder (NMOSD) in 2015 . Eculizumab, an antibody aga
-M183	[Rebuilt from Earlier Evidence, DisAtlas	345	11	history				trial history (cited)	 paroxysmal nocturnal haemoglobinuria (PNH) in an 11-patient pilot study that bega
-M184	[Rebuilt from Earlier Evidence, DisAtlas	345	2002	year					NH) in an 11-patient pilot study that began about 2002 , entered a randomised phase 
-M185	[Rebuilt from Earlier Evidence, DisAtlas	345	3	history				trial history (cited)	hat began about 2002 , entered a randomised phase 3 trial in 2004 (NCT00122330)  
-M186	[Rebuilt from Earlier Evidence, DisAtlas	345	2004	year					bout 2002 , entered a randomised phase 3 trial in 2004 (NCT00122330)  and was approv
-M187	[Rebuilt from Earlier Evidence, DisAtlas	345	2007	year					 (NCT00122330)  and was approved for PNH in March 2007 . Its first NMOSD trial began
-M188	[Rebuilt from Earlier Evidence, DisAtlas	345	2009	year					NH in March 2007 . Its first NMOSD trial began in 2009 (NCT00904826) , and approval 
-M189	[Rebuilt from Earlier Evidence, DisAtlas	345	2019	year					904826) , and approval for NMOSD followed in June 2019 . Below the timeline: about 7
-M190	[Rebuilt from Earlier Evidence, DisAtlas	345	7	history				trial history (cited)	followed in June 2019 . Below the timeline: about 7 years before the first NMOSD 
-M191	[Rebuilt from Earlier Evidence, DisAtlas	345	2002	year					years before the first NMOSD trial (decision year 2002), multiple sclerosis, then th
-M192	[Rebuilt from Earlier Evidence, DisAtlas	345	5	computed	ms_rank	le			lerosis, then the proxy for NMO, ranks in the top 5 for eculizumab by DisAtlas (3
-M193	[Rebuilt from Earlier Evidence, DisAtlas	345	3	computed	ms_rank	eq			O, ranks in the top 5 for eculizumab by DisAtlas (3rd of 25); about 2 years befor
-M194	[Rebuilt from Earlier Evidence, DisAtlas	345	25	computed	ms_pool	eq			s in the top 5 for eculizumab by DisAtlas (3rd of 25); about 2 years before it (de
-M195	[Rebuilt from Earlier Evidence, DisAtlas	345	2	history				trial history (cited)	p 5 for eculizumab by DisAtlas (3rd of 25); about 2 years before it (decision yea
-M196	[Rebuilt from Earlier Evidence, DisAtlas	345	2007	year					rd of 25); about 2 years before it (decision year 2007), with NMO in the graph, NMO 
-M197	[Rebuilt from Earlier Evidence, DisAtlas	345	2	computed	nmo_rank	eq			sion year 2007), with NMO in the graph, NMO ranks 2nd of 25 by DisAtlas and 3rd o
-M198	[Rebuilt from Earlier Evidence, DisAtlas	345	25	computed	nmo_pool	eq			ar 2007), with NMO in the graph, NMO ranks 2nd of 25 by DisAtlas and 3rd of 25 by 
-M199	[Rebuilt from Earlier Evidence, DisAtlas	345	3	computed	nmo_rank_aa	eq			in the graph, NMO ranks 2nd of 25 by DisAtlas and 3rd of 25 by weighted Adamic–Ad
-M200	[Rebuilt from Earlier Evidence, DisAtlas	345	25	computed	nmo_pool	eq			graph, NMO ranks 2nd of 25 by DisAtlas and 3rd of 25 by weighted Adamic–Adar. The 
-M201	[Rebuilt from Earlier Evidence, DisAtlas	345	25	computed	nmo_pool	eq			sAtlas and 3rd of 25 by weighted Adamic–Adar. The 25 are NMO and 24 diseases with 
-M202	[Rebuilt from Earlier Evidence, DisAtlas	345	24	computed	n_other	eq			of 25 by weighted Adamic–Adar. The 25 are NMO and 24 diseases with similar numbers
-M203	[Rebuilt from Earlier Evidence, DisAtlas	345	1	notation				enumeration	d graph links. Bottom, how the rank is computed: (1) known use of the drug; (2) c
-M204	[Rebuilt from Earlier Evidence, DisAtlas	345	2	notation				enumeration	the rank is computed: (1) known use of the drug; (2) control for popularity bias 
-M205	[Rebuilt from Earlier Evidence, DisAtlas	345	24	computed	n_other	eq			or popularity bias by comparing NMO only with the 24 diseases with similar numbers
-M206	[Rebuilt from Earlier Evidence, DisAtlas	345	3	notation				enumeration	 with similar numbers of trials and graph links; (3) rank by DisAtlas score, the 
-M207	[Rebuilt from Earlier Evidence, DisAtlas	345	2	computed	nmo_rank	eq			f each disease to PNH in the embedding: NMO ranks 2nd of 25, so 96% of the 24 oth
-M208	[Rebuilt from Earlier Evidence, DisAtlas	345	25,	computed	nmo_pool	eq			disease to PNH in the embedding: NMO ranks 2nd of 25, so 96% of the 24 others (23 o
-M209	[Rebuilt from Earlier Evidence, DisAtlas	345	96%	computed	pct_lower	eq			 to PNH in the embedding: NMO ranks 2nd of 25, so 96% of the 24 others (23 of 24) r
-M210	[Rebuilt from Earlier Evidence, DisAtlas	345	24	computed	n_other	eq			the embedding: NMO ranks 2nd of 25, so 96% of the 24 others (23 of 24) rank lower,
-M211	[Rebuilt from Earlier Evidence, DisAtlas	345	23	computed	n_lower	eq			ng: NMO ranks 2nd of 25, so 96% of the 24 others (23 of 24) rank lower, against 50
-M212	[Rebuilt from Earlier Evidence, DisAtlas	345	24	computed	n_other	eq			O ranks 2nd of 25, so 96% of the 24 others (23 of 24) rank lower, against 50% expe
-M213	[Rebuilt from Earlier Evidence, DisAtlas	345	50%	notation				chance level	% of the 24 others (23 of 24) rank lower, against 50% expected by chance. **(b)** A
-M214	[Rebuilt from Earlier Evidence, DisAtlas	345	6,496	computed	n_drugs	eq			r, against 50% expected by chance. **(b)** Across 6,496 drugs, the advantage of DisAt
-M215	[Rebuilt from Earlier Evidence, DisAtlas	345	95%	notation				interval level	tuning. Points, yearly advantage; vertical lines, 95% CI; horizontal line and band,
-M216	[Rebuilt from Earlier Evidence, DisAtlas	345	+7.0	computed	pooled_adv	eq			CI; horizontal line and band, all years combined (+7.0 percentile points) with its 9
-M217	[Rebuilt from Earlier Evidence, DisAtlas	345	95%	notation				interval level	 years combined (+7.0 percentile points) with its 95% CI. CIs are from a paired dru
-M218	[Rebuilt from Earlier Evidence, DisAtlas	345	2,000	parameter				bootstrap replicates	CI. CIs are from a paired drug-cluster bootstrap (2,000 replicates); decision years s
-M219	[Rebuilt from Earlier Evidence, DisAtlas	345	95%	notation				interval level	 are not independent. DisAtlas is ahead, with the 95% CI above zero, in 19 of the 2
-M220	[Rebuilt from Earlier Evidence, DisAtlas	345	19	computed	years_ci_above0	eq			DisAtlas is ahead, with the 95% CI above zero, in 19 of the 25 decision years scor
-M221	[Rebuilt from Earlier Evidence, DisAtlas	345	25	computed	n_years	eq			s ahead, with the 95% CI above zero, in 19 of the 25 decision years scored. There 
-M222	[Rebuilt from Earlier Evidence, DisAtlas	345	1998	year					e 25 decision years scored. There is no point for 1998: scoring that year would need
-M223	[Rebuilt from Earlier Evidence, DisAtlas	345	1997,	year					at year would need an evidence snapshot ending in 1997, which was not built. The stri
-M568	Discussion and Conclusion	355	1,	name					cholaminergic polymorphic ventricular tachycardia 1, a rare inherited arrhythmia c
-M224	Discussion and Conclusion	356	1%	si_track				parent placement (Discussion)	 two or more MONDO parents lies among the nearest 1% of diseases to the average of
-M225	Discussion and Conclusion	356	47.5%	si_track				parent placement (Discussion)	ases to the average of its parents' embeddings in 47.5% of cases, against 33.3% when 
-M226	Discussion and Conclusion	356	33.3%	si_track				parent placement (Discussion)	ts parents' embeddings in 47.5% of cases, against 33.3% when all but one parent is re
-M227	Discussion and Conclusion	356	1.3%	si_track				parent placement (Discussion)	ut one parent is replaced by a random disease and 1.3% when all are, but its closest
-M228	Discussion and Conclusion	356	55.8%	si_track				parent placement (Discussion)	ts closest single parent alone places it there in 55.8% of cases (Supplementary [](#s
-M569	[Limitations and Future Work]	382	10,489	computed	n_rare	eq			 the disease set is skewed towards rare diseases (10,489 of 13,021).]
-M570	[Limitations and Future Work]	382	13,021	computed	n_diseases	eq			se set is skewed towards rare diseases (10,489 of 13,021).]
-M236	Data sources	402	0.6	parameter					ks are kept when their evidence score is at least 0.6.]
-M237	Data sources	403	3,	parameter					 associations, OMIM associations with mapping key 3, GenCC associations classified
-M238	Data sources	403	2026	year					logical Insight Knowledge Graph (snapshot October 2026), when supported by at least 
-M239	Data sources	403	30	parameter					napshot October 2026), when supported by at least 30 documents; per-source counts 
-M240	Data sources	405	20	parameter					arent term to its children; a term with more than 20 descendants is treated as too
-M241	Data sources	405	75	parameter					 inherits nothing, and a disease inherits at most 75 symptoms, nearest descendants
-M242	Data sources	406	39,894	data_track					[Propagation adds 39,894 associations to 986 diseases.
-M243	Data sources	406	986	data_track					[Propagation adds 39,894 associations to 986 diseases.]
-M244	Data sources	407	100	parameter					[Any disease with more than 100 associated genes or more than
-M245	Data sources	407	75	parameter					 with more than 100 associated genes or more than 75 associated symptoms is droppe
-M246	Data sources	408	17,294	data_track					Atlas (HPA) single-cell-type expression profiles (17,294 genes × 154 cell types) and P
-M247	Data sources	408	154	data_track					gle-cell-type expression profiles (17,294 genes × 154 cell types) and Pfam protein-
-M248	Data sources	408	18,506	data_track					 cell types) and Pfam protein-domain assignments (18,506 genes, 8,843 families), and d
-M249	Data sources	408	8,843	data_track					nd Pfam protein-domain assignments (18,506 genes, 8,843 families), and disease identi
-M250	Data sources	409	26.09	version				release dates	[Releases: OpenTargets Platform 26.09; MONDO 2026-06-02 (the sympto
-M251	Data sources	409	2026	version				release dates	[Releases: OpenTargets Platform 26.09; MONDO 2026-06-02 (the symptom build used
-M252	Data sources	409	06	version				release dates	[Releases: OpenTargets Platform 26.09; MONDO 2026-06-02 (the symptom build used MO
-M253	Data sources	409	02	version				release dates	leases: OpenTargets Platform 26.09; MONDO 2026-06-02 (the symptom build used MONDO
-M254	Data sources	409	2026	version				release dates	9; MONDO 2026-06-02 (the symptom build used MONDO 2026-09-01); HPO 2026-06-23; GO 20
-M255	Data sources	409	09	version				release dates	NDO 2026-06-02 (the symptom build used MONDO 2026-09-01); HPO 2026-06-23; GO 2026-
-M256	Data sources	409	01	version				release dates	 2026-06-02 (the symptom build used MONDO 2026-09-01); HPO 2026-06-23; GO 2026-06-
-M257	Data sources	409	2026	version				release dates	02 (the symptom build used MONDO 2026-09-01); HPO 2026-06-23; GO 2026-06-15, with ge
-M258	Data sources	409	06	version				release dates	he symptom build used MONDO 2026-09-01); HPO 2026-06-23; GO 2026-06-15, with gene 
-M259	Data sources	409	23	version				release dates	symptom build used MONDO 2026-09-01); HPO 2026-06-23; GO 2026-06-15, with gene ann
-M260	Data sources	409	2026	version				release dates	 build used MONDO 2026-09-01); HPO 2026-06-23; GO 2026-06-15, with gene annotations 
-M261	Data sources	409	06	version				release dates	d used MONDO 2026-09-01); HPO 2026-06-23; GO 2026-06-15, with gene annotations fro
-M262	Data sources	409	15,	version				release dates	sed MONDO 2026-09-01); HPO 2026-06-23; GO 2026-06-15, with gene annotations from NC
-M263	Data sources	409	2026	version				release dates	15, with gene annotations from NCBI gene2go (July 2026); HPA v25; UniProtKB/Swiss-Pr
-M264	Data sources	409	2026	version				release dates	ene2go (July 2026); HPA v25; UniProtKB/Swiss-Prot 2026_03, from whose cross-referenc
-M265	Data sources	409	2023	version				release dates	rences the Pfam domains are taken; Orphanet JDBOR 2023-12-04 for rare-disease labels
-M266	Data sources	409	12	version				release dates	s the Pfam domains are taken; Orphanet JDBOR 2023-12-04 for rare-disease labels an
-M267	Data sources	409	04	version				release dates	he Pfam domains are taken; Orphanet JDBOR 2023-12-04 for rare-disease labels and 2
-M268	Data sources	409	2026	version				release dates	anet JDBOR 2023-12-04 for rare-disease labels and 2026-06-23 for gene–disease associ
-M269	Data sources	409	06	version				release dates	JDBOR 2023-12-04 for rare-disease labels and 2026-06-23 for gene–disease associati
-M270	Data sources	409	23	version				release dates	OR 2023-12-04 for rare-disease labels and 2026-06-23 for gene–disease associations
-M271	Data sources	409	2026	year					6-06-23 for gene–disease associations; OMIM (June 2026); GenCC (June 2026).]
-M272	Data sources	409	2026	year					sease associations; OMIM (June 2026); GenCC (June 2026).]
-M273	Disease set	413	13,080	data_track					er applying these filters, we obtained a total of 13,080 candidate diseases.]
-M274	Disease set	414	69.0%	data_track					varies by evidence channel: the GO channel covers 69.0% of these diseases (81.7% of t
-M275	Disease set	414	81.7%	data_track					l: the GO channel covers 69.0% of these diseases (81.7% of the 5,530,050 candidate pa
-M571	Disease set	414	5,530,050	data_track				broad channel: candidate pairs (rows of zenodo/channels_raw/broad/pair_gene_distances.parquet)	nnel covers 69.0% of these diseases (81.7% of the 5,530,050 candidate pairs defined below
-M276	Disease set	414	78.2%	data_track					low), the HPA cell-type expression channel covers 78.2% of diseases (91.4% of pairs),
-M277	Disease set	414	91.4%	data_track					type expression channel covers 78.2% of diseases (91.4% of pairs), the Pfam domain ch
-M278	Disease set	414	83.0%	data_track					 (91.4% of pairs), the Pfam domain channel covers 83.0% of diseases (93.6% of pairs),
-M279	Disease set	414	93.6%	data_track					the Pfam domain channel covers 83.0% of diseases (93.6% of pairs), and the HPO phenot
-M280	Disease set	414	78.8%	data_track					% of pairs), and the HPO phenotype channel covers 78.8% of diseases (34.8% of pairs).
-M281	Disease set	414	34.8%	data_track					e HPO phenotype channel covers 78.8% of diseases (34.8% of pairs).]
-M282	Disease set	416	59	data_track					[Network construction (below) excludes 59 candidates (0.5%): diseases w
-M283	Disease set	416	0.5%	data_track					work construction (below) excludes 59 candidates (0.5%): diseases with no candidate 
-M284	Disease set	416	24	parameter					seases with no candidate pair in any channel, and 24 diseases in 10 small componen
-M285	Disease set	416	10	parameter					candidate pair in any channel, and 24 diseases in 10 small components that cannot 
-M286	Disease set	417	13,021	computed	n_diseases	eq			[The DisAtlas network therefore covers 13,021 diseases, 10,489 rare and 2,5
-M287	Disease set	417	10,489	computed	n_rare	eq			isAtlas network therefore covers 13,021 diseases, 10,489 rare and 2,532 common (19.4%)
-M288	Disease set	417	2,532	computed	n_common	eq			therefore covers 13,021 diseases, 10,489 rare and 2,532 common (19.4%), and all 13,02
-M289	Disease set	417	19.4%	computed	pct_common	eq			rs 13,021 diseases, 10,489 rare and 2,532 common (19.4%), and all 13,021 are embedded
-M292	Disease set	417	13,021	computed	n_diseases	eq			es, 10,489 rare and 2,532 common (19.4%), and all 13,021 are embedded.]
-M290	Disease set	419	5.5	version					onflicting signals were reviewed with Claude Opus 5.5 (Anthropic) using literature-
-M291	Disease set	419	2026	year					Anthropic) using literature-lookup tools (October 2026).]
-M293	Disease set	420	134	data_track					[134 nodes (1.0%) carry retired MO
-M294	Disease set	420	1.0%	data_track					[134 nodes (1.0%) carry retired MONDO identifi
-M295	Disease set	420	61	data_track					134 nodes (1.0%) carry retired MONDO identifiers, 61 of which duplicate a current 
-M296	Evidence channels and distances	429	2%	parameter					weighted sum of ; GO terms annotated to more than 2% of the disease-associated gen
-M297	Evidence channels and distances	430	1	parameter					HPA) single-cell-type expression profiles, using (1 − cosine similarity)/2 betwee
-M298	Evidence channels and distances	430	2	parameter					xpression profiles, using (1 − cosine similarity)/2 between the profiles of two g
-M299	Evidence channels and distances	431	1	parameter					- $E_3$: [Edges from Pfam protein domains, using 1 − Jaccard similarity between 
-M300	Evidence channels and distances	441	1	parameter					[In HPO every edge is an is\_a edge of length 1; in GO, is\_a and part\_of ed
-M301	Evidence channels and distances	441	1,	parameter					th 1; in GO, is\_a and part\_of edges have length 1, and in Biological Process the
-M302	Evidence channels and distances	441	2	parameter					iological Process the regulates edges have length 2.]
-M303	Evidence channels and distances	442	25	parameter					r $d^{O}_{\max}$, the largest term-term distance: 25 for HPO, and 23, 18 and 18 fo
-M304	Evidence channels and distances	442	23,	parameter					, the largest term-term distance: 25 for HPO, and 23, 18 and 18 for Biological Proc
-M305	Evidence channels and distances	442	18	parameter					e largest term-term distance: 25 for HPO, and 23, 18 and 18 for Biological Process
-M306	Evidence channels and distances	442	18	parameter					st term-term distance: 25 for HPO, and 23, 18 and 18 for Biological Process, Molec
-M307	Evidence channels and distances	450	2,	parameter					,B) = \big( m_\delta(A,B) + m_\delta(B,A) \big) / 2, \qquad m_\delta(A,B) = |A|^{-
-M308	Evidence channels and distances	450	-1	parameter					delta(B,A) \big) / 2, \qquad m_\delta(A,B) = |A|^{-1} \sum_{a\in A}\min_{b\in B}\d
-M309	Evidence channels and distances	455	1,	parameter					\, D^{X}(d_1,d_2), \qquad \lambda_{\mathrm{BP}} = 1,\; \lambda_{\mathrm{MF}} = 0.2
-M310	Evidence channels and distances	455	0.25	parameter					mbda_{\mathrm{BP}} = 1,\; \lambda_{\mathrm{MF}} = 0.25,\; \lambda_{\mathrm{CC}} = 0.
-M311	Evidence channels and distances	455	0.1	parameter					a_{\mathrm{MF}} = 0.25,\; \lambda_{\mathrm{CC}} = 0.1. $$ 
-M312	Evidence channels and distances	456	0.2	parameter					[We applied a cutoff of 0.2 to the GO and HPO distances, 
-M313	Evidence channels and distances	456	0.2	parameter					:SI_threshold_sweep)); a GO or HPO distance above 0.2 is treated as missing, as is 
-M314	MechDist network	465	5,530,050	data_track					*Broad channel.** Candidate disease pairs are the 5,530,050 pairs whose GO or HPO distanc
-M315	MechDist network	465	0.2	parameter					530,050 pairs whose GO or HPO distance is at most 0.2.]
-M316	MechDist network	466	1	parameter					 $e$ among the $N$ candidate pairs by similarity $1 - D^{k}(e)$, largest similari
-M317	MechDist network	468	1	parameter					$$ R(e) = (1/4) \sum_{k} r_k(e). $$ 
-M318	MechDist network	468	4	parameter					$$ R(e) = (1/4) \sum_{k} r_k(e). $$ 
-M319	MechDist network	470	42%	data_track					[Exact ties in mean rank (42% of candidate pairs) are kept 
-M320	MechDist network	471	200,000	data_track					er channels compete only with each other: the top 200,000 pairs are taken from each cla
-M321	MechDist network	471	160,274	data_track					with and without HPA/Pfam evidence, which receive 160,274 and 39,726 slots respectively
-M322	MechDist network	471	39,726	data_track					hout HPA/Pfam evidence, which receive 160,274 and 39,726 slots respectively (the numbe
-M323	MechDist network	471	200,000	data_track					s respectively (the numbers of each among the top 200,000 such pairs ranked by CRank on
-M324	MechDist network	472	3	parameter					[Every disease additionally keeps its 3 best-ranked pairs within each
-M325	MechDist network	472	2	parameter					ponent are reconnected by adding, for each, up to 2 of its best-ranked candidate 
-M326	MechDist network	472	1,500,000	data_track					est of the network, searched first within the top 1,500,000 pairs and then over all candi
-M327	MechDist network	473	1	parameter					[Broad edges have weight 1; the broad channel uses no pa
-M328	MechDist network	473	13,021	computed	n_diseases	eq			he broad channel uses no pathway database and has 13,021 diseases and 332,082 edges.]
-M329	MechDist network	473	332,082	data_track					s no pathway database and has 13,021 diseases and 332,082 edges.]
-M330	MechDist network	476	0.05	parameter					hypergeometric test, false-discovery rate at most 0.05, at least two disease genes, 
-M331	MechDist network	476	5	parameter					ost 0.05, at least two disease genes, pathways of 5 to 500 genes), pathways, proc
-M332	MechDist network	476	500	parameter					.05, at least two disease genes, pathways of 5 to 500 genes), pathways, processes a
-M333	MechDist network	477	1	parameter					weight $\varepsilon_{dm} = n_{\mathrm{fam}} + \ln(1 + n_{\mathrm{doc}})$, where $
-M334	MechDist network	477	422,804	data_track					d to fewer than two diseases are dropped, leaving 422,804 links between 5,198 diseases 
-M335	MechDist network	477	5,198	data_track					seases are dropped, leaving 422,804 links between 5,198 diseases and 6,746 modules.]
-M336	MechDist network	477	6,746	data_track					 leaving 422,804 links between 5,198 diseases and 6,746 modules.]
-M337	MechDist network	480	1	parameter					$$ x_{dm} = \sqrt{\frac{\varepsilon_{dm}}{\ln(1 + n_m)\, L_d}}, \qquad w^{\ma
-M338	MechDist network	483	50	data_track					[Each disease keeps its 50 highest-weight edges, and the
-M339	MechDist network	483	191,298	data_track					d the union of these lists is symmetrised, giving 191,298 edges; the 279 edges that rea
-M340	MechDist network	483	279	data_track					e lists is symmetrised, giving 191,298 edges; the 279 edges that reach a disease ou
-M341	MechDist network	483	191,019	data_track					se outside the broad channel are dropped, leaving 191,019 specific edges on 5,194 disea
-M342	MechDist network	483	5,194	data_track					el are dropped, leaving 191,019 specific edges on 5,194 diseases.]
-M343	MechDist network	485	499,359	data_track					nels share their disease set, and their union has 499,359 edges.]
-M344	MechDist network	486	1,204	data_track					[The 1,204 disease pairs of the FDA repu
-M345	MechDist network	486	498,155	data_track					pplementary [](#sec:SI_fda_repurposing)), leaving 498,155 edges on 13,021 diseases: 331
-M346	MechDist network	486	13,021	computed	n_diseases	eq			ec:SI_fda_repurposing)), leaving 498,155 edges on 13,021 diseases: 331,234 broad, 190,
-M347	MechDist network	486	331,234	data_track					sing)), leaving 498,155 edges on 13,021 diseases: 331,234 broad, 190,007 specific and 2
-M348	MechDist network	486	190,007	data_track					 498,155 edges on 13,021 diseases: 331,234 broad, 190,007 specific and 23,086 in both.]
-M349	MechDist network	486	23,086	data_track					021 diseases: 331,234 broad, 190,007 specific and 23,086 in both.]
-M350	MechDist network	489	1	parameter					$$ w(e) = \mathbb{1}_{\mathrm{broad}}(e) + \alpha
-M351	MechDist network	489	1	parameter					pec}}(e)}{\overline{w^{\mathrm{spec}}}}\, \mathbb{1}_{\mathrm{spec}}(e), \qquad \
-M352	MechDist network	489	2,	parameter					\, \mathbb{1}_{\mathrm{spec}}(e), \qquad \alpha = 2, $$ 
-M353	MechDist network	491	33	data_track					s; in addition, the specific edges of each of the 33 mechanism classes (such as JA
-M354	MechDist network	491	20,049	data_track					ystem class is raised by a factor of at most ten (20,049 edges raised).]
-M355	MechDist network	492	27,646	data_track					y edge that joins a pair in the full IxIDN⁺ list (27,646 pairs, restricted to IxIDN li
-M572	MechDist network	492	13,021	computed	n_diseases	eq			IxIDN links whose two diseases are both among the 13,021 DisAtlas diseases after mappi
-M573	MechDist network	492	989	computed	ixidn_diseases_in_disatlas	eq			 13,021 DisAtlas diseases after mapping to MONDO; 989 of the 1,379 IxIDN diseases m
-M574	MechDist network	492	1,379	computed	ixidn_diseases	eq			Atlas diseases after mapping to MONDO; 989 of the 1,379 IxIDN diseases map to one of 
-M356	MechDist network	492	200,801	data_track					ases map to one of them) or the full IxIDN⁻ list (200,801 pairs) is removed, not only t
-M357	MechDist network	492	4,364	computed	bench_pairs	eq			1 pairs) is removed, not only the edges among the 4,364 IxIDN-Matched pairs, which ar
-M358	MechDist network	493	10,052	data_track					[This removes 10,052 edges (6,393 IxIDN⁺ and 3,659
-M359	MechDist network	493	6,393	data_track					[This removes 10,052 edges (6,393 IxIDN⁺ and 3,659 IxIDN⁻).]
-M360	MechDist network	493	3,659	data_track					[This removes 10,052 edges (6,393 IxIDN⁺ and 3,659 IxIDN⁻).]
-M361	MechDist network	494	13,021	computed	n_diseases	eq			c}} - E_{\mathrm{FDA}} - E_{\mathrm{IxIDN}})$ has 13,021 diseases and 488,103 weighted
-M362	MechDist network	494	488,103	data_track					}} - E_{\mathrm{IxIDN}})$ has 13,021 diseases and 488,103 weighted edges, and no diseas
-M363	MechDist network	497	228,447	data_track					[In addition, all 228,447 pairs of the IxIDN⁺ and IxIDN
-M364	MechDist network	497	0	parameter					ed for overlap with them before training (overlap 0).]
-M365	DisAtlas embeddings	502	32	computed	embedding_dim	eq			[Each disease is represented by a 32-dimensional vector.]
-M366	DisAtlas embeddings	503	20,	parameter					[Walks have length 20, with 20 walks per start node 
-M367	DisAtlas embeddings	503	20	parameter					[Walks have length 20, with 20 walks per start node in each 
-M368	DisAtlas embeddings	503	2	parameter					per start node in each epoch, a context window of 2 (each node paired with the 2 
-M369	DisAtlas embeddings	503	2	parameter					 a context window of 2 (each node paired with the 2 nodes that follow it in a wal
-M370	DisAtlas embeddings	503	1	parameter					 that follow it in a walk), return parameter $p = 1$ and in-out parameter $q = 0.
-M371	DisAtlas embeddings	503	0.5	parameter					eturn parameter $p = 1$ and in-out parameter $q = 0.5$.]
-M372	DisAtlas embeddings	504	5	parameter					[For each positive context pair, 5 negative nodes are drawn with
-M373	DisAtlas embeddings	504	-0.5	parameter					e drawn with probability proportional to degree$^{-0.5}$ (with replacement), so that
-M374	DisAtlas embeddings	505	10	parameter					s trained with the Adam optimiser (learning rate $10^{-2}$, $\beta_1 = 0.9$, $\bet
-M375	DisAtlas embeddings	505	-2	parameter					ained with the Adam optimiser (learning rate $10^{-2}$, $\beta_1 = 0.9$, $\beta_2 
-M376	DisAtlas embeddings	505	0.9	parameter					am optimiser (learning rate $10^{-2}$, $\beta_1 = 0.9$, $\beta_2 = 0.999$) for 25 e
-M377	DisAtlas embeddings	505	0.999	parameter					rning rate $10^{-2}$, $\beta_1 = 0.9$, $\beta_2 = 0.999$) for 25 epochs with 128 star
-M378	DisAtlas embeddings	505	25	parameter					10^{-2}$, $\beta_1 = 0.9$, $\beta_2 = 0.999$) for 25 epochs with 128 start nodes p
-M379	DisAtlas embeddings	505	128	parameter					a_1 = 0.9$, $\beta_2 = 0.999$) for 25 epochs with 128 start nodes per step, and eac
-M380	DisAtlas embeddings	506	4707	parameter					[Five embeddings are trained, with random seeds 4707 to 4711, and each is paired w
-M381	DisAtlas embeddings	506	4711,	parameter					embeddings are trained, with random seeds 4707 to 4711, and each is paired with its o
-M382	DisAtlas decoder	511	32	computed	embedding_dim	eq			etric decoder ([Figure @fig:upna_ddal]a): the two 32-dimensional disease vectors a
-M383	DisAtlas decoder	511	128	computed	decoder_hidden	eq			-wise (Hadamard) product, passed through a single 128-unit ReLU hidden layer, a dro
-M384	DisAtlas decoder	511	0.3	parameter					128-unit ReLU hidden layer, a dropout layer (rate 0.3) and a sigmoid output unit , 
-M385	DisAtlas decoder	511	4,353	computed	decoder_params	eq			e 0.3) and a sigmoid output unit , for a total of 4,353 parameters.]
-M386	DisAtlas decoder	514	488,103	data_track					[Positive pairs are the 488,103 edges of $G_{\mathrm{MechDist
-M387	DisAtlas decoder	515	10	parameter					s trained with the Adam optimiser (learning rate $10^{-3}$, weight decay $10^{-4}$
-M388	DisAtlas decoder	515	-3	parameter					ained with the Adam optimiser (learning rate $10^{-3}$, weight decay $10^{-4}$) on
-M389	DisAtlas decoder	515	10	parameter					optimiser (learning rate $10^{-3}$, weight decay $10^{-4}$) on unweighted binary c
-M390	DisAtlas decoder	515	-4	parameter					miser (learning rate $10^{-3}$, weight decay $10^{-4}$) on unweighted binary cross
-M391	DisAtlas decoder	515	1,024	parameter					ighted binary cross-entropy, with a batch size of 1,024 and up to 100 epochs.]
-M392	DisAtlas decoder	515	100	parameter					oss-entropy, with a batch size of 1,024 and up to 100 epochs.]
-M393	DisAtlas decoder	516	15%	parameter					 stopping on a disease-disjoint validation split: 15% of diseases are assigned to v
-M394	DisAtlas decoder	516	8	parameter					 stops once validation AUROC has not improved for 8 epochs, and the weights from 
-M395	IxIDN-Matched benchmark	532	1	parameter					ch drug trialled for both diseases of a pair adds 1/d to the pair's score, where 
-M396	IxIDN-Matched benchmark	532	99.9	parameter					es the drug was trialled for, and drugs above the 99.9th percentile of d do not cont
-M397	IxIDN-Matched benchmark	533	40	data_track					[Each disease keeps its 40 highest-scoring partners amon
-M398	IxIDN-Matched benchmark	533	100	parameter					o drugs, provided it is also among that partner's 100 highest-scoring partners.]
-M399	IxIDN-Matched benchmark	534	100	parameter					 one drug is also kept (up to each rare disease's 100 highest-scoring rare partners
-M400	IxIDN-Matched benchmark	535	1,379	computed	ixidn_diseases	eq			[The resulting IxIDN has 1,379 diseases and 43,112 links: 8,
-M401	IxIDN-Matched benchmark	535	43,112	computed	ixidn_links	eq			[The resulting IxIDN has 1,379 diseases and 43,112 links: 8,900 kept by the top-
-M402	IxIDN-Matched benchmark	535	8,900	data_track					ulting IxIDN has 1,379 diseases and 43,112 links: 8,900 kept by the top-40 rule, 27,1
-M403	IxIDN-Matched benchmark	535	40	data_track					 diseases and 43,112 links: 8,900 kept by the top-40 rule, 27,185 only by the rare
-M404	IxIDN-Matched benchmark	535	27,185	data_track					 and 43,112 links: 8,900 kept by the top-40 rule, 27,185 only by the rare-disease rule
-M405	IxIDN-Matched benchmark	535	7,027	data_track					40 rule, 27,185 only by the rare-disease rule and 7,027 only by the Orphanet rule ([F
-M406	IxIDN-Matched benchmark	537	99.1%	data_track					re curated largely from the same Orphanet source (99.1% of MechDist's HPO annotations
-M407	IxIDN-Matched benchmark	537	0.51	si_track				IxIDN-Matched QC (SI)	istance is correlated with HPO distance (Spearman 0.51 to 0.62; Supplementary [](#se
-M408	IxIDN-Matched benchmark	537	0.62	si_track				IxIDN-Matched QC (SI)	is correlated with HPO distance (Spearman 0.51 to 0.62; Supplementary [](#sec:SI_ixi
-M409	IxIDN-Matched benchmark	538	3	parameter					d a negative pair (IxIDN⁻) when they are at least 3 steps apart in IxIDN, so that
-M410	IxIDN-Matched benchmark	539	985	computed	universe_diseases	eq			ry, with both diseases of every pair drawn from a 985-disease evaluation universe (
-M411	IxIDN-Matched benchmark	540	0.542	computed	shortcut_auroc_max	eq			own separates the two classes with an AUROC above 0.542 ([Figure @fig:ixidn_benchmark
-M412	IxIDN-Matched benchmark	541	5	version					[A language model, Claude Sonnet 5 (Anthropic), run on 6 October
-M413	IxIDN-Matched benchmark	541	6	date					nguage model, Claude Sonnet 5 (Anthropic), run on 6 October 2026, judged the shar
-M414	IxIDN-Matched benchmark	541	2026,	date					el, Claude Sonnet 5 (Anthropic), run on 6 October 2026, judged the shared-drug eviden
-M415	IxIDN-Matched benchmark	541	4,302	computed	matched_candidates	eq			, judged the shared-drug evidence for each of the 4,302 candidate positives with a ma
-M416	IxIDN-Matched benchmark	541	2,182	computed	bench_pos	eq			ed trial drugs and their highest trial phase; the 2,182 judged strong (1,285) or plau
-M417	IxIDN-Matched benchmark	541	1,285	computed	verdict_strong	eq			eir highest trial phase; the 2,182 judged strong (1,285) or plausible (897) were kept
-M418	IxIDN-Matched benchmark	541	897	computed	verdict_plausible	eq			se; the 2,182 judged strong (1,285) or plausible (897) were kept, giving 2,182 posi
-M419	IxIDN-Matched benchmark	541	2,182	computed	bench_pos	eq			rong (1,285) or plausible (897) were kept, giving 2,182 positive and 2,182 negative p
-M420	IxIDN-Matched benchmark	541	2,182	computed	bench_neg	eq			usible (897) were kept, giving 2,182 positive and 2,182 negative pairs (4,364 pairs o
-M421	IxIDN-Matched benchmark	541	4,364	computed	bench_pairs	eq			, giving 2,182 positive and 2,182 negative pairs (4,364 pairs over 938 diseases, 179 
-M422	IxIDN-Matched benchmark	541	938	computed	bench_diseases	eq			sitive and 2,182 negative pairs (4,364 pairs over 938 diseases, 179 of them common,
-M423	IxIDN-Matched benchmark	541	179	computed	bench_common	eq			82 negative pairs (4,364 pairs over 938 diseases, 179 of them common, 19.1%).]
-M424	IxIDN-Matched benchmark	541	19.1%	computed	bench_pct_common	eq			,364 pairs over 938 diseases, 179 of them common, 19.1%).]
-M425	IxIDN-Matched benchmark	542	944	si_track				IxIDN-Matched QC (SI)	[A repeat language-model check of 944 of these pairs agreed with th
-M426	IxIDN-Matched benchmark	542	84.7%	si_track				IxIDN-Matched QC (SI)	reed with the first on the keep/drop decision for 84.7% of them.]
-M430	IxIDN-Matched benchmark	544	477	computed	test_half_diseases	eq			y when both of its diseases are in the test half (477 of the 938 diseases).]
-M431	IxIDN-Matched benchmark	544	938	computed	bench_diseases	eq			 of its diseases are in the test half (477 of the 938 diseases).]
-M427	IxIDN-Matched benchmark	545	1,094	computed	test_pairs	eq			[1,094 of these pairs (491 positive,
-M428	IxIDN-Matched benchmark	545	491	computed	test_pos	eq			[1,094 of these pairs (491 positive, 603 negative) form 
-M429	IxIDN-Matched benchmark	545	603	computed	test_neg	eq			[1,094 of these pairs (491 positive, 603 negative) form the test split
-M432	Evaluation settings	556	1	notation					[1. **Full model (released DisAt
-M433	Evaluation settings	557	2	notation					[2. **Benchmark diseases held ou
-M434	Evaluation settings	557	938	computed	bench_diseases	eq			eases held out of training (node-disjoint)**: the 938 benchmark diseases are split 
-M435	Evaluation settings	559	0.2	parameter					ith training diseases (GO or HPO distance at most 0.2, benchmark pairs excluded), o
-M436	Evaluation settings	561	3,505	data_track					en its endpoints are held out in different folds (3,505 of the 4,364 pairs; 859 are s
-M437	Evaluation settings	561	4,364	computed	bench_pairs	eq			nts are held out in different folds (3,505 of the 4,364 pairs; 859 are scored in one 
-M438	Evaluation settings	561	859	data_track					out in different folds (3,505 of the 4,364 pairs; 859 are scored in one fold).]
-M547	Evaluation settings	562	0018510	identifier					[Seven pairs, five of them involving MONDO:0018510 (small intestine neuroendocri
-M548	Evaluation settings	562	4,357	computed	nd_scored	eq			is setting and are left out of both arms, leaving 4,357 pairs (1,093 on the test spli
-M549	Evaluation settings	562	1,093	computed	nd_scored_test	eq			d are left out of both arms, leaving 4,357 pairs (1,093 on the test split).]
-M439	Evaluation settings	563	10,	notation					[Sensitivity to $k$ (10, 25 and 50) is reported in Sup
-M440	Evaluation settings	563	25	notation					[Sensitivity to $k$ (10, 25 and 50) is reported in Supple
-M441	Evaluation settings	563	50	notation					[Sensitivity to $k$ (10, 25 and 50) is reported in Supplementary
-M442	Comparator systems	571	1	notation					| 1 | [DisAtlas] | [DisAtlas (ben
-M443	Comparator systems	572	2	notation					| 2 | [Large language model] | [C
-M444	Comparator systems	572	5.5	version					| 2 | [Large language model] | [Claude Chat (Opus 5.5, 5 runs), Gemini Pro 3.1 (3 r
-M445	Comparator systems	572	5	computed	runs|claude_chat	eq			 [Large language model] | [Claude Chat (Opus 5.5, 5 runs), Gemini Pro 3.1 (3 runs
-M446	Comparator systems	572	3.1	notation					el] | [Claude Chat (Opus 5.5, 5 runs), Gemini Pro 3.1 (3 runs)] | [Structured promp
-M447	Comparator systems	572	3	computed	runs|gemini	eq			 [Claude Chat (Opus 5.5, 5 runs), Gemini Pro 3.1 (3 runs)] | [Structured prompt w
-M448	Comparator systems	573	3	notation					| 3 | [Agentic AI system] | [Clau
-M449	Comparator systems	573	5.5	version					ic AI system] | [Claude Sci (Claude Science, Opus 5.5, 5 runs); Phylo Biomni] | [Me
-M450	Comparator systems	573	5	computed	runs|claude_chat	eq			 system] | [Claude Sci (Claude Science, Opus 5.5, 5 runs); Phylo Biomni] | [Mean 
-M451	Comparator systems	574	4	notation					| 4 | [Knowledge-graph foundation
-M452	Comparator systems	574	213	computed	unscored|txgnn	eq			r; not retrained on MechDist or on IxIDN-Matched; 213 unmapped pairs ranked last] |
-M453	Comparator systems	579	2	notation					[Accordingly, Protocols 2 to 4 should be interpreted as
-M454	Comparator systems	579	4	notation					[Accordingly, Protocols 2 to 4 should be interpreted as prac
-M575	Comparator systems	580	2	notation					The purpose of Protocols 2 to 4 is to test whether curre
-M466	Comparator systems	580	4	notation					The purpose of Protocols 2 to 4 is to test whether current ge
-M455	Comparator systems	581	2	notation					[Protocol 2 comprises general-purpose lar
-M456	Comparator systems	582	2	notation					[Each Protocol 2 and Protocol 3 system was pro
-M457	Comparator systems	582	3	notation					[Each Protocol 2 and Protocol 3 system was provided the 4,364
-M458	Comparator systems	582	4,364	computed	bench_pairs	eq			Protocol 2 and Protocol 3 system was provided the 4,364 blinded IxIDN-Matched benchma
-M459	Comparator systems	582	3.1	version					de Sci, and three independent runs for Gemini Pro 3.1; each pair's score is the mea
-M460	Comparator systems	587	2	notation					 the exact prompt given verbatim to [the Protocol 2 systems and to Claude Sci], t
-M461	Comparator systems	589	0	notation					, d2), which returns an association score between 0 and 1 for two diseases to qua
-M462	Comparator systems	589	1	notation					 which returns an association score between 0 and 1 for two diseases to quantify 
-M463	Comparator systems	595	3	notation					[Protocol 3 comprises agentic AI systems,
-M464	Comparator systems	596	5.5	version					[Claude Sci is Claude Science (Opus 5.5), and Phylo Biomni is the Bio
-M465	Comparator systems	596	291	computed	unscored|phylo	eq			 pair score is the mean over five seeds and whose 291 unscored pairs are ranked las
-M467	Comparator systems	597	4	notation					[Protocol 4 is TxGNN , scored with its pu
-M468	Comparator systems	597	213	computed	unscored|txgnn	eq			g nodes; DistMult decoder) and not retrained; its 213 pairs that the checkpoint can
-M469	Event-time drug-centred evaluation	603	1	parameter					$y$, and the decision point is the end of year $y-1$: the event is scored with th
-M470	Event-time drug-centred evaluation	603	1	parameter					graph built only from evidence available up to $y-1$.]
-M576	Event-time drug-centred evaluation	605	2008	year					[In a post hoc check that rebuilt the 2008 and 2016 slices with Gene Ont
-M577	Event-time drug-centred evaluation	605	2016	year					[In a post hoc check that rebuilt the 2008 and 2016 slices with Gene Ontology rel
-M578	Event-time drug-centred evaluation	605	1	notation				day of year	and 2016 slices with Gene Ontology releases dated 1 January of the decision year,
-M579	Event-time drug-centred evaluation	605	95%	notation				interval level	centile advantage over weighted Adamic–Adar whose 95% interval excludes zero in bot
-M471	Event-time drug-centred evaluation	606	1	parameter					del in which the drug had not been trialled by $y-1$, and each method scores a ca
-M580	Event-time drug-centred evaluation	608	0	notation					ates of its comparison set (defined below), where 0 means ranked first, so a lowe
-M472	Event-time drug-centred evaluation	609	10%	parameter				top/bottom 10% definition	rugs whose best-ranked new trial falls in the top 10% of the ranking.]
-M473	Event-time drug-centred evaluation	610	1	parameter					the number of drugs trialled in the disease by $y-1$ (popularity-matched), and ca
-M474	Event-time drug-centred evaluation	612	2,000	parameter					ntervals come from a paired bootstrap over drugs (2,000 replicates per pool), in whic
-M475	Event-time drug-centred evaluation	613	95%	notation				interval level	trials higher, and the decision rule required the 95% interval of the difference be
-M476	Clustering and map layout	618	1	parameter					terPAM) on the DisAtlas disease–disease distance $1-p$, where $p$ is the DisAtlas
-M477	Clustering and map layout	619	10	parameter					pair or benchmark pair involved: K was swept from 10 to 80 in steps of 5 over 100 
-M478	Clustering and map layout	619	80	parameter					r benchmark pair involved: K was swept from 10 to 80 in steps of 5 over 100 re-clu
-M479	Clustering and map layout	619	5	parameter					r involved: K was swept from 10 to 80 in steps of 5 over 100 re-clusterings of ra
-M480	Clustering and map layout	619	100	parameter					ved: K was swept from 10 to 80 in steps of 5 over 100 re-clusterings of random 80% 
-M481	Clustering and map layout	619	80%	parameter					0 in steps of 5 over 100 re-clusterings of random 80% subsamples of diseases, with 
-M482	Clustering and map layout	619	55	computed	n_clusters	eq			ndard deviation of the best mean, which gives K = 55 (Supplementary [](#sec:SI_clu
-M483	Clustering and map layout	620	17	computed	n_controls	eq			[The clustering was checked against 17 control disease pairs (Supple
-M484	Clustering and map layout	621	15	parameter					 cosine distance between DisAtlas embeddings with 15 nearest neighbours; it is for
-M485	Statistics	625	95%	notation				interval level	ng seeds, and sampling uncertainty as a bootstrap 95% interval.]
-M486	Statistics	626	95%	notation				interval level	(pairs with an undrawn disease drop out), and the 95% interval is the 2.5th–97.5th 
-M487	Statistics	626	2.5	notation					wn disease drop out), and the 95% interval is the 2.5th–97.5th percentile of the we
-M488	Statistics	626	97.5	notation					ease drop out), and the 95% interval is the 2.5th–97.5th percentile of the weighted 
-M581	Statistics	627	55	computed	n_clusters	eq			is one resampling cluster; it is unrelated to the 55 k-medoids disease clusters.]
-M489	Statistics	628	55	computed	n_clusters	eq			s a stricter sensitivity analysis, resampling the 55 k-medoids clusters instead wi
-M582	Statistics	628	0.832	computed	auroc_full	eq			ead widens the interval of the all-pairs AUROC of 0.832 to 0.765–0.897 and that of th
-M490	Statistics	628	0.765	computed	clboot_full_lo	approx	0.01	Monte-Carlo; cluster-group sensitivity, original generator not recovered	s the interval of the all-pairs AUROC of 0.832 to 0.765–0.897 and that of the node-di
-M491	Statistics	628	0.897	computed	clboot_full_hi	approx	0.01	Monte-Carlo; cluster-group sensitivity	interval of the all-pairs AUROC of 0.832 to 0.765–0.897 and that of the node-disjoint
-M583	Statistics	628	0.784	computed	auroc_nd	eq			.765–0.897 and that of the node-disjoint AUROC of 0.784 to 0.735–0.852, and the node-
-M492	Statistics	628	0.735	computed	clboot_nd_lo	approx	0.01	Monte-Carlo; cluster-group sensitivity	7 and that of the node-disjoint AUROC of 0.784 to 0.735–0.852, and the node-disjoint 
-M493	Statistics	628	0.852	computed	clboot_nd_hi	approx	0.01	Monte-Carlo; cluster-group sensitivity	that of the node-disjoint AUROC of 0.784 to 0.735–0.852, and the node-disjoint minus 
-M494	Statistics	628	−0.047	computed	delta_nd_minus_full	eq			 the node-disjoint minus full-model difference of −0.047 remains below zero (−0.064 to
-M495	Statistics	628	−0.064	computed	clboot_delta_lo	approx	0.01	Monte-Carlo; cluster-group sensitivity	ll-model difference of −0.047 remains below zero (−0.064 to −0.010).]
-M496	Statistics	628	−0.010	computed	clboot_delta_hi	approx	0.01	Monte-Carlo; cluster-group sensitivity	ifference of −0.047 remains below zero (−0.064 to −0.010).]
-M497	Statistics	629	2,000	parameter					[The disease-clustered bootstrap (B = 2,000) gives the intervals for the 
-M498	Statistics	629	10%	parameter					ives (equal to R-precision), precision in the top 10% and negative predictive value
-M499	Statistics	629	10%	parameter					p 10% and negative predictive value in the bottom 10%, 436 pairs each; ties at a cu
-M500	Statistics	629	436	computed	topk	eq			 and negative predictive value in the bottom 10%, 436 pairs each; ties at a cut-off
-M501	Statistics	629	1	notation					he same disease-clustered scheme with one Poisson(1) weight per disease (B = 2,00
-M502	Statistics	629	2,000	parameter					cheme with one Poisson(1) weight per disease (B = 2,000).]
-M503	Statistics	633	95%	notation				interval level	 difference is reported with its paired bootstrap 95% interval.]
-M505	Statistics	635	2	notation					 the separation statistic Δ is Cliff's delta, Δ = 2·AUROC − 1.]
-M506	Statistics	635	1	notation					ation statistic Δ is Cliff's delta, Δ = 2·AUROC − 1.]
-M507	Statistics	636	200	parameter					nst a size-preserving label-permutation null with 200 permutations, with $p = (1 + 
-M508	Statistics	636	1	notation					ermutation null with 200 permutations, with $p = (1 + \#\{\text{null} \geq \text{
-M509	Statistics	636	1	notation					p = (1 + \#\{\text{null} \geq \text{observed}\})/(1 + 200)$, so the smallest atta
-M510	Statistics	636	200	parameter					(1 + \#\{\text{null} \geq \text{observed}\})/(1 + 200)$, so the smallest attainable
-M511	Statistics	636	0.005	notation					d}\})/(1 + 200)$, so the smallest attainable p is 0.005.]
-M512	Software and hardware	642	3.13	version					[The pipeline is written in Python 3.13.1 with numpy 2.3.1, pandas 2.
-M513	Software and hardware	642	2.3	version					e pipeline is written in Python 3.13.1 with numpy 2.3.1, pandas 2.3.0, scipy 1.16.0
-M514	Software and hardware	642	2.3	version					written in Python 3.13.1 with numpy 2.3.1, pandas 2.3.0, scipy 1.16.0, networkx 3.5
-M515	Software and hardware	642	1.16	version					thon 3.13.1 with numpy 2.3.1, pandas 2.3.0, scipy 1.16.0, networkx 3.5, PyTorch 2.9.
-M516	Software and hardware	642	3.5	version					numpy 2.3.1, pandas 2.3.0, scipy 1.16.0, networkx 3.5, PyTorch 2.9.1, PyTorch Geome
-M517	Software and hardware	642	2.9	version					pandas 2.3.0, scipy 1.16.0, networkx 3.5, PyTorch 2.9.1, PyTorch Geometric 2.7.0 (s
-M518	Software and hardware	642	2.7	version					0, networkx 3.5, PyTorch 2.9.1, PyTorch Geometric 2.7.0 (skip-gram training), numba
-M519	Software and hardware	642	0.62	version					Torch Geometric 2.7.0 (skip-gram training), numba 0.62.0 (weighted second-order rand
-M520	Software and hardware	642	1.7	version					weighted second-order random walks), scikit-learn 1.7.0 (AUROC, average precision, 
-M521	Software and hardware	642	0.5	version					precision, adjusted mutual information), kmedoids 0.5.5 (FasterPAM) and safetensors
-M522	Software and hardware	642	0.8	version					tion), kmedoids 0.5.5 (FasterPAM) and safetensors 0.8.0; these are the versions rec
-M523	Software and hardware	643	8	version					[All models were trained on CPU only, with 8 PyTorch threads, on a compute
-M524	Software and hardware	643	64	version					ith 8 PyTorch threads, on a compute node with two 64-core AMD EPYC 7763 processors
-M525	Software and hardware	643	7763	version					eads, on a compute node with two 64-core AMD EPYC 7763 processors and 2 TB of RAM ru
-M526	Software and hardware	643	2	version					ode with two 64-core AMD EPYC 7763 processors and 2 TB of RAM running Rocky Linux
-M527	Software and hardware	643	8.10	version					63 processors and 2 TB of RAM running Rocky Linux 8.10, under the SLURM workload man
+M000	Abstract	102	13,021	computed	n_diseases	eq			ein-domain evidence.] [The resulting space places 13,021 diseases, 10,489 rare and 2,5
+M001	Abstract	102	10,489	computed	n_rare	eq			ce.] [The resulting space places 13,021 diseases, 10,489 rare and 2,532 common, along 
+M002	Abstract	102	2,532	computed	n_common	eq			ing space places 13,021 diseases, 10,489 rare and 2,532 common, along shared mechanis
+M003	Significance Statement	113	13,021	computed	n_diseases	eq			linical labels. [The resulting representations of 13,021 diseases formed biologically 
+M004	Disease to Vector	173	13,021	computed	n_diseases	eq			diseases lack comprehensive annotations.] [Of the 13,021 diseases in our disease set, 
+M005	Disease to Vector	173	4,767	data_track				disease set: annotation coverage	ons.] [Of the 13,021 diseases in our disease set, 4,767 (36.6%) lack either a gene-le
+M006	Disease to Vector	173	36.6%	data_track				disease set: annotation coverage	Of the 13,021 diseases in our disease set, 4,767 (36.6%) lack either a gene-level or 
+M007	Disease to Vector	180	32	computed	embedding_dim	eq			2Vec  to generate the final [DisAtlas embeddings (32-dimensional; see [Methods](#s
+M008	Disease to Vector	185	32	computed	embedding_dim	eq			full graph, pooling evidence from all years, into 32-dimensional DisAtlas embeddin
+M009	Validation of DisAtlas Representations A	206	10%	history				literature figure	 subset of human biology. For example, only about 10% of druggable human proteins a
+M010	Validation of DisAtlas Representations A	212	0.501	computed	shortcut_auroc_min	eq		min over matched shortcut features	s positives from negatives only marginally (AUROC 0.501 to 0.542, where 0.5 is chance
+M011	Validation of DisAtlas Representations A	212	0.542	computed	shortcut_auroc_max	eq			es from negatives only marginally (AUROC 0.501 to 0.542, where 0.5 is chance; [Figure
+M012	Validation of DisAtlas Representations A	212	0.5	notation				chance level	ives only marginally (AUROC 0.501 to 0.542, where 0.5 is chance; [Figure @fig:ixidn
+M013	Validation of DisAtlas Representations A	215	1,379	computed	ixidn_diseases	eq			 specific mechanism of action are removed, giving 1,379 diseases and 43,112 links ([M
+M014	Validation of DisAtlas Representations A	215	43,112	computed	ixidn_links	eq			 of action are removed, giving 1,379 diseases and 43,112 links ([Methods](#sec:methods
+M015	Validation of DisAtlas Representations A	217	2,182	computed	bench_pos	eq			ug evidence it judged strong or plausible, giving 2,182 IxIDN⁺ and 2,182 IxIDN⁻ pairs
+M016	Validation of DisAtlas Representations A	217	2,182	computed	bench_neg	eq			dged strong or plausible, giving 2,182 IxIDN⁺ and 2,182 IxIDN⁻ pairs over 938 disease
+M017	Validation of DisAtlas Representations A	217	938	computed	bench_diseases	eq			, giving 2,182 IxIDN⁺ and 2,182 IxIDN⁻ pairs over 938 diseases ([Methods](#sec:meth
+M018	Validation of DisAtlas Representations A	221	0.832	computed	auroc_full	eq			l benchmark (dashed line, chance), with DisAtlas (0.832) for reference; organ system,
+M019	DisAtlas Enables Accurate Disease-Diseas	229	0	notation					ir order, into an association probability between 0 and 1 ([Figure @fig:upna_ddal
+M020	DisAtlas Enables Accurate Disease-Diseas	229	1	notation					er, into an association probability between 0 and 1 ([Figure @fig:upna_ddal]a; ar
+M025	DisAtlas Enables Accurate Disease-Diseas	230	2	name					nisms differ, such as diabetes insipidus and type 2 diabetes mellitus, receive lo
+M021	DisAtlas Enables Accurate Disease-Diseas	232	4,364	computed	bench_pairs	eq			s removed from the training network, not only the 4,364 IxIDN-Matched pairs, and unde
+M029	DisAtlas Enables Accurate Disease-Diseas	237	0.832	computed	auroc_full	eq			eceiver Operating Characteristic Curve (AUROC) of 0.832 (95% CI 0.794–0.865 from the 
+M030	DisAtlas Enables Accurate Disease-Diseas	237	95%	notation				interval level	 Operating Characteristic Curve (AUROC) of 0.832 (95% CI 0.794–0.865 from the disea
+M031	DisAtlas Enables Accurate Disease-Diseas	237	0.794	computed	full_lo	eq			ing Characteristic Curve (AUROC) of 0.832 (95% CI 0.794–0.865 from the disease-cluste
+M032	DisAtlas Enables Accurate Disease-Diseas	237	0.865	computed	full_hi	eq			aracteristic Curve (AUROC) of 0.832 (95% CI 0.794–0.865 from the disease-cluster boot
+M033	DisAtlas Enables Accurate Disease-Diseas	237	4,364	computed	bench_pairs	eq			 ; [Methods](#sec:methods_statistics)) across all 4,364 IxIDN-Matched pairs, and 0.85
+M034	DisAtlas Enables Accurate Disease-Diseas	237	0.859	computed	auroc_full_test	eq			stics)) across all 4,364 IxIDN-Matched pairs, and 0.859 (0.803–0.905) on the 1,094-pa
+M035	DisAtlas Enables Accurate Disease-Diseas	237	0.803	computed	full_test_lo	eq			 across all 4,364 IxIDN-Matched pairs, and 0.859 (0.803–0.905) on the 1,094-pair held
+M036	DisAtlas Enables Accurate Disease-Diseas	237	0.905	computed	full_test_hi	eq			s all 4,364 IxIDN-Matched pairs, and 0.859 (0.803–0.905) on the 1,094-pair held-out t
+M037	DisAtlas Enables Accurate Disease-Diseas	237	1,094	computed	test_pairs	eq			IDN-Matched pairs, and 0.859 (0.803–0.905) on the 1,094-pair held-out test split whos
+M040	DisAtlas Enables Accurate Disease-Diseas	239	0.784	computed	auroc_nd	eq			der the stricter node-disjoint protocol, AUROC is 0.784 (95% CI 0.746–0.822) on the 4
+M041	DisAtlas Enables Accurate Disease-Diseas	239	95%	notation				interval level	 stricter node-disjoint protocol, AUROC is 0.784 (95% CI 0.746–0.822) on the 4,357 
+M042	DisAtlas Enables Accurate Disease-Diseas	239	0.746	computed	nd_lo	eq			er node-disjoint protocol, AUROC is 0.784 (95% CI 0.746–0.822) on the 4,357 pairs tha
+M043	DisAtlas Enables Accurate Disease-Diseas	239	0.822	computed	nd_hi	eq			e-disjoint protocol, AUROC is 0.784 (95% CI 0.746–0.822) on the 4,357 pairs that can 
+M044	DisAtlas Enables Accurate Disease-Diseas	239	4,357	computed	nd_scored	eq			tocol, AUROC is 0.784 (95% CI 0.746–0.822) on the 4,357 pairs that can be scored, aga
+M045	DisAtlas Enables Accurate Disease-Diseas	239	0.832	computed	auroc_full_on_nd_pairs	eq			2) on the 4,357 pairs that can be scored, against 0.832 for the full model on the sam
+M046	DisAtlas Enables Accurate Disease-Diseas	239	−0.047	computed	delta_nd_minus_full	eq			e full model on the same pairs (paired difference −0.047, 95% CI −0.068 to −0.028), so
+M047	DisAtlas Enables Accurate Disease-Diseas	239	95%	notation				interval level	odel on the same pairs (paired difference −0.047, 95% CI −0.068 to −0.028), so the 
+M048	DisAtlas Enables Accurate Disease-Diseas	239	−0.068	computed	delta_lo	eq			 the same pairs (paired difference −0.047, 95% CI −0.068 to −0.028), so the model stil
+M049	DisAtlas Enables Accurate Disease-Diseas	239	−0.028	computed	delta_hi	eq			pairs (paired difference −0.047, 95% CI −0.068 to −0.028), so the model still ranks pa
+M051	DisAtlas Enables Accurate Disease-Diseas	241	35	data_track				annotation-based similarity coverage	s annotation-based similarity measures score only 35-98% of pairs because of gaps 
+M052	DisAtlas Enables Accurate Disease-Diseas	241	98%	data_track				annotation-based similarity coverage	nnotation-based similarity measures score only 35-98% of pairs because of gaps in a
+M053	DisAtlas Enables Accurate Disease-Diseas	243	0.754	computed	stratum_auroc|rare-rare	eq			nce holds across disease rarity, with an AUROC of 0.754 on pairs of two rare diseases
+M054	DisAtlas Enables Accurate Disease-Diseas	243	0.889	computed	stratum_auroc|rare-common	eq			 AUROC of 0.754 on pairs of two rare diseases and 0.889 on rare–common pairs ([Figure
+M055	DisAtlas Enables Accurate Disease-Diseas	243	26	computed	stratum_nneg|common-common	eq			a)), whereas the common–common stratum, with only 26 negative pairs, is too imprec
+M550	DisAtlas Enables Accurate Disease-Diseas	244	0.540	computed	fig5_panel_c_txgnn_auroc:rare-rare|auroc	eq		Fig 5c TxGNN by rarity	N , the knowledge-graph foundation model, reaches 0.540 on rare–rare and 0.615 on rar
+M551	DisAtlas Enables Accurate Disease-Diseas	244	0.615	computed	fig5_panel_c_txgnn_auroc:rare-common|auroc	eq		Fig 5c TxGNN by rarity	 foundation model, reaches 0.540 on rare–rare and 0.615 on rare–common pairs, and Dis
+M552	DisAtlas Enables Accurate Disease-Diseas	244	0.213	computed	fig5_panel_c_paired_differences:rare-rare|diff	eq		Fig 5c TxGNN by rarity	las exceeds it in both strata (paired differences 0.213, 95% CI 0.143 to 0.285, and 0
+M553	DisAtlas Enables Accurate Disease-Diseas	244	95%	notation				interval level	eeds it in both strata (paired differences 0.213, 95% CI 0.143 to 0.285, and 0.274,
+M554	DisAtlas Enables Accurate Disease-Diseas	244	0.143	computed	fig5_panel_c_paired_differences:rare-rare|ci_lo	eq		Fig 5c TxGNN by rarity	 in both strata (paired differences 0.213, 95% CI 0.143 to 0.285, and 0.274, 0.176 to
+M555	DisAtlas Enables Accurate Disease-Diseas	244	0.285	computed	fig5_panel_c_paired_differences:rare-rare|ci_hi	eq		Fig 5c TxGNN by rarity	strata (paired differences 0.213, 95% CI 0.143 to 0.285, and 0.274, 0.176 to 0.378; d
+M556	DisAtlas Enables Accurate Disease-Diseas	244	0.274	computed	fig5_panel_c_paired_differences:rare-common|diff	eq		Fig 5c TxGNN by rarity	red differences 0.213, 95% CI 0.143 to 0.285, and 0.274, 0.176 to 0.378; disease-clus
+M557	DisAtlas Enables Accurate Disease-Diseas	244	0.176	computed	fig5_panel_c_paired_differences:rare-common|ci_lo	eq		Fig 5c TxGNN by rarity	ferences 0.213, 95% CI 0.143 to 0.285, and 0.274, 0.176 to 0.378; disease-cluster boo
+M558	DisAtlas Enables Accurate Disease-Diseas	244	0.378	computed	fig5_panel_c_paired_differences:rare-common|ci_hi	eq		Fig 5c TxGNN by rarity	0.213, 95% CI 0.143 to 0.285, and 0.274, 0.176 to 0.378; disease-cluster bootstrap; [
+M056	DisAtlas Enables Accurate Disease-Diseas	251	0.897	si_track				partner mean percentile, rare-common test pairs	gated common disease sits at a mean percentile of 0.897; ranking all rare diseases fo
+M057	DisAtlas Enables Accurate Disease-Diseas	251	0.934	si_track				SI rare-common recovery	isease places its co-investigated rare disease at 0.934 (percentiles on a 0-1 scale; 
+M058	DisAtlas Enables Accurate Disease-Diseas	251	68	si_track				SI rare-common recovery	  [They do.] [For the rare disease of each of the 68 test-split rare-common pairs,
+M059	DisAtlas Enables Accurate Disease-Diseas	251	0.5	notation				chance level	are disease at 0.934 (percentiles on a 0-1 scale; 0.5 = chance).] [These values are
+M559	DisAtlas Enables Accurate Disease-Diseas	251	0	notation				percentile scale	estigated rare disease at 0.934 (percentiles on a 0-1 scale; 0.5 = chance).] [The
+M560	DisAtlas Enables Accurate Disease-Diseas	251	1	notation				percentile scale	tigated rare disease at 0.934 (percentiles on a 0-1 scale; 0.5 = chance).] [These
+M561	Case Study: Decoding Shared Mechanisms	260	0.955	computed	callout_p|PNH-aHUS	eq			network and do not share causal genes; its score, 0.955, lies at the 99.9th percentil
+M562	Case Study: Decoding Shared Mechanisms	260	99.9	computed	callout_pct|PNH-aHUS	eq			share causal genes; its score, 0.955, lies at the 99.9th percentile of all 84,766,71
+M564	Case Study: Decoding Shared Mechanisms	260	84,766,710	computed	n_all_pairs	eq			core, 0.955, lies at the 99.9th percentile of all 84,766,710 scored disease pairs, and per
+M530	Case Study: Decoding Shared Mechanisms	261	0.808	computed	callout_p|PNH-NMOSD	eq			ich, like PNH, is approved for eculizumab, scores 0.808 with PNH (98.8th percentile).
+M531	Case Study: Decoding Shared Mechanisms	261	98.8	computed	callout_pct|PNH-NMOSD	eq			s approved for eculizumab, scores 0.808 with PNH (98.8th percentile).]  #### Case St
+M060	Case Study: Bridging Rare and Common Dis	266	81	identifier					yopathies (IIMs) , Antisynthetase Syndrome (ORPHA:81) and Polymyositis (ORPHA:732)
+M061	Case Study: Bridging Rare and Common Dis	266	732	identifier					etase Syndrome (ORPHA:81) and Polymyositis (ORPHA:732).] Antisynthetase Syndrome pr
+M062	Case Study: Bridging Rare and Common Dis	268	0.807	si_track				case study: seed ranges	 five seeded decoders, with a mean probability of 0.807 for polymyositis (range acros
+M063	Case Study: Bridging Rare and Common Dis	268	0.736	si_track				case study: seed ranges	ity of 0.807 for polymyositis (range across seeds 0.736 to 0.879) and 0.733 for antis
+M064	Case Study: Bridging Rare and Common Dis	268	0.879	si_track				case study: seed ranges	807 for polymyositis (range across seeds 0.736 to 0.879) and 0.733 for antisynthetase
+M065	Case Study: Bridging Rare and Common Dis	268	0.733	si_track				case study: seed ranges	ymyositis (range across seeds 0.736 to 0.879) and 0.733 for antisynthetase syndrome (
+M066	Case Study: Bridging Rare and Common Dis	268	0.651	si_track				case study: seed ranges	 to 0.879) and 0.733 for antisynthetase syndrome (0.651 to 0.860); scores for the wid
+M067	Case Study: Bridging Rare and Common Dis	268	0.860	si_track				case study: seed ranges	) and 0.733 for antisynthetase syndrome (0.651 to 0.860); scores for the wider group 
+M584	Unsupervised Clustering via DisAtlas Rev	273	32	computed	embedding_dim	eq			t map. [Each disease receives two things from its 32-dimensional 
+M563	Unsupervised Clustering via DisAtlas Rev	275	1	notation					[We group diseases by k-medoids  on the distance $1-p$, where $p$ is the DisAtlas
+M069	Unsupervised Clustering via DisAtlas Rev	278	55,	computed	n_clusters	eq			ethods](#sec:methods_clustering)).] [We chose K = 55 by a silhouette rule  applied
+M585	Unsupervised Clustering via DisAtlas Rev	282	55	computed	n_clusters	eq			](#sec:SI_cluster_validation_controls)).] [Of the 55 clusters, 28
+M586	Unsupervised Clustering via DisAtlas Rev	282	28	si_track				SI_cluster_validation_themes (tests/parity/sibio_cluster.json)	ster_validation_controls)).] [Of the 55 clusters, 28 were dominat
+M587	Unsupervised Clustering via DisAtlas Rev	282	60%	parameter				SI cluster-theme rule threshold	 dominated by a single body system, with at least 60% of annotate
+M588	Unsupervised Clustering via DisAtlas Rev	282	19	si_track				SI_cluster_validation_themes (tests/parity/sibio_cluster.json)	 example eye, skin, heart or nervous system), and 19 were enriche
+M589	Unsupervised Clustering via DisAtlas Rev	282	8	si_track				SI_cluster_validation_themes (tests/parity/sibio_cluster.json)	, lysosomal storage or inborn errors of immunity; 8 clusters met 
+M590	Unsupervised Clustering via DisAtlas Rev	283	20	si_track				SI_cluster_validation_themes (tests/parity/sibio_cluster.json)	:SI_cluster_validation_themes)).] [Members of the 20 clusters def
+M591	Unsupervised Clustering via DisAtlas Rev	283	11	si_track				SI_cluster_validation_themes (tests/parity/sibio_cluster.json)	ype annotations more strongly than members of the 11 clusters def
+M070	Unsupervised Clustering via DisAtlas Rev	284	500	computed	cluster_size|44	eq			resentative cluster meeting both criteria is c44 (500 diseases), which is dominated
+M071	Unsupervised Clustering via DisAtlas Rev	288	13,021	computed	n_diseases	eq			stering of Rare and Common Disorders.]** **(a)** [13,021 diseases, each drawn at its m
+M072	Unsupervised Clustering via DisAtlas Rev	288	55	computed	n_clusters	eq			s vectors, and marked with its cluster label (K = 55), which is set by the decoder
+M073	Unsupervised Clustering via DisAtlas Rev	290	23	computed	cluster|MONDO:0016244	eq			abeled aHUS and PNH; eculizumab), sharing cluster 23; tuberous sclerosis complex a
+M074	Unsupervised Clustering via DisAtlas Rev	290	33	computed	cluster|MONDO:0001734	eq			(labeled TSC and LAM; sirolimus), sharing cluster 33; and Crohn disease and ulcera
+M075	Unsupervised Clustering via DisAtlas Rev	290	12	computed	cluster|MONDO:0005011	eq			dalimumab, etanercept), each pair sharing cluster 12.] [Two negative pairs (red): 
+M076	Unsupervised Clustering via DisAtlas Rev	291	2	name					negative pairs (red): diabetes insipidus and type 2 diabetes (labeled T2D), place
+M077	Unsupervised Clustering via DisAtlas Rev	291	51	computed	cluster|MONDO:0004782	eq			etes (labeled T2D), placed in different clusters (51 and 12) despite their similar
+M078	Unsupervised Clustering via DisAtlas Rev	291	12	computed	cluster|MONDO:0005148	eq			abeled T2D), placed in different clusters (51 and 12) despite their similar-soundi
+M079	Unsupervised Clustering via DisAtlas Rev	291	29	computed	cluster|MONDO:0018208	eq		control NF1mut-NF2	istinct pathogenic mechanisms, placed in clusters 29 and 33.] [The inset enlarges 
+M080	Unsupervised Clustering via DisAtlas Rev	291	33	computed	cluster|MONDO:0007039	eq		control NF1mut-NF2	 pathogenic mechanisms, placed in clusters 29 and 33.] [The inset enlarges the fou
+M081	Unsupervised Clustering via DisAtlas Rev	292	23	computed	cluster|MONDO:0009688	eq			mab-approved diseases; aHUS and PNH share cluster 23 with generalized myasthenia g
+M532	Unsupervised Clustering via DisAtlas Rev	292	43,	computed	cluster|MONDO:0019100	eq			ed NMOSD, yellow) sits in the neighboring cluster 43, joined to PNH by a dotted lin
+M084	Unsupervised Clustering via DisAtlas Rev	293	13,021	computed	n_diseases	eq			oined to PNH by a dotted line.] **(b)** [The same 13,021-disease map, colored by disea
+M534	Unsupervised Clustering via DisAtlas Rev	294	2	name					ypercholesterolemia; Crigler–Najjar syndrome type 2 and Gilbert syndrome; catecho
+M536	Unsupervised Clustering via DisAtlas Rev	294	1	name					cholaminergic polymorphic ventricular tachycardia 1 (labeled CPVT1) and sudden ar
+M565	Unsupervised Clustering via DisAtlas Rev	295	213	computed	unscored|txgnn	eq			t ([Methods](#sec:methods_comparators)), with the 213 pairs it cannot map ranked la
+M097	Unsupervised Clustering via DisAtlas Rev	296	95%	notation				interval level	e 213 pairs it cannot map ranked last.] [Bars are 95% confidence intervals from the
+M098	Unsupervised Clustering via DisAtlas Rev	296	2,000,	parameter				bootstrap replicates	ootstrap ([Methods](#sec:methods_statistics); B = 2,000, one set of draws shared by bo
+M100	Unsupervised Clustering via DisAtlas Rev	296	26	computed	stratum_nneg|common-common	eq			); hollow markers mark common-common pairs, whose 26 matched negatives make the es
+M101	Unsupervised Clustering via DisAtlas Rev	297	1	notation					res ($p_{i,j}$, logit scale) for IxIDN⁺ pairs ($y=1$) versus their matched IxIDN⁻
+M102	Unsupervised Clustering via DisAtlas Rev	297	0	notation					irs ($y=1$) versus their matched IxIDN⁻ pairs ($y=0$), split by the same four rar
+M566	Unsupervised Clustering via DisAtlas Rev	297	2	name					se–ulcerative colitis and diabetes insipidus–type 2 diabetes mellitus both fall i
+M103	Unsupervised Clustering via DisAtlas Rev	299	8.97	computed	cocluster_ratio	eq			ed IxIDN-Matched test-split pairs share a cluster 8.97 times as often as their match
+M104	Unsupervised Clustering via DisAtlas Rev	299	55	computed	n_clusters	eq			s as often as their matched negative pairs at K = 55 (29.7% of 491 positive pairs 
+M105	Unsupervised Clustering via DisAtlas Rev	299	29.7%	computed	cocluster_pos_pct	eq			 often as their matched negative pairs at K = 55 (29.7% of 491 positive pairs against
+M106	Unsupervised Clustering via DisAtlas Rev	299	491	computed	test_pos	eq			 their matched negative pairs at K = 55 (29.7% of 491 positive pairs against 3.3% o
+M107	Unsupervised Clustering via DisAtlas Rev	299	3.3%	computed	cocluster_neg_pct	eq			rs at K = 55 (29.7% of 491 positive pairs against 3.3% of 603 negative pairs), and a
+M108	Unsupervised Clustering via DisAtlas Rev	299	603	computed	test_neg	eq			= 55 (29.7% of 491 positive pairs against 3.3% of 603 negative pairs), and at least
+M109	Unsupervised Clustering via DisAtlas Rev	299	5.8	si_track				other K	against 3.3% of 603 negative pairs), and at least 5.8 times as often at every K ≥ 2
+M110	Unsupervised Clustering via DisAtlas Rev	299	20,	si_track				other K	rs), and at least 5.8 times as often at every K ≥ 20, directly linking the unsuperv
+M111	Unsupervised Clustering via DisAtlas Rev	304	44	computed	mixed_clusters	eq			]b), consistent with our central hypothesis.] [In 44 of the 55 clusters each class
+M112	Unsupervised Clustering via DisAtlas Rev	304	55	computed	n_clusters	eq			stent with our central hypothesis.] [In 44 of the 55 clusters each class makes up 
+M113	Unsupervised Clustering via DisAtlas Rev	304	10%	parameter					4 of the 55 clusters each class makes up at least 10% of the members, and these 44 
+M114	Unsupervised Clustering via DisAtlas Rev	304	44	computed	mixed_clusters	eq			s makes up at least 10% of the members, and these 44 clusters hold 91.8% of the co
+M115	Unsupervised Clustering via DisAtlas Rev	304	91.8%	computed	mixed_pct_common	eq			st 10% of the members, and these 44 clusters hold 91.8% of the common and 73.9% of th
+M116	Unsupervised Clustering via DisAtlas Rev	304	73.9%	computed	mixed_pct_rare	eq			nd these 44 clusters hold 91.8% of the common and 73.9% of the rare diseases.] [Five 
+M540	Unsupervised Clustering via DisAtlas Rev	305	0.904	computed	callout_p|CESD-FH	eq			ts with familial hypercholesterolemia (c26, score 0.904); Crigler–Najjar syndrome typ
+M541	Unsupervised Clustering via DisAtlas Rev	305	2	name					 (c26, score 0.904); Crigler–Najjar syndrome type 2 with Gilbert syndrome, both c
+M542	Unsupervised Clustering via DisAtlas Rev	305	0.957	computed	callout_p|CN2-Gilbert	eq			rt syndrome, both caused by UGT1A1 variants (c16, 0.957); catecholaminergic polymorph
+M543	Unsupervised Clustering via DisAtlas Rev	305	1	name					cholaminergic polymorphic ventricular tachycardia 1 with sudden arrhythmic death 
+M544	Unsupervised Clustering via DisAtlas Rev	305	0.960	computed	callout_p|CPVT1-SADS	eq			hythmic death syndrome, both linked to RYR2 (c19, 0.960); Huntington disease with Par
+M545	Unsupervised Clustering via DisAtlas Rev	305	0.941	computed	callout_p|HD-PD	eq			; Huntington disease with Parkinson disease (c27, 0.941); and congenital fibrosis of 
+M546	Unsupervised Clustering via DisAtlas Rev	305	0.942	computed	callout_p|CFEOM-ptosis	eq			llows from its faulty eye-muscle innervation (c6, 0.942).] [Parkinson disease itself 
+M120	Unsupervised Clustering via DisAtlas Rev	306	15	si_track				umbrella placement	ts subtypes rather than to the umbrella term; all 15 of its numbered subtypes, inc
+M121	Unsupervised Clustering via DisAtlas Rev	306	5,	name					ts numbered subtypes, including Parkinson disease 5, sit in c30 with essential tre
+M122	Unsupervised Clustering via DisAtlas Rev	311	0.915	computed	ctrl_p|LALD_Wolman-CESD	eq			holesteryl ester storage disease, with a score of 0.915 (99.6th percentile of all dis
+M123	Unsupervised Clustering via DisAtlas Rev	311	99.6	computed	ctrl_pct|LALD_Wolman-CESD	eq			ryl ester storage disease, with a score of 0.915 (99.6th percentile of all disease p
+M124	Unsupervised Clustering via DisAtlas Rev	312	55	computed	n_clusters	eq			ical annotations in the source database.] [At K = 55 the clustering places them in
+M125	Unsupervised Clustering via DisAtlas Rev	312	4	computed	n_pos_split	eq			in separate clusters (c4 and c26), as it does for 4 of the 9 positive control pai
+M126	Unsupervised Clustering via DisAtlas Rev	312	9	computed	n_pos_controls	eq			te clusters (c4 and c26), as it does for 4 of the 9 positive control pairs, all o
+M127	Unsupervised Clustering via DisAtlas Rev	312	98.4	computed	min_pos_pct	eq			l pairs, all of which still score at or above the 98.4th percentile (Supplementary [
+M128	Unsupervised Clustering via DisAtlas Rev	316	0.145	computed	ctrl_p|NF1mut-NF2	eq			oss). [DisAtlas gives this pair a low link score (0.145, below every positive control
+M129	Unsupervised Clustering via DisAtlas Rev	316	55	computed	n_clusters	eq			es them in separate clusters (c29 and c33) at K = 55 and at every K from 35 to 80;
+M130	Unsupervised Clustering via DisAtlas Rev	316	35	si_track				other K	sters (c29 and c33) at K = 55 and at every K from 35 to 80; all 8 negative control
+M131	Unsupervised Clustering via DisAtlas Rev	316	80	si_track				other K	(c29 and c33) at K = 55 and at every K from 35 to 80; all 8 negative control pairs
+M132	Unsupervised Clustering via DisAtlas Rev	316	8	computed	n_neg_controls	eq			 c33) at K = 55 and at every K from 35 to 80; all 8 negative control pairs are se
+M133	Unsupervised Clustering via DisAtlas Rev	316	55	computed	n_clusters	eq			all 8 negative control pairs are separated at K = 55 (Supplementary [](#sec:SI_clu
+M134	[Comparing DisAtlas with Language-Model 	322	4,364	computed	bench_pairs	eq			e compared DisAtlas with them.] [We gave the same 4,364 blinded IxIDN-Matched pairs t
+M135	[Comparing DisAtlas with Language-Model 	322	3.1	version					large language models (Claude Chat and Gemini Pro 3.1), two agentic AI systems (Cla
+M136	[Comparing DisAtlas with Language-Model 	326	3.1	version					ately than Claude Chat, Claude Sci and Gemini Pro 3.1 ([Figure @fig:benchmark_DDAL_
+M137	[Comparing DisAtlas with Language-Model 	331	3.1	version					compared with Claude Chat, Claude Sci, Gemini Pro 3.1, Phylo Biomni and TxGNN on al
+M138	[Comparing DisAtlas with Language-Model 	331	4,364	computed	bench_pairs	eq			ci, Gemini Pro 3.1, Phylo Biomni and TxGNN on all 4,364 pairs of IxIDN-Matched, half 
+M142	[Comparing DisAtlas with Language-Model 	332	7	computed	nd_unscored	eq			xcept for the node-disjoint DisAtlas model, whose 7 pairs it cannot score are lef
+M143	[Comparing DisAtlas with Language-Model 	332	4,357	computed	nd_scored	eq			nnot score are left out of its curve and metrics (4,357 pairs; [Methods](#sec:methods
+M144	[Comparing DisAtlas with Language-Model 	334	10%	parameter				top/bottom 10% definition	 Ranking metrics: AUPRC, F1, precision in the top 10% and negative predictive value
+M145	[Comparing DisAtlas with Language-Model 	334	10%	parameter				top/bottom 10% definition	p 10% and negative predictive value in the bottom 10% ([Methods](#sec:methods_stati
+M146	[Comparing DisAtlas with Language-Model 	335	95%	notation				interval level	c:methods_statistics)). Dots are values, bars are 95% confidence intervals from the
+M148	[Comparing DisAtlas with Language-Model 	336	1.5	notation					 = interquartile range, line = median, whiskers = 1.5x the interquartile range; no 
+M149	[Comparing DisAtlas with Language-Model 	338	10%	parameter				top/bottom 10% definition	s not shown. **(d)** Overlap between methods' top-10% pairs (436 of 4,364 pairs eac
+M150	[Comparing DisAtlas with Language-Model 	338	436	computed	topk	eq			. **(d)** Overlap between methods' top-10% pairs (436 of 4,364 pairs each), as the 
+M151	[Comparing DisAtlas with Language-Model 	338	4,364	computed	bench_pairs	eq			** Overlap between methods' top-10% pairs (436 of 4,364 pairs each), as the Jaccard i
+M152	[Comparing DisAtlas with Language-Model 	338	10%	parameter				top/bottom 10% definition	ch), as the Jaccard index; two independent random 10% sets would give ≈0.05.]](FIGU
+M153	[Comparing DisAtlas with Language-Model 	338	0.05	computed	jaccard_random	approx	0.005	text: approximately	ndex; two independent random 10% sets would give ≈0.05.]](FIGURES/fig5_method_compar
+M592	[Rebuilt from Earlier Evidence, DisAtlas	349	1.019	computed	fig7_prospective:or_connectivity	eq		PENDING Fig 7 track: expects row or_connectivity in figures/main/fig7_prospective_values.tsv	hing once popularity is accounted for (odds ratio 1.019, 95% CI 1
+M593	[Rebuilt from Earlier Evidence, DisAtlas	349	95%	notation					ce popularity is accounted for (odds ratio 1.019, 95% CI 1.015–1.
+M594	[Rebuilt from Earlier Evidence, DisAtlas	349	1.015	computed	fig7_prospective:or_connectivity_lo	eq		PENDING Fig 7 track: expects row or_connectivity_lo in figures/main/fig7_prospective_values.tsv	larity is accounted for (odds ratio 1.019, 95% CI 1.015–1.023 per
+M595	[Rebuilt from Earlier Evidence, DisAtlas	349	1.023	computed	fig7_prospective:or_connectivity_hi	eq		PENDING Fig 7 track: expects row or_connectivity_hi in figures/main/fig7_prospective_values.tsv	 is accounted for (odds ratio 1.019, 95% CI 1.015–1.023 per 1 SD,
+M596	[Rebuilt from Earlier Evidence, DisAtlas	349	1	notation					ted for (odds ratio 1.019, 95% CI 1.015–1.023 per 1 SD, adjusted 
+M157	[Rebuilt from Earlier Evidence, DisAtlas	351	95%	notation				interval level	s of each drug and year, the odds ratio was 1.00 (95% CI 0.99–1.02), so the associa
+M597	[Rebuilt from Earlier Evidence, DisAtlas	351	2000	year					so no separate adjustment is made for it.]  [From 2000 to 2021, a
+M598	[Rebuilt from Earlier Evidence, DisAtlas	351	2021	year					parate adjustment is made for it.]  [From 2000 to 2021, across 34
+M599	[Rebuilt from Earlier Evidence, DisAtlas	351	34,592	computed	fig7_prospective:n_trials_or	eq		PENDING Fig 7 track: expects row n_trials_or in figures/main/fig7_prospective_values.tsv	ment is made for it.]  [From 2000 to 2021, across 34,592 new tria
+M600	[Rebuilt from Earlier Evidence, DisAtlas	351	6,469	computed	fig7_prospective:n_drugs_or	eq		PENDING Fig 7 track: expects row n_drugs_or in figures/main/fig7_prospective_values.tsv	  [From 2000 to 2021, across 34,592 new trials of 6,469 drugs in 
+M601	[Rebuilt from Earlier Evidence, DisAtlas	351	1.93	computed	fig7_prospective:or_disatlas	eq		PENDING Fig 7 track: expects row or_disatlas in figures/main/fig7_prospective_values.tsv	ug was the one it was trialed in next (odds ratio 1.93, 95% CI 1.
+M602	[Rebuilt from Earlier Evidence, DisAtlas	351	95%	notation					 the one it was trialed in next (odds ratio 1.93, 95% CI 1.90–1.9
+M603	[Rebuilt from Earlier Evidence, DisAtlas	351	1.90	computed	fig7_prospective:or_disatlas_lo	eq		PENDING Fig 7 track: expects row or_disatlas_lo in figures/main/fig7_prospective_values.tsv	e it was trialed in next (odds ratio 1.93, 95% CI 1.90–1.97, adju
+M604	[Rebuilt from Earlier Evidence, DisAtlas	351	1.97	computed	fig7_prospective:or_disatlas_hi	eq		PENDING Fig 7 track: expects row or_disatlas_hi in figures/main/fig7_prospective_values.tsv	was trialed in next (odds ratio 1.93, 95% CI 1.90–1.97, adjusted 
+M605	[Rebuilt from Earlier Evidence, DisAtlas	351	1	notation					re @fig:event_time]b), where no association gives 1.] [When the D
+M606	[Rebuilt from Earlier Evidence, DisAtlas	351	1.00	computed	fig7_prospective:or_shuffled	eq		PENDING Fig 7 track: expects row or_shuffled in figures/main/fig7_prospective_values.tsv	didates of each drug and year, the odds ratio was 1.00 (95% CI 0.
+M607	[Rebuilt from Earlier Evidence, DisAtlas	351	0.99	computed	fig7_prospective:or_shuffled_lo	eq		PENDING Fig 7 track: expects row or_shuffled_lo in figures/main/fig7_prospective_values.tsv	ch drug and year, the odds ratio was 1.00 (95% CI 0.99–1.02), so 
+M608	[Rebuilt from Earlier Evidence, DisAtlas	351	1.02	computed	fig7_prospective:or_shuffled_hi	eq		PENDING Fig 7 track: expects row or_shuffled_hi in figures/main/fig7_prospective_values.tsv	ug and year, the odds ratio was 1.00 (95% CI 0.99–1.02), so the a
+M609	[Rebuilt from Earlier Evidence, DisAtlas	352	1	notation					y adjustment.] [The yearly odds ratio stays above 1 in each decis
+M610	[Rebuilt from Earlier Evidence, DisAtlas	352	2021	year					 stays above 1 in each decision year from 2000 to 2021, each scor
+M611	[Rebuilt from Earlier Evidence, DisAtlas	352	2020	year					ar ([Figure @fig:event_time]b).] [It is lowest in 2020, at 1.62 (
+M612	[Rebuilt from Earlier Evidence, DisAtlas	352	1.62	computed	fig7_prospective:or_yearly|2020	eq		PENDING Fig 7 track: expects row or_yearly|2020 in figures/main/fig7_prospective_values.tsv	re @fig:event_time]b).] [It is lowest in 2020, at 1.62 (95% CI 1.
+M613	[Rebuilt from Earlier Evidence, DisAtlas	352	1.53	computed	fig7_prospective:or_yearly_lo|2020	eq		PENDING Fig 7 track: expects row or_yearly_lo|2020 in figures/main/fig7_prospective_values.tsv	_time]b).] [It is lowest in 2020, at 1.62 (95% CI 1.53–1.72), and
+M614	[Rebuilt from Earlier Evidence, DisAtlas	352	1.72	computed	fig7_prospective:or_yearly_hi|2020	eq		PENDING Fig 7 track: expects row or_yearly_hi|2020 in figures/main/fig7_prospective_values.tsv	]b).] [It is lowest in 2020, at 1.62 (95% CI 1.53–1.72), and is 1
+M615	[Rebuilt from Earlier Evidence, DisAtlas	352	1.98	computed	fig7_prospective:or_yearly|2021	eq		PENDING Fig 7 track: expects row or_yearly|2021 in figures/main/fig7_prospective_values.tsv	owest in 2020, at 1.62 (95% CI 1.53–1.72), and is 1.98 in 2021, a
+M616	[Rebuilt from Earlier Evidence, DisAtlas	352	2021	year					 2020, at 1.62 (95% CI 1.53–1.72), and is 1.98 in 2021, and this 
+M617	[Rebuilt from Earlier Evidence, DisAtlas	352	2020	year					 in 2021, and this analysis does not identify why 2020 is lower.]
+M618	[Rebuilt from Earlier Evidence, DisAtlas	353	1	notation					 the reference scores reach lower odds ratios per 1 SD ([Figure @
+M619	[Rebuilt from Earlier Evidence, DisAtlas	353	1.33	computed	fig7_prospective:or_gene	eq		PENDING Fig 7 track: expects row or_gene in figures/main/fig7_prospective_values.tsv	odds ratios per 1 SD ([Figure @fig:event_time]c), 1.33 (95% CI 1.
+M620	[Rebuilt from Earlier Evidence, DisAtlas	353	95%	notation					atios per 1 SD ([Figure @fig:event_time]c), 1.33 (95% CI 1.31–1.3
+M621	[Rebuilt from Earlier Evidence, DisAtlas	353	1.31	computed	fig7_prospective:or_gene_lo	eq		PENDING Fig 7 track: expects row or_gene_lo in figures/main/fig7_prospective_values.tsv	er 1 SD ([Figure @fig:event_time]c), 1.33 (95% CI 1.31–1.34) for 
+M622	[Rebuilt from Earlier Evidence, DisAtlas	353	1.34	computed	fig7_prospective:or_gene_hi	eq		PENDING Fig 7 track: expects row or_gene_hi in figures/main/fig7_prospective_values.tsv	SD ([Figure @fig:event_time]c), 1.33 (95% CI 1.31–1.34) for share
+M623	[Rebuilt from Earlier Evidence, DisAtlas	353	1.27	computed	fig7_prospective:or_gobp	eq		PENDING Fig 7 track: expects row or_gobp in figures/main/fig7_prospective_values.tsv	33 (95% CI 1.31–1.34) for shared-gene similarity, 1.27 for Gene O
+M624	[Rebuilt from Earlier Evidence, DisAtlas	353	1.20	computed	fig7_prospective:or_hpo	eq		PENDING Fig 7 track: expects row or_hpo in figures/main/fig7_prospective_values.tsv	r Gene Ontology biological-process similarity and 1.20 for phenot
+M625	[Rebuilt from Earlier Evidence, DisAtlas	353	1.10	computed	fig7_prospective:or_waa	eq		PENDING Fig 7 track: expects row or_waa in figures/main/fig7_prospective_values.tsv	e yearly MechDist graph without learning, reaches 1.10 (95% CI 1.
+M626	[Rebuilt from Earlier Evidence, DisAtlas	353	95%	notation					ly MechDist graph without learning, reaches 1.10 (95% CI 1.10–1.1
+M627	[Rebuilt from Earlier Evidence, DisAtlas	353	1.10	computed	fig7_prospective:or_waa_lo	eq		PENDING Fig 7 track: expects row or_waa_lo in figures/main/fig7_prospective_values.tsv	Dist graph without learning, reaches 1.10 (95% CI 1.10–1.11), so 
+M628	[Rebuilt from Earlier Evidence, DisAtlas	353	1.11	computed	fig7_prospective:or_waa_hi	eq		PENDING Fig 7 track: expects row or_waa_hi in figures/main/fig7_prospective_values.tsv	graph without learning, reaches 1.10 (95% CI 1.10–1.11), so this 
+M164	[Rebuilt from Earlier Evidence, DisAtlas	354	10%	parameter				top/bottom 10% definition	rugs whose best-ranked new trial falls in the top 10% of the ranking, is reported w
+M165	[Rebuilt from Earlier Evidence, DisAtlas	358	4	name					d from multiple sclerosis, first by the aquaporin-4 antibody and then by the 2006
+M166	[Rebuilt from Earlier Evidence, DisAtlas	358	2006	year					first by the aquaporin-4 antibody and then by the 2006 NMO criteria, multiple sclero
+M168	[Rebuilt from Earlier Evidence, DisAtlas	360	2009,	year					s first trial in NMO spectrum disorder (NMOSD) in 2009, with NMO in the graph, DisAtl
+M171	[Rebuilt from Earlier Evidence, DisAtlas	360	2	history				trial history (cited)	 [](#sec:SI_event_time_beyond_mechdist)).] [About 2 years before eculizumab's fir
+M629	[Rebuilt from Earlier Evidence, DisAtlas	360	45	computed	fig7_prospective:nmo_rank_disatlas	eq		PENDING Fig 7 track: expects row nmo_rank_disatlas in figures/main/fig7_prospective_values.tsv	 2009, with NMO in the graph, DisAtlas ranked NMO 45th of the 1,7
+M630	[Rebuilt from Earlier Evidence, DisAtlas	360	1,728	computed	fig7_prospective:nmo_pool	eq		PENDING Fig 7 track: expects row nmo_pool in figures/main/fig7_prospective_values.tsv	NMO in the graph, DisAtlas ranked NMO 45th of the 1,728 diseases 
+M631	[Rebuilt from Earlier Evidence, DisAtlas	360	2.6%	computed	fig7_prospective:nmo_top_pct_disatlas	eq		PENDING Fig 7 track: expects row nmo_top_pct_disatlas in figures/main/fig7_prospective_values.tsv	ark tuning and not yet trialed with the drug (top 2.6%), against 
+M632	[Rebuilt from Earlier Evidence, DisAtlas	360	121	computed	fig7_prospective:nmo_rank_popularity	eq		PENDING Fig 7 track: expects row nmo_rank_popularity in figures/main/fig7_prospective_values.tsv	not yet trialed with the drug (top 2.6%), against 121st (top 7%) 
+M633	[Rebuilt from Earlier Evidence, DisAtlas	360	7%	computed	fig7_prospective:nmo_top_pct_popularity	eq		PENDING Fig 7 track: expects row nmo_top_pct_popularity in figures/main/fig7_prospective_values.tsv	aled with the drug (top 2.6%), against 121st (top 7%) by populari
+M634	[Rebuilt from Earlier Evidence, DisAtlas	360	2	computed	fig7_prospective:nmo_hops_pnh	eq		PENDING Fig 7 track: expects row nmo_hops_pnh in figures/main/fig7_prospective_values.tsv	ink in the graph the model was trained on and are 2 steps apart.]
+M635	[Rebuilt from Earlier Evidence, DisAtlas	360	2	parameter				neighbourhood restriction (steps)	 the candidates are restricted to diseases within 2 or 3 steps of
+M636	[Rebuilt from Earlier Evidence, DisAtlas	360	3	parameter				neighbourhood restriction (steps)	candidates are restricted to diseases within 2 or 3 steps of PNH,
+M637	[Rebuilt from Earlier Evidence, DisAtlas	360	86	computed	fig7_prospective:nmo_rank_all	eq		PENDING Fig 7 track: expects row nmo_rank_all in figures/main/fig7_prospective_values.tsv	of PNH, and among all embedded diseases NMO ranks 86th of 3,452 (
+M638	[Rebuilt from Earlier Evidence, DisAtlas	360	3,452	computed	fig7_prospective:nmo_pool_all	eq		PENDING Fig 7 track: expects row nmo_pool_all in figures/main/fig7_prospective_values.tsv	and among all embedded diseases NMO ranks 86th of 3,452 (top 2.5%
+M639	[Rebuilt from Earlier Evidence, DisAtlas	360	2.5%	computed	fig7_prospective:nmo_top_pct_all	eq		PENDING Fig 7 track: expects row nmo_top_pct_all in figures/main/fig7_prospective_values.tsv	ll embedded diseases NMO ranks 86th of 3,452 (top 2.5%; Supplemen
+M175	[Rebuilt from Earlier Evidence, DisAtlas	361	2019	year					yond_mechdist)).] [Approval for NMOSD followed in 2019 .] [We chose this example aft
+M176	[Rebuilt from Earlier Evidence, DisAtlas	366	2000	year					ustrative case, eculizumab and NMO. Top, timeline 2000–2020. NMO was treated as a fo
+M177	[Rebuilt from Earlier Evidence, DisAtlas	366	2020	year					tive case, eculizumab and NMO. Top, timeline 2000–2020. NMO was treated as a form of
+M178	[Rebuilt from Earlier Evidence, DisAtlas	367	2004	year					tinguished it from multiple sclerosis in December 2004 ; in 2005 its target was iden
+M179	[Rebuilt from Earlier Evidence, DisAtlas	367	2005	year					 it from multiple sclerosis in December 2004 ; in 2005 its target was identified as 
+M180	[Rebuilt from Earlier Evidence, DisAtlas	367	4	name					n 2005 its target was identified as the aquaporin-4 water channel (labeled AQP4) 
+M181	[Rebuilt from Earlier Evidence, DisAtlas	368	2006	year					P4) . Revised NMO diagnostic criteria followed in 2006  and international consensus 
+M182	[Rebuilt from Earlier Evidence, DisAtlas	368	2015	year					and international consensus criteria for NMOSD in 2015 . Eculizumab, an antibody aga
+M183	[Rebuilt from Earlier Evidence, DisAtlas	369	11	history				trial history (cited)	in C5, was first given to patients with PNH in an 11-patient pilot study that bega
+M184	[Rebuilt from Earlier Evidence, DisAtlas	369	2002	year					PNH in an 11-patient pilot study that began about 2002 , entered a randomized phase 
+M185	[Rebuilt from Earlier Evidence, DisAtlas	369	3	history				trial history (cited)	hat began about 2002 , entered a randomized phase 3 trial in 2004 (NCT00122330)  
+M186	[Rebuilt from Earlier Evidence, DisAtlas	369	2004	year					bout 2002 , entered a randomized phase 3 trial in 2004 (NCT00122330)  and was approv
+M187	[Rebuilt from Earlier Evidence, DisAtlas	369	2007	year					 (NCT00122330)  and was approved for PNH in March 2007 . Its first NMOSD trial began
+M188	[Rebuilt from Earlier Evidence, DisAtlas	370	2009	year					NH in March 2007 . Its first NMOSD trial began in 2009 (NCT00904826) , and approval 
+M189	[Rebuilt from Earlier Evidence, DisAtlas	370	2019	year					904826) , and approval for NMOSD followed in June 2019 . The marker below the timeli
+M196	[Rebuilt from Earlier Evidence, DisAtlas	371	2007	year					e timeline gives the rank of NMO in decision year 2007 among the 1,728 diseases held
+M640	[Rebuilt from Earlier Evidence, DisAtlas	371	1,728	computed	fig7_prospective:nmo_pool	eq		PENDING Fig 7 track: expects row nmo_pool in figures/main/fig7_prospective_values.tsv	s the rank of NMO in decision year 2007 among the 1,728 diseases 
+M203	[Rebuilt from Earlier Evidence, DisAtlas	372	1	notation				enumeration	th eculizumab. Bottom, how the rank is computed. (1) Known use of the drug. (2) N
+M204	[Rebuilt from Earlier Evidence, DisAtlas	372	2	notation				enumeration	the rank is computed. (1) Known use of the drug. (2) NMO is compared with every d
+M206	[Rebuilt from Earlier Evidence, DisAtlas	373	3	notation				enumeration	seases against its number of trials before 2007. (3) Rank by DisAtlas score, the 
+M641	[Rebuilt from Earlier Evidence, DisAtlas	373	2007	year					hese diseases against its number of trials before 2007. (3) Rank 
+M642	[Rebuilt from Earlier Evidence, DisAtlas	374	45	computed	fig7_prospective:nmo_rank_disatlas	eq		PENDING Fig 7 track: expects row nmo_rank_disatlas in figures/main/fig7_prospective_values.tsv	ness of each disease to PNH in the map. NMO ranks 45th of 1,728 (
+M643	[Rebuilt from Earlier Evidence, DisAtlas	374	1,728	computed	fig7_prospective:nmo_pool	eq		PENDING Fig 7 track: expects row nmo_pool in figures/main/fig7_prospective_values.tsv	each disease to PNH in the map. NMO ranks 45th of 1,728 (top 2.6%
+M644	[Rebuilt from Earlier Evidence, DisAtlas	374	2.6%	computed	fig7_prospective:nmo_top_pct_disatlas	eq		PENDING Fig 7 track: expects row nmo_top_pct_disatlas in figures/main/fig7_prospective_values.tsv	e to PNH in the map. NMO ranks 45th of 1,728 (top 2.6%), against 
+M645	[Rebuilt from Earlier Evidence, DisAtlas	374	121	computed	fig7_prospective:nmo_rank_popularity	eq		PENDING Fig 7 track: expects row nmo_rank_popularity in figures/main/fig7_prospective_values.tsv	 map. NMO ranks 45th of 1,728 (top 2.6%), against 121st (top 7%) 
+M646	[Rebuilt from Earlier Evidence, DisAtlas	374	7%	computed	fig7_prospective:nmo_top_pct_popularity	eq		PENDING Fig 7 track: expects row nmo_top_pct_popularity in figures/main/fig7_prospective_values.tsv	anks 45th of 1,728 (top 2.6%), against 121st (top 7%) by populari
+M647	[Rebuilt from Earlier Evidence, DisAtlas	375	1	notation					 drug is the one the drug is trialed in next, per 1 standard devi
+M217	[Rebuilt from Earlier Evidence, DisAtlas	376	95%	notation				interval level	tratum per drug and decision year; vertical bars, 95% CI (robust standard errors cl
+M648	[Rebuilt from Earlier Evidence, DisAtlas	376	1	notation					rrors clustered by drug); dashed line, odds ratio 1, no associati
+M649	[Rebuilt from Earlier Evidence, DisAtlas	378	2000	year					rly estimates are not independent. Decision years 2000 to 2021 ar
+M650	[Rebuilt from Earlier Evidence, DisAtlas	378	2021	year					mates are not independent. Decision years 2000 to 2021 are shown.
+M219	[Rebuilt from Earlier Evidence, DisAtlas	379	95%	notation				interval level	weighted degree of each disease in the map. Bars, 95% CI; dashed line, odds ratio 1
+M651	[Rebuilt from Earlier Evidence, DisAtlas	379	1	notation					rs 2000 to 2021 are shown. **(c)** Odds ratio per 1 standard devi
+M652	[Rebuilt from Earlier Evidence, DisAtlas	379	1	notation					in the map. Bars, 95% CI; dashed line, odds ratio 1.]](FIGURES/fi
+M653	Discussion and Conclusion	387	0.784	computed	auroc_nd	eq			chmark pairs removed from training; AUROC reaches 0.784 with benc
+M654	Discussion and Conclusion	391	28	si_track				SI_cluster_validation_themes (tests/parity/sibio_cluster.json)	d organ involvement and by shared mechanism, with 28 of the 55 cl
+M655	Discussion and Conclusion	391	55	computed	n_clusters	eq			volvement and by shared mechanism, with 28 of the 55 clusters dom
+M656	Discussion and Conclusion	391	19	si_track				SI_cluster_validation_themes (tests/parity/sibio_cluster.json)	of the 55 clusters dominated by a body system and 19 enriched for
+M657	Discussion and Conclusion	391	8	si_track				SI_cluster_validation_themes (tests/parity/sibio_cluster.json)	ystem and 19 enriched for a mechanism or process (8 both); body-s
+M568	Discussion and Conclusion	392	1,	name					cholaminergic polymorphic ventricular tachycardia 1, a rare inherited arrhythmia 
+M658	Discussion and Conclusion	392	8.97	computed	cocluster_ratio	eq			nd held-out co-investigated pairs share a cluster 8.97 times as o
+M659	Discussion and Conclusion	397	1.93	computed	fig7_prospective:or_disatlas	eq		PENDING Fig 7 track: expects row or_disatlas in figures/main/fig7_prospective_values.tsv	drug is the one it is trialed in next (odds ratio 1.93, 95% CI 1.
+M660	Discussion and Conclusion	397	95%	notation					s the one it is trialed in next (odds ratio 1.93, 95% CI 1.90–1.9
+M661	Discussion and Conclusion	397	1.90	computed	fig7_prospective:or_disatlas_lo	eq		PENDING Fig 7 track: expects row or_disatlas_lo in figures/main/fig7_prospective_values.tsv	ne it is trialed in next (odds ratio 1.93, 95% CI 1.90–1.97, wher
+M662	Discussion and Conclusion	397	1.97	computed	fig7_prospective:or_disatlas_hi	eq		PENDING Fig 7 track: expects row or_disatlas_hi in figures/main/fig7_prospective_values.tsv	 is trialed in next (odds ratio 1.93, 95% CI 1.90–1.97, where no 
+M663	Discussion and Conclusion	397	1	notation					.93, 95% CI 1.90–1.97, where no association gives 1), adjusted fo
+M664	Discussion and Conclusion	398	1.10	computed	fig7_prospective:or_waa	eq		PENDING Fig 7 track: expects row or_waa in figures/main/fig7_prospective_values.tsv	ce without learning, and reaches an odds ratio of 1.10 (95% CI 1.
+M665	Discussion and Conclusion	398	95%	notation					hout learning, and reaches an odds ratio of 1.10 (95% CI 1.10–1.1
+M666	Discussion and Conclusion	398	1.10	computed	fig7_prospective:or_waa_lo	eq		PENDING Fig 7 track: expects row or_waa_lo in figures/main/fig7_prospective_values.tsv	arning, and reaches an odds ratio of 1.10 (95% CI 1.10–1.11) with
+M667	Discussion and Conclusion	398	1.11	computed	fig7_prospective:or_waa_hi	eq		PENDING Fig 7 track: expects row or_waa_hi in figures/main/fig7_prospective_values.tsv	g, and reaches an odds ratio of 1.10 (95% CI 1.10–1.11) with the 
+M569	[Limitations and Future Work]	411	10,489	computed	n_rare	eq			d the disease set is skewed toward rare diseases (10,489 of 13,021).] [Results therefo
+M570	[Limitations and Future Work]	411	13,021	computed	n_diseases	eq			ase set is skewed toward rare diseases (10,489 of 13,021).] [Results therefore apply m
+M236	Data sources {#sec:methods_data_sources}	429	0.6	parameter					ks are kept when their evidence score is at least 0.6.] [These are combined with Or
+M237	Data sources {#sec:methods_data_sources}	430	3,	parameter					associations, OMIM  associations with mapping key 3, GenCC  associations classifie
+M238	Data sources {#sec:methods_data_sources}	430	2026	year					logical Insight Knowledge Graph (snapshot October 2026), when supported by at least 
+M239	Data sources {#sec:methods_data_sources}	430	30	parameter					napshot October 2026), when supported by at least 30 documents; per-source counts 
+M240	Data sources {#sec:methods_data_sources}	432	20	parameter					arent term to its children; a term with more than 20 descendants is treated as too
+M241	Data sources {#sec:methods_data_sources}	432	75	parameter					 inherits nothing, and a disease inherits at most 75 symptoms, nearest descendants
+M242	Data sources {#sec:methods_data_sources}	433	39,894	data_track					ms, nearest descendants first.] [Propagation adds 39,894 associations to 986 diseases.
+M243	Data sources {#sec:methods_data_sources}	433	986	data_track					 first.] [Propagation adds 39,894 associations to 986 diseases.] [Any disease with 
+M244	Data sources {#sec:methods_data_sources}	434	100	parameter					ons to 986 diseases.] [Any disease with more than 100 associated genes or more than
+M245	Data sources {#sec:methods_data_sources}	434	75	parameter					 with more than 100 associated genes or more than 75 associated symptoms is droppe
+M246	Data sources {#sec:methods_data_sources}	435	17,294	data_track					Atlas (HPA) single-cell-type expression profiles (17,294 genes × 154 cell types) and P
+M247	Data sources {#sec:methods_data_sources}	435	154	data_track					gle-cell-type expression profiles (17,294 genes × 154 cell types) and Pfam protein-
+M248	Data sources {#sec:methods_data_sources}	435	18,506	data_track					 cell types) and Pfam protein-domain assignments (18,506 genes, 8,843 families), and d
+M249	Data sources {#sec:methods_data_sources}	435	8,843	data_track					nd Pfam protein-domain assignments (18,506 genes, 8,843 families), and disease identi
+M250	Data sources {#sec:methods_data_sources}	436	26.09	version				release dates	rs follow MONDO.] [Releases: OpenTargets Platform 26.09; MONDO 2026-06-02 (the sympto
+M251	Data sources {#sec:methods_data_sources}	436	2026	version				release dates	DO.] [Releases: OpenTargets Platform 26.09; MONDO 2026-06-02 (the symptom build used
+M252	Data sources {#sec:methods_data_sources}	436	06	version				release dates	[Releases: OpenTargets Platform 26.09; MONDO 2026-06-02 (the symptom build used MO
+M253	Data sources {#sec:methods_data_sources}	436	02	version				release dates	leases: OpenTargets Platform 26.09; MONDO 2026-06-02 (the symptom build used MONDO
+M254	Data sources {#sec:methods_data_sources}	436	2026	version				release dates	9; MONDO 2026-06-02 (the symptom build used MONDO 2026-09-01); HPO 2026-06-23; GO 20
+M255	Data sources {#sec:methods_data_sources}	436	09	version				release dates	NDO 2026-06-02 (the symptom build used MONDO 2026-09-01); HPO 2026-06-23; GO 2026-
+M256	Data sources {#sec:methods_data_sources}	436	01	version				release dates	 2026-06-02 (the symptom build used MONDO 2026-09-01); HPO 2026-06-23; GO 2026-06-
+M257	Data sources {#sec:methods_data_sources}	436	2026	version				release dates	02 (the symptom build used MONDO 2026-09-01); HPO 2026-06-23; GO 2026-06-15, with ge
+M258	Data sources {#sec:methods_data_sources}	436	06	version				release dates	he symptom build used MONDO 2026-09-01); HPO 2026-06-23; GO 2026-06-15, with gene 
+M259	Data sources {#sec:methods_data_sources}	436	23	version				release dates	symptom build used MONDO 2026-09-01); HPO 2026-06-23; GO 2026-06-15, with gene ann
+M260	Data sources {#sec:methods_data_sources}	436	2026	version				release dates	 build used MONDO 2026-09-01); HPO 2026-06-23; GO 2026-06-15, with gene annotations 
+M261	Data sources {#sec:methods_data_sources}	436	06	version				release dates	d used MONDO 2026-09-01); HPO 2026-06-23; GO 2026-06-15, with gene annotations fro
+M262	Data sources {#sec:methods_data_sources}	436	15,	version				release dates	sed MONDO 2026-09-01); HPO 2026-06-23; GO 2026-06-15, with gene annotations from NC
+M263	Data sources {#sec:methods_data_sources}	436	2026	version				release dates	15, with gene annotations from NCBI gene2go (July 2026); HPA v25; UniProtKB/Swiss-Pr
+M264	Data sources {#sec:methods_data_sources}	436	2026	version				release dates	ene2go (July 2026); HPA v25; UniProtKB/Swiss-Prot 2026_03 , from whose cross-referen
+M265	Data sources {#sec:methods_data_sources}	436	2023	version				release dates	rences the Pfam domains are taken; Orphanet JDBOR 2023-12-04 for rare-disease labels
+M266	Data sources {#sec:methods_data_sources}	436	12	version				release dates	s the Pfam domains are taken; Orphanet JDBOR 2023-12-04 for rare-disease labels an
+M267	Data sources {#sec:methods_data_sources}	436	04	version				release dates	he Pfam domains are taken; Orphanet JDBOR 2023-12-04 for rare-disease labels and 2
+M268	Data sources {#sec:methods_data_sources}	436	2026	version				release dates	anet JDBOR 2023-12-04 for rare-disease labels and 2026-06-23 for gene–disease associ
+M269	Data sources {#sec:methods_data_sources}	436	06	version				release dates	JDBOR 2023-12-04 for rare-disease labels and 2026-06-23 for gene–disease associati
+M270	Data sources {#sec:methods_data_sources}	436	23	version				release dates	OR 2023-12-04 for rare-disease labels and 2026-06-23 for gene–disease associations
+M271	Data sources {#sec:methods_data_sources}	436	2026	year					6-06-23 for gene–disease associations; OMIM (June 2026); GenCC (June 2026).]  #### D
+M272	Data sources {#sec:methods_data_sources}	436	2026	year					sease associations; OMIM (June 2026); GenCC (June 2026).]  #### Disease set {#sec:me
+M273	Disease set {#sec:methods_disease_set}	440	13,080	data_track					er applying these filters, we obtained a total of 13,080 candidate diseases.] [Coverag
+M274	Disease set {#sec:methods_disease_set}	441	69.0%	data_track					varies by evidence channel: the GO channel covers 69.0% of these diseases (81.7% of t
+M275	Disease set {#sec:methods_disease_set}	441	81.7%	data_track					l: the GO channel covers 69.0% of these diseases (81.7% of the 5,530,050 candidate pa
+M276	Disease set {#sec:methods_disease_set}	441	78.2%	data_track					low), the HPA cell-type expression channel covers 78.2% of diseases (91.4% of pairs),
+M277	Disease set {#sec:methods_disease_set}	441	91.4%	data_track					type expression channel covers 78.2% of diseases (91.4% of pairs), the Pfam domain ch
+M278	Disease set {#sec:methods_disease_set}	441	83.0%	data_track					 (91.4% of pairs), the Pfam domain channel covers 83.0% of diseases (93.6% of pairs),
+M279	Disease set {#sec:methods_disease_set}	441	93.6%	data_track					the Pfam domain channel covers 83.0% of diseases (93.6% of pairs), and the HPO phenot
+M280	Disease set {#sec:methods_disease_set}	441	78.8%	data_track					% of pairs), and the HPO phenotype channel covers 78.8% of diseases (34.8% of pairs).
+M281	Disease set {#sec:methods_disease_set}	441	34.8%	data_track					e HPO phenotype channel covers 78.8% of diseases (34.8% of pairs).] [Network construc
+M571	Disease set {#sec:methods_disease_set}	441	5,530,050	data_track				broad channel: candidate pairs (rows of zenodo/channels_raw/broad/pair_gene_distances.parquet)	nnel covers 69.0% of these diseases (81.7% of the 5,530,050 candidate pairs defined below
+M282	Disease set {#sec:methods_disease_set}	442	59	data_track					f pairs).] [Network construction (below) excludes 59 candidates (0.5%), namely dis
+M283	Disease set {#sec:methods_disease_set}	442	0.5%	data_track					work construction (below) excludes 59 candidates (0.5%), namely diseases with no can
+M284	Disease set {#sec:methods_disease_set}	442	24	parameter					iseases with no candidate pair in any channel and 24 diseases in 10 small componen
+M285	Disease set {#sec:methods_disease_set}	442	10	parameter					 candidate pair in any channel and 24 diseases in 10 small components that cannot 
+M286	Disease set {#sec:methods_disease_set}	443	13,021	computed	n_diseases	eq			 network.] [The DisAtlas network therefore covers 13,021 diseases, 10,489 rare and 2,5
+M287	Disease set {#sec:methods_disease_set}	443	10,489	computed	n_rare	eq			isAtlas network therefore covers 13,021 diseases, 10,489 rare and 2,532 common (19.4%)
+M288	Disease set {#sec:methods_disease_set}	443	2,532	computed	n_common	eq			therefore covers 13,021 diseases, 10,489 rare and 2,532 common (19.4%), and all 13,02
+M289	Disease set {#sec:methods_disease_set}	443	19.4%	computed	pct_common	eq			rs 13,021 diseases, 10,489 rare and 2,532 common (19.4%), and all 13,021 are embedded
+M292	Disease set {#sec:methods_disease_set}	443	13,021	computed	n_diseases	eq			es, 10,489 rare and 2,532 common (19.4%), and all 13,021 are embedded.] [A disease is 
+M290	Disease set {#sec:methods_disease_set}	445	5.5	version					onflicting signals were reviewed with Claude Opus 5.5 (Anthropic) using literature-
+M291	Disease set {#sec:methods_disease_set}	445	2026	year					Anthropic) using literature-lookup tools (October 2026).] [134 nodes (1.0%) carry re
+M293	Disease set {#sec:methods_disease_set}	446	134	data_track					) using literature-lookup tools (October 2026).] [134 nodes (1.0%) carry retired MO
+M294	Disease set {#sec:methods_disease_set}	446	1.0%	data_track					erature-lookup tools (October 2026).] [134 nodes (1.0%) carry retired MONDO identifi
+M295	Disease set {#sec:methods_disease_set}	446	61	data_track					134 nodes (1.0%) carry retired MONDO identifiers, 61 of which duplicate a current 
+M296	Evidence channels and distances {#sec:me	455	2%	parameter					weighted sum of ; GO terms annotated to more than 2% of the disease-associated gen
+M297	Evidence channels and distances {#sec:me	456	1	parameter					HPA) single-cell-type expression profiles, using (1 − cosine similarity)/2 betwee
+M298	Evidence channels and distances {#sec:me	456	2	parameter					xpression profiles, using (1 − cosine similarity)/2 between the profiles of two g
+M299	Evidence channels and distances {#sec:me	457	1	parameter					 - $E_3$: [Edges from Pfam protein domains, using 1 − Jaccard similarity between 
+M300	Evidence channels and distances {#sec:me	466	1	parameter					).] [In HPO every edge is an is\_a edge of length 1; in GO, is\_a and part\_of ed
+M301	Evidence channels and distances {#sec:me	466	1,	parameter					th 1; in GO, is\_a and part\_of edges have length 1, and in Biological Process the
+M302	Evidence channels and distances {#sec:me	466	2	parameter					iological Process the regulates edges have length 2.] [Term distances are divided
+M303	Evidence channels and distances {#sec:me	467	25	parameter					r $d^{O}_{\max}$, the largest term-term distance: 25 for HPO, and 23, 18 and 18 fo
+M304	Evidence channels and distances {#sec:me	467	23,	parameter					, the largest term-term distance: 25 for HPO, and 23, 18 and 18 for Biological Proc
+M305	Evidence channels and distances {#sec:me	467	18	parameter					e largest term-term distance: 25 for HPO, and 23, 18 and 18 for Biological Process
+M306	Evidence channels and distances {#sec:me	467	18	parameter					st term-term distance: 25 for HPO, and 23, 18 and 18 for Biological Process, Molec
+M307	Evidence channels and distances {#sec:me	475	2,	parameter					,B) = \big( m_\delta(A,B) + m_\delta(B,A) \big) / 2, \qquad m_\delta(A,B) = |A|^{-
+M308	Evidence channels and distances {#sec:me	475	-1	parameter					delta(B,A) \big) / 2, \qquad m_\delta(A,B) = |A|^{-1} \sum_{a\in A}\min_{b\in B}\d
+M309	Evidence channels and distances {#sec:me	480	1,	parameter					\, D^{X}(d_1,d_2), \qquad \lambda_{\mathrm{BP}} = 1,\; \lambda_{\mathrm{MF}} = 0.2
+M310	Evidence channels and distances {#sec:me	480	0.25	parameter					mbda_{\mathrm{BP}} = 1,\; \lambda_{\mathrm{MF}} = 0.25,\; \lambda_{\mathrm{CC}} = 0.
+M311	Evidence channels and distances {#sec:me	480	0.1	parameter					a_{\mathrm{MF}} = 0.25,\; \lambda_{\mathrm{CC}} = 0.1. $$ {#eq:go} [We applied a cu
+M312	Evidence channels and distances {#sec:me	481	0.2	parameter					m{CC}} = 0.1. $$ {#eq:go} [We applied a cutoff of 0.2 to the GO and HPO distances, 
+M313	Evidence channels and distances {#sec:me	481	0.2	parameter					:SI_threshold_sweep)); a GO or HPO distance above 0.2 is treated as missing, as is 
+M314	MechDist network {#sec:methods_network}	490	5,530,050	data_track					*Broad channel.** Candidate disease pairs are the 5,530,050 pairs whose GO or HPO distanc
+M315	MechDist network {#sec:methods_network}	490	0.2	parameter					530,050 pairs whose GO or HPO distance is at most 0.2.] [The four distances are com
+M316	MechDist network {#sec:methods_network}	492	1	parameter					 $e$ among the $N$ candidate pairs by similarity $1 - D^{k}(e)$, largest similari
+M317	MechDist network {#sec:methods_network}	494	1	parameter					 by their mean rank, smallest first,]  $$ R(e) = (1/4) \sum_{k} r_k(e). $$ {#eq:r
+M318	MechDist network {#sec:methods_network}	494	4	parameter					y their mean rank, smallest first,]  $$ R(e) = (1/4) \sum_{k} r_k(e). $$ {#eq:ran
+M319	MechDist network {#sec:methods_network}	496	42%	data_track					(e). $$ {#eq:rankmean}  [Exact ties in mean rank (42% of candidate pairs) are kept 
+M320	MechDist network {#sec:methods_network}	498	200,000	data_track					 channels compete only with each other.] [The top 200,000 pairs are taken from each cla
+M321	MechDist network {#sec:methods_network}	498	160,274	data_track					with and without HPA/Pfam evidence, which receive 160,274 and 39,726 slots respectively
+M322	MechDist network {#sec:methods_network}	498	39,726	data_track					hout HPA/Pfam evidence, which receive 160,274 and 39,726 slots respectively (the numbe
+M323	MechDist network {#sec:methods_network}	498	200,000	data_track					s respectively (the numbers of each among the top 200,000 such pairs ranked by CRank on
+M324	MechDist network {#sec:methods_network}	499	3	parameter					notations.] [Every disease additionally keeps its 3 best-ranked pairs within each
+M325	MechDist network {#sec:methods_network}	499	2	parameter					ponent are reconnected by adding, for each, up to 2 of its best-ranked candidate 
+M326	MechDist network {#sec:methods_network}	499	1,500,000	data_track					est of the network, searched first within the top 1,500,000 pairs and then over all candi
+M327	MechDist network {#sec:methods_network}	500	1	parameter					 such pair are removed.] [Broad edges have weight 1; the broad channel uses no pa
+M328	MechDist network {#sec:methods_network}	500	13,021	computed	n_diseases	eq			he broad channel uses no pathway database and has 13,021 diseases and 332,082 edges.] 
+M329	MechDist network {#sec:methods_network}	500	332,082	data_track					s no pathway database and has 13,021 diseases and 332,082 edges.]  [**Specific channel.
+M330	MechDist network {#sec:methods_network}	503	0.05	parameter					hypergeometric test, false-discovery rate at most 0.05, at least two disease genes, 
+M331	MechDist network {#sec:methods_network}	503	5	parameter					ost 0.05, at least two disease genes, pathways of 5 to 500 genes), pathways, proc
+M332	MechDist network {#sec:methods_network}	503	500	parameter					.05, at least two disease genes, pathways of 5 to 500 genes), pathways, processes a
+M333	MechDist network {#sec:methods_network}	504	1	parameter					weight $\varepsilon_{dm} = n_{\mathrm{fam}} + \ln(1 + n_{\mathrm{doc}})$, where $
+M334	MechDist network {#sec:methods_network}	504	422,804	data_track					d to fewer than two diseases are dropped, leaving 422,804 links between 5,198 diseases 
+M335	MechDist network {#sec:methods_network}	504	5,198	data_track					seases are dropped, leaving 422,804 links between 5,198 diseases and 6,746 modules.] 
+M336	MechDist network {#sec:methods_network}	504	6,746	data_track					 leaving 422,804 links between 5,198 diseases and 6,746 modules.] [The bipartite grap
+M337	MechDist network {#sec:methods_network}	507	1	parameter					,]  $$ x_{dm} = \sqrt{\frac{\varepsilon_{dm}}{\ln(1 + n_m)\, L_d}}, \qquad w^{\ma
+M338	MechDist network {#sec:methods_network}	510	50	data_track					 Adamic–Adar weighting .] [Each disease keeps its 50 highest-weight edges, and the
+M339	MechDist network {#sec:methods_network}	510	191,298	data_track					d the union of these lists is symmetrized, giving 191,298 edges; the 279 edges that rea
+M340	MechDist network {#sec:methods_network}	510	279	data_track					e lists is symmetrized, giving 191,298 edges; the 279 edges that reach a disease ou
+M341	MechDist network {#sec:methods_network}	510	191,019	data_track					se outside the broad channel are dropped, leaving 191,019 specific edges on 5,194 disea
+M342	MechDist network {#sec:methods_network}	510	5,194	data_track					el are dropped, leaving 191,019 specific edges on 5,194 diseases.]  [**Combined graph
+M343	MechDist network {#sec:methods_network}	512	499,359	data_track					nels share their disease set, and their union has 499,359 edges.] [The 1,204 disease pa
+M344	MechDist network {#sec:methods_network}	513	1,204	data_track					ase set, and their union has 499,359 edges.] [The 1,204 disease pairs of the FDA repu
+M345	MechDist network {#sec:methods_network}	513	498,155	data_track					pplementary [](#sec:SI_fda_repurposing)), leaving 498,155 edges on 13,021 diseases: 331
+M346	MechDist network {#sec:methods_network}	513	13,021	computed	n_diseases	eq			ec:SI_fda_repurposing)), leaving 498,155 edges on 13,021 diseases: 331,234 broad, 190,
+M347	MechDist network {#sec:methods_network}	513	331,234	data_track					sing)), leaving 498,155 edges on 13,021 diseases: 331,234 broad, 190,007 specific and 2
+M348	MechDist network {#sec:methods_network}	513	190,007	data_track					 498,155 edges on 13,021 diseases: 331,234 broad, 190,007 specific and 23,086 in both.]
+M349	MechDist network {#sec:methods_network}	513	23,086	data_track					021 diseases: 331,234 broad, 190,007 specific and 23,086 in both.] [The random-walk we
+M350	MechDist network {#sec:methods_network}	516	1	parameter					dom-walk weight of an edge is]  $$ w(e) = \mathbb{1}_{\mathrm{broad}}(e) + \alpha
+M351	MechDist network {#sec:methods_network}	516	1	parameter					pec}}(e)}{\overline{w^{\mathrm{spec}}}}\, \mathbb{1}_{\mathrm{spec}}(e), \qquad \
+M352	MechDist network {#sec:methods_network}	516	2,	parameter					\, \mathbb{1}_{\mathrm{spec}}(e), \qquad \alpha = 2, $$ {#eq:walk_weight}  [where 
+M353	MechDist network {#sec:methods_network}	518	33	data_track					s; in addition, the specific edges of each of the 33 mechanism classes (such as JA
+M354	MechDist network {#sec:methods_network}	518	20,049	data_track					ystem class is raised by a factor of at most ten (20,049 edges raised).] [Before any l
+M355	MechDist network {#sec:methods_network}	519	27,646	data_track					y edge that joins a pair in the full IxIDN⁺ list (27,646 pairs, restricted to IxIDN li
+M356	MechDist network {#sec:methods_network}	519	200,801	data_track					ases map to one of them) or the full IxIDN⁻ list (200,801 pairs) is removed, not only t
+M357	MechDist network {#sec:methods_network}	519	4,364	computed	bench_pairs	eq			1 pairs) is removed, not only the edges among the 4,364 IxIDN-Matched pairs, which ar
+M572	MechDist network {#sec:methods_network}	519	13,021	computed	n_diseases	eq			IxIDN links whose two diseases are both among the 13,021 DisAtlas diseases after mappi
+M573	MechDist network {#sec:methods_network}	519	989	computed	ixidn_diseases_in_disatlas	eq			 13,021 DisAtlas diseases after mapping to MONDO; 989 of the 1,379 IxIDN diseases m
+M574	MechDist network {#sec:methods_network}	519	1,379	computed	ixidn_diseases	eq			Atlas diseases after mapping to MONDO; 989 of the 1,379 IxIDN diseases map to one of 
+M358	MechDist network {#sec:methods_network}	520	10,052	data_track					es no information about its label.] [This removes 10,052 edges (6,393 IxIDN⁺ and 3,659
+M359	MechDist network {#sec:methods_network}	520	6,393	data_track					ion about its label.] [This removes 10,052 edges (6,393 IxIDN⁺ and 3,659 IxIDN⁻).] [T
+M360	MechDist network {#sec:methods_network}	520	3,659	data_track					el.] [This removes 10,052 edges (6,393 IxIDN⁺ and 3,659 IxIDN⁻).] [The training graph
+M361	MechDist network {#sec:methods_network}	521	13,021	computed	n_diseases	eq			c}} - E_{\mathrm{FDA}} - E_{\mathrm{IxIDN}})$ has 13,021 diseases and 488,103 weighted
+M362	MechDist network {#sec:methods_network}	521	488,103	data_track					}} - E_{\mathrm{IxIDN}})$ has 13,021 diseases and 488,103 weighted edges, and no diseas
+M363	MechDist network {#sec:methods_network}	524	228,447	data_track					⁺, IxIDN⁻ or FDA control pair.] [In addition, all 228,447 pairs of the IxIDN⁺ and IxIDN
+M364	MechDist network {#sec:methods_network}	524	0	parameter					ed for overlap with them before training (overlap 0).]  #### DisAtlas embeddings 
+M365	DisAtlas embeddings {#sec:methods_embedd	530	32	computed	embedding_dim	eq			ch Geometric).] [Each disease is represented by a 32-dimensional vector.] [Walks h
+M366	DisAtlas embeddings {#sec:methods_embedd	531	20,	parameter					d by a 32-dimensional vector.] [Walks have length 20, with 20 walks per start node 
+M367	DisAtlas embeddings {#sec:methods_embedd	531	20	parameter					-dimensional vector.] [Walks have length 20, with 20 walks per start node in each 
+M368	DisAtlas embeddings {#sec:methods_embedd	531	2	parameter					per start node in each epoch, a context window of 2 (each node paired with the 2 
+M369	DisAtlas embeddings {#sec:methods_embedd	531	2	parameter					 a context window of 2 (each node paired with the 2 nodes that follow it in a wal
+M370	DisAtlas embeddings {#sec:methods_embedd	531	1	parameter					 that follow it in a walk), return parameter $p = 1$ and in-out parameter $q = 0.
+M371	DisAtlas embeddings {#sec:methods_embedd	531	0.5	parameter					eturn parameter $p = 1$ and in-out parameter $q = 0.5$.] [For each positive context
+M372	DisAtlas embeddings {#sec:methods_embedd	532	5	parameter					eter $q = 0.5$.] [For each positive context pair, 5 negative nodes are drawn with
+M373	DisAtlas embeddings {#sec:methods_embedd	532	-0.5	parameter					e drawn with probability proportional to degree$^{-0.5}$ (with replacement), so that
+M374	DisAtlas embeddings {#sec:methods_embedd	533	10	parameter					s trained with the Adam optimizer (learning rate $10^{-2}$, $\beta_1 = 0.9$, $\bet
+M375	DisAtlas embeddings {#sec:methods_embedd	533	-2	parameter					ained with the Adam optimizer (learning rate $10^{-2}$, $\beta_1 = 0.9$, $\beta_2 
+M376	DisAtlas embeddings {#sec:methods_embedd	533	0.9	parameter					am optimizer (learning rate $10^{-2}$, $\beta_1 = 0.9$, $\beta_2 = 0.999$) for 25 e
+M377	DisAtlas embeddings {#sec:methods_embedd	533	0.999	parameter					rning rate $10^{-2}$, $\beta_1 = 0.9$, $\beta_2 = 0.999$) for 25 epochs with 128 star
+M378	DisAtlas embeddings {#sec:methods_embedd	533	25	parameter					10^{-2}$, $\beta_1 = 0.9$, $\beta_2 = 0.999$) for 25 epochs with 128 start nodes p
+M379	DisAtlas embeddings {#sec:methods_embedd	533	128	parameter					a_1 = 0.9$, $\beta_2 = 0.999$) for 25 epochs with 128 start nodes per step, and eac
+M380	DisAtlas embeddings {#sec:methods_embedd	534	4707	parameter					] [Five embeddings are trained, with random seeds 4707 to 4711, and each is paired w
+M381	DisAtlas embeddings {#sec:methods_embedd	534	4711,	parameter					embeddings are trained, with random seeds 4707 to 4711, and each is paired with its o
+M382	DisAtlas decoder {#sec:methods_decoder}	539	32	computed	embedding_dim	eq			oder ([Figure @fig:upna_ddal]a), in which the two 32-dimensional disease vectors a
+M383	DisAtlas decoder {#sec:methods_decoder}	539	128	computed	decoder_hidden	eq			-wise (Hadamard) product, passed through a single 128-unit ReLU hidden layer, a dro
+M384	DisAtlas decoder {#sec:methods_decoder}	539	0.3	parameter					128-unit ReLU hidden layer, a dropout layer (rate 0.3) and a sigmoid output unit , 
+M385	DisAtlas decoder {#sec:methods_decoder}	539	4,353	computed	decoder_params	eq			e 0.3) and a sigmoid output unit , for a total of 4,353 parameters.] [Because the Had
+M386	DisAtlas decoder {#sec:methods_decoder}	542	488,103	data_track					n and biases with zeros.] [Positive pairs are the 488,103 edges of $G_{\mathrm{MechDist
+M387	DisAtlas decoder {#sec:methods_decoder}	543	10	parameter					s trained with the Adam optimizer (learning rate $10^{-3}$, weight decay $10^{-4}$
+M388	DisAtlas decoder {#sec:methods_decoder}	543	-3	parameter					ained with the Adam optimizer (learning rate $10^{-3}$, weight decay $10^{-4}$) on
+M389	DisAtlas decoder {#sec:methods_decoder}	543	10	parameter					optimizer (learning rate $10^{-3}$, weight decay $10^{-4}$) on unweighted binary c
+M390	DisAtlas decoder {#sec:methods_decoder}	543	-4	parameter					mizer (learning rate $10^{-3}$, weight decay $10^{-4}$) on unweighted binary cross
+M391	DisAtlas decoder {#sec:methods_decoder}	543	1,024	parameter					ighted binary cross-entropy, with a batch size of 1,024 and up to 100 epochs.] [Train
+M392	DisAtlas decoder {#sec:methods_decoder}	543	100	parameter					oss-entropy, with a batch size of 1,024 and up to 100 epochs.] [Training uses early
+M393	DisAtlas decoder {#sec:methods_decoder}	544	15%	parameter					 on a disease-disjoint validation split, in which 15% of diseases are assigned to v
+M394	DisAtlas decoder {#sec:methods_decoder}	544	8	parameter					 stops once validation AUROC has not improved for 8 epochs, and the weights from 
+M395	IxIDN-Matched benchmark {#sec:methods_ix	561	1	parameter					ach drug trialed for both diseases of a pair adds 1/d to the pair's score, where 
+M396	IxIDN-Matched benchmark {#sec:methods_ix	561	99.9	parameter					ses the drug was trialed for, and drugs above the 99.9th percentile of d do not cont
+M397	IxIDN-Matched benchmark {#sec:methods_ix	562	40	data_track					 of d do not contribute.] [Each disease keeps its 40 highest-scoring partners amon
+M398	IxIDN-Matched benchmark {#sec:methods_ix	562	100	parameter					o drugs, provided it is also among that partner's 100 highest-scoring partners.] [B
+M399	IxIDN-Matched benchmark {#sec:methods_ix	563	100	parameter					 one drug is also kept (up to each rare disease's 100 highest-scoring rare partners
+M400	IxIDN-Matched benchmark {#sec:methods_ix	564	1,379	computed	ixidn_diseases	eq			h diseases in Orphanet.] [The resulting IxIDN has 1,379 diseases and 43,112 links: 8,
+M401	IxIDN-Matched benchmark {#sec:methods_ix	564	43,112	computed	ixidn_links	eq			net.] [The resulting IxIDN has 1,379 diseases and 43,112 links: 8,900 kept by the top-
+M402	IxIDN-Matched benchmark {#sec:methods_ix	564	8,900	data_track					ulting IxIDN has 1,379 diseases and 43,112 links: 8,900 kept by the top-40 rule, 27,1
+M403	IxIDN-Matched benchmark {#sec:methods_ix	564	40	data_track					 diseases and 43,112 links: 8,900 kept by the top-40 rule, 27,185 only by the rare
+M404	IxIDN-Matched benchmark {#sec:methods_ix	564	27,185	data_track					 and 43,112 links: 8,900 kept by the top-40 rule, 27,185 only by the rare-disease rule
+M405	IxIDN-Matched benchmark {#sec:methods_ix	564	7,027	data_track					40 rule, 27,185 only by the rare-disease rule and 7,027 only by the Orphanet rule ([F
+M409	IxIDN-Matched benchmark {#sec:methods_ix	568	3	parameter					d a negative pair (IxIDN⁻) when they are at least 3 steps apart in IxIDN, so that
+M410	IxIDN-Matched benchmark {#sec:methods_ix	569	985	computed	universe_diseases	eq			ry, with both diseases of every pair drawn from a 985-disease evaluation universe (
+M411	IxIDN-Matched benchmark {#sec:methods_ix	570	0.542	computed	shortcut_auroc_max	eq			own separates the two classes with an AUROC above 0.542 ([Figure @fig:ixidn_benchmark
+M412	IxIDN-Matched benchmark {#sec:methods_ix	571	5	version					ed_shortcuts)).] [A language model, Claude Sonnet 5 (Anthropic), run on 6 October
+M413	IxIDN-Matched benchmark {#sec:methods_ix	571	6	date					nguage model, Claude Sonnet 5 (Anthropic), run on 6 October 2026, judged the shar
+M414	IxIDN-Matched benchmark {#sec:methods_ix	571	2026,	date					el, Claude Sonnet 5 (Anthropic), run on 6 October 2026, judged the shared-drug eviden
+M415	IxIDN-Matched benchmark {#sec:methods_ix	571	4,302	computed	matched_candidates	eq			, judged the shared-drug evidence for each of the 4,302 candidate positives with a ma
+M416	IxIDN-Matched benchmark {#sec:methods_ix	571	2,182	computed	bench_pos	eq			ed trial drugs and their highest trial phase; the 2,182 judged strong (1,285) or plau
+M417	IxIDN-Matched benchmark {#sec:methods_ix	571	1,285	computed	verdict_strong	eq			eir highest trial phase; the 2,182 judged strong (1,285) or plausible (897) were kept
+M418	IxIDN-Matched benchmark {#sec:methods_ix	571	897	computed	verdict_plausible	eq			se; the 2,182 judged strong (1,285) or plausible (897) were kept, giving 2,182 posi
+M419	IxIDN-Matched benchmark {#sec:methods_ix	571	2,182	computed	bench_pos	eq			rong (1,285) or plausible (897) were kept, giving 2,182 positive and 2,182 negative p
+M420	IxIDN-Matched benchmark {#sec:methods_ix	571	2,182	computed	bench_neg	eq			usible (897) were kept, giving 2,182 positive and 2,182 negative pairs (4,364 pairs o
+M421	IxIDN-Matched benchmark {#sec:methods_ix	571	4,364	computed	bench_pairs	eq			, giving 2,182 positive and 2,182 negative pairs (4,364 pairs over 938 diseases, 179 
+M422	IxIDN-Matched benchmark {#sec:methods_ix	571	938	computed	bench_diseases	eq			sitive and 2,182 negative pairs (4,364 pairs over 938 diseases, 179 of them common,
+M423	IxIDN-Matched benchmark {#sec:methods_ix	571	179	computed	bench_common	eq			82 negative pairs (4,364 pairs over 938 diseases, 179 of them common, 19.1%).] [A r
+M424	IxIDN-Matched benchmark {#sec:methods_ix	571	19.1%	computed	bench_pct_common	eq			,364 pairs over 938 diseases, 179 of them common, 19.1%).] [A repeat language-model c
+M425	IxIDN-Matched benchmark {#sec:methods_ix	572	944	si_track				IxIDN-Matched QC (SI)	ommon, 19.1%).] [A repeat language-model check of 944 of these pairs agreed with th
+M426	IxIDN-Matched benchmark {#sec:methods_ix	572	84.7%	si_track				IxIDN-Matched QC (SI)	reed with the first on the keep/drop decision for 84.7% of them.] [Because a language
+M430	IxIDN-Matched benchmark {#sec:methods_ix	575	477	computed	test_half_diseases	eq			y when both of its diseases are in the test half (477 of the 938 diseases).] [1,094
+M431	IxIDN-Matched benchmark {#sec:methods_ix	575	938	computed	bench_diseases	eq			 of its diseases are in the test half (477 of the 938 diseases).] [1,094 of these p
+M427	IxIDN-Matched benchmark {#sec:methods_ix	576	1,094	computed	test_pairs	eq			are in the test half (477 of the 938 diseases).] [1,094 of these pairs (491 positive,
+M428	IxIDN-Matched benchmark {#sec:methods_ix	576	491	computed	test_pos	eq			477 of the 938 diseases).] [1,094 of these pairs (491 positive, 603 negative) form 
+M429	IxIDN-Matched benchmark {#sec:methods_ix	576	603	computed	test_neg	eq			 diseases).] [1,094 of these pairs (491 positive, 603 negative) form the test split
+M432	Evaluation settings {#sec:methods_evalua	587	1	notation					n both, no benchmark pair is used at any step.]  [1. **Full model (released DisAt
+M433	Evaluation settings {#sec:methods_evalua	588	2	notation					twork and only the benchmark pairs are removed.] [2. **Benchmark diseases held ou
+M434	Evaluation settings {#sec:methods_evalua	588	938	computed	bench_diseases	eq			eases held out of training (node-disjoint)**: the 938 benchmark diseases are split 
+M435	Evaluation settings {#sec:methods_evalua	591	0.2	parameter					ith training diseases (GO or HPO distance at most 0.2, benchmark pairs excluded), o
+M436	Evaluation settings {#sec:methods_evalua	593	3,505	data_track					en its endpoints are held out in different folds (3,505 of the 4,364 pairs; 859 are s
+M437	Evaluation settings {#sec:methods_evalua	593	4,364	computed	bench_pairs	eq			nts are held out in different folds (3,505 of the 4,364 pairs; 859 are scored in one 
+M438	Evaluation settings {#sec:methods_evalua	593	859	data_track					out in different folds (3,505 of the 4,364 pairs; 859 are scored in one fold).] [Se
+M547	Evaluation settings {#sec:methods_evalua	594	0018510	identifier					old).] [Seven pairs, five of them involving MONDO:0018510 (small intestine neuroendocri
+M548	Evaluation settings {#sec:methods_evalua	594	4,357	computed	nd_scored	eq			is setting and are left out of both arms, leaving 4,357 pairs (1,093 on the test spli
+M549	Evaluation settings {#sec:methods_evalua	594	1,093	computed	nd_scored_test	eq			d are left out of both arms, leaving 4,357 pairs (1,093 on the test split).] [Sensiti
+M439	Evaluation settings {#sec:methods_evalua	595	10,	notation					 (1,093 on the test split).] [Sensitivity to $k$ (10, 25 and 50) is reported in Sup
+M440	Evaluation settings {#sec:methods_evalua	595	25	notation					093 on the test split).] [Sensitivity to $k$ (10, 25 and 50) is reported in Supple
+M441	Evaluation settings {#sec:methods_evalua	595	50	notation					the test split).] [Sensitivity to $k$ (10, 25 and 50) is reported in Supplementary
+M442	Comparator systems {#sec:methods_compara	603	1	notation					----------------------------------------------| | 1 | [DisAtlas] | [DisAtlas (ben
+M443	Comparator systems {#sec:methods_compara	604	2	notation					evaluated on the blinded IxIDN-Matched pairs] | | 2 | [Large language model] | [C
+M444	Comparator systems {#sec:methods_compara	604	5.5	version					| 2 | [Large language model] | [Claude Chat (Opus 5.5, 5 runs), Gemini Pro 3.1 (3 r
+M445	Comparator systems {#sec:methods_compara	604	5	computed	runs|claude_chat	eq			 [Large language model] | [Claude Chat (Opus 5.5, 5 runs), Gemini Pro 3.1 (3 runs
+M446	Comparator systems {#sec:methods_compara	604	3.1	notation					el] | [Claude Chat (Opus 5.5, 5 runs), Gemini Pro 3.1 (3 runs)] | [Structured promp
+M447	Comparator systems {#sec:methods_compara	604	3	computed	runs|gemini	eq			 [Claude Chat (Opus 5.5, 5 runs), Gemini Pro 3.1 (3 runs)] | [Structured prompt w
+M448	Comparator systems {#sec:methods_compara	605	3	notation					 the blinded pair file; mean score over runs] | | 3 | [Agentic AI system] | [Clau
+M449	Comparator systems {#sec:methods_compara	605	5.5	version					ic AI system] | [Claude Sci (Claude Science, Opus 5.5, 5 runs); Phylo Biomni] | [Me
+M450	Comparator systems {#sec:methods_compara	605	5	computed	runs|claude_chat	eq			 system] | [Claude Sci (Claude Science, Opus 5.5, 5 runs); Phylo Biomni] | [Mean 
+M451	Comparator systems {#sec:methods_compara	606	4	notation					ylo Biomni] | [Mean score over runs or seeds] | | 4 | [Knowledge-graph foundation
+M452	Comparator systems {#sec:methods_compara	606	213	computed	unscored|txgnn	eq			r; not retrained on MechDist or on IxIDN-Matched; 213 unmapped pairs ranked last] |
+M453	Comparator systems {#sec:methods_compara	611	2	notation					rom the training corpus. The purpose of Protocols 2 to 4 is to test whether curre
+M454	Comparator systems {#sec:methods_compara	611	4	notation					he training corpus. The purpose of Protocols 2 to 4 is to test whether current ge
+M466	Comparator systems {#sec:methods_compara	611	4	notation					he training corpus. The purpose of Protocols 2 to 4 is to test whether current ge
+M575	Comparator systems {#sec:methods_compara	611	2	notation					rom the training corpus. The purpose of Protocols 2 to 4 is to test whether curre
+M455	Comparator systems {#sec:methods_compara	612	2	notation					dedicated disease-representation layer. [Protocol 2 comprises general-purpose lar
+M456	Comparator systems {#sec:methods_compara	614	2	notation					 returned a score for every pair.] [Each Protocol 2 and Protocol 3 system was pro
+M457	Comparator systems {#sec:methods_compara	614	3	notation					otocol 2 and Protocol 3 system was provided the 4,364 blinded IxIDN-Matched bench
+M458	Comparator systems {#sec:methods_compara	614	4,364	computed	bench_pairs	eq			Protocol 2 and Protocol 3 system was provided the 4,364 blinded IxIDN-Matched benchma
+M459	Comparator systems {#sec:methods_compara	614	3.1	version					de Sci, and three independent runs for Gemini Pro 3.1; each pair's score is the mea
+M668	Comparator systems {#sec:methods_compara	614	3	notation				protocol number	re for every pair.] [Each Protocol 2 and Protocol 3 system was pr
+M460	Comparator systems {#sec:methods_compara	619	2	notation					 the exact prompt given verbatim to [the Protocol 2 systems and to Claude Sci], t
+M461	Comparator systems {#sec:methods_compara	621	0	notation					, d2), which returns an association score between 0 and 1 for two diseases to qua
+M462	Comparator systems {#sec:methods_compara	621	1	notation					 which returns an association score between 0 and 1 for two diseases to quantify 
+M463	Comparator systems {#sec:methods_compara	627	3	notation					"om any other sessions in my account""*]  [Protocol 3 comprises agentic AI systems,"
+M464	Comparator systems {#sec:methods_compara	628	5.5	version					heir scores.] [Claude Sci is Claude Science (Opus 5.5), and Phylo Biomni is the Bio
+M465	Comparator systems {#sec:methods_compara	628	291	computed	unscored|phylo	eq			 pair score is the mean over five seeds and whose 291 unscored pairs are ranked las
+M467	Comparator systems {#sec:methods_compara	629	4	notation					se 291 unscored pairs are ranked last.] [Protocol 4 is TxGNN , scored with its pu
+M468	Comparator systems {#sec:methods_compara	629	213	computed	unscored|txgnn	eq			g nodes; DistMult decoder) and not retrained; its 213 pairs that the checkpoint can
+M470	Event-time drug-centered evaluation {#se	636	1	parameter					graph built only from evidence available up to $y-1$.] [Disease–gene, disease–phe
+M576	Event-time drug-centered evaluation {#se	638	2008	year					notations.] [In a post hoc check that rebuilt the 2008 and 2016 slices with Gene Ont
+M577	Event-time drug-centered evaluation {#se	638	2016	year					.] [In a post hoc check that rebuilt the 2008 and 2016 slices with Gene Ontology rel
+M578	Event-time drug-centered evaluation {#se	638	1	notation				day of year	and 2016 slices with Gene Ontology releases dated 1 January of the decision year,
+M579	Event-time drug-centered evaluation {#se	638	95%	notation				interval level	centile advantage over weighted Adamic–Adar whose 95% interval excludes zero in bot
+M471	Event-time drug-centered evaluation {#se	639	1	parameter					odel in which the drug had not been trialed by $y-1$, with no limit on their dist
+M580	Event-time drug-centered evaluation {#se	642	0	notation					ates of its comparison set (defined below), where 0 means ranked first, so a lowe
+M669	Event-time drug-centered evaluation {#se	642	1	notation					n each decision year, so that odds ratios are per 1 SD, and popul
+M670	Event-time drug-centered evaluation {#se	642	1	notation					ase by $y-1$, enters as a natural spline of $\log(1+\text{popular
+M671	Event-time drug-centered evaluation {#se	642	95%	notation					ies within a stratum use the Efron approximation, 95% intervals u
+M672	Event-time drug-centered evaluation {#se	642	2000	year					ch stratum.] [This analysis covers decision years 2000 to 2021 an
+M673	Event-time drug-centered evaluation {#se	642	2021	year					um.] [This analysis covers decision years 2000 to 2021 and was ad
+M472	Event-time drug-centered evaluation {#se	643	10%	parameter				top/bottom 10% definition	rugs whose best-ranked new trial falls in the top 10% of the ranking.] [The pre-reg
+M473	Event-time drug-centered evaluation {#se	644	1	parameter					 the number of drugs trialed in the disease by $y-1$ (popularity-matched), and ca
+M474	Event-time drug-centered evaluation {#se	646	2,000	parameter					ntervals come from a paired bootstrap over drugs (2,000 replicates per pool), in whic
+M475	Event-time drug-centered evaluation {#se	647	95%	notation				interval level	 from all years.] [The decision rule required the 95% interval of the difference be
+M476	Clustering and map layout {#sec:methods_	653	1	parameter					1-p)_i$, computed with FasterPAM on the distance $1-p_{ij}$, the same score the b
+M674	Clustering and map layout {#sec:methods_	653	55	computed	n_clusters	eq			), and the label is $\ell_i = \text{k-medoids}_{K=55}(1-p)_i$, co
+M675	Clustering and map layout {#sec:methods_	653	1	notation					nd the label is $\ell_i = \text{k-medoids}_{K=55}(1-p)_i$, comput
+M676	Clustering and map layout {#sec:methods_	654	1	notation					.] [*Map position.* The map distance is $d_{ij} = 1 - \frac{1}{5}
+M677	Clustering and map layout {#sec:methods_	654	15	parameter				Isomap neighbours	nd the position is $(x_i, y_i) = \text{Isomap}_{k=15}(d)_i$, from
+M477	Clustering and map layout {#sec:methods_	656	10	parameter					ir or benchmark pair involved.] [K was swept from 10 to 80 in steps of 5 over 100 
+M478	Clustering and map layout {#sec:methods_	656	80	parameter					benchmark pair involved.] [K was swept from 10 to 80 in steps of 5 over 100 re-clu
+M479	Clustering and map layout {#sec:methods_	656	5	parameter					involved.] [K was swept from 10 to 80 in steps of 5 over 100 re-clusterings of ra
+M480	Clustering and map layout {#sec:methods_	656	100	parameter					d.] [K was swept from 10 to 80 in steps of 5 over 100 re-clusterings of random 80% 
+M481	Clustering and map layout {#sec:methods_	656	80%	parameter					0 in steps of 5 over 100 re-clusterings of random 80% subsamples of diseases, with 
+M482	Clustering and map layout {#sec:methods_	656	55	computed	n_clusters	eq			ndard deviation of the best mean, which gives K = 55 (Supplementary [](#sec:SI_clu
+M483	Clustering and map layout {#sec:methods_	657	17	computed	n_controls	eq			idation_k)).] [The clustering was checked against 17 control disease pairs (Supple
+M485	Statistics {#sec:methods_statistics}	662	95%	notation				interval level	ng seeds, and sampling uncertainty as a bootstrap 95% interval.] [Because benchmark
+M486	Statistics {#sec:methods_statistics}	664	95%	notation				interval level	(pairs with an undrawn disease drop out), and the 95% interval is the 2.5th–97.5th 
+M487	Statistics {#sec:methods_statistics}	664	2.5	notation					wn disease drop out), and the 95% interval is the 2.5th–97.5th percentile of the we
+M488	Statistics {#sec:methods_statistics}	664	97.5	notation					ease drop out), and the 95% interval is the 2.5th–97.5th percentile of the weighted 
+M581	Statistics {#sec:methods_statistics}	665	55	computed	n_clusters	eq			r bootstrap, used throughout, is unrelated to the 55 k-medoids disease clusters.] 
+M489	Statistics {#sec:methods_statistics}	666	55	computed	n_clusters	eq			 stricter sensitivity analysis that resamples the 55 k-medoids clusters instead is
+M497	Statistics {#sec:methods_statistics}	667	2,000	parameter					ncertainty).] [The disease-cluster bootstrap (B = 2,000) gives the intervals for the 
+M498	Statistics {#sec:methods_statistics}	667	10%	parameter					ives (equal to R-precision), precision in the top 10% and negative predictive value
+M499	Statistics {#sec:methods_statistics}	667	10%	parameter					p 10% and negative predictive value in the bottom 10%, 436 pairs each; ties at a cu
+M500	Statistics {#sec:methods_statistics}	667	436	computed	topk	eq			 and negative predictive value in the bottom 10%, 436 pairs each; ties at a cut-off
+M501	Statistics {#sec:methods_statistics}	667	1	notation					 the same disease-cluster scheme with one Poisson(1) weight per disease (B = 2,00
+M502	Statistics {#sec:methods_statistics}	667	2,000	parameter					cheme with one Poisson(1) weight per disease (B = 2,000).]  [For the component ablati
+M503	Statistics {#sec:methods_statistics}	672	95%	notation				interval level	 difference is reported with its paired bootstrap 95% interval.] [Differences are o
+M505	Statistics {#sec:methods_statistics}	674	2	notation					 the separation statistic Δ is Cliff's delta, Δ = 2·AUROC − 1.] [Cluster coherenc
+M506	Statistics {#sec:methods_statistics}	674	1	notation					ation statistic Δ is Cliff's delta, Δ = 2·AUROC − 1.] [Cluster coherence against 
+M507	Statistics {#sec:methods_statistics}	675	200	parameter					nst a size-preserving label-permutation null with 200 permutations, with $p = (1 + 
+M508	Statistics {#sec:methods_statistics}	675	1	notation					ermutation null with 200 permutations, with $p = (1 + \#\{\text{null} \geq \text{
+M509	Statistics {#sec:methods_statistics}	675	1	notation					p = (1 + \#\{\text{null} \geq \text{observed}\})/(1 + 200)$, so the smallest atta
+M510	Statistics {#sec:methods_statistics}	675	200	parameter					(1 + \#\{\text{null} \geq \text{observed}\})/(1 + 200)$, so the smallest attainable
+M511	Statistics {#sec:methods_statistics}	675	0.005	notation					d}\})/(1 + 200)$, so the smallest attainable p is 0.005.] [No correction for multiple
+M512	Software and hardware {#sec:methods_soft	681	3.13	version					ods_software}  [The pipeline is written in Python 3.13.1 with numpy 2.3.1, pandas 2.
+M513	Software and hardware {#sec:methods_soft	681	2.3	version					e pipeline is written in Python 3.13.1 with numpy 2.3.1, pandas 2.3.0, scipy 1.16.0
+M514	Software and hardware {#sec:methods_soft	681	2.3	version					written in Python 3.13.1 with numpy 2.3.1, pandas 2.3.0, scipy 1.16.0, networkx 3.5
+M515	Software and hardware {#sec:methods_soft	681	1.16	version					thon 3.13.1 with numpy 2.3.1, pandas 2.3.0, scipy 1.16.0, networkx 3.5, PyTorch 2.9.
+M516	Software and hardware {#sec:methods_soft	681	3.5	version					numpy 2.3.1, pandas 2.3.0, scipy 1.16.0, networkx 3.5, PyTorch 2.9.1, PyTorch Geome
+M517	Software and hardware {#sec:methods_soft	681	2.9	version					pandas 2.3.0, scipy 1.16.0, networkx 3.5, PyTorch 2.9.1, PyTorch Geometric 2.7.0 (s
+M518	Software and hardware {#sec:methods_soft	681	2.7	version					0, networkx 3.5, PyTorch 2.9.1, PyTorch Geometric 2.7.0 (skip-gram training), numba
+M519	Software and hardware {#sec:methods_soft	681	0.62	version					Torch Geometric 2.7.0 (skip-gram training), numba 0.62.0 (weighted second-order rand
+M520	Software and hardware {#sec:methods_soft	681	1.7	version					weighted second-order random walks), scikit-learn 1.7.0 (AUROC, average precision, 
+M521	Software and hardware {#sec:methods_soft	681	0.5	version					precision, adjusted mutual information), kmedoids 0.5.5 (FasterPAM) and safetensors
+M522	Software and hardware {#sec:methods_soft	681	0.8	version					tion), kmedoids 0.5.5 (FasterPAM) and safetensors 0.8.0; these are the versions rec
+M523	Software and hardware {#sec:methods_soft	682	8	version					odel.] [All models were trained on CPU only, with 8 PyTorch threads, on a compute
+M524	Software and hardware {#sec:methods_soft	682	64	version					ith 8 PyTorch threads, on a compute node with two 64-core AMD EPYC 7763 processors
+M525	Software and hardware {#sec:methods_soft	682	7763	version					eads, on a compute node with two 64-core AMD EPYC 7763 processors and 2 TB of RAM ru
+M526	Software and hardware {#sec:methods_soft	682	2	version					ode with two 64-core AMD EPYC 7763 processors and 2 TB of RAM running Rocky Linux
+M527	Software and hardware {#sec:methods_soft	682	8.10	version					63 processors and 2 TB of RAM running Rocky Linux 8.10, under the SLURM workload man

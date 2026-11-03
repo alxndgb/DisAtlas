@@ -1,4 +1,4 @@
-| Pairs | System | Degree-matched AUROC (95% CI) | Held out − system (95% CI) | Within-disease AUROC (95% CI) | Held out − system (95% CI) |
+| Pairs | System | Degree-matched AUROC (95% CI) | Held out − system, degree-matched (95% CI) | Within-disease AUROC (95% CI) | Held out − system, within-disease (95% CI) |
 |:---------|:--------------------------|----------------:|--------------:|---------------:|--------------:|
 | All pairs | Degree alone (training graph) | 0.500\ (0.453–0.546) | — | — | — |
 | All pairs | DisAtlas, trained with every disease | 0.818\ (0.780–0.853) | −0.051\ (−0.073\ to\ −0.031) | 0.786\ (0.765–0.807) | −0.018\ (−0.032\ to\ −0.003) |
