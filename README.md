@@ -244,7 +244,7 @@ Measured on fresh clones, one cluster node each (peak memory is the Slurm MaxRSS
 | `tests/test_cold_exact.py` | COLD: rebuilt channels and graph equal the shipped ones edge for edge |
 | `tests/test_cold_tolerance.py` | COLD: retrained scores within the tolerances above |
 
-A WARM run ends with `247 passed, 57 skipped` (13 COLD-only checks, and 44 event-time main-text numbers that wait for the updated Figure 7 value table) and `DisAtlas pipeline finished (warm)`.
+A WARM run ends with `308 passed, 13 skipped` (13 COLD-only checks) and `DisAtlas pipeline finished (warm)`.
 A COLD run first passes the 11 COLD checks on `build/` (`tests/test_cold_exact.py`, `tests/test_cold_tolerance.py`), then the same
 `247 passed, 57 skipped`, and ends with `DisAtlas pipeline finished (cold)`.
 
