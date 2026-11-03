@@ -1,0 +1,16 @@
+{
+ "stripped_training_graph": {
+  "n_nodes": 3455,
+  "n_edges": 82946,
+  "direct_edge": false,
+  "hops": 2,
+  "pnh_degree": 78,
+  "nmo_degree": 23,
+  "shared_neighbours": [
+   "MONDO:0005156",
+   "MONDO:0008219",
+   "MONDO:0008564",
+   "MONDO:0012350"
+  ]
+ }
+}

@@ -1,0 +1,9 @@
+pool	set	N	nmo_in_set	disatlas_rank	disatlas_top_pct	popularity_rank	popularity_top_pct	chance_rank
+held-out pool	any distance (current)	1728	True	45.0	2.6	121.0	7.0	864.5
+held-out pool	<=1 hop of PNH	48	False					
+held-out pool	<=2 hops of PNH	1058	True	45.0	4.3	109.0	10.3	529.5
+held-out pool	<=3 hops of PNH	1644	True	45.0	2.7	121.0	7.4	822.5
+all embedded diseases	any distance (current)	3452	True	86.0	2.5	256.5	7.4	1726.5
+all embedded diseases	<=1 hop of PNH	92	False					
+all embedded diseases	<=2 hops of PNH	2133	True	86.0	4.0	233.5	10.9	1067.0
+all embedded diseases	<=3 hops of PNH	3305	True	86.0	2.6	256.5	7.8	1653.0

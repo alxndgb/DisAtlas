@@ -1,0 +1,15 @@
+{
+ "year": 2007,
+ "t": 2006,
+ "nmo_id": "MONDO:0019100",
+ "nmo_in_test_pool": true,
+ "N": 1728,
+ "disatlas_rank": 45.0,
+ "disatlas_ties": 0,
+ "disatlas_pct_rank": 2.6041666666666665,
+ "popularity_rank": 121.0,
+ "popularity_ties": 4,
+ "popularity_pct_rank": 7.002314814814815,
+ "yearly_table_pct_s4": 2.6041666666666665,
+ "yearly_table_n_cand": 1728
+}

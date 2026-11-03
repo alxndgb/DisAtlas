@@ -186,22 +186,38 @@ def q_callouts():
 
 # ---------------------------------------------------------------- event-time evaluation (Figure 7)
 def q_prospective():
+    """Figure 7 and the event-time Results: conditional-logit odds ratios per 1 SD of score (test pool, popularity
+    spline, Efron ties, drug-clustered CIs) and the eculizumab/NMO case (decision year 2007)."""
+    import json
     ET = os.path.join(DD, "fig7_prospective")
-    DL = pd.read_csv(os.path.join(ET, "deltas.tsv"), sep="\t")
-    D = DL[(DL.pool == "test") & (DL.analysis == "pct_p1") & (DL.comparator == "adamic_adar_w")]
-    p = D[D.scope == "pooled"].iloc[0]; yr = D[D.scope.astype(str).str.isdigit()]
-    CE = pd.read_csv(os.path.join(ET, "merge_and_matching_census.tsv"), sep="\t"); ce = CE[(CE.pool == "test") & (CE.scope == "pooled")].iloc[0]
-    YA = pd.read_csv(os.path.join(ET, "nmo_ms_yearly_all_methods.tsv"), sep="\t"); YA = YA[YA.pool == "test"]
+    A = pd.read_csv(os.path.join(ET, "or_clogit.tsv"), sep="\t", dtype={"set": str})
 
-    def rank(t, y, m="disatlas_ens5"):
-        r = YA[(YA.method == m) & (YA.target == t) & (YA.y == y)].iloc[0]; n = int(r.n_p1); return int(round(r.pct_p1 * n / 100)), n
-    rk, n = rank("NMO", 2007); aa, _ = rank("NMO", 2007, "adamic_adar_w"); ms, msn = rank("MS", 2002)
-    years = sorted(int(s) for s in yr.scope)
-    return dict(n_drugs=int(ce.n_drugs), n_events=int(ce.n_events), pooled_adv=-p.dE1, pooled_adv_lo=-p.dE1_hi, pooled_adv_hi=-p.dE1_lo,
-                n_years=len(years), years_ci_above0=int((-yr.dE1_hi > 0).sum()),
-                missing_years=",".join(str(x) for x in sorted(set(range(years[0], years[-1] + 1)) - set(years))),
-                nmo_rank=rk, nmo_pool=n, nmo_rank_aa=aa, ms_rank=ms, ms_pool=msn, n_other=n - 1, n_lower=n - rk,
-                pct_lower=100 * (n - rk) / (n - 1))
+    def o(model, s="pooled"):
+        r = A[(A.set == s) & (A.model == model)]
+        assert len(r) == 1, (model, s); return r.iloc[0]
+    q = {}
+    for k, m in (("dis", "M2"), ("dis_unadj", "M0"), ("perm", "PERM_M2"), ("gene", "M2_gene_jaccard"), ("gobp", "M2_gobp_simgic"),
+                 ("hpo", "M2_hpo_simgic"), ("aa", "M2_adamic_adar_w"), ("strength", "M2_strength")):
+        r = o(m); q[f"or_{k}"], q[f"or_{k}_lo"], q[f"or_{k}_hi"] = float(r.OR), float(r.lo95), float(r.hi95)
+    p = o("M2"); q["or_events"], q["or_drugs"] = int(p.n_cases), int(p.n_drugs)
+    Y = A[(A.model == "M2") & A.set.str.isdigit()].assign(y=lambda d: d.set.astype(int))
+    Y = Y[(Y.y >= 2000) & (Y.y <= 2021)].set_index("y").sort_index()
+    assert list(Y.index) == list(range(2000, 2022)), list(Y.index)
+    assert (Y.lo95 > 1).all(), "a yearly odds ratio interval reaches 1"            # 'stays above 1 in each decision year'
+    q["or_last_year"] = int(Y.index.max()); q["or_min_year"] = int(Y.OR.idxmin())
+    for y in (2020, 2021):
+        q[f"or_{y}"], q[f"or_{y}_lo"], q[f"or_{y}_hi"] = float(Y.loc[y].OR), float(Y.loc[y].lo95), float(Y.loc[y].hi95)
+    CJ = json.load(open(os.path.join(ET, "nmo_case_clogit.json")))
+    q.update(nmo_year=int(CJ["year"]), nmo_rank=int(CJ["disatlas_rank"]), nmo_N=int(CJ["N"]), nmo_top_pct=float(CJ["disatlas_pct_rank"]),
+             nmo_pop_rank=int(CJ["popularity_rank"]), nmo_pop_top_pct=float(CJ["popularity_pct_rank"]))
+    H = json.load(open(os.path.join(ET, "nmo_hops.json")))["stripped_training_graph"]
+    assert H["direct_edge"] is False; q["nmo_hops"] = int(H["hops"])
+    CS = pd.read_csv(os.path.join(ET, "nmo_candidate_sets.tsv"), sep="\t")
+    hp = CS[CS.pool == "held-out pool"].set_index("set").disatlas_rank
+    assert hp["any distance (current)"] == hp["<=2 hops of PNH"] == hp["<=3 hops of PNH"] == q["nmo_rank"]   # 'rank is the same'
+    al = CS[(CS.pool == "all embedded diseases") & (CS.set == "any distance (current)")].iloc[0]
+    q.update(nmo_all_rank=int(al.disatlas_rank), nmo_all_N=int(al.N), nmo_all_top_pct=100 * al.disatlas_rank / al.N)
+    return q
 
 
 # ---------------------------------------------------------------- architecture

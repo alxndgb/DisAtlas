@@ -1,0 +1,94 @@
+{
+ "ms_top_pct_min": 5.0,
+ "ms_top_pct_max": 21.1,
+ "ms_years_before_first_trial": [
+  13,
+  3
+ ],
+ "auc_pooled_p1": [
+  0.6815939528219436,
+  0.6767547628919893,
+  0.6864494274358974
+ ],
+ "auc_pooled_s3": [
+  0.6804377883914923,
+  0.6755168864372366,
+  0.6851099846299549
+ ],
+ "auc_pairs": 18813,
+ "prose": {
+  "waa_or": [
+   "1.10 (95% CI 1.10\u20131.11)",
+   "each of the 22 decision years"
+  ],
+  "waa_2020": [
+   "lowest in 2020 (1.05, 95% CI 1.03\u20131.06)"
+  ],
+  "prereg_abs": [
+   "31.0 (95% CI 30.2\u201332.0)",
+   "against 24.0 for DisAtlas",
+   "33.8 (95% CI 32.9\u201334.7)",
+   "against 24.7 among"
+  ],
+  "prereg_rule": [
+   "all four comparisons met it"
+  ],
+  "prereg_adv": [
+   "7.0 percentile points (95% CI 6.2\u20137.9)",
+   "9.1 (95% CI 8.3\u201310.1)",
+   "3.6 (95% CI 3.0\u20134.2)",
+   "8.5 (95% CI 7.8\u20139.2)"
+  ],
+  "prereg_years": [
+   "19 of the 25 decision years",
+   "below zero in none"
+  ],
+  "unmatched": [
+   "median percentile of 1.0",
+   "against 4.5 for DisAtlas"
+  ],
+  "auc_dropped": [
+   "the 9 new trials without any matched candidate"
+  ],
+  "auc_pooled": [
+   "all 18,813 drug\u2013decision-year pairs",
+   "0.682 (95% CI 0.677\u20130.686)",
+   "0.680 (95% CI 0.676\u20130.685)"
+  ],
+  "auc_per_drug": [
+   "each of the 6,496 drugs",
+   "0.715 (95% CI 0.710\u20130.720)",
+   "(mean 0.738, 3,140 drugs)",
+   "(mean 0.654, 1,131 drugs)"
+  ],
+  "auc_pop": [
+   "reaches 0.621 (popularity-matched) and 0.619",
+   "at 0.647 against 0.682 for DisAtlas"
+  ],
+  "e2_gene": [
+   "interval includes zero",
+   "slightly ahead among all diseases"
+  ],
+  "ms_proxy": [
+   "from 1996 to 2006",
+   "13 to 3 years",
+   "top 5.0\u201321.1%"
+  ],
+  "ecu_dating": [
+   "records this pair in 2015",
+   "(NCT00904826)",
+   "phase 3 trial NCT01892345",
+   "its 2015 Orphanet validation"
+  ],
+  "nmo_2007": [
+   "In decision year 2007, NMO ranks 45th of 1,728 candidates",
+   "121st by popularity alone",
+   "the 2006 model",
+   "(3,455 diseases, 82,946 links) and are 2 steps apart"
+  ],
+  "nmo_hops": [
+   "leaves the rank at 45 (top 4.3% of 1,058 and top 2.7% of 1,644)",
+   "among all 3,452 embedded diseases NMO ranks 86th (top 2.5%)"
+  ]
+ }
+}
