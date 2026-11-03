@@ -68,7 +68,8 @@ stage_retrain(){  # one process per seed, in parallel
 stage_score(){ DISATLAS_DATA_MODE=cold $PY -m disatlas.rescore --out $B/scores --all-pairs; }
 
 stage_figures(){ for f in figures/main/fig*.py tables/main/*.py; do echo "-- $f"; $PY "$f"; done; }
-stage_si(){ for f in figures/SI/si_*.py tables/SI/table_*.py; do echo "-- $f"; $PY "$f"; done; }
+stage_si(){ for f in figures/SI/si_*.py tables/SI/table_*.py; do echo "-- $f"; $PY "$f"; done
+  for v in hits10 weighted; do echo "-- figures/main/fig7_prospective.py --si $v"; $PY figures/main/fig7_prospective.py --si $v; done; }
 
 stage_tests(){
   if [ $MODE = warm ]; then $PY -m pytest -q tests; return; fi

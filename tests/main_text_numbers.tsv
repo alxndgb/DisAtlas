@@ -158,60 +158,60 @@ M150	[Comparing DisAtlas with Language-Model 	338	436	computed	topk	eq			. **(d)
 M151	[Comparing DisAtlas with Language-Model 	338	4,364	computed	bench_pairs	eq			** Overlap between methods' top-10% pairs (436 of 4,364 pairs each), as the Jaccard i
 M152	[Comparing DisAtlas with Language-Model 	338	10%	parameter				top/bottom 10% definition	ch), as the Jaccard index; two independent random 10% sets would give ≈0.05.]](FIGU
 M153	[Comparing DisAtlas with Language-Model 	338	0.05	computed	jaccard_random	approx	0.005	text: approximately	ndex; two independent random 10% sets would give ≈0.05.]](FIGURES/fig5_method_compar
-M592	[Rebuilt from Earlier Evidence, DisAtlas	349	1.019	computed	fig7_prospective:or_connectivity	eq		PENDING Fig 7 track: expects row or_connectivity in figures/main/fig7_prospective_values.tsv	hing once popularity is accounted for (odds ratio 1.019, 95% CI 1
+M592	[Rebuilt from Earlier Evidence, DisAtlas	349	1.019	computed	fig7_prospective:or_connectivity	eq			hing once popularity is accounted for (odds ratio 1.019, 95% CI 1
 M593	[Rebuilt from Earlier Evidence, DisAtlas	349	95%	notation					ce popularity is accounted for (odds ratio 1.019, 95% CI 1.015–1.
-M594	[Rebuilt from Earlier Evidence, DisAtlas	349	1.015	computed	fig7_prospective:or_connectivity_lo	eq		PENDING Fig 7 track: expects row or_connectivity_lo in figures/main/fig7_prospective_values.tsv	larity is accounted for (odds ratio 1.019, 95% CI 1.015–1.023 per
-M595	[Rebuilt from Earlier Evidence, DisAtlas	349	1.023	computed	fig7_prospective:or_connectivity_hi	eq		PENDING Fig 7 track: expects row or_connectivity_hi in figures/main/fig7_prospective_values.tsv	 is accounted for (odds ratio 1.019, 95% CI 1.015–1.023 per 1 SD,
+M594	[Rebuilt from Earlier Evidence, DisAtlas	349	1.015	computed	fig7_prospective:or_connectivity_lo	eq			larity is accounted for (odds ratio 1.019, 95% CI 1.015–1.023 per
+M595	[Rebuilt from Earlier Evidence, DisAtlas	349	1.023	computed	fig7_prospective:or_connectivity_hi	eq			 is accounted for (odds ratio 1.019, 95% CI 1.015–1.023 per 1 SD,
 M596	[Rebuilt from Earlier Evidence, DisAtlas	349	1	notation					ted for (odds ratio 1.019, 95% CI 1.015–1.023 per 1 SD, adjusted 
 M157	[Rebuilt from Earlier Evidence, DisAtlas	351	95%	notation				interval level	s of each drug and year, the odds ratio was 1.00 (95% CI 0.99–1.02), so the associa
 M597	[Rebuilt from Earlier Evidence, DisAtlas	351	2000	year					so no separate adjustment is made for it.]  [From 2000 to 2021, a
 M598	[Rebuilt from Earlier Evidence, DisAtlas	351	2021	year					parate adjustment is made for it.]  [From 2000 to 2021, across 34
-M599	[Rebuilt from Earlier Evidence, DisAtlas	351	34,592	computed	fig7_prospective:n_trials_or	eq		PENDING Fig 7 track: expects row n_trials_or in figures/main/fig7_prospective_values.tsv	ment is made for it.]  [From 2000 to 2021, across 34,592 new tria
-M600	[Rebuilt from Earlier Evidence, DisAtlas	351	6,469	computed	fig7_prospective:n_drugs_or	eq		PENDING Fig 7 track: expects row n_drugs_or in figures/main/fig7_prospective_values.tsv	  [From 2000 to 2021, across 34,592 new trials of 6,469 drugs in 
-M601	[Rebuilt from Earlier Evidence, DisAtlas	351	1.93	computed	fig7_prospective:or_disatlas	eq		PENDING Fig 7 track: expects row or_disatlas in figures/main/fig7_prospective_values.tsv	ug was the one it was trialed in next (odds ratio 1.93, 95% CI 1.
+M599	[Rebuilt from Earlier Evidence, DisAtlas	351	34,592	computed	fig7_prospective:n_trials_or	eq			ment is made for it.]  [From 2000 to 2021, across 34,592 new tria
+M600	[Rebuilt from Earlier Evidence, DisAtlas	351	6,469	computed	fig7_prospective:n_drugs_or	eq			  [From 2000 to 2021, across 34,592 new trials of 6,469 drugs in 
+M601	[Rebuilt from Earlier Evidence, DisAtlas	351	1.93	computed	fig7_prospective:or_disatlas	eq			ug was the one it was trialed in next (odds ratio 1.93, 95% CI 1.
 M602	[Rebuilt from Earlier Evidence, DisAtlas	351	95%	notation					 the one it was trialed in next (odds ratio 1.93, 95% CI 1.90–1.9
-M603	[Rebuilt from Earlier Evidence, DisAtlas	351	1.90	computed	fig7_prospective:or_disatlas_lo	eq		PENDING Fig 7 track: expects row or_disatlas_lo in figures/main/fig7_prospective_values.tsv	e it was trialed in next (odds ratio 1.93, 95% CI 1.90–1.97, adju
-M604	[Rebuilt from Earlier Evidence, DisAtlas	351	1.97	computed	fig7_prospective:or_disatlas_hi	eq		PENDING Fig 7 track: expects row or_disatlas_hi in figures/main/fig7_prospective_values.tsv	was trialed in next (odds ratio 1.93, 95% CI 1.90–1.97, adjusted 
+M603	[Rebuilt from Earlier Evidence, DisAtlas	351	1.90	computed	fig7_prospective:or_disatlas_lo	eq			e it was trialed in next (odds ratio 1.93, 95% CI 1.90–1.97, adju
+M604	[Rebuilt from Earlier Evidence, DisAtlas	351	1.97	computed	fig7_prospective:or_disatlas_hi	eq			was trialed in next (odds ratio 1.93, 95% CI 1.90–1.97, adjusted 
 M605	[Rebuilt from Earlier Evidence, DisAtlas	351	1	notation					re @fig:event_time]b), where no association gives 1.] [When the D
-M606	[Rebuilt from Earlier Evidence, DisAtlas	351	1.00	computed	fig7_prospective:or_shuffled	eq		PENDING Fig 7 track: expects row or_shuffled in figures/main/fig7_prospective_values.tsv	didates of each drug and year, the odds ratio was 1.00 (95% CI 0.
-M607	[Rebuilt from Earlier Evidence, DisAtlas	351	0.99	computed	fig7_prospective:or_shuffled_lo	eq		PENDING Fig 7 track: expects row or_shuffled_lo in figures/main/fig7_prospective_values.tsv	ch drug and year, the odds ratio was 1.00 (95% CI 0.99–1.02), so 
-M608	[Rebuilt from Earlier Evidence, DisAtlas	351	1.02	computed	fig7_prospective:or_shuffled_hi	eq		PENDING Fig 7 track: expects row or_shuffled_hi in figures/main/fig7_prospective_values.tsv	ug and year, the odds ratio was 1.00 (95% CI 0.99–1.02), so the a
+M606	[Rebuilt from Earlier Evidence, DisAtlas	351	1.00	computed	fig7_prospective:or_shuffled	eq			didates of each drug and year, the odds ratio was 1.00 (95% CI 0.
+M607	[Rebuilt from Earlier Evidence, DisAtlas	351	0.99	computed	fig7_prospective:or_shuffled_lo	eq			ch drug and year, the odds ratio was 1.00 (95% CI 0.99–1.02), so 
+M608	[Rebuilt from Earlier Evidence, DisAtlas	351	1.02	computed	fig7_prospective:or_shuffled_hi	eq			ug and year, the odds ratio was 1.00 (95% CI 0.99–1.02), so the a
 M609	[Rebuilt from Earlier Evidence, DisAtlas	352	1	notation					y adjustment.] [The yearly odds ratio stays above 1 in each decis
 M610	[Rebuilt from Earlier Evidence, DisAtlas	352	2021	year					 stays above 1 in each decision year from 2000 to 2021, each scor
 M611	[Rebuilt from Earlier Evidence, DisAtlas	352	2020	year					ar ([Figure @fig:event_time]b).] [It is lowest in 2020, at 1.62 (
-M612	[Rebuilt from Earlier Evidence, DisAtlas	352	1.62	computed	fig7_prospective:or_yearly|2020	eq		PENDING Fig 7 track: expects row or_yearly|2020 in figures/main/fig7_prospective_values.tsv	re @fig:event_time]b).] [It is lowest in 2020, at 1.62 (95% CI 1.
-M613	[Rebuilt from Earlier Evidence, DisAtlas	352	1.53	computed	fig7_prospective:or_yearly_lo|2020	eq		PENDING Fig 7 track: expects row or_yearly_lo|2020 in figures/main/fig7_prospective_values.tsv	_time]b).] [It is lowest in 2020, at 1.62 (95% CI 1.53–1.72), and
-M614	[Rebuilt from Earlier Evidence, DisAtlas	352	1.72	computed	fig7_prospective:or_yearly_hi|2020	eq		PENDING Fig 7 track: expects row or_yearly_hi|2020 in figures/main/fig7_prospective_values.tsv	]b).] [It is lowest in 2020, at 1.62 (95% CI 1.53–1.72), and is 1
-M615	[Rebuilt from Earlier Evidence, DisAtlas	352	1.98	computed	fig7_prospective:or_yearly|2021	eq		PENDING Fig 7 track: expects row or_yearly|2021 in figures/main/fig7_prospective_values.tsv	owest in 2020, at 1.62 (95% CI 1.53–1.72), and is 1.98 in 2021, a
+M612	[Rebuilt from Earlier Evidence, DisAtlas	352	1.62	computed	fig7_prospective:or_yearly|2020	eq			re @fig:event_time]b).] [It is lowest in 2020, at 1.62 (95% CI 1.
+M613	[Rebuilt from Earlier Evidence, DisAtlas	352	1.53	computed	fig7_prospective:or_yearly_lo|2020	eq			_time]b).] [It is lowest in 2020, at 1.62 (95% CI 1.53–1.72), and
+M614	[Rebuilt from Earlier Evidence, DisAtlas	352	1.72	computed	fig7_prospective:or_yearly_hi|2020	eq			]b).] [It is lowest in 2020, at 1.62 (95% CI 1.53–1.72), and is 1
+M615	[Rebuilt from Earlier Evidence, DisAtlas	352	1.98	computed	fig7_prospective:or_yearly|2021	eq			owest in 2020, at 1.62 (95% CI 1.53–1.72), and is 1.98 in 2021, a
 M616	[Rebuilt from Earlier Evidence, DisAtlas	352	2021	year					 2020, at 1.62 (95% CI 1.53–1.72), and is 1.98 in 2021, and this 
 M617	[Rebuilt from Earlier Evidence, DisAtlas	352	2020	year					 in 2021, and this analysis does not identify why 2020 is lower.]
 M618	[Rebuilt from Earlier Evidence, DisAtlas	353	1	notation					 the reference scores reach lower odds ratios per 1 SD ([Figure @
-M619	[Rebuilt from Earlier Evidence, DisAtlas	353	1.33	computed	fig7_prospective:or_gene	eq		PENDING Fig 7 track: expects row or_gene in figures/main/fig7_prospective_values.tsv	odds ratios per 1 SD ([Figure @fig:event_time]c), 1.33 (95% CI 1.
+M619	[Rebuilt from Earlier Evidence, DisAtlas	353	1.33	computed	fig7_prospective:or_gene	eq			odds ratios per 1 SD ([Figure @fig:event_time]c), 1.33 (95% CI 1.
 M620	[Rebuilt from Earlier Evidence, DisAtlas	353	95%	notation					atios per 1 SD ([Figure @fig:event_time]c), 1.33 (95% CI 1.31–1.3
-M621	[Rebuilt from Earlier Evidence, DisAtlas	353	1.31	computed	fig7_prospective:or_gene_lo	eq		PENDING Fig 7 track: expects row or_gene_lo in figures/main/fig7_prospective_values.tsv	er 1 SD ([Figure @fig:event_time]c), 1.33 (95% CI 1.31–1.34) for 
-M622	[Rebuilt from Earlier Evidence, DisAtlas	353	1.34	computed	fig7_prospective:or_gene_hi	eq		PENDING Fig 7 track: expects row or_gene_hi in figures/main/fig7_prospective_values.tsv	SD ([Figure @fig:event_time]c), 1.33 (95% CI 1.31–1.34) for share
-M623	[Rebuilt from Earlier Evidence, DisAtlas	353	1.27	computed	fig7_prospective:or_gobp	eq		PENDING Fig 7 track: expects row or_gobp in figures/main/fig7_prospective_values.tsv	33 (95% CI 1.31–1.34) for shared-gene similarity, 1.27 for Gene O
-M624	[Rebuilt from Earlier Evidence, DisAtlas	353	1.20	computed	fig7_prospective:or_hpo	eq		PENDING Fig 7 track: expects row or_hpo in figures/main/fig7_prospective_values.tsv	r Gene Ontology biological-process similarity and 1.20 for phenot
-M625	[Rebuilt from Earlier Evidence, DisAtlas	353	1.10	computed	fig7_prospective:or_waa	eq		PENDING Fig 7 track: expects row or_waa in figures/main/fig7_prospective_values.tsv	e yearly MechDist graph without learning, reaches 1.10 (95% CI 1.
+M621	[Rebuilt from Earlier Evidence, DisAtlas	353	1.31	computed	fig7_prospective:or_gene_lo	eq			er 1 SD ([Figure @fig:event_time]c), 1.33 (95% CI 1.31–1.34) for 
+M622	[Rebuilt from Earlier Evidence, DisAtlas	353	1.34	computed	fig7_prospective:or_gene_hi	eq			SD ([Figure @fig:event_time]c), 1.33 (95% CI 1.31–1.34) for share
+M623	[Rebuilt from Earlier Evidence, DisAtlas	353	1.27	computed	fig7_prospective:or_gobp	eq			33 (95% CI 1.31–1.34) for shared-gene similarity, 1.27 for Gene O
+M624	[Rebuilt from Earlier Evidence, DisAtlas	353	1.20	computed	fig7_prospective:or_hpo	eq			r Gene Ontology biological-process similarity and 1.20 for phenot
+M625	[Rebuilt from Earlier Evidence, DisAtlas	353	1.10	computed	fig7_prospective:or_waa	eq			e yearly MechDist graph without learning, reaches 1.10 (95% CI 1.
 M626	[Rebuilt from Earlier Evidence, DisAtlas	353	95%	notation					ly MechDist graph without learning, reaches 1.10 (95% CI 1.10–1.1
-M627	[Rebuilt from Earlier Evidence, DisAtlas	353	1.10	computed	fig7_prospective:or_waa_lo	eq		PENDING Fig 7 track: expects row or_waa_lo in figures/main/fig7_prospective_values.tsv	Dist graph without learning, reaches 1.10 (95% CI 1.10–1.11), so 
-M628	[Rebuilt from Earlier Evidence, DisAtlas	353	1.11	computed	fig7_prospective:or_waa_hi	eq		PENDING Fig 7 track: expects row or_waa_hi in figures/main/fig7_prospective_values.tsv	graph without learning, reaches 1.10 (95% CI 1.10–1.11), so this 
+M627	[Rebuilt from Earlier Evidence, DisAtlas	353	1.10	computed	fig7_prospective:or_waa_lo	eq			Dist graph without learning, reaches 1.10 (95% CI 1.10–1.11), so 
+M628	[Rebuilt from Earlier Evidence, DisAtlas	353	1.11	computed	fig7_prospective:or_waa_hi	eq			graph without learning, reaches 1.10 (95% CI 1.10–1.11), so this 
 M164	[Rebuilt from Earlier Evidence, DisAtlas	354	10%	parameter				top/bottom 10% definition	rugs whose best-ranked new trial falls in the top 10% of the ranking, is reported w
 M165	[Rebuilt from Earlier Evidence, DisAtlas	358	4	name					d from multiple sclerosis, first by the aquaporin-4 antibody and then by the 2006
 M166	[Rebuilt from Earlier Evidence, DisAtlas	358	2006	year					first by the aquaporin-4 antibody and then by the 2006 NMO criteria, multiple sclero
 M168	[Rebuilt from Earlier Evidence, DisAtlas	360	2009,	year					s first trial in NMO spectrum disorder (NMOSD) in 2009, with NMO in the graph, DisAtl
 M171	[Rebuilt from Earlier Evidence, DisAtlas	360	2	history				trial history (cited)	 [](#sec:SI_event_time_beyond_mechdist)).] [About 2 years before eculizumab's fir
-M629	[Rebuilt from Earlier Evidence, DisAtlas	360	45	computed	fig7_prospective:nmo_rank_disatlas	eq		PENDING Fig 7 track: expects row nmo_rank_disatlas in figures/main/fig7_prospective_values.tsv	 2009, with NMO in the graph, DisAtlas ranked NMO 45th of the 1,7
-M630	[Rebuilt from Earlier Evidence, DisAtlas	360	1,728	computed	fig7_prospective:nmo_pool	eq		PENDING Fig 7 track: expects row nmo_pool in figures/main/fig7_prospective_values.tsv	NMO in the graph, DisAtlas ranked NMO 45th of the 1,728 diseases 
-M631	[Rebuilt from Earlier Evidence, DisAtlas	360	2.6%	computed	fig7_prospective:nmo_top_pct_disatlas	eq		PENDING Fig 7 track: expects row nmo_top_pct_disatlas in figures/main/fig7_prospective_values.tsv	ark tuning and not yet trialed with the drug (top 2.6%), against 
-M632	[Rebuilt from Earlier Evidence, DisAtlas	360	121	computed	fig7_prospective:nmo_rank_popularity	eq		PENDING Fig 7 track: expects row nmo_rank_popularity in figures/main/fig7_prospective_values.tsv	not yet trialed with the drug (top 2.6%), against 121st (top 7%) 
-M633	[Rebuilt from Earlier Evidence, DisAtlas	360	7%	computed	fig7_prospective:nmo_top_pct_popularity	eq		PENDING Fig 7 track: expects row nmo_top_pct_popularity in figures/main/fig7_prospective_values.tsv	aled with the drug (top 2.6%), against 121st (top 7%) by populari
-M634	[Rebuilt from Earlier Evidence, DisAtlas	360	2	computed	fig7_prospective:nmo_hops_pnh	eq		PENDING Fig 7 track: expects row nmo_hops_pnh in figures/main/fig7_prospective_values.tsv	ink in the graph the model was trained on and are 2 steps apart.]
+M629	[Rebuilt from Earlier Evidence, DisAtlas	360	45	computed	fig7_prospective:nmo_rank_disatlas	eq			 2009, with NMO in the graph, DisAtlas ranked NMO 45th of the 1,7
+M630	[Rebuilt from Earlier Evidence, DisAtlas	360	1,728	computed	fig7_prospective:nmo_pool	eq			NMO in the graph, DisAtlas ranked NMO 45th of the 1,728 diseases 
+M631	[Rebuilt from Earlier Evidence, DisAtlas	360	2.6%	computed	fig7_prospective:nmo_top_pct_disatlas	eq			ark tuning and not yet trialed with the drug (top 2.6%), against 
+M632	[Rebuilt from Earlier Evidence, DisAtlas	360	121	computed	fig7_prospective:nmo_rank_popularity	eq			not yet trialed with the drug (top 2.6%), against 121st (top 7%) 
+M633	[Rebuilt from Earlier Evidence, DisAtlas	360	7%	computed	fig7_prospective:nmo_top_pct_popularity	eq			aled with the drug (top 2.6%), against 121st (top 7%) by populari
+M634	[Rebuilt from Earlier Evidence, DisAtlas	360	2	computed	fig7_prospective:nmo_hops_pnh	eq			ink in the graph the model was trained on and are 2 steps apart.]
 M635	[Rebuilt from Earlier Evidence, DisAtlas	360	2	parameter				neighbourhood restriction (steps)	 the candidates are restricted to diseases within 2 or 3 steps of
 M636	[Rebuilt from Earlier Evidence, DisAtlas	360	3	parameter				neighbourhood restriction (steps)	candidates are restricted to diseases within 2 or 3 steps of PNH,
-M637	[Rebuilt from Earlier Evidence, DisAtlas	360	86	computed	fig7_prospective:nmo_rank_all	eq		PENDING Fig 7 track: expects row nmo_rank_all in figures/main/fig7_prospective_values.tsv	of PNH, and among all embedded diseases NMO ranks 86th of 3,452 (
-M638	[Rebuilt from Earlier Evidence, DisAtlas	360	3,452	computed	fig7_prospective:nmo_pool_all	eq		PENDING Fig 7 track: expects row nmo_pool_all in figures/main/fig7_prospective_values.tsv	and among all embedded diseases NMO ranks 86th of 3,452 (top 2.5%
-M639	[Rebuilt from Earlier Evidence, DisAtlas	360	2.5%	computed	fig7_prospective:nmo_top_pct_all	eq		PENDING Fig 7 track: expects row nmo_top_pct_all in figures/main/fig7_prospective_values.tsv	ll embedded diseases NMO ranks 86th of 3,452 (top 2.5%; Supplemen
+M637	[Rebuilt from Earlier Evidence, DisAtlas	360	86	computed	fig7_prospective:nmo_rank_all	eq			of PNH, and among all embedded diseases NMO ranks 86th of 3,452 (
+M638	[Rebuilt from Earlier Evidence, DisAtlas	360	3,452	computed	fig7_prospective:nmo_pool_all	eq			and among all embedded diseases NMO ranks 86th of 3,452 (top 2.5%
+M639	[Rebuilt from Earlier Evidence, DisAtlas	360	2.5%	computed	fig7_prospective:nmo_top_pct_all	eq			ll embedded diseases NMO ranks 86th of 3,452 (top 2.5%; Supplemen
 M175	[Rebuilt from Earlier Evidence, DisAtlas	361	2019	year					yond_mechdist)).] [Approval for NMOSD followed in 2019 .] [We chose this example aft
 M176	[Rebuilt from Earlier Evidence, DisAtlas	366	2000	year					ustrative case, eculizumab and NMO. Top, timeline 2000–2020. NMO was treated as a fo
 M177	[Rebuilt from Earlier Evidence, DisAtlas	366	2020	year					tive case, eculizumab and NMO. Top, timeline 2000–2020. NMO was treated as a form of
@@ -228,16 +228,16 @@ M187	[Rebuilt from Earlier Evidence, DisAtlas	369	2007	year					 (NCT00122330)  
 M188	[Rebuilt from Earlier Evidence, DisAtlas	370	2009	year					NH in March 2007 . Its first NMOSD trial began in 2009 (NCT00904826) , and approval 
 M189	[Rebuilt from Earlier Evidence, DisAtlas	370	2019	year					904826) , and approval for NMOSD followed in June 2019 . The marker below the timeli
 M196	[Rebuilt from Earlier Evidence, DisAtlas	371	2007	year					e timeline gives the rank of NMO in decision year 2007 among the 1,728 diseases held
-M640	[Rebuilt from Earlier Evidence, DisAtlas	371	1,728	computed	fig7_prospective:nmo_pool	eq		PENDING Fig 7 track: expects row nmo_pool in figures/main/fig7_prospective_values.tsv	s the rank of NMO in decision year 2007 among the 1,728 diseases 
+M640	[Rebuilt from Earlier Evidence, DisAtlas	371	1,728	computed	fig7_prospective:nmo_pool	eq			s the rank of NMO in decision year 2007 among the 1,728 diseases 
 M203	[Rebuilt from Earlier Evidence, DisAtlas	372	1	notation				enumeration	th eculizumab. Bottom, how the rank is computed. (1) Known use of the drug. (2) N
 M204	[Rebuilt from Earlier Evidence, DisAtlas	372	2	notation				enumeration	the rank is computed. (1) Known use of the drug. (2) NMO is compared with every d
 M206	[Rebuilt from Earlier Evidence, DisAtlas	373	3	notation				enumeration	seases against its number of trials before 2007. (3) Rank by DisAtlas score, the 
 M641	[Rebuilt from Earlier Evidence, DisAtlas	373	2007	year					hese diseases against its number of trials before 2007. (3) Rank 
-M642	[Rebuilt from Earlier Evidence, DisAtlas	374	45	computed	fig7_prospective:nmo_rank_disatlas	eq		PENDING Fig 7 track: expects row nmo_rank_disatlas in figures/main/fig7_prospective_values.tsv	ness of each disease to PNH in the map. NMO ranks 45th of 1,728 (
-M643	[Rebuilt from Earlier Evidence, DisAtlas	374	1,728	computed	fig7_prospective:nmo_pool	eq		PENDING Fig 7 track: expects row nmo_pool in figures/main/fig7_prospective_values.tsv	each disease to PNH in the map. NMO ranks 45th of 1,728 (top 2.6%
-M644	[Rebuilt from Earlier Evidence, DisAtlas	374	2.6%	computed	fig7_prospective:nmo_top_pct_disatlas	eq		PENDING Fig 7 track: expects row nmo_top_pct_disatlas in figures/main/fig7_prospective_values.tsv	e to PNH in the map. NMO ranks 45th of 1,728 (top 2.6%), against 
-M645	[Rebuilt from Earlier Evidence, DisAtlas	374	121	computed	fig7_prospective:nmo_rank_popularity	eq		PENDING Fig 7 track: expects row nmo_rank_popularity in figures/main/fig7_prospective_values.tsv	 map. NMO ranks 45th of 1,728 (top 2.6%), against 121st (top 7%) 
-M646	[Rebuilt from Earlier Evidence, DisAtlas	374	7%	computed	fig7_prospective:nmo_top_pct_popularity	eq		PENDING Fig 7 track: expects row nmo_top_pct_popularity in figures/main/fig7_prospective_values.tsv	anks 45th of 1,728 (top 2.6%), against 121st (top 7%) by populari
+M642	[Rebuilt from Earlier Evidence, DisAtlas	374	45	computed	fig7_prospective:nmo_rank_disatlas	eq			ness of each disease to PNH in the map. NMO ranks 45th of 1,728 (
+M643	[Rebuilt from Earlier Evidence, DisAtlas	374	1,728	computed	fig7_prospective:nmo_pool	eq			each disease to PNH in the map. NMO ranks 45th of 1,728 (top 2.6%
+M644	[Rebuilt from Earlier Evidence, DisAtlas	374	2.6%	computed	fig7_prospective:nmo_top_pct_disatlas	eq			e to PNH in the map. NMO ranks 45th of 1,728 (top 2.6%), against 
+M645	[Rebuilt from Earlier Evidence, DisAtlas	374	121	computed	fig7_prospective:nmo_rank_popularity	eq			 map. NMO ranks 45th of 1,728 (top 2.6%), against 121st (top 7%) 
+M646	[Rebuilt from Earlier Evidence, DisAtlas	374	7%	computed	fig7_prospective:nmo_top_pct_popularity	eq			anks 45th of 1,728 (top 2.6%), against 121st (top 7%) by populari
 M647	[Rebuilt from Earlier Evidence, DisAtlas	375	1	notation					 drug is the one the drug is trialed in next, per 1 standard devi
 M217	[Rebuilt from Earlier Evidence, DisAtlas	376	95%	notation				interval level	tratum per drug and decision year; vertical bars, 95% CI (robust standard errors cl
 M648	[Rebuilt from Earlier Evidence, DisAtlas	376	1	notation					rrors clustered by drug); dashed line, odds ratio 1, no associati
@@ -253,15 +253,15 @@ M656	Discussion and Conclusion	391	19	si_track				SI_cluster_validation_themes (
 M657	Discussion and Conclusion	391	8	si_track				SI_cluster_validation_themes (tests/parity/sibio_cluster.json)	ystem and 19 enriched for a mechanism or process (8 both); body-s
 M568	Discussion and Conclusion	392	1,	name					cholaminergic polymorphic ventricular tachycardia 1, a rare inherited arrhythmia 
 M658	Discussion and Conclusion	392	8.97	computed	cocluster_ratio	eq			nd held-out co-investigated pairs share a cluster 8.97 times as o
-M659	Discussion and Conclusion	397	1.93	computed	fig7_prospective:or_disatlas	eq		PENDING Fig 7 track: expects row or_disatlas in figures/main/fig7_prospective_values.tsv	drug is the one it is trialed in next (odds ratio 1.93, 95% CI 1.
+M659	Discussion and Conclusion	397	1.93	computed	fig7_prospective:or_disatlas	eq			drug is the one it is trialed in next (odds ratio 1.93, 95% CI 1.
 M660	Discussion and Conclusion	397	95%	notation					s the one it is trialed in next (odds ratio 1.93, 95% CI 1.90–1.9
-M661	Discussion and Conclusion	397	1.90	computed	fig7_prospective:or_disatlas_lo	eq		PENDING Fig 7 track: expects row or_disatlas_lo in figures/main/fig7_prospective_values.tsv	ne it is trialed in next (odds ratio 1.93, 95% CI 1.90–1.97, wher
-M662	Discussion and Conclusion	397	1.97	computed	fig7_prospective:or_disatlas_hi	eq		PENDING Fig 7 track: expects row or_disatlas_hi in figures/main/fig7_prospective_values.tsv	 is trialed in next (odds ratio 1.93, 95% CI 1.90–1.97, where no 
+M661	Discussion and Conclusion	397	1.90	computed	fig7_prospective:or_disatlas_lo	eq			ne it is trialed in next (odds ratio 1.93, 95% CI 1.90–1.97, wher
+M662	Discussion and Conclusion	397	1.97	computed	fig7_prospective:or_disatlas_hi	eq			 is trialed in next (odds ratio 1.93, 95% CI 1.90–1.97, where no 
 M663	Discussion and Conclusion	397	1	notation					.93, 95% CI 1.90–1.97, where no association gives 1), adjusted fo
-M664	Discussion and Conclusion	398	1.10	computed	fig7_prospective:or_waa	eq		PENDING Fig 7 track: expects row or_waa in figures/main/fig7_prospective_values.tsv	ce without learning, and reaches an odds ratio of 1.10 (95% CI 1.
+M664	Discussion and Conclusion	398	1.10	computed	fig7_prospective:or_waa	eq			ce without learning, and reaches an odds ratio of 1.10 (95% CI 1.
 M665	Discussion and Conclusion	398	95%	notation					hout learning, and reaches an odds ratio of 1.10 (95% CI 1.10–1.1
-M666	Discussion and Conclusion	398	1.10	computed	fig7_prospective:or_waa_lo	eq		PENDING Fig 7 track: expects row or_waa_lo in figures/main/fig7_prospective_values.tsv	arning, and reaches an odds ratio of 1.10 (95% CI 1.10–1.11) with
-M667	Discussion and Conclusion	398	1.11	computed	fig7_prospective:or_waa_hi	eq		PENDING Fig 7 track: expects row or_waa_hi in figures/main/fig7_prospective_values.tsv	g, and reaches an odds ratio of 1.10 (95% CI 1.10–1.11) with the 
+M666	Discussion and Conclusion	398	1.10	computed	fig7_prospective:or_waa_lo	eq			arning, and reaches an odds ratio of 1.10 (95% CI 1.10–1.11) with
+M667	Discussion and Conclusion	398	1.11	computed	fig7_prospective:or_waa_hi	eq			g, and reaches an odds ratio of 1.10 (95% CI 1.10–1.11) with the 
 M569	[Limitations and Future Work]	411	10,489	computed	n_rare	eq			d the disease set is skewed toward rare diseases (10,489 of 13,021).] [Results therefo
 M570	[Limitations and Future Work]	411	13,021	computed	n_diseases	eq			ase set is skewed toward rare diseases (10,489 of 13,021).] [Results therefore apply m
 M236	Data sources {#sec:methods_data_sources}	429	0.6	parameter					ks are kept when their evidence score is at least 0.6.] [These are combined with Or

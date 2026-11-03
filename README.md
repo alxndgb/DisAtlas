@@ -28,7 +28,7 @@ node2vec ensemble with a Hadamard MLP decoder scores any disease pair.
 
 ## Manuscript to repository map
 
-Every script runs from the repository root without arguments (`./run_pipeline.sh` calls them in order) and writes
+Every script runs from the repository root without arguments, except Figures S19 and S20, which are drawn by the Figure 7 script with `--si hits10` / `--si weighted` (`./run_pipeline.sh` calls them in order) and writes
 its outputs next to itself. Most scripts also write a `*_values.tsv` / `*_values.json` / `*_numbers.json` file with
 every plotted or quoted number; the tests read those files.
 
@@ -42,9 +42,9 @@ every plotted or quoted number; the tests read those files.
 | Figure 4 | Embedding and decoder architecture | `figures/main/fig4_upna_ddal_architecture.py` | `figures/main/UPNA_DDAL_architecture.{png,pdf,svg}` |
 | Figure 5 | Disease map, clusters, and DisAtlas vs TxGNN by disease rarity (panel c) | `figures/main/fig5_disease_clustering_map.py` | `figures/main/disease_clustering_map.{png,pdf}` |
 | Figure 6 | Cross-system comparison on IxIDN-Matched | `figures/main/fig6_method_comparison.py` | `figures/main/fig5_method_comparison.{png,pdf}` (same file name as the manuscript figure) |
-| Figure 7 | Event-time test: rank of the case-study disease and conditional-logit odds ratios by year and method (update pending with the event-time analysis) | `figures/main/fig7_prospective.py` | `figures/main/fig7_prospective.{png,pdf}` |
+| Figure 7 | Event-time test: rank of the case-study disease and conditional-logit odds ratios by year and method | `figures/main/fig7_prospective.py` | `figures/main/fig7_prospective.{png,pdf}` |
 | Table 1 | Protocols of the cross-system comparison | `tables/main/table1_protocols.py` | `tables/main/table1_protocols.{md,tsv}` |
-| Main-text numbers | All 568 registered number tokens of the main text, each with its kind and check (44 event-time tokens pending the Figure 7 value table) | `tests/main_quantities.py`, `tests/test_main_parity.py` | registry `tests/main_text_numbers.tsv` |
+| Main-text numbers | All 568 registered number tokens of the main text, each with its kind and check | `tests/main_quantities.py`, `tests/test_main_parity.py` | registry `tests/main_text_numbers.tsv` |
 
 ### Supplementary figures
 
@@ -68,9 +68,9 @@ every plotted or quoted number; the tests read those files.
 | Figure S15 | Display layout fidelity | `si_cluster_map_vs_model.py` | `SI_cluster_map_vs_model_distance.{png,pdf}` |
 | Figure S16 | Performance by disease rarity and anchor disease; TxGNN recovery of documented rare-common partners | `si_rare_common_transfer.py` | `SI_rare_common_transfer.{png,pdf}` |
 | Figure S17 | Rare-common neighbour coverage | `si_rare_common_neighbour_coverage.py` | `SI_rare_common_neighbour_coverage.{png,pdf}` |
-| Figure S18 | Event-time holdout: per-drug probability by method and decision year (matched analysis) | pending (added with the event-time analysis update) | pending (added with the event-time analysis update) |
-| Figure S19 | Event-time holdout: top-10% share by decision year, with and without matching | pending (added with the event-time analysis update) | pending (added with the event-time analysis update) |
-| Figure S20 | Event-time holdout: top-10% share weighted for disease popularity (post hoc) | pending (added with the event-time analysis update) | pending (added with the event-time analysis update) |
+| Figure S18 | Event-time holdout: per-drug probability by method and decision year (matched analysis) | `si_event_time_auc_methods.py` | `SI_event_time_auc_methods.{png,pdf}`, `SI_event_time_auc_methods_values.json` |
+| Figure S19 | Event-time holdout: top-10% share by decision year, with and without matching | `../main/fig7_prospective.py --si hits10` | `SI_event_time_hits10.{png,pdf}` |
+| Figure S20 | Event-time holdout: top-10% share weighted for disease popularity (post hoc) | `../main/fig7_prospective.py --si weighted` | `SI_event_time_weighted.{png,pdf}` |
 | Figure S21 | Later-trialled diseases within popularity strata | `si_popularity_strata.py` | `si_popularity_strata.{png,pdf}` |
 | Figure S22 | Approved-repurposing benchmark (schematic) | `si_fda_schematic.py` | `SI_approved_repurposing_schematic.{png,pdf}` |
 | Figure S23 | Evidence channels on FDA-approved repurposing pairs | `si_fda_channels.py` | `SI_fda_channels.{png,pdf}` |
@@ -94,7 +94,7 @@ every plotted or quoted number; the tests read those files.
 | Table S8 | Theme of each of the 55 disease clusters | `tables/SI/table_cluster_themes.py` | `tables/SI/table_cluster_themes.{md,tsv}`, `table_cluster_themes_numbers.json` |
 | Table S9 | AUROC by disease-rarity pairing | `tables/SI/table_rare_common_strata.py` | `tables/SI/table_rare_common_strata.{md,tsv}` |
 | Tables S10, S11 | Event-time holdout: pooled advantages; subsets of new trials | `figures/SI/si_event_time_tables.py` | `figures/SI/SI_event_time_tables.md` |
-| Tables S12–S17 | Event-time: NMO rank by slice; yearly odds ratios; AUROC (pooled and yearly); early decision years; small comparison sets | pending (added with the event-time analysis update) | pending (added with the event-time analysis update) |
+| Tables S12–S17 | Event-time: NMO rank by slice; yearly odds ratios; AUROC (pooled and yearly); early decision years; small comparison sets | `figures/SI/si_event_time_or_tables.py` | `figures/SI/SI_event_time_or_tables.md`, `SI_event_time_or_tables_numbers.json` |
 | Table S18 | Advantage with current and slice-dated GO annotations | `figures/SI/si_go_release_table.py` | `figures/SI/SI_go_release_table.{md,tsv}` |
 | Table S19 | FDA-approved pairs scored with dated models | `figures/SI/si_fda_prioritisation_text.py` | `figures/SI/SI_fda_prioritisation_text.md` |
 | SI numbers | Numbers quoted in the SI text | `figures/SI/si_*_numbers.py` | `figures/SI/SI_*_numbers.json`; asserted by `tests/test_sibench_parity.py`, `tests/test_sibio_parity.py` (specs in `tests/parity/`) |
