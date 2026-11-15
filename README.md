@@ -177,7 +177,7 @@ python3.11 -m venv .venv
 `requirements.txt` pins the package versions used to render the figures; with them a fresh run regenerates every committed
 figure byte for byte (other matplotlib versions can shift anti-aliasing by a few grey levels without changing any number).
 
-Download the Zenodo record (DOI: `ZENODO_DOI_TBD`, <https://doi.org/ZENODO_DOI_TBD>) and unpack it so that
+Download the Zenodo record (DOI: [10.5281/zenodo.24263240](https://doi.org/10.5281/zenodo.24263240)) and unpack it so that
 `data/zenodo/` contains `graph/`, `ontology_term_term_distance/`, `model/`, `model_outputs/`, `figures_main/`, `si_bio/`, `event_time/`. Then check it:
 
 ```bash
@@ -303,7 +303,7 @@ A WARM run ends with `WARM_TESTS_TBD` and `DisAtlas pipeline finished (warm)`.
 }
 ```
 
-Data and model: Zenodo, DOI `ZENODO_DOI_TBD`.
+Data and model: Zenodo, DOI [10.5281/zenodo.24263240](https://doi.org/10.5281/zenodo.24263240).
 
 ## Licence
 
