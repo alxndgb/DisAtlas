@@ -1,0 +1,25 @@
+{
+ "main_pool": "test",
+ "n_drugs_main": 3579,
+ "primary_delta_vs_AA_w": [
+  -9.171810391322587,
+  -10.269576379974328,
+  -7.501759301021175
+ ],
+ "cond_AA_w": true,
+ "reported_delta_vs_AA_unweighted": [
+  -8.705609925122118,
+  -9.919329573934839,
+  -6.856368563685635
+ ],
+ "cond_AA_unweighted_not_decisive": true,
+ "secondary_delta_vs_pop": [
+  0.21962207229300224,
+  0.1348475854418137,
+  0.32088776633671073
+ ],
+ "cond_pop": false,
+ "tier": "SI",
+ "consistency_max_abs_diff": 0.0,
+ "slurm": "9579812"
+}

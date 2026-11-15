@@ -1,0 +1,12 @@
+hpo,ontology,subset,n,n_pos,model,m_lo,m_hi,hpo_auroc,ontology_auroc,delta_model_minus_hpo,d_lo,d_hi
+mechdist_hpo,neg_ordo_dist,least concordant half,505,256,0.707047,0.615444,0.795331,0.680409,0.507028,0.026638,-0.078402,0.136333
+mechdist_hpo,neg_ordo_dist,least concordant third,337,166,0.685761,0.575716,0.787363,0.682731,0.442613,0.00303,-0.1185,0.134144
+mechdist_hpo,neg_mondo_dist,least concordant half,695,362,0.758507,0.67678,0.831158,0.703856,0.442719,0.054651,-0.033059,0.145743
+mechdist_hpo,neg_mondo_dist,least concordant third,464,248,0.76555,0.663978,0.852197,0.726908,0.397429,0.038642,-0.063522,0.150406
+hpo_simgic,neg_ordo_dist,least concordant half,506,260,0.708881,0.619028,0.793857,0.682708,0.533818,0.026173,-0.057983,0.11606
+hpo_simgic,neg_ordo_dist,least concordant third,337,168,0.686567,0.574628,0.79016,0.668463,0.466223,0.018104,-0.094865,0.138656
+hpo_simgic,neg_mondo_dist,least concordant half,695,354,0.760218,0.678572,0.8328,0.689034,0.450714,0.071185,-0.012232,0.160262
+hpo_simgic,neg_mondo_dist,least concordant third,465,237,0.763732,0.664423,0.849896,0.709064,0.398521,0.054667,-0.042345,0.160258
+-,-,no HPO annotation (HPO classifier undefined),2825,1374,0.862839,0.82359,0.897666,,,,,
+-,-,no HPO and no ORDO mapping,2198,1068,0.882636,0.841482,0.916623,,,,,
+-,-,"no HPO, held-out test-test",679,282,0.885641,0.821644,0.936532,,,,,

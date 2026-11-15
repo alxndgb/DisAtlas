@@ -1,0 +1,155 @@
+{
+ "n_pairs_all": 84766710,
+ "median_cosine_all_pairs": -0.03,
+ "n_pos": 9,
+ "n_neg": 8,
+ "pos_same_cluster": 5,
+ "neg_separated": 8,
+ "pos_top100": 7,
+ "pos_best_rank_range": [
+  1,
+  312
+ ],
+ "neg_best_rank_range": [
+  416,
+  1749
+ ],
+ "controls": [
+  {
+   "tag": "Crohn-UC",
+   "role": "positive",
+   "same": "yes",
+   "score": 0.9074,
+   "pct": 99.9328,
+   "best_rank": 2
+  },
+  {
+   "tag": "aHUS-PNH",
+   "role": "positive",
+   "same": "yes",
+   "score": 0.8546,
+   "pct": 99.8553,
+   "best_rank": 1
+  },
+  {
+   "tag": "Psoriasis-PsA",
+   "role": "positive",
+   "same": "no",
+   "score": 0.8106,
+   "pct": 99.764,
+   "best_rank": 52
+  },
+  {
+   "tag": "CAPS-FMF",
+   "role": "positive",
+   "same": "yes",
+   "score": 0.7902,
+   "pct": 99.7122,
+   "best_rank": 14
+  },
+  {
+   "tag": "TSC-LAM",
+   "role": "positive",
+   "same": "yes",
+   "score": 0.7856,
+   "pct": 99.6994,
+   "best_rank": 1
+  },
+  {
+   "tag": "LALD_Wolman-CESD",
+   "role": "positive",
+   "same": "no",
+   "score": 0.735,
+   "pct": 99.5332,
+   "best_rank": 13
+  },
+  {
+   "tag": "gMG-NMO",
+   "role": "positive",
+   "same": "yes",
+   "score": 0.6807,
+   "pct": 99.2917,
+   "best_rank": 5
+  },
+  {
+   "tag": "GIST-SM",
+   "role": "positive",
+   "same": "no",
+   "score": 0.5118,
+   "pct": 97.927,
+   "best_rank": 227
+  },
+  {
+   "tag": "GIST-CML",
+   "role": "positive",
+   "same": "no",
+   "score": 0.5071,
+   "pct": 97.8693,
+   "best_rank": 312
+  },
+  {
+   "tag": "TSC-MS",
+   "role": "negative",
+   "same": "no",
+   "score": 0.401,
+   "pct": 96.1348,
+   "best_rank": 416
+  },
+  {
+   "tag": "NF1mut-NF2",
+   "role": "negative",
+   "same": "no",
+   "score": 0.3542,
+   "pct": 95.0082,
+   "best_rank": 452
+  },
+  {
+   "tag": "PKD-PCOS",
+   "role": "negative",
+   "same": "no",
+   "score": 0.2694,
+   "pct": 92.0569,
+   "best_rank": 848
+  },
+  {
+   "tag": "ALS-SSc",
+   "role": "negative",
+   "same": "no",
+   "score": 0.2284,
+   "pct": 90.017,
+   "best_rank": 1288
+  },
+  {
+   "tag": "DMD-FECD",
+   "role": "negative",
+   "same": "no",
+   "score": 0.2225,
+   "pct": 89.6814,
+   "best_rank": 1293
+  },
+  {
+   "tag": "OI-Osteopetrosis",
+   "role": "negative",
+   "same": "no",
+   "score": 0.1862,
+   "pct": 87.2886,
+   "best_rank": 1677
+  },
+  {
+   "tag": "DI-T2D",
+   "role": "negative",
+   "same": "no",
+   "score": 0.1805,
+   "pct": 86.8635,
+   "best_rank": 1749
+  },
+  {
+   "tag": "SMA-Kennedy",
+   "role": "negative",
+   "same": "no",
+   "score": 0.1787,
+   "pct": 86.7231,
+   "best_rank": 1454
+  }
+ ]
+}

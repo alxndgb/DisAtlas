@@ -1,0 +1,1653 @@
+{
+ "ms_source": {
+  "file": "assets/manuscripts/disatlas/disatlas_representation_learning_story.md (dis2vec_2)",
+  "sha256": "52e96bb6ce1272c617ae6bfe2a785764d8e3faa5feb9873a20fed23e803d5ab7",
+  "note": "ms snippets re-bound to the story markdown (binding source of the final text); line numbers refer to that file at this sha256"
+ },
+ "items": [
+  {
+   "label": "SI_rare_common_strata",
+   "script": "figures/SI/si_cluster_rarecommon_numbers.py",
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-rare.auroc",
+     "ms": "On IxIDN-Matched, DisAtlas reaches an in-graph AUROC of 0.757 (95% CI 0.708-0.801) on 2,452 rare-rare pair",
+     "expected": 0.757,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.754,
+      "final": 0.757,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1622",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": " of a rare-common integration claim. S12.1. Performance by rarity stratum On IxIDN-Matched, DisAtlas reaches an in-graph AUROC of 0.757 (95% CI 0.708-0.801) on 2,452 rare-rare pairs and 0.89"
+    },
+    {
+     "key": "recovery.common anchor, rare candidates.adamic_adar",
+     "ms": "Adamic-Adar [92] computed on the same MechDist training graph (unweighted edges) without learning. Against Adamic-Adar (0.916 and 0.948), the paired differences of DisAtlas are -0.019 (95% d",
+     "expected": 0.948,
+     "tol": 0.0005,
+     "ms_source": "story.md L1667",
+     "classified_by": "deterministic(verbatim snippet in story)",
+     "note_tightened": {
+      "previous_expected": 0.95,
+      "previous_tol": 0.005
+     }
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-rare.ci.0",
+     "ms": "On IxIDN-Matched, DisAtlas reaches an in-graph AUROC of 0.757 (95% CI 0.708-0.801) on 2,452 rare-rare pairs and 0.893 (0",
+     "expected": 0.708,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.703,
+      "final": 0.708,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1622",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "mon integration claim. S12.1. Performance by rarity stratum On IxIDN-Matched, DisAtlas reaches an in-graph AUROC of 0.757 (95% CI 0.708-0.801) on 2,452 rare-rare pairs and 0.893 (0.829-0.937"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-rare.ci.1",
+     "ms": "tegration claim. S12.1. Performance by rarity stratum On IxIDN-Matched, DisAtlas reaches an in-graph AUROC of 0.757 (95% CI 0.708-0.801) on 2,452 rare-rare pairs and 0.893 (0.829-0.937) on 1",
+     "expected": 0.801,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.8,
+      "final": 0.801,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1620",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-rare.n",
+     "ms": "claim. S12.1. Performance by rarity stratum On IxIDN-Matched, DisAtlas reaches an in-graph AUROC of 0.757 (95% CI 0.708-0.801) on 2,452 rare-rare pairs and 0.893 (0.829-0.937) on 1,241 rare-",
+     "expected": 2452,
+     "ms_source": "story.md L1620",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-common.auroc",
+     "ms": "by rarity stratum On IxIDN-Matched, DisAtlas reaches an in-graph AUROC of 0.757 (95% CI 0.708-0.801) on 2,452 rare-rare pairs and 0.893 (0.829-0.937) on 1,241 rare-common pairs (Figure S3c; ",
+     "expected": 0.893,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.889,
+      "final": 0.893,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1622",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-common.ci.0",
+     "ms": "ty stratum On IxIDN-Matched, DisAtlas reaches an in-graph AUROC of 0.757 (95% CI 0.708-0.801) on 2,452 rare-rare pairs and 0.893 (0.829-0.937) on 1,241 rare-common pairs (Figure S3c; Figure ",
+     "expected": 0.829,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.825,
+      "final": 0.829,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1622",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-common.ci.1",
+     "ms": "atum On IxIDN-Matched, DisAtlas reaches an in-graph AUROC of 0.757 (95% CI 0.708-0.801) on 2,452 rare-rare pairs and 0.893 (0.829-0.937) on 1,241 rare-common pairs (Figure S3c; Figure 5c). T",
+     "expected": 0.937,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.935,
+      "final": 0.937,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1622",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-common.n",
+     "ms": "IDN-Matched, DisAtlas reaches an in-graph AUROC of 0.757 (95% CI 0.708-0.801) on 2,452 rare-rare pairs and 0.893 (0.829-0.937) on 1,241 rare-common pairs (Figure S3c; Figure 5c). The 671 com",
+     "expected": 1241,
+     "ms_source": "story.md L1622",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|common-common.n",
+     "ms": "The 671 common-common pairs give 0.848 (in-graph; 0.",
+     "expected": 671,
+     "ms_source": "story.md L1624",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "757 (95% CI 0.708-0.801) on 2,452 rare-rare pairs and 0.893 (0.829-0.937) on 1,241 rare-common pairs (Figure S3c; Figure 5c). The 671 common-common pairs give 0.848 (in-graph; 0.671-0.953), "
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|common-common.auroc",
+     "ms": "The 671 common-common pairs give 0.848 (in-graph; 0.671-0.953), an imprecise estima",
+     "expected": 0.848,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.809,
+      "final": 0.848,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1624",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": ",452 rare-rare pairs and 0.893 (0.829-0.937) on 1,241 rare-common pairs (Figure S3c; Figure 5c). The 671 common-common pairs give 0.848 (in-graph; 0.671-0.953), an imprecise estimate, becaus"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|common-common.ci.0",
+     "ms": "| Common-common (IxIDN-Matched) | 671 (645 / 26) | 0.848 | 0.671-0.953 | +0.071 (-0.115 to +0.301; 26 negativ",
+     "expected": 0.671,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.624,
+      "final": 0.671,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1681",
+     "previous_ms": "Common-common (IxIDN-Matched)671 (645 / 26)0.8480.671-0.953+0.071 (-0.115 to +0.301; 26 negatives; not significant)Commo",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|common-common.neg",
+     "ms": "airs (Figure S3c; Figure 5c). The 671 common-common pairs give 0.848 (in-graph; 0.671-0.953), an imprecise estimate, because only 26 of them are negatives against 645 positives. Negatives ar",
+     "expected": 26,
+     "ms_source": "story.md L1624",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|common-common.pos",
+     "ms": " imprecise estimate, because only 26 of them are negatives against 645 positives.]  [Negatives are scarce in t",
+     "expected": 645,
+     "ms_source": "story.md L1624",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "eligible_share_pct.common-common",
+     "ms": "hare a trial drug, and such pairs are excluded as negatives; only 7.5% of common–common pairs remain eligible,",
+     "expected": 7.5,
+     "tol": 0.05,
+     "ms_source": "story.md L1627",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|Test split pairs|all.d_ci.1",
+     "ms": "airs are excluded as negatives; only 7.5% of common-common pairs remain eligible, against 32% of rare-rare pairs.",
+     "expected": 0.32,
+     "tol": 0.005,
+     "ms_source": "story.md L1627",
+     "previous_ms": "gatives; only 7.5% of common–common pairs remain eligible, against 32% of rare–rare pairs.]  [To narrow this i",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)"
+    },
+    {
+     "key": "strata.IxIDN-Matched-CC+|All pairs|common-common.added",
+     "ms": "% of common-common pairs remain eligible, against 32% of rare-rare pairs. To narrow this interval, a supplementary benchmark adds 309 matched common-common negative pairs (one per unmatched ",
+     "expected": 309,
+     "ms_source": "story.md L1627",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched-CC+|All pairs|common-common.auroc",
+     "ms": "e pair where a match exists: 309 of 619; 145 matched on all 7 factors, 151 on 5 and 13 on 3); on it, DisAtlas reaches an AUROC of 0.856 (95% CI 0.755-0.932), which we report for completeness",
+     "expected": 0.856,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.845,
+      "final": 0.856,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1629",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched-CC+|All pairs|common-common.ci.0",
+     "ms": "| Common-common (supplementary, matched negatives) | 309 added negatives | 0.856 | 0.755-0.932 | not significant |",
+     "expected": 0.755,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.748,
+      "final": 0.755,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1682",
+     "previous_ms": "Common-common (supplementary, matched negatives)309 added negatives0.8560.755-0.932not significant S12.5. Rheu",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)"
+    },
+    {
+     "key": "strata.IxIDN-Matched-CC+|All pairs|common-common.ci.1",
+     "ms": " exists: 309 of 619; 145 matched on all 7 factors, 151 on 5 and 13 on 3); on it, DisAtlas reaches an AUROC of 0.856 (95% CI 0.755-0.932), which we report for completeness and do not use as e",
+     "expected": 0.932,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.922,
+      "final": 0.932,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1629",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-rare.d_stack",
+     "ms": "se as evidence. Against the combined matched-shortcut baselines, DisAtlas (in-graph) is significantly higher on rare-rare pairs, +0.159 (95% CI +0.097 to +0.218), and on rare-common pairs, +",
+     "expected": 0.159,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.155,
+      "final": 0.159,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1631",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-rare.d_ci.0",
+     "ms": " Against the combined matched-shortcut baselines, DisAtlas (in-graph) is significantly higher on rare-rare pairs, +0.159 (95% CI +0.097 to +0.218), and on rare-common pairs, +0.245 (+0.147 t",
+     "expected": 0.097,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.094,
+      "final": 0.097,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1631",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-rare.d_ci.1",
+     "ms": "he combined matched-shortcut baselines, DisAtlas (in-graph) is significantly higher on rare-rare pairs, +0.159 (95% CI +0.097 to +0.218), and on rare-common pairs, +0.245 (+0.147 to +0.345);",
+     "expected": 0.218,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.214,
+      "final": 0.218,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1631",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-common.d_stack",
+     "ms": "y higher on rare-rare pairs, +0.159 (95% CI +0.097 to +0.218), and on rare-common pairs, +0.245 (+0.147 to +0.345); on common-common pairs the difference, +0.071 (-0.115 to +0.301), is",
+     "expected": 0.245,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.241,
+      "final": 0.245,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1631",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-common.d_ci.0",
+     "ms": "sAtlas (in-graph) is significantly higher on rare-rare pairs, +0.159 (95% CI +0.097 to +0.218), and on rare-common pairs, +0.245 (+0.147 to +0.345); on common-common pairs the difference, +0",
+     "expected": 0.147,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.143,
+      "final": 0.147,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1631",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-common.d_ci.1",
+     "ms": "graph) is significantly higher on rare-rare pairs, +0.159 (95% CI +0.097 to +0.218), and on rare-common pairs, +0.245 (+0.147 to +0.345); on common-common pairs the difference, +0.071 (-0.11",
+     "expected": 0.345,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.34,
+      "final": 0.345,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1631",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|common-common.d_stack",
+     "ms": "s, +0.159 (95% CI +0.097 to +0.218), and on rare-common pairs, +0.245 (+0.147 to +0.345); on common-common pairs the difference, +0.071 (-0.115 to +0.301), is not significant (Table S11). Pe",
+     "expected": 0.071,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.033,
+      "final": 0.071,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1631",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|common-common.d_ci.0",
+     "ms": "59 (95% CI +0.097 to +0.218), and on rare-common pairs, +0.245 (+0.147 to +0.345); on common-common pairs the difference, +0.071 (-0.115 to +0.301), is not significant (Table S11). Performan",
+     "expected": -0.115,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": -0.172,
+      "final": -0.115,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1631",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|common-common.d_ci.1",
+     "ms": "+0.097 to +0.218), and on rare-common pairs, +0.245 (+0.147 to +0.345); on common-common pairs the difference, +0.071 (-0.115 to +0.301), is not significant (Table S11). Performance therefor",
+     "expected": 0.301,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.275,
+      "final": 0.301,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1631",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|Test split pairs|rare-rare.auroc",
+     "ms": " claim a specific common-common advantage for DisAtlas over the matched shortcuts. On the test split, DisAtlas (in-graph) reaches 0.778 (0.704-0.849) on 301 positive and 321 negative rare-ra",
+     "expected": 0.778,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.775,
+      "final": 0.778,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1634",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|Test split pairs|rare-rare.ci.0",
+     "ms": "On the test split, DisAtlas (in-graph) reaches 0.778 (0.704-0.849) on 301 positive and 321 negative rare",
+     "expected": 0.704,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.701,
+      "final": 0.704,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1636",
+     "previous_ms": "test split only when both of its diseases are in the test half (477 of the 938 diseases). 1,094 of these pairs (491 positive, 603 negative) form the test split. The construction ste",
+     "classified_by": "session-model(claude-opus-5-5)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|Test split pairs|rare-rare.ci.1",
+     "ms": "On the test split, DisAtlas (in-graph) reaches 0.778 (0.704-0.849) on 301 positive and 321 negative rare-rare",
+     "expected": 0.849,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.847,
+      "final": 0.849,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1636",
+     "previous_ms": "test split only when both of its diseases are in the test half (477 of the 938 diseases). 1,094 of these pairs (491 positive, 603 negative) form the test split. The construction ste",
+     "classified_by": "session-model(claude-opus-5-5)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|Test split pairs|rare-rare.pos",
+     "ms": "n-common advantage for DisAtlas over the matched shortcuts. On the test split, DisAtlas (in-graph) reaches 0.778 (0.704-0.849) on 301 positive and 321 negative rare-rare pairs, 0.939 (0.872-",
+     "expected": 301,
+     "ms_source": "story.md L1634",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|Test split pairs|rare-rare.neg",
+     "ms": "e for DisAtlas over the matched shortcuts. On the test split, DisAtlas (in-graph) reaches 0.778 (0.704-0.849) on 301 positive and 321 negative rare-rare pairs, 0.939 (0.872-0.984) on 68 and ",
+     "expected": 321,
+     "ms_source": "story.md L1634",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|Test split pairs|rare-common.auroc",
+     "ms": "d shortcuts. On the test split, DisAtlas (in-graph) reaches 0.778 (0.704-0.849) on 301 positive and 321 negative rare-rare pairs, 0.939 (0.872-0.984) on 68 and 279 rare-common pairs, and 0.8",
+     "expected": 0.939,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.937,
+      "final": 0.939,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1636",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|Test split pairs|rare-common.ci.0",
+     "ms": "aph) reaches 0.778 (0.704-0.849) on 301 positive and 321 negative rare-rare pairs, 0.939 (0.872-0.984) on 68 and 279 rare-common pairs, and",
+     "expected": 0.872,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.863,
+      "final": 0.872,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1636",
+     "previous_ms": "ase names, the shared trial drugs and their highest trial phase; the 2,182 judged strong (1,285) or plausible (897) were kept, giving 2,182 positive and 2,182 negative pairs (4,364",
+     "classified_by": "session-model(claude-opus-5-5)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|Test split pairs|rare-common.ci.1",
+     "ms": "eaches 0.778 (0.704-0.849) on 301 positive and 321 negative rare-rare pairs, 0.939 (0.872-0.984) on 68 and 279 rare-common pairs, and 0.860",
+     "expected": 0.984,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.983,
+      "final": 0.984,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1636",
+     "previous_ms": "ase names, the shared trial drugs and their highest trial phase; the 2,182 judged strong (1,285) or plausible (897) were kept, giving 2,182 positive and 2,182 negative pairs (4,364",
+     "classified_by": "session-model(claude-opus-5-5)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|Test split pairs|rare-common.pos",
+     "ms": "mon relationships, defined as a rare disease and a common disease that have been investigated with the same drug. For each of the 68 rare-common pairs in the test split, we ranked all common",
+     "expected": 68,
+     "ms_source": "story.md L248",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|Test split pairs|rare-common.neg",
+     "ms": ", DisAtlas (in-graph) reaches 0.778 (0.704-0.849) on 301 positive and 321 negative rare-rare pairs, 0.939 (0.872-0.984) on 68 and 279 rare-common pairs, and 0.860 (0.806-0.906) on all 491 an",
+     "expected": 279,
+     "ms_source": "story.md L1636",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|Test split pairs|all.auroc",
+     "ms": "es 0.778 (0.704-0.849) on 301 positive and 321 negative rare-rare pairs, 0.939 (0.872-0.984) on 68 and 279 rare-common pairs, and 0.860 (0.806-0.906) on all 491 and 603 pairs (Figure S3a). T",
+     "expected": 0.86,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.859,
+      "final": 0.86,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1636",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|Test split pairs|all.pos",
+     "ms": "airs, 0.939 (0.872-0.984) on 68 and 279 rare-common pairs, and 0.860 (0.806-0.906) on all 491 and 603 pairs (Figure @fig:SIrarecommonstrat",
+     "expected": 491,
+     "ms_source": "story.md L1636",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "01 positive and 321 negative rare-rare pairs, 0.939 (0.872-0.984) on 68 and 279 rare-common pairs, and 0.860 (0.806-0.906) on all 491 and 603 pairs (Figure S3a). The test split holds 122 pos"
+    },
+    {
+     "key": "strata.IxIDN-Matched|Test split pairs|all.neg",
+     "ms": "939 (0.872-0.984) on 68 and 279 rare-common pairs, and 0.860 (0.806-0.906) on all 491 and 603 pairs (Figure @fig:SIrarecommonstratifieda).",
+     "expected": 603,
+     "ms_source": "story.md L1636",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "ive and 321 negative rare-rare pairs, 0.939 (0.872-0.984) on 68 and 279 rare-common pairs, and 0.860 (0.806-0.906) on all 491 and 603 pairs (Figure S3a). The test split holds 122 positive bu"
+    },
+    {
+     "key": "strata.IxIDN-Matched|Test split pairs|common-common.pos",
+     "ms": "The test split holds 122 positive but only 3 negative common-common p",
+     "expected": 122,
+     "ms_source": "story.md L1637",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "0.872-0.984) on 68 and 279 rare-common pairs, and 0.860 (0.806-0.906) on all 491 and 603 pairs (Figure S3a). The test split holds 122 positive but only 3 negative common-common pairs, too fe"
+    },
+    {
+     "key": "strata.IxIDN-Matched|Test split pairs|common-common.neg",
+     "ms": "The test split holds 122 positive but only 3 negative common-common pairs, too few for an",
+     "expected": 3,
+     "ms_source": "story.md L1637",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": " 279 rare-common pairs, and 0.860 (0.806-0.906) on all 491 and 603 pairs (Figure S3a). The test split holds 122 positive but only 3 negative common-common pairs, too few for an estimate, so "
+    },
+    {
+     "key": "anchored.rare_anchor_rank_common_partners.auroc",
+     "ms": "Rare anchors rank their common partners with a mean in-graph AUROC of 0.793 (0.664-0.912; 31 anchors, 120 pairs), common",
+     "expected": 0.793,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.781,
+      "final": 0.793,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1641",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "rs, and the CI comes from an anchor bootstrap (Figure S3b). Rare anchors rank their common partners with a mean in-graph AUROC of 0.793 (0.664-0.912; 31 anchors, 120 pairs), common anchors r"
+    },
+    {
+     "key": "anchored.rare_anchor_rank_common_partners.ci.0",
+     "ms": "Rare anchors rank their common partners with a mean in-graph AUROC of 0.793 (0.664-0.912; 31 anchors, 120 pairs), common anchor",
+     "expected": 0.664,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.646,
+      "final": 0.664,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1641",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": " the CI comes from an anchor bootstrap (Figure S3b). Rare anchors rank their common partners with a mean in-graph AUROC of 0.793 (0.664-0.912; 31 anchors, 120 pairs), common anchors rank the"
+    },
+    {
+     "key": "anchored.rare_anchor_rank_common_partners.ci.1",
+     "ms": "Rare anchors rank their common partners with a mean in-graph AUROC of 0.793 (0.664-0.912; 31 anchors, 120 pairs), common anchors rank",
+     "expected": 0.912,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.9,
+      "final": 0.912,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1641",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "I comes from an anchor bootstrap (Figure S3b). Rare anchors rank their common partners with a mean in-graph AUROC of 0.793 (0.664-0.912; 31 anchors, 120 pairs), common anchors rank their rar"
+    },
+    {
+     "key": "anchored.rare_anchor_rank_common_partners.anchors",
+     "ms": " from an anchor bootstrap (Figure S3b). Rare anchors rank their common partners with a mean in-graph AUROC of 0.793 (0.664-0.912; 31 anchors, 120 pairs), common anchors rank their rare partn",
+     "expected": 31,
+     "ms_source": "story.md L1640",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "anchored.rare_anchor_rank_common_partners.pairs",
+     "ms": "hor bootstrap (Figure S3b). Rare anchors rank their common partners with a mean in-graph AUROC of 0.793 (0.664-0.912; 31 anchors, 120 pairs), common anchors rank their rare partners with 0.8",
+     "expected": 120,
+     "ms_source": "story.md L1641",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "anchored.common_anchor_rank_rare_partners.auroc",
+     "ms": "n partners with a mean in-graph AUROC of 0.793 (0.664-0.912; 31 anchors, 120 pairs), common anchors rank their rare partners with 0.880 (0.835-0.922; 104 anchors, 934 pairs), and rare anchor",
+     "expected": 0.88,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.878,
+      "final": 0.88,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1641",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "anchored.common_anchor_rank_rare_partners.ci.0",
+     "ms": "ers with a mean in-graph AUROC of 0.793 (0.664-0.912; 31 anchors, 120 pairs), common anchors rank their rare partners with 0.880 (0.835-0.922; 104 anchors, 934 pairs), and rare anchors rank ",
+     "expected": 0.835,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.831,
+      "final": 0.835,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1641",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "anchored.common_anchor_rank_rare_partners.ci.1",
+     "ms": "th a mean in-graph AUROC of 0.793 (0.664-0.912; 31 anchors, 120 pairs), common anchors rank their rare partners with 0.880 (0.835-0.922; 104 anchors, 934 pairs), and rare anchors rank their ",
+     "expected": 0.922,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.917,
+      "final": 0.922,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1641",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "anchored.common_anchor_rank_rare_partners.anchors",
+     "ms": "an in-graph AUROC of 0.793 (0.664-0.912; 31 anchors, 120 pairs), common anchors rank their rare partners with 0.880 (0.835-0.922; 104 anchors, 934 pairs), and rare anchors rank their rare pa",
+     "expected": 104,
+     "ms_source": "story.md L1641",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "anchored.common_anchor_rank_rare_partners.pairs",
+     "ms": "UROC of 0.793 (0.664-0.912; 31 anchors, 120 pairs), common anchors rank their rare partners with 0.880 (0.835-0.922; 104 anchors, 934 pairs), and rare anchors rank their rare partners with 0",
+     "expected": 934,
+     "ms_source": "story.md L1641",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "anchored.rare_anchor_rank_rare_partners.auroc",
+     "ms": "anchors rank their rare partners with 0.880 (0.835-0.922; 104 anchors, 934 pairs), and rare anchors rank their rare partners with 0.738 (0.710-0.764; 452 anchors, 2,251 pairs). Common anchor",
+     "expected": 0.738,
+     "tol": 0.0005,
+     "ms_source": "story.md L1641",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "anchored.rare_anchor_rank_rare_partners.ci.0",
+     "ms": " rank their rare partners with 0.880 (0.835-0.922; 104 anchors, 934 pairs), and rare anchors rank their rare partners with 0.738 (0.710-0.764; 452 anchors, 2,251 pairs). Common anchors ranki",
+     "expected": 0.71,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.711,
+      "final": 0.71,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1641",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "anchored.rare_anchor_rank_rare_partners.ci.1",
+     "ms": "their rare partners with 0.880 (0.835-0.922; 104 anchors, 934 pairs), and rare anchors rank their rare partners with 0.738 (0.710-0.764; 452 anchors, 2,251 pairs). Common anchors ranking com",
+     "expected": 0.764,
+     "tol": 0.0005,
+     "ms_source": "story.md L1641",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "anchored.rare_anchor_rank_rare_partners.anchors",
+     "ms": "are partners with 0.880 (0.835-0.922; 104 anchors, 934 pairs), and rare anchors rank their rare partners with 0.738 (0.710-0.764; 452 anchors, 2,251 pairs). Common anchors ranking common par",
+     "expected": 452,
+     "ms_source": "story.md L1641",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "anchored.rare_anchor_rank_rare_partners.pairs",
+     "ms": "with 0.880 (0.835-0.922; 104 anchors, 934 pairs), and rare anchors rank their rare partners with 0.738 (0.710-0.764; 452 anchors, 2,251 pairs). Common anchors ranking common partners give 0.",
+     "expected": 2251,
+     "ms_source": "story.md L1641",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "anchored.common_anchor_rank_common_partners.auroc",
+     "ms": " anchors rank their rare partners with 0.738 (0.710-0.764; 452 anchors, 2,251 pairs). Common anchors ranking common partners give 0.831 (in-graph; 0.713-0.934), but this group has 22 qualify",
+     "expected": 0.831,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.799,
+      "final": 0.831,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1641",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "anchored.common_anchor_rank_common_partners.ci.0",
+     "ms": "ir rare partners with 0.738 (0.710-0.764; 452 anchors, 2,251 pairs). Common anchors ranking common partners give 0.831 (in-graph; 0.713-0.934), but this group has 22 qualifying anchors and o",
+     "expected": 0.713,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.682,
+      "final": 0.713,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1641",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "anchored.common_anchor_rank_common_partners.ci.1",
+     "ms": "e partners with 0.738 (0.710-0.764; 452 anchors, 2,251 pairs). Common anchors ranking common partners give 0.831 (in-graph; 0.713-0.934), but this group has 22 qualifying anchors and only 22",
+     "expected": 0.934,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.902,
+      "final": 0.934,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1641",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "anchored.common_anchor_rank_common_partners.anchors",
+     "ms": "0-0.764; 452 anchors, 2,251 pairs). Common anchors ranking common partners give 0.831 (in-graph; 0.713-0.934), but this group has 22 qualifying anchors and only 22 negatives among its 213 pa",
+     "expected": 22,
+     "ms_source": "story.md L1641",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "anchored.common_anchor_rank_common_partners.pairs",
+     "ms": "his group has 22 qualifying anchors and only 22 negatives among its 213 pairs, so the estimate is as imprecise",
+     "expected": 213,
+     "ms_source": "story.md L1642",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "enrichment_k10.observed|rare.0",
+     "ms": "atched null. The share of a rare disease's 10 nearest neighbors in the embedding that are common is lower than the nulls predict (0.135 observed against 0.174 expected), and the share of a c",
+     "expected": 0.135,
+     "tol": 0.0005,
+     "ms_source": "story.md L1650",
+     "note": "former manuscript_mismatch resolved: final text prints the regenerated value (previously printed 0.136)",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "enrichment_k10.null_annotation|rare.0",
+     "ms": "of a rare disease's 10 nearest neighbors in the embedding that are common is lower than the nulls predict (0.135 observed against 0.174 expected), and the share of a common disease's 10 near",
+     "expected": 0.174,
+     "tol": 0.0005,
+     "ms_source": "story.md L1650",
+     "note": "former manuscript_mismatch resolved: final text prints the regenerated value (previously printed 0.173)",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "enrichment_k10.observed|common.0",
+     "ms": "ct (0.135 observed against 0.174 expected), and the share of a common disease's 10 nearest neighbors that are rare is also lower (0.615 against 0.779; p = 0.001 for both). Neither class is e",
+     "expected": 0.615,
+     "tol": 0.0005,
+     "ms_source": "story.md L1650",
+     "note": "former manuscript_mismatch resolved: final text prints the regenerated value (previously printed 0.618)",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "enrichment_k10.null_annotation|common.0",
+     "ms": "rved against 0.174 expected), and the share of a common disease's 10 nearest neighbors that are rare is also lower (0.615 against 0.779; p = 0.001 for both). Neither class is excluded from t",
+     "expected": 0.779,
+     "tol": 0.0005,
+     "ms_source": "story.md L1650",
+     "note": "former manuscript_mismatch resolved: final text prints the regenerated value (previously printed 0.778)",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery.common anchor, rare candidates.d_adamic_adar.0",
+     "ms": "gainst Adamic-Adar (0.916 and 0.948), the paired differences of DisAtlas are -0.019 (95% disease-cluster CI -0.056 to +0.023) and -0.013 (-0.080 to +0.047), and a partner-degree baseline sco",
+     "expected": -0.013,
+     "tol": 0.0005,
+     "ms_source": "story.md L1668",
+     "note": "former manuscript_mismatch resolved: final text prints the regenerated value (previously printed −0.014)",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    }
+   ]
+  },
+  {
+   "label": "SI_rare_common_enrichment",
+   "script": "figures/SI/si_cluster_rarecommon_numbers.py",
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "membership.rare_share",
+     "ms": "81% of the embedded diseases are rare, so a ran",
+     "expected": 81,
+     "ms_source": "story.md L1646",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": " among its 213 pairs, so the estimate is as imprecise as the common-common stratum above. S12.2. Enrichment against matched nulls 81% of the embedded diseases are rare, so a randomly chosen "
+    },
+    {
+     "key": "recovery.rare anchor, common candidates.partner_degree",
+     "ms": "eighbor in the embedding is rare with probability near 0.81, which means a simple nearest-neighbor count alone",
+     "expected": 0.81,
+     "tol": 0.005,
+     "ms_source": "story.md L1646",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "ksel_K_range.0",
+     "ms": "dded disease set. We therefore compared each disease's 10 nearest neighbors against three null models: an unre",
+     "expected": 10,
+     "ms_source": "story.md L1646",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "coverage_k10.null_degree|rare.1",
+     "ms": "t 0.174 expected), and the share of a common disease's 10 nearest neighbors that are rare is also lower (0.615 against 0.779; p = 0.001 for both). Neither class is excluded from the other's ",
+     "expected": 0.001,
+     "tol": 0.0005,
+     "ms_source": "story.md L1650",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "coverage_k10.observed|rare.0",
+     "ms": "Among their 10 nearest neighbors, 59% of rare diseases have at least one common d",
+     "expected": 59,
+     "ms_source": "story.md L1656",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": " class have at least one disease of the other class among their nearest neighbors (Figure S18). Among their 10 nearest neighbors, 59% of rare diseases have at least one common disease, again"
+    },
+    {
+     "key": "coverage_k10.null_annotation|rare.0",
+     "ms": "heir 10 nearest neighbors, 59% of rare diseases have at least one common disease, against 80% under the annotation-depth-matched null and 88% under the degree-matched and unrestricte",
+     "expected": 80,
+     "note03": {
+      "previous_expected": 79,
+      "final": 80,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1656",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "coverage_k10.null_degree|rare.0",
+     "ms": "have at least one common disease, against 80% under the annotation-depth-matched null and 88% under the degree-matched and unrestricted nulls (p = 0.001 for each, the floor achievabl",
+     "expected": 88,
+     "ms_source": "story.md L1656",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "coverage_nperm",
+     "ms": "nrestricted nulls (p = 0.001 for each, the floor achievable with 1,000 permutations); the remaining 41% have n",
+     "expected": 1000,
+     "ms_source": "story.md L1656",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "coverage_k10_rare_none_pct",
+     "ms": "each, the floor achievable with 1,000 permutations); the remaining 41% have none, and for the median rare dise",
+     "expected": 41,
+     "ms_source": "story.md L1656",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "coverage_k10.observed|common.0",
+     "ms": "r. Common diseases almost always have a rare neighbor (97% within the 10 nearest, against essentially 100% und",
+     "expected": 97,
+     "ms_source": "story.md L1658",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "external.enriched_null_max",
+     "ms": "against none in 50 label shuffles",
+     "expected": 0.0,
+     "tol": 0.005,
+     "note03": {
+      "previous_expected": 1.0,
+      "final": 0.0,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1522",
+     "classified_by": "session-model(claude-opus-5-5)"
+    },
+    {
+     "key": "enrichment_k10.null_uniform|common.0",
+     "ms": "matched nulls 81% of the embedded diseases are rare, so a randomly chosen neighbor in the embedding is rare with probability near 0.81, which means a simple nearest-neighbor count alone cann",
+     "expected": 0.81,
+     "tol": 0.005,
+     "ms_source": "story.md L1646",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "external.n_shuffles",
+     "ms": "nearest neighbors in the DisAtlas embedding, for k = 1–50, compared with the unrestricted, degree-matched and",
+     "expected": 50,
+     "ms_source": "story.md L1660",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    }
+   ]
+  },
+  {
+   "label": "SI_rare_common_recovery_detail",
+   "script": "figures/SI/si_cluster_rarecommon_numbers.py",
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "strata.IxIDN-Matched|Test split pairs|rare-common.pos",
+     "ms": "mon relationships, defined as a rare disease and a common disease that have been investigated with the same drug. For each of the 68 rare-common pairs in the test split, we ranked all common",
+     "expected": 68,
+     "ms_source": "story.md L248",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery.rare anchor, common candidates.DisAtlas",
+     "ms": "eral. On the 68 rare-common pairs in the IxIDN-Matched test split, DisAtlas places the documented partner at a mean percentile of 0.897 when the rare disease is ranked among common diseases,",
+     "expected": 0.897,
+     "tol": 0.0005,
+     "ms_source": "story.md L1666",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery.common anchor, rare candidates.cosine",
+     "ms": ", DisAtlas places the documented partner at a mean percentile of 0.897 when the rare disease is ranked among common diseases, and 0.934 when the common disease is ranked among rare diseases ",
+     "expected": 0.934,
+     "tol": 0.0005,
+     "ms_source": "story.md L1666",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery.rare anchor, common candidates.adamic_adar",
+     "ms": "eference, Adamic-Adar [92] computed on the same MechDist training graph (unweighted edges) without learning. Against Adamic-Adar (0.916 and 0.948), the paired differences of DisAtlas are -0.",
+     "expected": 0.916,
+     "tol": 0.0005,
+     "ms_source": "story.md L1667",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery.common anchor, rare candidates.adamic_adar",
+     "ms": "Adamic-Adar [92] computed on the same MechDist training graph (unweighted edges) without learning. Against Adamic-Adar (0.916 and 0.948), the paired differences of DisAtlas are -0.019 (95% d",
+     "expected": 0.948,
+     "tol": 0.0005,
+     "ms_source": "story.md L1667",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery.rare anchor, common candidates.d_adamic_adar.0",
+     "ms": "training graph (unweighted edges) without learning. Against Adamic-Adar (0.916 and 0.948), the paired differences of DisAtlas are -0.019 (95% disease-cluster CI -0.056 to +0.023) and -0.013 ",
+     "expected": -0.019,
+     "tol": 0.0005,
+     "ms_source": "story.md L1667",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery.common anchor, rare candidates.adamic_adar",
+     "ms": "Adamic-Adar [92] computed on the same MechDist training graph (unweighted edges) without learning. Against Adamic-Adar (0.916 and 0.948), the paired differences of DisAtlas are -0.019 (95% d",
+     "expected": 0.948,
+     "tol": 0.0005,
+     "ms_source": "story.md L1667",
+     "classified_by": "deterministic(verbatim snippet in story)",
+     "note_tightened": {
+      "previous_expected": 0.95,
+      "previous_tol": 0.005
+     }
+    },
+    {
+     "key": "recovery.rare anchor, common candidates.d_adamic_adar.1",
+     "ms": "s) without learning. Against Adamic-Adar (0.916 and 0.948), the paired differences of DisAtlas are -0.019 (95% disease-cluster CI -0.056 to +0.023) and -0.013 (-0.080 to +0.047), and a partn",
+     "expected": -0.056,
+     "tol": 0.0005,
+     "ms_source": "story.md L1668",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery.rare anchor, common candidates.d_adamic_adar.2",
+     "ms": "learning. Against Adamic-Adar (0.916 and 0.948), the paired differences of DisAtlas are -0.019 (95% disease-cluster CI -0.056 to +0.023) and -0.013 (-0.080 to +0.047), and a partner-degree b",
+     "expected": 0.023,
+     "tol": 0.0005,
+     "ms_source": "story.md L1668",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery.common anchor, rare candidates.d_adamic_adar.1",
+     "ms": "damic-Adar (0.916 and 0.948), the paired differences of DisAtlas are -0.019 (95% disease-cluster CI -0.056 to +0.023) and -0.013 (-0.080 to +0.047), and a partner-degree baseline scores lowe",
+     "expected": -0.08,
+     "tol": 0.0005,
+     "ms_source": "story.md L1668",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery.common anchor, rare candidates.d_adamic_adar.2",
+     "ms": "(0.916 and 0.948), the paired differences of DisAtlas are -0.019 (95% disease-cluster CI -0.056 to +0.023) and -0.013 (-0.080 to +0.047), and a partner-degree baseline scores lower (DisAtlas",
+     "expected": 0.047,
+     "tol": 0.0005,
+     "ms_source": "story.md L1668",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery.rare anchor, common candidates.d_partner_degree.0",
+     "ms": " and a partner-degree baseline scores lower (DisAtlas higher by +0.083, +0.003 to +0.166, and +0.108, +0.004 t",
+     "expected": 0.083,
+     "tol": 0.0005,
+     "ms_source": "story.md L1668",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery.rare anchor, common candidates.d_partner_degree.1",
+     "ms": "artner-degree baseline scores lower (DisAtlas higher by +0.083, +0.003 to +0.166, and +0.108, +0.004 to +0.200",
+     "expected": 0.003,
+     "tol": 0.0005,
+     "ms_source": "story.md L1668",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery.rare anchor, common candidates.d_partner_degree.2",
+     "ms": "ree baseline scores lower (DisAtlas higher by +0.083, +0.003 to +0.166, and +0.108, +0.004 to +0.200), with lo",
+     "expected": 0.166,
+     "tol": 0.0005,
+     "ms_source": "story.md L1668",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery.common anchor, rare candidates.d_partner_degree.0",
+     "ms": " scores lower (DisAtlas higher by +0.083, +0.003 to +0.166, and +0.108, +0.004 to +0.200), with lower bounds c",
+     "expected": 0.108,
+     "tol": 0.0005,
+     "ms_source": "story.md L1668",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "ksel_best_sd",
+     "ms": " lower (DisAtlas higher by +0.083, +0.003 to +0.166, and +0.108, +0.004 to +0.200), with lower bounds close to",
+     "expected": 0.003,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.004,
+      "final": 0.003,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1668",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery.common anchor, rare candidates.d_partner_degree.2",
+     "ms": "Atlas higher by +0.083, +0.003 to +0.166, and +0.108, +0.004 to +0.200), with lower bounds close to zero.]   [",
+     "expected": 0.2,
+     "tol": 0.0005,
+     "ms_source": "story.md L1668",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery.rare anchor, common candidates.TxGNN",
+     "ms": "ed last), places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-clus",
+     "expected": 0.725,
+     "tol": 0.0005,
+     "ms_source": "story.md L1669",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery.common anchor, rare candidates.TxGNN",
+     "ms": "places the documented partner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.",
+     "expected": 0.716,
+     "tol": 0.0005,
+     "ms_source": "story.md L1669",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery.rare anchor, common candidates.d_TxGNN.0",
+     "ms": "ner lower, at 0.725 and 0.716 (DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218,",
+     "expected": 0.173,
+     "tol": 0.0005,
+     "ms_source": "story.md L1669",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery.rare anchor, common candidates.d_TxGNN.1",
+     "ms": "DisAtlas higher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted ",
+     "expected": 0.044,
+     "tol": 0.0005,
+     "ms_source": "story.md L1669",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery.rare anchor, common candidates.d_TxGNN.2",
+     "ms": "igher by +0.173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 ",
+     "expected": 0.304,
+     "tol": 0.0005,
+     "ms_source": "story.md L1669",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery.common anchor, rare candidates.d_TxGNN.0",
+     "ms": "173, 95% disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose ",
+     "expected": 0.218,
+     "tol": 0.0005,
+     "ms_source": "story.md L1669",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery.common anchor, rare candidates.d_TxGNN.1",
+     "ms": " disease-cluster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases",
+     "expected": 0.096,
+     "tol": 0.0005,
+     "ms_source": "story.md L1669",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery.common anchor, rare candidates.d_TxGNN.2",
+     "ms": "luster CI +0.044 to +0.304, and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can ma",
+     "expected": 0.359,
+     "tol": 0.0005,
+     "ms_source": "story.md L1669",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery_txgnn_mapped.rare anchor, common candidates.n",
+     "ms": " and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher ",
+     "expected": 65,
+     "ms_source": "story.md L1669",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery_txgnn_mapped.common anchor, rare candidates.n",
+     "ms": " and +0.218, +0.096 to +0.359); restricted to the 65 pairs whose diseases it can map, DisAtlas remains higher ",
+     "expected": 65,
+     "ms_source": "story.md L1669",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery_txgnn_mapped.rare anchor, common candidates.d_TxGNN.0",
+     "ms": "ose diseases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327), alt",
+     "expected": 0.147,
+     "tol": 0.0005,
+     "ms_source": "story.md L1669",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery_txgnn_mapped.rare anchor, common candidates.d_TxGNN.1",
+     "ms": "ases it can map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327), although Tx",
+     "expected": 0.024,
+     "tol": 0.0005,
+     "ms_source": "story.md L1669",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery_txgnn_mapped.rare anchor, common candidates.d_TxGNN.2",
+     "ms": "n map, DisAtlas remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327), although TxGNN's Prim",
+     "expected": 0.268,
+     "tol": 0.0005,
+     "ms_source": "story.md L1669",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery_txgnn_mapped.common anchor, rare candidates.d_TxGNN.0",
+     "ms": "las remains higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327), although TxGNN's PrimeKG training",
+     "expected": 0.199,
+     "tol": 0.0005,
+     "ms_source": "story.md L1669",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery_txgnn_mapped.common anchor, rare candidates.d_TxGNN.1",
+     "ms": "ins higher (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327), although TxGNN's PrimeKG training graph, ",
+     "expected": 0.079,
+     "tol": 0.0005,
+     "ms_source": "story.md L1669",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "recovery_txgnn_mapped.common anchor, rare candidates.d_TxGNN.2",
+     "ms": " (+0.147, +0.024 to +0.268, and +0.199, +0.079 to +0.327), although TxGNN's PrimeKG training graph, unlike tha",
+     "expected": 0.327,
+     "tol": 0.0005,
+     "ms_source": "story.md L1669",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    }
+   ]
+  },
+  {
+   "label": "SI_rare_common_table",
+   "script": "figures/SI/si_cluster_rarecommon_numbers.py",
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-rare.n",
+     "ms": "claim. S12.1. Performance by rarity stratum On IxIDN-Matched, DisAtlas reaches an in-graph AUROC of 0.757 (95% CI 0.708-0.801) on 2,452 rare-rare pairs and 0.893 (0.829-0.937) on 1,241 rare-",
+     "expected": 2452,
+     "ms_source": "story.md L1620",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-rare.auroc",
+     "ms": "On IxIDN-Matched, DisAtlas reaches an in-graph AUROC of 0.757 (95% CI 0.708-0.801) on 2,452 rare-rare pair",
+     "expected": 0.757,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.754,
+      "final": 0.757,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1622",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": " of a rare-common integration claim. S12.1. Performance by rarity stratum On IxIDN-Matched, DisAtlas reaches an in-graph AUROC of 0.757 (95% CI 0.708-0.801) on 2,452 rare-rare pairs and 0.89"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-rare.ci.0",
+     "ms": "On IxIDN-Matched, DisAtlas reaches an in-graph AUROC of 0.757 (95% CI 0.708-0.801) on 2,452 rare-rare pairs and 0.893 (0",
+     "expected": 0.708,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.703,
+      "final": 0.708,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1622",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "mon integration claim. S12.1. Performance by rarity stratum On IxIDN-Matched, DisAtlas reaches an in-graph AUROC of 0.757 (95% CI 0.708-0.801) on 2,452 rare-rare pairs and 0.893 (0.829-0.937"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-rare.ci.1",
+     "ms": "tegration claim. S12.1. Performance by rarity stratum On IxIDN-Matched, DisAtlas reaches an in-graph AUROC of 0.757 (95% CI 0.708-0.801) on 2,452 rare-rare pairs and 0.893 (0.829-0.937) on 1",
+     "expected": 0.801,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.8,
+      "final": 0.801,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1620",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-rare.d_stack",
+     "ms": "se as evidence. Against the combined matched-shortcut baselines, DisAtlas (in-graph) is significantly higher on rare-rare pairs, +0.159 (95% CI +0.097 to +0.218), and on rare-common pairs, +",
+     "expected": 0.159,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.155,
+      "final": 0.159,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1631",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-rare.d_ci.0",
+     "ms": " Against the combined matched-shortcut baselines, DisAtlas (in-graph) is significantly higher on rare-rare pairs, +0.159 (95% CI +0.097 to +0.218), and on rare-common pairs, +0.245 (+0.147 t",
+     "expected": 0.097,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.094,
+      "final": 0.097,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1631",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-rare.d_ci.1",
+     "ms": "he combined matched-shortcut baselines, DisAtlas (in-graph) is significantly higher on rare-rare pairs, +0.159 (95% CI +0.097 to +0.218), and on rare-common pairs, +0.245 (+0.147 to +0.345);",
+     "expected": 0.218,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.214,
+      "final": 0.218,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1631",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-common.n",
+     "ms": "IDN-Matched, DisAtlas reaches an in-graph AUROC of 0.757 (95% CI 0.708-0.801) on 2,452 rare-rare pairs and 0.893 (0.829-0.937) on 1,241 rare-common pairs (Figure S3c; Figure 5c). The 671 com",
+     "expected": 1241,
+     "ms_source": "story.md L1622",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-common.auroc",
+     "ms": "Section S4.5). Performance is maintained across disease rarity, with an in-graph AUROC of 0.757 on pairs of two rare diseases and 0.893 on rare-common pairs (Figure 5c), and in both strata D",
+     "expected": 0.893,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.889,
+      "final": 0.893,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L243",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-common.ci.0",
+     "ms": "ty stratum On IxIDN-Matched, DisAtlas reaches an in-graph AUROC of 0.757 (95% CI 0.708-0.801) on 2,452 rare-rare pairs and 0.893 (0.829-0.937) on 1,241 rare-common pairs (Figure S3c; Figure ",
+     "expected": 0.829,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.825,
+      "final": 0.829,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1622",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-common.ci.1",
+     "ms": "atum On IxIDN-Matched, DisAtlas reaches an in-graph AUROC of 0.757 (95% CI 0.708-0.801) on 2,452 rare-rare pairs and 0.893 (0.829-0.937) on 1,241 rare-common pairs (Figure S3c; Figure 5c). T",
+     "expected": 0.937,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.935,
+      "final": 0.937,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1622",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-common.d_stack",
+     "ms": "y higher on rare-rare pairs, +0.159 (95% CI +0.097 to +0.218), and on rare-common pairs, +0.245 (+0.147 to +0.345); on common-common pairs the difference, +0.071 (-0.115 to +0.301), is",
+     "expected": 0.245,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.241,
+      "final": 0.245,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1631",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-common.d_ci.0",
+     "ms": "r on rare-rare pairs, +0.159 (95% CI +0.097 to +0.218), and on rare-common pairs, +0.245 (+0.147 to +0.345); on common-common pairs the diffe",
+     "expected": 0.147,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.143,
+      "final": 0.147,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1631",
+     "previous_ms": "bined matched-shortcut baselines (95% CI)Rare-rare2,4520.7570.708-0.801+0.159 (+0.097 to +0.218)Rare-common1,2410.8930.829-0.937+0.245 (+0.147 to +0.345)Common-common (IxIDN-Matched",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|rare-common.d_ci.1",
+     "ms": "rare pairs, +0.159 (95% CI +0.097 to +0.218), and on rare-common pairs, +0.245 (+0.147 to +0.345); on common-common pairs the difference, +0.",
+     "expected": 0.345,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.34,
+      "final": 0.345,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1631",
+     "previous_ms": "7570.708-0.801+0.159 (+0.097 to +0.218)Rare-common1,2410.8930.829-0.937+0.245 (+0.147 to +0.345)Common-common (IxIDN-Matched)671 (645 / 26)0.8480.671-0.953+0.071 (-0.115 to +0.301; 26 n",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|common-common.n",
+     "ms": "| Common-common (IxIDN-Matched) | 671 (645 / 26) | 0.848 | 0.671-0.953 | +0.071 (-",
+     "expected": 671,
+     "ms_source": "story.md L1681",
+     "previous_ms": "218)Rare-common1,2410.8930.829-0.937+0.245 (+0.147 to +0.345)Common-common (IxIDN-Matched)671 (645 / 26)0.8480.671-0.953+0.071 (-0.115 to +0.301; 26 negatives; not significant)Common-",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|common-common.pos",
+     "ms": "| Common-common (IxIDN-Matched) | 671 (645 / 26) | 0.848 | 0.671-0.953 | +0.071 (-0.115",
+     "expected": 645,
+     "ms_source": "story.md L1681",
+     "previous_ms": "are-common1,2410.8930.829-0.937+0.245 (+0.147 to +0.345)Common-common (IxIDN-Matched)671 (645 / 26)0.8480.671-0.953+0.071 (-0.115 to +0.301; 26 negatives; not significant)Common-commo",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|common-common.neg",
+     "ms": "| Common-common (IxIDN-Matched) | 671 (645 / 26) | 0.848 | 0.671-0.953 | +0.071 (-0.115 to +",
+     "expected": 26,
+     "ms_source": "story.md L1681",
+     "previous_ms": "mmon1,2410.8930.829-0.937+0.245 (+0.147 to +0.345)Common-common (IxIDN-Matched)671 (645 / 26)0.8480.671-0.953+0.071 (-0.115 to +0.301; 26 negatives; not significant)Common-common (su",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|common-common.auroc",
+     "ms": "| Common-common (IxIDN-Matched) | 671 (645 / 26) | 0.848 | 0.671-0.953 | +0.071 (-0.115 to +0.301; 26",
+     "expected": 0.848,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.809,
+      "final": 0.848,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1681",
+     "previous_ms": "n1,2410.8930.829-0.937+0.245 (+0.147 to +0.345)Common-common (IxIDN-Matched)671 (645 / 26)0.8480.671-0.953+0.071 (-0.115 to +0.301; 26 negatives; not significant)Common-common (supplemen",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|common-common.ci.0",
+     "ms": "| Common-common (IxIDN-Matched) | 671 (645 / 26) | 0.848 | 0.671-0.953 | +0.071 (-0.115 to +0.301; 26 negativ",
+     "expected": 0.671,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.624,
+      "final": 0.671,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1681",
+     "previous_ms": "Common-common (IxIDN-Matched)671 (645 / 26)0.8480.671-0.953+0.071 (-0.115 to +0.301; 26 negatives; not significant)Commo",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|common-common.d_stack",
+     "ms": "| Common-common (IxIDN-Matched) | 671 (645 / 26) | 0.848 | 0.671-0.953 | +0.071 (-0.115 to +0.301; 26 negatives; not signifi",
+     "expected": 0.071,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.033,
+      "final": 0.071,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1681",
+     "previous_ms": "0.937+0.245 (+0.147 to +0.345)Common-common (IxIDN-Matched)671 (645 / 26)0.8480.671-0.953+0.071 (-0.115 to +0.301; 26 negatives; not significant)Common-common (supplementary, matched ne",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|common-common.d_ci.0",
+     "ms": "| Common-common (IxIDN-Matched) | 671 (645 / 26) | 0.848 | 0.671-0.953 | +0.071 (-0.115 to +0.301; 26 negatives; not significant) |",
+     "expected": -0.115,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": -0.172,
+      "final": -0.115,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1681",
+     "previous_ms": ".245 (+0.147 to +0.345)Common-common (IxIDN-Matched)671 (645 / 26)0.8480.671-0.953+0.071 (-0.115 to +0.301; 26 negatives; not significant)Common-common (supplementary, matched negatives)",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|All pairs|common-common.d_ci.1",
+     "ms": "Common-common (IxIDN-Matched) | 671 (645 / 26) | 0.848 | 0.671-0.953 | +0.071 (-0.115 to +0.301; 26 negatives; not significant) |",
+     "expected": 0.301,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.275,
+      "final": 0.301,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1681",
+     "previous_ms": "7 to +0.345)Common-common (IxIDN-Matched)671 (645 / 26)0.8480.671-0.953+0.071 (-0.115 to +0.301; 26 negatives; not significant)Common-common (supplementary, matched negatives)309 added",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)"
+    },
+    {
+     "key": "strata.IxIDN-Matched-CC+|All pairs|common-common.added",
+     "ms": "IxIDN-Matched pairs by rarity stratum and the supplementary common-common benchmark with 309 added matched negatives: DisAtlas AUROC (95% disease-cluster bootstrap CI) against the co",
+     "expected": 309,
+     "ms_source": "story.md L820",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched-CC+|All pairs|common-common.auroc",
+     "ms": "| Common-common (supplementary, matched negatives) | 309 added negatives | 0.856 | 0.755-0.932 | not significant |",
+     "expected": 0.856,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.845,
+      "final": 0.856,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1682",
+     "previous_ms": "tives; not significant)Common-common (supplementary, matched negatives)309 added negatives0.8560.755-0.932not significant S12.5. Rheumatoid arthritis and the inflammatory myopathies The",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)"
+    },
+    {
+     "key": "strata.IxIDN-Matched-CC+|All pairs|common-common.ci.0",
+     "ms": "| Common-common (supplementary, matched negatives) | 309 added negatives | 0.856 | 0.755-0.932 | not significant |",
+     "expected": 0.755,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.748,
+      "final": 0.755,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1682",
+     "previous_ms": "Common-common (supplementary, matched negatives)309 added negatives0.8560.755-0.932not significant S12.5. Rheu",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)"
+    },
+    {
+     "key": "strata.IxIDN-Matched-CC+|All pairs|common-common.ci.1",
+     "ms": "| Common-common (supplementary, matched negatives) | 309 added negatives | 0.856 | 0.755-0.932 | not significant |",
+     "expected": 0.932,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.922,
+      "final": 0.932,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1682",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "71 (-0.115 to +0.301; 26 negatives; not significant)Common-common (supplementary, matched negatives)309 added negatives0.8560.755-0.932not significant S12.5. Rheumatoid arthritis and the inf"
+    },
+    {
+     "key": "recovery.common anchor, rare candidates.adamic_adar",
+     "ms": "CIs are 95% disease-cluster bootstrap intervals; the co",
+     "expected": 0.95,
+     "tol": 0.005,
+     "ms_source": "story.md L1685",
+     "previous_ms": "–common benchmark with 309 added matched negative pairs.] [CIs are 95% disease-cluster bootstrap intervals; th",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)"
+    }
+   ]
+  },
+  {
+   "label": "SI_rare_common_case_ra",
+   "script": "figures/SI/si_cluster_rarecommon_numbers.py",
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "n_diseases",
+     "ms": "ne score over the five embedding seeds of the final model, with the range across seeds; every disease of the group that is in the 13,021-disease index is reported. The group comprises eight ",
+     "expected": 13021,
+     "ms_source": "story.md L1691",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "ra_case.polymyositis.mean",
+     "ms": "The cosine is 0.534 for polymyositis (range across seeds 0.493 t",
+     "expected": 0.534,
+     "tol": 0.0005,
+     "ms_source": "story.md L279",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "yndrome [60], and both disorders share the genetic risk associated with specific haplotypes in the HLA region [61]. The cosine is 0.534 for polymyositis (range across seeds 0.493 to 0.581; 9"
+    },
+    {
+     "key": "ra_case.polymyositis.lo",
+     "ms": "The cosine is 0.534 for polymyositis (range across seeds 0.493 to 0.581; 98.2nd percentile) and 0.505 for a",
+     "expected": 0.493,
+     "tol": 0.0005,
+     "ms_source": "story.md L279",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "genetic risk associated with specific haplotypes in the HLA region [61]. The cosine is 0.534 for polymyositis (range across seeds 0.493 to 0.581; 98.2nd percentile) and 0.505 for antisynthet"
+    },
+    {
+     "key": "ra_case.polymyositis.hi",
+     "ms": "The cosine is 0.534 for polymyositis (range across seeds 0.493 to 0.581; 98.2nd percentile) and 0.505 for antisynthe",
+     "expected": 0.581,
+     "tol": 0.0005,
+     "ms_source": "story.md L279",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "isk associated with specific haplotypes in the HLA region [61]. The cosine is 0.534 for polymyositis (range across seeds 0.493 to 0.581; 98.2nd percentile) and 0.505 for antisynthetase syndr"
+    },
+    {
+     "key": "ra_case.antisynthetase.mean",
+     "ms": "sine is 0.534 for polymyositis (range across seeds 0.493 to 0.581; 98.2nd percentile) and 0.505 for antisynthetase syndrome (0.491 to 0.537;",
+     "expected": 0.505,
+     "tol": 0.0005,
+     "ms_source": "story.md L279",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "aplotypes in the HLA region [61]. The cosine is 0.534 for polymyositis (range across seeds 0.493 to 0.581; 98.2nd percentile) and 0.505 for antisynthetase syndrome (0.491 to 0.537; 97.8th pe"
+    },
+    {
+     "key": "ra_case.antisynthetase.lo",
+     "ms": "he cosine is 0.534 for polymyositis (range across seeds 0.493 to 0.581; 98.2nd percentile) and 0.505 for antisynthetase syndrome (0.491 to 0.537; 97.8th percentile). For rheumatoid arthritis",
+     "expected": 0.491,
+     "tol": 0.0005,
+     "ms_source": "story.md L279",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "ra_case.antisynthetase.hi",
+     "ms": " is 0.534 for polymyositis (range across seeds 0.493 to 0.581; 98.2nd percentile) and 0.505 for antisynthetase syndrome (0.491 to 0.537; 97.8th percentile). For rheumatoid arthritis and poly",
+     "expected": 0.537,
+     "tol": 0.0005,
+     "ms_source": "story.md L279",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "ra_case.dermatomyositis_mondo.mean",
+     "ms": "367), which MONDO classes as a subtype of polymyositis, scores higher with RA than polymyositis and antisynthetase syndrome (mean 0.613, seed range 0.589-0.644; 98.9th percentile of all 84,7",
+     "expected": 0.613,
+     "tol": 0.0005,
+     "ms_source": "story.md L1693",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "ra_case.dermatomyositis_mondo.lo",
+     "ms": "classes as a subtype of polymyositis, scores higher with RA than polymyositis and antisynthetase syndrome (mean 0.613, seed range 0.589-0.644; 98.9th percentile of all 84,766,710 disease pai",
+     "expected": 0.589,
+     "tol": 0.0005,
+     "ms_source": "story.md L1693",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "ra_case.dermatomyositis_mondo.hi",
+     "ms": "s as a subtype of polymyositis, scores higher with RA than polymyositis and antisynthetase syndrome (mean 0.613, seed range 0.589-0.644; 98.9th percentile of all 84,766,710 disease pairs). M",
+     "expected": 0.644,
+     "tol": 0.0005,
+     "ms_source": "story.md L1693",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "ra_case.mctd.mean",
+     "ms": "ndex, score lower but above the 90th percentile (96.1st, 95.2nd and 90.4th). Mixed connective tissue disease (MONDO:0005854; mean 0.084, seed range 0.055-0.103) scores below the 90th percent",
+     "expected": 0.084,
+     "tol": 0.0005,
+     "ms_source": "story.md L1695",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "ra_case.mctd.lo",
+     "ms": "but above the 90th percentile (96.1st, 95.2nd and 90.4th). Mixed connective tissue disease (MONDO:0005854; mean 0.084, seed range 0.055-0.103) scores below the 90th percentile (76.3rd). Tabl",
+     "expected": 0.055,
+     "tol": 0.0005,
+     "ms_source": "story.md L1695",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "ra_case.mctd.hi",
+     "ms": "ove the 90th percentile (96.1st, 95.2nd and 90.4th). Mixed connective tissue disease (MONDO:0005854; mean 0.084, seed range 0.055-0.103) scores below the 90th percentile (76.3rd). Table S12:",
+     "expected": 0.103,
+     "tol": 0.0005,
+     "ms_source": "story.md L1695",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    }
+   ]
+  }
+ ],
+ "unchecked": [
+  {
+   "section": "SI_rare_common_strata",
+   "token": "2,000",
+   "reason": "bootstrap resample count (parameter)",
+   "ctx": "king those partners, averaged over anchors, with anchor-bootstrap CIs (B = 2,000); numbers give anchors and pairs, and g",
+   "ms_source": "generic token (no passage)",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "section": "SI_rare_common_enrichment",
+   "token": "2.5",
+   "reason": "interval level label",
+   "ctx": " annotation-depth-matched nulls (lines: mean over 1,000 permutations; bands: 2.5–97.5% range). **(b)** The same for comm",
+   "ms_source": "generic token (no passage)",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  }
+ ],
+ "manuscript_mismatch": [],
+ "retired": [
+  {
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "key": "headline_test.ci.0",
+   "expected": 0.803,
+   "reason": "headline test CI of this producer is not printed; the printed headline AUROC/CI comes from the official benchmark producer and is bound in tests/main_text_numbers.tsv",
+   "previous_ms": "s, and places them in separate clusters (c29 and c33) at K = 55 and at every K from 20 to 80. All 8 negative control pairs are separated at K = 55 (Supplementary Section S11.3). Comp",
+   "classified_by": "session-model(claude-opus-5-5)"
+  },
+  {
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "key": "headline_test.ci.1",
+   "expected": 0.905,
+   "reason": "headline test CI of this producer is not printed; the printed headline AUROC/CI comes from the official benchmark producer and is bound in tests/main_text_numbers.tsv",
+   "previous_ms": "otstrap 56; Methods) across all 4,364 IxIDN-Matched pairs, and 0.860 (0.806-0.906) on the 1,094-pair held-out test split whose diseases were not used to select the embedding (Figure",
+   "classified_by": "session-model(claude-opus-5-5)"
+  },
+  {
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "key": "strata.IxIDN-Matched|Test split pairs|rare-common.d_ci.1",
+   "expected": 0.5,
+   "reason": "test-split rare-common d CI is not printed in the final text",
+   "previous_ms": "seases, and 0.935 when the common disease is ranked among rare diseases (0-1 scale, where 0.5 corresponds to chance). These values are similar to those of the graph-only reference, Ad",
+   "classified_by": "session-model(claude-opus-5-5)"
+  },
+  {
+   "token": "−0.014",
+   "reason": "superseded: the final text prints -0.013 (checked: SI_rare_common_strata recovery common anchor d_adamic_adar.0)",
+   "previous_ms": "ired differences are −0.019 (95% disease-cluster CI −0.056 to +0.023) and −0.014 (−0.080 to +0.047), and a partner-degre",
+   "previous_reason": "manuscript_mismatch entry (recovery d_adamic_adar)",
+   "classified_by": "session-model(claude-opus-5-5)"
+  }
+ ]
+}

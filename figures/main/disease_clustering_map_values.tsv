@@ -1,0 +1,61 @@
+key	value
+n_diseases	13021
+n_clusters	55
+disatlas|rare-rare|auroc	0.7572360559894166
+txgnn|rare-rare|auroc	0.5401863824520975
+disatlas|rare-rare|ci_lo	0.7081299959634527
+txgnn|rare-rare|ci_lo	0.4866196130682895
+disatlas|rare-rare|ci_hi	0.8013442390470197
+txgnn|rare-rare|ci_hi	0.5928477421688516
+disatlas|rare-rare|n_pos	1284
+txgnn|rare-rare|n_pos	1284
+disatlas|rare-rare|n_neg	1168
+txgnn|rare-rare|n_neg	1168
+disatlas|rare-common|auroc	0.8932126226176569
+txgnn|rare-common|auroc	0.6149145476948681
+disatlas|rare-common|ci_lo	0.8289527534626955
+txgnn|rare-common|ci_lo	0.5279709540229014
+disatlas|rare-common|ci_hi	0.9373400861788079
+txgnn|rare-common|ci_hi	0.7028137748689592
+disatlas|rare-common|n_pos	253
+txgnn|rare-common|n_pos	253
+disatlas|rare-common|n_neg	988
+txgnn|rare-common|n_neg	988
+disatlas|common-common|auroc	0.8475253428741802
+txgnn|common-common|auroc	0.4008348240906381
+disatlas|common-common|ci_lo	0.6706460198150368
+txgnn|common-common|ci_lo	0.22725786510942764
+disatlas|common-common|ci_hi	0.9527783765092861
+txgnn|common-common|ci_hi	0.6726818458722109
+disatlas|common-common|n_pos	645
+txgnn|common-common|n_pos	645
+disatlas|common-common|n_neg	26
+txgnn|common-common|n_neg	26
+disatlas|all|auroc	0.834108920498605
+txgnn|all|auroc	0.5663663664294398
+disatlas|all|ci_lo	0.7978937737243764
+txgnn|all|ci_lo	0.5211829504874722
+disatlas|all|ci_hi	0.8665534600595323
+txgnn|all|ci_hi	0.6109705003362732
+disatlas|all|n_pos	2182
+txgnn|all|n_pos	2182
+disatlas|all|n_neg	2182
+txgnn|all|n_neg	2182
+diff_txgnn|rare-rare|diff	0.21704967353731908
+diff_txgnn|rare-rare|ci_lo	0.14667165368080026
+diff_txgnn|rare-rare|ci_hi	0.2869940800836712
+diff_txgnn|rare-common|diff	0.2782980749227888
+diff_txgnn|rare-common|ci_lo	0.1782199673013548
+diff_txgnn|rare-common|ci_hi	0.3821862305984966
+diff_txgnn|common-common|diff	0.44669051878354216
+diff_txgnn|common-common|ci_lo	0.1644419485553208
+diff_txgnn|common-common|ci_hi	0.655259703532644
+diff_txgnn|all|diff	0.26774255406916514
+diff_txgnn|all|ci_lo	0.21674974005931308
+diff_txgnn|all|ci_hi	0.3165330520882455
+control|TSC / LAM	0.785586
+control|CAPS / FMF	0.790216
+control|aHUS / PNH	0.854618
+control|Crohn disease / ulcerative colitis	0.90738
+control|diabetes insipidus / T2D	0.180508
+control|NF1 (mut) / NF2	0.354244

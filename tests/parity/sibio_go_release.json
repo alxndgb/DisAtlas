@@ -1,0 +1,901 @@
+{
+ "ms_source": {
+  "file": "assets/manuscripts/disatlas/disatlas_representation_learning_story.md (dis2vec_2)",
+  "sha256": "52e96bb6ce1272c617ae6bfe2a785764d8e3faa5feb9873a20fed23e803d5ab7",
+  "note": "ms snippets re-bound to the story markdown (binding source of the final text); line numbers refer to that file at this sha256"
+ },
+ "items": [
+  {
+   "label": "SI_go_release_text",
+   "script": "figures/SI/si_go_release_table.py",
+   "status": "exact",
+   "text_checks": [
+    {
+     "file": "figures/SI/SI_go_release_table.md",
+     "numbers": [
+      "2008",
+      "95.22",
+      "90.05",
+      "97.60"
+     ],
+     "ms": "| Eculizumab case: PNH → NMO, 2008 slice | All diseases | Percentile of NMO among matched candidate diseases, mean of five seeds | — | — | 95.22 (range 90.05–97",
+     "ms_source": "story.md L2025",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "file": "figures/SI/SI_go_release_table.md",
+     "numbers": [
+      "1566",
+      "3309",
+      "5.73",
+      "3.45",
+      "7.61",
+      "4.55",
+      "2.63",
+      "6.82",
+      "-1.19",
+      "-2.14",
+      "0.00"
+     ],
+     "ms": "| Popularity × weighted-degree groups | Test-pool diseases | Median percentile (percentile points) | 1,566 | 3,309 | +5.73 [+3.45, +7.61] | +4.55 [+2.63, +6.8",
+     "ms_source": "story.md L2017",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "file": "figures/SI/SI_event_time_tables.md",
+     "numbers": [
+      "95"
+     ],
+     "ms": "Against weighted Adamic–Adar, DisAtlas keeps a median-percentile advantage whose 95% CI excludes zero under both releases, in both co-primary comparison sets an",
+     "ms_source": "story.md L2011",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "file": "figures/SI/SI_go_release_table.md",
+     "numbers": [
+      "1566",
+      "3309",
+      "5.7",
+      "2.8",
+      "8.7",
+      "5.4",
+      "2.4",
+      "8.4",
+      "-0.3",
+      "-1.8",
+      "1.1"
+     ],
+     "ms": " +0.00 | | | Test-pool diseases | Top-10% share (percentage points) | 1,566 | 3,309 | +5.7 +2.8, +8.7 | +5.4 +2.4, +8.4 | −0.3 −1.8, +1.1 | | | All diseases | M",
+     "ms_source": "story.md L2018",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    }
+   ]
+  },
+  {
+   "label": "SI_go_release",
+   "script": "figures/SI/si_go_release_table.py",
+   "numbers": "figures/SI/SI_go_release_table_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "table.pct_p1.test.E1.change.0",
+     "ms": "ercentile (percentile points) | 1,566 | 3,309 | +5.73 +3.45, +7.61 | +4.55 +2.63, +6.82 | -1.19 -2.14, +0.00 |",
+     "expected": -1.19,
+     "tol": 0.005,
+     "ms_source": "story.md L2017",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": " × weighted-degree groupsTest-pool diseasesMedian percentile (percentile points)1,5663,309+5.73 [+3.45, +7.61]+4.55 [+2.63, +6.82]-1.19 [-2.14, +0.00]Test-pool diseasesTop-10% share (percent"
+    },
+    {
+     "key": "table.pct_p1.test.E1.change.1",
+     "ms": "pool diseases within popularity × weighted-degree groups (-1.19 percentile points, 95% CI -2.14 to 0.00); no change in either endpoint has a",
+     "expected": -2.14,
+     "tol": 0.005,
+     "ms_source": "story.md L2012",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "hted-degree groupsTest-pool diseasesMedian percentile (percentile points)1,5663,309+5.73 [+3.45, +7.61]+4.55 [+2.63, +6.82]-1.19 [-2.14, +0.00]Test-pool diseasesTop-10% share (percentage poi"
+    },
+    {
+     "key": "n_change_ci_excl0",
+     "ms": "er advantage among test-pool diseases within popularity × weighted-degree groups (-1.19 percentile points, 95% CI -2.14 to 0.00); no change in either endpoint has a CI that excludes zero. Th",
+     "expected": 0.0,
+     "tol": 0.005,
+     "ms_source": "story.md L2012",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "annotated_2008.dated",
+     "ms": "19 percentile points, 95% CI -2.14 to 0.00); no change in either endpoint has a CI that excludes zero. The 2009 release annotates 2,191 of the 3,882 disease genes in the 2008 slice, against ",
+     "expected": 2191,
+     "ms_source": "story.md L2012",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "slice_disease_genes_2008",
+     "ms": " points, 95% CI -2.14 to 0.00); no change in either endpoint has a CI that excludes zero. The 2009 release annotates 2,191 of the 3,882 disease genes in the 2008 slice, against 3,792 in the ",
+     "expected": 3882,
+     "ms_source": "story.md L2012",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "annotated_2008.current",
+     "ms": "ther endpoint has a CI that excludes zero. The 2009 release annotates 2,191 of the 3,882 disease genes in the 2008 slice, against 3,792 in the current release; with these sparser annotations",
+     "expected": 3792,
+     "ms_source": "story.md L2012",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "table.pct_p1.test.E1.n_drugs",
+     "ms": "y × weighted-degree groups | Test-pool diseases | Median percentile (percentile points) | 1,566 | 3,309 | +5.73 +3.45, +7.61 | +4.55 +2.63,",
+     "expected": 1566,
+     "ms_source": "story.md L2017",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "ted to the sliceChange (dated - current)Popularity × weighted-degree groupsTest-pool diseasesMedian percentile (percentile points)1,5663,309+5.73 [+3.45, +7.61]+4.55 [+2.63, +6.82]-1.19 [-2."
+    },
+    {
+     "key": "table.pct_p1.test.E1.n_events",
+     "ms": "hted-degree groups | Test-pool diseases | Median percentile (percentile points) | 1,566 | 3,309 | +5.73 +3.45, +7.61 | +4.55 +2.63, +6.82 |",
+     "expected": 3309,
+     "ms_source": "story.md L2017",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "o the sliceChange (dated - current)Popularity × weighted-degree groupsTest-pool diseasesMedian percentile (percentile points)1,5663,309+5.73 [+3.45, +7.61]+4.55 [+2.63, +6.82]-1.19 [-2.14, +"
+    },
+    {
+     "key": "table.pct_p1.test.E1.gafnow.0",
+     "ms": "ree groups | Test-pool diseases | Median percentile (percentile points) | 1,566 | 3,309 | +5.73 +3.45, +7.61 | +4.55 +2.63, +6.82 | -1.19 -2",
+     "expected": 5.73,
+     "tol": 0.005,
+     "ms_source": "story.md L2017",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": " sliceChange (dated - current)Popularity × weighted-degree groupsTest-pool diseasesMedian percentile (percentile points)1,5663,309+5.73 [+3.45, +7.61]+4.55 [+2.63, +6.82]-1.19 [-2.14, +0.00]"
+    },
+    {
+     "key": "table.pct_p1.test.E1.gafnow.1",
+     "ms": "oups | Test-pool diseases | Median percentile (percentile points) | 1,566 | 3,309 | +5.73 +3.45, +7.61 | +4.55 +2.63, +6.82 | -1.19 -2.14, +",
+     "expected": 3.45,
+     "tol": 0.005,
+     "ms_source": "story.md L2017",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "hange (dated - current)Popularity × weighted-degree groupsTest-pool diseasesMedian percentile (percentile points)1,5663,309+5.73 [+3.45, +7.61]+4.55 [+2.63, +6.82]-1.19 [-2.14, +0.00]Test-po"
+    },
+    {
+     "key": "table.pct_p1.test.E1.gafnow.2",
+     "ms": "Test-pool diseases | Median percentile (percentile points) | 1,566 | 3,309 | +5.73 +3.45, +7.61 | +4.55 +2.63, +6.82 | -1.19 -2.14, +0.00 |",
+     "expected": 7.61,
+     "tol": 0.005,
+     "ms_source": "story.md L2017",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "dated - current)Popularity × weighted-degree groupsTest-pool diseasesMedian percentile (percentile points)1,5663,309+5.73 [+3.45, +7.61]+4.55 [+2.63, +6.82]-1.19 [-2.14, +0.00]Test-pool dise"
+    },
+    {
+     "key": "table.pct_s3.all.E2.gafrel.2",
+     "ms": "| All diseases | Top-10% share (percentage points) | 2,288 | 6,823 | +2.8 +0.5, +5.2 | +2.1 −0.3, +4.5 | −0.7 −1.9, +0.5 |",
+     "expected": 4.55,
+     "tol": 0.005,
+     "ms_source": "story.md L2024",
+     "classified_by": "session-model(claude-opus-5-5)",
+     "previous_ms": "0.24]+8.36 [+7.14, +10.29]+0.13 [-0.73, +0.85]All diseasesTop-10% share (percentage points)2,2886,823+2.8 [+0.5, +5.2]+2.1 [-0.3, +4.5]-0.7 [-1.9, +0.5]Eculizumab case: PNH → NMO, 2008 slice"
+    },
+    {
+     "key": "table.pct_p1.test.E1.gafrel.1",
+     "ms": "ases | Median percentile (percentile points) | 1,566 | 3,309 | +5.73 +3.45, +7.61 | +4.55 +2.63, +6.82 | -1.19 -2.14, +0.00 |",
+     "expected": 2.63,
+     "tol": 0.005,
+     "ms_source": "story.md L2017",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "nt)Popularity × weighted-degree groupsTest-pool diseasesMedian percentile (percentile points)1,5663,309+5.73 [+3.45, +7.61]+4.55 [+2.63, +6.82]-1.19 [-2.14, +0.00]Test-pool diseasesTop-10% s"
+    },
+    {
+     "key": "table.pct_p1.test.E1.gafrel.2",
+     "ms": "Median percentile (percentile points) | 1,566 | 3,309 | +5.73 +3.45, +7.61 | +4.55 +2.63, +6.82 | -1.19 -2.14, +0.00 |",
+     "expected": 6.82,
+     "tol": 0.005,
+     "ms_source": "story.md L2017",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "larity × weighted-degree groupsTest-pool diseasesMedian percentile (percentile points)1,5663,309+5.73 [+3.45, +7.61]+4.55 [+2.63, +6.82]-1.19 [-2.14, +0.00]Test-pool diseasesTop-10% share (p"
+    },
+    {
+     "key": "nmo_dated_scored",
+     "ms": "Eculizumab case: PNH → NMO, 2008 slice | All diseases | Percentile of NMO among matched candidate diseases, mean of five seeds | — | — | 95.22 (range 90.05–97.60) | not assessed (NMO absent from the graph) | not assessed",
+     "expected": 0.0,
+     "tol": 0.005,
+     "ms_source": "story.md L2025",
+     "classified_by": "session-model(claude-opus-5-5)",
+     "previous_ms": "PNH → NMO, 2008 sliceAll diseasesPercentile of NMO among matched candidate diseases, mean of five seeds--95.22 (range 90.05-97.60)not assessed (NMO absent from the graph)not assessed S17. FD"
+    },
+    {
+     "key": "table.pct_p1.test.E1.gafnow.0",
+     "ms": "ree groups | Test-pool diseases | Median percentile (percentile points) | 1,566 | 3,309 | +5.73 +3.45, +7.61 | +4.55 +2.63, +6.82 | -1.19 -2",
+     "expected": 5.73,
+     "tol": 0.005,
+     "ms_source": "story.md L2017",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "note_tightened": {
+      "previous_expected": 5.7,
+      "previous_tol": 0.05
+     },
+     "previous_ms": " sliceChange (dated - current)Popularity × weighted-degree groupsTest-pool diseasesMedian percentile (percentile points)1,5663,309+5.73 [+3.45, +7.61]+4.55 [+2.63, +6.82]-1.19 [-2.14, +0.00]"
+    },
+    {
+     "key": "table.pct_p1.test.E2.gafnow.1",
+     "ms": "|  | Test-pool diseases | Top-10% share (percentage points) | 1,566 | 3,309 | +5.7 +2.8, +8.7 | +5.4 +2.4, +8.4 | -0.3 -1.8, +1.1 |",
+     "expected": 2.8,
+     "tol": 0.05,
+     "ms_source": "story.md L2018",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "309+5.73 [+3.45, +7.61]+4.55 [+2.63, +6.82]-1.19 [-2.14, +0.00]Test-pool diseasesTop-10% share (percentage points)1,5663,309+5.7 [+2.8, +8.7]+5.4 [+2.4, +8.4]-0.3 [-1.8, +1.1]All diseasesMed"
+    },
+    {
+     "key": "table.pct_p1.test.E2.gafnow.2",
+     "ms": "|  | Test-pool diseases | Top-10% share (percentage points) | 1,566 | 3,309 | +5.7 +2.8, +8.7 | +5.4 +2.4, +8.4 | -0.3 -1.8, +1.1 |",
+     "expected": 8.7,
+     "tol": 0.05,
+     "ms_source": "story.md L2018",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "73 [+3.45, +7.61]+4.55 [+2.63, +6.82]-1.19 [-2.14, +0.00]Test-pool diseasesTop-10% share (percentage points)1,5663,309+5.7 [+2.8, +8.7]+5.4 [+2.4, +8.4]-0.3 [-1.8, +1.1]All diseasesMedian pe"
+    },
+    {
+     "key": "table.pct_p1.test.E2.gafrel.0",
+     "ms": "est-pool diseases | Top-10% share (percentage points) | 1,566 | 3,309 | +5.7 +2.8, +8.7 | +5.4 +2.4, +8.4 | -0.3 -1.8, +1.1 |",
+     "expected": 5.4,
+     "tol": 0.05,
+     "ms_source": "story.md L2018",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "3.45, +7.61]+4.55 [+2.63, +6.82]-1.19 [-2.14, +0.00]Test-pool diseasesTop-10% share (percentage points)1,5663,309+5.7 [+2.8, +8.7]+5.4 [+2.4, +8.4]-0.3 [-1.8, +1.1]All diseasesMedian percent"
+    },
+    {
+     "key": "table.pct_p1.test.E2.gafrel.1",
+     "ms": "ool diseases | Top-10% share (percentage points) | 1,566 | 3,309 | +5.7 +2.8, +8.7 | +5.4 +2.4, +8.4 | -0.3 -1.8, +1.1 |",
+     "expected": 2.4,
+     "tol": 0.05,
+     "ms_source": "story.md L2018",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "+7.61]+4.55 [+2.63, +6.82]-1.19 [-2.14, +0.00]Test-pool diseasesTop-10% share (percentage points)1,5663,309+5.7 [+2.8, +8.7]+5.4 [+2.4, +8.4]-0.3 [-1.8, +1.1]All diseasesMedian percentile (p"
+    },
+    {
+     "key": "table.pct_s3.all.E1.gafrel.0",
+     "ms": "diseases | Median percentile (percentile points) | 2,288 | 6,823 | +8.24 +6.90, +10.24 | +8.36 +7.14, +10.29 | +0.13 -0.73, +0.85 |",
+     "expected": 8.36,
+     "tol": 0.005,
+     "ms_source": "story.md L2023",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "note_tightened": {
+      "previous_expected": 8.4,
+      "previous_tol": 0.05
+     },
+     "previous_ms": "1.4 [-1.4, +4.2]+1.7 [-1.1, +4.5]+0.3 [-1.1, +1.7]All diseasesMedian percentile (percentile points)2,2886,823+8.24 [+6.90, +10.24]+8.36 [+7.14, +10.29]+0.13 [-0.73, +0.85]All diseasesTop-10%"
+    },
+    {
+     "key": "table.pct_s3.all.E2.gafrel.1",
+     "ms": "All diseases | Top-10% share (percentage points) | 2,288 | 6,823 | +2.8 +0.5, +5.2 | +2.1 -0.3, +4.5 | -0.7 -1.9, +0.5 |",
+     "expected": -0.3,
+     "tol": 0.05,
+     "ms_source": "story.md L2024",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "90, +10.24]+8.36 [+7.14, +10.29]+0.13 [-0.73, +0.85]All diseasesTop-10% share (percentage points)2,2886,823+2.8 [+0.5, +5.2]+2.1 [-0.3, +4.5]-0.7 [-1.9, +0.5]Eculizumab case: PNH → NMO, 2008"
+    },
+    {
+     "key": "table.pct_p1.test.E2.change.1",
+     "ms": "-10% share (percentage points) | 1,566 | 3,309 | +5.7 +2.8, +8.7 | +5.4 +2.4, +8.4 | -0.3 -1.8, +1.1 |",
+     "expected": -1.8,
+     "tol": 0.05,
+     "ms_source": "story.md L2018",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "3, +6.82]-1.19 [-2.14, +0.00]Test-pool diseasesTop-10% share (percentage points)1,5663,309+5.7 [+2.8, +8.7]+5.4 [+2.4, +8.4]-0.3 [-1.8, +1.1]All diseasesMedian percentile (percentile points)"
+    },
+    {
+     "key": "table.pct_p1.all.E1.change.2",
+     "ms": "rcentile points) | 2,288 | 6,823 | +3.79 +2.49, +5.08 | +4.10 +2.54, +5.57 | +0.31 -0.56, +1.12 |",
+     "expected": 1.12,
+     "tol": 0.005,
+     "ms_source": "story.md L2019",
+     "classified_by": "session-model(claude-opus-5-5)",
+     "note_tightened": {
+      "previous_expected": 1.1,
+      "previous_tol": 0.05
+     },
+     "previous_ms": "-0.3 [-1.8, +1.1]All diseasesMedian percentile (percentile points)2,2886,823+3.79 [+2.49, +5.08]+4.10 [+2.54, +5.57]+0.31 [-0.56, +1.12]All diseasesTop-10% share (percentage points)2,2886,82"
+    },
+    {
+     "key": "table.pct_p1.all.E1.n_drugs",
+     "ms": "|  | All diseases | Median percentile (percentile points) | 2,288 | 6,823 | +3.79 +2.49, +5.08 | +4.10 +2.54,",
+     "expected": 2288,
+     "ms_source": "story.md L2019",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": " (percentage points)1,5663,309+5.7 [+2.8, +8.7]+5.4 [+2.4, +8.4]-0.3 [-1.8, +1.1]All diseasesMedian percentile (percentile points)2,2886,823+3.79 [+2.49, +5.08]+4.10 [+2.54, +5.57]+0.31 [-0."
+    },
+    {
+     "key": "table.pct_p1.all.E1.n_events",
+     "ms": "|  | All diseases | Median percentile (percentile points) | 2,288 | 6,823 | +3.79 +2.49, +5.08 | +4.10 +2.54, +5.57 |",
+     "expected": 6823,
+     "ms_source": "story.md L2019",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "centage points)1,5663,309+5.7 [+2.8, +8.7]+5.4 [+2.4, +8.4]-0.3 [-1.8, +1.1]All diseasesMedian percentile (percentile points)2,2886,823+3.79 [+2.49, +5.08]+4.10 [+2.54, +5.57]+0.31 [-0.56, +"
+    },
+    {
+     "key": "table.pct_p1.all.E1.gafnow.0",
+     "ms": "|  | All diseases | Median percentile (percentile points) | 2,288 | 6,823 | +3.79 +2.49, +5.08 | +4.10 +2.54, +5.57 | +0.31 -0",
+     "expected": 3.79,
+     "tol": 0.005,
+     "ms_source": "story.md L2019",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "ge points)1,5663,309+5.7 [+2.8, +8.7]+5.4 [+2.4, +8.4]-0.3 [-1.8, +1.1]All diseasesMedian percentile (percentile points)2,2886,823+3.79 [+2.49, +5.08]+4.10 [+2.54, +5.57]+0.31 [-0.56, +1.12]"
+    },
+    {
+     "key": "table.pct_p1.all.E1.gafnow.1",
+     "ms": "|  | All diseases | Median percentile (percentile points) | 2,288 | 6,823 | +3.79 +2.49, +5.08 | +4.10 +2.54, +5.57 | +0.31 -0.56, +",
+     "expected": 2.49,
+     "tol": 0.005,
+     "ms_source": "story.md L2019",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "ts)1,5663,309+5.7 [+2.8, +8.7]+5.4 [+2.4, +8.4]-0.3 [-1.8, +1.1]All diseasesMedian percentile (percentile points)2,2886,823+3.79 [+2.49, +5.08]+4.10 [+2.54, +5.57]+0.31 [-0.56, +1.12]All dis"
+    },
+    {
+     "key": "table.pct_p1.all.E1.gafnow.2",
+     "ms": "|  | All diseases | Median percentile (percentile points) | 2,288 | 6,823 | +3.79 +2.49, +5.08 | +4.10 +2.54, +5.57 | +0.31 -0.56, +1.12 |",
+     "expected": 5.08,
+     "tol": 0.005,
+     "ms_source": "story.md L2019",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "63,309+5.7 [+2.8, +8.7]+5.4 [+2.4, +8.4]-0.3 [-1.8, +1.1]All diseasesMedian percentile (percentile points)2,2886,823+3.79 [+2.49, +5.08]+4.10 [+2.54, +5.57]+0.31 [-0.56, +1.12]All diseasesTo"
+    },
+    {
+     "key": "table.pct_p1.all.E1.gafrel.0",
+     "ms": "l diseases | Median percentile (percentile points) | 2,288 | 6,823 | +3.79 +2.49, +5.08 | +4.10 +2.54, +5.57 | +0.31 -0.56, +1.12 |",
+     "expected": 4.1,
+     "tol": 0.005,
+     "ms_source": "story.md L2019",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "+5.7 [+2.8, +8.7]+5.4 [+2.4, +8.4]-0.3 [-1.8, +1.1]All diseasesMedian percentile (percentile points)2,2886,823+3.79 [+2.49, +5.08]+4.10 [+2.54, +5.57]+0.31 [-0.56, +1.12]All diseasesTop-10% "
+    },
+    {
+     "key": "table.pct_p1.all.E1.gafrel.1",
+     "ms": "ases | Median percentile (percentile points) | 2,288 | 6,823 | +3.79 +2.49, +5.08 | +4.10 +2.54, +5.57 | +0.31 -0.56, +1.12 |",
+     "expected": 2.54,
+     "tol": 0.005,
+     "ms_source": "story.md L2019",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "2.8, +8.7]+5.4 [+2.4, +8.4]-0.3 [-1.8, +1.1]All diseasesMedian percentile (percentile points)2,2886,823+3.79 [+2.49, +5.08]+4.10 [+2.54, +5.57]+0.31 [-0.56, +1.12]All diseasesTop-10% share ("
+    },
+    {
+     "key": "table.pct_p1.all.E1.gafrel.2",
+     "ms": "Median percentile (percentile points) | 2,288 | 6,823 | +3.79 +2.49, +5.08 | +4.10 +2.54, +5.57 | +0.31 -0.56, +1.12 |",
+     "expected": 5.57,
+     "tol": 0.005,
+     "ms_source": "story.md L2019",
+     "classified_by": "session-model(claude-opus-5-5)",
+     "previous_ms": ".7]+5.4 [+2.4, +8.4]-0.3 [-1.8, +1.1]All diseasesMedian percentile (percentile points)2,2886,823+3.79 [+2.49, +5.08]+4.10 [+2.54, +5.57]+0.31 [-0.56, +1.12]All diseasesTop-10% share (percent"
+    },
+    {
+     "key": "table.pct_p1.all.E1.change.0",
+     "ms": "ercentile (percentile points) | 2,288 | 6,823 | +3.79 +2.49, +5.08 | +4.10 +2.54, +5.57 | +0.31 -0.56, +1.12 |",
+     "expected": 0.31,
+     "tol": 0.005,
+     "ms_source": "story.md L2019",
+     "classified_by": "session-model(claude-opus-5-5)",
+     "previous_ms": "4 [+2.4, +8.4]-0.3 [-1.8, +1.1]All diseasesMedian percentile (percentile points)2,2886,823+3.79 [+2.49, +5.08]+4.10 [+2.54, +5.57]+0.31 [-0.56, +1.12]All diseasesTop-10% share (percentage po"
+    },
+    {
+     "key": "table.pct_p1.all.E1.change.1",
+     "ms": "ile (percentile points) | 2,288 | 6,823 | +3.79 +2.49, +5.08 | +4.10 +2.54, +5.57 | +0.31 -0.56, +1.12 |",
+     "expected": -0.56,
+     "tol": 0.005,
+     "ms_source": "story.md L2019",
+     "classified_by": "session-model(claude-opus-5-5)",
+     "previous_ms": ", +8.4]-0.3 [-1.8, +1.1]All diseasesMedian percentile (percentile points)2,2886,823+3.79 [+2.49, +5.08]+4.10 [+2.54, +5.57]+0.31 [-0.56, +1.12]All diseasesTop-10% share (percentage points)2,"
+    },
+    {
+     "key": "table.pct_p1.all.E1.change.2",
+     "ms": "rcentile points) | 2,288 | 6,823 | +3.79 +2.49, +5.08 | +4.10 +2.54, +5.57 | +0.31 -0.56, +1.12 |",
+     "expected": 1.12,
+     "tol": 0.005,
+     "ms_source": "story.md L2019",
+     "classified_by": "session-model(claude-opus-5-5)",
+     "previous_ms": "-0.3 [-1.8, +1.1]All diseasesMedian percentile (percentile points)2,2886,823+3.79 [+2.49, +5.08]+4.10 [+2.54, +5.57]+0.31 [-0.56, +1.12]All diseasesTop-10% share (percentage points)2,2886,82"
+    },
+    {
+     "key": "table.pct_p1.all.E2.gafnow.0",
+     "ms": "|  | All diseases | Top-10% share (percentage points) | 2,288 | 6,823 | +1.7 -0.5, +4.1 | +1.3 -0.9, +3.8 | -0.4 -1.7, +1",
+     "expected": 1.7,
+     "tol": 0.05,
+     "ms_source": "story.md L2020",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "ints)2,2886,823+3.79 [+2.49, +5.08]+4.10 [+2.54, +5.57]+0.31 [-0.56, +1.12]All diseasesTop-10% share (percentage points)2,2886,823+1.7 [-0.5, +4.1]+1.3 [-0.9, +3.8]-0.4 [-1.7, +1.0]Popularit"
+    },
+    {
+     "key": "table.pct_p1.all.E2.gafnow.1",
+     "ms": "|  | All diseases | Top-10% share (percentage points) | 2,288 | 6,823 | +1.7 -0.5, +4.1 | +1.3 -0.9, +3.8 | -0.4 -1.7, +1.0 |",
+     "expected": -0.5,
+     "tol": 0.05,
+     "ms_source": "story.md L2020",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": ",2886,823+3.79 [+2.49, +5.08]+4.10 [+2.54, +5.57]+0.31 [-0.56, +1.12]All diseasesTop-10% share (percentage points)2,2886,823+1.7 [-0.5, +4.1]+1.3 [-0.9, +3.8]-0.4 [-1.7, +1.0]Popularity grou"
+    },
+    {
+     "key": "table.pct_p1.all.E2.gafrel.0",
+     "ms": "|  | All diseases | Top-10% share (percentage points) | 2,288 | 6,823 | +1.7 -0.5, +4.1 | +1.3 -0.9, +3.8 | -0.4 -1.7, +1.0 |",
+     "expected": 1.3,
+     "tol": 0.05,
+     "ms_source": "story.md L2020",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": ".79 [+2.49, +5.08]+4.10 [+2.54, +5.57]+0.31 [-0.56, +1.12]All diseasesTop-10% share (percentage points)2,2886,823+1.7 [-0.5, +4.1]+1.3 [-0.9, +3.8]-0.4 [-1.7, +1.0]Popularity groupsTest-pool"
+    },
+    {
+     "key": "table.pct_p1.all.E2.gafrel.1",
+     "ms": "All diseases | Top-10% share (percentage points) | 2,288 | 6,823 | +1.7 -0.5, +4.1 | +1.3 -0.9, +3.8 | -0.4 -1.7, +1.0 |",
+     "expected": -0.9,
+     "tol": 0.05,
+     "ms_source": "story.md L2020",
+     "classified_by": "session-model(claude-opus-5-5)",
+     "previous_ms": "2.49, +5.08]+4.10 [+2.54, +5.57]+0.31 [-0.56, +1.12]All diseasesTop-10% share (percentage points)2,2886,823+1.7 [-0.5, +4.1]+1.3 [-0.9, +3.8]-0.4 [-1.7, +1.0]Popularity groupsTest-pool disea"
+    },
+    {
+     "key": "table.pct_p1.all.E1.gafnow.0",
+     "ms": "|  | All diseases | Median percentile (percentile points) | 2,288 | 6,823 | +3.79 +2.49, +5.08 | +4.10 +2.54, +5.57 | +0.31 -0",
+     "expected": 3.79,
+     "tol": 0.005,
+     "ms_source": "story.md L2019",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "note_tightened": {
+      "previous_expected": 3.8,
+      "previous_tol": 0.05
+     },
+     "previous_ms": "ge points)1,5663,309+5.7 [+2.8, +8.7]+5.4 [+2.4, +8.4]-0.3 [-1.8, +1.1]All diseasesMedian percentile (percentile points)2,2886,823+3.79 [+2.49, +5.08]+4.10 [+2.54, +5.57]+0.31 [-0.56, +1.12]"
+    },
+    {
+     "key": "table.pct_p1.all.E2.change.0",
+     "ms": "| Top-10% share (percentage points) | 2,288 | 6,823 | +1.7 -0.5, +4.1 | +1.3 -0.9, +3.8 | -0.4 -1.7, +1.0 |",
+     "expected": -0.4,
+     "tol": 0.05,
+     "ms_source": "story.md L2020",
+     "classified_by": "session-model(claude-opus-5-5)",
+     "previous_ms": "]+4.10 [+2.54, +5.57]+0.31 [-0.56, +1.12]All diseasesTop-10% share (percentage points)2,2886,823+1.7 [-0.5, +4.1]+1.3 [-0.9, +3.8]-0.4 [-1.7, +1.0]Popularity groupsTest-pool diseasesMedian p"
+    },
+    {
+     "key": "table.pct_s3.test.E2.change.2",
+     "ms": "est-pool diseases | Top-10% share (percentage points) | 1,566 | 3,309 | +1.4 -1.4, +4.2 | +1.7 -1.1, +4.5 | +0.3 -1.1, +1.7 |",
+     "expected": 1.7,
+     "tol": 0.05,
+     "note": "sign differs: manuscript prints the magnitude",
+     "ms_source": "story.md L2022",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "62]-0.85 [-1.45, +0.12]Test-pool diseasesTop-10% share (percentage points)1,5663,309+1.4 [-1.4, +4.2]+1.7 [-1.1, +4.5]+0.3 [-1.1, +1.7]All diseasesMedian percentile (percentile points)2,2886"
+    },
+    {
+     "key": "table.pct_p1.all.E2.change.2",
+     "ms": "hare (percentage points) | 2,288 | 6,823 | +1.7 -0.5, +4.1 | +1.3 -0.9, +3.8 | -0.4 -1.7, +1.0 |",
+     "expected": 1.0,
+     "tol": 0.05,
+     "ms_source": "story.md L2020",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "4, +5.57]+0.31 [-0.56, +1.12]All diseasesTop-10% share (percentage points)2,2886,823+1.7 [-0.5, +4.1]+1.3 [-0.9, +3.8]-0.4 [-1.7, +1.0]Popularity groupsTest-pool diseasesMedian percentile (p"
+    },
+    {
+     "key": "table.pct_s3.test.E1.gafnow.0",
+     "ms": "ity groups | Test-pool diseases | Median percentile (percentile points) | 1,566 | 3,309 | +6.63 +4.57, +8.33 | +5.77 +3.95, +7.62 | -0.85 -1",
+     "expected": 6.63,
+     "tol": 0.005,
+     "ms_source": "story.md L2021",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "7 [-0.5, +4.1]+1.3 [-0.9, +3.8]-0.4 [-1.7, +1.0]Popularity groupsTest-pool diseasesMedian percentile (percentile points)1,5663,309+6.63 [+4.57, +8.33]+5.77 [+3.95, +7.62]-0.85 [-1.45, +0.12]"
+    },
+    {
+     "key": "table.pct_s3.test.E1.gafnow.1",
+     "ms": "oups | Test-pool diseases | Median percentile (percentile points) | 1,566 | 3,309 | +6.63 +4.57, +8.33 | +5.77 +3.95, +7.62 | -0.85 -1.45, +",
+     "expected": 4.57,
+     "tol": 0.005,
+     "ms_source": "story.md L2021",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": ", +4.1]+1.3 [-0.9, +3.8]-0.4 [-1.7, +1.0]Popularity groupsTest-pool diseasesMedian percentile (percentile points)1,5663,309+6.63 [+4.57, +8.33]+5.77 [+3.95, +7.62]-0.85 [-1.45, +0.12]Test-po"
+    },
+    {
+     "key": "table.pct_s3.test.E1.gafnow.2",
+     "ms": "Test-pool diseases | Median percentile (percentile points) | 1,566 | 3,309 | +6.63 +4.57, +8.33 | +5.77 +3.95, +7.62 | -0.85 -1.45, +0.12 |",
+     "expected": 8.33,
+     "tol": 0.005,
+     "ms_source": "story.md L2021",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "+1.3 [-0.9, +3.8]-0.4 [-1.7, +1.0]Popularity groupsTest-pool diseasesMedian percentile (percentile points)1,5663,309+6.63 [+4.57, +8.33]+5.77 [+3.95, +7.62]-0.85 [-1.45, +0.12]Test-pool dise"
+    },
+    {
+     "key": "table.pct_s3.test.E1.gafrel.0",
+     "ms": "l diseases | Median percentile (percentile points) | 1,566 | 3,309 | +6.63 +4.57, +8.33 | +5.77 +3.95, +7.62 | -0.85 -1.45, +0.12 |",
+     "expected": 5.77,
+     "tol": 0.005,
+     "ms_source": "story.md L2021",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "-0.9, +3.8]-0.4 [-1.7, +1.0]Popularity groupsTest-pool diseasesMedian percentile (percentile points)1,5663,309+6.63 [+4.57, +8.33]+5.77 [+3.95, +7.62]-0.85 [-1.45, +0.12]Test-pool diseasesTo"
+    },
+    {
+     "key": "table.pct_s3.test.E1.gafrel.1",
+     "ms": "ases | Median percentile (percentile points) | 1,566 | 3,309 | +6.63 +4.57, +8.33 | +5.77 +3.95, +7.62 | -0.85 -1.45, +0.12 |",
+     "expected": 3.95,
+     "tol": 0.005,
+     "ms_source": "story.md L2021",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "3.8]-0.4 [-1.7, +1.0]Popularity groupsTest-pool diseasesMedian percentile (percentile points)1,5663,309+6.63 [+4.57, +8.33]+5.77 [+3.95, +7.62]-0.85 [-1.45, +0.12]Test-pool diseasesTop-10% s"
+    },
+    {
+     "key": "table.pct_s3.test.E1.gafrel.2",
+     "ms": "Median percentile (percentile points) | 1,566 | 3,309 | +6.63 +4.57, +8.33 | +5.77 +3.95, +7.62 | -0.85 -1.45, +0.12 |",
+     "expected": 7.62,
+     "tol": 0.005,
+     "ms_source": "story.md L2021",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "4 [-1.7, +1.0]Popularity groupsTest-pool diseasesMedian percentile (percentile points)1,5663,309+6.63 [+4.57, +8.33]+5.77 [+3.95, +7.62]-0.85 [-1.45, +0.12]Test-pool diseasesTop-10% share (p"
+    },
+    {
+     "key": "table.pct_s3.test.E1.change.0",
+     "ms": "ercentile (percentile points) | 1,566 | 3,309 | +6.63 +4.57, +8.33 | +5.77 +3.95, +7.62 | -0.85 -1.45, +0.12 |",
+     "expected": -0.85,
+     "tol": 0.005,
+     "ms_source": "story.md L2021",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "7, +1.0]Popularity groupsTest-pool diseasesMedian percentile (percentile points)1,5663,309+6.63 [+4.57, +8.33]+5.77 [+3.95, +7.62]-0.85 [-1.45, +0.12]Test-pool diseasesTop-10% share (percent"
+    },
+    {
+     "key": "table.pct_s3.test.E1.change.1",
+     "ms": "ile (percentile points) | 1,566 | 3,309 | +6.63 +4.57, +8.33 | +5.77 +3.95, +7.62 | -0.85 -1.45, +0.12 |",
+     "expected": -1.45,
+     "tol": 0.005,
+     "ms_source": "story.md L2021",
+     "classified_by": "session-model(claude-opus-5-5)",
+     "previous_ms": "]Popularity groupsTest-pool diseasesMedian percentile (percentile points)1,5663,309+6.63 [+4.57, +8.33]+5.77 [+3.95, +7.62]-0.85 [-1.45, +0.12]Test-pool diseasesTop-10% share (percentage poi"
+    },
+    {
+     "key": "table.pct_s3.test.E1.change.2",
+     "ms": "rcentile points) | 1,566 | 3,309 | +6.63 +4.57, +8.33 | +5.77 +3.95, +7.62 | -0.85 -1.45, +0.12 |",
+     "expected": 0.12,
+     "tol": 0.005,
+     "ms_source": "story.md L2021",
+     "classified_by": "session-model(claude-opus-5-5)",
+     "previous_ms": "rity groupsTest-pool diseasesMedian percentile (percentile points)1,5663,309+6.63 [+4.57, +8.33]+5.77 [+3.95, +7.62]-0.85 [-1.45, +0.12]Test-pool diseasesTop-10% share (percentage points)1,5"
+    },
+    {
+     "key": "table.pct_s3.test.E2.gafnow.0",
+     "ms": "|  | Test-pool diseases | Top-10% share (percentage points) | 1,566 | 3,309 | +1.4 -1.4, +4.2 | +1.7 -1.1, +4.5 | +0.3 -1.1, +1",
+     "expected": 1.4,
+     "tol": 0.05,
+     "ms_source": "story.md L2022",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": ",5663,309+6.63 [+4.57, +8.33]+5.77 [+3.95, +7.62]-0.85 [-1.45, +0.12]Test-pool diseasesTop-10% share (percentage points)1,5663,309+1.4 [-1.4, +4.2]+1.7 [-1.1, +4.5]+0.3 [-1.1, +1.7]All disea"
+    },
+    {
+     "key": "table.pct_s3.test.E2.gafnow.1",
+     "ms": "|  | Test-pool diseases | Top-10% share (percentage points) | 1,566 | 3,309 | +1.4 -1.4, +4.2 | +1.7 -1.1, +4.5 | +0.3 -1.1, +1",
+     "expected": -1.4,
+     "tol": 0.05,
+     "ms_source": "story.md L2022",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "309+6.63 [+4.57, +8.33]+5.77 [+3.95, +7.62]-0.85 [-1.45, +0.12]Test-pool diseasesTop-10% share (percentage points)1,5663,309+1.4 [-1.4, +4.2]+1.7 [-1.1, +4.5]+0.3 [-1.1, +1.7]All diseasesMed"
+    },
+    {
+     "key": "table.pct_s3.test.E2.gafnow.2",
+     "ms": "|  | Test-pool diseases | Top-10% share (percentage points) | 1,566 | 3,309 | +1.4 -1.4, +4.2 | +1.7 -1.1, +4.5 | +0.3 -1.1, +1.7 |",
+     "expected": 4.2,
+     "tol": 0.05,
+     "ms_source": "story.md L2022",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "63 [+4.57, +8.33]+5.77 [+3.95, +7.62]-0.85 [-1.45, +0.12]Test-pool diseasesTop-10% share (percentage points)1,5663,309+1.4 [-1.4, +4.2]+1.7 [-1.1, +4.5]+0.3 [-1.1, +1.7]All diseasesMedian pe"
+    },
+    {
+     "key": "table.pct_s3.test.E2.change.1",
+     "ms": "ool diseases | Top-10% share (percentage points) | 1,566 | 3,309 | +1.4 -1.4, +4.2 | +1.7 -1.1, +4.5 | +0.3 -1.1, +1.7 |",
+     "expected": -1.1,
+     "tol": 0.05,
+     "ms_source": "story.md L2022",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "5, +7.62]-0.85 [-1.45, +0.12]Test-pool diseasesTop-10% share (percentage points)1,5663,309+1.4 [-1.4, +4.2]+1.7 [-1.1, +4.5]+0.3 [-1.1, +1.7]All diseasesMedian percentile (percentile points)"
+    },
+    {
+     "key": "table.pct_s3.all.E2.gafrel.2",
+     "ms": "seases | Top-10% share (percentage points) | 2,288 | 6,823 | +2.8 +0.5, +5.2 | +2.1 -0.3, +4.5 | -0.7 -1.9, +0.5 |",
+     "expected": 4.5,
+     "tol": 0.05,
+     "ms_source": "story.md L2024",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "0.24]+8.36 [+7.14, +10.29]+0.13 [-0.73, +0.85]All diseasesTop-10% share (percentage points)2,2886,823+2.8 [+0.5, +5.2]+2.1 [-0.3, +4.5]-0.7 [-1.9, +0.5]Eculizumab case: PNH → NMO, 2008 slice"
+    },
+    {
+     "key": "table.pct_p1.all.E1.change.0",
+     "ms": "ercentile (percentile points) | 2,288 | 6,823 | +3.79 +2.49, +5.08 | +4.10 +2.54, +5.57 | +0.31 -0.56, +1.12 |",
+     "expected": 0.31,
+     "tol": 0.005,
+     "ms_source": "story.md L2019",
+     "classified_by": "session-model(claude-opus-5-5)",
+     "note_tightened": {
+      "previous_expected": 0.3,
+      "previous_tol": 0.05
+     },
+     "previous_ms": "4 [+2.4, +8.4]-0.3 [-1.8, +1.1]All diseasesMedian percentile (percentile points)2,2886,823+3.79 [+2.49, +5.08]+4.10 [+2.54, +5.57]+0.31 [-0.56, +1.12]All diseasesTop-10% share (percentage po"
+    },
+    {
+     "key": "table.pct_s3.all.E1.gafnow.0",
+     "ms": "|  | All diseases | Median percentile (percentile points) | 2,288 | 6,823 | +8.24 +6.90, +10.24 | +8.36 +7.14, +10.29 | +0.13",
+     "expected": 8.24,
+     "tol": 0.005,
+     "ms_source": "story.md L2023",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "ge points)1,5663,309+1.4 [-1.4, +4.2]+1.7 [-1.1, +4.5]+0.3 [-1.1, +1.7]All diseasesMedian percentile (percentile points)2,2886,823+8.24 [+6.90, +10.24]+8.36 [+7.14, +10.29]+0.13 [-0.73, +0.8"
+    },
+    {
+     "key": "table.pct_s3.all.E1.gafnow.1",
+     "ms": "|  | All diseases | Median percentile (percentile points) | 2,288 | 6,823 | +8.24 +6.90, +10.24 | +8.36 +7.14, +10.29 | +0.13 -0.73,",
+     "expected": 6.9,
+     "tol": 0.005,
+     "ms_source": "story.md L2023",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "ts)1,5663,309+1.4 [-1.4, +4.2]+1.7 [-1.1, +4.5]+0.3 [-1.1, +1.7]All diseasesMedian percentile (percentile points)2,2886,823+8.24 [+6.90, +10.24]+8.36 [+7.14, +10.29]+0.13 [-0.73, +0.85]All d"
+    },
+    {
+     "key": "table.pct_s3.all.E1.gafnow.2",
+     "ms": "|  | All diseases | Median percentile (percentile points) | 2,288 | 6,823 | +8.24 +6.90, +10.24 | +8.36 +7.14, +10.29 | +0.13 -0.73, +0.85 |",
+     "expected": 10.24,
+     "tol": 0.005,
+     "ms_source": "story.md L2023",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "63,309+1.4 [-1.4, +4.2]+1.7 [-1.1, +4.5]+0.3 [-1.1, +1.7]All diseasesMedian percentile (percentile points)2,2886,823+8.24 [+6.90, +10.24]+8.36 [+7.14, +10.29]+0.13 [-0.73, +0.85]All diseases"
+    },
+    {
+     "key": "table.pct_s3.all.E1.gafrel.0",
+     "ms": "diseases | Median percentile (percentile points) | 2,288 | 6,823 | +8.24 +6.90, +10.24 | +8.36 +7.14, +10.29 | +0.13 -0.73, +0.85 |",
+     "expected": 8.36,
+     "tol": 0.005,
+     "ms_source": "story.md L2023",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "1.4 [-1.4, +4.2]+1.7 [-1.1, +4.5]+0.3 [-1.1, +1.7]All diseasesMedian percentile (percentile points)2,2886,823+8.24 [+6.90, +10.24]+8.36 [+7.14, +10.29]+0.13 [-0.73, +0.85]All diseasesTop-10%"
+    },
+    {
+     "key": "table.pct_s3.all.E1.gafrel.1",
+     "ms": "ses | Median percentile (percentile points) | 2,288 | 6,823 | +8.24 +6.90, +10.24 | +8.36 +7.14, +10.29 | +0.13 -0.73, +0.85 |",
+     "expected": 7.14,
+     "tol": 0.005,
+     "ms_source": "story.md L2023",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": ".4, +4.2]+1.7 [-1.1, +4.5]+0.3 [-1.1, +1.7]All diseasesMedian percentile (percentile points)2,2886,823+8.24 [+6.90, +10.24]+8.36 [+7.14, +10.29]+0.13 [-0.73, +0.85]All diseasesTop-10% share "
+    },
+    {
+     "key": "table.pct_s3.all.E1.gafrel.2",
+     "ms": "edian percentile (percentile points) | 2,288 | 6,823 | +8.24 +6.90, +10.24 | +8.36 +7.14, +10.29 | +0.13 -0.73, +0.85 |",
+     "expected": 10.29,
+     "tol": 0.005,
+     "ms_source": "story.md L2023",
+     "classified_by": "session-model(claude-opus-5-5)",
+     "previous_ms": "2]+1.7 [-1.1, +4.5]+0.3 [-1.1, +1.7]All diseasesMedian percentile (percentile points)2,2886,823+8.24 [+6.90, +10.24]+8.36 [+7.14, +10.29]+0.13 [-0.73, +0.85]All diseasesTop-10% share (percen"
+    },
+    {
+     "key": "table.pct_s3.all.E1.change.0",
+     "ms": "centile (percentile points) | 2,288 | 6,823 | +8.24 +6.90, +10.24 | +8.36 +7.14, +10.29 | +0.13 -0.73, +0.85 |",
+     "expected": 0.13,
+     "tol": 0.005,
+     "ms_source": "story.md L2023",
+     "classified_by": "session-model(claude-opus-5-5)",
+     "previous_ms": "[-1.1, +4.5]+0.3 [-1.1, +1.7]All diseasesMedian percentile (percentile points)2,2886,823+8.24 [+6.90, +10.24]+8.36 [+7.14, +10.29]+0.13 [-0.73, +0.85]All diseasesTop-10% share (percentage po"
+    },
+    {
+     "key": "table.pct_s3.all.E1.change.1",
+     "ms": "e (percentile points) | 2,288 | 6,823 | +8.24 +6.90, +10.24 | +8.36 +7.14, +10.29 | +0.13 -0.73, +0.85 |",
+     "expected": -0.73,
+     "tol": 0.005,
+     "ms_source": "story.md L2023",
+     "classified_by": "session-model(claude-opus-5-5)",
+     "previous_ms": "+4.5]+0.3 [-1.1, +1.7]All diseasesMedian percentile (percentile points)2,2886,823+8.24 [+6.90, +10.24]+8.36 [+7.14, +10.29]+0.13 [-0.73, +0.85]All diseasesTop-10% share (percentage points)2,"
+    },
+    {
+     "key": "table.pct_s3.all.E1.change.2",
+     "ms": "entile points) | 2,288 | 6,823 | +8.24 +6.90, +10.24 | +8.36 +7.14, +10.29 | +0.13 -0.73, +0.85 |",
+     "expected": 0.85,
+     "tol": 0.005,
+     "ms_source": "story.md L2023",
+     "classified_by": "session-model(claude-opus-5-5)",
+     "previous_ms": ".3 [-1.1, +1.7]All diseasesMedian percentile (percentile points)2,2886,823+8.24 [+6.90, +10.24]+8.36 [+7.14, +10.29]+0.13 [-0.73, +0.85]All diseasesTop-10% share (percentage points)2,2886,82"
+    },
+    {
+     "key": "table.pct_s3.all.E2.gafnow.0",
+     "ms": "|  | All diseases | Top-10% share (percentage points) | 2,288 | 6,823 | +2.8 +0.5, +5.2 | +2.1 -0.3, +4.5 | -0.7 -1.9, +0",
+     "expected": 2.8,
+     "tol": 0.05,
+     "ms_source": "story.md L2024",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "ts)2,2886,823+8.24 [+6.90, +10.24]+8.36 [+7.14, +10.29]+0.13 [-0.73, +0.85]All diseasesTop-10% share (percentage points)2,2886,823+2.8 [+0.5, +5.2]+2.1 [-0.3, +4.5]-0.7 [-1.9, +0.5]Eculizuma"
+    },
+    {
+     "key": "table.pct_s3.all.E2.change.2",
+     "ms": "|  | All diseases | Top-10% share (percentage points) | 2,288 | 6,823 | +2.8 +0.5, +5.2 | +2.1 -0.3, +4.5 | -0.7 -1.9, +0.5 |",
+     "expected": 0.5,
+     "tol": 0.05,
+     "ms_source": "story.md L2024",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": ", +10.29]+0.13 [-0.73, +0.85]All diseasesTop-10% share (percentage points)2,2886,823+2.8 [+0.5, +5.2]+2.1 [-0.3, +4.5]-0.7 [-1.9, +0.5]Eculizumab case: PNH → NMO, 2008 sliceAll diseasesPerce"
+    },
+    {
+     "key": "table.pct_s3.all.E2.gafnow.2",
+     "ms": "|  | All diseases | Top-10% share (percentage points) | 2,288 | 6,823 | +2.8 +0.5, +5.2 | +2.1 -0.3, +4.5 | -0.7 -1.9, +0.5 |",
+     "expected": 5.2,
+     "tol": 0.05,
+     "ms_source": "story.md L2024",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "3+8.24 [+6.90, +10.24]+8.36 [+7.14, +10.29]+0.13 [-0.73, +0.85]All diseasesTop-10% share (percentage points)2,2886,823+2.8 [+0.5, +5.2]+2.1 [-0.3, +4.5]-0.7 [-1.9, +0.5]Eculizumab case: PNH "
+    },
+    {
+     "key": "table.pct_s3.all.E2.gafrel.0",
+     "ms": "|  | All diseases | Top-10% share (percentage points) | 2,288 | 6,823 | +2.8 +0.5, +5.2 | +2.1 -0.3, +4.5 | -0.7 -1.9, +0.5 |",
+     "expected": 2.1,
+     "tol": 0.05,
+     "ms_source": "story.md L2024",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "4 [+6.90, +10.24]+8.36 [+7.14, +10.29]+0.13 [-0.73, +0.85]All diseasesTop-10% share (percentage points)2,2886,823+2.8 [+0.5, +5.2]+2.1 [-0.3, +4.5]-0.7 [-1.9, +0.5]Eculizumab case: PNH → NMO"
+    },
+    {
+     "key": "table.pct_s3.all.E1.change.1",
+     "ms": "e (percentile points) | 2,288 | 6,823 | +8.24 +6.90, +10.24 | +8.36 +7.14, +10.29 | +0.13 -0.73, +0.85 |",
+     "expected": -0.73,
+     "tol": 0.005,
+     "ms_source": "story.md L2023",
+     "classified_by": "session-model(claude-opus-5-5)",
+     "note_tightened": {
+      "previous_expected": -0.7,
+      "previous_tol": 0.05
+     },
+     "previous_ms": "+4.5]+0.3 [-1.1, +1.7]All diseasesMedian percentile (percentile points)2,2886,823+8.24 [+6.90, +10.24]+8.36 [+7.14, +10.29]+0.13 [-0.73, +0.85]All diseasesTop-10% share (percentage points)2,"
+    },
+    {
+     "key": "table.pct_s3.all.E2.change.1",
+     "ms": "-10% share (percentage points) | 2,288 | 6,823 | +2.8 +0.5, +5.2 | +2.1 -0.3, +4.5 | -0.7 -1.9, +0.5 |",
+     "expected": -1.9,
+     "tol": 0.05,
+     "ms_source": "story.md L2024",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "[+7.14, +10.29]+0.13 [-0.73, +0.85]All diseasesTop-10% share (percentage points)2,2886,823+2.8 [+0.5, +5.2]+2.1 [-0.3, +4.5]-0.7 [-1.9, +0.5]Eculizumab case: PNH → NMO, 2008 sliceAll disease"
+    },
+    {
+     "key": "nmo_current.mean",
+     "ms": "seases | Percentile of NMO among matched candidate diseases, mean of five seeds | — | — | 95.22 (range 90.05-97.60) | not assessed (NMO abse",
+     "expected": 95.22,
+     "tol": 0.005,
+     "ms_source": "story.md L2025",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "9, +0.5]Eculizumab case: PNH → NMO, 2008 sliceAll diseasesPercentile of NMO among matched candidate diseases, mean of five seeds--95.22 (range 90.05-97.60)not assessed (NMO absent from the g"
+    },
+    {
+     "key": "nmo_current.min",
+     "ms": "entile of NMO among matched candidate diseases, mean of five seeds | — | — | 95.22 (range 90.05-97.60) | not assessed (NMO absent from the g",
+     "expected": 90.05,
+     "tol": 0.005,
+     "ms_source": "story.md L2025",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "zumab case: PNH → NMO, 2008 sliceAll diseasesPercentile of NMO among matched candidate diseases, mean of five seeds--95.22 (range 90.05-97.60)not assessed (NMO absent from the graph)not asse"
+    },
+    {
+     "key": "nmo_current.max",
+     "ms": "of NMO among matched candidate diseases, mean of five seeds | — | — | 95.22 (range 90.05-97.60) | not assessed (NMO absent from the graph)",
+     "expected": 97.6,
+     "tol": 0.005,
+     "ms_source": "story.md L2025",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "case: PNH → NMO, 2008 sliceAll diseasesPercentile of NMO among matched candidate diseases, mean of five seeds--95.22 (range 90.05-97.60)not assessed (NMO absent from the graph)not assessed S"
+    },
+    {
+     "key": "common_nodes.2009",
+     "ms": "ame evidence rule, and by weighted Adamic-Adar on the same graphs. All methods are scored on the diseases present in every graph (2,881 in 2008, 5,326 in 2016). The median-percentile endpoin",
+     "expected": 2881,
+     "ms_source": "story.md L2027",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "common_nodes.2017",
+     "ms": "le, and by weighted Adamic-Adar on the same graphs. All methods are scored on the diseases present in every graph (2,881 in 2008, 5,326 in 2016). The median-percentile endpoint is the median",
+     "expected": 5326,
+     "ms_source": "story.md L2027",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "B",
+     "ms": "p-10% share: DisAtlas minus weighted Adamic-Adar). Estimates pool both decision years; brackets are 95% percentile intervals from 2,000 bootstrap resamples of drugs, drawn identically for ev",
+     "expected": 2000,
+     "ms_source": "story.md L2030",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    }
+   ]
+  }
+ ],
+ "unchecked": [
+  {
+   "section": "SI_go_release",
+   "token": "2016",
+   "reason": "calendar year (slice / release date label)",
+   "ctx": "y (GO) annotations.] [As a post hoc robustness check, we built the 2008 and 2016 slices with GO annotations from release",
+   "ms_source": "generic token (no passage)",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "section": "SI_go_release",
+   "token": "2009",
+   "reason": "calendar year (slice / release date label)",
+   "ctx": " the 2008 and 2016 slices with GO annotations from releases dated 1 January 2009 and 1 January 2017, trained DisAtlas mo",
+   "ms_source": "generic token (no passage)",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "section": "SI_go_release",
+   "token": "2017,",
+   "reason": "calendar year (slice / release date label)",
+   "ctx": "lices with GO annotations from releases dated 1 January 2009 and 1 January 2017, trained DisAtlas models (five seeds eac",
+   "ms_source": "generic token (no passage)",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "section": "SI_go_release",
+   "token": "2009",
+   "reason": "calendar year (slice / release date label)",
+   "ctx": "017, trained DisAtlas models (five seeds each) and ranked the new trials of 2009 and 2017 on the diseases present in eve",
+   "ms_source": "generic token (no passage)",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "section": "SI_go_release",
+   "token": "2017",
+   "reason": "calendar year (slice / release date label)",
+   "ctx": "ned DisAtlas models (five seeds each) and ranked the new trials of 2009 and 2017 on the diseases present in every graph.",
+   "ms_source": "generic token (no passage)",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "section": "SI_go_release",
+   "token": "2009",
+   "reason": "calendar year (slice / release date label)",
+   "ctx": "4 to 0.00); no change in either endpoint has a CI that excludes zero.] [The 2009 release annotates 2,191 of the 3,882 di",
+   "ms_source": "generic token (no passage)",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "section": "SI_go_release",
+   "token": "2009",
+   "reason": "calendar year (slice / release date label)",
+   "ctx": "current and slice-dated Gene Ontology annotations.** New trials starting in 2009 and 2017 are ranked by DisAtlas models ",
+   "ms_source": "generic token (no passage)",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "section": "SI_go_release",
+   "token": "2017",
+   "reason": "calendar year (slice / release date label)",
+   "ctx": "nd slice-dated Gene Ontology annotations.** New trials starting in 2009 and 2017 are ranked by DisAtlas models built on ",
+   "ms_source": "generic token (no passage)",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "section": "SI_go_release",
+   "token": "2016",
+   "reason": "calendar year (slice / release date label)",
+   "ctx": "arting in 2009 and 2017 are ranked by DisAtlas models built on the 2008 and 2016 slices with GO annotations from the cur",
+   "ms_source": "generic token (no passage)",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "section": "SI_go_release",
+   "token": "2008,",
+   "reason": "calendar year (slice / release date label)",
+   "ctx": "s. All methods are scored on the diseases present in every graph (2,881 in 2008, 5,326 in 2016). The median-percentile e",
+   "ms_source": "generic token (no passage)",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "section": "SI_go_release",
+   "token": "2016",
+   "reason": "calendar year (slice / release date label)",
+   "ctx": " are scored on the diseases present in every graph (2,881 in 2008, 5,326 in 2016). The median-percentile endpoint is the",
+   "ms_source": "generic token (no passage)",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "section": "SI_go_release",
+   "token": "2009",
+   "reason": "calendar year (slice / release date label)",
+   "ctx": "e of NMO in the PNH row against matched candidate diseases; the 2009 release does not annotate enoug",
+   "ms_source": "generic token (no passage)",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  }
+ ],
+ "manuscript_mismatch": []
+}

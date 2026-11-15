@@ -1,0 +1,5 @@
+Stratum	Pairs	AUROC	95% CI	DisAtlas − combined matched-shortcut baselines (95% CI)
+Rare–rare	2,452	0.757	0.708–0.801	+0.159 (+0.097 to +0.218)
+Rare–common	1,241	0.893	0.829–0.937	+0.245 (+0.147 to +0.345)
+Common–common (IxIDN-Matched)	671 (645 / 26)	0.848	0.671–0.953	+0.071 (−0.115 to +0.301; 26 negatives; not significant)
+Common–common (supplementary, matched negatives)	309 added negatives	0.856	0.755–0.932	not significant

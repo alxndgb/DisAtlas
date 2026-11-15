@@ -1,0 +1,74 @@
+{
+ "n_nodes_arm": 13021,
+ "label_check": {
+  "n_promoted": 28185,
+  "n_added": 644,
+  "n_reweighted": 27541,
+  "overlap_ixidn_pairs": 85,
+  "overlap_positive": 78,
+  "overlap_negative": 7,
+  "overlap_added": 25,
+  "overlap_test": 26
+ },
+ "shipped_vs_seed_mean_maxabs_on_4364": 1.6689300541550267e-07,
+ "n_common_nodes": 13019,
+ "targets": {
+  "n": 18,
+  "n_score_up": 18,
+  "median_rank_change": -656.0,
+  "n_promoted": 18,
+  "top100_shipped": 2,
+  "top100_arm": 6
+ },
+ "classic_pairs_in_census": 14805,
+ "classic_pairs_scored": 14805,
+ "census_best_rank_reproduced_frac": 1.0,
+ "classic_top100_arm_per_seed": [
+  0.8505910165484634,
+  0.8546437014522121,
+  0.8538331644714623,
+  0.8514015535292131,
+  0.8524822695035461
+ ],
+ "classic_top100_arm_seed_sd": 0.0016720565697281547,
+ "fda159": {
+  "n_lost": 13,
+  "frac_lost": 0.08176100628930817,
+  "frac_lost_lo": 0.022202380952380953,
+  "frac_lost_hi": 0.16981773841612116,
+  "mean_delta": -0.038414698895418424,
+  "B_used": 1000
+ },
+ "criteria": {
+  "C1_targets": true,
+  "C2_headline": true,
+  "C3_strata": true,
+  "all_pass": true,
+  "C2_thresholds": {
+   "min_delta": -0.00173914066039191,
+   "min_auroc": 0.8256699468444847
+  },
+  "C3_thresholds": {
+   "rare-rare": -0.0006813399383658672,
+   "rare-common": -0.005935996635232325,
+   "common-common": -0.012789481381025442
+  }
+ },
+ "train_metrics": {
+  "4707": {
+   "six_pairs_recovered": 6
+  },
+  "4708": {
+   "six_pairs_recovered": 6
+  },
+  "4709": {
+   "six_pairs_recovered": 6
+  },
+  "4710": {
+   "six_pairs_recovered": 6
+  },
+  "4711": {
+   "six_pairs_recovered": 6
+  }
+ }
+}

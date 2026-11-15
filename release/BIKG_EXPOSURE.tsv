@@ -1,0 +1,8 @@
+figure	edge	reason
+Figure 4 (and Table S18)	MONDO:0100244|CD59 (ENSEMBL:ENSG00000085063)	case disease and gene both drawn in the aHUS-PNH trace; the edge itself is not drawn and no edge row is shipped (gene shown as a walk-mass share); Habcd tier 1
+Figure 4 (and Table S18)	MONDO:0100244|CD55 (ENSEMBL:ENSG00000196352)	case disease and gene both drawn in the aHUS-PNH trace; the edge itself is not drawn and no edge row is shipped (gene shown as a walk-mass share); Habcd tier 1
+Figure 4 (and Table S18)	MONDO:0005101|NOD2 (ENSEMBL:ENSG00000167207)	case disease and gene both drawn in the Crohn-UC trace; the edge itself is not drawn and no edge row is shipped (gene shown as a walk-mass share); Habcd tier 1
+Figure 4 (and Table S18)	MONDO:0008383|NFKB1 (ENSEMBL:ENSG00000109320)	case disease and gene both drawn in the RA-polymyositis trace; the edge itself is not drawn and no edge row is shipped (gene shown as a walk-mass share); Habcd tier 1
+Figure 4 (and Table S18)	MONDO:0008383|IL1B (ENSEMBL:ENSG00000125538)	case disease and gene both drawn in the RA-polymyositis trace; the edge itself is not drawn and no edge row is shipped (gene shown as a walk-mass share); Habcd tier 1
+Figure 4 (and Table S18)	MONDO:0008383|IL18 (ENSEMBL:ENSG00000150782)	case disease and gene both drawn in the RA-polymyositis trace; the edge itself is not drawn and no edge row is shipped (gene shown as a walk-mass share); Habcd tier 1
+Figure S26 (panel Case 2, static)	MONDO:0005148|INS (ENSEMBL:ENSG00000254647)	type 2 diabetes-INS drawn in the static TxGNN sub-network panel (public TxGNN/PrimeKG graph, not BIKG-derived); the same disease-gene pair is a Habcd release edge (tier 1); no edge row shipped

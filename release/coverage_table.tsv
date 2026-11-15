@@ -1,0 +1,80 @@
+# DisAtlas coverage of the final revised manuscript + SI. Binding text: disatlas_representation_learning_story.md (sha256 52e96bb6ce1272c617ae6bfe2a785764d8e3faa5feb9873a20fed23e803d5ab7); figures compared to the docx images.
+# figure: docx image vs repo output, SHA-256 then decoded pixels. table: docx rows vs repo table, cell by cell.
+# derived_inputs_rebuild: class of the rebuild of the item's derived inputs from released inputs (release/rebuild_classes.tsv); a = equal at stored precision, c = not bit-identical or not rebuilt; empty = no rebuild needed or not attempted.
+# sections: number tokens by registry kind; "computed" tokens are asserted by a test (tests/test_*_parity.py); erratum = docs/ERRATA.md; pending = no shipped source (reason in the row note).
+item	type	status	repo_file	check	open_gap	derived_inputs_rebuild
+Figure 1	figure	reproduced	figures/main/fig1_knowledge_transfer.png	identical bytes		
+Figure 2	figure	reproduced	figures/main/disatlas_pipeline.png	identical bytes		
+Figure 3	figure	reproduced	figures/main/ixidn_benchmark.png	identical bytes		
+Figure 4	figure	reproduced	figures/main/fig4_evidence_trace.png	identical bytes		
+Figure 5	figure	reproduced	figures/main/disease_clustering_map.png	identical bytes		
+Figure 6	figure	reproduced	figures/main/fig5_method_comparison.png	identical bytes		a
+Figure 7	figure	reproduced	figures/main/fig7_prospective.png	identical bytes		a (top-10 precision table and per-drug files: c)
+Figure S1	figure	reproduced	figures/SI/rare_disease_stats.png	identical bytes		
+Figure S2	figure	reproduced	figures/SI/SI_approved_repurposing_schematic.png	identical bytes		
+Figure S3	figure	reproduced	figures/SI/SI_rare_common_transfer.png	identical bytes		
+Figure S4	figure	reproduced	figures/SI/LCA.png	identical bytes		
+Figure S5	figure	reproduced	figures/SI/SI_graph_channels_schematic.png	pixel-identical		
+Figure S6	figure	reproduced	figures/SI/SI_mechdist_embedding_pair_score.png	identical bytes		a
+Figure S7	figure	regenerated; docx image older (author to replace image)	figures/SI/si_ixidn_matched_funnel.png	size differs docx 2035x1866 repo 2820x2539	docx image predates the final producer output	
+Figure S8	figure	regenerated; docx image older (author to replace image)	figures/SI/si_pipeline_detailed.png	pixels differ	docx image predates the final producer output	
+Figure S9	figure	reproduced	figures/SI/si_mechanism_sensitivity.png	identical bytes		
+Figure S10	figure	reproduced	figures/SI/si_mechdist_degree_by_channel.png	identical bytes		a
+Figure S11	figure	reproduced	figures/SI/si_threshold_sensitivity.png	identical bytes		
+Figure S12	figure	reproduced	figures/SI/si_ablation_31arm.png	identical bytes		
+Figure S13	figure	reproduced	figures/SI/si_uncertainty.png	identical bytes		a
+Figure S14	figure	reproduced	figures/SI/si_placement_confidence.png	identical bytes		a
+Figure S15	figure	reproduced	figures/SI/si_node_disjoint.png	identical bytes		
+Figure S16	figure	reproduced	figures/SI/extended_cluster_validation.png	identical bytes		a (panel c: c)
+Figure S17	figure	reproduced	figures/SI/SI_cluster_map_vs_model_distance.png	identical bytes		
+Figure S18	figure	reproduced	figures/SI/SI_rare_common_neighbour_coverage.png	identical bytes		c
+Figure S19	figure	reproduced	figures/SI/SI_event_time_auc_methods.png	identical bytes		a
+Figure S20	figure	reproduced	figures/SI/SI_event_time_hits10.png	identical bytes		a
+Figure S21	figure	reproduced	figures/SI/SI_event_time_weighted.png	identical bytes		a
+Figure S22	figure	reproduced	figures/SI/si_popularity_strata.png	identical bytes		a
+Figure S23	figure	regenerated; docx image older (author to replace image)	figures/SI/SI_fda_channels.png	size differs docx 2435x1836 repo 2556x1836	docx image predates the final producer output	
+Figure S24	figure	reproduced	figures/SI/SI_complement_milestones.png	identical bytes		
+Figure S25	figure	reproduced	figures/SI/SI_mechanism_coverage_slices.png	identical bytes		
+Figure S26	figure	reproduced	figures/SI/SI_explainability.png	identical bytes		a
+Table 1	table	reproduced (citation key only)	tables/main/table1_protocols.md	5/6 rows identical to the docx	repo table carries the reference key where the docx prints the rendered citation number	a
+Table S1	table	reproduced	tables/SI/table_input_dis_gene_sources.md	7/7 rows identical to the docx		
+Table S2	table	reproduced	tables/SI/table_input_dis_symptom_sources.md	5/5 rows identical to the docx		
+Table S3	table	reproduced	tables/SI/table_fig3a_trials.md	91/91 rows identical to the docx		
+Table S4	table	reproduced with listed corrections	tables/SI/table_ontology_baseline.md	2/5 rows identical to the docx	erratum E4 (docs/ERRATA.md): printed values from an earlier run	
+Table S5	table	reproduced	tables/SI/table_si_baselines.md	13/13 rows identical to the docx		a
+Table S6	table	reproduced	tables/SI/table_llm_subgroups.md	13/13 rows identical to the docx		
+Table S7	table	reproduced	tables/SI/table_heuristic_vs_ai.md	11/11 rows identical to the docx		a
+Table S8	table	reproduced	tables/SI/table_degree_controls.md	17/17 rows identical to the docx		c
+Table S9	table	reproduced	tables/SI/table_cluster_controls.md	18/18 rows identical to the docx		
+Table S10	table	reproduced	tables/SI/table_cluster_themes.md	56/56 rows identical to the docx		a (GO and pair-overlap columns: c)
+Table S11	table	reproduced	tables/SI/table_rare_common_strata.md	5/5 rows identical to the docx		a
+Table S12	table	reproduced	tables/SI/table_ra_myositis.md	9/9 rows identical to the docx		
+Table S13	table	reproduced	figures/SI/SI_event_time_tables.md	49/49 rows identical to the docx		a (top-10 precision table: c)
+Table S14	table	reproduced	figures/SI/SI_event_time_tables.md	41/41 rows identical to the docx		a
+Table S15	table	reproduced	figures/SI/SI_event_time_or_tables.md	14/14 rows identical to the docx		a
+Table S16	table	reproduced	figures/SI/SI_event_time_or_tables.md	25/25 rows identical to the docx		a
+Table S17	table	reproduced	figures/SI/SI_go_release_table.md	10/10 rows identical to the docx		
+Table S18	table	reproduced	tables/SI/table_SI_trace_order.md	8/8 rows identical to the docx		
+Main text	main text	bound with errata	tests/main_text_numbers.tsv	707 tokens: 315 computed (asserted), 1 erratum, 0 pending; rest data_track 54, date 2, history 3, identifier 11, name 15, notation 89, parameter 121, si_track 16, version 47, year 33		
+S1	SI section	bound	tests/si_text_numbers.tsv	21 tokens: 3 computed (asserted), 0 erratum, 0 pending; rest citation 2, notation 5, parameter 11		
+S2	SI section	partly bound	tests/si_text_numbers.tsv	80 tokens: 61 computed (asserted), 0 erratum, 6 pending; rest citation 1, design 4, notation 8	6 pending (reason per row in the registry note column)	
+S3	SI section	bound	tests/si_text_numbers.tsv	28 tokens: 19 computed (asserted), 0 erratum, 0 pending; rest notation 5, parameter 4		
+S4	SI section	partly bound	tests/si_text_numbers.tsv	357 tokens: 267 computed (asserted), 8 erratum, 14 pending; rest label 37, notation 20, parameter 8, year 3	14 pending (reason per row in the registry note column)	
+S5	SI section	partly bound	tests/si_text_numbers.tsv	178 tokens: 142 computed (asserted), 0 erratum, 2 pending; rest citation 9, notation 2, parameter 23	2 pending (reason per row in the registry note column)	
+S6	SI section	partly bound	tests/si_text_numbers.tsv	76 tokens: 20 computed (asserted), 0 erratum, 21 pending; rest notation 11, parameter 24	21 pending (reason per row in the registry note column)	
+S7	SI section	partly bound	tests/si_text_numbers.tsv	163 tokens: 92 computed (asserted), 0 erratum, 40 pending; rest label 3, notation 1, parameter 27	40 pending (reason per row in the registry note column)	
+S8	SI section	bound	tests/si_text_numbers.tsv	112 tokens: 104 computed (asserted), 0 erratum, 0 pending; rest notation 6, parameter 2		
+S9	SI section	partly bound	tests/si_text_numbers.tsv	531 tokens: 450 computed (asserted), 1 erratum, 27 pending; rest design 1, label 12, notation 26, parameter 14	27 pending (reason per row in the registry note column)	
+S10	SI section	partly bound	tests/si_text_numbers.tsv	33 tokens: 23 computed (asserted), 0 erratum, 2 pending; rest notation 5, parameter 3	2 pending (reason per row in the registry note column)	
+S11	SI section	partly bound	tests/si_text_numbers.tsv	164 tokens: 68 computed (asserted), 0 erratum, 71 pending; rest label 4, notation 3, parameter 18	71 pending (reason per row in the registry note column)	
+S12	SI section	partly bound	tests/si_text_numbers.tsv	128 tokens: 82 computed (asserted), 0 erratum, 4 pending; rest citation 1, notation 24, parameter 17	4 pending (reason per row in the registry note column)	
+S13	SI section	bound	tests/si_text_numbers.tsv	1202 tokens: 1077 computed (asserted), 0 erratum, 0 pending; rest label 1, notation 21, parameter 77, year 26		
+S14	SI section	bound	tests/si_text_numbers.tsv	379 tokens: 270 computed (asserted), 0 erratum, 0 pending; rest citation 4, design 1, label 2, notation 20, parameter 40, year 42		
+S15	SI section	bound	tests/si_text_numbers.tsv	61 tokens: 42 computed (asserted), 0 erratum, 0 pending; rest notation 4, parameter 3, year 12		
+S16	SI section	bound	tests/si_text_numbers.tsv	54 tokens: 34 computed (asserted), 0 erratum, 0 pending; rest notation 3, parameter 9, year 8		
+S17	SI section	bound	tests/si_text_numbers.tsv	16 tokens: 6 computed (asserted), 0 erratum, 0 pending; rest parameter 10		
+S18	SI section	bound	tests/si_text_numbers.tsv	32 tokens: 13 computed (asserted), 0 erratum, 0 pending; rest notation 9, parameter 5, year 5		
+S19	SI section	bound	tests/si_text_numbers.tsv	32 tokens: 5 computed (asserted), 0 erratum, 0 pending; rest citation 6, notation 20, parameter 1		
+S20	SI section	partly bound	tests/si_text_numbers.tsv	12 tokens: 3 computed (asserted), 0 erratum, 7 pending; rest parameter 2	7 pending (reason per row in the registry note column)	
+Methods	SI section	bound	tests/si_text_numbers.tsv	2 tokens: 1 computed (asserted), 0 erratum, 0 pending; rest parameter 1		
+References	SI section	no computed numbers	tests/si_text_numbers.tsv	476 tokens: 0 computed (asserted), 0 erratum, 0 pending; rest citation 476		

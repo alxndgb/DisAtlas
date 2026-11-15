@@ -1,0 +1,25 @@
+item	quantity	value	source	in_manuscript_text	note
+S13	AUROC seed SD (5 seeds), all pairs	0.0023	data/derived/uncertainty/seed_vs_sample_sd.tsv	yes	
+S13	AUROC disease-cluster bootstrap SD, all pairs	0.018	data/derived/uncertainty/seed_vs_sample_sd.tsv	yes	
+S13	sampling SD / seed SD ratio	about 8	data/derived/uncertainty/seed_vs_sample_sd.tsv	yes	
+S14	critical-tier exclusion: diseases excluded	105	data/derived/placement_confidence/exclusion_sensitivity.tsv	n/a	Supplementary Figure only (panel value); checked against the rendered figure, which is byte-identical
+S14	critical-tier exclusion: AUROC touching vs kept	0.881	data/derived/placement_confidence/exclusion_sensitivity.tsv	n/a	Supplementary Figure only (panel value); checked against the rendered figure, which is byte-identical
+S14	critical-tier exclusion: AUROC kept	0.817	data/derived/placement_confidence/exclusion_sensitivity.tsv	n/a	Supplementary Figure only (panel value); checked against the rendered figure, which is byte-identical
+S15	node-disjoint AUROC (95% CI)	0.792 (95% CI 0.754–0.828)	data/derived/ixidn_robustness/subgroups_shared_bootstrap_B2000.tsv	yes	
+S15	node-disjoint minus full (95% CI)	−0.042, 95% CI −0.061 to −0.023	data/derived/ixidn_robustness/subgroups_shared_bootstrap_B2000.tsv	yes	
+S16	within organ-system stratum, disease resampling (main text)	0.843	figures/SI/si_negrealism_auroc_disease.tsv	yes	
+S16	within organ-system stratum CI, disease resampling	0.797 to 0.883	figures/SI/si_negrealism_auroc_disease.tsv	yes	
+S16	HPO-similar negatives AUROC	0.636	figures/SI/si_negrealism_auroc.tsv	yes	
+S23	popularity-strata advantage vs weighted AA, primary	9.17	data/derived/popularity_strata/decision_popularity_strata.json	yes	
+S23	popularity-strata CI	10.27	data/derived/popularity_strata/decision_popularity_strata.json	yes	
+S23	weighted AA advantage range, lower	5.48	data/derived/popularity_strata/summary_popularity_strata.tsv	yes	
+S23	weighted AA advantage range, upper	9.82	data/derived/popularity_strata/summary_popularity_strata.tsv	yes	
+S6	Claude Chat: DisAtlas minus system, all pairs	0.100	data/derived/ixidn_robustness/subgroups_shared_bootstrap_B2000.tsv	yes	
+S5	TF-IDF placed: DisAtlas minus score	0.037	data/derived/si_baselines/baselines_auroc_B2000.tsv	yes	
+S5	TF-IDF placed AUROC	0.755	data/derived/si_baselines/baselines_auroc_B2000.tsv	yes	
+S5	MONDO SimGIC AUROC, all pairs	0.542	data/derived/si_baselines/baselines_auroc_B2000.tsv	yes	
+S7	TF-IDF placed minus Claude Chat	+0.062	data/derived/si_heur_vs_ai/heuristic_minus_ai_B2000.tsv	yes	
+S7	Phylo Biomni AUROC	0.626	data/derived/si_heur_vs_ai/heuristic_minus_ai_B2000.tsv	yes	
+S13tab	main analysis, popularity × weighted-degree, test pool	+8.31	data/derived/si_event_time/deltas.tsv	yes	Supplementary Table S13 rows 6-41 in the manuscript are decoder-era; see table_parity_figD.tsv
+S13tab	single new disease, popularity × weighted-degree, test pool (gene-anchored)	+4.51	data/derived/si_event_time/deltas.tsv	no	Supplementary Table S13 rows 6-41 in the manuscript are decoder-era; see table_parity_figD.tsv
+S13tab	single new disease, popularity × weighted-degree, test pool (manuscript, decoder-era)	+2.59	decoder-era deltas (bb53253), not shipped	yes	Supplementary Table S13 rows 6-41 in the manuscript are decoder-era; see table_parity_figD.tsv

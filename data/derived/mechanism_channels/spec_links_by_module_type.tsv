@@ -1,0 +1,8 @@
+type	links	modules	diseases
+Curated gene sets	9732	18	1641
+Literature GO processes	37036	1505	2432
+Literature mechanism entities	10167	57	1377
+Literature pathways	6347	201	1243
+Mechanism nodes	129953	282	3501
+Pathology text	87947	3333	2865
+Reactome pathway enrichment	141622	1350	3756

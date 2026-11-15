@@ -1,0 +1,70 @@
+# Non-bound rows of tests/parity/sibio_rebind_registry.tsv for the lead's review (unchecked kept, moved to unchecked, pinned unprinted). Fill lead_decision: keep / bind / retire.
+spec	label	kind	key	expected	data_value	status	classified_by	previous_ms_snippet	lead_decision
+sibio_cluster.json		unchecked	2.5			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_cluster.json		unchecked	2.5			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_cluster.json		unchecked	60%			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_cluster.json		unchecked	15%			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_cluster.json		unchecked	25%			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_cluster.json		unchecked	40%			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_cluster.json		unchecked	0.05			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_cluster.json		unchecked	0.5			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_event_time.json		unchecked	1996			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_event_time.json		unchecked	2021			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_event_time.json		unchecked	2020			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_event_time.json		unchecked	2021,			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_event_time.json		unchecked	95%			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_event_time.json		unchecked	95%			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_event_time.json		unchecked	95%			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_event_time.json		unchecked	95%			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_event_time.json		unchecked	2020			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_event_time.json		unchecked	2020			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_event_time.json		unchecked	95%			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_event_time.json		unchecked	95%			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_event_time.json		unchecked	2010			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_event_time.json		unchecked	1996			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_event_time.json		unchecked	95%			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_explainability.json		unchecked	1			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_explainability.json		unchecked	2			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_explainability.json		unchecked	2			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_explainability.json		unchecked	1,			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_explainability.json		unchecked	2			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_explainability.json		unchecked	3			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_explainability.json		unchecked	2			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_explainability.json		unchecked	1			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_explainability.json		unchecked	24,			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)	 a rare GBA-independent form caused by PSAP mutations, and Parkinson disease 24, which is also linked to PSAP.]  [TxGNN 	
+sibio_explainability.json		unchecked	2%			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)	in a dedicated disease-level representation. It ranks all three pairs in the top 2% of the 84.8 million disease pairs: Marfan sy	
+sibio_explainability.json		unchecked	24			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)	tes at the 99.4th (0.711), and Gaucher disease due to saposin C deficiency-Parkinson disease 24 at the 99.4th (0.696). When the ro	
+sibio_explainability.json		unchecked	13,000			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)	to saposin C deficiency-Parkinson disease 24 at the 99.4th (0.696). When the roughly 13,000 other diseases are ordered by their D	
+sibio_explainability.json		unchecked	1			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)	t indication for the two pairs involving sparsely studied rare diseases (cases 1 and 3) and relevant for the well-studie	
+sibio_explainability.json		unchecked	3			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)	cation for the two pairs involving sparsely studied rare diseases (cases 1 and 3) and relevant for the well-studied MODY	
+sibio_explainability.json		unchecked	2,			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)	re diseases (cases 1 and 3) and relevant for the well-studied MODY pair (case 2, diazoxide). DisAtlas ranks all three pa	
+sibio_explainability.json		unchecked	2%			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)	died MODY pair (case 2, diazoxide). DisAtlas ranks all three pairs in the top 2% of disease pairs. Case 2 uses MODY type	
+sibio_explainability.json		unchecked	2			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)	iazoxide). DisAtlas ranks all three pairs in the top 2% of disease pairs. Case 2 uses MODY type 1 (HNF4A). Case 3 uses G	
+sibio_explainability.json		unchecked	3			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)	ee pairs in the top 2% of disease pairs. Case 2 uses MODY type 1 (HNF4A). Case 3 uses Gaucher disease due to saposin C d	
+sibio_explainability.json		unchecked	1			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)	er disease 108. (b) Sub-networks behind each prediction. DisAtlas links cases 1 and 2 through pathway-level genes and phenot	
+sibio_explainability.json		unchecked	2			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)	ease 108. (b) Sub-networks behind each prediction. DisAtlas links cases 1 and 2 through pathway-level genes and phenotypes.	
+sibio_explainability.json		unchecked	1			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)	GNN relies on broad phenotypes such as autosomal dominant inheritance in cases 1 and 2, reaching the related diabetes co	
+sibio_explainability.json		unchecked	2,			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)	ies on broad phenotypes such as autosomal dominant inheritance in cases 1 and 2, reaching the related diabetes context i	
+sibio_explainability.json		unchecked	2			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)	nt inheritance in cases 1 and 2, reaching the related diabetes context in case 2 only through islet cell adenomatosis, a	
+sibio_explainability.json		unchecked	3			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)	ase 2 only through islet cell adenomatosis, and predicts no meta-path for case 3. TxGNN is shown with its published chec	
+sibio_fda.json	SI_fda_prioritisation	check	b_full_recovered_neither_single	5	5.0	pinned_unprinted	session-model(claude-opus-5-5)		
+sibio_fda.json	SI_fda_prioritisation	check	a_broad_off_pct95.2	0.642	0.642	pinned_unprinted	session-model(claude-opus-5-5)		
+sibio_fda.json	SI_fda_prioritisation	check	a_spec_off@broad_off_nodes_pct99.1	0.0	0.016	pinned_unprinted	session-model(claude-opus-5-5)		
+sibio_go_release.json		unchecked	2016			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_go_release.json		unchecked	2009			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_go_release.json		unchecked	2017,			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_go_release.json		unchecked	2009			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_go_release.json		unchecked	2017			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_go_release.json		unchecked	2009			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_go_release.json		unchecked	2009			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_go_release.json		unchecked	2017			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_go_release.json		unchecked	2016			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_go_release.json		unchecked	2008,			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_go_release.json		unchecked	2016			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_go_release.json		unchecked	2009			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_mechanism.json	SI_mechanism_coverage_text	text_check	figures/SI/SI_fda_prioritisation_text.md	['2000']		moved_to_unchecked	session-model(claude-opus-5-5)	Each case pair is ranked against a reference set of 2,000 random disease pairs whose members are drawn from the same training-graph degree groups as the two cas	
+sibio_mechanism.json		unchecked	3			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_mechanism.json		unchecked	3			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_mechanism.json		unchecked	2007			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_rare_common.json		unchecked	2,000			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		
+sibio_rare_common.json		unchecked	2.5			unchecked_kept	rule-based label; reviewed session-model(claude-opus-5-5)		

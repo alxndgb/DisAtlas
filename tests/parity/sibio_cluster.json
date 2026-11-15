@@ -1,0 +1,1309 @@
+{
+ "ms_source": {
+  "file": "assets/manuscripts/disatlas/disatlas_representation_learning_story.md (dis2vec_2)",
+  "sha256": "52e96bb6ce1272c617ae6bfe2a785764d8e3faa5feb9873a20fed23e803d5ab7",
+  "note": "ms snippets re-bound to the story markdown (binding source of the final text); line numbers refer to that file at this sha256"
+ },
+ "items": [
+  {
+   "label": "SI_cluster_validation_k",
+   "script": "figures/SI/si_cluster_validation.py",
+   "numbers": "figures/SI/extended_cluster_validation_values.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "within_1sd.-1",
+     "ms": "rom the silhouette alone, without reference to any control disease or benchmark pair. K = 55 is the largest K whose mean silhouette over 100 subsample re-clusterings lies within one",
+     "expected": 55,
+     "note": "K = 55 is the finest K within one standard deviation of the best mean silhouette",
+     "ms_source": "story.md L1460",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_k",
+   "script": "figures/SI/si_cluster_validation.py",
+   "numbers": "figures/SI/extended_cluster_validation_values.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "within_1sd.-1",
+     "ms": "rom the silhouette alone, without reference to any control disease or benchmark pair. K = 55 is the largest K whose mean silhouette over 100 subsample re-clusterings lies within one",
+     "expected": 55,
+     "note": "K = 55 is the finest K within one standard deviation of the best mean silhouette",
+     "ms_source": "story.md L1460",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "best_mean",
+     "ms": "The best mean silhouette is reached at K = 45 (0.239, standard deviation 0.003 across subsamples)",
+     "expected": 0.239,
+     "tol": 0.0005,
+     "ms_source": "story.md L1462",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "text results use this K; the full sweep from K = 10 to 80 is shown in Figure S16a. The best mean silhouette is reached at K = 45 (0.239, standard deviation 0.003 across subsamples); K = 35, "
+    },
+    {
+     "key": "best_sd",
+     "ms": "The best mean silhouette is reached at K = 45 (0.239, standard deviation 0.003 across subsamples); K = 35, 40, 45, 50 and 5",
+     "expected": 0.003,
+     "tol": 0.0005,
+     "ms_source": "story.md L1462",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "he full sweep from K = 10 to 80 is shown in Figure S16a. The best mean silhouette is reached at K = 45 (0.239, standard deviation 0.003 across subsamples); K = 35, 40, 45, 50 and 55 lie with"
+    },
+    {
+     "key": "within_1sd.1",
+     "ms": "houette is reached at K = 45 (0.239, standard deviation 0.003 across subsamples); K = 35, 40, 45, 50 and 55 lie within one standard deviation of it, and K = 55 has a mean silhouette",
+     "expected": 40,
+     "ms_source": "story.md L1462",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "within_1sd.2",
+     "ms": "wn in Figure S16a. The best mean silhouette is reached at K = 45 (0.239, standard deviation 0.003 across subsamples); K = 35, 40, 45, 50 and 55 lie within one standard deviation of it, and K",
+     "expected": 45,
+     "ms_source": "story.md L1462",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "within_1sd.3",
+     "ms": "is reached at K = 45 (0.239, standard deviation 0.003 across subsamples); K = 35, 40, 45, 50 and 55 lie within one standard deviation of it, and K = 55 has a mean silhouette of 0.237",
+     "expected": 50,
+     "ms_source": "story.md L1462",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "k55_mean",
+     "ms": "5, 50 and 55 lie within one standard deviation of it, and K = 55 has a mean silhouette of 0.237 (2.5-97.5% range across subsamples 0.232 to 0.241); in 98 of the 100 subsamples the best",
+     "expected": 0.237,
+     "tol": 0.0005,
+     "ms_source": "story.md L1462",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "k55_lo",
+     "ms": "5, 50 and 55 lie within one standard deviation of it, and K = 55 has a mean silhouette of 0.237 (2.5-97.5% range across subsamples 0.232 to 0.241); in 98 of the 100 subsamples the b",
+     "expected": 0.232,
+     "tol": 0.0005,
+     "ms_source": "story.md L1462",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "k55_hi",
+     "ms": "5, 50 and 55 lie within one standard deviation of it, and K = 55 has a mean silhouette of 0.237 (2.5-97.5% range across subsamples 0.232 to 0.241); in 98 of the 100 subsamples the b",
+     "expected": 0.241,
+     "tol": 0.0005,
+     "ms_source": "story.md L1462",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_k",
+   "script": "figures/SI/si_cluster_rarecommon_numbers.py",
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "controls.0.pct",
+     "ms": "any control disease or benchmark pair. K = 55 is the largest K whose mean silhouette over 100 subsample re-clusterings lies within one standard deviation of the best mean silhouette,",
+     "expected": 100.0,
+     "tol": 0.5,
+     "ms_source": "story.md L1460",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "ksel_best_mean_K",
+     "ms": "The best mean silhouette is reached at K = 45 (0.239, standard deviation 0.003 across subs",
+     "expected": 45,
+     "note03": {
+      "previous_expected": 65,
+      "final": 45,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1462",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "ain-text results use this K; the full sweep from K = 10 to 80 is shown in Figure S16a. The best mean silhouette is reached at K = 45 (0.239, standard deviation 0.003 across subsamples); K = "
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_controls",
+   "script": "figures/SI/si_cluster_rarecommon_numbers.py",
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "controls_n_pos",
+     "ms": "[We list every control disease pair: 9 positive pairs, expected to share mecha",
+     "expected": 9,
+     "ms_source": "story.md L1465",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls_n_neg",
+     "ms": "rol disease pair: 9 positive pairs, expected to share mechanism, and 8 negative pairs, expected to differ in m",
+     "expected": 8,
+     "ms_source": "story.md L1465",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "n_diseases",
+     "ms": "Every disease of the 17 pairs is among the 13,021 clustered diseases, so every pair has a cosi",
+     "expected": 13021,
+     "ms_source": "story.md L1466",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "rs, expected to differ in mechanism despite similar names or organ systems (Table S9). Every disease of the 17 pairs is among the 13,021 clustered diseases, so every pair has a cosine score "
+    },
+    {
+     "key": "controls_pos_same_cluster",
+     "ms": "clustered diseases, so every pair has a cosine score and a cluster assignment. At K = 55, 5 of 9 positive pairs share a cluster and 8 of 8 negative pairs are separated. Cluster memb",
+     "expected": 5,
+     "ms_source": "story.md L1466",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls_neg_separated",
+     "ms": ". At K = 55, 5 of 9 positive pairs share a cluster and 8 of 8 negative pairs are separated. Cluster membership",
+     "expected": 8,
+     "ms_source": "story.md L1467",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "n_pairs_all",
+     "ms": "he clustering distance is one minus this score); percentile: rank of that score among all 84,766,710 scored disease pairs, of which half score below -0.030. Best partner rank: the better of",
+     "expected": 84766710,
+     "ms_source": "story.md L1498",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls_auroc",
+     "ms": "e positive from the negative controls with an AUROC of 1.00, and every positive pair, including the 4 that k-m",
+     "expected": 1.0,
+     "tol": 0.005,
+     "ms_source": "story.md L1469",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "median_cosine_all_pairs",
+     "ms": "median cosine score -0.030 over all 84,766,710 pairs",
+     "expected": -0.03,
+     "tol": 0.0005,
+     "ms_source": "story.md L1470",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "n_scored_partners",
+     "ms": "formative scale is the partner rank, the rank that each disease gives the other among all 13,020 other diseases ordered by cosine score; because every disease pair is scored, the other d",
+     "expected": 13020,
+     "ms_source": "story.md L1471",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls_pos_top100",
+     "ms": "not be a neighbor in the training graph. On this scale 7 of the 9 positive pairs have a best partner rank of 1",
+     "expected": 7,
+     "ms_source": "story.md L1471",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.1.best_rank",
+     "ms": "le 7 of the 9 positive pairs have a best partner rank of 100 or better (best partner rank 1 to 312 across all 9), whereas the best partner rank of every negative pair lies between 4",
+     "expected": 1,
+     "ms_source": "story.md L1472",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.7.best_rank",
+     "ms": "gastrointestinal stromal tumor – chronic myelogenous leukemia, BCR-ABL1 positive | positive | no | 0.507 | 97.9 | 312",
+     "expected": 312,
+     "ms_source": "story.md L1485",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.5.best_rank",
+     "ms": "Wolman disease – cholesteryl ester storage disease | positive | no | 0.735 | 99.5 | 13",
+     "expected": 13,
+     "ms_source": "story.md L1482",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.9.best_rank",
+     "ms": "tuberous sclerosis – multiple sclerosis | negative | no | 0.401 | 96.1 | 416",
+     "expected": 416,
+     "ms_source": "story.md L1486",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.16.best_rank",
+     "ms": "osteogenesis imperfecta – osteopetrosis | negative | no | 0.186 | 87.3 | 1,677",
+     "expected": 1677,
+     "ms_source": "story.md L1491",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "cocluster_test.ratio",
+     "ms": "ly of any control disease, co-investigated IxIDN-Matched test-split pairs share a cluster 9.90 times as often as their matched negative pairs at K = 55 (27.9% of 491 positive pairs aga",
+     "expected": 9.9,
+     "tol": 0.005,
+     "note03": {
+      "previous_expected": 8.97,
+      "final": 9.9,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L312",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "cocluster_test.pos",
+     "ms": "est-split pairs share a cluster 9.90 times as often as their matched negatives at K = 55 (27.9% of 491 positive pairs against 2.8% of 603 negative pairs), and at least 6.9 times as oft",
+     "expected": 27.9,
+     "tol": 0.05,
+     "note03": {
+      "previous_expected": 29.7,
+      "final": 27.9,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1473",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|Test split pairs|all.pos",
+     "ms": "pairs share a cluster 9.90 times as often as their matched negatives at K = 55 (27.9% of 491 positive pairs against 2.8% of 603 negative pairs), and at least 6.9 times as often at ev",
+     "expected": 491,
+     "ms_source": "story.md L1473",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "strata.IxIDN-Matched|Test split pairs|all.neg",
+     "ms": " pairs share a cluster 9.90 times as often as their matched negative pairs at K = 55 (27.9% of 491 positive pairs against 2.8% of 603 negative pairs), and at least 6.9 times as often at ever",
+     "expected": 603,
+     "ms_source": "story.md L312",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.0.score",
+     "ms": "Crohn disease – ulcerative colitis | positive | yes | 0.907 | 99.9 | 2",
+     "expected": 0.907,
+     "tol": 0.0005,
+     "ms_source": "story.md L1477",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.0.best_rank",
+     "ms": "Crohn disease – ulcerative colitis | positive | yes | 0.907 | 99.9 | 2",
+     "expected": 2,
+     "ms_source": "story.md L1477",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.1.score",
+     "ms": "atypical hemolytic-uremic syndrome – paroxysmal nocturnal hemoglobinuria | positive | yes | 0.855 | 99.9 | 1",
+     "expected": 0.855,
+     "tol": 0.0005,
+     "ms_source": "story.md L1478",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.1.pct",
+     "ms": "atypical hemolytic-uremic syndrome – paroxysmal nocturnal hemoglobinuria | positive | yes | 0.855 | 99.9 | 1",
+     "expected": 99.9,
+     "tol": 0.05,
+     "ms_source": "story.md L1478",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.2.score",
+     "ms": "psoriasis – psoriatic arthritis | positive | no | 0.811 | 99.8 | 52",
+     "expected": 0.811,
+     "tol": 0.0005,
+     "ms_source": "story.md L1479",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.2.best_rank",
+     "ms": "psoriasis – psoriatic arthritis | positive | no | 0.811 | 99.8 | 52",
+     "expected": 52,
+     "ms_source": "story.md L1479",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.3.score",
+     "ms": "tuberous sclerosis – lymphangioleiomyomatosis | positive | yes | 0.786 | 99.7 | 1",
+     "expected": 0.786,
+     "tol": 0.0005,
+     "ms_source": "story.md L1481",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.4.score",
+     "ms": "cryopyrin-associated periodic syndrome – familial Mediterranean fever | positive | yes | 0.790 | 99.7 | 14",
+     "expected": 0.79,
+     "tol": 0.0005,
+     "ms_source": "story.md L1480",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.4.pct",
+     "ms": "cryopyrin-associated periodic syndrome – familial Mediterranean fever | positive | yes | 0.790 | 99.7 | 14",
+     "expected": 99.7,
+     "tol": 0.05,
+     "ms_source": "story.md L1480",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.4.best_rank",
+     "ms": "cryopyrin-associated periodic syndrome – familial Mediterranean fever | positive | yes | 0.790 | 99.7 | 14",
+     "expected": 14,
+     "ms_source": "story.md L1480",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.5.score",
+     "ms": "Wolman disease – cholesteryl ester storage disease | positive | no | 0.735 | 99.5 | 13",
+     "expected": 0.735,
+     "tol": 0.0005,
+     "ms_source": "story.md L1482",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.5.pct",
+     "ms": "Wolman disease – cholesteryl ester storage disease | positive | no | 0.735 | 99.5 | 13",
+     "expected": 99.5,
+     "tol": 0.05,
+     "ms_source": "story.md L1482",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.6.score",
+     "ms": "myasthenia gravis – neuromyelitis optica | positive | yes | 0.681 | 99.3 | 5",
+     "expected": 0.681,
+     "tol": 0.0005,
+     "ms_source": "story.md L1483",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.6.pct",
+     "ms": "myasthenia gravis – neuromyelitis optica | positive | yes | 0.681 | 99.3 | 5",
+     "expected": 99.3,
+     "tol": 0.05,
+     "ms_source": "story.md L1483",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.6.best_rank",
+     "ms": "myasthenia gravis – neuromyelitis optica | positive | yes | 0.681 | 99.3 | 5",
+     "expected": 5,
+     "ms_source": "story.md L1483",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.7.score",
+     "ms": "gastrointestinal stromal tumor – chronic myelogenous leukemia, BCR-ABL1 positive | positive | no | 0.507 | 97.9 | 312",
+     "expected": 0.507,
+     "tol": 0.0005,
+     "ms_source": "story.md L1485",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.7.pct",
+     "ms": "gastrointestinal stromal tumor – chronic myelogenous leukemia, BCR-ABL1 positive | positive | no | 0.507 | 97.9 | 312",
+     "expected": 97.9,
+     "tol": 0.05,
+     "ms_source": "story.md L1485",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.8.score",
+     "ms": "gastrointestinal stromal tumor – systemic mastocytosis | positive | no | 0.512 | 97.9 | 227",
+     "expected": 0.512,
+     "tol": 0.0005,
+     "ms_source": "story.md L1484",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.8.pct",
+     "ms": "gastrointestinal stromal tumor – systemic mastocytosis | positive | no | 0.512 | 97.9 | 227",
+     "expected": 97.9,
+     "tol": 0.05,
+     "ms_source": "story.md L1484",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.8.best_rank",
+     "ms": "gastrointestinal stromal tumor – systemic mastocytosis | positive | no | 0.512 | 97.9 | 227",
+     "expected": 227,
+     "ms_source": "story.md L1484",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.9.score",
+     "ms": "tuberous sclerosis – multiple sclerosis | negative | no | 0.401 | 96.1 | 416",
+     "expected": 0.401,
+     "tol": 0.0005,
+     "ms_source": "story.md L1486",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.9.pct",
+     "ms": "tuberous sclerosis – multiple sclerosis | negative | no | 0.401 | 96.1 | 416",
+     "expected": 96.1,
+     "tol": 0.05,
+     "ms_source": "story.md L1486",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.10.score",
+     "ms": "polycystic kidney disease – polycystic ovary syndrome | negative | no | 0.269 | 92.1 | 848",
+     "expected": 0.269,
+     "tol": 0.0005,
+     "ms_source": "story.md L1488",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.10.pct",
+     "ms": "polycystic kidney disease – polycystic ovary syndrome | negative | no | 0.269 | 92.1 | 848",
+     "expected": 92.1,
+     "tol": 0.05,
+     "ms_source": "story.md L1488",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.10.best_rank",
+     "ms": "polycystic kidney disease – polycystic ovary syndrome | negative | no | 0.269 | 92.1 | 848",
+     "expected": 848,
+     "ms_source": "story.md L1488",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.11.score",
+     "ms": "neurofibromatosis type 1 due to NF1 mutation or intragenic deletion – NF2-related schwannomatosis | negative | no | 0.354 | 95.0 | 452",
+     "expected": 0.354,
+     "tol": 0.0005,
+     "ms_source": "story.md L1487",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.11.pct",
+     "ms": "neurofibromatosis type 1 due to NF1 mutation or intragenic deletion – NF2-related schwannomatosis | negative | no | 0.354 | 95.0 | 452",
+     "expected": 95.0,
+     "tol": 0.05,
+     "ms_source": "story.md L1487",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.11.best_rank",
+     "ms": "neurofibromatosis type 1 due to NF1 mutation or intragenic deletion – NF2-related schwannomatosis | negative | no | 0.354 | 95.0 | 452",
+     "expected": 452,
+     "ms_source": "story.md L1487",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.12.best_rank",
+     "ms": "amyotrophic lateral sclerosis – systemic sclerosis | negative | no | 0.228 | 90.0 | 1,288",
+     "expected": 1288,
+     "ms_source": "story.md L1489",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.13.score",
+     "ms": "| Duchenne muscular dystrophy - Fuchs' endothelial dystrophy | negative | no | 0.223 | 89.7 | 1,293 |",
+     "expected": 0.223,
+     "tol": 0.0005,
+     "ms_source": "story.md L1490",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "lateral sclerosis - systemic sclerosisnegativeno0.22890.01,288Duchenne muscular dystrophy - Fuchs' endothelial dystrophynegativeno0.22389.71,293osteogenesis imperfecta - osteopetrosisnegativ"
+    },
+    {
+     "key": "controls.13.pct",
+     "ms": "| Duchenne muscular dystrophy - Fuchs' endothelial dystrophy | negative | no | 0.223 | 89.7 | 1,293 |",
+     "expected": 89.7,
+     "tol": 0.05,
+     "ms_source": "story.md L1490",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "al sclerosis - systemic sclerosisnegativeno0.22890.01,288Duchenne muscular dystrophy - Fuchs' endothelial dystrophynegativeno0.22389.71,293osteogenesis imperfecta - osteopetrosisnegativeno0."
+    },
+    {
+     "key": "controls.13.best_rank",
+     "ms": "chenne muscular dystrophy - Fuchs' endothelial dystrophy | negative | no | 0.223 | 89.7 | 1,293 |",
+     "expected": 1293,
+     "ms_source": "story.md L1490",
+     "classified_by": "session-model(claude-opus-5-5)",
+     "previous_ms": "clerosis - systemic sclerosisnegativeno0.22890.01,288Duchenne muscular dystrophy - Fuchs' endothelial dystrophynegativeno0.22389.71,293osteogenesis imperfecta - osteopetrosisnegativeno0.1868"
+    },
+    {
+     "key": "controls.14.score",
+     "ms": "diabetes insipidus – type 2 diabetes mellitus | negative | no | 0.181 | 86.9 | 1,749",
+     "expected": 0.181,
+     "tol": 0.0005,
+     "ms_source": "story.md L1492",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.14.pct",
+     "ms": "diabetes insipidus – type 2 diabetes mellitus | negative | no | 0.181 | 86.9 | 1,749",
+     "expected": 86.9,
+     "tol": 0.05,
+     "ms_source": "story.md L1492",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.14.best_rank",
+     "ms": "diabetes insipidus – type 2 diabetes mellitus | negative | no | 0.181 | 86.9 | 1,749",
+     "expected": 1749,
+     "ms_source": "story.md L1492",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.15.score",
+     "ms": "spinal muscular atrophy – Kennedy disease | negative | no | 0.179 | 86.7 | 1,454",
+     "expected": 0.179,
+     "tol": 0.0005,
+     "ms_source": "story.md L1493",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.15.pct",
+     "ms": "spinal muscular atrophy – Kennedy disease | negative | no | 0.179 | 86.7 | 1,454",
+     "expected": 86.7,
+     "tol": 0.05,
+     "ms_source": "story.md L1493",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.15.best_rank",
+     "ms": "spinal muscular atrophy – Kennedy disease | negative | no | 0.179 | 86.7 | 1,454",
+     "expected": 1454,
+     "ms_source": "story.md L1493",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.16.score",
+     "ms": "osteogenesis imperfecta – osteopetrosis | negative | no | 0.186 | 87.3 | 1,677",
+     "expected": 0.186,
+     "tol": 0.0005,
+     "ms_source": "story.md L1491",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "controls.16.pct",
+     "ms": "osteogenesis imperfecta – osteopetrosis | negative | no | 0.186 | 87.3 | 1,677",
+     "expected": 87.3,
+     "tol": 0.05,
+     "ms_source": "story.md L1491",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "dmd_dm1.0",
+     "ms": "Its cosine score is 0.643 (99.1st percentile); the two diseases fall in different clusters at K = 55.",
+     "expected": 0.643,
+     "tol": 0.0005,
+     "ms_source": "story.md L1504",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "membership.n_clusters",
+     "ms": "ne score is 0.643 (99.1st percentile); the two diseases fall in different clusters at K = 55. Its replacement keeps Duchenne muscular dystrophy and the shared name word and was chose",
+     "expected": 55,
+     "ms_source": "story.md L1504",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "dmd_eligible.0",
+     "ms": "n take the disease with the most gene associations (Fuchs' endothelial dystrophy). Of the 51 eligible diseases, 50 score below the 92nd percentile with Duchenne muscular dystrophy; t",
+     "expected": 51,
+     "ms_source": "story.md L1505",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_controls",
+   "script": "figures/SI/si_cluster_validation.py",
+   "numbers": "figures/SI/extended_cluster_validation_values.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "within_1sd.-1",
+     "ms": "K = 55 is the largest K whose mean silhouette over 100 subsample re-clusterings lies within one standard deviation of the best mean silhouette",
+     "expected": 55,
+     "note": "K = 55 is the finest K within one standard deviation of the best mean silhouette",
+     "ms_source": "story.md L1461",
+     "previous_ms": "s, whereas the all-pairs percentile is high for both. Control pairRoleSame cluster at K = 55DisAtlas pair cosine scorePercentile among all pairsBest partner rankCrohn disease - ulcer",
+     "classified_by": "session-model(claude-opus-5-5)"
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_internal",
+   "script": "figures/SI/si_cluster_rarecommon_numbers.py",
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "n_diseases",
+     "ms": "[Over the 13,021 clustered diseases, the overall silhoue",
+     "expected": 13021,
+     "ms_source": "story.md L1510",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "internal.nearest_other",
+     "ms": "ilhouette is 0.24, on a scale from -1 to 1. The median distance of a disease to the other members of its cluster is 0.46, against 0.62 to the nearest other cluster (Figure S16b). None of the",
+     "expected": 0.62,
+     "tol": 0.005,
+     "note03": {
+      "previous_expected": 0.6,
+      "final": 0.62,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1510",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "internal.share_neg_sil",
+     "ms": "None of the 55 clusters has a negative average silhouette, and 9.6% of diseases have a negative silhouette, so",
+     "expected": 9.6,
+     "tol": 0.05,
+     "note03": {
+      "previous_expected": 11.0,
+      "final": 9.6,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1513",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": " is 0.46, against 0.62 to the nearest other cluster (Figure S16b). None of the 55 clusters has a negative average silhouette, and 9.6% of diseases have a negative silhouette, so most cluster"
+    },
+    {
+     "key": "internal.size_range.0",
+     "ms": "Cluster sizes range from 113 to 450 diseases.",
+     "expected": 113,
+     "note03": {
+      "previous_expected": 97,
+      "final": 113,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1514",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "lly coherent and separated from their neighbors, but cluster boundaries are not sharp for every disease. Cluster sizes range from 113 to 450 diseases. S11.4. External agreement with MONDO As"
+    },
+    {
+     "key": "internal.size_range.1",
+     "ms": "Cluster sizes range from 113 to 450 diseases.",
+     "expected": 450,
+     "note03": {
+      "previous_expected": 500,
+      "final": 450,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1514",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "erent and separated from their neighbors, but cluster boundaries are not sharp for every disease. Cluster sizes range from 113 to 450 diseases. S11.4. External agreement with MONDO As an ext"
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_internal",
+   "script": "figures/SI/si_cluster_validation.py",
+   "numbers": "figures/SI/extended_cluster_validation_values.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "k55_mean",
+     "ms": "Over the 13,021 clustered diseases, the overall silhouette is 0.24, on a scale from -1 to 1.",
+     "expected": 0.24,
+     "tol": 0.005,
+     "ms_source": "story.md L1510",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "depend on which of the 50 is used. S11.3. Internal validity metrics Over the 13,021 clustered diseases, the overall silhouette is 0.24, on a scale from -1 to 1. The median distance of a dise"
+    },
+    {
+     "key": "med_within",
+     "ms": "mbers of its own cluster and to the nearest other cluster; dashed lines mark the medians (0.46 and 0.62). (c) Concordance with the 19 MONDO",
+     "expected": 0.46,
+     "tol": 0.005,
+     "ms_source": "story.md L1527",
+     "previous_ms": ". Internal validity metrics Over the 13,021 clustered diseases, the overall silhouette is 0.24, on a scale from -1 to 1. The median distance of a disease to the other members of its",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)"
+    },
+    {
+     "key": "within_1sd.-1",
+     "ms": "ods). The number of clusters is chosen from the silhouette alone, without reference to any control disease or benchmark pair. K = 55 is the largest K whose mean silhouette over 100 subsample",
+     "expected": 55,
+     "note": "K = 55 is the finest K within one standard deviation of the best mean silhouette",
+     "ms_source": "story.md L1460",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_external",
+   "script": "figures/SI/si_cluster_rarecommon_numbers.py",
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "external.n_categories",
+     "ms": " external reference not used in fitting the clustering, we used the 19 body-system classes of the MONDO diseas",
+     "expected": 19,
+     "ms_source": "story.md L1518",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "external.n_with_category",
+     "ms": "ody-system classes of the MONDO disease ontology, available for 10,133 of the clustered diseases.]  [Two disea",
+     "expected": 10133,
+     "ms_source": "story.md L1518",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "external.same_cluster_share",
+     "ms": "stered diseases. Two diseases drawn from the same cluster share a MONDO body-system class 63% of the time, against 25% for randomly paired diseases (permutation p = 0.005, the floor",
+     "expected": 63,
+     "note03": {
+      "previous_expected": 62,
+      "final": 63,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1520",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "external.random_share",
+     "ms": "ases drawn from the same cluster share a MONDO body-system class 63% of the time, against 25% for randomly paired diseases (permutation p = 0.005, the floor achievable with 200 permu",
+     "expected": 25,
+     "ms_source": "story.md L1520",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "external.perm_p",
+     "ms": " time, against 25% for randomly paired diseases (permutation p = 0.005, the floor achievable with 200 permutat",
+     "expected": 0.005,
+     "tol": 0.0005,
+     "ms_source": "story.md L1520",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "external.n_perm",
+     "ms": "gainst 25% for randomly paired diseases (permutation p = 0.005, the floor achievable with 200 permutations). In 53 of the 55 clusters at least one body-system class is over-represente",
+     "expected": 200,
+     "ms_source": "story.md L1520",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "external.clusters_enriched",
+     "ms": "y paired diseases (permutation p = 0.005, the floor achievable with 200 permutations). In 53 of the 55 clusters at least one body-system class is over-represented (hypergeometric tes",
+     "expected": 53,
+     "note03": {
+      "previous_expected": 54,
+      "final": 53,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1520",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "external.n_shuffles",
+     "ms": "least five members and two-fold enrichment, Benjamini-Hochberg q < 0.05), against none in 50 label shuffles, and the adjusted mutual information between cluster membership and MONDO",
+     "expected": 50,
+     "ms_source": "story.md L1522",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "external.ami",
+     "ms": "g q < 0.05), against none in 50 label shuffles, and the adjusted mutual information between cluster membership and MONDO class is 0.34, against at most 0.003 under shuffled labels (Figure S1",
+     "expected": 0.34,
+     "tol": 0.005,
+     "note03": {
+      "previous_expected": 0.33,
+      "final": 0.34,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1522",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "membership.n_clusters",
+     "ms": "uette results above, this external concordance supports reading the 55 clusters as capturing structure that ge",
+     "expected": 55,
+     "ms_source": "story.md L1524",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "ksel_n_subsamples",
+     "ms": "Mean silhouette of k-medoids clustering on the DisAtlas cosine distance for each K, over 100 subsamples of 80% of diseases (band: 2.5-97.5% range across subsamples). The dashed line",
+     "expected": 100,
+     "ms_source": "story.md L1527",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "ksel_K_range.1",
+     "ms": ":methodsclustering)), and all main-text results use this K; the full sweep from K = 10 to 80 is shown in Figure @fig:SIclustervalidationa",
+     "expected": 80,
+     "ms_source": "story.md L1461",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "o gives the finest partition in that range (rule in Methods), and all main-text results use this K; the full sweep from K = 10 to 80 is shown in Figure S16a. The best mean silhouette is reac"
+    },
+    {
+     "key": "n_diseases",
+     "ms": ", and the circle marks K = 55, the largest K above it and the K used. (b) For each of the 13,021 clustered diseases at K = 55, the mean distance to the other members of its own cluster a",
+     "expected": 13021,
+     "ms_source": "story.md L1527",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "internal.nearest_other",
+     "ms": "its own cluster and to the nearest other cluster; dashed lines mark the medians (0.46 and 0.62). (c) Concordance with the 19 MONDO body-system classes: share of same-cluster disease pa",
+     "expected": 0.62,
+     "tol": 0.005,
+     "note03": {
+      "previous_expected": 0.6,
+      "final": 0.62,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1527",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "external.ami_null_max",
+     "op": "le",
+     "bound": 0.003,
+     "ms": "one in 50 label shuffles, and the adjusted mutual information between cluster membership and MONDO class is 0.34, against at most 0.003 under shuffled labels (Figure S16c). Taken together wi",
+     "note": "printed 'at most 0.003' is an upper bound; regenerated maximum over 50 shuffles 0.002 satisfies it (bound as computed, no erratum)",
+     "classified_by": "deterministic(verbatim snippet in story)",
+     "ms_source": "story.md L1522"
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_external",
+   "script": "figures/SI/si_cluster_validation.py",
+   "numbers": "figures/SI/extended_cluster_validation_values.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "within_1sd.-1",
+     "ms": "iseases (permutation p = 0.005, the floor achievable with 200 permutations). In 53 of the 55 clusters at least one body-system class is over-represented (hypergeometric test, at leas",
+     "expected": 55,
+     "note": "K = 55 is the finest K within one standard deviation of the best mean silhouette",
+     "ms_source": "story.md L1520",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "med_within",
+     "ms": "stered diseases at K = 55, the mean distance to the other members of its own cluster and to the nearest other cluster; dashed lines mark the medians (0.46 and 0.62). **(c)** Concordance with the 19 MONDO body-system classes: share of same-cluster disease pairs that share a class, against shuffled cluste",
+     "expected": 0.46,
+     "tol": 0.005,
+     "ms_source": "story.md L1527",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_membership",
+   "script": "figures/SI/si_cluster_validation.py",
+   "numbers": "figures/SI/extended_cluster_validation_values.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "within_1sd.-1",
+     "ms": "[Every one of the 55 clusters contains both rare and common",
+     "expected": 55,
+     "note": "K = 55 is the finest K within one standard deviation of the best mean silhouette",
+     "ms_source": "story.md L1532",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_membership",
+   "script": "figures/SI/si_cluster_rarecommon_numbers.py",
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "membership.common_ge10",
+     "ms": "led labels. S11.5. Cluster membership and composition Every one of the 55 clusters contains both rare and common diseases, and in 47 of the 55 at least 10% of member diseases are common. A f",
+     "expected": 47,
+     "note03": {
+      "previous_expected": 44,
+      "final": 47,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1530",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "n_diseases",
+     "ms": "a per-disease table giving the assigned cluster for each of the 13,021 diseases at K = 55 are available as sep",
+     "expected": 13021,
+     "ms_source": "story.md L1533",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_layout",
+   "script": "figures/SI/si_cluster_rarecommon_numbers.py",
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "internal.n_clusters_neg",
+     "ms": "None of the 55 clusters has a negative average silhouette",
+     "expected": 0,
+     "note03": {
+      "previous_expected": 1,
+      "final": 0,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1513",
+     "classified_by": "session-model(claude-opus-5-5)"
+    },
+    {
+     "key": "layout.spearman",
+     "ms": "sease pairs, map distance and the cosine distance have a Spearman rank correlation of ρ = 0.412, so the map preserves the broad arrangement of the atlas but not fine distances, whic",
+     "expected": 0.412,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.42,
+      "final": 0.412,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1609",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "n_diseases",
+     "ms": "t, scaled to its 99.9th percentile (y-axis), for 1,999,833 random disease pairs among the 13,021 diseases; the orange line is the median map distance in each 5% bin of cosine distance, a",
+     "expected": 13021,
+     "ms_source": "story.md L1611",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_layout",
+   "script": "figures/SI/si_cluster_map_vs_model.py",
+   "numbers": "figures/SI/SI_cluster_map_vs_model_distance_values.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "n_pairs",
+     "ms": "and projection, and t-distributed stochastic neighbor embedding kept 71, 70 and 66. Over 1,999,833 random disease pairs, map distance and the cosine distance have a Spearman rank correlati",
+     "expected": 1999833,
+     "ms_source": "story.md L1608",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_layout",
+   "script": "figures/SI/si_cluster_rarecommon_numbers.py",
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "layout_controls.isomap",
+     "ms": "ayouts we compared, Isomap kept every related control pair closer on the map than every unrelated one (72 of 72 comparisons), as did principal component analysi",
+     "expected": 72,
+     "ms_source": "story.md L1608",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "layout_controls.pca",
+     "ms": "ayouts we compared, Isomap kept every related control pair closer on the map than every unrelated one (72 of 72 comparisons), as did principal component analysi",
+     "expected": 72,
+     "ms_source": "story.md L1608",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "layout_controls.cmds",
+     "ms": "ayouts we compared, Isomap kept every related control pair closer on the map than every unrelated one (72 of 72 comparisons), as did principal component analysis; classical multidimensional scaling, uniform manifold approximation and projection, and t-distributed stochastic neighbor embedding kept 71, 70 and 66. Over 1,999,833 r",
+     "expected": 71,
+     "ms_source": "story.md L1608",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "layout_controls.umap",
+     "ms": "ayouts we compared, Isomap kept every related control pair closer on the map than every unrelated one (72 of 72 comparisons), as did principal component analysis; classical multidimensional scaling, uniform manifold approximation and projection, and t-distributed stochastic neighbor embedding kept 71, 70 and 66. Over 1,999,833 r",
+     "expected": 70,
+     "ms_source": "story.md L1608",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "layout_controls.tsne",
+     "ms": "ayouts we compared, Isomap kept every related control pair closer on the map than every unrelated one (72 of 72 comparisons), as did principal component analysis; classical multidimensional scaling, uniform manifold approximation and projection, and t-distributed stochastic neighbor embedding kept 71, 70 and 66. Over 1,999,833 r",
+     "expected": 66,
+     "ms_source": "story.md L1608",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    }
+   ]
+  },
+  {
+   "label": "SI_cluster_validation_themes",
+   "script": "tables/SI/table_cluster_themes.py",
+   "numbers": "tables/SI/table_cluster_themes_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "counts.anatomy",
+     "ms": "rs make up at least 40% of members and no mechanism term passes are counted as neoplasm clusters, and the rest are unresolved.]\n\n[Of the 55 clusters, 21 are dominated by a body system alone (5,376 diseases), 6 meet both definitions (1,420), 11 are enriched for a mechanism or process alone (2,410), 4 a",
+     "expected": 21,
+     "ms_source": "story.md L1540",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "diseases.anatomy",
+     "ms": " mechanism term passes are counted as neoplasm clusters, and the rest are unresolved.]\n\n[Of the 55 clusters, 21 are dominated by a body system alone (5,376 diseases), 6 meet both definitions (1,420), 11 are enriched for a mechanism or process alone (2,410), 4 are neoplasm clusters (913) and 13 are unreso",
+     "expected": 5376,
+     "ms_source": "story.md L1540",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "counts.mixed",
+     "ms": "asses are counted as neoplasm clusters, and the rest are unresolved.]\n\n[Of the 55 clusters, 21 are dominated by a body system alone (5,376 diseases), 6 meet both definitions (1,420), 11 are enriched for a mechanism or process alone (2,410), 4 are neoplasm clusters (913) and 13 are unresolved (2,902) ",
+     "expected": 6,
+     "ms_source": "story.md L1540",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "diseases.mixed",
+     "ms": "d the rest are unresolved. Of the 55 clusters, 21 are dominated by a body system alone (5,376 diseases), 6 meet both definitions (1,420), 11 are enriched for a mechanism or process alone (2,",
+     "expected": 1420,
+     "ms_source": "story.md L1542",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "counts.process",
+     "ms": "1 are dominated by a body system alone (5,376 diseases), 6 meet both definitions (1,420), 11 are enriched for a mechanism or process alone (2,410), 4 are neoplasm clusters (913) and",
+     "expected": 11,
+     "ms_source": "story.md L1542",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "diseases.process",
+     "ms": "nated by a body system alone (5,376 diseases), 6 meet both definitions (1,420), 11 are enriched for a mechanism or process alone (2,410), 4 are neoplasm clusters (913) and 13 are unresolved ",
+     "expected": 2410,
+     "ms_source": "story.md L1542",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "counts.neoplasm",
+     "ms": " a body system alone (5,376 diseases), 6 meet both definitions (1,420), 11 are enriched for a mechanism or process alone (2,410), 4 are neoplasm clusters (913) and 13 are unresolved (2,902) ",
+     "expected": 4,
+     "ms_source": "story.md L1542",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "diseases.neoplasm",
+     "ms": "76 diseases), 6 meet both definitions (1,420), 11 are enriched for a mechanism or process alone (2,410), 4 are neoplasm clusters (913) and 13 are unresolved (2,902) (Table S10). Varying the ",
+     "expected": 913,
+     "ms_source": "story.md L1542",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "counts.unresolved",
+     "ms": "es), 6 meet both definitions (1,420), 11 are enriched for a mechanism or process alone (2,410), 4 are neoplasm clusters (913) and 13 are unresolved (2,902) (Table S10). Varying the share thr",
+     "expected": 13,
+     "ms_source": "story.md L1542",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "diseases.unresolved",
+     "ms": "mechanism or process alone (2,410), 4 are neoplasm clusters (913) and 13 are unresolved (2,902) (Table @tbl:SIclusterthemes).",
+     "expected": 2902,
+     "ms_source": "story.md L1542",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": "finitions (1,420), 11 are enriched for a mechanism or process alone (2,410), 4 are neoplasm clusters (913) and 13 are unresolved (2,902) (Table S10). Varying the share thresholds (body syste"
+    },
+    {
+     "key": "grid_body_system_min",
+     "ms": "re thresholds (body system 0.5, 0.6 or 0.7; mechanism 0.10, 0.15 or 0.20, with the process threshold 0.10 higher) gives 22–32 body-system-dominated and 16–23 mechanism- or process-enriched clusters.",
+     "expected": 22,
+     "ms_source": "story.md L1543",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "grid_body_system_max",
+     "ms": ".6 or 0.7; mechanism 0.10, 0.15 or 0.20, with the process threshold 0.10 higher) gives 22-32 body-system-dominated and 16-23 mechanism- or process-enriched clusters. Within-cluster p",
+     "expected": 32,
+     "ms_source": "story.md L1543",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "grid_process_min",
+     "ms": "0.6 or 0.7; mechanism 0.10, 0.15 or 0.20, with the process threshold 0.10 higher) gives 22–32 body-system-dominated and 16–23 mechanism- or process-enriched clusters.",
+     "expected": 16,
+     "ms_source": "story.md L1543",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "grid_process_max",
+     "ms": " or 0.7; mechanism 0.10, 0.15 or 0.20, with the process threshold 0.10 higher) gives 22–32 body-system-dominated and 16–23 mechanism- or process-enriched clusters.",
+     "expected": 23,
+     "ms_source": "story.md L1543",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "mann_whitney_anatomy_vs_process.pairs_hpo_jaccard_fold.median_anatomy",
+     "ms": "henotype annotations more strongly than pairs in the 11 clusters defined by mechanism alone (median enrichment of phenotype overlap over random pairs 4.6-fold against 2.1-fold; two-sided Mann–Whitney p = 0.005), and less strongly share genes (7.8-fold against 17.2-fold; p = 0.032) and biological proces",
+     "expected": 4.6,
+     "tol": 0.05,
+     "ms_source": "story.md L1544",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "mann_whitney_anatomy_vs_process.pairs_hpo_jaccard_fold.median_process",
+     "ms": "echanism alone (median enrichment of phenotype overlap over random pairs 4.6-fold against 2.1-fold; two-sided Mann-Whitney p = 0.005), and less strongly share genes (7.8-fold against",
+     "expected": 2.1,
+     "tol": 0.05,
+     "ms_source": "story.md L1544",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "mann_whitney_anatomy_vs_process.pairs_hpo_jaccard_fold.p",
+     "ms": "phenotype overlap over random pairs 4.6-fold against 2.1-fold; two-sided Mann-Whitney p = 0.005), and less strongly share genes (7.8-fold against 17.2-fold; p = 0.032) and biological pr",
+     "expected": 0.005,
+     "tol": 0.0005,
+     "ms_source": "story.md L1544",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "mann_whitney_anatomy_vs_process.pairs_gene_share_fold.median_anatomy",
+     "ms": "-fold against 2.1-fold; two-sided Mann-Whitney p = 0.005), and less strongly share genes (7.8-fold against 17.2-fold; p = 0.032) and biological processes (2.1-fold against 4.1-fold; p",
+     "expected": 7.8,
+     "tol": 0.05,
+     "ms_source": "story.md L1544",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "mann_whitney_anatomy_vs_process.pairs_gene_share_fold.median_process",
+     "ms": "-fold; two-sided Mann-Whitney p = 0.005), and less strongly share genes (7.8-fold against 17.2-fold; p = 0.032) and biological processes (2.1-fold against 4.1-fold; p = 0.001). Table",
+     "expected": 17.2,
+     "tol": 0.05,
+     "ms_source": "story.md L1544",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "mann_whitney_anatomy_vs_process.pairs_gene_share_fold.p",
+     "ms": "phenotype overlap over random pairs 4.6-fold against 2.1-fold; two-sided Mann-Whitney p = 0.005), and less strongly share genes (7.8-fold against 17.2-fold; p = 0.032) and biologica",
+     "expected": 0.032,
+     "tol": 0.0005,
+     "ms_source": "story.md L1544",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "mann_whitney_anatomy_vs_process.pairs_gobp_jaccard_fold.median_anatomy",
+     "ms": "echanism alone (median enrichment of phenotype overlap over random pairs 4.6-fold against 2.1-fold; two-sided Mann-Whitney p = 0.005), and less strongly share genes (7.8-fold against",
+     "expected": 2.1,
+     "tol": 0.05,
+     "ms_source": "story.md L1544",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "mann_whitney_anatomy_vs_process.pairs_gobp_jaccard_fold.median_process",
+     "ms": "ters defined by mechanism alone (median enrichment of phenotype overlap over random pairs 4.6-fold against 2.1-fold; two-sided Mann-Whitney p = 0.005), and less strongly share genes",
+     "expected": 4.1,
+     "tol": 0.05,
+     "ms_source": "story.md L1544",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)"
+    },
+    {
+     "key": "mann_whitney_anatomy_vs_process.pairs_gobp_jaccard_fold.p",
+     "ms": "d Mann-Whitney p = 0.005), and less strongly share genes (7.8-fold against 17.2-fold; p = 0.032) and biological processes (2.1-fold against 4.1-fold; p = 0.001). Table S10: Theme of",
+     "expected": 0.001,
+     "tol": 0.0005,
+     "ms_source": "story.md L1544",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "body_system_dominated",
+     "ms": "nd most negative pairs are separated, so the clusters agree with known disease relationships (Section S11.2). Of the 55 clusters, 27 were dominated by a single body system, with at least 60%",
+     "expected": 27,
+     "note": "main-text summary (Unsupervised clustering section)",
+     "ms_source": "story.md L293",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "process_enriched",
+     "ms": "one MONDO @Mondo body-system class (for example eye, skin, heart or nervous system), and 17 were enriched for a named mechanism or biolo",
+     "expected": 17,
+     "note": "main-text summary (Unsupervised clustering section)",
+     "ms_source": "story.md L294",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": " with at least 60% of annotated members in one MONDO [65] body-system class (for example eye, skin, heart or nervous system), and 17 were enriched for a named mechanism or biological process"
+    }
+   ]
+  }
+ ],
+ "unchecked": [
+  {
+   "section": "SI_cluster_validation_k",
+   "token": "2.5",
+   "reason": "interval level label",
+   "ctx": "across subsamples); K = 35, 40, 45, 50 and 55 lie within one standard deviation of it, and K = 55 has a mean silhouette of 0.237 (2.5-97.5% range across subsamples 0.232 to 0.241); in 98 of ",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)",
+   "ms_source": "generic token (no passage)"
+  },
+  {
+   "section": "SI_cluster_validation_external",
+   "token": "2.5",
+   "reason": "interval level label",
+   "ctx": "Mean silhouette of k-medoids clustering on the DisAtlas cosine distance for each K, over 100 subsamples of 80% of diseases (band: 2.5-97.5% range across subsamples). The dashed line marks th",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)",
+   "ms_source": "generic token (no passage)"
+  },
+  {
+   "section": "SI_cluster_validation_themes",
+   "token": "60%",
+   "reason": "classification-rule threshold (parameter)",
+   "ctx": "syndromic diseases, covers at least 60% of its annotated members, with at least two-fold enrichment and Benjam",
+   "ms_source": "generic token (no passage)",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "section": "SI_cluster_validation_themes",
+   "token": "15%",
+   "reason": "classification-rule threshold (parameter)",
+   "ctx": "n error of immunity covers at least 15% of members with at least ten-fold enrichment and q < 0.05, or when the",
+   "ms_source": "generic token (no passage)",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "section": "SI_cluster_validation_themes",
+   "token": "25%",
+   "reason": "classification-rule threshold (parameter)",
+   "ctx": "r a system process) covers at least 25% of members with at least ten-fold enrichment and q < 0.05. Clusters me",
+   "ms_source": "generic token (no passage)",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "section": "SI_cluster_validation_themes",
+   "token": "40%",
+   "reason": "classification-rule threshold (parameter)",
+   "ctx": "er or benign tumors make up at least 40% of members and no mechanism term passes are counted as neoplasm clust",
+   "ms_source": "generic token (no passage)",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "section": "SI_cluster_validation_themes",
+   "token": "0.05",
+   "reason": "classification-rule threshold (parameter)",
+   "ctx": "body-system class is over-represented (hypergeometric test, at least five members and two-fold enrichment, Benjamini-Hochberg q < 0.05), against none in 50 label shuffles, and the adjusted m",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)",
+   "ms_source": "generic token (no passage)"
+  },
+  {
+   "section": "SI_cluster_validation_themes",
+   "token": "0.5",
+   "reason": "classification-rule threshold (parameter)",
+   "ctx": "e share thresholds (body system 0.5, 0.6 or 0.7; mechanism 0.10, 0.15 or 0.20, with the process threshold 0.10",
+   "ms_source": "generic token (no passage)",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  }
+ ],
+ "manuscript_mismatch": []
+}

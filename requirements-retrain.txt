@@ -1,0 +1,6 @@
+# Optional extra environment for the cold retrain (`./run_pipeline.sh --cold`, `python -m disatlas.retrain`):
+# node2vec skip-gram training only. Install on top of requirements.txt:
+#   .venv/bin/pip install -r requirements.txt -r requirements-retrain.txt
+# CPU wheel of the version used for the reference run (no CUDA needed; the +cpu local version exists only on the extra index, other packages still resolve from PyPI).
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.9.1+cpu

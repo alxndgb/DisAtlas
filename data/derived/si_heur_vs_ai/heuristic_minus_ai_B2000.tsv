@@ -1,0 +1,59 @@
+subset	heuristic	system	heuristic_auroc	system_auroc	diff	ci_lo	ci_hi
+all_4357	TF-IDF graph SVD, placed	Claude Chat	0.754709	0.69249	0.062218	0.021204	0.104511
+all_4357	TF-IDF graph SVD, placed	Claude Sci	0.754709	0.685713	0.068996	0.028058	0.110642
+all_4357	TF-IDF graph SVD, placed	Gemini Pro 3.1	0.754709	0.497491	0.257218	0.198718	0.313023
+all_4357	TF-IDF graph SVD, placed	Phylo Biomni	0.754709	0.626498	0.128211	0.070892	0.181701
+all_4357	TF-IDF graph SVD, placed	TxGNN	0.754709	0.566094	0.188615	0.13235	0.243127
+all_4357	Adamic-Adar, placed	Claude Chat	0.733791	0.69249	0.0413	-1.4e-05	0.083469
+all_4357	Adamic-Adar, placed	Claude Sci	0.733791	0.685713	0.048078	0.005368	0.090311
+all_4357	Adamic-Adar, placed	Gemini Pro 3.1	0.733791	0.497491	0.2363	0.178628	0.288445
+all_4357	Adamic-Adar, placed	Phylo Biomni	0.733791	0.626498	0.107293	0.049852	0.16139
+all_4357	Adamic-Adar, placed	TxGNN	0.733791	0.566094	0.167697	0.114979	0.220142
+all_4357	Common neighbours, placed	Claude Chat	0.724045	0.69249	0.031554	-0.010339	0.075404
+all_4357	Common neighbours, placed	Claude Sci	0.724045	0.685713	0.038332	-0.005222	0.082052
+all_4357	Common neighbours, placed	Gemini Pro 3.1	0.724045	0.497491	0.226554	0.168058	0.279503
+all_4357	Common neighbours, placed	Phylo Biomni	0.724045	0.626498	0.097547	0.039635	0.152647
+all_4357	Common neighbours, placed	TxGNN	0.724045	0.566094	0.157951	0.104508	0.210554
+all_4357	TF-IDF graph SVD, own edges	Claude Chat	0.788171	0.69249	0.09568	0.0525	0.140046
+all_4357	TF-IDF graph SVD, own edges	Claude Sci	0.788171	0.685713	0.102458	0.058237	0.14421
+all_4357	TF-IDF graph SVD, own edges	Gemini Pro 3.1	0.788171	0.497491	0.29068	0.232767	0.345113
+all_4357	TF-IDF graph SVD, own edges	Phylo Biomni	0.788171	0.626498	0.161673	0.106343	0.217602
+all_4357	TF-IDF graph SVD, own edges	TxGNN	0.788171	0.566094	0.222076	0.169733	0.272333
+all_4357	TF-IDF graph SVD, placed	(self)	0.754709			0.710247	0.795003
+all_4357	Adamic-Adar, placed	(self)	0.733791			0.691379	0.773206
+all_4357	Common neighbours, placed	(self)	0.724045			0.681579	0.763821
+all_4357	TF-IDF graph SVD, own edges	(self)	0.788171			0.745346	0.827776
+all_4357	Claude Chat	(self)	0.69249			0.64753	0.735627
+all_4357	Claude Sci	(self)	0.685713			0.642711	0.72801
+all_4357	Gemini Pro 3.1	(self)	0.497491			0.458726	0.539323
+all_4357	Phylo Biomni	(self)	0.626498			0.584481	0.670066
+all_4357	TxGNN	(self)	0.566094			0.519252	0.611289
+test_1093	TF-IDF graph SVD, placed	Claude Chat	0.780406	0.696878	0.083528	0.020046	0.148538
+test_1093	TF-IDF graph SVD, placed	Claude Sci	0.780406	0.702582	0.077824	0.010596	0.143172
+test_1093	TF-IDF graph SVD, placed	Gemini Pro 3.1	0.780406	0.499061	0.281345	0.201992	0.356427
+test_1093	TF-IDF graph SVD, placed	Phylo Biomni	0.780406	0.663579	0.116827	0.032692	0.196875
+test_1093	TF-IDF graph SVD, placed	TxGNN	0.780406	0.549365	0.231041	0.136778	0.325119
+test_1093	Adamic-Adar, placed	Claude Chat	0.739896	0.696878	0.043019	-0.019957	0.111015
+test_1093	Adamic-Adar, placed	Claude Sci	0.739896	0.702582	0.037315	-0.03068	0.107138
+test_1093	Adamic-Adar, placed	Gemini Pro 3.1	0.739896	0.499061	0.240835	0.157172	0.320855
+test_1093	Adamic-Adar, placed	Phylo Biomni	0.739896	0.663579	0.076317	-0.007274	0.159669
+test_1093	Adamic-Adar, placed	TxGNN	0.739896	0.549365	0.190531	0.09556	0.284875
+test_1093	Common neighbours, placed	Claude Chat	0.726037	0.696878	0.029159	-0.033442	0.096997
+test_1093	Common neighbours, placed	Claude Sci	0.726037	0.702582	0.023455	-0.044803	0.095325
+test_1093	Common neighbours, placed	Gemini Pro 3.1	0.726037	0.499061	0.226976	0.140161	0.308401
+test_1093	Common neighbours, placed	Phylo Biomni	0.726037	0.663579	0.062458	-0.021332	0.147349
+test_1093	Common neighbours, placed	TxGNN	0.726037	0.549365	0.176672	0.080224	0.269803
+test_1093	TF-IDF graph SVD, own edges	Claude Chat	0.810821	0.696878	0.113943	0.044577	0.186649
+test_1093	TF-IDF graph SVD, own edges	Claude Sci	0.810821	0.702582	0.108239	0.036938	0.177458
+test_1093	TF-IDF graph SVD, own edges	Gemini Pro 3.1	0.810821	0.499061	0.31176	0.23012	0.39061
+test_1093	TF-IDF graph SVD, own edges	Phylo Biomni	0.810821	0.663579	0.147242	0.062955	0.229497
+test_1093	TF-IDF graph SVD, own edges	TxGNN	0.810821	0.549365	0.261455	0.16644	0.349494
+test_1093	TF-IDF graph SVD, placed	(self)	0.780406			0.71654	0.840432
+test_1093	Adamic-Adar, placed	(self)	0.739896			0.675506	0.800654
+test_1093	Common neighbours, placed	(self)	0.726037			0.661659	0.789581
+test_1093	TF-IDF graph SVD, own edges	(self)	0.810821			0.748766	0.867467
+test_1093	Claude Chat	(self)	0.696878			0.62972	0.766199
+test_1093	Claude Sci	(self)	0.702582			0.639666	0.766706
+test_1093	Gemini Pro 3.1	(self)	0.499061			0.432582	0.566017
+test_1093	Phylo Biomni	(self)	0.663579			0.59567	0.727048
+test_1093	TxGNN	(self)	0.549365			0.478098	0.621452

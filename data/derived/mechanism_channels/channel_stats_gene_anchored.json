@@ -1,0 +1,9 @@
+{
+ "union_edges": 498799,
+ "union_nodes": 13021,
+ "spec_nodes": 9997,
+ "broad_only_edges": 280607,
+ "overlap_edges": 50627,
+ "spec_only_edges": 167565,
+ "spec_edges_causal_gene_no_module": 28185
+}

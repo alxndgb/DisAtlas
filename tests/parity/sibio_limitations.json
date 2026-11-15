@@ -1,0 +1,157 @@
+{
+ "ms_source": {
+  "file": "assets/manuscripts/disatlas/disatlas_representation_learning_story.md (dis2vec_2)",
+  "sha256": "52e96bb6ce1272c617ae6bfe2a785764d8e3faa5feb9873a20fed23e803d5ab7",
+  "note": "ms snippets re-bound to the story markdown (binding source of the final text); line numbers refer to that file at this sha256"
+ },
+ "items": [
+  {
+   "label": "SI_limitations",
+   "script": "figures/SI/si_cluster_rarecommon_numbers.py",
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "external.perm_p",
+     "ms": " from the same cluster share a MONDO body-system class 63% of the time, against 25% for randomly paired diseases (permutation p = 0.005, the floor achievable with 200 permutations). In 53 of",
+     "expected": 0.005,
+     "tol": 0.0005,
+     "ms_source": "story.md L1520",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "ksel_K55.0",
+     "ms": "K = 55 has a mean silhouette of 0.237 (2.5–97.5% range across subsamples 0.232 to 0.241)",
+     "expected": 0.237,
+     "tol": 0.0005,
+     "note03": {
+      "previous_expected": 0.36,
+      "final": 0.237,
+      "reason": "number file regenerated from the final-model derived inputs (SI updated to the final model); previous expected value came from the number file written before the derived inputs were restaged (note 03)"
+     },
+     "ms_source": "story.md L1462",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    }
+   ]
+  },
+  {
+   "label": "SI_limitations",
+   "script": "figures/SI/si_bio_gap_numbers.py",
+   "numbers": "figures/SI/SI_bio_gap_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "single_gene.n_pairs",
+     "ms": "mon-common strata change (in-graph) by +0.002 (-0.003 to +0.008), -0.001 (-0.007 to +0.006) and +0.024 (-0.015 to +0.053). Of the 14,805 disease pairs that share a high-confidence causal gen",
+     "expected": 14805,
+     "ms_source": "story.md L1240",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "gene_anchor_ablation.top100_pct.0",
+     "ms": "ighest by cosine score, as for the partner rank of Table @tbl:SIclustercontrols), against 79.3% for the model without the gene-anchored rul",
+     "expected": 79.3,
+     "tol": 0.05,
+     "ms_source": "story.md L1241",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": " top 100 partners of either disease (the diseases it ranks highest by cosine score, as for the partner rank of Table S9), against 79.3% for the model without the gene-anchored rule (+7.2 per"
+    },
+    {
+     "key": "gene_anchor_ablation.top100_pct.1",
+     "ms": "14,805 disease pairs that share a high-confidence causal gene where neither disease has more than three such genes (Section S20), 86.5% are ranked within the top 100 partners of either disea",
+     "expected": 86.5,
+     "tol": 0.05,
+     "ms_source": "story.md L1241",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    }
+   ]
+  }
+ ],
+ "unchecked": [],
+ "manuscript_mismatch": [],
+ "retired": [
+  {
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "key": "coverage_k10.observed|rare.0",
+   "expected": 59,
+   "reason": "single-gene failure counts are not printed in the final text (Dependence on input data paragraph rewritten)",
+   "previous_ms": " [**Dependence on input data.** DisAtlas makes no prediction for the 59 candidate diseases (0.5%) that network",
+   "classified_by": "session-model(claude-opus-5-5)"
+  },
+  {
+   "numbers": "figures/SI/SI_cluster_rarecommon_numbers.json",
+   "key": "strata.IxIDN-Matched|All pairs|all.d_ci.0",
+   "expected": 0.16,
+   "reason": "single-gene failure counts are not printed in the final text (Dependence on input data paragraph rewritten)",
+   "previous_ms": "umbrella term (34% against 18%) or is highly connected in the training graph (37% against 16%), and 95% of failing pairs are linked only in the broad layer of the training graph, wit",
+   "classified_by": "session-model(claude-opus-5-5)"
+  },
+  {
+   "numbers": "figures/SI/SI_bio_gap_numbers.json",
+   "key": "single_gene.fail_pct",
+   "expected": 21,
+   "reason": "single-gene failure counts are not printed in the final text (Dependence on input data paragraph rewritten)",
+   "previous_ms": "21% are not ranked within the top 100 partners of either disease by cosine score",
+   "classified_by": "session-model(claude-opus-5-5)"
+  },
+  {
+   "numbers": "figures/SI/SI_bio_gap_numbers.json",
+   "key": "single_gene.umbrella_fail_pct.0",
+   "expected": 34,
+   "reason": "single-gene failure counts are not printed in the final text (Dependence on input data paragraph rewritten)",
+   "previous_ms": "umbrella term (34% against 18%)",
+   "classified_by": "session-model(claude-opus-5-5)"
+  },
+  {
+   "numbers": "figures/SI/SI_bio_gap_numbers.json",
+   "key": "single_gene.umbrella_fail_pct.1",
+   "expected": 18,
+   "reason": "single-gene failure counts are not printed in the final text (Dependence on input data paragraph rewritten)",
+   "previous_ms": "umbrella term (34% against 18%)",
+   "classified_by": "session-model(claude-opus-5-5)"
+  },
+  {
+   "numbers": "figures/SI/SI_bio_gap_numbers.json",
+   "key": "single_gene.broad_only_share_of_failures_pct",
+   "expected": 95,
+   "reason": "single-gene failure counts are not printed in the final text (Dependence on input data paragraph rewritten)",
+   "previous_ms": "and 95% of failing pairs are linked only in the broad layer",
+   "classified_by": "session-model(claude-opus-5-5)"
+  },
+  {
+   "label": "SI_limitations",
+   "key": "gene_anchor_ablation.ixidn_delta.0",
+   "value": 0.001,
+   "reason": "unchecked token no longer in final text (single-gene failure counts are not printed in the final text (Dependence on input data paragraph rewritten))",
+   "classified_by": "session-model(claude-opus-5-5)"
+  },
+  {
+   "label": "SI_limitations",
+   "key": "gene_anchor_ablation.ixidn_delta.1",
+   "value": -0.003,
+   "reason": "unchecked token no longer in final text (single-gene failure counts are not printed in the final text (Dependence on input data paragraph rewritten))",
+   "classified_by": "session-model(claude-opus-5-5)"
+  },
+  {
+   "label": "SI_limitations",
+   "key": "gene_anchor_ablation.ixidn_delta.2",
+   "value": 0.005,
+   "reason": "unchecked token no longer in final text (single-gene failure counts are not printed in the final text (Dependence on input data paragraph rewritten))",
+   "classified_by": "session-model(claude-opus-5-5)"
+  },
+  {
+   "label": "SI_limitations",
+   "key": "gene_anchor_ablation.fda_lost.0",
+   "value": 13,
+   "reason": "unchecked token no longer in final text (single-gene failure counts are not printed in the final text (Dependence on input data paragraph rewritten))",
+   "classified_by": "session-model(claude-opus-5-5)"
+  },
+  {
+   "label": "SI_limitations",
+   "key": "gene_anchor_ablation.fda_lost.1",
+   "value": 159,
+   "reason": "unchecked token no longer in final text (single-gene failure counts are not printed in the final text (Dependence on input data paragraph rewritten))",
+   "classified_by": "session-model(claude-opus-5-5)"
+  }
+ ]
+}

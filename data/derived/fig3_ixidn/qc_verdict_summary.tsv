@@ -1,0 +1,9 @@
+verdict	decision	reason	pairs	share
+STRONG	kept	shared-drug evidence judged strong	1285	
+PLAUSIBLE	kept	shared-drug evidence judged plausible	897	
+WEAK	removed	shared-drug evidence judged weak	1354	
+SUSPECT	removed	trial link judged a likely artefact	709	
+NOT_IN_GRAPH	removed	no shared trial drug in the graph (not sent to the language model)	57	
+all	kept		2182	
+all	removed		2120	
+repeat check	same keep/drop	800 of 944	944	0.847

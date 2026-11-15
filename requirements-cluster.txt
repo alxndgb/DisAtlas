@@ -1,0 +1,7 @@
+# Optional extra for the Figure S16 a K-selection rebuild (python -m disatlas.rebuild.k_selection_boot) and the power-law fit:
+# k-medoids FasterPAM, the version used for the reference run. Install on top of requirements.txt:
+#   .venv/bin/pip install -r requirements.txt -r requirements-cluster.txt
+kmedoids==0.5.5
+# Supplementary Figure SI_degree_distributions power-law rebuild (python -m disatlas.rebuild.powerlaw_csn); the version
+# used for the reference run (alpha range widened in the module; 2.0.0 defaults to [0, 3]).
+powerlaw==2.0.0

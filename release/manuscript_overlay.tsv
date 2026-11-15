@@ -1,0 +1,375 @@
+# Values that replace the printed manuscript and Supplementary values (new note cycle: correction notes 01-04, numbered from 01).
+# These values replace the printed values and are the reproduction target for DisAtlas. Columns: label, location, kind, old (printed) value, new value, note.
+# Numbering note (2026-11-14): `location` keeps the numbering of the frozen 2026-11-10 target these notes corrected. In the final SI (story / docx v19, after note 22 SI pruning) tbl:SI_event_time_deltas is Table S13, tbl:SI_event_time_subsets Table S14, tbl:SI_event_time_auc Table S16; tbl:SI_event_time_or_yearly, tbl:SI_event_time_auc_yearly, tbl:SI_fda_dated_pairs and sections sec:SI_event_time_or, sec:SI_fda_prioritisation are not in the final SI.
+label	location	kind	old_value	new_value	note
+sec:SI_cluster_validation_membership	SI line 1563	prose value	44	47	03
+sec:SI_rare_common_strata	SI line 1655	prose value	All pairs	common-common/auroc	03
+sec:SI_rare_common_strata	SI line 1655	prose value	All pairs	common-common/auroc	03
+sec:SI_rare_common_strata	SI line 1655	prose value	All pairs	common-common/auroc	03
+sec:SI_rare_common_strata	SI line 1660	prose value	All pairs	common-common/auroc	03
+sec:SI_rare_common_strata	SI line 1660	prose value	All pairs	common-common/auroc	03
+sec:SI_rare_common_strata	SI line 1660	prose value	All pairs	common-common/auroc	03
+sec:SI_rare_common_strata	SI line 1667	prose value	Test split pairs	rare-rare.ci.0`	03
+sec:SI_rare_common_strata	SI line 1667	prose value	Test split pairs	rare-rare.ci.1`	03
+sec:SI_rare_common_strata	SI line 1667	prose value	Test split pairs	rare-common.ci.0`	03
+sec:SI_rare_common_strata	SI line 1667	prose value	Test split pairs	rare-common.ci.1`	03
+sec:SI_rare_common_strata	SI line 1672	prose value	S+ci`	0.781	03
+sec:SI_rare_common_strata	SI line 1672	prose value	S+ci`	0.646	03
+sec:SI_rare_common_strata	SI line 1672	prose value	S+ci`	0.900	03
+sec:SI_rare_common_strata	SI line 1672	prose value	S+ci`	0.878	03
+sec:SI_rare_common_strata	SI line 1672	prose value	S+ci`	0.831	03
+sec:SI_rare_common_strata	SI line 1672	prose value	S+ci`	0.917	03
+sec:SI_rare_common_strata	SI line 1672	prose value	S+ci`	0.711	03
+sec:SI_rare_common_strata	SI line 1673	prose value	S+ci`	0.799	03
+sec:SI_rare_common_strata	SI line 1673	prose value	S+ci`	0.682	03
+sec:SI_rare_common_strata	SI line 1673	prose value	S+ci`	0.902	03
+sec:SI_rare_common_enrichment	SI line 1681	prose value	rare.0`	0.136	03
+sec:SI_rare_common_enrichment	SI line 1681	prose value	rare.0`	0.173	03
+sec:SI_rare_common_enrichment	SI line 1681	prose value	common.0`	0.618	03
+sec:SI_rare_common_enrichment	SI line 1681	prose value	common.0`	0.778	03
+sec:SI_et_comparison_sets	SI line 1746	prose value	−3.48	−4.42	03
+sec:SI_et_comparison_sets	SI line 1746	prose value	−3.63	−4.62	03
+sec:SI_et_comparison_sets	SI line 1746	prose value	−3.28	−4.24	03
+sec:SI_et_comparison_sets	SI line 1746	prose value	−2.66	−3.30	03
+sec:SI_et_comparison_sets	SI line 1746	prose value	−2.79	−3.49	03
+sec:SI_et_comparison_sets	SI line 1746	prose value	−2.53	−3.12	03
+sec:SI_et_comparison_sets	SI line 1746	prose value	−0.69	−1.63	03
+sec:SI_et_comparison_sets	SI line 1746	prose value	−0.84	−1.83	03
+sec:SI_et_comparison_sets	SI line 1746	prose value	−0.49	−1.45	03
+sec:SI_et_comparison_sets	SI line 1746	prose value	−0.34	−0.98	03
+sec:SI_et_comparison_sets	SI line 1746	prose value	−0.46	−1.15	03
+sec:SI_et_comparison_sets	SI line 1746	prose value	−0.21	−0.80	03
+sec:SI_et_comparison_sets	SI line 1747	prose value	4.47	5.41	03
+sec:SI_et_comparison_sets	SI line 1747	prose value	3.93	4.58	03
+sec:SI_et_comparison_sets	SI line 1748	prose value	+10.71	+12.95	03
+sec:SI_et_comparison_sets	SI line 1748	prose value	+9.68	+11.81	03
+sec:SI_et_comparison_sets	SI line 1748	prose value	+11.93	+14.07	03
+sec:SI_et_comparison_sets	SI line 1748	prose value	+7.05	+7.86	03
+sec:SI_et_comparison_sets	SI line 1748	prose value	+6.29	+7.24	03
+sec:SI_et_comparison_sets	SI line 1748	prose value	+7.71	+8.52	03
+sec:SI_et_comparison_sets	SI line 1749	prose value	+0.07	+0.06	03
+sec:SI_et_comparison_sets	SI line 1749	prose value	+0.13	+0.12	03
+sec:SI_et_comparison_sets	SI line 1749	prose value	+0.40	+0.43	03
+sec:SI_et_comparison_sets	SI line 1749	prose value	+0.35	+0.39	03
+sec:SI_et_comparison_sets	SI line 1749	prose value	+0.44	+0.47	03
+sec:SI_et_comparison_sets	SI line 1749	prose value	−0.010	−0.013	03
+sec:SI_et_comparison_sets	SI line 1749	prose value	−0.013	−0.016	03
+sec:SI_et_comparison_sets	SI line 1749	prose value	−0.008	−0.010	03
+sec:SI_et_comparison_sets	SI line 1749	prose value	−0.007	−0.011	03
+sec:SI_et_comparison_sets	SI line 1749	prose value	−0.010	−0.014	03
+sec:SI_et_comparison_sets	SI line 1749	prose value	−0.005	−0.009	03
+sec:SI_et_seeds	SI line 1757	prose value	24.24	22.41	03
+sec:SI_et_seeds	SI line 1757	prose value	25.00	23.08	03
+sec:SI_et_seeds	SI line 1757	prose value	24.00	22.73	03
+sec:SI_et_seeds	SI line 1757	prose value	22.73	21.54	03
+sec:SI_et_seeds	SI line 1757	prose value	23.81	21.88	03
+sec:SI_et_seeds	SI line 1757	prose value	22.45	21.54	03
+sec:SI_et_seeds	SI line 1758	prose value	24.65	22.44	03
+sec:SI_et_seeds	SI line 1758	prose value	25.31	23.28	03
+sec:SI_et_seeds	SI line 1758	prose value	24.68	22.89	03
+sec:SI_et_seeds	SI line 1758	prose value	22.07	20.43	03
+sec:SI_et_seeds	SI line 1758	prose value	22.87	20.74	03
+sec:SI_et_seeds	SI line 1758	prose value	21.72	20.33	03
+sec:SI_et_seeds	SI line 1759	prose value	4.63	5.53	03
+sec:SI_et_seeds	SI line 1759	prose value	4.76	5.70	03
+sec:SI_et_seeds	SI line 1759	prose value	4.14	4.72	03
+sec:SI_et_seeds	SI line 1759	prose value	4.26	4.85	03
+sec:SI_et_subsets	SI line 1763	prose value	+6.65	+7.57	03
+sec:SI_et_subsets	SI line 1763	prose value	+5.69	+6.80	03
+sec:SI_et_subsets	SI line 1763	prose value	+7.56	+8.52	03
+sec:SI_et_subsets	SI line 1763	prose value	+5.05	+5.60	03
+sec:SI_et_subsets	SI line 1763	prose value	+4.36	+4.95	03
+sec:SI_et_subsets	SI line 1763	prose value	+5.62	+6.28	03
+sec:SI_et_subsets	SI line 1763	prose value	−0.86	−1.86	03
+sec:SI_et_subsets	SI line 1763	prose value	−1.02	−2.06	03
+sec:SI_et_subsets	SI line 1763	prose value	−0.65	−1.64	03
+sec:SI_et_subsets	SI line 1763	prose value	−0.31	−0.98	03
+sec:SI_et_subsets	SI line 1763	prose value	−0.45	−1.17	03
+sec:SI_et_subsets	SI line 1763	prose value	−0.17	−0.80	03
+sec:SI_et_subsets	SI line 1764	prose value	+2.59	+4.51	03
+sec:SI_et_subsets	SI line 1764	prose value	+2.05	+3.63	03
+sec:SI_et_subsets	SI line 1764	prose value	+3.81	+5.50	03
+sec:SI_et_subsets	SI line 1764	prose value	−0.04	+1.11	03
+sec:SI_et_subsets	SI line 1764	prose value	−0.89	+0.08	03
+sec:SI_et_subsets	SI line 1764	prose value	+0.75	+1.86	03
+sec:SI_et_subsets	SI line 1764	prose value	+2.28	+3.73	03
+sec:SI_et_subsets	SI line 1764	prose value	+1.41	+2.78	03
+sec:SI_et_subsets	SI line 1764	prose value	+3.34	+4.73	03
+sec:SI_et_subsets	SI line 1764	prose value	+3.34	+4.76	03
+sec:SI_et_subsets	SI line 1764	prose value	+2.38	+3.72	03
+sec:SI_et_subsets	SI line 1764	prose value	+4.26	+5.61	03
+sec:SI_et_subsets	SI line 1764	prose value	−1.70	−2.65	03
+sec:SI_et_subsets	SI line 1764	prose value	−1.93	−2.95	03
+sec:SI_et_subsets	SI line 1764	prose value	−1.46	−2.42	03
+sec:SI_et_subsets	SI line 1764	prose value	−0.77	−1.42	03
+sec:SI_et_subsets	SI line 1764	prose value	−0.96	−1.63	03
+sec:SI_et_subsets	SI line 1764	prose value	−0.62	−1.23	03
+sec:SI_et_subsets	SI line 1765	prose value	−2.58	−1.43	03
+sec:SI_et_subsets	SI line 1765	prose value	−3.16	−2.22	03
+sec:SI_et_subsets	SI line 1765	prose value	−1.59	−0.49	03
+sec:SI_et_subsets	SI line 1766	prose value	+30.79	+32.86	03
+sec:SI_et_subsets	SI line 1766	prose value	+22.25	+28.04	03
+sec:SI_et_subsets	SI line 1766	prose value	+34.69	+42.77	03
+sec:SI_et_subsets	SI line 1766	prose value	+26.84	+26.24	03
+sec:SI_et_subsets	SI line 1766	prose value	+19.71	+21.15	03
+sec:SI_et_subsets	SI line 1766	prose value	+31.35	+36.42	03
+sec:SI_et_subsets	SI line 1766	prose value	+14.12	+13.47	03
+sec:SI_et_subsets	SI line 1766	prose value	+2.94	−0.03	03
+sec:SI_et_subsets	SI line 1766	prose value	+23.93	+34.06	03
+sec:SI_et_subsets	SI line 1766	prose value	+12.69	+13.36	03
+sec:SI_et_subsets	SI line 1766	prose value	+3.03	+2.86	03
+sec:SI_et_subsets	SI line 1766	prose value	+21.43	+25.28	03
+sec:SI_et_subsets	SI line 1766	prose value	−0.67	−1.63	03
+sec:SI_et_subsets	SI line 1766	prose value	−0.84	−1.83	03
+sec:SI_et_subsets	SI line 1766	prose value	−0.50	−1.45	03
+sec:SI_et_subsets	SI line 1766	prose value	−0.34	−0.98	03
+sec:SI_et_subsets	SI line 1766	prose value	−0.46	−1.14	03
+sec:SI_et_subsets	SI line 1766	prose value	−0.21	−0.81	03
+sec:SI_et_subsets	SI line 1767	prose value	−22.61	−20.54	03
+sec:SI_et_subsets	SI line 1767	prose value	−41.83	−37.55	03
+sec:SI_et_subsets	SI line 1767	prose value	−16.11	−8.70	03
+sec:SI_et_subsets	SI line 1767	prose value	−9.29	−7.22	03
+sec:SI_et_subsets	SI line 1767	prose value	−16.87	−11.22	03
+sec:SI_et_subsets	SI line 1767	prose value	−5.27	+2.38	03
+sec:SI_et_subsets	SI line 1767	prose value	−10.15	−8.08	03
+sec:SI_et_subsets	SI line 1767	prose value	−18.15	−12.73	03
+sec:SI_et_subsets	SI line 1767	prose value	−6.70	+1.93	03
+sec:SI_et_subsets	SI line 1768	prose value	+11.64	+13.05	03
+sec:SI_et_subsets	SI line 1768	prose value	+10.72	+12.03	03
+sec:SI_et_subsets	SI line 1768	prose value	+12.96	+14.45	03
+sec:SI_et_subsets	SI line 1768	prose value	+6.52	+8.02	03
+sec:SI_et_subsets	SI line 1768	prose value	+5.69	+7.19	03
+sec:SI_et_subsets	SI line 1768	prose value	+7.44	+8.98	03
+sec:SI_et_subsets	SI line 1768	prose value	−0.09	−1.06	03
+sec:SI_et_subsets	SI line 1768	prose value	−0.33	−1.33	03
+sec:SI_et_subsets	SI line 1768	prose value	+0.18	−0.74	03
+sec:SI_et_subsets	SI line 1768	prose value	−0.22	−0.87	03
+sec:SI_et_subsets	SI line 1768	prose value	−0.45	−1.10	03
+sec:SI_et_subsets	SI line 1768	prose value	0.00	−0.60	03
+sec:SI_et_subsets	SI line 1769	prose value	−10.69	−9.28	03
+sec:SI_et_subsets	SI line 1769	prose value	−11.50	−10.16	03
+sec:SI_et_subsets	SI line 1769	prose value	−9.74	−8.26	03
+sec:SI_et_subsets	SI line 1769	prose value	−12.50	−11.01	03
+sec:SI_et_subsets	SI line 1769	prose value	−13.27	−11.75	03
+sec:SI_et_subsets	SI line 1769	prose value	−11.60	−10.05	03
+sec:SI_et_subsets	SI line 1769	prose value	−9.92	−8.32	03
+sec:SI_et_subsets	SI line 1769	prose value	−10.91	−9.22	03
+sec:SI_et_subsets	SI line 1769	prose value	−8.81	−7.44	03
+sec:SI_et_subsets	SI line 1769	prose value	−9.83	−8.94	03
+sec:SI_et_subsets	SI line 1769	prose value	−10.66	−9.81	03
+sec:SI_et_subsets	SI line 1769	prose value	−9.13	−8.15	03
+sec:SI_et_subsets	SI line 1769	prose value	+5.05	+4.08	03
+sec:SI_et_subsets	SI line 1769	prose value	+4.43	+3.46	03
+sec:SI_et_subsets	SI line 1769	prose value	+5.84	+4.88	03
+sec:SI_et_subsets	SI line 1769	prose value	+4.93	+4.28	03
+sec:SI_et_subsets	SI line 1769	prose value	+4.38	+3.77	03
+sec:SI_et_subsets	SI line 1769	prose value	+5.47	+4.82	03
+sec:SI_et_subsets	SI line 1770	prose value	19	21	03
+sec:SI_et_subsets	SI line 1770	prose value	6	4	03
+sec:SI_et_subsets	SI line 1770	prose value	19	21	03
+sec:SI_et_subsets	SI line 1770	prose value	5	3	03
+sec:SI_et_subsets	SI line 1770	prose value	−8.57	−5.84	03
+sec:SI_et_subsets	SI line 1770	prose value	−10.81	−7.72	03
+sec:SI_et_subsets	SI line 1770	prose value	−6.61	−3.68	03
+sec:SI_et_subsets	SI line 1771	prose value	20,	22	03
+sec:SI_et_subsets	SI line 1771	prose value	5	3	03
+sec:SI_et_subsets	SI line 1771	prose value	−10.05	−9.01	03
+sec:SI_et_subsets	SI line 1771	prose value	−12.50	−11.15	03
+sec:SI_et_subsets	SI line 1771	prose value	−8.12	−6.77	03
+sec:SI_et_subsets	SI line 1771	prose value	+8.00	+10.55	03
+sec:SI_et_subsets	SI line 1771	prose value	+5.55	+8.33	03
+sec:SI_et_subsets	SI line 1771	prose value	+10.12	+13.24	03
+sec:SI_et_subsets	SI line 1771	prose value	+11.02	+12.34	03
+sec:SI_et_subsets	SI line 1771	prose value	+8.05	+9.37	03
+sec:SI_et_subsets	SI line 1771	prose value	+12.84	+14.61	03
+sec:SI_et_subsets	SI line 1773	prose value	+1.52	+7.14	03
+sec:SI_et_subsets	SI line 1773	prose value	−5.56	−1.30	03
+sec:SI_et_subsets	SI line 1773	prose value	+9.40	+12.70	03
+sec:SI_et_subsets	SI line 1773	prose value	−3.09	−1.93	03
+sec:SI_et_subsets	SI line 1773	prose value	−8.93	−8.79	03
+sec:SI_et_subsets	SI line 1773	prose value	+0.64	+1.96	03
+sec:SI_et_subsets	SI line 1773	prose value	0.00	+1.59	03
+sec:SI_et_subsets	SI line 1773	prose value	−9.89	−7.67	03
+sec:SI_et_subsets	SI line 1773	prose value	+7.05	+9.09	03
+sec:SI_et_subsets	SI line 1773	prose value	+0.32	+3.24	03
+sec:SI_et_subsets	SI line 1773	prose value	−4.17	−3.13	03
+sec:SI_et_subsets	SI line 1773	prose value	+5.57	+5.95	03
+sec:SI_et_census	SI line 1781	prose value	4.57	4.49	03
+sec:SI_event_time_beyond_mechdist	SI line 1913	prose value	3.6	4.5	03
+sec:SI_event_time_beyond_mechdist	SI line 1913	prose value	3.0	3.8	03
+sec:SI_event_time_beyond_mechdist	SI line 1913	prose value	4.2	5.1	03
+sec:SI_event_time_or	SI prose key auc_per_drug	prose sentence	Averaging first within each drug, so that each of the 6,496 drugs counts once, gives 0.715 (95% CI 0.710–0.720) among popularity-matched candidates, which is higher because drugs newly trialed in only one decision year have higher probabilities (mean 0.738, 3,140 drugs) than drugs newly trialed in f	each of the 6,496 drugs | 0.726 (95% CI 0.721–0.731) | (mean 0.750, 3,140 drugs) | (mean 0.664, 1,131 drugs)	02
+sec:SI_event_time_or	SI prose key auc_pooled	prose sentence	In diseases held out of benchmark tuning weighted Adamic–Adar places the next trialed disease at a median percentile of 31.0 (95% CI 30.2–32.0) among popularity- and connectivity-matched candidates, against 24.0 for DisAtlas, and at 33.8 (95% CI 32.9–34.7) against 24.7 among popularity-matched candi	all 18,813 drug–decision-year pairs | 0.690 (95% CI 0.685–0.695) | 0.691 (95% CI 0.686–0.696)	02
+sec:SI_event_time_or	SI prose key e2_gene	prose sentence	A second endpoint is the share of drugs whose best-ranked new trial falls in the top 10% of the ranking.	DisAtlas is ahead of shared-gene similarity in diseases held out of benchmark tuning, with a difference whose interval excludes zero | level with it among all diseases	02
+sec:SI_event_time_or	SI prose key nmo_2007	prose sentence	In decision year 2007, NMO ranks 45th of 1,728 candidates by DisAtlas and 121st by popularity alone, although NMO and PNH share no direct link in the graph on which the 2006 model was trained (3,455 diseases, 82,946 links) and are 2 steps apart.	In decision year 2007, NMO ranks 45th of 1,728 candidates | 121st by popularity alone | the 2006 model | (3,453 diseases, 87,571 links) and are 2 steps apart	02
+sec:SI_event_time_or	SI prose key nmo_hops	prose sentence	Restricting the candidates to diseases within 2 or 3 steps of PNH leaves the rank at 45 (top 4.3% of 1,058 and top 2.7% of 1,644), and among all 3,452 embedded diseases NMO ranks 86th (top 2.5%).	leaves the rank at 45 (top 4.3% of 1,058 and top 2.7% of 1,644) | among all 3,452 embedded diseases NMO ranks 88th (top 2.5%)	02
+sec:SI_event_time_or	SI prose key prereg_abs	prose sentence	In diseases held out of benchmark tuning weighted Adamic–Adar places the next trialed disease at a median percentile of 31.0 (95% CI 30.2–32.0) among popularity- and connectivity-matched candidates, against 24.0 for DisAtlas, and at 33.8 (95% CI 32.9–34.7) against 24.7 among popularity-matched candi	31.0 (95% CI 30.2–32.0) | against 22.7 for DisAtlas | 33.8 (95% CI 32.9–34.7) | against 22.9 among	02
+sec:SI_event_time_or	SI prose key prereg_adv	prose sentence	Among diseases held out of benchmark tuning the advantage is 7.0 percentile points (95% CI 6.2–7.9) in the popularity- and connectivity-matched set and 9.1 (95% CI 8.3–10.1) in the popularity-matched set; among all diseases it is 3.6 (95% CI 3.0–4.2) and 8.5 (95% CI 7.8–9.2).	8.3 percentile points (95% CI 7.5–9.2) | 10.9 (95% CI 10.0–11.9) | 4.5 (95% CI 3.9–5.1) | 9.9 (95% CI 9.1–10.7)	02
+sec:SI_event_time_or	SI prose key prereg_years	prose sentence	In the popularity- and connectivity-matched set the yearly interval lies above zero in 19 of the 25 decision years among diseases held out of benchmark tuning and below zero in none (other counts in Supplementary [](#sec:SI_et_subsets)).	21 of the 25 decision years | below zero in none	02
+sec:SI_event_time_or	SI prose key unmatched	prose sentence	Popularity alone places the median new trial at percentile 0.99 in the test pool and 1.27 among all diseases, against 4.47 and 3.93 for DisAtlas and 3.78 and 3.59 for weighted Adamic–Adar.	median percentile of 1.0 | against 5.4 for DisAtlas	02
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	| Popularity × weighted-degree groups (co-primary) | Weighted Adamic–Adar | +7.03 [+6.18, +7.91] | +3.55 [+2.99, +4.24] | +0.068 [+0.054, +0.081] | +0.001 [−0.010, +0.011] |	| Popularity × weighted-degree groups (co-primary) | Weighted Adamic–Adar | +8.31 [+7.49, +9.21] | +4.46 [+3.90, +5.11] | +0.090 [+0.077, +0.103] | +0.013 [+0.001, +0.023] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | Adamic–Adar | +5.82 [+5.03, +6.53] | +2.55 [+1.94, +3.19] | +0.014 [0.000, +0.027] | −0.033 [−0.044, −0.023] |	|  | Adamic–Adar | +7.09 [+6.44, +7.78] | +3.46 [+2.83, +4.04] | +0.036 [+0.023, +0.049] | −0.021 [−0.032, −0.011] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | Disease popularity | +9.33 [+8.02, +10.78] | +13.03 [+12.08, +14.14] | +0.072 [+0.057, +0.087] | +0.163 [+0.149, +0.175] |	|  | Disease popularity | +10.61 [+9.32, +12.06] | +13.95 [+13.00, +15.04] | +0.094 [+0.079, +0.110] | +0.175 [+0.161, +0.188] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | MechDist degree | +22.88 [+21.81, +24.02] | +25.55 [+24.82, +26.40] | +0.182 [+0.167, +0.196] | +0.159 [+0.145, +0.172] |	|  | MechDist degree | +24.15 [+23.22, +25.33] | +26.46 [+25.69, +27.21] | +0.204 [+0.189, +0.219] | +0.170 [+0.157, +0.184] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | MechDist weighted degree | +23.42 [+22.43, +24.30] | +25.58 [+24.90, +26.37] | +0.192 [+0.176, +0.206] | +0.227 [+0.213, +0.240] |	|  | MechDist weighted degree | +24.69 [+23.76, +25.56] | +26.49 [+25.80, +27.22] | +0.214 [+0.198, +0.228] | +0.239 [+0.225, +0.252] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | Shared genes | +10.85 [+9.71, +11.88] | +8.20 [+7.42, +9.01] | +0.008 [−0.004, +0.021] | −0.011 [−0.023, −0.001] |	|  | Shared genes | +12.12 [+10.99, +13.21] | +9.11 [+8.34, +9.91] | +0.030 [+0.018, +0.042] | 0.000 [−0.010, +0.011] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | GO biological-process similarity | +12.36 [+11.58, +13.27] | +11.58 [+10.63, +12.39] | +0.046 [+0.033, +0.058] | +0.036 [+0.025, +0.047] |	|  | GO biological-process similarity | +13.64 [+12.92, +14.56] | +12.49 [+11.59, +13.24] | +0.068 [+0.056, +0.080] | +0.048 [+0.037, +0.058] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | HPO phenotype similarity | +28.27 [+27.51, +29.09] | +29.44 [+28.86, +30.07] | +0.208 [+0.194, +0.222] | +0.252 [+0.239, +0.264] |	|  | HPO phenotype similarity | +29.55 [+28.96, +30.18] | +30.35 [+29.73, +30.90] | +0.230 [+0.217, +0.244] | +0.264 [+0.251, +0.276] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	| Popularity groups (co-primary) | Weighted Adamic–Adar | +9.10 [+8.33, +10.13] | +8.46 [+7.82, +9.19] | +0.040 [+0.026, +0.053] | +0.060 [+0.049, +0.071] |	| Popularity groups (co-primary) | Weighted Adamic–Adar | +10.89 [+10.00, +11.89] | +9.85 [+9.14, +10.69] | +0.063 [+0.049, +0.076] | +0.076 [+0.064, +0.086] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | Adamic–Adar | +7.82 [+7.02, +9.01] | +6.96 [+6.21, +7.71] | +0.004 [−0.008, +0.017] | +0.001 [−0.010, +0.011] |	|  | Adamic–Adar | +9.61 [+8.74, +10.75] | +8.35 [+7.56, +9.23] | +0.027 [+0.015, +0.040] | +0.016 [+0.005, +0.027] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | Disease popularity | +7.37 [+6.36, +8.85] | +11.61 [+10.76, +12.60] | +0.092 [+0.077, +0.107] | +0.174 [+0.161, +0.187] |	|  | Disease popularity | +9.16 [+8.05, +10.56] | +13.00 [+12.05, +14.09] | +0.115 [+0.100, +0.130] | +0.190 [+0.176, +0.202] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | MechDist degree | +20.05 [+19.16, +21.33] | +21.13 [+20.27, +22.13] | +0.172 [+0.157, +0.187] | +0.223 [+0.210, +0.236] |	|  | MechDist degree | +21.84 [+20.79, +23.14] | +22.52 [+21.56, +23.67] | +0.195 [+0.180, +0.210] | +0.238 [+0.225, +0.251] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | MechDist weighted degree | +20.15 [+19.44, +21.36] | +21.49 [+20.65, +22.25] | +0.187 [+0.172, +0.202] | +0.235 [+0.221, +0.247] |	|  | MechDist weighted degree | +21.94 [+21.11, +23.07] | +22.88 [+21.97, +23.76] | +0.210 [+0.195, +0.224] | +0.250 [+0.236, +0.263] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | Shared genes | +8.37 [+7.27, +9.40] | +6.44 [+5.73, +7.08] | −0.001 [−0.013, +0.010] | −0.016 [−0.027, −0.006] |	|  | Shared genes | +10.17 [+9.05, +11.11] | +7.83 [+7.11, +8.55] | +0.022 [+0.010, +0.033] | −0.001 [−0.012, +0.009] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | GO biological-process similarity | +12.82 [+12.03, +13.80] | +11.87 [+11.17, +12.56] | +0.052 [+0.041, +0.065] | +0.046 [+0.035, +0.056] |	|  | GO biological-process similarity | +14.61 [+13.74, +15.52] | +13.26 [+12.49, +14.06] | +0.075 [+0.064, +0.087] | +0.061 [+0.051, +0.072] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | HPO phenotype similarity | +27.10 [+26.61, +27.98] | +28.95 [+28.45, +29.44] | +0.230 [+0.216, +0.243] | +0.277 [+0.265, +0.288] |	|  | HPO phenotype similarity | +28.89 [+28.13, +29.69] | +30.34 [+29.70, +30.95] | +0.252 [+0.239, +0.266] | +0.292 [+0.280, +0.303] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	| Weighted-degree groups only | Weighted Adamic–Adar | −2.11 [−2.50, −1.78] | −1.17 [−1.43, −0.91] | −0.048 [−0.058, −0.038] | −0.031 [−0.038, −0.023] |	| Weighted-degree groups only | Weighted Adamic–Adar | −3.07 [−3.47, −2.65] | −1.87 [−2.15, −1.55] | −0.066 [−0.077, −0.056] | −0.042 [−0.049, −0.033] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | Adamic–Adar | −2.00 [−2.35, −1.67] | −1.07 [−1.34, −0.79] | −0.045 [−0.055, −0.036] | −0.031 [−0.039, −0.023] |	|  | Adamic–Adar | −2.96 [−3.34, −2.51] | −1.77 [−2.06, −1.45] | −0.063 [−0.073, −0.054] | −0.042 [−0.050, −0.034] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | Disease popularity | −7.28 [−7.61, −6.97] | −6.49 [−6.76, −6.22] | −0.161 [−0.171, −0.151] | −0.111 [−0.120, −0.102] |	|  | Disease popularity | −8.24 [−8.62, −7.79] | −7.19 [−7.50, −6.85] | −0.179 [−0.190, −0.169] | −0.122 [−0.130, −0.113] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | MechDist degree | +7.91 [+7.35, +8.67] | +8.96 [+8.47, +9.37] | +0.072 [+0.059, +0.085] | +0.087 [+0.077, +0.097] |	|  | MechDist degree | +6.95 [+6.34, +7.78] | +8.26 [+7.75, +8.73] | +0.053 [+0.040, +0.067] | +0.076 [+0.066, +0.087] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | MechDist weighted degree | +5.99 [+5.40, +6.61] | +7.04 [+6.61, +7.41] | +0.088 [+0.075, +0.101] | +0.102 [+0.092, +0.113] |	|  | MechDist weighted degree | +5.03 [+4.41, +5.74] | +6.34 [+5.89, +6.78] | +0.069 [+0.056, +0.083] | +0.092 [+0.081, +0.103] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | Shared genes | +7.18 [+6.53, +7.83] | +5.21 [+4.76, +5.70] | +0.081 [+0.070, +0.093] | +0.049 [+0.040, +0.058] |	|  | Shared genes | +6.22 [+5.57, +6.94] | +4.51 [+4.08, +5.02] | +0.063 [+0.052, +0.075] | +0.038 [+0.030, +0.047] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | GO biological-process similarity | +5.54 [+5.09, +5.97] | +5.46 [+4.95, +5.81] | +0.066 [+0.055, +0.076] | +0.058 [+0.049, +0.067] |	|  | GO biological-process similarity | +4.58 [+4.12, +5.11] | +4.76 [+4.24, +5.14] | +0.048 [+0.036, +0.059] | +0.047 [+0.038, +0.056] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | HPO phenotype similarity | +40.49 [+40.18, +40.76] | +40.58 [+40.32, +40.83] | +0.427 [+0.413, +0.439] | +0.422 [+0.411, +0.434] |	|  | HPO phenotype similarity | +39.53 [+39.17, +39.96] | +39.88 [+39.59, +40.20] | +0.408 [+0.395, +0.422] | +0.411 [+0.400, +0.423] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	| Matched samples of 20 diseases | Weighted Adamic–Adar | +10.71 [+9.68, +11.93] | +7.05 [+6.29, +7.71] | +0.093 [+0.080, +0.107] | +0.077 [+0.065, +0.087] |	| Matched samples of 20 diseases | Weighted Adamic–Adar | +12.95 [+11.81, +14.07] | +7.86 [+7.24, +8.52] | +0.114 [+0.100, +0.127] | +0.095 [+0.083, +0.107] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | Adamic–Adar | +8.81 [+7.64, +9.98] | +4.52 [+3.81, +5.29] | +0.038 [+0.025, +0.052] | +0.008 [−0.003, +0.019] |	|  | Adamic–Adar | +11.05 [+9.52, +11.90] | +5.33 [+4.81, +6.10] | +0.059 [+0.045, +0.073] | +0.026 [+0.015, +0.037] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | Disease popularity | +7.70 [+6.69, +9.52] | +11.81 [+10.86, +12.79] | +0.044 [+0.028, +0.059] | +0.128 [+0.115, +0.140] |	|  | Disease popularity | +9.94 [+8.67, +11.29] | +12.62 [+12.00, +13.57] | +0.064 [+0.048, +0.080] | +0.147 [+0.133, +0.160] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | MechDist degree | +28.67 [+27.43, +30.00] | +25.43 [+24.64, +26.38] | +0.219 [+0.204, +0.234] | +0.278 [+0.265, +0.292] |	|  | MechDist degree | +30.90 [+29.52, +31.79] | +26.24 [+25.70, +27.14] | +0.239 [+0.223, +0.254] | +0.297 [+0.283, +0.310] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | MechDist weighted degree | +31.10 [+30.33, +32.14] | +30.17 [+29.52, +30.86] | +0.230 [+0.216, +0.246] | +0.298 [+0.285, +0.311] |	|  | MechDist weighted degree | +33.33 [+32.38, +33.33] | +30.98 [+30.59, +31.62] | +0.251 [+0.236, +0.266] | +0.317 [+0.303, +0.330] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | Shared genes | +11.48 [+10.19, +12.50] | +7.38 [+6.64, +8.14] | +0.006 [−0.006, +0.019] | −0.017 [−0.028, −0.006] |	|  | Shared genes | +13.71 [+12.21, +14.29] | +8.19 [+7.54, +9.00] | +0.027 [+0.014, +0.039] | +0.002 [−0.009, +0.013] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | GO biological-process similarity | +13.01 [+11.90, +14.33] | +10.90 [+10.19, +11.64] | +0.047 [+0.034, +0.060] | +0.035 [+0.025, +0.046] |	|  | GO biological-process similarity | +15.25 [+14.09, +16.48] | +11.71 [+11.17, +12.48] | +0.068 [+0.055, +0.080] | +0.054 [+0.043, +0.066] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | HPO phenotype similarity | +26.33 [+25.57, +27.38] | +27.81 [+27.24, +28.43] | +0.193 [+0.179, +0.207] | +0.222 [+0.209, +0.233] |	|  | HPO phenotype similarity | +28.57 [+27.62, +28.57] | +28.62 [+28.48, +29.14] | +0.214 [+0.200, +0.228] | +0.240 [+0.228, +0.252] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	| All candidate diseases, no grouping | Weighted Adamic–Adar | −0.69 [−0.84, −0.49] | −0.34 [−0.46, −0.21] | −0.016 [−0.024, −0.008] | −0.031 [−0.037, −0.025] |	| All candidate diseases, no grouping | Weighted Adamic–Adar | −1.63 [−1.83, −1.45] | −0.98 [−1.15, −0.80] | −0.038 [−0.047, −0.030] | −0.046 [−0.053, −0.040] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | Adamic–Adar | −0.49 [−0.68, −0.28] | −0.30 [−0.43, −0.17] | −0.019 [−0.026, −0.011] | −0.034 [−0.040, −0.028] |	|  | Adamic–Adar | −1.43 [−1.67, −1.25] | −0.94 [−1.11, −0.78] | −0.041 [−0.050, −0.033] | −0.049 [−0.055, −0.043] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | Disease popularity | −3.48 [−3.63, −3.28] | −2.66 [−2.79, −2.53] | −0.102 [−0.110, −0.095] | −0.078 [−0.084, −0.072] |	|  | Disease popularity | −4.42 [−4.62, −4.24] | −3.30 [−3.49, −3.12] | −0.125 [−0.133, −0.117] | −0.093 [−0.100, −0.087] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | MechDist degree | +2.08 [+1.82, +2.35] | +2.10 [+1.92, +2.27] | +0.050 [+0.040, +0.061] | +0.021 [+0.013, +0.030] |	|  | MechDist degree | +1.14 [+0.84, +1.39] | +1.46 [+1.24, +1.67] | +0.028 [+0.017, +0.039] | +0.006 [−0.002, +0.015] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | MechDist weighted degree | +0.94 [+0.68, +1.29] | +1.36 [+1.20, +1.57] | +0.074 [+0.064, +0.085] | +0.047 [+0.039, +0.055] |	|  | MechDist weighted degree | 0.00 [−0.31, +0.33] | +0.72 [+0.53, +0.96] | +0.051 [+0.040, +0.063] | +0.032 [+0.024, +0.041] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | Shared genes | +2.06 [+1.74, +2.42] | +1.48 [+1.29, +1.71] | +0.061 [+0.052, +0.071] | +0.044 [+0.037, +0.051] |	|  | Shared genes | +1.11 [+0.77, +1.45] | +0.84 [+0.63, +1.08] | +0.039 [+0.029, +0.048] | +0.029 [+0.021, +0.036] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | GO biological-process similarity | +2.09 [+1.87, +2.34] | +1.91 [+1.74, +2.11] | +0.049 [+0.040, +0.058] | +0.042 [+0.035, +0.050] |	|  | GO biological-process similarity | +1.15 [+0.89, +1.39] | +1.27 [+1.07, +1.49] | +0.027 [+0.017, +0.036] | +0.027 [+0.019, +0.035] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | HPO phenotype similarity | +46.77 [+45.50, +51.71] | +46.08 [+45.96, +46.21] | +0.519 [+0.506, +0.532] | +0.508 [+0.496, +0.518] |	|  | HPO phenotype similarity | +45.82 [+44.52, +50.73] | +45.44 [+45.26, +45.62] | +0.497 [+0.484, +0.510] | +0.493 [+0.481, +0.504] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	| Combined with popularity | Weighted Adamic–Adar | +0.28 [+0.23, +0.32] | +0.38 [+0.35, +0.42] | −0.004 [−0.008, −0.001] | −0.007 [−0.009, −0.005] |	| Combined with popularity | Weighted Adamic–Adar | +0.27 [+0.22, +0.32] | +0.42 [+0.38, +0.45] | −0.007 [−0.010, −0.004] | −0.010 [−0.013, −0.008] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | Adamic–Adar | +0.29 [+0.25, +0.35] | +0.40 [+0.37, +0.44] | 0.000 [−0.004, +0.003] | −0.005 [−0.008, −0.003] |	|  | Adamic–Adar | +0.29 [+0.24, +0.34] | +0.44 [+0.40, +0.47] | −0.003 [−0.006, +0.001] | −0.009 [−0.012, −0.006] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | Disease popularity | +0.07 [+0.01, +0.13] | +0.40 [+0.35, +0.44] | −0.010 [−0.013, −0.008] | −0.007 [−0.010, −0.005] |	|  | Disease popularity | +0.06 [+0.01, +0.12] | +0.43 [+0.39, +0.47] | −0.013 [−0.016, −0.010] | −0.011 [−0.014, −0.009] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | MechDist degree | +0.78 [+0.71, +0.84] | +0.91 [+0.87, +0.95] | +0.024 [+0.019, +0.029] | 0.000 [−0.003, +0.003] |	|  | MechDist degree | +0.78 [+0.71, +0.84] | +0.95 [+0.90, +0.98] | +0.021 [+0.016, +0.027] | −0.003 [−0.006, 0.000] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | MechDist weighted degree | +0.62 [+0.56, +0.67] | +0.81 [+0.77, +0.86] | +0.023 [+0.018, +0.028] | −0.001 [−0.004, +0.001] |	|  | MechDist weighted degree | +0.61 [+0.55, +0.67] | +0.85 [+0.80, +0.89] | +0.020 [+0.015, +0.026] | −0.005 [−0.008, −0.002] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | Shared genes | +0.22 [+0.17, +0.27] | +0.18 [+0.15, +0.22] | −0.009 [−0.012, −0.006] | −0.007 [−0.010, −0.005] |	|  | Shared genes | +0.22 [+0.16, +0.26] | +0.21 [+0.18, +0.25] | −0.011 [−0.015, −0.008] | −0.011 [−0.013, −0.008] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | GO biological-process similarity | +0.60 [+0.55, +0.66] | +0.64 [+0.60, +0.68] | +0.007 [+0.003, +0.011] | +0.011 [+0.007, +0.014] |	|  | GO biological-process similarity | +0.60 [+0.54, +0.65] | +0.67 [+0.63, +0.71] | +0.004 [0.000, +0.008] | +0.007 [+0.004, +0.011] |	02, 03
+tbl:SI_event_time_deltas	Supplementary Table S12	table row	|  | HPO phenotype similarity | +12.56 [+10.79, +13.28] | +4.73 [+3.99, +6.34] | +0.180 [+0.169, +0.190] | +0.131 [+0.124, +0.139] |	|  | HPO phenotype similarity | +12.55 [+10.79, +13.28] | +4.77 [+4.02, +6.37] | +0.177 [+0.167, +0.188] | +0.128 [+0.120, +0.136] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	| All decision years (main analysis, [Supplementary Table @tbl:SI_event_time_deltas]) | Weighted Adamic–Adar | Popularity × weighted-degree groups | +8.31 [+7.49, +9.21] | +4.46 [+3.90, +5.11] |	| All decision years (main analysis, Table S13) | Weighted Adamic–Adar | Popularity × weighted-degree groups | +8.31 [+7.49, +9.21] | +4.46 [+3.90, +5.11] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"|  |  | [Popularity groups]{custom-style=""RevisionBlue""} | +8.56 [+7.88, +9.70] | +10.64 [+9.74, +11.35] |"	|  |  | Popularity groups | +10.26 [+9.51, +11.31] | +11.93 [+11.02, +12.70] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"|  |  | [All candidate diseases, no grouping]{custom-style=""RevisionBlue""} | −0.86 [−1.02, −0.65] | −0.31 [−0.45, −0.17] |"	|  |  | All candidate diseases, no grouping | −1.86 [−2.06, −1.64] | −0.98 [−1.17, −0.80] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"| Drug-years with one new disease | Weighted Adamic–Adar | [Popularity × weighted-degree groups]{custom-style=""RevisionBlue""} | +2.59 [+2.05, +3.81] | −0.04 [−0.89, +0.75] |"	| Drug-years with one new disease | Weighted Adamic–Adar | Popularity × weighted-degree groups | +4.51 [+3.63, +5.50] | +1.11 [+0.08, +1.86] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"|  |  | [Popularity groups]{custom-style=""RevisionBlue""} | +2.28 [+1.41, +3.34] | +3.34 [+2.38, +4.26] |"	|  |  | Popularity groups | +3.73 [+2.78, +4.73] | +4.76 [+3.72, +5.61] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"|  |  | [All candidate diseases, no grouping]{custom-style=""RevisionBlue""} | −1.70 [−1.93, −1.46] | −0.77 [−0.96, −0.62] |"	|  |  | All candidate diseases, no grouping | −2.65 [−2.95, −2.42] | −1.42 [−1.63, −1.23] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"| Diseases with a shared MechDist neighbor | Weighted Adamic–Adar | [Popularity × weighted-degree groups]{custom-style=""RevisionBlue""} | +6.87 [+6.08, +7.76] | +3.64 [+2.99, +4.23] |"	| Diseases with a shared MechDist neighbor | Weighted Adamic–Adar | Popularity × weighted-degree groups | +8.15 [+7.33, +9.05] | +4.47 [+3.82, +5.09] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"|  |  | [Popularity groups]{custom-style=""RevisionBlue""} | +8.87 [+8.29, +10.00] | +8.43 [+7.77, +9.08] |"	|  |  | Popularity groups | +10.63 [+9.85, +11.74] | +9.84 [+9.09, +10.61] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"|  |  | [All candidate diseases, no grouping]{custom-style=""RevisionBlue""} | −0.67 [−0.84, −0.50] | −0.34 [−0.46, −0.21] |"	|  |  | All candidate diseases, no grouping | −1.63 [−1.83, −1.45] | −0.98 [−1.14, −0.81] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"| Diseases without a shared MechDist neighbor | Weighted Adamic–Adar | [Popularity × weighted-degree groups]{custom-style=""RevisionBlue""} | +30.79 [+22.25, +34.69] | +26.84 [+19.71, +31.35] |"	| Diseases without a shared MechDist neighbor | Weighted Adamic–Adar | Popularity × weighted-degree groups | +32.86 [+28.04, +42.77] | +26.24 [+21.15, +36.42] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"|  |  | [Popularity groups]{custom-style=""RevisionBlue""} | +28.24 [+22.32, +35.03] | +28.79 [+21.85, +35.48] |"	|  |  | Popularity groups | +32.05 [+26.20, +44.04] | +32.95 [+23.97, +41.29] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"|  |  | [All candidate diseases, no grouping]{custom-style=""RevisionBlue""} | +14.12 [+2.94, +23.93] | +12.69 [+3.03, +21.43] |"	|  |  | All candidate diseases, no grouping | +13.47 [−0.03, +34.06] | +13.36 [+2.86, +25.28] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"| Diseases with HPO phenotype annotation | Weighted Adamic–Adar | [Popularity × weighted-degree groups]{custom-style=""RevisionBlue""} | +11.64 [+10.72, +12.96] | +6.52 [+5.69, +7.44] |"	| Diseases with HPO phenotype annotation | Weighted Adamic–Adar | Popularity × weighted-degree groups | +13.05 [+12.03, +14.45] | +8.02 [+7.19, +8.98] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"|  |  | [Popularity groups]{custom-style=""RevisionBlue""} | +13.28 [+11.85, +14.91] | +9.89 [+8.80, +10.99] |"	|  |  | Popularity groups | +14.88 [+13.43, +16.52] | +10.77 [+9.59, +11.97] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"|  |  | [All candidate diseases, no grouping]{custom-style=""RevisionBlue""} | −0.09 [−0.33, +0.18] | −0.22 [−0.45, 0.00] |"	|  |  | All candidate diseases, no grouping | −1.06 [−1.33, −0.74] | −0.87 [−1.10, −0.60] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"| Diseases with GO biological-process annotation | Weighted Adamic–Adar | [Popularity × weighted-degree groups]{custom-style=""RevisionBlue""} | +6.95 [+6.14, +7.86] | +3.50 [+2.91, +4.18] |"	| Diseases with GO biological-process annotation | Weighted Adamic–Adar | Popularity × weighted-degree groups | +8.23 [+7.44, +9.17] | +4.41 [+3.79, +5.03] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"|  |  | [Popularity groups]{custom-style=""RevisionBlue""} | +9.02 [+8.33, +10.06] | +8.34 [+7.72, +9.05] |"	|  |  | Popularity groups | +10.83 [+9.96, +11.82] | +9.67 [+8.98, +10.49] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"|  |  | [All candidate diseases, no grouping]{custom-style=""RevisionBlue""} | −0.68 [−0.84, −0.49] | −0.35 [−0.48, −0.22] |"	|  |  | All candidate diseases, no grouping | −1.63 [−1.83, −1.46] | −1.00 [−1.17, −0.84] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"| Diseases with gene annotation | Weighted Adamic–Adar | [Popularity × weighted-degree groups]{custom-style=""RevisionBlue""} | +6.95 [+6.17, +7.90] | +3.48 [+2.91, +4.17] |"	| Diseases with gene annotation | Weighted Adamic–Adar | Popularity × weighted-degree groups | +8.23 [+7.47, +9.21] | +4.39 [+3.80, +5.01] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"|  |  | [Popularity groups]{custom-style=""RevisionBlue""} | +9.08 [+8.33, +10.15] | +8.42 [+7.76, +9.12] |"	|  |  | Popularity groups | +10.90 [+10.00, +11.89] | +9.75 [+9.03, +10.55] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"|  |  | [All candidate diseases, no grouping]{custom-style=""RevisionBlue""} | −0.68 [−0.83, −0.49] | −0.35 [−0.48, −0.22] |"	|  |  | All candidate diseases, no grouping | −1.63 [−1.82, −1.45] | −1.01 [−1.17, −0.83] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"| Drug-years with one new disease | Adamic–Adar | [Popularity × weighted-degree groups]{custom-style=""RevisionBlue""} | +0.93 [+0.52, +2.25] | −2.58 [−3.16, −1.59] |"	| Drug-years with one new disease | Adamic–Adar | Popularity × weighted-degree groups | +2.85 [+2.09, +3.94] | −1.43 [−2.22, −0.49] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"|  |  | [Popularity groups]{custom-style=""RevisionBlue""} | +1.19 [+0.43, +2.32] | +0.54 [−0.36, +1.42] |"	|  |  | Popularity groups | +2.65 [+1.79, +3.70] | +1.96 [+0.94, +2.75] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"|  |  | [All candidate diseases, no grouping]{custom-style=""RevisionBlue""} | −1.64 [−1.86, −1.42] | −0.81 [−0.99, −0.65] |"	|  |  | All candidate diseases, no grouping | −2.59 [−2.88, −2.38] | −1.46 [−1.66, −1.26] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"| Diseases without a shared MechDist neighbor | Disease popularity | [Popularity × weighted-degree groups]{custom-style=""RevisionBlue""} | −22.61 [−41.83, −16.11] | −20.78 [−34.26, −11.96] |"	| Diseases without a shared MechDist neighbor | Disease popularity | Popularity × weighted-degree groups | −20.54 [−37.55, −8.70] | −21.38 [−33.49, −7.29] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"|  |  | [Popularity groups]{custom-style=""RevisionBlue""} | −27.79 [−43.40, −15.31] | −19.38 [−33.07, −11.37] |"	|  |  | Popularity groups | −23.97 [−38.35, −9.87] | −15.21 [−30.98, −5.78] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"|  |  | [All candidate diseases, no grouping]{custom-style=""RevisionBlue""} | −61.46 [−72.20, −51.29] | −61.91 [−71.54, −53.91] |"	|  |  | All candidate diseases, no grouping | −62.11 [−75.70, −39.83] | −61.23 [−71.35, −48.33] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"| Diseases without a shared MechDist neighbor | Shared genes | [Popularity × weighted-degree groups]{custom-style=""RevisionBlue""} | −9.29 [−16.87, −5.27] | −11.41 [−19.16, −8.06] |"	| Diseases without a shared MechDist neighbor | Shared genes | Popularity × weighted-degree groups | −7.22 [−11.22, +2.38] | −12.01 [−16.74, −2.07] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"|  |  | [Popularity groups]{custom-style=""RevisionBlue""} | −11.76 [−17.52, −5.69] | −13.73 [−20.09, −6.94] |"	|  |  | Popularity groups | −7.95 [−13.82, +3.77] | −9.56 [−18.21, −1.43] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"|  |  | [All candidate diseases, no grouping]{custom-style=""RevisionBlue""} | −13.57 [−23.51, −3.86] | −14.20 [−23.60, −6.58] |"	|  |  | All candidate diseases, no grouping | −14.22 [−27.52, +6.77] | −13.53 [−23.16, −0.80] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"| Diseases without a shared MechDist neighbor | HPO phenotype similarity | [Popularity × weighted-degree groups]{custom-style=""RevisionBlue""} | −10.15 [−18.15, −6.70] | −12.21 [−19.91, −8.67] |"	| Diseases without a shared MechDist neighbor | HPO phenotype similarity | Popularity × weighted-degree groups | −8.08 [−12.73, +1.93] | −12.81 [−17.49, −2.81] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"|  |  | [Popularity groups]{custom-style=""RevisionBlue""} | −14.32 [−19.99, −8.39] | −16.08 [−22.60, −9.07] |"	|  |  | Popularity groups | −10.51 [−16.66, +1.42] | −11.91 [−20.60, −3.65] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"|  |  | [All candidate diseases, no grouping]{custom-style=""RevisionBlue""} | −14.07 [−24.24, −4.27] | −14.78 [−24.15, −7.16] |"	|  |  | All candidate diseases, no grouping | −14.73 [−28.19, +6.38] | −14.11 [−23.69, −1.33] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"| Diseases with HPO phenotype annotation | HPO phenotype similarity | [Popularity × weighted-degree groups]{custom-style=""RevisionBlue""} | −10.69 [−11.50, −9.74] | −12.50 [−13.27, −11.60] |"	| Diseases with HPO phenotype annotation | HPO phenotype similarity | Popularity × weighted-degree groups | −9.28 [−10.16, −8.26] | −11.01 [−11.75, −10.05] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"|  |  | [Popularity groups]{custom-style=""RevisionBlue""} | −9.92 [−10.91, −8.81] | −9.83 [−10.66, −9.13] |"	|  |  | Popularity groups | −8.32 [−9.22, −7.44] | −8.94 [−9.81, −8.15] |	02, 03
+tbl:SI_event_time_subsets	Supplementary Table S13	table row	"|  |  | [All candidate diseases, no grouping]{custom-style=""RevisionBlue""} | +5.05 [+4.43, +5.84] | +4.93 [+4.38, +5.47] |"	|  |  | All candidate diseases, no grouping | +4.08 [+3.46, +4.88] | +4.28 [+3.77, +4.82] |	02, 03
+tbl:SI_event_time_or_yearly	Supplementary Table S15	table row	| 2000 | 675 | 352 | 1.87 (1.71–2.06) | 1.12 (1.08–1.17) |	| 2000 | 675 | 352 | 2.01 (1.79–2.27) | 1.12 (1.08–1.17) |	03
+tbl:SI_event_time_or_yearly	Supplementary Table S15	table row	| 2001 | 752 | 389 | 1.73 (1.59–1.89) | 1.18 (1.14–1.22) |	| 2001 | 752 | 389 | 1.94 (1.76–2.14) | 1.18 (1.14–1.22) |	03
+tbl:SI_event_time_or_yearly	Supplementary Table S15	table row	| 2002 | 900 | 450 | 1.65 (1.50–1.82) | 1.12 (1.08–1.16) |	| 2002 | 900 | 450 | 1.80 (1.62–1.99) | 1.12 (1.08–1.16) |	03
+tbl:SI_event_time_or_yearly	Supplementary Table S15	table row	| 2003 | 914 | 516 | 1.87 (1.73–2.03) | 1.15 (1.11–1.20) |	| 2003 | 914 | 516 | 2.07 (1.91–2.25) | 1.15 (1.11–1.20) |	03
+tbl:SI_event_time_or_yearly	Supplementary Table S15	table row	| 2004 | 1,117 | 585 | 1.95 (1.79–2.13) | 1.14 (1.10–1.18) |	| 2004 | 1,117 | 585 | 2.06 (1.89–2.26) | 1.14 (1.10–1.18) |	03
+tbl:SI_event_time_or_yearly	Supplementary Table S15	table row	| 2005 | 1,283 | 616 | 1.89 (1.73–2.06) | 1.09 (1.06–1.12) |	| 2005 | 1,283 | 616 | 2.13 (1.94–2.35) | 1.09 (1.06–1.12) |	03
+tbl:SI_event_time_or_yearly	Supplementary Table S15	table row	| 2006 | 1,277 | 654 | 1.72 (1.58–1.86) | 1.10 (1.07–1.13) |	| 2006 | 1,277 | 654 | 2.01 (1.84–2.19) | 1.10 (1.07–1.13) |	03
+tbl:SI_event_time_or_yearly	Supplementary Table S15	table row	| 2007 | 1,308 | 723 | 1.99 (1.84–2.15) | 1.09 (1.06–1.11) |	| 2007 | 1,308 | 723 | 2.24 (2.07–2.43) | 1.09 (1.06–1.11) |	03
+tbl:SI_event_time_or_yearly	Supplementary Table S15	table row	| 2008 | 1,316 | 731 | 2.23 (2.05–2.42) | 1.13 (1.10–1.16) |	| 2008 | 1,316 | 731 | 2.51 (2.31–2.73) | 1.13 (1.10–1.16) |	03
+tbl:SI_event_time_or_yearly	Supplementary Table S15	table row	| 2009 | 1,558 | 832 | 1.97 (1.83–2.12) | 1.11 (1.09–1.14) |	| 2009 | 1,558 | 832 | 2.24 (2.08–2.41) | 1.11 (1.09–1.14) |	03
+tbl:SI_event_time_or_yearly	Supplementary Table S15	table row	| 2010 | 1,543 | 829 | 2.09 (1.94–2.24) | 1.08 (1.06–1.11) |	| 2010 | 1,543 | 829 | 2.30 (2.14–2.47) | 1.08 (1.06–1.11) |	03
+tbl:SI_event_time_or_yearly	Supplementary Table S15	table row	| 2011 | 1,817 | 865 | 1.79 (1.65–1.94) | 1.11 (1.09–1.13) |	| 2011 | 1,817 | 865 | 1.91 (1.76–2.08) | 1.11 (1.09–1.13) |	03
+tbl:SI_event_time_or_yearly	Supplementary Table S15	table row	| 2012 | 1,500 | 847 | 2.20 (2.03–2.38) | 1.13 (1.10–1.16) |	| 2012 | 1,500 | 847 | 2.47 (2.28–2.67) | 1.13 (1.10–1.16) |	03
+tbl:SI_event_time_or_yearly	Supplementary Table S15	table row	| 2013 | 1,410 | 832 | 1.94 (1.78–2.12) | 1.11 (1.07–1.14) |	| 2013 | 1,410 | 832 | 2.15 (1.97–2.35) | 1.11 (1.07–1.14) |	03
+tbl:SI_event_time_or_yearly	Supplementary Table S15	table row	| 2014 | 1,656 | 926 | 1.89 (1.73–2.06) | 1.12 (1.09–1.16) |	| 2014 | 1,656 | 926 | 2.16 (1.99–2.34) | 1.12 (1.09–1.16) |	03
+tbl:SI_event_time_or_yearly	Supplementary Table S15	table row	| 2015 | 1,937 | 978 | 2.23 (2.06–2.40) | 1.14 (1.12–1.17) |	| 2015 | 1,937 | 978 | 2.50 (2.31–2.70) | 1.14 (1.12–1.17) |	03
+tbl:SI_event_time_or_yearly	Supplementary Table S15	table row	| 2016 | 2,173 | 1,056 | 2.06 (1.93–2.20) | 1.09 (1.07–1.11) |	| 2016 | 2,173 | 1,056 | 2.39 (2.24–2.54) | 1.09 (1.07–1.11) |	03
+tbl:SI_event_time_or_yearly	Supplementary Table S15	table row	| 2017 | 1,977 | 1,027 | 1.97 (1.85–2.11) | 1.10 (1.08–1.12) |	| 2017 | 1,977 | 1,027 | 2.27 (2.12–2.43) | 1.10 (1.08–1.12) |	03
+tbl:SI_event_time_or_yearly	Supplementary Table S15	table row	| 2018 | 2,131 | 1,138 | 2.21 (2.04–2.38) | 1.11 (1.09–1.13) |	| 2018 | 2,131 | 1,138 | 2.58 (2.39–2.78) | 1.11 (1.09–1.13) |	03
+tbl:SI_event_time_or_yearly	Supplementary Table S15	table row	| 2019 | 2,193 | 1,166 | 2.16 (2.01–2.33) | 1.12 (1.10–1.14) |	| 2019 | 2,193 | 1,166 | 2.46 (2.29–2.64) | 1.12 (1.10–1.14) |	03
+tbl:SI_event_time_or_yearly	Supplementary Table S15	table row	| 2020 | 2,708 | 1,348 | 1.62 (1.53–1.72) | 1.05 (1.03–1.06) |	| 2020 | 2,708 | 1,348 | 1.94 (1.81–2.07) | 1.05 (1.03–1.06) |	03
+tbl:SI_event_time_or_yearly	Supplementary Table S15	table row	| 2021 | 2,447 | 1,374 | 1.98 (1.86–2.11) | 1.09 (1.07–1.10) |	| 2021 | 2,447 | 1,374 | 2.42 (2.26–2.58) | 1.09 (1.07–1.10) |	03
+tbl:SI_event_time_or_yearly	Supplementary Table S15	table row	| 2000–2021 pooled | 34,592 | 6,469 | 1.93 (1.90–1.97) | 1.10 (1.10–1.11) |	| 2000–2021 pooled | 34,592 | 6,469 | 2.20 (2.15–2.25) | 1.10 (1.10–1.11) |	03
+tbl:SI_event_time_auc	Supplementary Table S16	table row	| DisAtlas | Popularity- and connectivity-matched | Held out of benchmark tuning | 0.682 (0.677–0.686) | — |	| DisAtlas | Popularity- and connectivity-matched | Outside the benchmark tuning half | 0.690 (0.685–0.695) | — |	03
+tbl:SI_event_time_auc	Supplementary Table S16	table row	|  | Popularity- and connectivity-matched | All diseases | 0.685 (0.681–0.689) | — |	|  | Popularity- and connectivity-matched | All diseases | 0.694 (0.690–0.698) | — |	03
+tbl:SI_event_time_auc	Supplementary Table S16	table row	|  | Popularity-matched | Held out of benchmark tuning | 0.680 (0.676–0.685) | — |	|  | Popularity-matched | Outside the benchmark tuning half | 0.691 (0.686–0.696) | — |	03
+tbl:SI_event_time_auc	Supplementary Table S16	table row	|  | Popularity-matched | All diseases | 0.690 (0.686–0.694) | — |	|  | Popularity-matched | All diseases | 0.700 (0.696–0.704) | — |	03
+tbl:SI_event_time_auc	Supplementary Table S16	table row	| Weighted Adamic–Adar (same graph, no learning) | Popularity- and connectivity-matched | Held out of benchmark tuning | 0.641 (0.636–0.645) | 0.041 (0.036–0.045) |	| Weighted Adamic–Adar (same graph, no learning) | Popularity- and connectivity-matched | Outside the benchmark tuning half | 0.641 (0.636–0.645) | 0.049 (0.044–0.054) |	03
+tbl:SI_event_time_auc	Supplementary Table S16	table row	|  | Popularity- and connectivity-matched | All diseases | 0.665 (0.661–0.669) | 0.021 (0.017–0.024) |	|  | Popularity- and connectivity-matched | All diseases | 0.665 (0.661–0.669) | 0.029 (0.026–0.033) |	03
+tbl:SI_event_time_auc	Supplementary Table S16	table row	|  | Popularity-matched | Held out of benchmark tuning | 0.627 (0.623–0.631) | 0.053 (0.049–0.058) |	|  | Popularity-matched | Outside the benchmark tuning half | 0.627 (0.623–0.631) | 0.064 (0.059–0.069) |	03
+tbl:SI_event_time_auc	Supplementary Table S16	table row	|  | Popularity-matched | All diseases | 0.643 (0.639–0.647) | 0.047 (0.044–0.050) |	|  | Popularity-matched | All diseases | 0.643 (0.639–0.647) | 0.057 (0.054–0.061) |	03
+tbl:SI_event_time_auc	Supplementary Table S16	table row	| Disease popularity | Popularity- and connectivity-matched | Held out of benchmark tuning | 0.619 (0.614–0.623) | 0.063 (0.056–0.069) |	| Disease popularity | Popularity- and connectivity-matched | Outside the benchmark tuning half | 0.619 (0.614–0.623) | 0.071 (0.065–0.078) |	03
+tbl:SI_event_time_auc	Supplementary Table S16	table row	|  | Popularity- and connectivity-matched | All diseases | 0.601 (0.598–0.605) | 0.084 (0.078–0.089) |	|  | Popularity- and connectivity-matched | All diseases | 0.601 (0.598–0.605) | 0.092 (0.087–0.098) |	03
+tbl:SI_event_time_auc	Supplementary Table S16	table row	|  | Popularity-matched | Held out of benchmark tuning | 0.621 (0.617–0.625) | 0.059 (0.053–0.066) |	|  | Popularity-matched | Outside the benchmark tuning half | 0.621 (0.617–0.625) | 0.070 (0.063–0.077) |	03
+tbl:SI_event_time_auc	Supplementary Table S16	table row	|  | Popularity-matched | All diseases | 0.609 (0.605–0.613) | 0.081 (0.076–0.086) |	|  | Popularity-matched | All diseases | 0.609 (0.605–0.613) | 0.092 (0.086–0.097) |	03
+tbl:SI_event_time_auc	Supplementary Table S16	table row	| Shared genes | Popularity- and connectivity-matched | Held out of benchmark tuning | 0.647 (0.643–0.652) | 0.034 (0.030–0.038) |	| Shared genes | Popularity- and connectivity-matched | Outside the benchmark tuning half | 0.647 (0.643–0.652) | 0.043 (0.039–0.047) |	03
+tbl:SI_event_time_auc	Supplementary Table S16	table row	|  | Popularity- and connectivity-matched | All diseases | 0.664 (0.660–0.667) | 0.021 (0.018–0.025) |	|  | Popularity- and connectivity-matched | All diseases | 0.664 (0.660–0.667) | 0.030 (0.027–0.033) |	03
+tbl:SI_event_time_auc	Supplementary Table S16	table row	|  | Popularity-matched | Held out of benchmark tuning | 0.650 (0.646–0.655) | 0.030 (0.026–0.034) |	|  | Popularity-matched | Outside the benchmark tuning half | 0.650 (0.646–0.655) | 0.041 (0.037–0.044) |	03
+tbl:SI_event_time_auc	Supplementary Table S16	table row	|  | Popularity-matched | All diseases | 0.670 (0.667–0.674) | 0.020 (0.017–0.023) |	|  | Popularity-matched | All diseases | 0.670 (0.667–0.674) | 0.030 (0.027–0.033) |	03
+tbl:SI_event_time_auc	Supplementary Table S16	table row	| GO biological-process similarity | Popularity- and connectivity-matched | Held out of benchmark tuning | 0.619 (0.615–0.623) | 0.062 (0.058–0.067) |	| GO biological-process similarity | Popularity- and connectivity-matched | Outside the benchmark tuning half | 0.619 (0.615–0.623) | 0.071 (0.066–0.075) |	03
+tbl:SI_event_time_auc	Supplementary Table S16	table row	|  | Popularity- and connectivity-matched | All diseases | 0.621 (0.617–0.624) | 0.065 (0.061–0.068) |	|  | Popularity- and connectivity-matched | All diseases | 0.621 (0.617–0.624) | 0.073 (0.070–0.077) |	03
+tbl:SI_event_time_auc	Supplementary Table S16	table row	|  | Popularity-matched | Held out of benchmark tuning | 0.619 (0.615–0.623) | 0.061 (0.057–0.065) |	|  | Popularity-matched | Outside the benchmark tuning half | 0.619 (0.615–0.623) | 0.072 (0.067–0.076) |	03
+tbl:SI_event_time_auc	Supplementary Table S16	table row	|  | Popularity-matched | All diseases | 0.628 (0.624–0.631) | 0.062 (0.059–0.066) |	|  | Popularity-matched | All diseases | 0.628 (0.624–0.631) | 0.073 (0.069–0.076) |	03
+tbl:SI_event_time_auc	Supplementary Table S16	table row	| HPO phenotype similarity | Popularity- and connectivity-matched | Held out of benchmark tuning | 0.515 (0.512–0.519) | 0.166 (0.161–0.171) |	| HPO phenotype similarity | Popularity- and connectivity-matched | Outside the benchmark tuning half | 0.515 (0.512–0.519) | 0.175 (0.169–0.180) |	03
+tbl:SI_event_time_auc	Supplementary Table S16	table row	|  | Popularity- and connectivity-matched | All diseases | 0.523 (0.520–0.526) | 0.162 (0.158–0.167) |	|  | Popularity- and connectivity-matched | All diseases | 0.523 (0.520–0.526) | 0.171 (0.166–0.175) |	03
+tbl:SI_event_time_auc	Supplementary Table S16	table row	|  | Popularity-matched | Held out of benchmark tuning | 0.515 (0.512–0.519) | 0.165 (0.160–0.170) |	|  | Popularity-matched | Outside the benchmark tuning half | 0.515 (0.512–0.519) | 0.176 (0.170–0.181) |	03
+tbl:SI_event_time_auc	Supplementary Table S16	table row	|  | Popularity-matched | All diseases | 0.523 (0.520–0.526) | 0.167 (0.163–0.171) |	|  | Popularity-matched | All diseases | 0.523 (0.520–0.526) | 0.178 (0.173–0.182) |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| 1996 | 117 | 0.607 (0.557–0.657) | 0.637 [0.392–0.833] | 0.609 (0.559–0.658) | 0.637 [0.400–0.833] | 0.800 (0.758–0.836) | 0.871 [0.720–0.941] |	| 1996 | 117 | 0.605 (0.549–0.657) | 0.625 [0.334–0.846] | 0.606 (0.551–0.659) | 0.625 [0.350–0.852] | 0.795 (0.753–0.833) | 0.854 [0.720–0.945] |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| 1997 | 167 | 0.624 (0.583–0.661) | 0.625 [0.437–0.854] | 0.624 (0.583–0.662) | 0.625 [0.437–0.854] | 0.805 (0.768–0.836) | 0.879 [0.777–0.945] |	| 1997 | 167 | 0.628 (0.588–0.667) | 0.636 [0.417–0.860] | 0.629 (0.589–0.669) | 0.636 [0.417–0.860] | 0.800 (0.761–0.834) | 0.885 [0.767–0.952] |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| 1999 | 295 | 0.624 (0.594–0.652) | 0.650 [0.447–0.833] | 0.625 (0.595–0.654) | 0.651 [0.441–0.833] | 0.825 (0.801–0.847) | 0.896 [0.792–0.949] |	| 1999 | 295 | 0.636 (0.604–0.664) | 0.672 [0.467–0.848] | 0.637 (0.606–0.665) | 0.679 [0.467–0.852] | 0.818 (0.795–0.840) | 0.881 [0.762–0.947] |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| 2000 | 352 | 0.704 (0.681–0.727) | 0.734 [0.550–0.889] | 0.704 (0.681–0.727) | 0.732 [0.556–0.889] | 0.862 (0.844–0.879) | 0.924 [0.836–0.968] |	| 2000 | 352 | 0.703 (0.679–0.727) | 0.741 [0.550–0.900] | 0.703 (0.679–0.727) | 0.741 [0.550–0.900] | 0.841 (0.820–0.860) | 0.908 [0.808–0.958] |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| 2001 | 389 | 0.665 (0.639–0.692) | 0.717 [0.481–0.889] | 0.664 (0.639–0.691) | 0.717 [0.481–0.889] | 0.813 (0.791–0.834) | 0.906 [0.750–0.971] |	| 2001 | 389 | 0.674 (0.649–0.700) | 0.719 [0.521–0.895] | 0.674 (0.649–0.700) | 0.719 [0.521–0.895] | 0.806 (0.784–0.828) | 0.890 [0.753–0.963] |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| 2002 | 450 | 0.667 (0.644–0.689) | 0.682 [0.500–0.870] | 0.668 (0.645–0.690) | 0.684 [0.500–0.870] | 0.833 (0.814–0.851) | 0.906 [0.786–0.968] |	| 2002 | 450 | 0.675 (0.651–0.698) | 0.714 [0.500–0.883] | 0.676 (0.653–0.699) | 0.720 [0.502–0.887] | 0.816 (0.796–0.836) | 0.902 [0.754–0.964] |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| 2003 | 516 | 0.673 (0.649–0.695) | 0.726 [0.506–0.894] | 0.673 (0.649–0.695) | 0.720 [0.500–0.894] | 0.852 (0.836–0.868) | 0.921 [0.812–0.977] |	| 2003 | 516 | 0.692 (0.669–0.714) | 0.733 [0.530–0.904] | 0.692 (0.670–0.715) | 0.734 [0.530–0.904] | 0.842 (0.825–0.858) | 0.906 [0.788–0.972] |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| 2004 | 585 | 0.678 (0.657–0.700) | 0.733 [0.500–0.894] | 0.678 (0.656–0.699) | 0.733 [0.500–0.889] | 0.862 (0.847–0.876) | 0.933 [0.830–0.975] |	| 2004 | 585 | 0.689 (0.668–0.711) | 0.741 [0.529–0.920] | 0.689 (0.667–0.710) | 0.741 [0.525–0.920] | 0.842 (0.825–0.858) | 0.918 [0.792–0.971] |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| 2005 | 616 | 0.684 (0.662–0.704) | 0.731 [0.509–0.915] | 0.684 (0.662–0.704) | 0.735 [0.509–0.913] | 0.861 (0.846–0.876) | 0.931 [0.822–0.981] |	| 2005 | 616 | 0.694 (0.674–0.713) | 0.750 [0.512–0.917] | 0.694 (0.674–0.713) | 0.747 [0.519–0.916] | 0.844 (0.829–0.859) | 0.912 [0.804–0.976] |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| 2006 | 654 | 0.655 (0.633–0.675) | 0.696 [0.463–0.901] | 0.650 (0.628–0.671) | 0.692 [0.455–0.900] | 0.843 (0.827–0.859) | 0.917 [0.798–0.979] |	| 2006 | 654 | 0.663 (0.640–0.683) | 0.715 [0.458–0.903] | 0.661 (0.638–0.681) | 0.714 [0.454–0.900] | 0.830 (0.813–0.845) | 0.905 [0.768–0.977] |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| 2007 | 723 | 0.681 (0.664–0.701) | 0.748 [0.500–0.900] | 0.680 (0.663–0.700) | 0.741 [0.500–0.899] | 0.852 (0.839–0.866) | 0.932 [0.810–0.976] |	| 2007 | 723 | 0.688 (0.670–0.708) | 0.750 [0.500–0.895] | 0.687 (0.669–0.707) | 0.750 [0.500–0.891] | 0.836 (0.821–0.851) | 0.916 [0.783–0.973] |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| 2008 | 731 | 0.685 (0.667–0.704) | 0.739 [0.536–0.902] | 0.682 (0.663–0.700) | 0.742 [0.527–0.900] | 0.872 (0.860–0.885) | 0.942 [0.853–0.974] |	| 2008 | 731 | 0.691 (0.672–0.710) | 0.760 [0.527–0.912] | 0.691 (0.671–0.710) | 0.757 [0.533–0.912] | 0.852 (0.838–0.865) | 0.929 [0.813–0.973] |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| 2009 | 832 | 0.666 (0.648–0.684) | 0.715 [0.500–0.897] | 0.661 (0.643–0.679) | 0.703 [0.492–0.881] | 0.860 (0.848–0.872) | 0.923 [0.814–0.973] |	| 2009 | 832 | 0.685 (0.667–0.702) | 0.730 [0.521–0.905] | 0.682 (0.665–0.700) | 0.730 [0.517–0.901] | 0.844 (0.832–0.856) | 0.913 [0.780–0.968] |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| 2010 | 829 | 0.681 (0.664–0.698) | 0.740 [0.536–0.888] | 0.679 (0.663–0.696) | 0.744 [0.526–0.890] | 0.871 (0.860–0.881) | 0.925 [0.845–0.970] |	| 2010 | 829 | 0.686 (0.669–0.702) | 0.742 [0.527–0.900] | 0.687 (0.670–0.704) | 0.742 [0.526–0.900] | 0.849 (0.837–0.860) | 0.907 [0.804–0.966] |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| 2011 | 865 | 0.653 (0.635–0.670) | 0.694 [0.500–0.864] | 0.651 (0.633–0.669) | 0.696 [0.486–0.872] | 0.874 (0.863–0.884) | 0.926 [0.842–0.969] |	| 2011 | 865 | 0.660 (0.642–0.678) | 0.704 [0.490–0.875] | 0.660 (0.643–0.678) | 0.705 [0.493–0.886] | 0.852 (0.841–0.863) | 0.906 [0.801–0.962] |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| 2012 | 847 | 0.679 (0.663–0.696) | 0.724 [0.521–0.893] | 0.691 (0.675–0.707) | 0.744 [0.529–0.902] | 0.892 (0.883–0.901) | 0.941 [0.867–0.978] |	| 2012 | 847 | 0.689 (0.673–0.706) | 0.741 [0.526–0.900] | 0.701 (0.685–0.717) | 0.750 [0.545–0.909] | 0.870 (0.860–0.881) | 0.925 [0.831–0.975] |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| 2013 | 832 | 0.662 (0.643–0.680) | 0.716 [0.500–0.875] | 0.667 (0.648–0.684) | 0.708 [0.500–0.884] | 0.887 (0.877–0.897) | 0.933 [0.859–0.976] |	| 2013 | 832 | 0.668 (0.649–0.686) | 0.720 [0.494–0.883] | 0.673 (0.655–0.691) | 0.723 [0.500–0.895] | 0.860 (0.848–0.871) | 0.920 [0.818–0.971] |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| 2014 | 926 | 0.669 (0.653–0.686) | 0.714 [0.493–0.886] | 0.670 (0.655–0.687) | 0.714 [0.489–0.886] | 0.887 (0.878–0.896) | 0.939 [0.867–0.979] |	| 2014 | 926 | 0.683 (0.667–0.701) | 0.733 [0.518–0.906] | 0.686 (0.671–0.703) | 0.734 [0.515–0.909] | 0.865 (0.855–0.875) | 0.921 [0.821–0.971] |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| 2015 | 978 | 0.709 (0.693–0.724) | 0.760 [0.563–0.923] | 0.713 (0.697–0.727) | 0.765 [0.561–0.920] | 0.899 (0.889–0.907) | 0.944 [0.872–0.983] |	| 2015 | 978 | 0.709 (0.692–0.724) | 0.763 [0.550–0.922] | 0.715 (0.699–0.730) | 0.761 [0.565–0.923] | 0.873 (0.862–0.882) | 0.923 [0.833–0.977] |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| 2016 | 1,056 | 0.712 (0.697–0.726) | 0.789 [0.563–0.912] | 0.698 (0.683–0.713) | 0.764 [0.543–0.909] | 0.908 (0.901–0.915) | 0.949 [0.889–0.983] |	| 2016 | 1,056 | 0.711 (0.696–0.725) | 0.786 [0.560–0.912] | 0.705 (0.690–0.719) | 0.772 [0.541–0.909] | 0.887 (0.879–0.896) | 0.937 [0.849–0.980] |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| 2017 | 1,027 | 0.700 (0.686–0.715) | 0.767 [0.561–0.909] | 0.689 (0.674–0.704) | 0.739 [0.537–0.902] | 0.902 (0.894–0.910) | 0.949 [0.884–0.980] |	| 2017 | 1,027 | 0.700 (0.684–0.715) | 0.771 [0.537–0.901] | 0.695 (0.679–0.709) | 0.749 [0.539–0.909] | 0.883 (0.873–0.892) | 0.938 [0.852–0.977] |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| 2018 | 1,138 | 0.712 (0.697–0.726) | 0.778 [0.564–0.909] | 0.708 (0.695–0.722) | 0.759 [0.562–0.906] | 0.916 (0.910–0.923) | 0.957 [0.901–0.984] |	| 2018 | 1,138 | 0.720 (0.705–0.735) | 0.792 [0.569–0.919] | 0.722 (0.708–0.736) | 0.778 [0.577–0.920] | 0.899 (0.892–0.907) | 0.949 [0.873–0.981] |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| 2019 | 1,166 | 0.710 (0.696–0.725) | 0.786 [0.570–0.917] | 0.714 (0.701–0.728) | 0.761 [0.566–0.914] | 0.918 (0.912–0.925) | 0.957 [0.901–0.986] |	| 2019 | 1,166 | 0.711 (0.697–0.727) | 0.791 [0.557–0.925] | 0.721 (0.708–0.734) | 0.778 [0.573–0.926] | 0.901 (0.894–0.909) | 0.947 [0.872–0.983] |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| 2020 | 1,348 | 0.661 (0.646–0.675) | 0.719 [0.500–0.885] | 0.648 (0.634–0.663) | 0.693 [0.457–0.879] | 0.892 (0.885–0.900) | 0.941 [0.862–0.982] |	| 2020 | 1,348 | 0.682 (0.667–0.696) | 0.750 [0.500–0.909] | 0.667 (0.653–0.681) | 0.716 [0.476–0.901] | 0.880 (0.872–0.888) | 0.931 [0.841–0.981] |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| 2021 | 1,374 | 0.689 (0.675–0.703) | 0.758 [0.544–0.895] | 0.700 (0.688–0.713) | 0.756 [0.558–0.898] | 0.918 (0.912–0.925) | 0.961 [0.910–0.986] |	| 2021 | 1,374 | 0.705 (0.691–0.719) | 0.778 [0.558–0.914] | 0.717 (0.704–0.729) | 0.780 [0.565–0.920] | 0.904 (0.897–0.911) | 0.950 [0.889–0.984] |	03
+tbl:SI_event_time_auc_yearly	Supplementary Table S17	table row	| All years | 18,813 pairs | 0.682 (0.677–0.686) | — | 0.680 (0.676–0.685) | — | 0.882 (0.880–0.885) | — |	| All years | 18,813 pairs | 0.690 (0.685–0.695) | — | 0.691 (0.686–0.696) | — | 0.864 (0.861–0.867) | — |	03
+sec:SI_fda_prioritisation	SI prose key d_disatlas_ens.0	prose value	0.645	0.639	02
+sec:SI_fda_prioritisation	SI prose key d_disatlas_ens.1	prose value	0.543	0.526	02
+sec:SI_fda_prioritisation	SI prose key d_disatlas_ens.2	prose value	0.723	0.717	02
+sec:SI_fda_prioritisation	SI prose key d_decoy.0	prose value	0.199	0.179	02
+tbl:SI_fda_dated_pairs	Supplementary Table S21	table row	| DisAtlas (5 seeds) | 64.5% (54.3–72.3) | 94.6 | — | 66.7% (55.7–73.9) | 94.8 | — |	| DisAtlas (5 seeds) | 63.9% (52.6–71.7) | 93.7 | — | 63.3% (51.9–70.6) | 94.0 | — |	02
+tbl:SI_fda_dated_pairs	Supplementary Table S21	table row	| disease degree | 53.6% (43.2–64.9) | 90.8 | +10.8 (−3.2 to +22.1) | 42.7% (33.7–52.7) | 88.6 | +24.0 (+8.6 to +36.1) |	| disease degree | 53.6% (43.2–64.9) | 90.8 | +10.2 (−4.1 to +21.6) | 42.7% (33.7–52.7) | 88.5 | +20.7 (+4.6 to +32.4) |	02
+tbl:SI_fda_dated_pairs	Supplementary Table S21	table row	| shared graph neighbors | 74.1% (60.0–83.5) | 95.1 | −9.6 (−15.8 to −0.7) | 66.7% (54.1–73.7) | 94.1 | 0.0 (−7.0 to +9.7) |	| shared graph neighbors | 74.1% (60.0–83.5) | 95.1 | −10.2 (−16.6 to −1.4) | 66.7% (54.1–73.7) | 94.1 | −3.3 (−10.4 to +5.2) |	02
+tbl:SI_fda_dated_pairs	Supplementary Table S21	table row	| shared literature genes | 69.3% (53.9–79.6) | 96.7 | −4.8 (−12.1 to +6.1) | 70.7% (52.0–82.5) | 96.2 | −4.0 (−13.1 to +10.8) |	| shared literature genes | 69.3% (53.9–79.6) | 96.7 | −5.4 (−12.8 to +5.2) | 70.7% (52.0–82.5) | 96.2 | −7.3 (−16.3 to +7.5) |	02
+tbl:SI_fda_dated_pairs	Supplementary Table S21	table row	| matched decoy diseases | 19.9% (20 per pair) | 49.4 | +44.5 (+35.7 to +51.8) | 18.3% (20 per pair) | 49.2 | +48.4 (+39.0 to +55.6) |	| matched decoy diseases | 17.9% (20 per pair) | 49.8 | +46.0 (+36.1 to +53.3) | 17.0% (20 per pair) | 50.1 | +46.3 (+34.8 to +53.7) |	02

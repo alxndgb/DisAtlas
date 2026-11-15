@@ -1,0 +1,28 @@
+{
+ "bikg_release_sha256": "c684c7cd51c73b8141d453c24a12d2542d45d356de6d74881a28a669f4af3cb9",
+ "n_gene_edges": 29409,
+ "gene_edges_by_tier": {
+  "1": 23840,
+  "2": 4660,
+  "3": 723,
+  "4": 186
+ },
+ "n_phenotype_edges": 242249,
+ "n_candidate_pairs": 5486195,
+ "quotas": {
+  "go+px": 200000,
+  "hpo+px": 145192,
+  "hpo_only": 54808,
+  "all": 200000,
+  "go_only": 200000,
+  "go+hpo": 200000
+ },
+ "n_edges": 364288,
+ "n_nodes": 13013,
+ "edge_sha256": "42360d0c28dc9aed3385919c0ab88a2fc51566fa08ee9c9f790a07514b01f597",
+ "shipped_broad": {
+  "n_edges": 369405,
+  "n_nodes": 13042,
+  "edge_sha256": "e0678cf3f794554149f8387c253a07b28f4b54e84a88f692edc09bf9bb0a4e77"
+ }
+}

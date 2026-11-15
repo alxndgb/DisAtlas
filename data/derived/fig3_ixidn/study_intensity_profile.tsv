@@ -1,0 +1,7 @@
+stratum	n	p0	p10	p25	p50	p75	p90	p100	mean
+universe positives	27415	2.0	98.0	181.0	291.0	371.0	436.6	625.0	279.7
+universe negatives	155375	0.0	12.0	21.0	39.0	73.0	128.0	330.0	55.5
+benchmark positives	2182	2.0	26.0	52.0	96.0	145.0	217.9	334.0	109.1
+benchmark negatives	2182	2.0	18.0	46.0	90.0	141.0	208.9	321.0	102.8
+benchmark diseases	938	0.0	4.0	10.0	29.0	76.8	152.3	320.0	56.7
+universe-only diseases	47	0.0	1.0	2.5	13.0	46.5	79.8	285.0	37.8

@@ -1,0 +1,29 @@
+{
+ "rule": "pooled E1, DisAtlas_ens5 - weighted AA, 95% CI upper bound < 0, for each of {P1, S3} x {test, all}; SUPPORTED = 4/4, MIXED = 1-3/4 (name the passing checks, show all 4 CIs), NOT_SUPPORTED = 0/4",
+ "ci": {
+  "pct_p1|test": [
+   -9.206349206349206,
+   -7.493019555927167
+  ],
+  "pct_p1|all": [
+   -5.113524504703701,
+   -3.8987816672832696
+  ],
+  "pct_s3|test": [
+   -11.890398589865473,
+   -9.998945788866056
+  ],
+  "pct_s3|all": [
+   -10.688264975858871,
+   -9.141463036310151
+  ]
+ },
+ "passes": {
+  "pct_p1|test": true,
+  "pct_p1|all": true,
+  "pct_s3|test": true,
+  "pct_s3|all": true
+ },
+ "n_pass": 4,
+ "verdict": "SUPPORTED"
+}

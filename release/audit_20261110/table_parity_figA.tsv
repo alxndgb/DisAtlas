@@ -1,0 +1,3 @@
+item	asset	verdict	max_px_diff	note
+Table S22	tables/SI/table_SI_trace_order.md	byte-identical	-	tables/SI/table_SI_trace_order.py; compared with the table rows of the final manuscript
+Table S23	tables/SI/table_SI_trace_order_values.md	byte-identical	-	tables/SI/table_SI_trace_order.py; compared with the table rows of the final manuscript

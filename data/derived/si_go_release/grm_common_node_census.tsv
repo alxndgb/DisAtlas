@@ -1,0 +1,3 @@
+y	slice	strata_nodes	common_nodes	nodes_orig	nodes_ctrl	nodes_gafnow_acc	nodes_gafrel_acc	events	events_common	drugs_with_events	drugs_with_events_common	indication_rows	indication_rows_common	test_pool_nodes_common
+2009	S2008	3775	2881	3775	3775	3786	2895	3156	2935	1197	1141	19663	18622	1440
+2017	S2016	5511	5326	5511	5511	5514	5391	3943	3888	1569	1550	31414	31021	2615

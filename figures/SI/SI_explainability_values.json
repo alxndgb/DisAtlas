@@ -1,0 +1,28 @@
+{
+ "recomputed_from_matrix": true,
+ "n_diseases": 13021,
+ "n_pairs_all": 84766710,
+ "cases": {
+  "Case1": {
+   "tag": "Marfan-TAA",
+   "score": 0.881,
+   "pct": 99.9,
+   "pct_4dp": 99.8979,
+   "rank": 1
+  },
+  "Case2": {
+   "tag": "MODY1-T2D",
+   "score": 0.711,
+   "pct": 99.4,
+   "pct_4dp": 99.4342,
+   "rank": 33
+  },
+  "Case3": {
+   "tag": "GaucherSapC-PD24",
+   "score": 0.696,
+   "pct": 99.4,
+   "pct_4dp": 99.3648,
+   "rank": 7
+  }
+ }
+}

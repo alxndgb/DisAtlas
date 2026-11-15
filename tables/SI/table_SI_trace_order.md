@@ -1,0 +1,9 @@
+| Pair (panel) | List | Shown by walk-mass share only | Shown with specificity weighting |
+|:-----------|:-----------|:-----------------------|:-----------------------|
+| aHUS–PNH (d) | evidence items | C3 (complement C3 proximal), terminal pathway / MAC (C5-C9) | Alternative complement activation, Activation of C3 and C5 |
+| aHUS–PNH (d) | shared neighbor diseases | thrombotic microangiopathy | atypical hemolytic-uremic syndrome with B factor anomaly |
+| NMOSD–PNH (f) | genes | IL10 | CD14 |
+| NMOSD–PNH (f) | evidence items | complement activation/deposition (complement generic) | C5b-9/MAC (complement C5 MAC) |
+| Crohn–UC (f) | genes | EGFR | PSMB6 |
+| Crohn–UC (f) | evidence items | Interleukin-4 and Interleukin-13 signaling | Neutrophil degranulation |
+| RA–polymyositis (f) | evidence items | Interleukin-10 signaling, Differentiation of Circulating Monocytes, Interleukin-4 and Interleukin-13 signaling, Neutrophil degranulation | ER-Phagosome pathway, Interferon gamma signaling, Translocation of ZAP-70 to Immunological synapse, Phosphorylation of CD3 and TCR zeta chains |

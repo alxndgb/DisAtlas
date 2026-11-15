@@ -1,0 +1,21 @@
+pair	rule	item	type	label	frac_of_M2
+RA-polymyositis	top10_modules_excl_BROAD	REACTOME:R-HSA-6783783	Reactome pathway	Interleukin-10 signaling	0.0093509984626016
+RA-polymyositis	top10_modules_excl_BROAD	REACTOME:R-HSA-9968734	Reactome pathway	Differentiation of Circulating Monocytes	0.0093150745813471
+RA-polymyositis	top10_modules_excl_BROAD	REACTOME:R-HSA-6785807	Reactome pathway	Interleukin-4 and Interleukin-13 signaling	0.009267095501469
+RA-polymyositis	top10_modules_excl_BROAD	REACTOME:R-HSA-198933	Reactome pathway	Immunoregulatory interactions between a Lymphoid and a non-Lymphoid cell	0.0091856096464666
+RA-polymyositis	top10_modules_excl_BROAD	REACTOME:R-HSA-6798695	Reactome pathway	Neutrophil degranulation	0.0087368895410866
+RA-polymyositis	top10_modules_excl_BROAD	REACTOME:R-HSA-9705671	Reactome pathway	SARS-CoV-2 activates/modulates innate and adaptive immune responses	0.0086993105515718
+RA-polymyositis	top10_modules_excl_BROAD	REACTOME:R-HSA-1236974	Reactome pathway	ER-Phagosome pathway	0.0083148737365326
+RA-polymyositis	top10_modules_excl_BROAD	REACTOME:R-HSA-877300	Reactome pathway	Interferon gamma signaling	0.0078200524788411
+RA-polymyositis	top10_modules_excl_BROAD	NAMED:TNF_axis	Named gene set	TNF axis	0.0077631842872521
+RA-polymyositis	top10_modules_excl_BROAD	REACTOME:R-HSA-202430	Reactome pathway	Translocation of ZAP-70 to Immunological synapse	0.0077474919376805
+Crohn-UC	top10_modules_excl_BROAD_Shared_rare_gene	REACTOME:R-HSA-6785807	Reactome pathway	Interleukin-4 and Interleukin-13 signaling	0.0047766456645218
+Crohn-UC	top10_modules_excl_BROAD_Shared_rare_gene	REACTOME:R-HSA-9968734	Reactome pathway	Differentiation of Circulating Monocytes	0.0046098558277671
+Crohn-UC	top10_modules_excl_BROAD_Shared_rare_gene	REACTOME:R-HSA-6783783	Reactome pathway	Interleukin-10 signaling	0.0044096270851444
+Crohn-UC	top10_modules_excl_BROAD_Shared_rare_gene	NAMED:TNF_axis	Named gene set	TNF axis	0.0039049160664554
+Crohn-UC	top10_modules_excl_BROAD_Shared_rare_gene	REACTOME:R-HSA-6798695	Reactome pathway	Neutrophil degranulation	0.0036407076361429
+Crohn-UC	top10_modules_excl_BROAD_Shared_rare_gene	NAMED:IL17_IL23	Named gene set	IL17 IL23	0.0033896645904018
+Crohn-UC	top10_modules_excl_BROAD_Shared_rare_gene	NAMED:IL6_axis	Named gene set	IL6 axis	0.0033270124578589
+Crohn-UC	top10_modules_excl_BROAD_Shared_rare_gene	NAMED:IL1_axis	Named gene set	IL1 axis	0.0031358498314195
+Crohn-UC	top10_modules_excl_BROAD_Shared_rare_gene	NAMED:Bcell_CD19_CD20	Named gene set	Bcell CD19 CD20	0.0030539819171481
+Crohn-UC	top10_modules_excl_BROAD_Shared_rare_gene	MECHNODE:AUTO:R-HSA-6785807	Mechanism node (automated)	Interleukin-4 and Interleukin-13 signaling	0.0030341797699188

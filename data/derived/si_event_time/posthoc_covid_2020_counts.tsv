@@ -1,0 +1,3 @@
+pool	y	n_events	n_events_covid	share_events_covid	n_events_covid_broad	share_events_covid_broad	n_drugs	n_drugs_any_covid_event	share_drugs_any_covid	n_drugs_D50	share_drugs_D50	n_drugs_covid_only	n_events_of_D50_drugs	n_events_of_D1_drugs
+all	2020	6108	883	0.1445645055664702	1269	0.2077603143418467	2226	883	0.3966756513926325	351	0.1576819407008086	351	351	2581
+test	2020	2708	0	0.0	368	0.1358936484490399	1348	0	0.0	0	0.0	0	0	948

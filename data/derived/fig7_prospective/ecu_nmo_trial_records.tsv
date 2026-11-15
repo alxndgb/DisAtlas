@@ -1,0 +1,13 @@
+kind	nct_id	source	phase	first_year_rule
+record	NCT01892345	orphanet	III	2015
+record		orphanet	III	2017
+record	NCT01892345	orphanet	III	2018
+record		orphanet	III	2019
+record	NCT01892345	orphanet	III	2019
+record	NCT02003144	orphanet	III	2020
+record		orphanet	III	2021
+record	NCT04155424	orphanet	II/III	2022
+record		orphanet	III	2023
+record	NCT02003144	orphanet	III	2023
+record		orphanet	II/III	2023
+nct_present	NCT00904826	ixidn_trial_table		0

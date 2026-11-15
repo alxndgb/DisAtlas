@@ -1,0 +1,24 @@
+{
+ "canonical": "rows sorted by pair_id; one value per line, repr(float) or 'NA'; sha256 of the newline-joined text",
+ "columns": {
+  "Claude-Sci Opus 5.5|Claude-Sci-Opus-5-5_RUN1": "803cee0412197035917064271de239c24c211eecabfc44df80b7d462b9794a59",
+  "Claude-Sci Opus 5.5|Claude-Sci-Opus-5-5_RUN2": "6eec26c37e853505860425ad2b6ebbc6f147d7dcdc12e9938f77560a133cb8a9",
+  "Claude-Sci Opus 5.5|Claude-Sci-Opus-5-5_RUN3": "2548155e67ea5ffcd285dffa8c7b54996a76575da0ac03f97c06d826112078a9",
+  "Claude-Sci Opus 5.5|Claude-Sci-Opus-5-5_RUN4": "84d872adccb83722bef92f33de9d65407a6ad15ca01beeeba72a725473469575",
+  "Claude-Sci Opus 5.5|Claude-Sci-Opus-5-5_RUN5": "a9b08d93d6e1588a36cc8b2a002a4f2efbbc44e7a8740d09bb9ca332bc373643",
+  "Claude-Chat Opus 5.5|Claude-Chat-Opus-5-5": "fa28010840c17d8046d535bdc806eb0b7db6f37eeab1784bf2302ed4fdd90d2f",
+  "Claude-Chat Opus 5.5|Claude-Chat-Opus-5-5_RUN2": "42f43a00b5277fca8d031f5639cab700ffd6cec269a6763e62de24f618970273",
+  "Claude-Chat Opus 5.5|Claude-Chat-Opus-5-5_RUN3": "f9f208cfac7f314ca9c1121e72ca3753a4bd075f71db8d1e2fedc22eadc82013",
+  "Claude-Chat Opus 5.5|Claude-Chat-Opus-5-5_RUN4": "9379ce2e79147eaad0c1f740e5b7e4f6153678bf2ede216982378d5cd61c82c6",
+  "Claude-Chat Opus 5.5|Claude-Chat-Opus-5-5_RUN5": "e3cb3e8e1d80d50b790d34f2c69f9066865cc3b4e3e6ed773f7f23569fa99e69",
+  "Gemini Pro 3.1|Gemini-Pro-3-1-RUN1": "b319ffe8568ae218baab0b9b51b2e06742596bd5fbb1da6ae813cca4568043ae",
+  "Gemini Pro 3.1|Gemini-Pro-3-1-RUN2": "7412f4a5833efa2a929b64c673dd146a996ecb31fdbbee22daabfb5d705f6c23",
+  "Gemini Pro 3.1|Gemini-Pro-3-1-RUN3": "e3104c0d2e1dfd64158054592946f9db771c7fb81c88076764d005448e84f134",
+  "TxGNN published ckpt|DistMult": "42be24c3bbc8f62b5ce09b3bb8103b928133d9ddc3c099815b54d1d1053291da",
+  "Phylo|Phylo-Deepwalk-DDA-seed42": "b8b3f347d3d06f628c487ed2a045ce8a1549b8fee0dcda6ec82e8a89e73ceac9",
+  "Phylo|Phylo-Deepwalk-DDA-seed43": "dc369fe775702ac70d1844197fdfc6655af6d12a9d8380745b8ef4af46c30a09",
+  "Phylo|Phylo-Deepwalk-DDA-seed44": "b90de276b4b0ca0a4199fede05e0cb8990780f44f3e8f3afacc2dbe5c5201c84",
+  "Phylo|Phylo-Deepwalk-DDA-seed45": "cc5e94ae28a8a1c06fc8b7847cd2276c6364f62a5d949e74a37d714a5ed6ad1b",
+  "Phylo|Phylo-Deepwalk-DDA-seed46": "1f0f5575ec22304db2bf42e01e43ded9a08d462614baed8089f72930b8d75fc6"
+ }
+}

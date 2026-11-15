@@ -1,0 +1,54 @@
+# Final numbering (story markdown sha256 52e96bb6ce12, pandoc-crossref order). old_figure_number: numbering of the 2026-11-10 audit snapshot (release/audit_20261110), where old Figures S16 (negative-set realism) and S28 (compositionality) were removed. Old table numbers are not recorded here; use crossref_id. caption_excerpt: first sentence of the caption text next to the anchor (for some tables this is the table note).
+item	old_figure_number	crossref_id	caption_excerpt
+Figure 1	Figure 1	fig:introduction	Opportunities for machine learning to transfer knowledge between rare and common diseases.
+Figure 2	Figure 2	fig:dis2vec_pipeline	DisAtlas pipeline and its two evaluations.
+Figure 3	Figure 3	fig:ixidn_benchmark	The IxIDN-Matched benchmark.
+Figure 4	Figure 4	fig:evidence_trace	Separating matched disease pairs and tracing a similarity to its evidence.
+Figure 5	Figure 5	fig:disease_clustering	DisAtlas-Derived Embeddings Enable Disease Maps and Unsupervised Clustering of Rare and Common Disorders.
+Figure 6	Figure 6	fig:benchmark_ROC_DD	Cross-system comparison on the blinded IxIDN-Matched benchmark.
+Figure 7	Figure 7	fig:event_time	In a simulated prospective test from earlier evidence alone, diseases that DisAtlas places closer to a drug's known uses
+Figure S1	Figure S1	fig:SI_rare_disease_stats	Prevalence of rare diseases and sources of their genetic evidence.
+Figure S2	Figure S2	fig:SI_fda_schematic	Approved-repurposing benchmark.
+Figure S3	Figure S3	fig:SI_rare_common_stratified	DisAtlas performance by disease rarity on test-split pairs and by anchor disease.
+Figure S4	Figure S4	fig:SI_lca	Distance to Lowest Common Ancestor.
+Figure S5	Figure S5	fig:SI_graph_channels	How the DisAtlas training graph is built and scored.
+Figure S6	Figure S6	fig:SI_mechdist_embedding_schematic	From the MechDist network to DisAtlas embeddings and pair scores, and separation on the IxIDN-Matched benchmark.
+Figure S7	Figure S7	fig:SI_ixidn_matched_funnel	Construction of the IxIDN-Matched benchmark and its shortcut audit.
+Figure S8	Figure S8	fig:SI_pipeline_detailed	Detailed DisAtlas pipeline.
+Figure S9	Figure S9	fig:SI_mechanism_sensitivity	Broad and specific evidence channels of the MechDist network.
+Figure S10	Figure S10	fig:SI_degree_by_channel	Number of linked diseases (degree) in each graph of the MechDist network.
+Figure S11	Figure S11	fig:SI_threshold_sensitivity	Threshold sensitivity.
+Figure S12	Figure S12	fig:SI_ablation_31arm	Component ablations.
+Figure S13	Figure S13	fig:SI_uncertainty	Seed and sampling uncertainty on IxIDN-Matched.
+Figure S14	Figure S14	fig:SI_placement_confidence	Per-disease placement confidence:
+Figure S15	Figure S15	fig:SI_node_disjoint	Node-disjoint evaluation of DisAtlas.
+Figure S16	Figure S17	fig:SI_cluster_validation	Extended cluster validation.
+Figure S17	Figure S18	fig:SI_cluster_validation_layout	Display layout fidelity.
+Figure S18	Figure S19	fig:SI_rare_common_coverage	Rare–common neighbor coverage.
+Figure S19	Figure S20	fig:SI_event_time_auc_methods	Per-drug probability by method and decision year in the pre-registered matched analysis of the event-time holdout.
+Figure S20	Figure S21	fig:SI_event_time_hits10	Sensitivity analysis on the secondary endpoint, with and without matching.
+Figure S21	Figure S22	fig:SI_event_time_weighted	Post hoc sensitivity analysis weighted for disease popularity.
+Figure S22	Figure S23	fig:SI_popularity_strata	Later-trialed diseases ranked at fixed cutoff years, compared within groups of similar disease popularity.
+Figure S23	Figure S24	fig:SI_fda_channels	Broad and specific evidence channels on FDA-approved repurposing pairs.
+Figure S24	Figure S25	fig:SI_complement_milestones	Clinical milestones of complement inhibitors by drug and indication and DisAtlas similarity of the eculizumab indication
+Figure S25	Figure S26	fig:SI_mechanism_coverage_slices	Mechanism coverage of approved expansions in dated graph slices.
+Figure S26	Figure S27	fig:SI_explainability	Evidence behind DisAtlas and TxGNN predictions for three literature-established rare–common disease pairs.
+Table 1		tbl:protocols	Summary of cross-evidence generalization protocols applied across system categories.
+Table S1		tbl:SI_input_dis_gene_sources	Disease-gene association sources feeding the DisAtlas pipeline, from its integrated disease-gene association table.
+Table S2		tbl:SI_input_dis_symptom_sources	Disease-symptom association sources feeding the DisAtlas pipeline, from its integrated disease-symptom association table
+Table S3		tbl:SI_fig3a_trials	Drugs in trial is the number of drugs the trial tested.
+Table S4		tbl:SI_ontology_baseline	ORDO and HPO distance are correlated at Spearman 0.51–0.62.
+Table S5		tbl:SI_baselines	Contribution of the network and of its representation:
+Table S6		tbl:SI_llm_subgroups	Intervals are disease-cluster bootstrap 95% CIs (2,000 draws);
+Table S7		tbl:SI_heuristic_vs_ai	Intervals are disease-cluster bootstrap 95% CIs (2,000 draws);
+Table S8		tbl:SI_degree_controls	Intervals are disease-cluster bootstrap 95% CIs (2,000 draws, the same draws for every system);
+Table S9		tbl:SI_cluster_controls	Every disease pair is scored, so a top-ranked partner need not share an edge in the training graph;
+Table S10		tbl:SI_cluster_themes	Theme of each of the 55 clusters at K = 55, ordered by theme and cluster number.
+Table S11		tbl:SI_rare_common_strata	CIs are 95% disease-cluster bootstrap intervals;
+Table S12		tbl:SI_ra_myopathy_group	Scores of RA (MONDO:0008383) against the inflammatory myopathies and overlap disorders of the 13,021-disease index:
+Table S13		tbl:SI_event_time_deltas	In the combined-with-popularity set each reference score is also combined with popularity, and the popularity row compar
+Table S14		tbl:SI_event_time_subsets	Positive values mean DisAtlas ranks new trials better;
+Table S15		tbl:SI_nmo_ms_by_slice	There is no row for 1998.
+Table S16		tbl:SI_event_time_auc	Shared-gene, GO biological-process and HPO phenotype similarity use current annotation releases for every decision year,
+Table S17		tbl:SI_go_release	For the eculizumab case, values are the percentile of NMO in the PNH row against matched candidate diseases;
+Table S18		tbl:SI_trace_order	Intermediates that change in the Figure 4 evidence traces when walk-mass share is weighted by specificity.

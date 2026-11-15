@@ -1,0 +1,13 @@
+panel	stratum	disatlas_auroc	ci_lo	ci_hi	comparator1	comparator2	n_pos_or_anchors	n_neg_or_pairs	source
+a	Rare–rare	0.778	0.704	0.849	0.61	0.605	301	321	DisAtlas+CI: ccplus strata (IxIDN-Matched, Test split pairs, B=2000); HPO/GO: r4mc3 table
+a	Rare–common	0.939	0.872	0.984	0.574	0.505	68	279	DisAtlas+CI: ccplus strata (IxIDN-Matched, Test split pairs, B=2000); HPO/GO: r4mc3 table
+a	Common–common						122	3	test split; < 20 negatives, not plotted
+a	Allpairs	0.86	0.805	0.908	0.576	0.625	491	603	DisAtlas+CI: ccplus strata (IxIDN-Matched, Test split pairs, B=2000); HPO/GO: r4mc3 table
+b	Rare anchor, common partners	0.793	0.664	0.912	0.516	0.627	31	120	per-anchor table, anchor bootstrap B=2000 seed 4707 (on-disk B=1000 CI 0.665-0.910)
+b	Common anchor, rare partners	0.88	0.835	0.922	0.557	0.627	104	934	per-anchor table, anchor bootstrap B=2000 seed 4707 (on-disk B=1000 CI 0.835-0.920)
+b	Rare anchor, rare partners	0.738	0.71	0.764	0.587	0.676	452	2251	per-anchor table, anchor bootstrap B=2000 seed 4707 (on-disk B=1000 CI 0.709-0.762)
+b	Common anchor, common partners	0.831	0.713	0.934	0.533	0.489	22	213	per-anchor table, anchor bootstrap B=2000 seed 4707 (on-disk B=1000 CI 0.708-0.933)
+c	Rare–rare	0.757	0.708	0.801	0.598	delta 0.159 (0.097 to 0.218)	1284	1168	ccplus strata (IxIDN-Matched, All pairs, B=2000)
+c	Rare–common	0.893	0.829	0.937	0.648	delta 0.245 (0.147 to 0.345)	253	988	ccplus strata (IxIDN-Matched, All pairs, B=2000)
+c	Common–common	0.848	0.671	0.953	0.777	delta 0.071 (-0.115 to 0.301)	645	26	ccplus strata (IxIDN-Matched, All pairs, B=2000)
+c	Common–common, added negatives	0.856	0.755	0.932	0.883	delta -0.026 (-0.168 to 0.071)	645	335	ccplus strata (IxIDN-Matched-CC+, All pairs, B=2000)

@@ -1,0 +1,1125 @@
+term_id	name	under_mech_root
+MONDO:0000004	adrenocortical insufficiency	False
+MONDO:0000009	inherited bleeding disorder, platelet-type	False
+MONDO:0000015	classic complement early component deficiency	True
+MONDO:0000032	febrile seizures, familial	False
+MONDO:0000045	hypothyroidism, congenital, nongoitrous	False
+MONDO:0000062	isolated microphthalmia	False
+MONDO:0000066	mitochondrial respiratory chain complex deficiency	True
+MONDO:0000087	polymicrogyria	False
+MONDO:0000090	progressive external ophthalmoplegia with mitochondrial DNA deletions	True
+MONDO:0000148	pulmonary fibrosis and/or bone marrow failure, telomere-related	False
+MONDO:0000167	Huntington disease and related disorders	False
+MONDO:0000170	microphthalmia, isolated, with coloboma	False
+MONDO:0000171	muscular dystrophy-dystroglycanopathy, type A	False
+MONDO:0000226	mineral metabolism disease	False
+MONDO:0000270	lower respiratory tract disorder	False
+MONDO:0000314	primary bacterial infectious disease	False
+MONDO:0000358	orofacial cleft	False
+MONDO:0000359	spondylocostal dysostosis	False
+MONDO:0000376	respiratory system cancer	False
+MONDO:0000385	benign digestive system neoplasm	False
+MONDO:0000386	digestive system neuroendocrine tumor, grade 1/2	False
+MONDO:0000425	X-linked disease	False
+MONDO:0000426	autosomal dominant disease	False
+MONDO:0000429	autosomal genetic disease	False
+MONDO:0000437	cerebellar ataxia	False
+MONDO:0000448	paraganglioma	False
+MONDO:0000462	eye adnexa disorder	False
+MONDO:0000473	arterial disorder	False
+MONDO:0000490	glomerulosclerosis	False
+MONDO:0000508	syndromic intellectual disability	False
+MONDO:0000509	non-syndromic intellectual disability	False
+MONDO:0000510	synucleinopathy	True
+MONDO:0000569	autoimmune disorder of endocrine system	False
+MONDO:0000577	congenital anemia	False
+MONDO:0000591	intrinsic cardiomyopathy	False
+MONDO:0000592	specific developmental disorder	False
+MONDO:0000605	hypersensitivity reaction disease	False
+MONDO:0000621	immune system cancer	False
+MONDO:0000627	benign endocrine neoplasm	False
+MONDO:0000629	cardiovascular organ benign neoplasm	False
+MONDO:0000631	bone benign neoplasm	False
+MONDO:0000636	musculoskeletal system benign neoplasm	False
+MONDO:0000637	musculoskeletal system cancer	False
+MONDO:0000648	nervous system benign neoplasm	False
+MONDO:0000649	sensory system cancer	False
+MONDO:0000652	integumentary system benign neoplasm	False
+MONDO:0000653	integumentary system cancer	False
+MONDO:0000654	benign connective and soft tissue neoplasm	False
+MONDO:0000688	inborn organic aciduria	True
+MONDO:0000732	combined oxidative phosphorylation deficiency	True
+MONDO:0000761	syndrome caused by partial chromosomal deletion	False
+MONDO:0000762	syndrome caused by partial chromosomal duplication	False
+MONDO:0000766	corneal endothelial dystrophy	False
+MONDO:0000812	vertebral column disorder	False
+MONDO:0000824	congenital diarrhea	False
+MONDO:0000833	bone remodeling disease	False
+MONDO:0000904	complex cortical dysplasia with other brain malformations	False
+MONDO:0000931	endometrial disorder	False
+MONDO:0000942	corneal disorder	False
+MONDO:0000984	thalassemia	False
+MONDO:0000992	heart conduction disease	False
+MONDO:0001014	chronic leukemia	False
+MONDO:0001056	gastric cancer	False
+MONDO:0001071	intellectual disability	False
+MONDO:0001084	primary optic atrophy	False
+MONDO:0001142	salivary gland disorder	False
+MONDO:0001149	microcephaly	False
+MONDO:0001150	hydrocephalus	False
+MONDO:0001166	nephritis	False
+MONDO:0001176	lens disorder	False
+MONDO:0001220	hypoparathyroidism	False
+MONDO:0001223	parathyroid gland disorder	False
+MONDO:0001292	autonomic nervous system disorder	False
+MONDO:0001309	oculomotor nerve paralysis	False
+MONDO:0001328	thyroid hormone resistance syndrome	True
+MONDO:0001336	familial hyperlipidemia	True
+MONDO:0001358	bronchial disorder	False
+MONDO:0001377	vitreous syneresis	False
+MONDO:0001384	myopia	False
+MONDO:0001406	peripheral nervous system neoplasm	False
+MONDO:0001411	synostosis	False
+MONDO:0001416	female reproductive organ cancer	False
+MONDO:0001436	hemosiderosis	False
+MONDO:0001437	pulmonary alveolar proteinosis	False
+MONDO:0001475	neutropenia	False
+MONDO:0001476	coloboma	False
+MONDO:0001516	spinal muscular atrophy	False
+MONDO:0001531	blood coagulation disease	False
+MONDO:0001549	hemolytic-uremic syndrome	False
+MONDO:0001584	ocular motility disease	False
+MONDO:0001593	rectal disorder	False
+MONDO:0001609	agranulocytosis	False
+MONDO:0001627	dementia	False
+MONDO:0001639	deficiency anemia	False
+MONDO:0001657	brain cancer	False
+MONDO:0001673	diarrheal disease	False
+MONDO:0001700	megaloblastic anemia	False
+MONDO:0001703	color vision disorder	False
+MONDO:0001705	pure red-cell aplasia	False
+MONDO:0001713	inherited aplastic anemia	False
+MONDO:0001741	hyperparathyroidism	False
+MONDO:0001751	cholestasis	False
+MONDO:0001815	extrapyramidal and movement disease	False
+MONDO:0001889	ovarian dysfunction	False
+MONDO:0001933	endocrine pancreas disorder	False
+MONDO:0001941	blindness (disorder)	False
+MONDO:0001967	gonadal dysgenesis	False
+MONDO:0001982	Niemann-Pick disease	True
+MONDO:0002012	methylmalonic acidemia	True
+MONDO:0002022	disorder of orbital region	False
+MONDO:0002025	psychiatric disorder	False
+MONDO:0002037	pleural disorder	False
+MONDO:0002038	head and neck carcinoma	False
+MONDO:0002039	cognitive disorder	False
+MONDO:0002041	fungal infectious disease	False
+MONDO:0002049	thrombocytopenia	False
+MONDO:0002051	integumentary system disorder	False
+MONDO:0002078	heart septal defect	False
+MONDO:0002081	musculoskeletal system disorder	False
+MONDO:0002082	endocrine gland neoplasm	False
+MONDO:0002108	thyroid cancer	False
+MONDO:0002118	urinary system disorder	False
+MONDO:0002120	neuroendocrine carcinoma	False
+MONDO:0002129	bone cancer	False
+MONDO:0002135	optic nerve disorder	False
+MONDO:0002145	disorder of sexual differentiation	False
+MONDO:0002146	hypogonadism	False
+MONDO:0002149	reproductive system cancer	False
+MONDO:0002150	hypothalamic disorder	False
+MONDO:0002165	rectal neoplasm	False
+MONDO:0002175	degeneration of macula and posterior pole	False
+MONDO:0002177	hyperinsulinism	False
+MONDO:0002185	hyperostosis	False
+MONDO:0002211	B cell deficiency	True
+MONDO:0002220	tooth hard tissue disease	False
+MONDO:0002229	ovarian epithelial tumor	False
+MONDO:0002236	ocular cancer	False
+MONDO:0002242	coagulation protein disease	False
+MONDO:0002243	hemorrhagic disease	False
+MONDO:0002245	blood platelet disease	False
+MONDO:0002251	hepatitis	False
+MONDO:0002256	cervix disorder	False
+MONDO:0002259	gonadal disorder	False
+MONDO:0002263	female reproductive system disorder	False
+MONDO:0002267	obstructive lung disease	False
+MONDO:0002269	gastroenteritis	False
+MONDO:0002279	iron metabolism disease	False
+MONDO:0002280	anemia	False
+MONDO:0002281	macrocytic anemia	False
+MONDO:0002283	neuroaxonal dystrophy	False
+MONDO:0002289	iris disorder	False
+MONDO:0002297	epidermal appendage tumor	False
+MONDO:0002300	dermis tumor	False
+MONDO:0002305	thrombophilia	False
+MONDO:0002311	retinal vascular disorder	False
+MONDO:0002320	congenital nervous system disorder	False
+MONDO:0002321	sensory peripheral neuropathy	False
+MONDO:0002331	nephrosis	False
+MONDO:0002334	hematopoietic and lymphoid system neoplasm	False
+MONDO:0002350	familial nephrotic syndrome	False
+MONDO:0002356	pancreas disorder	False
+MONDO:0002366	autonomic nervous system neoplasm	False
+MONDO:0002367	kidney cancer	False
+MONDO:0002406	dermatitis	False
+MONDO:0002409	auditory system disorder	False
+MONDO:0002412	disorder of glycogen metabolism	True
+MONDO:0002427	cerebellar disorder	False
+MONDO:0002436	nasal disorder	False
+MONDO:0002442	long QT syndrome	False
+MONDO:0002459	type IV hypersensitivity disease	False
+MONDO:0002462	glomerulonephritis	False
+MONDO:0002467	inner ear disorder	False
+MONDO:0002468	hyperimmunoglobulin syndrome	True
+MONDO:0002473	cystic kidney disease	False
+MONDO:0002494	substance-related disorder	False
+MONDO:0002514	hepatobiliary neoplasm	False
+MONDO:0002515	hepatobiliary disorder	False
+MONDO:0002516	digestive system cancer	False
+MONDO:0002520	hepatic porphyria	False
+MONDO:0002525	inherited lipid metabolism disorder	True
+MONDO:0002531	skin neoplasm	False
+MONDO:0002532	squamous cell neoplasm	False
+MONDO:0002545	spinal cord disorder	False
+MONDO:0002547	nerve sheath neoplasm	False
+MONDO:0002561	lysosomal storage disease	True
+MONDO:0002567	tracheal disorder	False
+MONDO:0002602	central nervous system disorder	False
+MONDO:0002614	bone inflammation disease	False
+MONDO:0002616	mesenchymal cell neoplasm	False
+MONDO:0002635	periodontal disorder	False
+MONDO:0002637	histiocytosis	False
+MONDO:0002654	uterine disorder	False
+MONDO:0002657	breast disorder	False
+MONDO:0002661	uveal disorder	False
+MONDO:0002691	liver cancer	False
+MONDO:0002714	central nervous system cancer	False
+MONDO:0002715	uterine cancer	False
+MONDO:0002720	sella turcica neoplasm	False
+MONDO:0002724	mast cell neoplasm	False
+MONDO:0002771	pulmonary fibrosis	False
+MONDO:0002782	cranial nerve palsy	False
+MONDO:0002785	skull base neoplasm	False
+MONDO:0002816	adrenal cortex disorder	False
+MONDO:0002869	heart valve disorder	False
+MONDO:0002884	nail disorder	False
+MONDO:0002887	bile duct disorder	False
+MONDO:0002898	skin cancer	False
+MONDO:0002908	glucose metabolism disease	False
+MONDO:0002917	disorder of pilosebaceous unit	False
+MONDO:0002921	congenital structural myopathy	False
+MONDO:0002933	osteosclerosis	False
+MONDO:0002977	autoimmune disorder of the nervous system	False
+MONDO:0003004	macular degeneration	False
+MONDO:0003037	hypotrichosis	False
+MONDO:0003081	thalamic disorder	False
+MONDO:0003105	prostate disorder	False
+MONDO:0003150	male reproductive system disorder	False
+MONDO:0003182	anterior horn disorder	False
+MONDO:0003225	bone marrow disorder	False
+MONDO:0003240	thyroid gland disorder	False
+MONDO:0003274	thoracic cancer	False
+MONDO:0003381	pituitary gland disorder	False
+MONDO:0003382	eyelid disorder	False
+MONDO:0003406	sleep-wake disorder	False
+MONDO:0003409	colonic disorder	False
+MONDO:0003425	ophthalmoplegia	False
+MONDO:0003441	dystonic disorder	False
+MONDO:0003538	precursor lymphoblastic lymphoma/leukemia	False
+MONDO:0003546	third cranial nerve disorder	False
+MONDO:0003569	cranial nerve neuropathy	False
+MONDO:0003608	optic atrophy	False
+MONDO:0003620	peripheral nervous system disorder	False
+MONDO:0003664	hemolytic anemia	False
+MONDO:0003689	familial hemolytic anemia	False
+MONDO:0003749	esophageal disorder	False
+MONDO:0003757	paraplegia	False
+MONDO:0003778	inborn error of immunity	True
+MONDO:0003785	leukopenia	False
+MONDO:0003832	complement deficiency	True
+MONDO:0003900	connective tissue disorder	False
+MONDO:0003916	overnutrition	False
+MONDO:0003939	muscle tissue disorder	False
+MONDO:0003996	basal ganglia disorder	False
+MONDO:0004038	dental enamel hypoplasia	False
+MONDO:0004069	inborn mitochondrial metabolism disorder	True
+MONDO:0004095	B-cell neoplasm	False
+MONDO:0004139	normocytic anemia	False
+MONDO:0004251	small intestine neoplasm	False
+MONDO:0004298	stomach disorder	False
+MONDO:0004335	digestive system disorder	False
+MONDO:0004425	hyperthyroidism	False
+MONDO:0004580	retinal degeneration	False
+MONDO:0004588	night blindness	False
+MONDO:0004603	collagenopathy	False
+MONDO:0004643	myeloid leukemia	False
+MONDO:0004669	salivary gland cancer	False
+MONDO:0004670	lupus erythematosus	False
+MONDO:0004689	inborn metal metabolism disorder	True
+MONDO:0004736	inborn disorder of amino acid metabolism	True
+MONDO:0004737	homocystinuria	True
+MONDO:0004739	urea cycle disorder	True
+MONDO:0004746	myopathy of extraocular muscle	False
+MONDO:0004805	leukocyte disorder	False
+MONDO:0004843	pathologic nystagmus	False
+MONDO:0004860	vitreous disorder	False
+MONDO:0004867	upper respiratory tract disorder	False
+MONDO:0004868	biliary tract disorder	False
+MONDO:0004884	eye degenerative disorder	False
+MONDO:0004892	refractive error	False
+MONDO:0004907	alopecia	False
+MONDO:0004949	neoplasm of mature B-cells	False
+MONDO:0004950	gastric carcinoma	False
+MONDO:0004957	mucinous adenocarcinoma	False
+MONDO:0004967	acute lymphoblastic leukemia	False
+MONDO:0004970	adenocarcinoma	False
+MONDO:0004972	adenoma	False
+MONDO:0004975	Alzheimer disease	True
+MONDO:0004976	amyotrophic lateral sclerosis	False
+MONDO:0004981	atrial fibrillation	False
+MONDO:0004983	spermatogenic failure	False
+MONDO:0004988	breast adenocarcinoma	False
+MONDO:0004989	breast carcinoma	False
+MONDO:0004992	cancer	False
+MONDO:0004993	carcinoma	False
+MONDO:0004994	cardiomyopathy	False
+MONDO:0004995	cardiovascular disorder	False
+MONDO:0005002	chronic obstructive pulmonary disease	False
+MONDO:0005015	diabetes mellitus	False
+MONDO:0005020	intestinal disorder	False
+MONDO:0005021	dilated cardiomyopathy	False
+MONDO:0005027	epilepsy	False
+MONDO:0005039	reproductive system disorder	False
+MONDO:0005040	germ cell tumor	False
+MONDO:0005041	glaucoma	False
+MONDO:0005044	hypertensive disorder	False
+MONDO:0005045	hypertrophic cardiomyopathy	False
+MONDO:0005046	immune system disorder	False
+MONDO:0005047	infertility disorder	False
+MONDO:0005059	leukemia	False
+MONDO:0005062	lymphoma	False
+MONDO:0005065	mesothelioma	False
+MONDO:0005066	metabolic disease	False
+MONDO:0005070	neoplasm	False
+MONDO:0005073	melanocytic nevus	False
+MONDO:0005079	polyp	False
+MONDO:0005084	mental disorder	False
+MONDO:0005086	renal cell carcinoma	False
+MONDO:0005087	respiratory system disorder	False
+MONDO:0005089	sarcoma	False
+MONDO:0005093	skin disorder	False
+MONDO:0005096	squamous cell carcinoma	False
+MONDO:0005105	melanoma	False
+MONDO:0005108	viral infectious disease	False
+MONDO:0005113	bacterial infectious disease	False
+MONDO:0005115	temporal lobe epilepsy	False
+MONDO:0005129	cataract	False
+MONDO:0005135	parasitic infectious disease	False
+MONDO:0005137	nutritional disorder	False
+MONDO:0005138	lung carcinoma	False
+MONDO:0005144	familial amyotrophic lateral sclerosis	False
+MONDO:0005149	pulmonary hypertension	False
+MONDO:0005150	age-related macular degeneration	False
+MONDO:0005151	endocrine system disorder	False
+MONDO:0005152	hypopituitarism	False
+MONDO:0005154	liver disorder	False
+MONDO:0005156	encephalomyelitis	False
+MONDO:0005157	lymphoid neoplasm	False
+MONDO:0005165	benign neoplasm	False
+MONDO:0005168	neoplasm of immature B and T cells	False
+MONDO:0005169	neoplasm of mature T-cells or NK-cells	False
+MONDO:0005170	myeloid neoplasm	False
+MONDO:0005172	skeletal system disorder	False
+MONDO:0005180	Parkinson disease	False
+MONDO:0005181	progressive external ophthalmoplegia	True
+MONDO:0005201	restrictive cardiomyopathy	False
+MONDO:0005206	renal carcinoma	False
+MONDO:0005213	uterine carcinoma	False
+MONDO:0005217	familial cardiomyopathy	False
+MONDO:0005233	non-small cell lung carcinoma	False
+MONDO:0005240	kidney disorder	False
+MONDO:0005244	peripheral neuropathy	False
+MONDO:0005249	pneumonia	False
+MONDO:0005265	inflammatory bowel disease	False
+MONDO:0005267	heart disorder	False
+MONDO:0005271	allergic disease	False
+MONDO:0005275	lung disorder	False
+MONDO:0005283	retinal disorder	False
+MONDO:0005294	peripheral vascular disease	False
+MONDO:0005304	biliary tract neoplasm	False
+MONDO:0005308	ciliopathy	True
+MONDO:0005328	eye disorder	False
+MONDO:0005334	hereditary nephritis	False
+MONDO:0005335	colorectal neoplasm	False
+MONDO:0005336	myopathy	False
+MONDO:0005365	hearing loss disorder	False
+MONDO:0005372	male infertility	False
+MONDO:0005374	bone marrow neoplasm	False
+MONDO:0005377	nephrotic syndrome	False
+MONDO:0005380	osteonecrosis	False
+MONDO:0005381	bone disorder	False
+MONDO:0005384	focal epilepsy	False
+MONDO:0005385	vascular disorder	False
+MONDO:0005387	primary ovarian failure	False
+MONDO:0005395	movement disorder	False
+MONDO:0005401	colonic neoplasm	False
+MONDO:0005402	lymphoid leukemia	False
+MONDO:0005420	hypothyroidism	False
+MONDO:0005429	prion disease	False
+MONDO:0005449	conduction system disorder	False
+MONDO:0005453	congenital heart disease	False
+MONDO:0005477	ventricular tachycardia	False
+MONDO:0005484	colorectal adenoma	False
+MONDO:0005485	psychotic disorder	False
+MONDO:0005486	tooth agenesis	False
+MONDO:0005492	urticaria	False
+MONDO:0005495	adrenal gland disorder	False
+MONDO:0005497	bone development disease	False
+MONDO:0005499	brain glioma	False
+MONDO:0005500	congenital disorder of glycosylation type I	True
+MONDO:0005501	congenital disorder of glycosylation type II	True
+MONDO:0005503	developmental disorder of mental health	False
+MONDO:0005515	oral cavity cancer	False
+MONDO:0005516	osteochondrodysplasia	False
+MONDO:0005520	rickets	False
+MONDO:0005523	steroid inherited metabolic disorder	True
+MONDO:0005528	inborn vitamin metabolic disorder	True
+MONDO:0005549	renal cell adenocarcinoma	False
+MONDO:0005550	infectious disease	False
+MONDO:0005552	ocular vascular disorder	False
+MONDO:0005554	rheumatic disorder	False
+MONDO:0005557	calcium metabolic disease	False
+MONDO:0005558	ovarian disorder	False
+MONDO:0005559	neurodegenerative disease	False
+MONDO:0005560	brain disorder	False
+MONDO:0005561	aortic disorder	False
+MONDO:0005564	embryonal neoplasm	False
+MONDO:0005570	hematologic disorder	False
+MONDO:0005571	polycythemia	False
+MONDO:0005574	tauopathy	True
+MONDO:0005575	colorectal cancer	False
+MONDO:0005578	arthritic joint disease	False
+MONDO:0005586	head and neck neoplasm	False
+MONDO:0005620	cerebral amyloid angiopathy	True
+MONDO:0005626	epithelial neoplasm	False
+MONDO:0005627	head and neck cancer	False
+MONDO:0005712	congenital nystagmus	False
+MONDO:0005803	hyperinsulinemic hypoglycemia	True
+MONDO:0005814	intestinal cancer	False
+MONDO:0005833	lymphatic system disorder	False
+MONDO:0005836	male reproductive organ cancer	False
+MONDO:0005853	malignant mixed neoplasm	False
+MONDO:0005872	nervous system cancer	False
+MONDO:0005917	placenta disorder	False
+MONDO:0006025	autosomal recessive disease	False
+MONDO:0006026	urinary bladder disorder	False
+MONDO:0006054	reproductive system neoplasm	False
+MONDO:0006058	Wilms tumor	False
+MONDO:0006116	breast carcinoma by gene expression profile	False
+MONDO:0006130	central nervous system neoplasm	False
+MONDO:0006180	digestive system adenoma	False
+MONDO:0006181	digestive system carcinoma	False
+MONDO:0006209	fibroblastic neoplasm	False
+MONDO:0006256	invasive breast carcinoma	False
+MONDO:0006290	malignant germ cell tumor	False
+MONDO:0006295	malignant urinary system neoplasm	False
+MONDO:0006373	pituitary gland adenoma	False
+MONDO:0006424	soft tissue neoplasm	False
+MONDO:0006496	palsy	False
+MONDO:0006500	hemangioma	False
+MONDO:0006506	congenital nonspherocytic hemolytic anemia	False
+MONDO:0006507	hereditary hemochromatosis	True
+MONDO:0006509	papillary carcinoma	False
+MONDO:0006510	renal tubular transport disease	False
+MONDO:0006541	epidermolysis bullosa	False
+MONDO:0006543	epidermolysis bullosa dystrophica	False
+MONDO:0006566	keratosis	False
+MONDO:0006573	lipodystrophy	False
+MONDO:0006590	palmoplantar keratosis	False
+MONDO:0006602	porokeratosis	False
+MONDO:0006615	sweat gland disorder	False
+MONDO:0006617	vesiculobullous skin disease	False
+MONDO:0006640	adrenal gland hyperfunction	False
+MONDO:0006664	atrial septal defect	False
+MONDO:0006693	cerebral arterial disease	False
+MONDO:0006799	hypothalamic neoplasm	False
+MONDO:0006808	intracranial arterial disease	False
+MONDO:0006816	arthropathy	False
+MONDO:0006856	mesothelial neoplasm	False
+MONDO:0006858	mouth disorder	False
+MONDO:0006873	nutritional deficiency disease	False
+MONDO:0006999	tooth disorder	False
+MONDO:0007179	autoimmune disease	False
+MONDO:0007254	breast cancer	False
+MONDO:0007263	cardiac rhythm disease	False
+MONDO:0007803	multiple system atrophy	True
+MONDO:0007834	islet cell adenomatosis	False
+MONDO:0007950	mastocytosis	False
+MONDO:0008170	ovarian cancer	False
+MONDO:0008315	prostate cancer	False
+MONDO:0008903	lung cancer	False
+MONDO:0008947	bilateral striopallidodentate calcinosis	False
+MONDO:0009299	46 XX gonadal dysgenesis	False
+MONDO:0009332	congenital hematological disorder	False
+MONDO:0009563	maple syrup urine disease	True
+MONDO:0009627	Galloway-Mowat syndrome	False
+MONDO:0009637	inborn mitochondrial myopathy	True
+MONDO:0009831	malignant pancreatic neoplasm	False
+MONDO:0010481	angioedema	False
+MONDO:0010643	acute leukemia	False
+MONDO:0010765	46,XY complete gonadal dysgenesis	False
+MONDO:0011057	cerebrovascular disorder	False
+MONDO:0011060	early-onset non-syndromic cataract	False
+MONDO:0011122	obesity disorder	False
+MONDO:0011348	non-syndromic polydactyly	False
+MONDO:0011679	craniosynostosis syndrome, autosomal recessive	False
+MONDO:0011962	endometrial cancer	False
+MONDO:0013099	combined pituitary hormone deficiencies, genetic form	False
+MONDO:0014769	inherited oocyte maturation defect	False
+MONDO:0015074	thyroid tumor	False
+MONDO:0015075	thyroid gland carcinoma	False
+MONDO:0015087	autosomal dominant complex spastic paraplegia	False
+MONDO:0015126	polyendocrinopathy	False
+MONDO:0015127	pituitary deficiency	False
+MONDO:0015128	primary adrenal insufficiency	False
+MONDO:0015129	chronic primary adrenal insufficiency	False
+MONDO:0015131	combined immunodeficiency	False
+MONDO:0015134	constitutional neutropenia	False
+MONDO:0015137	periodic fever syndrome	False
+MONDO:0015149	pure hereditary spastic paraplegia	False
+MONDO:0015150	complex hereditary spastic paraplegia	False
+MONDO:0015152	autosomal recessive limb-girdle muscular dystrophy	False
+MONDO:0015159	multiple congenital anomalies/dysmorphic syndrome-intellectual disability	False
+MONDO:0015160	multiple congenital anomalies/dysmorphic syndrome-variable intellectual disability syndrome	False
+MONDO:0015161	multiple congenital anomalies/dysmorphic syndrome without intellectual disability	False
+MONDO:0015168	arthrogryposis multiplex congenita	False
+MONDO:0015185	intestinal polyposis syndrome	False
+MONDO:0015194	sideroblastic anemia	False
+MONDO:0015225	arthrogryposis syndrome	False
+MONDO:0015229	Bardet-Biedl syndrome	True
+MONDO:0015244	autosomal recessive cerebellar ataxia	False
+MONDO:0015253	Diamond-Blackfan anemia	False
+MONDO:0015263	Brugada syndrome	False
+MONDO:0015279	chronic mucocutaneous candidiasis	True
+MONDO:0015286	congenital disorder of glycosylation	True
+MONDO:0015327	developmental anomaly of metabolic origin	False
+MONDO:0015333	progeroid syndrome	False
+MONDO:0015338	syndromic craniosynostosis	False
+MONDO:0015356	hereditary neoplastic syndrome	False
+MONDO:0015358	hereditary motor and sensory neuropathy	False
+MONDO:0015362	neuronopathy, distal hereditary motor, autosomal dominant	False
+MONDO:0015363	neuronopathy, distal hereditary motor, autosomal recessive	False
+MONDO:0015364	hereditary sensory and autonomic neuropathy	False
+MONDO:0015369	Joubert syndrome and related disorders	False
+MONDO:0015375	orofaciodigital syndrome	False
+MONDO:0015427	paroxysmal dyskinesia	False
+MONDO:0015447	differentiated thyroid carcinoma	False
+MONDO:0015448	mitochondrial complex III deficiency	True
+MONDO:0015452	Coffin-Siris syndrome	False
+MONDO:0015461	short rib-polydactyly syndrome	False
+MONDO:0015469	craniosynostosis	False
+MONDO:0015483	mandibulofacial dysostosis	False
+MONDO:0015494	isolated dystonia	False
+MONDO:0015498	oromandibular-limb anomalies syndrome	False
+MONDO:0015514	hereditary endocrine growth disease	False
+MONDO:0015517	common variable immunodeficiency	True
+MONDO:0015531	non-Langerhans cell histiocytosis	False
+MONDO:0015540	hemophagocytic syndrome	False
+MONDO:0015541	hereditary hemophagocytic lymphohistiocytosis	True
+MONDO:0015547	hereditary dementia	False
+MONDO:0015548	Huntington disease-like syndrome	False
+MONDO:0015626	Charcot-Marie-Tooth disease	False
+MONDO:0015650	epilepsy syndrome	False
+MONDO:0015653	monogenic epilepsy	False
+MONDO:0015699	immunodeficiency due to a classical component pathway complement deficiency	True
+MONDO:0015756	myeloid hemopathy	False
+MONDO:0015757	lymphoid hemopathy	False
+MONDO:0015759	B-cell non-Hodgkin lymphoma	False
+MONDO:0015760	T-cell non-Hodgkin lymphoma	False
+MONDO:0015762	progressive familial intrahepatic cholestasis	True
+MONDO:0015770	congenital hypogonadotropic hypogonadism	False
+MONDO:0015780	dyskeratosis congenita	False
+MONDO:0015802	autosomal dominant non-syndromic intellectual disability	False
+MONDO:0015898	adrenogenital syndrome	False
+MONDO:0015905	syndromic dyslipidemia	True
+MONDO:0015909	aplastic anemia	False
+MONDO:0015924	pulmonary arterial hypertension	False
+MONDO:0015925	interstitial lung disease	False
+MONDO:0015929	thoracic malformation	False
+MONDO:0015947	inherited ichthyosis	False
+MONDO:0015951	hereditary photodermatosis	False
+MONDO:0015962	inherited renal tubular disease	False
+MONDO:0015967	monogenic diabetes	True
+MONDO:0015974	severe combined immunodeficiency	False
+MONDO:0015977	agammaglobulinemia	True
+MONDO:0015978	functional neutrophil defect	False
+MONDO:0015993	cone-rod dystrophy	False
+MONDO:0016056	isolated congenital microcephaly	False
+MONDO:0016058	paroxysmal dystonia	False
+MONDO:0016073	syndromic microphthalmia	False
+MONDO:0016106	progressive muscular dystrophy	False
+MONDO:0016108	autosomal dominant distal myopathy	False
+MONDO:0016112	hereditary inclusion-body myopathy	False
+MONDO:0016113	bulbospinal muscular atrophy	False
+MONDO:0016120	myotonic syndrome	False
+MONDO:0016139	qualitative or quantitative protein defects in neuromuscular diseases	False
+MONDO:0016155	qualitative or quantitative defects of protein involved in O-glycosylation of alpha-dystroglycan	True
+MONDO:0016165	hereditary hypoparathyroidism	False
+MONDO:0016175	cutis laxa	False
+MONDO:0016191	neuromuscular disease caused by qualitative or quantitative defects of titin	False
+MONDO:0016193	neuromuscular disease caused by qualitative or quantitative defects of alpha-actin	False
+MONDO:0016194	neuromuscular disease caused by qualitative or quantitative defects of nebulin	False
+MONDO:0016227	hereditary episodic ataxia	False
+MONDO:0016231	capillary malformation	False
+MONDO:0016293	congenital stationary night blindness	False
+MONDO:0016295	neuronal ceroid lipofuscinosis	True
+MONDO:0016296	holoprosencephaly	False
+MONDO:0016333	familial dilated cardiomyopathy	False
+MONDO:0016340	familial restrictive cardiomyopathy	False
+MONDO:0016342	familial isolated arrhythmogenic right ventricular dysplasia	False
+MONDO:0016387	mitochondrial oxidative phosphorylation disorder	True
+MONDO:0016391	neonatal diabetes mellitus	True
+MONDO:0016408	permanent congenital hypothyroidism	False
+MONDO:0016462	isolated agammaglobulinemia	True
+MONDO:0016463	syndromic agammaglobulinemia	True
+MONDO:0016535	hypohidrotic ectodermal dysplasia	False
+MONDO:0016537	lymphoproliferative syndrome	True
+MONDO:0016575	primary ciliary dyskinesia	True
+MONDO:0016587	arrhythmogenic right ventricular cardiomyopathy	False
+MONDO:0016624	hereditary anemia	False
+MONDO:0016642	meningioma	False
+MONDO:0016648	multiple epiphyseal dysplasia	False
+MONDO:0016660	autosomal recessive primary microcephaly	False
+MONDO:0016743	tumor of meninges	False
+MONDO:0016749	tumor of cranial and spinal nerves	False
+MONDO:0016761	spondyloepiphyseal dysplasia	False
+MONDO:0016763	spondylometaphyseal dysplasia	False
+MONDO:0016764	isolated anophthalmia-microphthalmia syndrome	False
+MONDO:0016789	pyruvate metabolism disorder	True
+MONDO:0016817	Meier-Gorlin syndrome	False
+MONDO:0016830	Emery-Dreifuss muscular dystrophy	False
+MONDO:0016867	partial deletion of chromosome 2	False
+MONDO:0016878	partial deletion of chromosome 16	False
+MONDO:0016913	partial deletion of the long arm of chromosome 15	False
+MONDO:0016971	limb-girdle muscular dystrophy	False
+MONDO:0017014	interstitial lung disease specific to childhood	False
+MONDO:0017103	encephaloclastic disorder	False
+MONDO:0017145	beta-thalassemia and related diseases	False
+MONDO:0017182	familial hyperinsulinism	True
+MONDO:0017198	osteopetrosis	False
+MONDO:0017265	autosomal recessive congenital ichthyosis	False
+MONDO:0017266	keratinopathic ichthyosis	False
+MONDO:0017276	frontotemporal dementia	False
+MONDO:0017279	young-onset Parkinson disease	False
+MONDO:0017290	familial intrahepatic cholestasis	True
+MONDO:0017303	neuromuscular disease caused by qualitative or quantitative defects of tropomyosin	False
+MONDO:0017305	syndromic oculocutaneous albinism	True
+MONDO:0017306	disorder of phenylalanine metabolism	True
+MONDO:0017307	disorder of tyrosine metabolism	True
+MONDO:0017310	Marfan and Marfan-related disorder	False
+MONDO:0017338	fatal multiple mitochondrial dysfunctions syndrome	True
+MONDO:0017341	virus associated tumor	False
+MONDO:0017342	Epstein-Barr virus-related tumor	False
+MONDO:0017355	inborn disorder of proline metabolism	True
+MONDO:0017359	3-methylglutaconic aciduria	True
+MONDO:0017436	lethal congenital contracture syndrome	False
+MONDO:0017594	indolent B-cell non-Hodgkin lymphoma	False
+MONDO:0017595	aggressive B-cell non-Hodgkin lymphoma	False
+MONDO:0017610	epidermolysis bullosa simplex	False
+MONDO:0017611	pituitary tumor	False
+MONDO:0017612	junctional epidermolysis bullosa	False
+MONDO:0017666	diffuse palmoplantar keratoderma	False
+MONDO:0017672	focal palmoplantar keratoderma	False
+MONDO:0017688	disorder of glycolysis	True
+MONDO:0017704	familial partial epilepsy	False
+MONDO:0017706	disorder of carbohydrate transmembrane transport and absorption	True
+MONDO:0017713	disorder of fatty acid oxidation and ketogenesis	True
+MONDO:0017719	gangliosidosis	True
+MONDO:0017720	GM2 gangliosidosis	True
+MONDO:0017731	glycoproteinosis	True
+MONDO:0017739	disorder of lysosomal-related organelles	True
+MONDO:0017740	disorder of protein N-glycosylation	True
+MONDO:0017741	disorder of protein O-glycosylation	True
+MONDO:0017747	disorder of fucoglycosan synthesis	True
+MONDO:0017748	inborn disorder of glycosphingolipid and glycosylphosphatidylinositol anchor glycosylation	True
+MONDO:0017749	disorder of multiple glycosylation	True
+MONDO:0017754	inborn disorder of porphyrin metabolism	True
+MONDO:0017755	inborn disorder of bilirubin metabolism	True
+MONDO:0017757	disorder of metabolite absorption and transport	True
+MONDO:0017758	disorder of vitamin and non-protein cofactor absorption and transport	True
+MONDO:0017761	disorder of mineral absorption and transport	True
+MONDO:0017763	disorder of iron metabolism and transport	True
+MONDO:0017765	disorder of magnesium transport	True
+MONDO:0017842	Senior-Loken syndrome	True
+MONDO:0017845	spastic ataxia	False
+MONDO:0017855	T-B- severe combined immunodeficiency	False
+MONDO:0017953	hereditary periodic fever syndrome	False
+MONDO:0017986	disorder of plasmalogens biosynthesis	True
+MONDO:0018037	hyper-IgE syndrome	True
+MONDO:0018053	trichothiodystrophy	False
+MONDO:0018054	familial atrial fibrillation	False
+MONDO:0018078	soft tissue sarcoma	False
+MONDO:0018094	Waardenburg syndrome	False
+MONDO:0018100	familial primary hypomagnesemia	True
+MONDO:0018102	corneal dystrophy	False
+MONDO:0018117	disorder of phospholipids, sphingolipids and fatty acids biosynthesis	True
+MONDO:0018134	disorder of melanin metabolism	True
+MONDO:0018151	coenzyme Q10 deficiency	True
+MONDO:0018158	mitochondrial DNA depletion syndrome	True
+MONDO:0018170	idiopathic nephrotic syndrome	False
+MONDO:0018174	hereditary glaucoma	False
+MONDO:0018230	skeletal dysplasia	False
+MONDO:0018234	dysostosis	False
+MONDO:0018237	acrofacial dysostosis	False
+MONDO:0018276	muscular dystrophy-dystroglycanopathy	False
+MONDO:0018282	neuromuscular disease caused by qualitative or quantitative defects of alpha-dystroglycan	False
+MONDO:0018307	neurodegeneration with brain iron accumulation	True
+MONDO:0018383	osteonecrosis of genetic origin	False
+MONDO:0018424	inherited lipoic acid biosynthesis defect	True
+MONDO:0018479	congenital adrenal hyperplasia	True
+MONDO:0018531	carcinoma of liver and intrahepatic biliary tract	False
+MONDO:0018542	severe congenital neutropenia	False
+MONDO:0018555	hypogonadotropic hypogonadism	False
+MONDO:0018570	hypophosphatasia	True
+MONDO:0018612	congenital hypothyroidism	False
+MONDO:0018614	undetermined early-onset epileptic encephalopathy	True
+MONDO:0018630	hereditary nonpolyposis colon cancer	False
+MONDO:0018634	hereditary amyloidosis	True
+MONDO:0018638	pseudohypoaldosteronism	False
+MONDO:0018660	hemophilia	False
+MONDO:0018677	visceral heterotaxy	False
+MONDO:0018751	hereditary otorhinolaryngologic disease	False
+MONDO:0018762	non-acquired combined pituitary hormone deficiency	False
+MONDO:0018770	Jeune syndrome	True
+MONDO:0018772	Joubert syndrome	True
+MONDO:0018778	intermediate Charcot-Marie-Tooth disease	False
+MONDO:0018795	syndromic constitutional thrombocytopenia	False
+MONDO:0018800	Kallmann syndrome	False
+MONDO:0018838	lissencephaly spectrum disorders	False
+MONDO:0018866	Aicardi-Goutieres syndrome	True
+MONDO:0018874	acute myeloid leukemia	False
+MONDO:0018881	myelodysplastic syndrome	False
+MONDO:0018882	vasculitis	False
+MONDO:0018894	distal hereditary motor neuropathy	False
+MONDO:0018901	left ventricular noncompaction	False
+MONDO:0018905	diffuse large B-cell lymphoma	False
+MONDO:0018908	non-Hodgkin lymphoma	False
+MONDO:0018910	oculocutaneous albinism	True
+MONDO:0018911	maturity-onset diabetes of the young	True
+MONDO:0018921	Meckel syndrome	True
+MONDO:0018939	muscle-eye-brain disease	False
+MONDO:0018940	congenital myasthenic syndrome	False
+MONDO:0018943	myofibrillar myopathy	False
+MONDO:0018949	distal myopathy	False
+MONDO:0018958	nemaline myopathy	False
+MONDO:0018993	Charcot-Marie-Tooth disease type 2	False
+MONDO:0018995	Charcot-Marie-Tooth disease type 4	False
+MONDO:0018997	Noonan syndrome	True
+MONDO:0018998	Leber congenital amaurosis	False
+MONDO:0019005	nephronophthisis	False
+MONDO:0019006	familial idiopathic steroid-resistant nephrotic syndrome	False
+MONDO:0019010	congenital isolated hyperinsulinism	True
+MONDO:0019019	osteogenesis imperfecta	False
+MONDO:0019026	autosomal recessive osteopetrosis	False
+MONDO:0019040	chromosomal disorder	False
+MONDO:0019042	multiple congenital anomalies/dysmorphic syndrome	False
+MONDO:0019046	leukodystrophy	False
+MONDO:0019050	inherited hemoglobinopathy	False
+MONDO:0019052	inborn errors of metabolism	True
+MONDO:0019053	peroxisomal disease	True
+MONDO:0019054	congenital limb malformation	False
+MONDO:0019056	neuromuscular disease	False
+MONDO:0019060	bone neoplasm	False
+MONDO:0019064	hereditary spastic paraplegia	False
+MONDO:0019065	amyloidosis	True
+MONDO:0019072	intrahepatic cholestasis	False
+MONDO:0019079	proximal spinal muscular atrophy	False
+MONDO:0019118	inherited retinal dystrophy	False
+MONDO:0019119	muscular channelopathy	True
+MONDO:0019142	inherited porphyria	True
+MONDO:0019146	inherited susceptibility to mycobacterial diseases	False
+MONDO:0019171	familial long QT syndrome	False
+MONDO:0019175	primary lymphedema	False
+MONDO:0019181	non-syndromic X-linked intellectual disability	False
+MONDO:0019189	inborn disorder of amino acid and other organic acid metabolism	True
+MONDO:0019200	retinitis pigmentosa	False
+MONDO:0019214	inborn carbohydrate metabolic disorder	True
+MONDO:0019215	classic organic aciduria	True
+MONDO:0019216	inborn disorder of amino acid transport	True
+MONDO:0019220	inborn disorder of cobalamin metabolism and transport	True
+MONDO:0019222	inborn disorder of methionine cycle and sulfur amino acid metabolism	True
+MONDO:0019223	disorder of fatty acid and ketone body metabolism	True
+MONDO:0019225	disorder of gluconeogenesis	True
+MONDO:0019230	inborn disorder of ornithine or proline metabolism	True
+MONDO:0019234	peroxisome biogenesis disorder	True
+MONDO:0019235	inborn disorder of phenylalanine and tyrosine metabolism	True
+MONDO:0019236	inborn disorder of purine metabolism	True
+MONDO:0019238	inborn disorder of pyrimidine metabolism	True
+MONDO:0019239	inborn disorder of serine family metabolism	True
+MONDO:0019240	sterol biosynthesis disorder	True
+MONDO:0019242	inborn disorder of branched-chain amino acid metabolism	True
+MONDO:0019243	inborn disorder of energy metabolism	True
+MONDO:0019245	lysosomal lipid storage disorder	True
+MONDO:0019246	inborn disorder of lysosomal amino acid transport	True
+MONDO:0019248	mucolipidosis	True
+MONDO:0019249	mucopolysaccharidosis	True
+MONDO:0019250	inborn disorder of biogenic amine metabolism and transport	True
+MONDO:0019251	oligosaccharidosis	True
+MONDO:0019254	inborn disorder of purine or pyrimidine metabolism	True
+MONDO:0019255	sphingolipidosis	True
+MONDO:0019256	sterol metabolism disorder	True
+MONDO:0019268	epidermal disease	False
+MONDO:0019269	ichthyosis	False
+MONDO:0019270	erythrokeratoderma	False
+MONDO:0019272	hereditary palmoplantar keratoderma	False
+MONDO:0019276	inherited epidermolysis bullosa	False
+MONDO:0019278	hair anomaly	False
+MONDO:0019280	hypertrichosis	False
+MONDO:0019284	inherited isolated nail anomaly	False
+MONDO:0019287	ectodermal dysplasia syndrome	False
+MONDO:0019288	skin pigmentation disorder	False
+MONDO:0019289	hyperpigmentation of the skin	False
+MONDO:0019290	hypopigmentation of the skin	False
+MONDO:0019293	skin vascular disease	False
+MONDO:0019296	subcutaneous tissue disorder	False
+MONDO:0019297	lymphedema	False
+MONDO:0019303	premature aging syndrome	False
+MONDO:0019312	Hermansky-Pudlak syndrome	True
+MONDO:0019313	lymphatic malformation	False
+MONDO:0019337	autoimmune bullous skin disease	False
+MONDO:0019342	Seckel syndrome	False
+MONDO:0019391	Fanconi anemia	True
+MONDO:0019403	congenital dyserythropoietic anemia	False
+MONDO:0019496	neuroendocrine neoplasm	False
+MONDO:0019497	nonsyndromic genetic hearing loss	False
+MONDO:0019501	Usher syndrome	False
+MONDO:0019502	autosomal recessive non-syndromic intellectual disability	True
+MONDO:0019503	anterior segment dysgenesis	False
+MONDO:0019507	amelogenesis imperfecta	False
+MONDO:0019512	congenital heart malformation	False
+MONDO:0019516	exudative vitreoretinopathy	False
+MONDO:0019530	non-syndromic syndactyly	False
+MONDO:0019548	autosomal dominant intermediate Charcot-Marie-Tooth disease	False
+MONDO:0019565	hereditary von Willebrand disease	False
+MONDO:0019587	autosomal dominant nonsyndromic hearing loss	False
+MONDO:0019588	hearing loss, autosomal recessive	False
+MONDO:0019600	xeroderma pigmentosum	True
+MONDO:0019609	Zellweger spectrum disorders	True
+MONDO:0019623	hereditary angioedema	False
+MONDO:0019685	FGFR3-related chondrodysplasia	False
+MONDO:0019690	filamin-related bone disorder	False
+MONDO:0019691	short rib dysplasia	False
+MONDO:0019694	spondylodysplastic dysplasia	False
+MONDO:0019695	acromelic dysplasia	False
+MONDO:0019698	bent bone dysplasia	False
+MONDO:0019701	chondrodysplasia punctata	False
+MONDO:0019707	primary osteolysis	False
+MONDO:0019713	non-syndromic limb reduction defect	False
+MONDO:0019716	overgrowth syndrome	False
+MONDO:0019722	glomerular disorder	False
+MONDO:0019737	thrombotic microangiopathy	False
+MONDO:0019741	familial cystic renal disease	False
+MONDO:0019751	autoinflammatory syndrome	False
+MONDO:0019755	developmental defect during embryogenesis	False
+MONDO:0019781	astrocytoma (excluding glioblastoma)	False
+MONDO:0019792	autosomal dominant cerebellar ataxia type I	False
+MONDO:0019793	autosomal dominant cerebellar ataxia type III	False
+MONDO:0019796	acrocephalosyndactyly	False
+MONDO:0019824	non-acquired pituitary hormone deficiency	False
+MONDO:0019852	inherited primary ovarian failure	False
+MONDO:0019942	distal arthrogryposis	False
+MONDO:0019950	congenital muscular dystrophy	False
+MONDO:0019952	congenital myopathy	False
+MONDO:0019956	encephalitis	False
+MONDO:0020001	respiratory or thoracic malformation	False
+MONDO:0020010	infectious disorder of the nervous system	False
+MONDO:0020022	central nervous system malformation	False
+MONDO:0020040	46 XY differences of sex development	False
+MONDO:0020043	autosomal recessive congenital cerebellar ataxia	False
+MONDO:0020049	autosomal anomaly	False
+MONDO:0020058	gonosome anomaly	False
+MONDO:0020065	combined dystonia	False
+MONDO:0020066	Ehlers-Danlos syndrome	False
+MONDO:0020070	neonatal epilepsy syndrome	False
+MONDO:0020071	infantile epilepsy syndrome	False
+MONDO:0020072	childhood-onset epilepsy syndrome	False
+MONDO:0020074	progressive myoclonus epilepsy	False
+MONDO:0020076	myeloproliferative neoplasm	False
+MONDO:0020087	hereditary lipodystrophy	True
+MONDO:0020088	familial partial lipodystrophy	True
+MONDO:0020099	inherited sideroblastic anemia	False
+MONDO:0020119	X-linked syndromic intellectual disability	False
+MONDO:0020120	skeletal muscle disorder	False
+MONDO:0020121	muscular dystrophy	False
+MONDO:0020124	neuromuscular junction disease	False
+MONDO:0020127	hereditary peripheral neuropathy	False
+MONDO:0020128	motor neuron disorder	False
+MONDO:0020135	pontocerebellar hypoplasia	False
+MONDO:0020143	cerebral lipidosis with dementia	True
+MONDO:0020212	superficial corneal dystrophy	False
+MONDO:0020213	stromal corneal dystrophy	False
+MONDO:0020214	posterior corneal dystrophy	False
+MONDO:0020242	hereditary macular dystrophy	False
+MONDO:0020246	inherited vitreoretinopathy	False
+MONDO:0020247	congenital vitreoretinal dysplasia	False
+MONDO:0020248	vitreoretinal degeneration	False
+MONDO:0020249	hereditary optic neuropathy	False
+MONDO:0020283	uveitis	False
+MONDO:0020297	Noonan syndrome and Noonan-related syndrome	True
+MONDO:0020344	postsynaptic congenital myasthenic syndrome	False
+MONDO:0020377	early-onset partial cataract	False
+MONDO:0020380	autosomal dominant cerebellar ataxia	False
+MONDO:0020573	inherited disease susceptibility	False
+MONDO:0020579	mucositis	False
+MONDO:0020583	chromosome 17 disorder	False
+MONDO:0020584	anemia due to enzyme disorder	False
+MONDO:0020592	disorder of pharynx	False
+MONDO:0020596	mucin-producing carcinoma	False
+MONDO:0020605	X-linked recessive disease	False
+MONDO:0020641	respiratory tract neoplasm	False
+MONDO:0020642	polycystic kidney disease	False
+MONDO:0020664	spindle cell neoplasm	False
+MONDO:0020665	high grade malignant neoplasm	False
+MONDO:0020683	acute disease	False
+MONDO:0020696	vitamin B12 deficiency	False
+MONDO:0020811	mitochondrial complex III deficiency, nuclear type	True
+MONDO:0020836	autism, susceptiblity to	False
+MONDO:0020927	postaxial polydactyly	False
+MONDO:0021002	syndactyly	False
+MONDO:0021003	polydactyly	False
+MONDO:0021004	brachydactyly	False
+MONDO:0021017	synaptopathy	False
+MONDO:0021026	hereditary epidermal appendage anomaly	False
+MONDO:0021040	pancreatic neoplasm	False
+MONDO:0021042	glioma	False
+MONDO:0021043	mixed neoplasm	False
+MONDO:0021057	classic or attenuated familial adenomatous polyposis	False
+MONDO:0021058	neoplastic syndrome	False
+MONDO:0021060	RASopathy	True
+MONDO:0021061	neurofibromatosis	False
+MONDO:0021066	urinary system neoplasm	False
+MONDO:0021068	ovarian neoplasm	False
+MONDO:0021069	malignant endocrine neoplasm	False
+MONDO:0021074	precancerous condition	False
+MONDO:0021079	childhood neoplasm	False
+MONDO:0021080	blood vessel neoplasm	False
+MONDO:0021084	vision disorder	False
+MONDO:0021085	gastric neoplasm	False
+MONDO:0021089	peripheral nervous system cancer	False
+MONDO:0021094	immunodeficiency disease	False
+MONDO:0021095	parkinsonian disorder	False
+MONDO:0021096	papillary epithelial neoplasm	False
+MONDO:0021100	breast neoplasm	False
+MONDO:0021106	laminopathy	False
+MONDO:0021117	lung neoplasm	False
+MONDO:0021118	intestinal neoplasm	False
+MONDO:0021124	female infertility	False
+MONDO:0021129	microphthalmia	False
+MONDO:0021138	bone marrow cancer	False
+MONDO:0021143	melanocytic neoplasm	False
+MONDO:0021146	headache disorder	False
+MONDO:0021148	female reproductive system neoplasm	False
+MONDO:0021154	dermis disorder	False
+MONDO:0021163	kidney neoplasm	False
+MONDO:0021166	inflammatory disease	False
+MONDO:0021167	myositis disease	False
+MONDO:0021178	injury	False
+MONDO:0021179	proteostasis deficiencies	True
+MONDO:0021181	inherited blood coagulation disorder	False
+MONDO:0021187	hyperlipidemia	False
+MONDO:0021189	intestinal motility disease	False
+MONDO:0021190	DNA repair disease	True
+MONDO:0021193	neuroepithelial neoplasm	False
+MONDO:0021205	disorder of ear	False
+MONDO:0021211	brain neoplasm	False
+MONDO:0021220	eye neoplasm	False
+MONDO:0021223	digestive system neoplasm	False
+MONDO:0021227	adrenal gland neoplasm	False
+MONDO:0021245	oral cavity neoplasm	False
+MONDO:0021248	nervous system neoplasm	False
+MONDO:0021251	endometrium neoplasm	False
+MONDO:0021259	prostate neoplasm	False
+MONDO:0021350	neoplasm of thorax	False
+MONDO:0021353	tumor of uterus	False
+MONDO:0021354	tumor of adipose tissue	False
+MONDO:0021357	tumor of salivary gland	False
+MONDO:0021360	tumor of parathyroid gland	False
+MONDO:0021440	benign neoplasm of skin	False
+MONDO:0021568	renal tubule disorder	False
+MONDO:0021581	connective tissue neoplasm	False
+MONDO:0021583	melanocytic skin neoplasm	False
+MONDO:0021634	epithelial skin neoplasm	False
+MONDO:0021635	neurocristopathy	False
+MONDO:0021636	astrocytic tumor	False
+MONDO:0021637	low grade glioma	False
+MONDO:0021639	grade II glioma	False
+MONDO:0021669	post-infectious disorder	False
+MONDO:0021674	post-viral disorder	False
+MONDO:0021945	hearing disorder	False
+MONDO:0022687	cerebellar degeneration	False
+MONDO:0022800	type 2 collagenopathy	False
+MONDO:0023113	familial colorectal cancer	False
+MONDO:0023369	disorder of facial skeleton	False
+MONDO:0023370	neoplastic disease or syndrome	False
+MONDO:0023603	hereditary disorder of connective tissue	False
+MONDO:0023644	lip and oral cavity carcinoma	False
+MONDO:0024237	inherited neurodegenerative disorder	False
+MONDO:0024239	congenital anomaly of cardiovascular system	False
+MONDO:0024257	hereditary motor neuron disease	False
+MONDO:0024276	glandular cell neoplasm	False
+MONDO:0024286	benign blood vessel neoplasm	False
+MONDO:0024288	hyperbilirubinemia	False
+MONDO:0024294	skin disorder caused by infection	False
+MONDO:0024296	vascular neoplasm	False
+MONDO:0024298	vitamin deficiency disorder	False
+MONDO:0024321	disorder of GPI anchor biosynthesis	False
+MONDO:0024322	disorder of glycosylation	False
+MONDO:0024331	colorectal carcinoma	False
+MONDO:0024338	mucinous neoplasm	False
+MONDO:0024355	respiratory tract infectious disorder	False
+MONDO:0024417	perceptual disorders	False
+MONDO:0024431	bilirubin metabolism disease	False
+MONDO:0024458	disorder of visual system	False
+MONDO:0024477	liver and intrahepatic bile duct neoplasm	False
+MONDO:0024481	skin appendage disorder	False
+MONDO:0024503	digestive system neuroendocrine neoplasm	False
+MONDO:0024573	familial hypertrophic cardiomyopathy	False
+MONDO:0024574	von Willebrand disease (hereditary or acquired)	False
+MONDO:0024575	pregnancy disorder	False
+MONDO:0024582	male reproductive system neoplasm	False
+MONDO:0024615	T-cell and NK-cell neoplasm	False
+MONDO:0024619	central nervous system infectious disorder	False
+MONDO:0024622	thyroid gland adenocarcinoma	False
+MONDO:0024623	otorhinolaryngologic disease	False
+MONDO:0024626	defective phagocytic cell engulfment	False
+MONDO:0024627	phagocytic cell dysfunction	False
+MONDO:0024634	large intestine disorder	False
+MONDO:0024635	small intestine disorder	False
+MONDO:0024637	malignant soft tissue neoplasm	False
+MONDO:0024643	myocardial disorder	False
+MONDO:0024653	skull neoplasm	False
+MONDO:0024654	skull disorder	False
+MONDO:0024757	cardiovascular neoplasm	False
+MONDO:0027767	partial lipodystrophy	False
+MONDO:0031199	inherited interstitial lung disease	False
+MONDO:0031520	familial severe combined immunodeficiency	False
+MONDO:0033885	mitochondrial complex IV deficiency, nuclear-type	True
+MONDO:0036976	benign epithelial neoplasm	False
+MONDO:0037748	hyperlipoproteinemia	False
+MONDO:0037792	carbohydrate metabolism disease	False
+MONDO:0037821	porphyrin metabolism disease	False
+MONDO:0037829	purine metabolism disease	False
+MONDO:0037858	inherited fatty acid metabolism disorder	True
+MONDO:0037871	amino acid metabolism disease	False
+MONDO:0037937	pyrimidine metabolism disease	False
+MONDO:0037939	porphyria	False
+MONDO:0037940	inherited auditory system disease	False
+MONDO:0040677	invasive carcinoma	False
+MONDO:0042489	disease susceptibility	False
+MONDO:0042973	familial osteosclerosis	False
+MONDO:0042976	vitamin B deficiency	False
+MONDO:0042983	neurocutaneous syndrome	False
+MONDO:0043009	hereditary lethal multiple congenital anomalies/dysmorphic syndrome	False
+MONDO:0043218	neurovascular disorder	False
+MONDO:0043424	digestive system infectious disorder	False
+MONDO:0043878	hereditary optic atrophy	False
+MONDO:0043905	pneumonitis	False
+MONDO:0044137	vitreous body disorder	False
+MONDO:0044200	T-B+ severe combined immunodeficiency	False
+MONDO:0044334	connective and soft tissue neoplasm	False
+MONDO:0044347	erythrocyte disorder	False
+MONDO:0044348	hemoglobinopathy	False
+MONDO:0044765	steroid-resistant nephrotic syndrome	False
+MONDO:0044807	inherited dystonia	False
+MONDO:0044881	hematopoietic and lymphoid cell neoplasm	False
+MONDO:0044925	oral cavity carcinoma	False
+MONDO:0044970	mitochondrial disease	False
+MONDO:0044983	benign lipomatous neoplasm	False
+MONDO:0044986	lymphoid system disorder	False
+MONDO:0044991	upper digestive tract disorder	False
+MONDO:0045010	glycoprotein metabolism disease	True
+MONDO:0045011	keratinization disease	False
+MONDO:0045012	steroid metabolism disease	False
+MONDO:0045022	disorder of organic acid metabolism	False
+MONDO:0045024	cancer or benign tumor	False
+MONDO:0045046	inherited thyroid metabolism disease	True
+MONDO:0056803	sulfur metabolism disease	False
+MONDO:0100022	neonatal/infantile epilepsy syndrome	False
+MONDO:0100038	complex neurodevelopmental disorder	False
+MONDO:0100062	genetic developmental and epileptic encephalopathy	False
+MONDO:0100081	sleep disorder	False
+MONDO:0100118	hereditary skin disorder	False
+MONDO:0100120	vector-borne disease	False
+MONDO:0100133	mitochondrial complex I deficiency	True
+MONDO:0100137	telomere syndrome	False
+MONDO:0100172	intellectual disability, autosomal dominant	False
+MONDO:0100175	TTN-related myopathy	False
+MONDO:0100191	inherited kidney disorder	False
+MONDO:0100198	Mendelian encephalopathy	False
+MONDO:0100223	mitochondrial complex I deficiency, nuclear type	True
+MONDO:0100237	inherited cutis laxa	False
+MONDO:0100240	inherited thrombophilia	False
+MONDO:0100241	inherited thrombocytopenia	False
+MONDO:0100246	migraine with or without aura, susceptibility to	False
+MONDO:0100257	peroxisomal single enzyme/protein defect	True
+MONDO:0100283	overgrowth syndrome and/or cerebral malformations due to abnormalities in MTOR pathway genes	False
+MONDO:0100284	X-linked intellectual disability	False
+MONDO:0100308	atactic disorder	False
+MONDO:0100309	hereditary ataxia	False
+MONDO:0100310	hereditary cerebellar ataxia	False
+MONDO:0100313	focal segmental glomerulosclerosis	False
+MONDO:0100323	inherited pseudohypoaldosteronism	False
+MONDO:0100329	primary viral infectious disease	False
+MONDO:0100342	malignant glioma	False
+MONDO:0100365	mucopolysaccharidosis or mucopolysaccharidosis-like disorder	True
+MONDO:0100455	neonatal-onset developmental and epileptic encephalopathy	False
+MONDO:0100473	disorder of peptide and amine metabolism	True
+MONDO:0100500	Mendelian neurodevelopmental disorder	False
+MONDO:0100510	spondyloepimetaphyseal dysplasia	False
+MONDO:0100546	hereditary neuromuscular disease	False
+MONDO:0100547	cardiogenetic disease	False
+MONDO:0100574	generalized epilepsy	False
+MONDO:0100575	genetic generalized epilepsy	False
+MONDO:0100576	hereditary generalized epilepsy	False
+MONDO:0100577	myoclonic epilepsy	False
+MONDO:0100581	ocular growth disorder	False
+MONDO:0100597	intellectual disability, autosomal recessive	False
+MONDO:0100601	autosomal dominant syndromic intellectual disability	False
+MONDO:0100605	POLR-related leukodystrophy	False
+MONDO:0100614	syndromic congenital heart disease	False
+MONDO:0100619	variable age epilepsy syndrome	False
+MONDO:0100620	developmental and epileptic encephalopathy	False
+MONDO:0700003	obstetric disorder	False
+MONDO:0700007	idiopathic disease	False
+MONDO:0700008	chromosome 1 disorder	False
+MONDO:0700009	chromosome 2 disorder	False
+MONDO:0700012	chromosome 5 disorder	False
+MONDO:0700018	chromosome 11 disorder	False
+MONDO:0700023	chromosome 16 disorder	False
+MONDO:0700057	neurological pain disorder	False
+MONDO:0700092	neurodevelopmental disorder	False
+MONDO:0700120	BAFopathy	False
+MONDO:0700223	hereditary skeletal muscle disorder	False
+MONDO:0700264	type 1 interferonopathy	False
+MONDO:0700328	podocytopathy	False
+MONDO:0700335	familial isolated dilated cardiomyopathy	False
+MONDO:0700466	presynaptic congenital myasthenic syndrome	False
+MONDO:0800063	primordial dwarfism and slender bone disorder	False
+MONDO:0800064	osteogenesis imperfecta and a reduction of bone mineral density.	False
+MONDO:0800066	polydactyly-syndactyly-triphalangism	False
+MONDO:0800088	lysosomal storage disease with skeletal involvement	False
+MONDO:0800096	abnormal mineralization disorder	False
+MONDO:0800153	urea cycle disorder or inherited hyperammonemia	True
+MONDO:0800448	leukoencephalopathy with vanishing white matter	False
+MONDO:0800486	metabolic bone disorder	False
+MONDO:0800490	neonatal/infantile-onset epilepsy syndrome with developmental and epileptic encephalopathy	False
+MONDO:0800492	variable-age onset focal epilepsy syndrome	False
+MONDO:0800495	variable-age epilepsy syndrome with developmental and/or epileptic encephalopathy or progressive neurological deterioration	False
+MONDO:0957018	autoinflammatory syndrome of childhood	False
+MONDO:0957097	hereditary hemolytic uremic syndrome	False
+MONDO:0957408	type 1 interferonopathy of childhood	False
+MONDO:1010180	cardiogenetic rhythm disorder	False
+MONDO:1060138	GRIN-related complex neurodevelopmental disorder	False
+MONDO:7770010	disease of primarily extrinsic mechanism	False
+MONDO:7770011	disease by molecular mechanism	True

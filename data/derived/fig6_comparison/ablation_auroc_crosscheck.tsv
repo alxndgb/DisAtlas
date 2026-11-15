@@ -1,0 +1,3 @@
+arm	case_set	auroc
+A	all	0.8316662199934302
+nodedisjoint_rmref	all	0.7844296160692614

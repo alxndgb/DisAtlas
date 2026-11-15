@@ -1,0 +1,43 @@
+{
+ "counts": {
+  "anatomy": 21,
+  "mixed": 6,
+  "process": 11,
+  "neoplasm": 4,
+  "unresolved": 13
+ },
+ "diseases": {
+  "anatomy": 5376,
+  "mixed": 1420,
+  "process": 2410,
+  "neoplasm": 913,
+  "unresolved": 2902
+ },
+ "body_system_dominated": 27,
+ "process_enriched": 17,
+ "grid_body_system_min": 22,
+ "grid_body_system_max": 32,
+ "grid_process_min": 16,
+ "grid_process_max": 23,
+ "mann_whitney_anatomy_vs_process": {
+  "pairs_hpo_jaccard_fold": {
+   "median_anatomy": 4.6,
+   "median_process": 2.1,
+   "p": 0.005
+  },
+  "pairs_gene_share_fold": {
+   "median_anatomy": 7.8,
+   "median_process": 17.2,
+   "p": 0.032
+  },
+  "pairs_gobp_jaccard_fold": {
+   "median_anatomy": 2.1,
+   "median_process": 4.1,
+   "p": 0.001
+  }
+ },
+ "c44": {
+  "theme": "mixed",
+  "size": 450
+ }
+}

@@ -1,0 +1,11 @@
+file	rows	rows_kept	dropped
+data/derived/fig4_evidence_trace/trace_displayed_items.tsv	57	displayed intermediates only (under either ordering) for the 4 case pairs; full per-pair item lists (all modules/genes/neighbours) not shipped	only the 15 columns Fig 4, Table S18 (and its values table) and the numbers use (degree and idf feed the specificity weight); non-displayed items dropped
+data/derived/fig4_evidence_trace/trace_top10_modules.tsv	20	20 rows: top-10 items of RA-polymyositis and Crohn-UC (needed for two prose shares)	all other items
+data/derived/fig4_evidence_trace/case_cosines.tsv	24	4 case pairs x (5 seeds + ensemble); the 13,021 x 13,021 matrix stays in data/zenodo	none
+data/derived/si_mechdist_pair_score/ixidn_matched_cosine_all.tsv	4364	matched pair cosines (2,182 positive + 2,182 negative pairs); columns y, pool, c only	pair identifiers and the channel feature matrix (not used by the figure)
+data/derived/si_explainability/case_scores_cosine.tsv	3	3 case pairs	decoder p_upper columns (retired)
+data/raw/benchmarks/ordo/ixidn_matched_ontology_distance.tsv	4364	0	file removed (66,398 B): no released code reads it (file-open audit and grep of code, notebooks, tests); the ontology baseline reads data/derived/ixidn_robustness/ixidn4364_ontology_distance.tsv
+data/raw/benchmarks/ordo/ordo_distance_summary.tsv	3	0	file removed (167 B): no released code reads it; the only writer was scripts/maintainer/stage_benchmarks.py (block removed)
+data/derived/si_rare_common/headline_test_auroc.tsv	1	0	file removed (80 B): stale (0.859 [0.803-0.905]); si_cluster_rarecommon_numbers.py now reads fig4_values.json, the printed 0.860 (0.806-0.906)
+data/derived/uncertainty/ci_pair_vs_cluster.tsv	40	0	file removed (6,062 B): decoder-era pair-vs-cluster CI table; no registry row or test reads it; notebook 03 cell c17 now shows headline_cosine_ci.tsv
+data/derived/uncertainty/headline_core_values.tsv	50	0	file removed (4,085 B): decoder-era headline table; no code, registry row or test reads it

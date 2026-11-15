@@ -1,0 +1,320 @@
+{
+ "ms_source": {
+  "file": "assets/manuscripts/disatlas/disatlas_representation_learning_story.md (dis2vec_2)",
+  "sha256": "52e96bb6ce1272c617ae6bfe2a785764d8e3faa5feb9873a20fed23e803d5ab7",
+  "note": "ms snippets re-bound to the story markdown (binding source of the final text); line numbers refer to that file at this sha256"
+ },
+ "items": [
+  {
+   "label": "SI_explainability",
+   "script": "figures/SI/si_explainability.py",
+   "numbers": "figures/SI/SI_explainability_values.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "cases.Case1.score",
+     "expected": 0.881,
+     "tol": 0.0005,
+     "ms": "It ranks all three pairs in the top 2% of the 84.8 million disease pairs: Marfan syndrome–TAA at the 99.9th percentile (score 0.881), MODY type 1–type 2 diabetes at the 99.4th (0.711), and Gaucher disease due to saposin C deficiency–Parkinson disease 24 at the 99.4th (0.696).",
+     "ms_source": "story.md L2088",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "cases.Case2.score",
+     "expected": 0.711,
+     "tol": 0.0005,
+     "ms": "It ranks all three pairs in the top 2% of the 84.8 million disease pairs: Marfan syndrome–TAA at the 99.9th percentile (score 0.881), MODY type 1–type 2 diabetes at the 99.4th (0.711), and Gaucher disease due to saposin C deficiency–Parkinson disease 24 at the 99.4th (0.696).",
+     "ms_source": "story.md L2088",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "cases.Case3.score",
+     "expected": 0.696,
+     "tol": 0.0005,
+     "ms": "It ranks all three pairs in the top 2% of the 84.8 million disease pairs: Marfan syndrome–TAA at the 99.9th percentile (score 0.881), MODY type 1–type 2 diabetes at the 99.4th (0.711), and Gaucher disease due to saposin C deficiency–Parkinson disease 24 at the 99.4th (0.696).",
+     "ms_source": "story.md L2088",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "cases.Case1.pct",
+     "expected": 99.9,
+     "tol": 0.05,
+     "ms": "It ranks all three pairs in the top 2% of the 84.8 million disease pairs: Marfan syndrome–TAA at the 99.9th percentile (score 0.881), MODY type 1–type 2 diabetes at the 99.4th (0.711), and Gaucher disease due to saposin C deficiency–Parkinson disease 24 at the 99.4th (0.696).",
+     "ms_source": "story.md L2088",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "cases.Case2.pct",
+     "expected": 99.4,
+     "tol": 0.05,
+     "ms": "It ranks all three pairs in the top 2% of the 84.8 million disease pairs: Marfan syndrome–TAA at the 99.9th percentile (score 0.881), MODY type 1–type 2 diabetes at the 99.4th (0.711), and Gaucher disease due to saposin C deficiency–Parkinson disease 24 at the 99.4th (0.696).",
+     "ms_source": "story.md L2088",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "cases.Case3.pct",
+     "expected": 99.4,
+     "tol": 0.05,
+     "ms": "It ranks all three pairs in the top 2% of the 84.8 million disease pairs: Marfan syndrome–TAA at the 99.9th percentile (score 0.881), MODY type 1–type 2 diabetes at the 99.4th (0.711), and Gaucher disease due to saposin C deficiency–Parkinson disease 24 at the 99.4th (0.696).",
+     "ms_source": "story.md L2088",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "cases.Case1.rank",
+     "expected": 1,
+     "ms": "the common disease of each pair ranks 1st, 33rd and 7th",
+     "ms_source": "story.md L2089",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "cases.Case2.rank",
+     "expected": 33,
+     "ms": "the common disease of each pair ranks 1st, 33rd and 7th",
+     "ms_source": "story.md L2089",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "cases.Case3.rank",
+     "expected": 7,
+     "ms": "the common disease of each pair ranks 1st, 33rd and 7th",
+     "ms_source": "story.md L2089",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    }
+   ]
+  },
+  {
+   "label": "SI_explainability_bounds",
+   "script": "figures/SI/si_explainability.py",
+   "numbers": "figures/SI/SI_explainability_values.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "cases.Case1.pct",
+     "op": "ge",
+     "bound": 98,
+     "ms": "in the top 2% of the 84.8 million disease pairs",
+     "ms_source": "story.md L2088",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "cases.Case2.pct",
+     "op": "ge",
+     "bound": 98,
+     "ms": "in the top 2% of the 84.8 million disease pairs",
+     "ms_source": "story.md L2088",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "cases.Case3.pct",
+     "op": "ge",
+     "bound": 98,
+     "ms": "in the top 2% of the 84.8 million disease pairs",
+     "ms_source": "story.md L2088",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    }
+   ]
+  },
+  {
+   "label": "SI_explainability_pair_count",
+   "script": "figures/SI/si_explainability.py",
+   "numbers": "figures/SI/SI_explainability_values.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "n_pairs_all",
+     "expected": 84800000,
+     "tol": 50000,
+     "ms": "the 84.8 million disease pairs",
+     "ms_source": "story.md L2088",
+     "classified_by": "session-model(claude-opus-5-5)"
+    },
+    {
+     "key": "n_diseases",
+     "expected": 13021,
+     "ms": "When the roughly 13,000 other diseases are ordered",
+     "ms_source": "story.md L2089",
+     "classified_by": "session-model(claude-opus-5-5)"
+    }
+   ]
+  }
+ ],
+ "unchecked": [
+  {
+   "section": "SI_explainability",
+   "token": "1",
+   "reason": "list ordinal",
+   "ctx": "t a performance ranking.] [We used three disease pairs from the literature:]  [1. **Marfan syndrome and thoracic aortic ",
+   "ms_source": "generic token (no passage)",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "section": "SI_explainability",
+   "token": "2",
+   "reason": "list ordinal",
+   "ctx": " aortic aneurysm (TAA). Marfan syndrome, caused by FBN1 mutations, informs the role of extracellular-matrix defects in TAA [101]. 2. Maturity-onset diabetes of the young (MODY) and type 2 di",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)",
+   "ms_source": "generic token (no passage)"
+  },
+  {
+   "section": "SI_explainability",
+   "token": "2",
+   "reason": "part of a disease, trial-phase or class name",
+   "ctx": " aortic aneurysm (TAA). Marfan syndrome, caused by FBN1 mutations, informs the role of extracellular-matrix defects in TAA [101]. 2. Maturity-onset diabetes of the young (MODY) and type 2 di",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)",
+   "ms_source": "generic token (no passage)"
+  },
+  {
+   "section": "SI_explainability",
+   "token": "1,",
+   "reason": "part of a disease, trial-phase or class name",
+   "ctx": "(MODY) and type 2 diabetes.** MODY, a rare monogenic diabetes (here MODY type 1, caused by HNF4A mutations), has clarifi",
+   "ms_source": "generic token (no passage)",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "section": "SI_explainability",
+   "token": "2",
+   "reason": "part of a disease, trial-phase or class name",
+   "ctx": " MODY, a rare monogenic diabetes (here MODY type 1, caused by HNF4A mutations), has clarified beta-cell pathways relevant to type 2 diabetes [102]. 3. Gaucher disease and Parkinson disease. ",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)",
+   "ms_source": "generic token (no passage)"
+  },
+  {
+   "section": "SI_explainability",
+   "token": "3",
+   "reason": "list ordinal",
+   "ctx": "genic diabetes (here MODY type 1, caused by HNF4A mutations), has clarified beta-cell pathways relevant to type 2 diabetes [102]. 3. Gaucher disease and Parkinson disease. Gaucher disease, a",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)",
+   "ms_source": "generic token (no passage)"
+  },
+  {
+   "section": "SI_explainability",
+   "token": "2",
+   "reason": "part of a disease, trial-phase or class name",
+   "ctx": "disease 24, which is also linked to PSAP. TxGNN Explorer [104], the native explainability module of TxGNN, connected MODY to type 2 diabetes but returned no biologically plausible path for t",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)",
+   "ms_source": "generic token (no passage)"
+  },
+  {
+   "section": "SI_explainability",
+   "token": "1",
+   "reason": "part of a disease, trial-phase or class name",
+   "ctx": "as ranks all three pairs in the top 2% of disease pairs. Case 2 uses MODY type 1 (HNF4A). Case 3 uses Gaucher disease du",
+   "ms_source": "generic token (no passage)",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "token": "24,",
+   "reason": "part of a disease name (Parkinson disease 24)",
+   "ms": " a rare GBA-independent form caused by PSAP mutations, and Parkinson disease 24, which is also linked to PSAP.]  [TxGNN ",
+   "ms_source": "story.md L2080",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "token": "2%",
+   "reason": "checked as a bound (SI_explainability_bounds)",
+   "ms": "in a dedicated disease-level representation. It ranks all three pairs in the top 2% of the 84.8 million disease pairs: Marfan sy",
+   "ms_source": "story.md L2087",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "token": "24",
+   "reason": "part of a disease name (Parkinson disease 24)",
+   "ms": "tes at the 99.4th (0.711), and Gaucher disease due to saposin C deficiency-Parkinson disease 24 at the 99.4th (0.696). When the ro",
+   "ms_source": "story.md L2088",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "token": "13,000",
+   "reason": "checked with tolerance (SI_explainability_bounds)",
+   "ms": "to saposin C deficiency-Parkinson disease 24 at the 99.4th (0.696). When the roughly 13,000 other diseases are ordered by their D",
+   "ms_source": "story.md L2088",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "token": "1",
+   "reason": "case ordinal",
+   "ms": "t indication for the two pairs involving sparsely studied rare diseases (cases 1 and 3) and relevant for the well-studie",
+   "ms_source": "story.md L2107",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "token": "3",
+   "reason": "case ordinal",
+   "ms": "cation for the two pairs involving sparsely studied rare diseases (cases 1 and 3) and relevant for the well-studied MODY",
+   "ms_source": "story.md L2107",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "token": "2,",
+   "reason": "case ordinal",
+   "ms": "re diseases (cases 1 and 3) and relevant for the well-studied MODY pair (case 2, diazoxide). DisAtlas ranks all three pa",
+   "ms_source": "story.md L2107",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "token": "2%",
+   "reason": "checked as a bound (SI_explainability_bounds)",
+   "ms": "died MODY pair (case 2, diazoxide). DisAtlas ranks all three pairs in the top 2% of disease pairs. Case 2 uses MODY type",
+   "ctx": "dedicated disease-level representation. It ranks all three pairs in the top 2% of the 84.8 million d",
+   "ms_source": "story.md L2107",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "token": "2",
+   "reason": "case ordinal",
+   "ms": "iazoxide). DisAtlas ranks all three pairs in the top 2% of disease pairs. Case 2 uses MODY type 1 (HNF4A). Case 3 uses G",
+   "ms_source": "story.md L2107",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "token": "3",
+   "reason": "case ordinal",
+   "ms": "ee pairs in the top 2% of disease pairs. Case 2 uses MODY type 1 (HNF4A). Case 3 uses Gaucher disease due to saposin C d",
+   "ms_source": "story.md L2107",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "token": "1",
+   "reason": "case ordinal",
+   "ms": "er disease 108. (b) Sub-networks behind each prediction. DisAtlas links cases 1 and 2 through pathway-level genes and phenot",
+   "ms_source": "story.md L2107",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "token": "2",
+   "reason": "case ordinal",
+   "ms": "ease 108. (b) Sub-networks behind each prediction. DisAtlas links cases 1 and 2 through pathway-level genes and phenotypes.",
+   "ms_source": "story.md L2107",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "token": "1",
+   "reason": "case ordinal",
+   "ms": "GNN relies on broad phenotypes such as autosomal dominant inheritance in cases 1 and 2, reaching the related diabetes co",
+   "ms_source": "story.md L2107",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "token": "2,",
+   "reason": "case ordinal",
+   "ms": "ies on broad phenotypes such as autosomal dominant inheritance in cases 1 and 2, reaching the related diabetes context i",
+   "ms_source": "story.md L2107",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "token": "2",
+   "reason": "case ordinal",
+   "ms": "nt inheritance in cases 1 and 2, reaching the related diabetes context in case 2 only through islet cell adenomatosis, a",
+   "ms_source": "story.md L2107",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "token": "3",
+   "reason": "case ordinal",
+   "ms": "ase 2 only through islet cell adenomatosis, and predicts no meta-path for case 3. TxGNN is shown with its published chec",
+   "ms_source": "story.md L2107",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  }
+ ]
+}

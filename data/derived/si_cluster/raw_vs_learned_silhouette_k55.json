@@ -1,0 +1,8 @@
+{
+ "K": 55,
+ "n": 13021,
+ "sil_learned": 0.35639694333076477,
+ "sil_raw_own_clusters": 0.24019944667816162,
+ "sil_learned_labels_on_raw": 0.24040380120277405,
+ "ari_raw_vs_learned": 0.7034276848909805
+}

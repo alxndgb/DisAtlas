@@ -1,0 +1,116 @@
+{
+ "dd_stages": {
+  "0_all": {
+   "trials": 419240,
+   "drugs": 38389,
+   "dis": 1593
+  },
+  "1_disease_indications": {
+   "trials": 391558,
+   "drugs": 36781,
+   "dis": 1555
+  },
+  "2_moa_drugs": {
+   "trials": 351178,
+   "drugs": 34515,
+   "dis": 1508
+  },
+  "3_trials_le2_drugs": {
+   "trials": 299122,
+   "drugs": 32023,
+   "dis": 1437
+  }
+ },
+ "trials_cut_gt2_drugs_unique": 52056,
+ "trials_with_any_cut_record": 52056,
+ "drugs_removed_non_moa": 2266,
+ "trials_lost_non_moa": 40380,
+ "drugs_lost_by_cutoff": 2492,
+ "ixidn": {
+  "diseases": 1379,
+  "links": 43112
+ },
+ "matched": {
+  "pairs": 4364,
+  "pos": 2182,
+  "neg": 2182,
+  "diseases": 938,
+  "split_values": [
+   "test",
+   "tune"
+  ],
+  "cross_split": 2167,
+  "test_pairs": 1094,
+  "test_pos": 491,
+  "test_neg": 603,
+  "test_diseases": 447,
+  "tune_pairs": 1103,
+  "tune_pos": 622,
+  "tune_neg": 481,
+  "tune_diseases": 435
+ },
+ "funnel_universe_diseases": 985,
+ "candidates": {
+  "pos": 27415,
+  "neg": 155375
+ },
+ "lm": {
+  "candidates": 4302,
+  "STRONG": 1285,
+  "SUSPECT": 709,
+  "WEAK": 1354,
+  "PLAUSIBLE": 897,
+  "NOT_IN_GRAPH": 57
+ },
+ "projection_rerun": {
+  "diseases": 1379,
+  "links": 43112,
+  "report": {
+   "signature": "6786ec2d",
+   "knobs": {
+    "source": "combined",
+    "exclude_non_disease": true,
+    "exclude_non_moa": true,
+    "drop_decisions": [
+     "exclude"
+    ],
+    "drop_categories": [],
+    "max_drugs_per_trial": 2,
+    "count_kept_drugs_only": true,
+    "keep_unknown_drug_count": true,
+    "drug_weight": "inv_degree",
+    "drug_degree_cap_pct": 99.9,
+    "top_k": 40,
+    "max_partners": 100,
+    "min_shared_drugs": 2,
+    "rare_rare_min_shared": 1,
+    "rare_top_k": 100,
+    "rare_max_partners": 300,
+    "orphanet_bypass": true,
+    "coinv_max_drugs_per_trial": null,
+    "coinv_hierarchy": true,
+    "coinv_hier_max_children": 10,
+    "coinv_mondo_obo": "MONDO_060226/mondo.obo"
+   },
+   "diseases": 1379,
+   "edges": 43112,
+   "indications_excluded_non_disease": 38,
+   "drugs_dropped_non_moa": 2535,
+   "dd_edges_scanned": 232180,
+   "dd_edges_non_disease": 16695,
+   "dd_edges_pruned_empty": 35792,
+   "trials_cut_by_cutoff": 408688,
+   "trials_kept": 692346,
+   "trials_unknown_drug_count": 0,
+   "surviving_drugs_linking_pairs": 19102,
+   "drug_degree_cap_value": 146.0,
+   "drugs_degree_capped": 32,
+   "candidate_pairs": 70126,
+   "kept_by_rank": 8900,
+   "orphanet_supported_pairs": 17716,
+   "kept_by_rare_rare_rule_only": 27185,
+   "kept_by_bypass_only": 7027,
+   "isolated_removed": 0
+  }
+ }
+}

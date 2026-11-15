@@ -1,0 +1,23 @@
+{
+ "d_max": {
+  "go_bp_semi": 23.0,
+  "go_mf": 18.0,
+  "go_cc": 18.0,
+  "hpo": 25.0
+ },
+ "go_remap": {
+  "GO:0005046": "GO:0046923",
+  "GO:0005052": "GO:0000268",
+  "GO:0008139": "GO:0140142",
+  "GO:0030369": "GO:0004888",
+  "GO:0033328": "GO:0000268",
+  "GO:0036105": "GO:0000268"
+ },
+ "namespace_weights": {
+  "biological_process": 1.0,
+  "molecular_function": 0.25,
+  "cellular_component": 0.1
+ },
+ "bp_variant": "go_bp_semi",
+ "note": "d_max of the full term-distance matrices; the slices are restricted to terms in use, so d_max is fixed here"
+}

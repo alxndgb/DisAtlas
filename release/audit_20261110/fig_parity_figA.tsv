@@ -1,0 +1,5 @@
+item	asset	verdict	max_px_diff	note
+Figure 4	figures/main/fig4_evidence_trace.png	byte-identical	0	figures/main/fig4_evidence_trace.py from data/derived/fig4_evidence_trace; prose numbers from figures/main/fig4_numbers.py
+Figure S4	figures/SI/LCA.png	byte-identical	0	static ontology illustration (no data generator in the source repo); shipped as the manuscript asset
+Figure S6	figures/SI/SI_mechdist_embedding_pair_score.png	byte-identical	0	figures/SI/si_mechdist_embedding_pair_score.py from data/derived/si_mechdist_pair_score (panel c-d schematic is a static image)
+Figure S27	figures/SI/SI_explainability.png	byte-identical	0	figures/SI/si_explainability.py: cosine case scores recomputed from shipped table; TxGNN panels are static (published TxGNN checkpoint outputs); decoder-era explainability numbers retired

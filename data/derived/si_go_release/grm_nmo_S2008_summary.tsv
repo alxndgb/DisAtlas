@@ -1,0 +1,5 @@
+arm	n_seeds	n_scored	mean_pct_cm	min_pct_cm	max_pct_cm	mean_pct_unif	median_rank	n_nodes
+orig	5	5	95.3	91.45	98.95	93.115	291.0	3775
+ctrl	5	5	95.3	91.45	98.95	93.115	291.0	3775
+gafnow_acc	5	5	95.22	90.05	97.6	92.885	260.0	3786
+gafrel_acc	5	0						2895

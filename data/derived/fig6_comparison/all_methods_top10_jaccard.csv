@@ -1,0 +1,7 @@
+,DisAtlas,Claude-Chat Opus 5.5,Claude-Sci Opus 5.5,Phylo,TxGNN (published ckpt),Gemini Pro 3.1
+DisAtlas,1.0,0.2565,0.18,0.2011,0.1137,0.131
+Claude-Chat Opus 5.5,0.2565,1.0,0.5113,0.2583,0.1179,0.1444
+Claude-Sci Opus 5.5,0.18,0.5113,1.0,0.2619,0.0941,0.1489
+Phylo,0.2011,0.2583,0.2619,1.0,0.0621,0.1896
+TxGNN (published ckpt),0.1137,0.1179,0.0941,0.0621,1.0,0.0223
+Gemini Pro 3.1,0.131,0.1444,0.1489,0.1896,0.0223,1.0

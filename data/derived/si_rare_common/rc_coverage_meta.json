@@ -1,0 +1,14 @@
+{
+ "n": 13019,
+ "n_rare": 10488,
+ "n_common": 2531,
+ "nperm": 1000,
+ "median_first_common_rank_for_rare": 8.0,
+ "median_first_rare_rank_for_common": 1.0,
+ "n_rare_no_common_in_50": 782,
+ "check_k10_other_frac": {
+  "rare": 0.13467772692601068,
+  "common": 0.6149743184512051
+ },
+ "score": "gene-anchored model, five-seed ensemble embedding cosine"
+}

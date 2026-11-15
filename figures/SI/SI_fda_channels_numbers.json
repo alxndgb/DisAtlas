@@ -1,0 +1,120 @@
+{
+ "a_full@broad_off_nodes_recovered": [
+  0.907,
+  0.872,
+  0.938
+ ],
+ "a_full@broad_off_nodes_pct95": [
+  0.623,
+  0.57,
+  0.676
+ ],
+ "a_full@broad_off_nodes_pct99": [
+  0.199,
+  0.156,
+  0.243
+ ],
+ "a_spec_off@broad_off_nodes_recovered": [
+  0.729,
+  0.679,
+  0.776
+ ],
+ "a_spec_off@broad_off_nodes_pct95": [
+  0.265,
+  0.218,
+  0.315
+ ],
+ "a_spec_off@broad_off_nodes_pct99": [
+  0.034,
+  0.016,
+  0.056
+ ],
+ "a_broad_off_recovered": [
+  0.869,
+  0.832,
+  0.903
+ ],
+ "a_broad_off_pct95": [
+  0.589,
+  0.533,
+  0.642
+ ],
+ "a_broad_off_pct99": [
+  0.187,
+  0.146,
+  0.231
+ ],
+ "b_quadrants": {
+  "both": 211,
+  "broad_only": 23,
+  "spec_only": 68,
+  "neither": 19
+ },
+ "n_scored_all_models": 321,
+ "b_missed_by_both_channels_model": 30,
+ "b_single_channel_recovered_but_full_missed": 16,
+ "b_full_recovered_neither_single": 5,
+ "c_full@broad_off_nodes": {
+  "oncology_pan_target": 98.4,
+  "tissue_shared": 88.1,
+  "unassigned": 82.6,
+  "symptomatic_physiological": 71.4,
+  "convergent_effector": 96.3,
+  "near_duplicate": 94.4,
+  "pathogen_targeted": 75.0
+ },
+ "c_spec_off@broad_off_nodes": {
+  "oncology_pan_target": 78.7,
+  "tissue_shared": 67.2,
+  "unassigned": 69.6,
+  "symptomatic_physiological": 57.1,
+  "convergent_effector": 77.8,
+  "near_duplicate": 77.8,
+  "pathogen_targeted": 75.0
+ },
+ "c_broad_off": {
+  "oncology_pan_target": 94.5,
+  "tissue_shared": 88.1,
+  "unassigned": 76.1,
+  "symptomatic_physiological": 71.4,
+  "convergent_effector": 88.9,
+  "near_duplicate": 83.3,
+  "pathogen_targeted": 75.0
+ },
+ "c_spec_ge_broad_all_classes": true,
+ "d_disatlas_ens": [
+  0.639,
+  0.526,
+  0.717
+ ],
+ "d_shared_nbr": [
+  0.741,
+  0.6,
+  0.835
+ ],
+ "d_lit_shared": [
+  0.693,
+  0.539,
+  0.796
+ ],
+ "d_deg": [
+  0.536,
+  0.432,
+  0.649
+ ],
+ "d_decoy": [
+  0.179,
+  0.149,
+  0.2
+ ],
+ "d_n": 166,
+ "d_groups": 73,
+ "b_quadrant_counts_cosine": {
+  "both": 211,
+  "broad_only": 23,
+  "spec_only": 68,
+  "neither": 19
+ },
+ "png_bytes": 323125,
+ "overlaps": []
+}

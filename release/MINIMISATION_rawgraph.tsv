@@ -1,0 +1,17 @@
+file	rows_kept	rows_dropped	columns_dropped	content
+data/raw/gencc/disease_gene.parquet	7319	0	sources	tier-1 curated disease-gene edges supported by GenCC
+data/raw/orphanet/disease_gene.parquet	8053	0	sources	tier-1 curated disease-gene edges present in public Orphanet en_product6
+data/raw/public_disease_gene/disease_gene.parquet	308	610	sources (replaced by source)	tier-1 curated edges confirmed in public Open Targets 26.09 direct evidence; the 604 licence-restricted pairs and 6 pairs without a public source are not released
+data/raw/opentargets/disease_gene_direct.parquet	3694	0	tier_weight,cap_restored,num_sources	Open Targets 26.09 direct associations (overall without literature >= 0.6, or single supporting source >= 0.7; cap 100 per disease); pairs not already curated
+data/raw/opentargets/disease_gene_relaxed.parquet	4091	0	tier_weight,num_sources	Open Targets 26.09 relaxed rescue (setting R3), tiers 2-4; only rows that enter the build
+data/raw/bikg_habcd/habcd_bikg_gene_edges.parquet	8343	0	layer	approved knowledge-graph release with the layer column removed (rows and values unchanged; the rebuild does not read it)
+data/raw/hpo/disease_phenotype.parquet	202778	0	evidence_tier,tier_weight,cap_restored,num_sources	disease-phenotype edges with public HPO annotation support (tier 1)
+data/raw/hpo/disease_phenotype_propagated.parquet	39471	0	evidence_tier,tier_weight,cap_restored,num_sources	tier-9 phenotype edges propagated from a kept MONDO child annotation
+data/raw/specific_channels/gene2go.parquet	59277	35		GO annotations of disease genes, restricted to terms in the distance slices
+data/raw/broad_channels/gene_hpa_celltype_profile.parquet	5871	11423		HPA cell-type profiles, disease genes only
+data/raw/broad_channels/gene_pfam.parquet	13511	20110		Pfam domains, disease genes only
+data/zenodo/ontology_term_term_distance/go_bp_semi_term_distance.parquet	6431	17698		GO BP term-term distance, rows and columns restricted to annotated terms in use (24,129 -> 6,431)
+data/zenodo/ontology_term_term_distance/go_mf_term_distance.parquet	2134	7907		GO MF term-term distance (10,041 -> 2,134)
+data/zenodo/ontology_term_term_distance/go_cc_term_distance.parquet	1162	2913		GO CC term-term distance (4,075 -> 1,162)
+data/zenodo/ontology_term_term_distance/hpo_term_distance.parquet	10646	9190		HPO term-term distance (19,836 -> 10,646)
+data/raw/channels/specific/specific_edges.parquet	189903	0	all evidence, modules, mechanism classes and class factors	specific-channel disease-disease edges (u, v, w) of the released model; the about 1.06 million knowledge-graph evidence rows behind them are not released

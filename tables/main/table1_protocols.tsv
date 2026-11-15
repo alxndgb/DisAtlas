@@ -1,0 +1,6 @@
+Protocol	System type	Examples	Evaluation approach
+1	DisAtlas	DisAtlas (node-disjoint; benchmark diseases held out of training)	Benchmark diseases held out of every step of network construction and training, five seeds per fold; evaluated on the blinded IxIDN-Matched pairs
+2	Large language model	Claude Chat (Opus 5.5, 5 runs), Gemini Pro 3.1 (3 runs)	Disease names and MONDO identifiers only; structured prompt with the blinded pair file; mean score over runs
+3	Agentic AI system	Claude Sci (Claude Science, Opus 5.5, 5 runs); Phylo Biomni (5 seeds)	Disease names and MONDO identifiers only; mean score over runs or seeds
+4	Knowledge-graph model (published checkpoint)	TxGNN [@TxGNN] (1 run)	Published checkpoint, DistMult pair scoring; not retrained on MechDist or on IxIDN-Matched; 213 unmapped pairs ranked last
+Reference	Scores computed directly on the DisAtlas evidence network	TF-IDF graph SVD cosine, Adamic–Adar, common neighbors	Computed on each fold's training network with the fold's benchmark diseases held out of training; each of them placed by the same 55 feature neighbors as DisAtlas

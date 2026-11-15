@@ -1,0 +1,30 @@
+panel	series	k	value	lo	hi	p_lower
+Rare diseases	null_annotation	10.0	0.7965	0.7786	0.8145	0.001
+Rare diseases	null_degree	10.0	0.8832	0.87	0.8964	0.001
+Rare diseases	null_uniform	10.0	0.8848	0.8704	0.8976	0.001
+Rare diseases	observed	1.0	0.1175			
+Rare diseases	observed	5.0	0.3944			
+Rare diseases	observed	10.0	0.5868			
+Rare diseases	observed	20.0	0.7702			
+Rare diseases	observed	50.0	0.9254			
+Common diseases	null_annotation	10.0	1.0	0.9996	1.0	0.001
+Common diseases	null_degree	10.0	1.0	1.0	1.0	0.001
+Common diseases	null_uniform	10.0	1.0	1.0	1.0	0.001
+Common diseases	observed	1.0	0.5448			
+Common diseases	observed	5.0	0.8933			
+Common diseases	observed	10.0	0.9692			
+Common diseases	observed	20.0	0.9972			
+Common diseases	observed	50.0	1.0			
+Rare diseases, k = 10	0 common among 10 nearest	10.0	0.4132			
+Rare diseases, k = 10	1 common among 10 nearest	10.0	0.249			
+Rare diseases, k = 10	2 common among 10 nearest	10.0	0.1476			
+Rare diseases, k = 10	3 common among 10 nearest	10.0	0.0842			
+Rare diseases, k = 10	4 common among 10 nearest	10.0	0.0467			
+Rare diseases, k = 10	5 common among 10 nearest	10.0	0.0261			
+Rare diseases, k = 10	6 common among 10 nearest	10.0	0.0143			
+Rare diseases, k = 10	7 common among 10 nearest	10.0	0.0087			
+Rare diseases, k = 10	8 common among 10 nearest	10.0	0.0061			
+Rare diseases, k = 10	9 common among 10 nearest	10.0	0.003			
+Rare diseases, k = 10	10 common among 10 nearest	10.0	0.001			
+text	median rank of first common neighbor (rare)		8.0			
+text	n rare / n common		10488.0		2531.0	

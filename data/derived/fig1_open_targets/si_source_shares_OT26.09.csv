@@ -1,0 +1,19 @@
+datasourceid,n_associations,mean_score,datatypes,percent_of_germline_associations,label,type
+gwas_credible_sets,148661,0.2234385209076819,genetic_association,96.05,GWAS credible sets,common
+gene_burden,1257,0.37699412114971903,genetic_association,0.81,Gene burden,common
+eva,3344,0.3715008597270991,genetic_association,2.16,ClinVar,common
+genomics_england,794,0.5978305250616196,genetic_literature,0.51,Genomics England,common
+gene2phenotype,149,0.4467918974281035,genetic_literature,0.1,Gene2Phenotype,common
+orphanet,26,0.6082967170759085,genetic_association,0.02,Orphanet,common
+clingen,152,0.1287728132480924,genetic_literature,0.1,ClinGen,common
+uniprot_literature,270,0.5384552421523783,genetic_literature,0.17,UniProt literature,common
+uniprot_variants,127,0.7149251508336331,genetic_association,0.08,UniProt variants,common
+gwas_credible_sets,37470,0.2102706629898512,genetic_association,41.66,GWAS credible sets,rare
+gene_burden,637,0.4728038598644949,genetic_association,0.71,Gene burden,rare
+eva,21848,0.570153482973668,genetic_association,24.29,ClinVar,rare
+genomics_england,8064,0.7588093607550608,genetic_literature,8.97,Genomics England,rare
+gene2phenotype,3599,0.5310852557075604,genetic_literature,4.0,Gene2Phenotype,rare
+orphanet,5983,0.6097257574070337,genetic_association,6.65,Orphanet,rare
+clingen,3153,0.45767864927922136,genetic_literature,3.51,ClinGen,rare
+uniprot_literature,5097,0.5938710027975976,genetic_literature,5.67,UniProt literature,rare
+uniprot_variants,4093,0.7730907571905413,genetic_association,4.55,UniProt variants,rare

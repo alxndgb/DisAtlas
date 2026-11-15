@@ -1,0 +1,43 @@
+{
+ "rows": 45,
+ "approved": 24,
+ "failed": 9,
+ "ongoing": 12,
+ "drugs": 12,
+ "failed_rows_dropped_stop_reason_not_efficacy": [
+  [
+   "pozelimab",
+   "paroxysmal nocturnal hemoglobinuria"
+  ]
+ ],
+ "trial_markers_omitted": [],
+ "dated_events": 131,
+ "panel_b": {
+  "PNH-aHUS": {
+   "cosine": 0.8546,
+   "percentile": 99.8553
+  },
+  "PNH-gMG": {
+   "cosine": 0.3674,
+   "percentile": 95.3544
+  },
+  "PNH-NMOSD": {
+   "cosine": 0.5537,
+   "percentile": 98.3809
+  },
+  "aHUS-gMG": {
+   "cosine": 0.3326,
+   "percentile": 94.381
+  },
+  "aHUS-NMOSD": {
+   "cosine": 0.5292,
+   "percentile": 98.1271
+  },
+  "gMG-NMOSD": {
+   "cosine": 0.6807,
+   "percentile": 99.2917
+  }
+ },
+ "png_bytes": 732021,
+ "overlaps": []
+}

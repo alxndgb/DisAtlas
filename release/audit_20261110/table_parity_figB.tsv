@@ -1,0 +1,4 @@
+item	manuscript_anchor	generator	output	target_rows	output_rows	identical_rows	status	comparison
+Table S9	tbl:SI_cluster_controls (manuscript markdown)	tables/SI/table_cluster_controls.py	tables/SI/table_cluster_controls.md	18	18	18	row-identical	cell text, header included, after removing the manuscript RevisionBlue colour wrapper
+Table S10	tbl:SI_cluster_themes (manuscript markdown)	tables/SI/table_cluster_themes.py	tables/SI/table_cluster_themes.md	56	56	56	row-identical	cell text, header included, after removing the manuscript RevisionBlue colour wrapper
+Table S11	tbl:SI_rare_common_strata (manuscript markdown)	tables/SI/table_rare_common_strata.py	tables/SI/table_rare_common_strata.md	5	5	5	row-identical	cell text, header included, after removing the manuscript RevisionBlue colour wrapper

@@ -1,0 +1,10 @@
+{
+ "B": 2000,
+ "unit": "disease",
+ "n_nd_pairs": 4357,
+ "inputs": [
+  "data/derived/ixidn_robustness/ixidn4364_per_pair_scores.tsv.gz",
+  "data/zenodo/model_outputs/scores/ixidn_matched_cosine_gene_anchored.parquet",
+  "data/zenodo/model_outputs/clusters/disease_clusters_k55.parquet"
+ ]
+}

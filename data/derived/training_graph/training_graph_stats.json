@@ -1,0 +1,12 @@
+{
+ "graph_file_sha256": "fa3eb90f4460e42ea67674b741857faaa4d7b4d2721514016108272630589b62",
+ "n_nodes": 13021,
+ "n_edges": 498155,
+ "mean_degree": 76.51562859995391,
+ "median_degree": 56.0,
+ "min_degree": 1,
+ "max_degree": 3110,
+ "n_isolated": 0,
+ "avg_clustering": 0.3919192755785115,
+ "train_edges_after_benchmark_strip": 488103
+}

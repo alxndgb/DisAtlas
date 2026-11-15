@@ -1,0 +1,23 @@
+{
+ "n_pos": 2182,
+ "n_neg": 2182,
+ "median_pos": 0.44413199999999997,
+ "median_neg": -0.01398725,
+ "threshold": 0.204894,
+ "min": -0.49784,
+ "max": 0.976334,
+ "test_n_pos": 491,
+ "test_n_neg": 603,
+ "test_sensitivity": 0.7270875763747454,
+ "test_specificity": 0.8474295190713101,
+ "n_shared_train": 52,
+ "hub_deg_train": 3036,
+ "control_cosines": {
+  "aHUS-PNH": 0.855,
+  "Crohn-UC": 0.907,
+  "Psoriasis-PsA": 0.811,
+  "DI-T2D": 0.181,
+  "PKD-PCOS": 0.269,
+  "ALS-SSc": 0.228
+ }
+}

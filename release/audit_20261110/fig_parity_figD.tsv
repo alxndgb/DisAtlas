@@ -1,0 +1,10 @@
+item	asset	verdict	max_px_diff	note
+SI funnel	figures/SI/si_ixidn_matched_funnel.png	DATA-PARITY	n/a	manuscript PNG 2820x2539 vs regenerated 2035x1866; the original plotting code is not in the source repo, so layout is redrawn; every count in the funnel equals the manuscript
+SI uncertainty	figures/SI/si_uncertainty.png	BYTE-IDENTICAL	0	gene-anchored seed vs sampling SD
+SI placement confidence	figures/SI/si_placement_confidence.png	BYTE-IDENTICAL	0	
+SI node-disjoint	figures/SI/si_node_disjoint.png	BYTE-IDENTICAL	0	K = 55 resampling unit (figure); SI_UNIT=disease writes the main-text within-stratum interval to *_disease tables only
+SI negative-set realism	figures/SI/si_negrealism.png	BYTE-IDENTICAL	0	
+SI event-time AUC methods	figures/SI/SI_event_time_auc_methods.png	BYTE-IDENTICAL	0	
+SI popularity strata	figures/SI/si_popularity_strata.png	BYTE-IDENTICAL	0	
+SI FDA channels	figures/SI/SI_fda_channels.png	BYTE-IDENTICAL	0	licensed identifiers tokenised
+SI complement milestones	figures/SI/SI_complement_milestones.png	PIXEL-IDENTICAL	0	PNG differs only in the Software tag and IDAT compression (older matplotlib in the source run); tag deliberately not faked

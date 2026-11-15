@@ -1,0 +1,19 @@
+| Control pair | Role | Same cluster at K = 55 | DisAtlas pair cosine score | Percentile among all pairs | Best partner rank |
+|:--|:--|:--|--:|--:|--:|
+| Crohn disease – ulcerative colitis | positive | yes | 0.907 | 99.9 | 2 |
+| atypical hemolytic-uremic syndrome – paroxysmal nocturnal hemoglobinuria | positive | yes | 0.855 | 99.9 | 1 |
+| psoriasis – psoriatic arthritis | positive | no | 0.811 | 99.8 | 52 |
+| cryopyrin-associated periodic syndrome – familial Mediterranean fever | positive | yes | 0.790 | 99.7 | 14 |
+| tuberous sclerosis – lymphangioleiomyomatosis | positive | yes | 0.786 | 99.7 | 1 |
+| Wolman disease – cholesteryl ester storage disease | positive | no | 0.735 | 99.5 | 13 |
+| myasthenia gravis – neuromyelitis optica | positive | yes | 0.681 | 99.3 | 5 |
+| gastrointestinal stromal tumor – systemic mastocytosis | positive | no | 0.512 | 97.9 | 227 |
+| gastrointestinal stromal tumor – chronic myelogenous leukemia, BCR-ABL1 positive | positive | no | 0.507 | 97.9 | 312 |
+| tuberous sclerosis – multiple sclerosis | negative | no | 0.401 | 96.1 | 416 |
+| neurofibromatosis type 1 due to NF1 mutation or intragenic deletion – NF2-related schwannomatosis | negative | no | 0.354 | 95.0 | 452 |
+| polycystic kidney disease – polycystic ovary syndrome | negative | no | 0.269 | 92.1 | 848 |
+| amyotrophic lateral sclerosis – systemic sclerosis | negative | no | 0.228 | 90.0 | 1,288 |
+| Duchenne muscular dystrophy – Fuchs' endothelial dystrophy | negative | no | 0.223 | 89.7 | 1,293 |
+| osteogenesis imperfecta – osteopetrosis | negative | no | 0.186 | 87.3 | 1,677 |
+| diabetes insipidus – type 2 diabetes mellitus | negative | no | 0.181 | 86.9 | 1,749 |
+| spinal muscular atrophy – Kennedy disease | negative | no | 0.179 | 86.7 | 1,454 |

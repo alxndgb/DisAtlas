@@ -1,0 +1,49 @@
+item	quantity	computed_string	manuscript_lines	status	context
+S9	all disease pairs	84,766,710	1501,1529,1723	found	isease pairs score close to zero (median cosine score −0.030 over all 84,766,710 pairs), a high percentile amo
+S9	median cosine all pairs	−0.030	1501,1529	found	[Because most disease pairs score close to zero (median cosine score −0.030 over all 84,766,710 pairs), a
+S9	positives in top 100	7 of the 9 positive	1503	found	[On this scale 7 of the 9 positive pairs have a best partner ran
+S9	positive best-rank range	1 to 312	1503	found	ve pairs have a best partner rank of 100 or better (best partner rank 1 to 312 across all 9), whereas the be
+S9	negative best-rank range	416 and 1,749	1503	found	9), whereas the best partner rank of every negative pair lies between 416 and 1,749 ([Supplementary Table @tbl:SI
+S10	anatomy clusters	21 are dominated	1573	found	[Of the 55 clusters, 21 are dominated by a body system alone (5,376
+S10	mixed clusters	6 meet both	1573	found	5 clusters, 21 are dominated by a body system alone (5,376 diseases), 6 meet both definitions (1,420), 11 are e
+S10	process clusters	11 are enriched	1573	found	 body system alone (5,376 diseases), 6 meet both definitions (1,420), 11 are enriched for a mechanism or process al
+S10	neoplasm clusters	4 are neoplasm	1573	found	ns (1,420), 11 are enriched for a mechanism or process alone (2,410), 4 are neoplasm clusters (913) and 13 are unr
+S10	unresolved clusters	13 are unresolved	1573	found	mechanism or process alone (2,410), 4 are neoplasm clusters (913) and 13 are unresolved (2,902) ([Supplementary Table
+S10	anatomy diseases	5,376	1573	found	[Of the 55 clusters, 21 are dominated by a body system alone (5,376 diseases), 6 meet both defini
+S10	mixed diseases	1,420	1573	found	ted by a body system alone (5,376 diseases), 6 meet both definitions (1,420), 11 are enriched for a mecha
+S10	process diseases	2,410	1573	found	efinitions (1,420), 11 are enriched for a mechanism or process alone (2,410), 4 are neoplasm clusters (91
+S10	neoplasm diseases	913	1573,2032	found	ed for a mechanism or process alone (2,410), 4 are neoplasm clusters (913) and 13 are unresolved (2,902
+S10	unresolved diseases	2,902	1573	found	s alone (2,410), 4 are neoplasm clusters (913) and 13 are unresolved (2,902) ([Supplementary Table @tbl:S
+S10	pairs_hpo_jaccard_fold median anatomy	4.6-fold	1575	found	anism alone (median enrichment of phenotype overlap over random pairs 4.6-fold against 2.1-fold; two-sided M
+S10	pairs_hpo_jaccard_fold median process	2.1-fold	1575	found	an enrichment of phenotype overlap over random pairs 4.6-fold against 2.1-fold; two-sided Mann–Whitney p = 0
+S10	pairs_hpo_jaccard_fold Mann-Whitney p	p = 0.005	1575	found	p over random pairs 4.6-fold against 2.1-fold; two-sided Mann–Whitney p = 0.005), and less strongly share gen
+S10	pairs_gene_share_fold median anatomy	7.8-fold	1575	found	ld; two-sided Mann–Whitney p = 0.005), and less strongly share genes (7.8-fold against 17.2-fold; p = 0.032)
+S10	pairs_gene_share_fold median process	17.2-fold	1575	found	n–Whitney p = 0.005), and less strongly share genes (7.8-fold against 17.2-fold; p = 0.032) and biological pr
+S10	pairs_gene_share_fold Mann-Whitney p	p = 0.032	1575	found	 = 0.005), and less strongly share genes (7.8-fold against 17.2-fold; p = 0.032) and biological processes (2.
+S10	pairs_gobp_jaccard_fold median anatomy	2.1-fold	1575	found	an enrichment of phenotype overlap over random pairs 4.6-fold against 2.1-fold; two-sided Mann–Whitney p = 0
+S10	pairs_gobp_jaccard_fold median process	4.1-fold	1575	found	inst 17.2-fold; p = 0.032) and biological processes (2.1-fold against 4.1-fold; p = 0.001).]{custom-style="R
+S10	pairs_gobp_jaccard_fold Mann-Whitney p	p = 0.001	1575,1681,1687	found	fold; p = 0.032) and biological processes (2.1-fold against 4.1-fold; p = 0.001).]{custom-style="RevisionBlue
+S17	best mean silhouette K	K = 45	1493	found	[The best mean silhouette is reached at K = 45 (0.239, standard deviation 0.
+S17	one-SD rule K	K = 35	1493,1558,702	found	eached at K = 45 (0.239, standard deviation 0.003 across subsamples); K = 35, 40, 45, 50 and 55 lie within
+S17	silhouette at K=55	0.237	1493	found	hin one standard deviation of it, and K = 55 has a mean silhouette of 0.237 (2.5–97.5% range across subsa
+S17	median within-cluster distance	is 0.46, against	1543	found	[The median distance of a disease to the other members of its cluster is 0.46, against 0.62 to the nearest other clu
+S17	median between-cluster distance	against 0.62 to the nearest	1543	found	an distance of a disease to the other members of its cluster is 0.46, against 0.62 to the nearest other cluster ([Supplementary
+S18	Spearman rho map vs model	ρ = 0.41	1640,1642	found	 distance and the cosine distance have a Spearman rank correlation of ρ = 0.412, so the map preserves the br
+S18	pairs	1,999,833	1640,1642	found	[Over 1,999,833 random disease pairs, map dis
+S11/S3	AUROC rare-rare	0.757	1653,1710,259	found	[On IxIDN-Matched, DisAtlas reaches an AUROC of 0.757 (95% CI 0.708–0.801) on 2,452
+S11/S3	CI rare-rare	0.708–0.801	1653,1710	found	[On IxIDN-Matched, DisAtlas reaches an AUROC of 0.757 (95% CI 0.708–0.801) on 2,452 rare–rare pairs and
+S11/S3	AUROC rare-common	0.893	1653,1711,2039,259	found	s an AUROC of 0.757 (95% CI 0.708–0.801) on 2,452 rare–rare pairs and 0.893 (0.829–0.937) on 1,241 rare–c
+S11/S3	CI rare-common	0.829–0.937	1653,1711	found	ROC of 0.757 (95% CI 0.708–0.801) on 2,452 rare–rare pairs and 0.893 (0.829–0.937) on 1,241 rare–common pairs (
+S11/S3	AUROC common-common	0.848	1712,2036	found	| Common–common (IxIDN-Matched) | 671 (645 / 26) | 0.848 | 0.671–0.953 | [+0.071 (−0.1
+S11/S3	CI common-common	0.671–0.953	1712	found	| Common–common (IxIDN-Matched) | 671 (645 / 26) | 0.848 | 0.671–0.953 | [+0.071 (−0.115 to +0.301; 
+S11/S3	AUROC CC+ common-common	0.856	1713,1275	found	mon–common (supplementary, matched negatives) | 309 added negatives | 0.856 | 0.755–0.932 | not significa
+S11/S3	added negatives	309 added	1713,1715,820	found	| Common–common (supplementary, matched negatives) | 309 added negatives | 0.856 | 0.755–0.9
+S19	rare with a common among 10 nearest	59% of rare	1687	found	[Among their 10 nearest neighbors, 59% of rare diseases have at least one co
+S19	annotation-depth null (rare, k=10)	80% under the annotation	1687	found	hbors, 59% of rare diseases have at least one common disease, against 80% under the annotation-depth-matched null and 88% un
+S19	degree/unrestricted null (rare, k=10)	88% under the degree	1687	found	mmon disease, against 80% under the annotation-depth-matched null and 88% under the degree-matched and unrestricted null
+S19	unrestricted null equals degree null (rounded)	88% under the degree	1687	found	mmon disease, against 80% under the annotation-depth-matched null and 88% under the degree-matched and unrestricted null
+S19	permutation p (rare, k=10)	p = 0.001	1575,1681,1687	found	fold; p = 0.032) and biological processes (2.1-fold against 4.1-fold; p = 0.001).]{custom-style="RevisionBlue
+S19	rare with no common among 10 nearest	41% have none	1687	found	or each, the floor achievable with 1,000 permutations); the remaining 41% have none, and for the median rare dise
+S19	median first common rank for rare	the 8th neighbor	1687	found	e none, and for the median rare disease the nearest common disease is the 8th neighbor.]{custom-style="RevisionBlue"
+S19	common with a rare among 10 nearest	97% within the 10	1689	found	[Common diseases almost always have a rare neighbor (97% within the 10 nearest, against essentially 
+S19	permutations	1,000 permutations	1687,1691	found	and unrestricted nulls (p = 0.001 for each, the floor achievable with 1,000 permutations); the remaining 41% have none

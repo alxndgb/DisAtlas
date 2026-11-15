@@ -1,0 +1,254 @@
+{
+ "ms_source": {
+  "file": "assets/manuscripts/disatlas/disatlas_representation_learning_story.md (dis2vec_2)",
+  "sha256": "52e96bb6ce1272c617ae6bfe2a785764d8e3faa5feb9873a20fed23e803d5ab7",
+  "note": "ms snippets re-bound to the story markdown (binding source of the final text); line numbers refer to that file at this sha256"
+ },
+ "items": [
+  {
+   "label": "SI_mechanism_coverage",
+   "script": "figures/SI/si_bio_gap_numbers.py",
+   "numbers": "figures/SI/SI_bio_gap_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "mechanism_classes.n_classes",
+     "ms": "Mechanism-class positive controls. For 11 mechanism classes (JAK, BTK, PD-1/PD-L1, com",
+     "expected": 11,
+     "ms_source": "story.md L2056",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)",
+     "previous_ms": " clinical milestones of the complement inhibitors behind this set are shown in Figure S24. Mechanism-class positive controls. For 11 mechanism classes (JAK, BTK, PD-1/PD-L1, complement C5, T"
+    },
+    {
+     "key": "mechanism_classes.n_cases",
+     "ms": "/IL-6R, IL-1, IL-4R/IL-13, IL-5/IL-5R, IgE and FcRn), the cases are 50 pairs of diseases in which drugs of the",
+     "expected": 50,
+     "ms_source": "story.md L2056",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "mechanism_classes.n_recovered",
+     "ms": "th percentile of this reference set in a majority of the five seeds; 48 of the 50 cases are recovered, and the",
+     "expected": 48,
+     "ms_source": "story.md L2058",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "mechanism_classes.median_pct_range.0",
+     "ms": " cases are recovered, and the class median percentiles range from 75.8 to 98.9.]  [**Coverage in dated graph s",
+     "expected": 75.8,
+     "tol": 0.05,
+     "ms_source": "story.md L2058",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "mechanism_classes.median_pct_range.1",
+     "ms": "re recovered, and the class median percentiles range from 75.8 to 98.9.]  [**Coverage in dated graph slices.**",
+     "expected": 98.9,
+     "tol": 0.05,
+     "ms_source": "story.md L2058",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    }
+   ]
+  },
+  {
+   "label": "SI_mechanism_coverage",
+   "script": "figures/SI/si_mechanism_coverage_slices.py",
+   "numbers": "figures/SI/SI_mechanism_coverage_slices_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "expansion.cross",
+     "ms": "not yet linked to the drug's earlier indications, and 84 of 94 such expansions (89%) reach the 75th percentil",
+     "expected": 84,
+     "ms_source": "story.md L2060",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "expansion.n",
+     "ms": "et linked to the drug's earlier indications, and 84 of 94 such expansions (89%) reach the 75th percentile in a",
+     "expected": 94,
+     "ms_source": "story.md L2060",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "expansion.cross_pct",
+     "ms": "g's earlier indications, and 84 of 94 such expansions (89%) reach the 75th percentile in at least one slice. F",
+     "expected": 89,
+     "ms_source": "story.md L2060",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "failed.cross",
+     "ms": "iled indications that meet the same rule reach it at a similar rate (78 of 87, 90%), so this figure shows that",
+     "expected": 78,
+     "ms_source": "story.md L2062",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "failed.n",
+     "ms": "drug's first registered trial in the disease (2008). Failed indications that meet the same rule reach it at a similar rate (78 of 87, 90%), so this figure shows that the graph covers the dru",
+     "expected": 87,
+     "ms_source": "story.md L2061",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "failed.cross_pct",
+     "ms": "ions that meet the same rule reach it at a similar rate (78 of 87, 90%), so this figure shows that the graph c",
+     "expected": 90,
+     "ms_source": "story.md L2062",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "expansion.first_scorable",
+     "ms": "ercentile in at least one slice: approved expansions 84 of 94 (89%; 57 already in the first scorable slice), f",
+     "expected": 57,
+     "ms_source": "story.md L2066",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "failed.first_scorable",
+     "ms": "ady in the first scorable slice), failed indications 78 of 87 (90%; 44 in the first scorable slice). Markers s",
+     "expected": 44,
+     "ms_source": "story.md L2066",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "expansion.decoy_mean",
+     "ms": "arkers show the mean share for matched decoy diseases (34.8% and 32.2%).",
+     "expected": 0.348,
+     "tol": 0.0005,
+     "ms_source": "story.md L2066",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)"
+    },
+    {
+     "key": "failed.decoy_mean",
+     "ms": "w the mean share for matched decoy diseases (34.8% and 32.2%).",
+     "expected": 0.322,
+     "tol": 0.0005,
+     "ms_source": "story.md L2066",
+     "classified_by": "deterministic(value+context match); reviewed session-model(claude-opus-5-5)"
+    }
+   ]
+  },
+  {
+   "label": "SI_mechanism_coverage",
+   "script": "figures/SI/si_complement_milestones.py",
+   "numbers": "figures/SI/SI_complement_milestones_numbers.json",
+   "status": "exact",
+   "checks": [
+    {
+     "key": "drugs",
+     "ms": "omplement inhibitors by drug and indication and DisAtlas similarity of the eculizumab indications. a, 45 drug-indication rows for 12 complement inhibitors: 24 approved (first registered tria",
+     "expected": 12,
+     "ms_source": "story.md L2064",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "approved",
+     "ms": "ug and indication and DisAtlas similarity of the eculizumab indications. a, 45 drug-indication rows for 12 complement inhibitors: 24 approved (first registered trial, first Phase 3 trial, fi",
+     "expected": 24,
+     "ms_source": "story.md L2064",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "ongoing",
+     "ms": "ase 3 trial, first trial publication in PubMed, FDA approval from openFDA); 9 failed (Phase 2 or later, stopped for efficacy) and 12 ongoing with an active Phase 3 trial, shown in gray (not ",
+     "expected": 12,
+     "ms_source": "story.md L2064",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "rows",
+     "ms": "24: Clinical milestones of complement inhibitors by drug and indication and DisAtlas similarity of the eculizumab indications. a, 45 drug-indication rows for 12 complement inhibitors: 24 app",
+     "expected": 45,
+     "ms_source": "story.md L2064",
+     "note": "former manuscript_mismatch resolved: final text prints the regenerated value (previously printed 46 drug–indication rows)",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "failed",
+     "ms": "ibitors: 24 approved (first registered trial, first Phase 3 trial, first trial publication in PubMed, FDA approval from openFDA); 9 failed (Phase 2 or later, stopped for efficacy) and 12 ong",
+     "expected": 9,
+     "ms_source": "story.md L2064",
+     "note": "former manuscript_mismatch resolved: final text prints the regenerated value (previously printed 10 failed)",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    },
+    {
+     "key": "dated_events",
+     "ms": "original eculizumab approval (paroxysmal nocturnal hemoglobinuria, 2007) is taken from the openFDA submission record. Each of the 131 plotted dates is listed with its source (ClinicalTrials.",
+     "expected": 131,
+     "ms_source": "story.md L2064",
+     "note": "former manuscript_mismatch resolved: final text prints the regenerated value (previously printed 130 plotted dates)",
+     "classified_by": "deterministic(verbatim snippet in story)"
+    }
+   ]
+  }
+ ],
+ "unchecked": [
+  {
+   "section": "SI_mechanism_coverage",
+   "token": "3",
+   "reason": "part of a disease, trial-phase or class name",
+   "ctx": "for 12 complement inhibitors: 24 approved (first registered trial, first Phase 3 trial, first trial publication in PubMe",
+   "ms_source": "generic token (no passage)",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "section": "SI_mechanism_coverage",
+   "token": "3",
+   "reason": "part of a disease, trial-phase or class name",
+   "ctx": "tion in PubMed, FDA approval from openFDA); 9 failed (Phase 2 or later, stopped for efficacy) and 12 ongoing with an active Phase 3 trial, shown in gray (not approved). Eculizumab in general",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)",
+   "ms_source": "generic token (no passage)"
+  },
+  {
+   "section": "SI_mechanism_coverage",
+   "token": "2007",
+   "reason": "calendar year (slice / release date label)",
+   "ctx": "ed. The original eculizumab approval (paroxysmal nocturnal hemoglobinuria, 2007) is taken from the openFDA submission r",
+   "ms_source": "generic token (no passage)",
+   "classified_by": "rule-based label; reviewed session-model(claude-opus-5-5)"
+  },
+  {
+   "token": "2,000",
+   "reason": "reference-set size of random disease pairs (design parameter)",
+   "ms": "Each case pair is ranked against a reference set of 2,000 random disease pairs whose members are drawn from the same training-graph degree groups as the two cas",
+   "ms_source": "story.md L2057",
+   "classified_by": "session-model(claude-opus-5-5)"
+  }
+ ],
+ "manuscript_mismatch": [],
+ "retired": [
+  {
+   "file": "figures/SI/SI_fda_prioritisation_text.md",
+   "numbers": [
+    "2000"
+   ],
+   "reason": "coincidental binding: '2,000' matched '2,000 resamples' in an SI markdown no longer in the final text; the printed value is the case reference-set size (design parameter), now listed under unchecked",
+   "previous_ms": "Each case pair is ranked against a reference set of 2,000 random disease pairs whose members are drawn from the same training-graph degree groups as the two cas",
+   "classified_by": "session-model(claude-opus-5-5)"
+  },
+  {
+   "token": "46",
+   "reason": "superseded: the final text prints 45 rows (checked: SI_mechanism_coverage rows)",
+   "previous_ms": "![**[Clinical milestones of complement inhibitors by drug and indication.]** [46 drug–indication rows for 12 complement ",
+   "previous_reason": "manuscript_mismatch entry (complement milestones caption)",
+   "classified_by": "session-model(claude-opus-5-5)"
+  },
+  {
+   "token": "10",
+   "reason": "superseded: the final text prints 9 failed (checked: SI_mechanism_coverage failed)",
+   "previous_ms": "Phase 3 trial, first trial publication in PubMed, FDA approval from openFDA); 10 failed (Phase 2 or later, stopped for e",
+   "previous_reason": "manuscript_mismatch entry (complement milestones caption)",
+   "classified_by": "session-model(claude-opus-5-5)"
+  },
+  {
+   "token": "130",
+   "reason": "superseded: the final text prints 131 plotted dates (checked: SI_mechanism_coverage dated_events)",
+   "previous_ms": "is dated after the approval, so its trial markers are not shown. Each of the 130 plotted dates is listed with its source",
+   "previous_reason": "manuscript_mismatch entry (complement milestones caption)",
+   "classified_by": "session-model(claude-opus-5-5)"
+  }
+ ]
+}

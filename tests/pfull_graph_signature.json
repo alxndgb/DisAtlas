@@ -1,0 +1,23 @@
+{
+ "specific_edges_sha256": "7c908081c3d87e743016d45a3a6d5d6d3558accb1dbba1490246b956e2c922f0",
+ "inputs": {
+  "spec_edges": 189903,
+  "broad_edges": 369405,
+  "broad_edgeset_sha256": "85e8163d97a9f7ad065bb5a7caf3b348f9083040eaf5c7faa4b5751b8b0db8ed",
+  "tier1_rows": 24450,
+  "tier1_set_sha256": "980916169147b568f77145553439fe56f5bdc74975a9b57ee92196c2c6bc2582"
+ },
+ "union_edges": 533016,
+ "fda_edges_removed": 931,
+ "fda_spec_edges_removed": 0,
+ "edges": 532958,
+ "nodes": 13042,
+ "broad": 368474,
+ "spec": 220714,
+ "both": 56230,
+ "ga_added": 873,
+ "ga_reweighted": 29938,
+ "edgeset_sha256": "f6030d6d5356f36d70a4540edf1e109eee5c88e796f3274096ba97bd3a5c80b5",
+ "w_arm_sha256": "fe983292a74cb1d763ec07561d4a54285c595eb09854899e07a1865da7891c95",
+ "row_order_sha256": "92ff23857258111137924ef6addde8caf37596e5d6732629a550e1ca90ddfd74"
+}

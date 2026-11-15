@@ -1,0 +1,863 @@
+{
+  "anchored": {
+    "common_anchor_rank_common_partners": {
+      "anchors": 22,
+      "auroc": 0.831,
+      "ci": [
+        0.713,
+        0.934
+      ],
+      "neg": 22,
+      "pairs": 213
+    },
+    "common_anchor_rank_rare_partners": {
+      "anchors": 104,
+      "auroc": 0.88,
+      "ci": [
+        0.835,
+        0.922
+      ],
+      "neg": 697,
+      "pairs": 934
+    },
+    "rare_anchor_rank_common_partners": {
+      "anchors": 31,
+      "auroc": 0.793,
+      "ci": [
+        0.664,
+        0.912
+      ],
+      "neg": 75,
+      "pairs": 120
+    },
+    "rare_anchor_rank_rare_partners": {
+      "anchors": 452,
+      "auroc": 0.738,
+      "ci": [
+        0.71,
+        0.764
+      ],
+      "neg": 1078,
+      "pairs": 2251
+    }
+  },
+  "ari_cos_vs_learned": 0.7,
+  "cocluster_test": {
+    "n_neg": 603,
+    "n_pos": 491,
+    "neg": 2.8,
+    "pos": 27.9,
+    "ratio": 9.9
+  },
+  "controls": [
+    {
+      "best_rank": 2,
+      "pct": 99.9,
+      "role": "positive",
+      "same": "yes",
+      "score": 0.907,
+      "tag": "Crohn-UC"
+    },
+    {
+      "best_rank": 1,
+      "pct": 99.9,
+      "role": "positive",
+      "same": "yes",
+      "score": 0.855,
+      "tag": "aHUS-PNH"
+    },
+    {
+      "best_rank": 52,
+      "pct": 99.8,
+      "role": "positive",
+      "same": "no",
+      "score": 0.811,
+      "tag": "Psoriasis-PsA"
+    },
+    {
+      "best_rank": 1,
+      "pct": 99.7,
+      "role": "positive",
+      "same": "yes",
+      "score": 0.786,
+      "tag": "TSC-LAM"
+    },
+    {
+      "best_rank": 14,
+      "pct": 99.7,
+      "role": "positive",
+      "same": "yes",
+      "score": 0.79,
+      "tag": "CAPS-FMF"
+    },
+    {
+      "best_rank": 13,
+      "pct": 99.5,
+      "role": "positive",
+      "same": "no",
+      "score": 0.735,
+      "tag": "LALD_Wolman-CESD"
+    },
+    {
+      "best_rank": 5,
+      "pct": 99.3,
+      "role": "positive",
+      "same": "yes",
+      "score": 0.681,
+      "tag": "gMG-NMO"
+    },
+    {
+      "best_rank": 312,
+      "pct": 97.9,
+      "role": "positive",
+      "same": "no",
+      "score": 0.507,
+      "tag": "GIST-CML"
+    },
+    {
+      "best_rank": 227,
+      "pct": 97.9,
+      "role": "positive",
+      "same": "no",
+      "score": 0.512,
+      "tag": "GIST-SM"
+    },
+    {
+      "best_rank": 416,
+      "pct": 96.1,
+      "role": "negative",
+      "same": "no",
+      "score": 0.401,
+      "tag": "TSC-MS"
+    },
+    {
+      "best_rank": 848,
+      "pct": 92.1,
+      "role": "negative",
+      "same": "no",
+      "score": 0.269,
+      "tag": "PKD-PCOS"
+    },
+    {
+      "best_rank": 452,
+      "pct": 95.0,
+      "role": "negative",
+      "same": "no",
+      "score": 0.354,
+      "tag": "NF1mut-NF2"
+    },
+    {
+      "best_rank": 1288,
+      "pct": 90.0,
+      "role": "negative",
+      "same": "no",
+      "score": 0.228,
+      "tag": "ALS-SSc"
+    },
+    {
+      "best_rank": 1293,
+      "pct": 89.7,
+      "role": "negative",
+      "same": "no",
+      "score": 0.223,
+      "tag": "DMD-FECD"
+    },
+    {
+      "best_rank": 1749,
+      "pct": 86.9,
+      "role": "negative",
+      "same": "no",
+      "score": 0.181,
+      "tag": "DI-T2D"
+    },
+    {
+      "best_rank": 1454,
+      "pct": 86.7,
+      "role": "negative",
+      "same": "no",
+      "score": 0.179,
+      "tag": "SMA-Kennedy"
+    },
+    {
+      "best_rank": 1677,
+      "pct": 87.3,
+      "role": "negative",
+      "same": "no",
+      "score": 0.186,
+      "tag": "OI-Osteopetrosis"
+    }
+  ],
+  "controls_auroc": 1.0,
+  "controls_n_neg": 8,
+  "controls_n_pos": 9,
+  "controls_neg_best_rank_range": [
+    416,
+    1749
+  ],
+  "controls_neg_pct_range": [
+    86.7,
+    96.1
+  ],
+  "controls_neg_separated": 8,
+  "controls_pos_best_rank_range": [
+    1,
+    312
+  ],
+  "controls_pos_same_cluster": 5,
+  "controls_pos_top100": 7,
+  "controls_split_pos_min_pct": 97.9,
+  "coverage_k10": {
+    "null_annotation|common": [
+      100,
+      0.001
+    ],
+    "null_annotation|rare": [
+      80,
+      0.001
+    ],
+    "null_degree|common": [
+      100,
+      0.001
+    ],
+    "null_degree|rare": [
+      88,
+      0.001
+    ],
+    "null_uniform|common": [
+      100,
+      0.001
+    ],
+    "null_uniform|rare": [
+      88,
+      0.001
+    ],
+    "observed|common": [
+      97,
+      NaN
+    ],
+    "observed|rare": [
+      59,
+      NaN
+    ]
+  },
+  "coverage_k10_rare_none_pct": 41,
+  "coverage_nperm": 1000,
+  "dmd_dm1": [
+    0.643,
+    99.1,
+    "no"
+  ],
+  "dmd_eligible": [
+    51,
+    93.28
+  ],
+  "dmd_eligible_below_92": 50,
+  "eligible_share_pct": {
+    "common-common": 7.5,
+    "rare-common": 35.4,
+    "rare-rare": 31.8
+  },
+  "enrichment_k10": {
+    "null_annotation|common": [
+      0.779,
+      0.001
+    ],
+    "null_annotation|rare": [
+      0.174,
+      0.001
+    ],
+    "null_degree|common": [
+      0.801,
+      0.001
+    ],
+    "null_degree|rare": [
+      0.196,
+      0.001
+    ],
+    "null_uniform|common": [
+      0.806,
+      0.001
+    ],
+    "null_uniform|rare": [
+      0.194,
+      0.001
+    ],
+    "observed|common": [
+      0.615,
+      1.0
+    ],
+    "observed|rare": [
+      0.135,
+      1.0
+    ]
+  },
+  "external": {
+    "ami": 0.34,
+    "ami_null_max": 0.002,
+    "clusters_enriched": 53,
+    "enriched_null_max": 0,
+    "n_categories": 19,
+    "n_perm": 200,
+    "n_shuffles": 50,
+    "n_with_category": 10133,
+    "perm_p": 0.005,
+    "random_share": 25,
+    "same_cluster_share": 63
+  },
+  "headline_test": {
+    "auroc": 0.86,
+    "ci": [
+      0.806,
+      0.906
+    ],
+    "n": 1094,
+    "pos": 491
+  },
+  "internal": {
+    "n_clusters_neg": 0,
+    "nearest_other": 0.62,
+    "share_neg_sil": 9.6,
+    "sil": 0.24,
+    "size_range": [
+      113,
+      450
+    ],
+    "within": 0.46
+  },
+  "ksel_K55": [
+    0.237,
+    0.232,
+    0.241
+  ],
+  "ksel_K_range": [
+    10,
+    80
+  ],
+  "ksel_best_mean": 0.239,
+  "ksel_best_mean_K": 45,
+  "ksel_best_sd": 0.003,
+  "ksel_chosen_K": 55,
+  "ksel_kinds": {
+    "boot": 1500
+  },
+  "ksel_n_subsamples": 100,
+  "ksel_within_1sd": [
+    35,
+    40,
+    45,
+    50,
+    55
+  ],
+  "layout": {
+    "n_pairs": 1999833,
+    "spearman": 0.412
+  },
+  "layout_controls": {
+    "cmds": 71,
+    "isomap": 72,
+    "pca": 72,
+    "tsne": 66,
+    "umap": 70
+  },
+  "median_cosine_all_pairs": -0.03,
+  "median_first_common_rank_for_rare": 8.0,
+  "membership": {
+    "both": 55,
+    "common_ge10": 47,
+    "n_clusters": 55,
+    "n_common": 2532,
+    "n_rare": 10489,
+    "rare_share": 81
+  },
+  "n_diseases": 13021,
+  "n_pairs_all": 84766710,
+  "n_scored_partners": 13020,
+  "negative_pool_funnel": {
+    "common-common": {
+      "all_pairs": 16290,
+      "n_diseases_a": 181,
+      "n_diseases_b": 181,
+      "negative_pool": 1220,
+      "selected_negatives": 26
+    },
+    "rare-common": {
+      "all_pairs": 145524,
+      "n_diseases_a": 804,
+      "n_diseases_b": 181,
+      "negative_pool": 51526,
+      "selected_negatives": 988
+    },
+    "rare-rare": {
+      "all_pairs": 322806,
+      "n_diseases_a": 804,
+      "n_diseases_b": 804,
+      "negative_pool": 102629,
+      "selected_negatives": 1168
+    }
+  },
+  "ra_case": {
+    "antisynthetase": {
+      "hi": 0.537,
+      "lo": 0.491,
+      "mean": 0.505,
+      "pct": 97.8,
+      "query": "ORPHA:81"
+    },
+    "cadm": {
+      "hi": 0.309,
+      "lo": 0.156,
+      "mean": 0.236,
+      "pct": 90.4,
+      "query": "MONDO:1010096"
+    },
+    "classical_dm": null,
+    "dermatomyositis_mondo": {
+      "hi": 0.644,
+      "lo": 0.589,
+      "mean": 0.613,
+      "pct": 98.9,
+      "query": "MONDO:0016367"
+    },
+    "ibm": {
+      "hi": 0.415,
+      "lo": 0.376,
+      "mean": 0.4,
+      "pct": 96.1,
+      "query": "MONDO:0007827"
+    },
+    "imnm": {
+      "hi": 0.383,
+      "lo": 0.351,
+      "mean": 0.361,
+      "pct": 95.2,
+      "query": "MONDO:0016098"
+    },
+    "mctd": {
+      "hi": 0.103,
+      "lo": 0.055,
+      "mean": 0.084,
+      "pct": 76.3,
+      "query": "ORPHA:809"
+    },
+    "myositis_disease": {
+      "hi": 0.638,
+      "lo": 0.58,
+      "mean": 0.604,
+      "pct": 98.8,
+      "query": "MONDO:0021167"
+    },
+    "overlap_myositis": null,
+    "polymyositis": {
+      "hi": 0.581,
+      "lo": 0.493,
+      "mean": 0.534,
+      "pct": 98.2,
+      "query": "ORPHA:732"
+    }
+  },
+  "ra_id_found": true,
+  "recovery": {
+    "common anchor, rare candidates": {
+      "DisAtlas": 0.934,
+      "TxGNN": 0.716,
+      "adamic_adar": 0.948,
+      "common_neighbours": 0.945,
+      "cosine": 0.934,
+      "d_TxGNN": [
+        0.218,
+        0.096,
+        0.359
+      ],
+      "d_adamic_adar": [
+        -0.013,
+        -0.08,
+        0.047
+      ],
+      "d_common_neighbours": [
+        -0.01,
+        -0.079,
+        0.051
+      ],
+      "d_cosine": [
+        0.0,
+        -0.006,
+        0.011
+      ],
+      "d_partner_degree": [
+        0.108,
+        0.004,
+        0.2
+      ],
+      "n": 68,
+      "n_diseases": 83,
+      "partner_degree": 0.826
+    },
+    "rare anchor, common candidates": {
+      "DisAtlas": 0.897,
+      "TxGNN": 0.725,
+      "adamic_adar": 0.916,
+      "common_neighbours": 0.914,
+      "cosine": 0.896,
+      "d_TxGNN": [
+        0.173,
+        0.044,
+        0.304
+      ],
+      "d_adamic_adar": [
+        -0.019,
+        -0.056,
+        0.023
+      ],
+      "d_common_neighbours": [
+        -0.017,
+        -0.054,
+        0.026
+      ],
+      "d_cosine": [
+        0.001,
+        -0.004,
+        0.009
+      ],
+      "d_partner_degree": [
+        0.083,
+        0.003,
+        0.166
+      ],
+      "n": 68,
+      "n_diseases": 83,
+      "partner_degree": 0.814
+    }
+  },
+  "recovery_txgnn_mapped": {
+    "common anchor, rare candidates": {
+      "DisAtlas": 0.932,
+      "TxGNN": 0.733,
+      "adamic_adar": 0.946,
+      "common_neighbours": 0.943,
+      "cosine": 0.931,
+      "d_TxGNN": [
+        0.199,
+        0.079,
+        0.327
+      ],
+      "d_adamic_adar": [
+        -0.014,
+        -0.078,
+        0.04
+      ],
+      "d_common_neighbours": [
+        -0.011,
+        -0.078,
+        0.044
+      ],
+      "d_cosine": [
+        0.0,
+        -0.006,
+        0.011
+      ],
+      "d_partner_degree": [
+        0.104,
+        0.003,
+        0.188
+      ],
+      "n": 65,
+      "n_diseases": 81,
+      "partner_degree": 0.827
+    },
+    "rare anchor, common candidates": {
+      "DisAtlas": 0.893,
+      "TxGNN": 0.746,
+      "adamic_adar": 0.913,
+      "common_neighbours": 0.911,
+      "cosine": 0.892,
+      "d_TxGNN": [
+        0.147,
+        0.024,
+        0.268
+      ],
+      "d_adamic_adar": [
+        -0.02,
+        -0.057,
+        0.018
+      ],
+      "d_common_neighbours": [
+        -0.018,
+        -0.056,
+        0.023
+      ],
+      "d_cosine": [
+        0.001,
+        -0.004,
+        0.009
+      ],
+      "d_partner_degree": [
+        0.077,
+        -0.002,
+        0.156
+      ],
+      "n": 65,
+      "n_diseases": 81,
+      "partner_degree": 0.816
+    }
+  },
+  "sil_cosine": 0.24,
+  "sil_learned": 0.356,
+  "strata": {
+    "IxIDN-Matched-CC+|All pairs|all": {
+      "added": 309,
+      "auroc": 0.82,
+      "ci": [
+        0.783,
+        0.855
+      ],
+      "d_ci": [
+        0.142,
+        0.245
+      ],
+      "d_stack": 0.193,
+      "n": 4673,
+      "neg": 2491,
+      "pos": 2182
+    },
+    "IxIDN-Matched-CC+|All pairs|common-common": {
+      "added": 309,
+      "auroc": 0.856,
+      "ci": [
+        0.755,
+        0.932
+      ],
+      "d_ci": [
+        -0.168,
+        0.071
+      ],
+      "d_stack": -0.026,
+      "n": 980,
+      "neg": 335,
+      "pos": 645
+    },
+    "IxIDN-Matched-CC+|All pairs|rare-common": {
+      "added": 0,
+      "auroc": 0.893,
+      "ci": [
+        0.833,
+        0.941
+      ],
+      "d_ci": [
+        0.152,
+        0.339
+      ],
+      "d_stack": 0.245,
+      "n": 1241,
+      "neg": 988,
+      "pos": 253
+    },
+    "IxIDN-Matched-CC+|All pairs|rare-rare": {
+      "added": 0,
+      "auroc": 0.757,
+      "ci": [
+        0.71,
+        0.803
+      ],
+      "d_ci": [
+        0.098,
+        0.217
+      ],
+      "d_stack": 0.159,
+      "n": 2452,
+      "neg": 1168,
+      "pos": 1284
+    },
+    "IxIDN-Matched-CC+|Test split pairs|all": {
+      "added": 52,
+      "auroc": 0.844,
+      "ci": [
+        0.785,
+        0.896
+      ],
+      "d_ci": [
+        0.14,
+        0.294
+      ],
+      "d_stack": 0.22,
+      "n": 1146,
+      "neg": 655,
+      "pos": 491
+    },
+    "IxIDN-Matched-CC+|Test split pairs|common-common": {
+      "added": 52,
+      "auroc": 0.794,
+      "ci": [
+        0.565,
+        0.982
+      ],
+      "d_ci": [
+        -0.372,
+        0.046
+      ],
+      "d_stack": -0.135,
+      "n": 177,
+      "neg": 55,
+      "pos": 122
+    },
+    "IxIDN-Matched-CC+|Test split pairs|rare-common": {
+      "added": 0,
+      "auroc": 0.939,
+      "ci": [
+        0.872,
+        0.984
+      ],
+      "d_ci": [
+        0.157,
+        0.501
+      ],
+      "d_stack": 0.334,
+      "n": 347,
+      "neg": 279,
+      "pos": 68
+    },
+    "IxIDN-Matched-CC+|Test split pairs|rare-rare": {
+      "added": 0,
+      "auroc": 0.778,
+      "ci": [
+        0.704,
+        0.849
+      ],
+      "d_ci": [
+        0.11,
+        0.291
+      ],
+      "d_stack": 0.199,
+      "n": 622,
+      "neg": 321,
+      "pos": 301
+    },
+    "IxIDN-Matched|All pairs|all": {
+      "added": 0,
+      "auroc": 0.834,
+      "ci": [
+        0.798,
+        0.867
+      ],
+      "d_ci": [
+        0.164,
+        0.251
+      ],
+      "d_stack": 0.208,
+      "n": 4364,
+      "neg": 2182,
+      "pos": 2182
+    },
+    "IxIDN-Matched|All pairs|common-common": {
+      "added": 0,
+      "auroc": 0.848,
+      "ci": [
+        0.671,
+        0.953
+      ],
+      "d_ci": [
+        -0.115,
+        0.301
+      ],
+      "d_stack": 0.071,
+      "n": 671,
+      "neg": 26,
+      "pos": 645
+    },
+    "IxIDN-Matched|All pairs|rare-common": {
+      "added": 0,
+      "auroc": 0.893,
+      "ci": [
+        0.829,
+        0.937
+      ],
+      "d_ci": [
+        0.147,
+        0.345
+      ],
+      "d_stack": 0.245,
+      "n": 1241,
+      "neg": 988,
+      "pos": 253
+    },
+    "IxIDN-Matched|All pairs|rare-rare": {
+      "added": 0,
+      "auroc": 0.757,
+      "ci": [
+        0.708,
+        0.801
+      ],
+      "d_ci": [
+        0.097,
+        0.218
+      ],
+      "d_stack": 0.159,
+      "n": 2452,
+      "neg": 1168,
+      "pos": 1284
+    },
+    "IxIDN-Matched|Test split pairs|all": {
+      "added": 0,
+      "auroc": 0.86,
+      "ci": [
+        0.805,
+        0.908
+      ],
+      "d_ci": [
+        0.181,
+        0.321
+      ],
+      "d_stack": 0.253,
+      "n": 1094,
+      "neg": 603,
+      "pos": 491
+    },
+    "IxIDN-Matched|Test split pairs|common-common": {
+      "added": 0,
+      "auroc": NaN,
+      "ci": [
+        NaN,
+        NaN
+      ],
+      "d_ci": [
+        NaN,
+        NaN
+      ],
+      "d_stack": NaN,
+      "n": 125,
+      "neg": 3,
+      "pos": 122
+    },
+    "IxIDN-Matched|Test split pairs|rare-common": {
+      "added": 0,
+      "auroc": 0.939,
+      "ci": [
+        0.872,
+        0.984
+      ],
+      "d_ci": [
+        0.157,
+        0.501
+      ],
+      "d_stack": 0.334,
+      "n": 347,
+      "neg": 279,
+      "pos": 68
+    },
+    "IxIDN-Matched|Test split pairs|rare-rare": {
+      "added": 0,
+      "auroc": 0.778,
+      "ci": [
+        0.704,
+        0.849
+      ],
+      "d_ci": [
+        0.11,
+        0.291
+      ],
+      "d_stack": 0.199,
+      "n": 622,
+      "neg": 321,
+      "pos": 301
+    }
+  }
+}

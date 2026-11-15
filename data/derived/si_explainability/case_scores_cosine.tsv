@@ -1,0 +1,4 @@
+case	tag	id_a	label_a	id_b	label_b	cosine	cosine_pct_all_pairs	rank_b_in_row_a	n_diseases	n_pairs
+Case1	Marfan-TAA	MONDO:0007947	Marfan syndrome	MONDO:0005396	thoracic aortic aneurysm	0.8809	99.8979	1	13021	84766710
+Case2	MODY1-T2D	MONDO:0007452	maturity-onset diabetes of the young type 1	MONDO:0005148	type 2 diabetes mellitus	0.7106	99.4342	33	13021	84766710
+Case3	GaucherSapC-PD24	MONDO:0012517	Gaucher disease due to saposin C deficiency	MONDO:0859183	Parkinson disease 24, autosomal dominant, susceptibility to	0.6955	99.3648	7	13021	84766710

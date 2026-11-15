@@ -1,0 +1,47 @@
+{
+ "warm": {
+  "inputs": {
+   "spec_edges": 189903,
+   "broad_edges": 369405,
+   "broad_edgeset_sha256": "85e8163d97a9f7ad065bb5a7caf3b348f9083040eaf5c7faa4b5751b8b0db8ed",
+   "tier1_rows": 23840,
+   "tier1_set_sha256": "6abf5961f85732a5a423884d1a20354d5c2abfe675c067785e665ef054c0bd1a"
+  },
+  "union_edges": 533016,
+  "fda_edges_removed": 931,
+  "fda_spec_edges_removed": 0,
+  "edges": 532929,
+  "nodes": 13042,
+  "broad": 368474,
+  "spec": 219304,
+  "both": 54849,
+  "ga_added": 844,
+  "ga_reweighted": 28557,
+  "edgeset_sha256": "60364203caf3fd95a705f8fdc41b895e15de5dd02d69e1bb39bdbff069afdcb0",
+  "w_arm_sha256": "76cf6bc40d5356baa7c1357231872097c10b9312990447cae105ae5ec1ccb65a",
+  "row_order_sha256": "05de58edc1d24e79ee57102d47f1e1567315263b2c255dff3cca176e9e9e7450"
+ },
+ "cold": {
+  "inputs": {
+   "spec_edges": 189903,
+   "broad_edges": 364288,
+   "broad_edgeset_sha256": "8be8ab613feabbd929bab1d2443673b0a4454bbd9a19af84dabbf6c381328daa",
+   "tier1_rows": 23840,
+   "tier1_set_sha256": "6abf5961f85732a5a423884d1a20354d5c2abfe675c067785e665ef054c0bd1a"
+  },
+  "union_edges": 528083,
+  "fda_edges_removed": 931,
+  "fda_spec_edges_removed": 0,
+  "edges": 528008,
+  "nodes": 13018,
+  "broad": 363357,
+  "spec": 219302,
+  "both": 54651,
+  "ga_added": 856,
+  "ga_reweighted": 28543,
+  "edgeset_sha256": "1431e8489ed43512569864f82d2d86c9082a9bf99f8cdfe6b8d2186c4bc1e81a",
+  "w_arm_sha256": "e320d8f86789d1a53482c1c65e297839614204fd2a12f2640e5125512f9a4a19",
+  "row_order_sha256": "f688d317db1d84bbd7c98d05c9a6f6fd5a9180e32ab19fd063f3a287c5658eed"
+ },
+ "note": "P_full rebuilt from the released inputs (curated disease-gene pairs released only where confirmed in public Open Targets 26.09 direct evidence). warm: broad graph data/zenodo/graph/graph_edges.parquet; cold: broad graph rebuilt by disatlas.graph.raw_build. The graph of record of the released model is tests/pfull_graph_signature.json."
+}

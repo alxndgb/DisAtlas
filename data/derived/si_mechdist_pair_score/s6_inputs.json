@@ -1,0 +1,29 @@
+{
+ "pair": [
+  "MONDO:0016244",
+  "MONDO:0100244"
+ ],
+ "training_graph": {
+  "n_shared": 52,
+  "hub_deg": 3036,
+  "direct_AB": false,
+  "hub_in_shared": true
+ },
+ "figure_shared": [
+  "MONDO:0005070",
+  "MONDO:0005081",
+  "MONDO:0007407",
+  "MONDO:0008585",
+  "MONDO:0009335",
+  "MONDO:0013040",
+  "MONDO:0013041",
+  "MONDO:0013042",
+  "MONDO:0013043",
+  "MONDO:0018896",
+  "MONDO:0019737",
+  "MONDO:0035290"
+ ],
+ "threshold_youden_tune": 0.204894,
+ "test_sensitivity": 0.7270875763747454,
+ "test_specificity": 0.8474295190713101
+}

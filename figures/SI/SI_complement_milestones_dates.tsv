@@ -1,0 +1,132 @@
+drug	indication	status	event	date	source
+eculizumab	paroxysmal nocturnal hemoglobinuria	approved	first trial	2004-12-03	ClinicalTrials.gov NCT00098280
+eculizumab	paroxysmal nocturnal hemoglobinuria	approved	first Phase 3	2004-12-03	ClinicalTrials.gov NCT00098280
+eculizumab	paroxysmal nocturnal hemoglobinuria	approved	first trial publication	2004-02-05	PubMed
+eculizumab	paroxysmal nocturnal hemoglobinuria	approved	FDA approval	2007-03-16	openFDA BLA125166 ORIG-1
+eculizumab	atypical hemolytic-uremic syndrome	approved	first trial	2009-02-03	ClinicalTrials.gov NCT00838513
+eculizumab	atypical hemolytic-uremic syndrome	approved	first Phase 3	2011-08-03	ClinicalTrials.gov NCT01410916
+eculizumab	atypical hemolytic-uremic syndrome	approved	first trial publication	2013-06-06	PubMed
+eculizumab	atypical hemolytic-uremic syndrome	approved	FDA approval	2011-09-23	openFDA BLA125166 SUPPL-172
+eculizumab	myasthenia gravis	approved	first trial	2008-07-30	ClinicalTrials.gov NCT00727194
+eculizumab	myasthenia gravis	approved	first Phase 3	2013-11-18	ClinicalTrials.gov NCT01997229
+eculizumab	myasthenia gravis	approved	first trial publication	2013-07-01	PubMed
+eculizumab	myasthenia gravis	approved	FDA approval	2017-10-23	openFDA BLA125166 SUPPL-422
+eculizumab	neuromyelitis optica	approved	first trial	2009-05-18	ClinicalTrials.gov NCT00904826
+eculizumab	neuromyelitis optica	approved	first Phase 3	2013-06-20	ClinicalTrials.gov NCT01892345
+eculizumab	neuromyelitis optica	approved	first trial publication	2019-08-15	PubMed
+eculizumab	neuromyelitis optica	approved	FDA approval	2019-06-27	openFDA BLA125166 SUPPL-431
+ravulizumab	paroxysmal nocturnal hemoglobinuria	approved	first trial	2015-11-02	ClinicalTrials.gov NCT02598583
+ravulizumab	paroxysmal nocturnal hemoglobinuria	approved	first Phase 3	2016-10-25	ClinicalTrials.gov NCT02946463
+ravulizumab	paroxysmal nocturnal hemoglobinuria	approved	first trial publication	2018-09-11	PubMed
+ravulizumab	paroxysmal nocturnal hemoglobinuria	approved	FDA approval	2018-12-21	openFDA BLA761108 ORIG-1
+ravulizumab	atypical hemolytic-uremic syndrome	approved	first trial	2016-10-25	ClinicalTrials.gov NCT02949128
+ravulizumab	atypical hemolytic-uremic syndrome	approved	first Phase 3	2016-10-25	ClinicalTrials.gov NCT02949128
+ravulizumab	atypical hemolytic-uremic syndrome	approved	first trial publication	2020-06-01	PubMed
+ravulizumab	atypical hemolytic-uremic syndrome	approved	FDA approval	2019-10-18	openFDA BLA761108 SUPPL-1
+ravulizumab	myasthenia gravis	approved	first trial	2019-04-16	ClinicalTrials.gov NCT03920293
+ravulizumab	myasthenia gravis	approved	first Phase 3	2019-04-16	ClinicalTrials.gov NCT03920293
+ravulizumab	myasthenia gravis	approved	first trial publication	2022-05-01	PubMed
+ravulizumab	myasthenia gravis	approved	FDA approval	2022-04-27	openFDA BLA761108 SUPPL-23
+ravulizumab	neuromyelitis optica	approved	first trial	2019-12-11	ClinicalTrials.gov NCT04201262
+ravulizumab	neuromyelitis optica	approved	first Phase 3	2019-12-11	ClinicalTrials.gov NCT04201262
+ravulizumab	neuromyelitis optica	approved	first trial publication	2026-04-01	PubMed
+ravulizumab	neuromyelitis optica	approved	FDA approval	2024-03-22	openFDA BLA761108 SUPPL-26
+ravulizumab	COVID-19	failed	first trial	2020-04-28	ClinicalTrials.gov NCT04369469
+ravulizumab	COVID-19	failed	first Phase 3	2020-04-28	ClinicalTrials.gov NCT04369469
+ravulizumab	glomerulonephritis	ongoing	first trial	2020-09-21	ClinicalTrials.gov NCT04564339
+ravulizumab	glomerulonephritis	ongoing	first Phase 3	2024-02-26	ClinicalTrials.gov NCT06291376
+ravulizumab	IgA glomerulonephritis	ongoing	first trial	2020-09-21	ClinicalTrials.gov NCT04564339
+ravulizumab	IgA glomerulonephritis	ongoing	first Phase 3	2024-02-26	ClinicalTrials.gov NCT06291376
+pegcetacoplan	paroxysmal nocturnal hemoglobinuria	approved	first trial	2014-10-08	ClinicalTrials.gov NCT02264639
+pegcetacoplan	paroxysmal nocturnal hemoglobinuria	approved	first Phase 3	2018-04-10	ClinicalTrials.gov NCT03500549
+pegcetacoplan	paroxysmal nocturnal hemoglobinuria	approved	first trial publication	2020-11-01	PubMed
+pegcetacoplan	paroxysmal nocturnal hemoglobinuria	approved	FDA approval	2021-05-14	openFDA NDA215014 ORIG-1
+pegcetacoplan	age-related macular degeneration	approved	first trial	2015-06-02	ClinicalTrials.gov NCT02461771
+pegcetacoplan	age-related macular degeneration	approved	first Phase 3	2018-04-20	ClinicalTrials.gov NCT03525600
+pegcetacoplan	age-related macular degeneration	approved	first trial publication	2020-02-01	PubMed
+pegcetacoplan	age-related macular degeneration	approved	FDA approval	2023-02-17	openFDA NDA217171 ORIG-1
+pegcetacoplan	complement 3 glomerulopathy	approved	first trial	2020-09-29	ClinicalTrials.gov NCT04572854
+pegcetacoplan	complement 3 glomerulopathy	approved	first Phase 3	2021-09-23	ClinicalTrials.gov NCT05067127
+pegcetacoplan	complement 3 glomerulopathy	approved	first trial publication	2025-12-04	PubMed
+pegcetacoplan	complement 3 glomerulopathy	approved	FDA approval	2025-07-28	openFDA NDA215014 SUPPL-11
+pegcetacoplan	membranoproliferative glomerulonephritis	approved	first trial	2020-09-29	ClinicalTrials.gov NCT04572854
+pegcetacoplan	membranoproliferative glomerulonephritis	approved	first Phase 3	2021-09-23	ClinicalTrials.gov NCT05067127
+pegcetacoplan	membranoproliferative glomerulonephritis	approved	first trial publication	2025-12-04	PubMed
+pegcetacoplan	membranoproliferative glomerulonephritis	approved	FDA approval	2025-07-28	openFDA NDA215014 SUPPL-11
+pegcetacoplan	glomerulonephritis	ongoing	first trial	2020-09-29	ClinicalTrials.gov NCT04572854
+pegcetacoplan	glomerulonephritis	ongoing	first Phase 3	2021-09-23	ClinicalTrials.gov NCT05067127
+pegcetacoplan	C3 glomerulonephritis	ongoing	first trial	2020-09-29	ClinicalTrials.gov NCT04572854
+pegcetacoplan	C3 glomerulonephritis	ongoing	first Phase 3	2021-09-23	ClinicalTrials.gov NCT05067127
+pegcetacoplan	dense deposit disease	ongoing	first trial	2020-09-29	ClinicalTrials.gov NCT04572854
+pegcetacoplan	dense deposit disease	ongoing	first Phase 3	2021-09-23	ClinicalTrials.gov NCT05067127
+avacopan	granulomatosis with polyangiitis	approved	first trial	2011-05-26	ClinicalTrials.gov NCT01363388
+avacopan	granulomatosis with polyangiitis	approved	first Phase 3	2016-12-11	ClinicalTrials.gov NCT02994927
+avacopan	granulomatosis with polyangiitis	approved	first trial publication	2023-03-02	PubMed
+avacopan	granulomatosis with polyangiitis	approved	FDA approval	2021-10-07	openFDA NDA214487 ORIG-1
+avacopan	microscopic polyangiitis	approved	first trial	2011-05-26	ClinicalTrials.gov NCT01363388
+avacopan	microscopic polyangiitis	approved	first Phase 3	2016-12-11	ClinicalTrials.gov NCT02994927
+avacopan	microscopic polyangiitis	approved	first trial publication	2023-03-02	PubMed
+avacopan	microscopic polyangiitis	approved	FDA approval	2021-10-07	openFDA NDA214487 ORIG-1
+sutimlimab	cold agglutinin disease	approved	first trial	2017-11-16	ClinicalTrials.gov NCT03347422
+sutimlimab	cold agglutinin disease	approved	first Phase 3	2017-11-16	ClinicalTrials.gov NCT03347422
+sutimlimab	cold agglutinin disease	approved	first trial publication	2018-10-01	PubMed
+sutimlimab	cold agglutinin disease	approved	FDA approval	2022-02-04	openFDA BLA761164 ORIG-1
+avacincaptad	age-related macular degeneration	approved	first trial	2008-07-01	ClinicalTrials.gov NCT00709527
+avacincaptad	age-related macular degeneration	approved	first Phase 3	2016-02-16	ClinicalTrials.gov NCT02686658
+avacincaptad	age-related macular degeneration	approved	first trial publication	2021-04-01	PubMed
+avacincaptad	age-related macular degeneration	approved	FDA approval	2023-08-04	openFDA NDA217225 ORIG-1
+pozelimab	protein-losing enteropathy	approved	first trial	2019-12-20	ClinicalTrials.gov NCT04209634
+pozelimab	protein-losing enteropathy	approved	first Phase 3	2019-12-20	ClinicalTrials.gov NCT04209634
+pozelimab	protein-losing enteropathy	approved	first trial publication	2024-02-17	PubMed
+pozelimab	protein-losing enteropathy	approved	FDA approval	2023-08-18	openFDA BLA761339 ORIG-1
+pozelimab	myasthenia gravis	ongoing	first trial	2021-09-27	ClinicalTrials.gov NCT05070858
+pozelimab	myasthenia gravis	ongoing	first Phase 3	2021-09-27	ClinicalTrials.gov NCT05070858
+pozelimab	age-related macular degeneration	ongoing	first trial	2024-08-02	ClinicalTrials.gov NCT06541704
+pozelimab	age-related macular degeneration	ongoing	first Phase 3	2024-08-02	ClinicalTrials.gov NCT06541704
+zilucoplan	myasthenia gravis	approved	first trial	2017-10-16	ClinicalTrials.gov NCT03315130
+zilucoplan	myasthenia gravis	approved	first Phase 3	2019-10-02	ClinicalTrials.gov NCT04225871
+zilucoplan	myasthenia gravis	approved	first trial publication	2020-05-01	PubMed
+zilucoplan	myasthenia gravis	approved	FDA approval	2023-10-17	openFDA NDA216834 ORIG-1
+iptacopan	paroxysmal nocturnal hemoglobinuria	approved	first trial	2018-02-14	ClinicalTrials.gov NCT03439839
+iptacopan	paroxysmal nocturnal hemoglobinuria	approved	first Phase 3	2020-08-27	ClinicalTrials.gov NCT04558918
+iptacopan	paroxysmal nocturnal hemoglobinuria	approved	first trial publication	2022-08-09	PubMed
+iptacopan	paroxysmal nocturnal hemoglobinuria	approved	FDA approval	2023-12-05	openFDA NDA218276 ORIG-1
+iptacopan	IgA glomerulonephritis	approved	first trial	2020-09-09	ClinicalTrials.gov NCT04578834
+iptacopan	IgA glomerulonephritis	approved	first Phase 3	2020-09-09	ClinicalTrials.gov NCT04578834
+iptacopan	IgA glomerulonephritis	approved	first trial publication	2024-01-01	PubMed
+iptacopan	IgA glomerulonephritis	approved	FDA approval	2024-08-07	openFDA NDA218276 SUPPL-1
+iptacopan	complement 3 glomerulopathy	approved	first trial	2019-05-03	ClinicalTrials.gov NCT03955445
+iptacopan	complement 3 glomerulopathy	approved	first Phase 3	2019-05-03	ClinicalTrials.gov NCT03955445
+iptacopan	complement 3 glomerulopathy	approved	first trial publication	2025-10-11	PubMed
+iptacopan	complement 3 glomerulopathy	approved	FDA approval	2025-03-20	openFDA NDA218276 SUPPL-4
+iptacopan	membranoproliferative glomerulonephritis	ongoing	first trial	2019-05-03	ClinicalTrials.gov NCT03955445
+iptacopan	membranoproliferative glomerulonephritis	ongoing	first Phase 3	2019-05-03	ClinicalTrials.gov NCT03955445
+iptacopan	glomerulonephritis	ongoing	first trial	2019-05-03	ClinicalTrials.gov NCT03955445
+iptacopan	glomerulonephritis	ongoing	first Phase 3	2019-05-03	ClinicalTrials.gov NCT03955445
+iptacopan	atypical hemolytic-uremic syndrome	ongoing	first trial	2021-05-07	ClinicalTrials.gov NCT04889430
+iptacopan	atypical hemolytic-uremic syndrome	ongoing	first Phase 3	2021-05-07	ClinicalTrials.gov NCT04889430
+iptacopan	myasthenia gravis	ongoing	first trial	2024-02-12	ClinicalTrials.gov NCT06517758
+iptacopan	myasthenia gravis	ongoing	first Phase 3	2024-02-12	ClinicalTrials.gov NCT06517758
+danicopan	paroxysmal nocturnal hemoglobinuria	approved	first trial	2017-02-01	ClinicalTrials.gov NCT03053102
+danicopan	paroxysmal nocturnal hemoglobinuria	approved	first Phase 3	2020-07-09	ClinicalTrials.gov NCT04469465
+danicopan	paroxysmal nocturnal hemoglobinuria	approved	first trial publication	2021-11-18	PubMed
+danicopan	paroxysmal nocturnal hemoglobinuria	approved	FDA approval	2024-03-29	openFDA NDA218037 ORIG-1
+danicopan	membranoproliferative glomerulonephritis	failed	first trial	2017-04-12	ClinicalTrials.gov NCT03124368
+danicopan	glomerulonephritis	failed	first trial	2017-04-12	ClinicalTrials.gov NCT03124368
+danicopan	C3 glomerulonephritis	failed	first trial	2017-04-12	ClinicalTrials.gov NCT03124368
+danicopan	complement 3 glomerulopathy	failed	first trial	2017-04-12	ClinicalTrials.gov NCT03124368
+danicopan	dense deposit disease	failed	first trial	2017-04-12	ClinicalTrials.gov NCT03124368
+danicopan	age-related macular degeneration	failed	first trial	2021-08-19	ClinicalTrials.gov NCT05019521
+crovalimab	paroxysmal nocturnal hemoglobinuria	approved	first trial	2016-11-01	ClinicalTrials.gov NCT03157635
+crovalimab	paroxysmal nocturnal hemoglobinuria	approved	first Phase 3	2020-06-03	ClinicalTrials.gov NCT04434092
+crovalimab	paroxysmal nocturnal hemoglobinuria	approved	first trial publication	2020-03-19	PubMed
+crovalimab	paroxysmal nocturnal hemoglobinuria	approved	FDA approval	2024-06-20	openFDA BLA761388 ORIG-1
+crovalimab	atypical hemolytic-uremic syndrome	ongoing	first trial	2021-04-23	ClinicalTrials.gov NCT04861259
+crovalimab	atypical hemolytic-uremic syndrome	ongoing	first Phase 3	2021-04-23	ClinicalTrials.gov NCT04861259
+narsoplimab	transplant-associated thrombotic microangiopathy	approved	first trial	2014-08-18	ClinicalTrials.gov NCT02222545
+narsoplimab	transplant-associated thrombotic microangiopathy	approved	first trial publication	2022-08-01	PubMed
+narsoplimab	transplant-associated thrombotic microangiopathy	approved	FDA approval	2025-12-23	openFDA BLA761152 ORIG-1
+narsoplimab	glomerulonephritis	failed	first trial	2016-02-10	ClinicalTrials.gov NCT02682407
+narsoplimab	glomerulonephritis	failed	first Phase 3	2018-06-21	ClinicalTrials.gov NCT03608033
+narsoplimab	IgA glomerulonephritis	failed	first trial	2018-06-21	ClinicalTrials.gov NCT03608033
+narsoplimab	IgA glomerulonephritis	failed	first Phase 3	2018-06-21	ClinicalTrials.gov NCT03608033

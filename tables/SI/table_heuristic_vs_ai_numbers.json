@@ -1,0 +1,282 @@
+{
+ "TF-IDF graph SVD, placed|all_4357|auroc": {
+  "value": 0.754709,
+  "lo": 0.710247,
+  "hi": 0.795003
+ },
+ "TF-IDF graph SVD, placed|all_4357|Claude Chat": {
+  "diff": 0.062218,
+  "lo": 0.021204,
+  "hi": 0.104511,
+  "includes_zero": false
+ },
+ "TF-IDF graph SVD, placed|all_4357|Claude Sci": {
+  "diff": 0.068996,
+  "lo": 0.028058,
+  "hi": 0.110642,
+  "includes_zero": false
+ },
+ "TF-IDF graph SVD, placed|all_4357|Gemini Pro 3.1": {
+  "diff": 0.257218,
+  "lo": 0.198718,
+  "hi": 0.313023,
+  "includes_zero": false
+ },
+ "TF-IDF graph SVD, placed|all_4357|Phylo Biomni": {
+  "diff": 0.128211,
+  "lo": 0.070892,
+  "hi": 0.181701,
+  "includes_zero": false
+ },
+ "TF-IDF graph SVD, placed|all_4357|TxGNN": {
+  "diff": 0.188615,
+  "lo": 0.13235,
+  "hi": 0.243127,
+  "includes_zero": false
+ },
+ "TF-IDF graph SVD, placed|test_1093|auroc": {
+  "value": 0.780406,
+  "lo": 0.71654,
+  "hi": 0.840432
+ },
+ "TF-IDF graph SVD, placed|test_1093|Claude Chat": {
+  "diff": 0.083528,
+  "lo": 0.020046,
+  "hi": 0.148538,
+  "includes_zero": false
+ },
+ "TF-IDF graph SVD, placed|test_1093|Claude Sci": {
+  "diff": 0.077824,
+  "lo": 0.010596,
+  "hi": 0.143172,
+  "includes_zero": false
+ },
+ "TF-IDF graph SVD, placed|test_1093|Gemini Pro 3.1": {
+  "diff": 0.281345,
+  "lo": 0.201992,
+  "hi": 0.356427,
+  "includes_zero": false
+ },
+ "TF-IDF graph SVD, placed|test_1093|Phylo Biomni": {
+  "diff": 0.116827,
+  "lo": 0.032692,
+  "hi": 0.196875,
+  "includes_zero": false
+ },
+ "TF-IDF graph SVD, placed|test_1093|TxGNN": {
+  "diff": 0.231041,
+  "lo": 0.136778,
+  "hi": 0.325119,
+  "includes_zero": false
+ },
+ "Adamic-Adar, placed|all_4357|auroc": {
+  "value": 0.733791,
+  "lo": 0.691379,
+  "hi": 0.773206
+ },
+ "Adamic-Adar, placed|all_4357|Claude Chat": {
+  "diff": 0.0413,
+  "lo": -1.4e-05,
+  "hi": 0.083469,
+  "includes_zero": true
+ },
+ "Adamic-Adar, placed|all_4357|Claude Sci": {
+  "diff": 0.048078,
+  "lo": 0.005368,
+  "hi": 0.090311,
+  "includes_zero": false
+ },
+ "Adamic-Adar, placed|all_4357|Gemini Pro 3.1": {
+  "diff": 0.2363,
+  "lo": 0.178628,
+  "hi": 0.288445,
+  "includes_zero": false
+ },
+ "Adamic-Adar, placed|all_4357|Phylo Biomni": {
+  "diff": 0.107293,
+  "lo": 0.049852,
+  "hi": 0.16139,
+  "includes_zero": false
+ },
+ "Adamic-Adar, placed|all_4357|TxGNN": {
+  "diff": 0.167697,
+  "lo": 0.114979,
+  "hi": 0.220142,
+  "includes_zero": false
+ },
+ "Adamic-Adar, placed|test_1093|auroc": {
+  "value": 0.739896,
+  "lo": 0.675506,
+  "hi": 0.800654
+ },
+ "Adamic-Adar, placed|test_1093|Claude Chat": {
+  "diff": 0.043019,
+  "lo": -0.019957,
+  "hi": 0.111015,
+  "includes_zero": true
+ },
+ "Adamic-Adar, placed|test_1093|Claude Sci": {
+  "diff": 0.037315,
+  "lo": -0.03068,
+  "hi": 0.107138,
+  "includes_zero": true
+ },
+ "Adamic-Adar, placed|test_1093|Gemini Pro 3.1": {
+  "diff": 0.240835,
+  "lo": 0.157172,
+  "hi": 0.320855,
+  "includes_zero": false
+ },
+ "Adamic-Adar, placed|test_1093|Phylo Biomni": {
+  "diff": 0.076317,
+  "lo": -0.007274,
+  "hi": 0.159669,
+  "includes_zero": true
+ },
+ "Adamic-Adar, placed|test_1093|TxGNN": {
+  "diff": 0.190531,
+  "lo": 0.09556,
+  "hi": 0.284875,
+  "includes_zero": false
+ },
+ "Common neighbours, placed|all_4357|auroc": {
+  "value": 0.724045,
+  "lo": 0.681579,
+  "hi": 0.763821
+ },
+ "Common neighbours, placed|all_4357|Claude Chat": {
+  "diff": 0.031554,
+  "lo": -0.010339,
+  "hi": 0.075404,
+  "includes_zero": true
+ },
+ "Common neighbours, placed|all_4357|Claude Sci": {
+  "diff": 0.038332,
+  "lo": -0.005222,
+  "hi": 0.082052,
+  "includes_zero": true
+ },
+ "Common neighbours, placed|all_4357|Gemini Pro 3.1": {
+  "diff": 0.226554,
+  "lo": 0.168058,
+  "hi": 0.279503,
+  "includes_zero": false
+ },
+ "Common neighbours, placed|all_4357|Phylo Biomni": {
+  "diff": 0.097547,
+  "lo": 0.039635,
+  "hi": 0.152647,
+  "includes_zero": false
+ },
+ "Common neighbours, placed|all_4357|TxGNN": {
+  "diff": 0.157951,
+  "lo": 0.104508,
+  "hi": 0.210554,
+  "includes_zero": false
+ },
+ "Common neighbours, placed|test_1093|auroc": {
+  "value": 0.726037,
+  "lo": 0.661659,
+  "hi": 0.789581
+ },
+ "Common neighbours, placed|test_1093|Claude Chat": {
+  "diff": 0.029159,
+  "lo": -0.033442,
+  "hi": 0.096997,
+  "includes_zero": true
+ },
+ "Common neighbours, placed|test_1093|Claude Sci": {
+  "diff": 0.023455,
+  "lo": -0.044803,
+  "hi": 0.095325,
+  "includes_zero": true
+ },
+ "Common neighbours, placed|test_1093|Gemini Pro 3.1": {
+  "diff": 0.226976,
+  "lo": 0.140161,
+  "hi": 0.308401,
+  "includes_zero": false
+ },
+ "Common neighbours, placed|test_1093|Phylo Biomni": {
+  "diff": 0.062458,
+  "lo": -0.021332,
+  "hi": 0.147349,
+  "includes_zero": true
+ },
+ "Common neighbours, placed|test_1093|TxGNN": {
+  "diff": 0.176672,
+  "lo": 0.080224,
+  "hi": 0.269803,
+  "includes_zero": false
+ },
+ "TF-IDF graph SVD, own edges|all_4357|auroc": {
+  "value": 0.788171,
+  "lo": 0.745346,
+  "hi": 0.827776
+ },
+ "TF-IDF graph SVD, own edges|all_4357|Claude Chat": {
+  "diff": 0.09568,
+  "lo": 0.0525,
+  "hi": 0.140046,
+  "includes_zero": false
+ },
+ "TF-IDF graph SVD, own edges|all_4357|Claude Sci": {
+  "diff": 0.102458,
+  "lo": 0.058237,
+  "hi": 0.14421,
+  "includes_zero": false
+ },
+ "TF-IDF graph SVD, own edges|all_4357|Gemini Pro 3.1": {
+  "diff": 0.29068,
+  "lo": 0.232767,
+  "hi": 0.345113,
+  "includes_zero": false
+ },
+ "TF-IDF graph SVD, own edges|all_4357|Phylo Biomni": {
+  "diff": 0.161673,
+  "lo": 0.106343,
+  "hi": 0.217602,
+  "includes_zero": false
+ },
+ "TF-IDF graph SVD, own edges|all_4357|TxGNN": {
+  "diff": 0.222076,
+  "lo": 0.169733,
+  "hi": 0.272333,
+  "includes_zero": false
+ },
+ "TF-IDF graph SVD, own edges|test_1093|auroc": {
+  "value": 0.810821,
+  "lo": 0.748766,
+  "hi": 0.867467
+ },
+ "TF-IDF graph SVD, own edges|test_1093|Claude Chat": {
+  "diff": 0.113943,
+  "lo": 0.044577,
+  "hi": 0.186649,
+  "includes_zero": false
+ },
+ "TF-IDF graph SVD, own edges|test_1093|Claude Sci": {
+  "diff": 0.108239,
+  "lo": 0.036938,
+  "hi": 0.177458,
+  "includes_zero": false
+ },
+ "TF-IDF graph SVD, own edges|test_1093|Gemini Pro 3.1": {
+  "diff": 0.31176,
+  "lo": 0.23012,
+  "hi": 0.39061,
+  "includes_zero": false
+ },
+ "TF-IDF graph SVD, own edges|test_1093|Phylo Biomni": {
+  "diff": 0.147242,
+  "lo": 0.062955,
+  "hi": 0.229497,
+  "includes_zero": false
+ },
+ "TF-IDF graph SVD, own edges|test_1093|TxGNN": {
+  "diff": 0.261455,
+  "lo": 0.16644,
+  "hi": 0.349494,
+  "includes_zero": false
+ }
+}

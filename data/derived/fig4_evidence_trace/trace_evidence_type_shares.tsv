@@ -1,0 +1,32 @@
+pair	group	share
+aHUS-PNH	Broad similarity	0.1894592716837628
+aHUS-PNH	GO process	0.00639956814391243
+aHUS-PNH	Literature mechanism	0.2731817218612867
+aHUS-PNH	Mechanism node	0.24474948527939827
+aHUS-PNH	Named gene set	0.0752053300166965
+aHUS-PNH	Pathway	0.13857410751407004
+aHUS-PNH	Phenotype, cell or tissue	0.0493893936212131
+aHUS-PNH	Shared rare gene	0.0230411218796518
+NMOSD-PNH	Broad similarity	0.0111246849634362
+NMOSD-PNH	GO process	0.0240645371440562
+NMOSD-PNH	Literature mechanism	0.2493859482254194
+NMOSD-PNH	Mechanism node	0.323098607637569
+NMOSD-PNH	Named gene set	0.08042153011675911
+NMOSD-PNH	Pathway	0.2428346550865999
+NMOSD-PNH	Phenotype, cell or tissue	0.0690700368261451
+Crohn-UC	Broad similarity	0.2905094235120719
+Crohn-UC	GO process	0.04469653502468164
+Crohn-UC	Literature mechanism	0.01891071211247353
+Crohn-UC	Mechanism node	0.24117802756180984
+Crohn-UC	Named gene set	0.037103430771537
+Crohn-UC	Pathway	0.16571381708616217
+Crohn-UC	Phenotype, cell or tissue	0.10841876490825736
+Crohn-UC	Shared rare gene	0.0934692890229655
+RA-polymyositis	Broad similarity	0.2291892430315747
+RA-polymyositis	GO process	0.02812964006956947
+RA-polymyositis	Literature mechanism	0.047518370918742135
+RA-polymyositis	Mechanism node	0.20551236982298615
+RA-polymyositis	Named gene set	0.0600308082345231
+RA-polymyositis	Pathway	0.34978483967557134
+RA-polymyositis	Phenotype, cell or tissue	0.07564658854589723
+RA-polymyositis	Shared rare gene	0.0041881397010968

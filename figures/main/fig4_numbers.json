@@ -1,0 +1,181 @@
+{
+ "recomputed_percentiles_from_matrix": true,
+ "values": {
+  "aHUS-PNH.cosine_mean5": {
+   "value": 0.854618,
+   "printed": "0.855"
+  },
+  "aHUS-PNH.cosine_seed_min": {
+   "value": 0.840076,
+   "printed": "0.840"
+  },
+  "aHUS-PNH.cosine_seed_max": {
+   "value": 0.875283,
+   "printed": "0.875"
+  },
+  "aHUS-PNH.pct_all_pairs": {
+   "value": 99.8553,
+   "printed": "99.9"
+  },
+  "NMOSD-PNH.cosine_mean5": {
+   "value": 0.553741,
+   "printed": "0.554"
+  },
+  "NMOSD-PNH.cosine_seed_min": {
+   "value": 0.538454,
+   "printed": "0.538"
+  },
+  "NMOSD-PNH.cosine_seed_max": {
+   "value": 0.586477,
+   "printed": "0.586"
+  },
+  "NMOSD-PNH.pct_all_pairs": {
+   "value": 98.3809,
+   "printed": "98.4"
+  },
+  "RA-polymyositis.cosine_mean5": {
+   "value": 0.53371,
+   "printed": "0.534"
+  },
+  "RA-polymyositis.cosine_seed_min": {
+   "value": 0.49252,
+   "printed": "0.493"
+  },
+  "RA-polymyositis.cosine_seed_max": {
+   "value": 0.58099,
+   "printed": "0.581"
+  },
+  "RA-polymyositis.pct_all_pairs": {
+   "value": 98.1763,
+   "printed": "98.2"
+  },
+  "RA-antisynthetase.cosine_mean5": {
+   "value": 0.504994,
+   "printed": "0.505"
+  },
+  "RA-antisynthetase.cosine_seed_min": {
+   "value": 0.491497,
+   "printed": "0.491"
+  },
+  "RA-antisynthetase.cosine_seed_max": {
+   "value": 0.537277,
+   "printed": "0.537"
+  },
+  "RA-antisynthetase.pct_all_pairs": {
+   "value": 97.8431,
+   "printed": "97.8"
+  },
+  "n_ixidn_pairs": {
+   "value": 228447,
+   "printed": "228,447"
+  },
+  "n_pairs_with_shared_neighbour": {
+   "value": 136286,
+   "printed": "136,286"
+  },
+  "spearman_logM2_cosine": {
+   "value": 0.6573508006995037,
+   "printed": "0.66"
+  },
+  "aHUS-PNH.n_shared_neighbours": {
+   "value": 52,
+   "printed": "52"
+  },
+  "NMOSD-PNH.n_shared_neighbours": {
+   "value": 19,
+   "printed": "19"
+  },
+  "Crohn-UC.n_shared_neighbours": {
+   "value": 208,
+   "printed": "208"
+  },
+  "RA-polymyositis.n_shared_neighbours": {
+   "value": 69,
+   "printed": "69"
+  },
+  "n_diseases_idf": {
+   "value": 13021,
+   "printed": "13,021"
+  },
+  "caption.n_equal_count_bins": {
+   "value": 20,
+   "printed": "20"
+  },
+  "aHUS-PNH.reactome_regulation_of_complement": {
+   "value": 0.0448482515001371,
+   "printed": "0.045"
+  },
+  "aHUS-PNH.named_complement_all": {
+   "value": 0.0540768766517438,
+   "printed": "0.054"
+  },
+  "aHUS-PNH.mechanism_complement_regulator_loss": {
+   "value": 0.03644265003031,
+   "printed": "0.036"
+  },
+  "aHUS-PNH.gene_C3": {
+   "value": 0.1040849000436314,
+   "printed": "0.104"
+  },
+  "aHUS-PNH.gene_C5": {
+   "value": 0.0351094344401418,
+   "printed": "0.035"
+  },
+  "aHUS-PNH.gene_CFH": {
+   "value": 0.0430035818799056,
+   "printed": "0.043"
+  },
+  "NMOSD-PNH.reactome_regulation_of_complement": {
+   "value": 0.0180480596092198,
+   "printed": "0.018"
+  },
+  "NMOSD-PNH.litmech_terminal_pathway": {
+   "value": 0.0184307847322581,
+   "printed": "0.018"
+  },
+  "NMOSD-PNH.litmech_C5b9_MAC": {
+   "value": 0.0139167494496672,
+   "printed": "0.014"
+  },
+  "NMOSD-PNH.reactome_neutrophil_degranulation": {
+   "value": 0.0192838436038544,
+   "printed": "0.019"
+  },
+  "NMOSD-PNH.gene_C3": {
+   "value": 0.0639604414595683,
+   "printed": "0.064"
+  },
+  "Crohn-UC.shared_rare_gene_IL12B": {
+   "value": 0.0721303266302474,
+   "printed": "0.072"
+  },
+  "Crohn-UC.shared_rare_gene_NOD2": {
+   "value": 0.0213389623927181,
+   "printed": "0.021"
+  },
+  "aHUS-PNH.share_broad": {
+   "value": 0.1894592716837628,
+   "printed": "0.189"
+  },
+  "aHUS-PNH.share_shared_rare_gene": {
+   "value": 0.0230411218796518,
+   "printed": "0.023"
+  },
+  "aHUS-PNH.share_modules_rest": {
+   "value": 0.7874996064365853,
+   "printed": "0.787"
+  },
+  "RA-polymyositis.top10_items_share": {
+   "value": 0.08620058072484901,
+   "printed": "0.09"
+  },
+  "Crohn-UC.top10_modules_share": {
+   "value": 0.037282440846778696,
+   "printed": "0.04"
+  },
+  "RA-polymyositis.max_cytokine_pathway_share": {
+   "value": 0.0093509984626016,
+   "printed": "0.009"
+  }
+ }
+}

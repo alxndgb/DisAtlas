@@ -1,0 +1,85 @@
+pool	analysis	group	n	mean_auc
+test	pct_p1	per_drug_pooled	6496	0.7279359153131916
+test	pct_p1	share_drugs_pooled_gt_0.5	6496	0.8592980295566502
+test	pct_p1	share_drugs_pooled_eq_0.5	6496	0.0033866995073891628
+test	pct_p1	median_drug_pooled	6496	0.7679223554223553
+test	pct_p1	per_drug_year	18813	0.6899978786095626
+test	pct_p1	drugs 1 year	3140	0.7525124784096913
+test	pct_p1	drug-years of drugs 1 year	3140	0.7525124784096913
+test	pct_p1	drugs 2-4 years	2225	0.7253245911302696
+test	pct_p1	drug-years of drugs 2-4 years	5796	0.7215096864459498
+test	pct_p1	drugs 5+ years	1131	0.6648411214882504
+test	pct_p1	drug-years of drugs 5+ years	9877	0.6516321520132169
+test	pct_p1	drugs 1 event	2285	0.7568894583046633
+test	pct_p1	drugs 2-5 events	2422	0.7341743163880736
+test	pct_p1	drugs 6+ events	1789	0.6825092785670329
+test	pct_s3	per_drug_pooled	6496	0.7264008609323427
+test	pct_s3	share_drugs_pooled_gt_0.5	6496	0.8611453201970444
+test	pct_s3	share_drugs_pooled_eq_0.5	6496	0.0029248768472906403
+test	pct_s3	median_drug_pooled	6496	0.7540672240125792
+test	pct_s3	per_drug_year	18813	0.6909694762881601
+test	pct_s3	drugs 1 year	3140	0.7498769814825667
+test	pct_s3	drug-years of drugs 1 year	3140	0.7498769814825667
+test	pct_s3	drugs 2-4 years	2225	0.7250931074731569
+test	pct_s3	drug-years of drugs 2-4 years	5796	0.7244248006249417
+test	pct_s3	drugs 5+ years	1131	0.663796734423929
+test	pct_s3	drug-years of drugs 5+ years	9877	0.6526099920149574
+test	pct_s3	drugs 1 event	2285	0.7587381081309477
+test	pct_s3	drugs 2-5 events	2422	0.7311611604530222
+test	pct_s3	drugs 6+ events	1789	0.6786534851425726
+test	pct_s4	per_drug_pooled	6496	0.8809717508071169
+test	pct_s4	share_drugs_pooled_gt_0.5	6496	0.9685960591133005
+test	pct_s4	share_drugs_pooled_eq_0.5	6496	0.0
+test	pct_s4	median_drug_pooled	6496	0.926720947446336
+test	pct_s4	per_drug_year	18814	0.8642422156081287
+test	pct_s4	drugs 1 year	3140	0.8924790740229303
+test	pct_s4	drug-years of drugs 1 year	3140	0.8924790740229303
+test	pct_s4	drugs 2-4 years	2225	0.8795189972310283
+test	pct_s4	drug-years of drugs 2-4 years	5796	0.8804145588342043
+test	pct_s4	drugs 5+ years	1131	0.8518819027161745
+test	pct_s4	drug-years of drugs 5+ years	9878	0.8457770772440055
+test	pct_s4	drugs 1 event	2285	0.8939156267429236
+test	pct_s4	drugs 2-5 events	2422	0.884454051339575
+test	pct_s4	drugs 6+ events	1789	0.8597247477870322
+all	pct_p1	per_drug_pooled	8064	0.7366887511472585
+all	pct_p1	share_drugs_pooled_gt_0.5	8064	0.886780753968254
+all	pct_p1	share_drugs_pooled_eq_0.5	8064	0.0011160714285714285
+all	pct_p1	median_drug_pooled	8064	0.7685964839737413
+all	pct_p1	per_drug_year	28143	0.6937477580088353
+all	pct_p1	drugs 1 year	3515	0.7635887863848788
+all	pct_p1	drug-years of drugs 1 year	3515	0.7635887863848788
+all	pct_p1	drugs 2-4 years	2781	0.7426998787139445
+all	pct_p1	drug-years of drugs 2-4 years	7336	0.7411544496006139
+all	pct_p1	drugs 5+ years	1768	0.6737529086002059
+all	pct_p1	drug-years of drugs 5+ years	17292	0.6594390196177247
+all	pct_p1	drugs 1 event	2128	0.7743940161515338
+all	pct_p1	drugs 2-5 events	3004	0.7505287187262024
+all	pct_p1	drugs 6+ events	2932	0.6951430258620452
+all	pct_s3	per_drug_pooled	8064	0.7389099888439925
+all	pct_s3	share_drugs_pooled_gt_0.5	8064	0.8957093253968254
+all	pct_s3	share_drugs_pooled_eq_0.5	8064	0.0008680555555555555
+all	pct_s3	median_drug_pooled	8064	0.7629514607775477
+all	pct_s3	per_drug_year	28143	0.7004518650931747
+all	pct_s3	drugs 1 year	3515	0.7660611184449433
+all	pct_s3	drug-years of drugs 1 year	3515	0.7660611184449433
+all	pct_s3	drugs 2-4 years	2781	0.7442255636551594
+all	pct_s3	drug-years of drugs 2-4 years	7336	0.7467950401321461
+all	pct_s3	drugs 5+ years	1768	0.6765690193320034
+all	pct_s3	drug-years of drugs 5+ years	17292	0.6674545219508339
+all	pct_s3	drugs 1 event	2128	0.7856035932667514
+all	pct_s3	drugs 2-5 events	3004	0.7500840288459344
+all	pct_s3	drugs 6+ events	2932	0.6935720603387181
+all	pct_s4	per_drug_pooled	8064	0.8866127183746078
+all	pct_s4	share_drugs_pooled_gt_0.5	8064	0.9742063492063492
+all	pct_s4	share_drugs_pooled_eq_0.5	8064	0.0
+all	pct_s4	median_drug_pooled	8064	0.9291362806192518
+all	pct_s4	per_drug_year	28143	0.8698329784383327
+all	pct_s4	drugs 1 year	3515	0.8967938259649957
+all	pct_s4	drug-years of drugs 1 year	3515	0.8967938259649957
+all	pct_s4	drugs 2-4 years	2781	0.8911196230487011
+all	pct_s4	drug-years of drugs 2-4 years	7336	0.8931416647482283
+all	pct_s4	drugs 5+ years	1768	0.8592822347327147
+all	pct_s4	drug-years of drugs 5+ years	17292	0.8544640273727757
+all	pct_s4	drugs 1 event	2128	0.9033745458337543
+all	pct_s4	drugs 2-5 events	3004	0.8912472515144021
+all	pct_s4	drugs 6+ events	2932	0.8696989031000489

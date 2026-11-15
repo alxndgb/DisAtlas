@@ -1,0 +1,234 @@
+figure	used_in	value	source	source_row	t	pool	endpoint	method	column
+SI	a: Weighted Adamic–Adar, 2005 test	5.483870967741936	summary_popularity_strata.tsv	264	2005	test	med_strat	adamic_adar_w	delta
+SI	a: Weighted Adamic–Adar, 2005 test	3.817204301075272	summary_popularity_strata.tsv	264	2005	test	med_strat	adamic_adar_w	delta_lo
+SI	a: Weighted Adamic–Adar, 2005 test	6.682027649769587	summary_popularity_strata.tsv	264	2005	test	med_strat	adamic_adar_w	delta_hi
+SI	a: Weighted Adamic–Adar, 2005 all	9.267572885924068	summary_popularity_strata.tsv	3	2005	all	med_strat	adamic_adar_w	delta
+SI	a: Weighted Adamic–Adar, 2005 all	8.260699082823542	summary_popularity_strata.tsv	3	2005	all	med_strat	adamic_adar_w	delta_lo
+SI	a: Weighted Adamic–Adar, 2005 all	10.41549910502697	summary_popularity_strata.tsv	3	2005	all	med_strat	adamic_adar_w	delta_hi
+SI	a: Weighted Adamic–Adar, 2010 test	9.171810391322587	summary_popularity_strata.tsv	786	2010	test	med_strat	adamic_adar_w	delta
+SI	a: Weighted Adamic–Adar, 2010 test	7.501759301021175	summary_popularity_strata.tsv	786	2010	test	med_strat	adamic_adar_w	delta_lo
+SI	a: Weighted Adamic–Adar, 2010 test	10.269576379974328	summary_popularity_strata.tsv	786	2010	test	med_strat	adamic_adar_w	delta_hi
+SI	a: Weighted Adamic–Adar, 2010 all	9.816350975249986	summary_popularity_strata.tsv	525	2010	all	med_strat	adamic_adar_w	delta
+SI	a: Weighted Adamic–Adar, 2010 all	8.842623591325415	summary_popularity_strata.tsv	525	2010	all	med_strat	adamic_adar_w	delta_lo
+SI	a: Weighted Adamic–Adar, 2010 all	10.848800621109708	summary_popularity_strata.tsv	525	2010	all	med_strat	adamic_adar_w	delta_hi
+SI	a: Weighted Adamic–Adar, 2015 test	9.432048681541588	summary_popularity_strata.tsv	1308	2015	test	med_strat	adamic_adar_w	delta
+SI	a: Weighted Adamic–Adar, 2015 test	8.299595141700404	summary_popularity_strata.tsv	1308	2015	test	med_strat	adamic_adar_w	delta_lo
+SI	a: Weighted Adamic–Adar, 2015 test	10.526468079922028	summary_popularity_strata.tsv	1308	2015	test	med_strat	adamic_adar_w	delta_hi
+SI	a: Weighted Adamic–Adar, 2015 all	7.296037296037301	summary_popularity_strata.tsv	1047	2015	all	med_strat	adamic_adar_w	delta
+SI	a: Weighted Adamic–Adar, 2015 all	6.38646170723155	summary_popularity_strata.tsv	1047	2015	all	med_strat	adamic_adar_w	delta_lo
+SI	a: Weighted Adamic–Adar, 2015 all	8.213161918557862	summary_popularity_strata.tsv	1047	2015	all	med_strat	adamic_adar_w	delta_hi
+SI	a: Adamic–Adar, 2005 test	5.897435897435898	summary_popularity_strata.tsv	263	2005	test	med_strat	adamic_adar	delta
+SI	a: Adamic–Adar, 2005 test	4.337127976190479	summary_popularity_strata.tsv	263	2005	test	med_strat	adamic_adar	delta_lo
+SI	a: Adamic–Adar, 2005 test	7.407518696581198	summary_popularity_strata.tsv	263	2005	test	med_strat	adamic_adar	delta_hi
+SI	a: Adamic–Adar, 2005 all	10.677836115863371	summary_popularity_strata.tsv	2	2005	all	med_strat	adamic_adar	delta
+SI	a: Adamic–Adar, 2005 all	9.64213330303983	summary_popularity_strata.tsv	2	2005	all	med_strat	adamic_adar	delta_lo
+SI	a: Adamic–Adar, 2005 all	11.623376623376622	summary_popularity_strata.tsv	2	2005	all	med_strat	adamic_adar	delta_hi
+SI	a: Adamic–Adar, 2010 test	8.705609925122118	summary_popularity_strata.tsv	785	2010	test	med_strat	adamic_adar	delta
+SI	a: Adamic–Adar, 2010 test	6.856368563685635	summary_popularity_strata.tsv	785	2010	test	med_strat	adamic_adar	delta_lo
+SI	a: Adamic–Adar, 2010 test	9.91932957393484	summary_popularity_strata.tsv	785	2010	test	med_strat	adamic_adar	delta_hi
+SI	a: Adamic–Adar, 2010 all	9.816350975249978	summary_popularity_strata.tsv	524	2010	all	med_strat	adamic_adar	delta
+SI	a: Adamic–Adar, 2010 all	8.830231057211103	summary_popularity_strata.tsv	524	2010	all	med_strat	adamic_adar	delta_lo
+SI	a: Adamic–Adar, 2010 all	10.865841274109844	summary_popularity_strata.tsv	524	2010	all	med_strat	adamic_adar	delta_hi
+SI	a: Adamic–Adar, 2015 test	6.594071385359953	summary_popularity_strata.tsv	1307	2015	test	med_strat	adamic_adar	delta
+SI	a: Adamic–Adar, 2015 test	5.387595369375557	summary_popularity_strata.tsv	1307	2015	test	med_strat	adamic_adar	delta_lo
+SI	a: Adamic–Adar, 2015 test	7.935156290995433	summary_popularity_strata.tsv	1307	2015	test	med_strat	adamic_adar	delta_hi
+SI	a: Adamic–Adar, 2015 all	5.1328431944606585	summary_popularity_strata.tsv	1046	2015	all	med_strat	adamic_adar	delta
+SI	a: Adamic–Adar, 2015 all	4.2821705426356615	summary_popularity_strata.tsv	1046	2015	all	med_strat	adamic_adar	delta_lo
+SI	a: Adamic–Adar, 2015 all	5.863478560753099	summary_popularity_strata.tsv	1046	2015	all	med_strat	adamic_adar	delta_hi
+SI	a: Degree, 2005 test	13.333333333333336	summary_popularity_strata.tsv	265	2005	test	med_strat	degree	delta
+SI	a: Degree, 2005 test	11.254455932254915	summary_popularity_strata.tsv	265	2005	test	med_strat	degree	delta_lo
+SI	a: Degree, 2005 test	14.578643578643582	summary_popularity_strata.tsv	265	2005	test	med_strat	degree	delta_hi
+SI	a: Degree, 2005 all	18.8903965023368	summary_popularity_strata.tsv	4	2005	all	med_strat	degree	delta
+SI	a: Degree, 2005 all	18.015526140526138	summary_popularity_strata.tsv	4	2005	all	med_strat	degree	delta_lo
+SI	a: Degree, 2005 all	20.160734787600457	summary_popularity_strata.tsv	4	2005	all	med_strat	degree	delta_hi
+SI	a: Degree, 2010 test	15.665316884829068	summary_popularity_strata.tsv	787	2010	test	med_strat	degree	delta
+SI	a: Degree, 2010 test	14.11149825783972	summary_popularity_strata.tsv	787	2010	test	med_strat	degree	delta_lo
+SI	a: Degree, 2010 test	17.171717171717166	summary_popularity_strata.tsv	787	2010	test	med_strat	degree	delta_hi
+SI	a: Degree, 2010 all	20.769126451637717	summary_popularity_strata.tsv	526	2010	all	med_strat	degree	delta
+SI	a: Degree, 2010 all	19.48016415868673	summary_popularity_strata.tsv	526	2010	all	med_strat	degree	delta_lo
+SI	a: Degree, 2010 all	22.199053735492196	summary_popularity_strata.tsv	526	2010	all	med_strat	degree	delta_hi
+SI	a: Degree, 2015 test	15.585299455535392	summary_popularity_strata.tsv	1309	2015	test	med_strat	degree	delta
+SI	a: Degree, 2015 test	14.661492092299715	summary_popularity_strata.tsv	1309	2015	test	med_strat	degree	delta_lo
+SI	a: Degree, 2015 test	16.817906836055656	summary_popularity_strata.tsv	1309	2015	test	med_strat	degree	delta_hi
+SI	a: Degree, 2015 all	15.80419580419581	summary_popularity_strata.tsv	1048	2015	all	med_strat	degree	delta
+SI	a: Degree, 2015 all	14.65336926300125	summary_popularity_strata.tsv	1048	2015	all	med_strat	degree	delta_lo
+SI	a: Degree, 2015 all	16.93259340048331	summary_popularity_strata.tsv	1048	2015	all	med_strat	degree	delta_hi
+SI	a: Strength (weighted degree), 2005 test	15.144832126398946	summary_popularity_strata.tsv	271	2005	test	med_strat	strength	delta
+SI	a: Strength (weighted degree), 2005 test	12.960367925085665	summary_popularity_strata.tsv	271	2005	test	med_strat	strength	delta_lo
+SI	a: Strength (weighted degree), 2005 test	16.668800136542075	summary_popularity_strata.tsv	271	2005	test	med_strat	strength	delta_hi
+SI	a: Strength (weighted degree), 2005 all	20.82276365209525	summary_popularity_strata.tsv	10	2005	all	med_strat	strength	delta
+SI	a: Strength (weighted degree), 2005 all	19.76475979118276	summary_popularity_strata.tsv	10	2005	all	med_strat	strength	delta_lo
+SI	a: Strength (weighted degree), 2005 all	22.091309053265576	summary_popularity_strata.tsv	10	2005	all	med_strat	strength	delta_hi
+SI	a: Strength (weighted degree), 2010 test	18.04626926578145	summary_popularity_strata.tsv	793	2010	test	med_strat	strength	delta
+SI	a: Strength (weighted degree), 2010 test	16.388574332171896	summary_popularity_strata.tsv	793	2010	test	med_strat	strength	delta_lo
+SI	a: Strength (weighted degree), 2010 test	18.86657101865136	summary_popularity_strata.tsv	793	2010	test	med_strat	strength	delta_hi
+SI	a: Strength (weighted degree), 2010 all	23.032037249759775	summary_popularity_strata.tsv	532	2010	all	med_strat	strength	delta
+SI	a: Strength (weighted degree), 2010 all	21.89332347526974	summary_popularity_strata.tsv	532	2010	all	med_strat	strength	delta_lo
+SI	a: Strength (weighted degree), 2010 all	24.171578285984225	summary_popularity_strata.tsv	532	2010	all	med_strat	strength	delta_hi
+SI	a: Strength (weighted degree), 2015 test	16.2431941923775	summary_popularity_strata.tsv	1315	2015	test	med_strat	strength	delta
+SI	a: Strength (weighted degree), 2015 test	15.026372668679036	summary_popularity_strata.tsv	1315	2015	test	med_strat	strength	delta_lo
+SI	a: Strength (weighted degree), 2015 test	17.3728813559322	summary_popularity_strata.tsv	1315	2015	test	med_strat	strength	delta_hi
+SI	a: Strength (weighted degree), 2015 all	16.02306248323948	summary_popularity_strata.tsv	1054	2015	all	med_strat	strength	delta
+SI	a: Strength (weighted degree), 2015 all	15.0	summary_popularity_strata.tsv	1054	2015	all	med_strat	strength	delta_lo
+SI	a: Strength (weighted degree), 2015 all	16.89851661779081	summary_popularity_strata.tsv	1054	2015	all	med_strat	strength	delta_hi
+SI	a: GO-BP semantic similarity, 2005 test	8.70967741935484	summary_popularity_strata.tsv	268	2005	test	med_strat	gobp_simgic	delta
+SI	a: GO-BP semantic similarity, 2005 test	6.978653530377663	summary_popularity_strata.tsv	268	2005	test	med_strat	gobp_simgic	delta_lo
+SI	a: GO-BP semantic similarity, 2005 test	10.039660617097226	summary_popularity_strata.tsv	268	2005	test	med_strat	gobp_simgic	delta_hi
+SI	a: GO-BP semantic similarity, 2005 all	10.47536382259824	summary_popularity_strata.tsv	7	2005	all	med_strat	gobp_simgic	delta
+SI	a: GO-BP semantic similarity, 2005 all	9.389153055848263	summary_popularity_strata.tsv	7	2005	all	med_strat	gobp_simgic	delta_lo
+SI	a: GO-BP semantic similarity, 2005 all	11.570638563268188	summary_popularity_strata.tsv	7	2005	all	med_strat	gobp_simgic	delta_hi
+SI	a: GO-BP semantic similarity, 2010 test	10.585951805464	summary_popularity_strata.tsv	790	2010	test	med_strat	gobp_simgic	delta
+SI	a: GO-BP semantic similarity, 2010 test	9.064106428315354	summary_popularity_strata.tsv	790	2010	test	med_strat	gobp_simgic	delta_lo
+SI	a: GO-BP semantic similarity, 2010 test	11.48908857509628	summary_popularity_strata.tsv	790	2010	test	med_strat	gobp_simgic	delta_hi
+SI	a: GO-BP semantic similarity, 2010 all	11.412989630712165	summary_popularity_strata.tsv	529	2010	all	med_strat	gobp_simgic	delta
+SI	a: GO-BP semantic similarity, 2010 all	10.327936067711038	summary_popularity_strata.tsv	529	2010	all	med_strat	gobp_simgic	delta_lo
+SI	a: GO-BP semantic similarity, 2010 all	12.39404276241008	summary_popularity_strata.tsv	529	2010	all	med_strat	gobp_simgic	delta_hi
+SI	a: GO-BP semantic similarity, 2015 test	10.344827586206897	summary_popularity_strata.tsv	1312	2015	test	med_strat	gobp_simgic	delta
+SI	a: GO-BP semantic similarity, 2015 test	9.221924462456691	summary_popularity_strata.tsv	1312	2015	test	med_strat	gobp_simgic	delta_lo
+SI	a: GO-BP semantic similarity, 2015 test	11.633366822227984	summary_popularity_strata.tsv	1312	2015	test	med_strat	gobp_simgic	delta_hi
+SI	a: GO-BP semantic similarity, 2015 all	8.714969241285036	summary_popularity_strata.tsv	1051	2015	all	med_strat	gobp_simgic	delta
+SI	a: GO-BP semantic similarity, 2015 all	7.704517704517706	summary_popularity_strata.tsv	1051	2015	all	med_strat	gobp_simgic	delta_lo
+SI	a: GO-BP semantic similarity, 2015 all	9.496890568315813	summary_popularity_strata.tsv	1051	2015	all	med_strat	gobp_simgic	delta_hi
+SI	a: Shared genes (Jaccard), 2005 test	7.612942612942611	summary_popularity_strata.tsv	267	2005	test	med_strat	gene_jaccard	delta
+SI	a: Shared genes (Jaccard), 2005 test	6.018265858670129	summary_popularity_strata.tsv	267	2005	test	med_strat	gene_jaccard	delta_lo
+SI	a: Shared genes (Jaccard), 2005 test	9.003449161922834	summary_popularity_strata.tsv	267	2005	test	med_strat	gene_jaccard	delta_hi
+SI	a: Shared genes (Jaccard), 2005 all	7.232379440825568	summary_popularity_strata.tsv	6	2005	all	med_strat	gene_jaccard	delta
+SI	a: Shared genes (Jaccard), 2005 all	6.226387864117874	summary_popularity_strata.tsv	6	2005	all	med_strat	gene_jaccard	delta_lo
+SI	a: Shared genes (Jaccard), 2005 all	8.471867007672639	summary_popularity_strata.tsv	6	2005	all	med_strat	gene_jaccard	delta_hi
+SI	a: Shared genes (Jaccard), 2010 test	10.30817402768622	summary_popularity_strata.tsv	789	2010	test	med_strat	gene_jaccard	delta
+SI	a: Shared genes (Jaccard), 2010 test	8.92857142857143	summary_popularity_strata.tsv	789	2010	test	med_strat	gene_jaccard	delta_lo
+SI	a: Shared genes (Jaccard), 2010 test	11.585504434589804	summary_popularity_strata.tsv	789	2010	test	med_strat	gene_jaccard	delta_hi
+SI	a: Shared genes (Jaccard), 2010 all	8.806039139007336	summary_popularity_strata.tsv	528	2010	all	med_strat	gene_jaccard	delta
+SI	a: Shared genes (Jaccard), 2010 all	7.349958112332902	summary_popularity_strata.tsv	528	2010	all	med_strat	gene_jaccard	delta_lo
+SI	a: Shared genes (Jaccard), 2010 all	9.916272656354751	summary_popularity_strata.tsv	528	2010	all	med_strat	gene_jaccard	delta_hi
+SI	a: Shared genes (Jaccard), 2015 test	7.47126436781609	summary_popularity_strata.tsv	1311	2015	test	med_strat	gene_jaccard	delta
+SI	a: Shared genes (Jaccard), 2015 test	6.137630999121139	summary_popularity_strata.tsv	1311	2015	test	med_strat	gene_jaccard	delta_lo
+SI	a: Shared genes (Jaccard), 2015 test	8.730205573082896	summary_popularity_strata.tsv	1311	2015	test	med_strat	gene_jaccard	delta_hi
+SI	a: Shared genes (Jaccard), 2015 all	5.492424242424242	summary_popularity_strata.tsv	1050	2015	all	med_strat	gene_jaccard	delta
+SI	a: Shared genes (Jaccard), 2015 all	4.418017118274133	summary_popularity_strata.tsv	1050	2015	all	med_strat	gene_jaccard	delta_lo
+SI	a: Shared genes (Jaccard), 2015 all	6.585670840619355	summary_popularity_strata.tsv	1050	2015	all	med_strat	gene_jaccard	delta_hi
+SI	a: HPO phenotype similarity, 2005 test	21.785714285714285	summary_popularity_strata.tsv	269	2005	test	med_strat	hpo_simgic	delta
+SI	a: HPO phenotype similarity, 2005 test	20.279207779207777	summary_popularity_strata.tsv	269	2005	test	med_strat	hpo_simgic	delta_lo
+SI	a: HPO phenotype similarity, 2005 test	22.75345622119816	summary_popularity_strata.tsv	269	2005	test	med_strat	hpo_simgic	delta_hi
+SI	a: HPO phenotype similarity, 2005 all	25.203527815468117	summary_popularity_strata.tsv	8	2005	all	med_strat	hpo_simgic	delta
+SI	a: HPO phenotype similarity, 2005 all	24.298642533936647	summary_popularity_strata.tsv	8	2005	all	med_strat	hpo_simgic	delta_lo
+SI	a: HPO phenotype similarity, 2005 all	26.22927387078331	summary_popularity_strata.tsv	8	2005	all	med_strat	hpo_simgic	delta_hi
+SI	a: HPO phenotype similarity, 2010 test	24.123963501370437	summary_popularity_strata.tsv	791	2010	test	med_strat	hpo_simgic	delta
+SI	a: HPO phenotype similarity, 2010 test	22.74436090225564	summary_popularity_strata.tsv	791	2010	test	med_strat	hpo_simgic	delta_lo
+SI	a: HPO phenotype similarity, 2010 test	25.000000000000004	summary_popularity_strata.tsv	791	2010	test	med_strat	hpo_simgic	delta_hi
+SI	a: HPO phenotype similarity, 2010 all	26.29415301119396	summary_popularity_strata.tsv	530	2010	all	med_strat	hpo_simgic	delta
+SI	a: HPO phenotype similarity, 2010 all	25.336723181042995	summary_popularity_strata.tsv	530	2010	all	med_strat	hpo_simgic	delta_lo
+SI	a: HPO phenotype similarity, 2010 all	29.919353594596533	summary_popularity_strata.tsv	530	2010	all	med_strat	hpo_simgic	delta_hi
+SI	a: HPO phenotype similarity, 2015 test	25.477216748768484	summary_popularity_strata.tsv	1313	2015	test	med_strat	hpo_simgic	delta
+SI	a: HPO phenotype similarity, 2015 test	24.43850267379679	summary_popularity_strata.tsv	1313	2015	test	med_strat	hpo_simgic	delta_lo
+SI	a: HPO phenotype similarity, 2015 test	30.917592051431924	summary_popularity_strata.tsv	1313	2015	test	med_strat	hpo_simgic	delta_hi
+SI	a: HPO phenotype similarity, 2015 all	29.009608277900963	summary_popularity_strata.tsv	1052	2015	all	med_strat	hpo_simgic	delta
+SI	a: HPO phenotype similarity, 2015 all	25.754003516543293	summary_popularity_strata.tsv	1052	2015	all	med_strat	hpo_simgic	delta_lo
+SI	a: HPO phenotype similarity, 2015 all	33.82773732195372	summary_popularity_strata.tsv	1052	2015	all	med_strat	hpo_simgic	delta_hi
+SI	b: stratum k0	5.83289542827115	summary_popularity_strata.tsv	822	2010	test	med_strat_k0	adamic_adar_w	delta
+SI	b: stratum k0	3.9411455596426688	summary_popularity_strata.tsv	822	2010	test	med_strat_k0	adamic_adar_w	delta_lo
+SI	b: stratum k0	6.988964792432999	summary_popularity_strata.tsv	822	2010	test	med_strat_k0	adamic_adar_w	delta_hi
+SI	b: stratum k0 n drugs	423.0	summary_popularity_strata.tsv	822	2010	test	med_strat_k0	adamic_adar_w	n_drugs
+SI	b: stratum k0 n later	904.0	summary_popularity_strata.tsv	822	2010	test	med_strat_k0	adamic_adar_w	n_later
+SI	b: stratum k0 popularity min	0.0	strata_boundaries.tsv	7	2010		stratum 0		pop_min
+SI	b: stratum k0 popularity max	0.0	strata_boundaries.tsv	7	2010		stratum 0		pop_max
+SI	b: stratum k1	12.195121951219509	summary_popularity_strata.tsv	831	2010	test	med_strat_k1	adamic_adar_w	delta
+SI	b: stratum k1	7.317073170731707	summary_popularity_strata.tsv	831	2010	test	med_strat_k1	adamic_adar_w	delta_lo
+SI	b: stratum k1	15.853658536585364	summary_popularity_strata.tsv	831	2010	test	med_strat_k1	adamic_adar_w	delta_hi
+SI	b: stratum k1 n drugs	606.0	summary_popularity_strata.tsv	831	2010	test	med_strat_k1	adamic_adar_w	n_drugs
+SI	b: stratum k1 n later	911.0	summary_popularity_strata.tsv	831	2010	test	med_strat_k1	adamic_adar_w	n_later
+SI	b: stratum k1 popularity min	1.0	strata_boundaries.tsv	8	2010		stratum 1		pop_min
+SI	b: stratum k1 popularity max	13.0	strata_boundaries.tsv	8	2010		stratum 1		pop_max
+SI	b: stratum k2	9.64646464646465	summary_popularity_strata.tsv	840	2010	test	med_strat_k2	adamic_adar_w	delta
+SI	b: stratum k2	8.333333333333336	summary_popularity_strata.tsv	840	2010	test	med_strat_k2	adamic_adar_w	delta_lo
+SI	b: stratum k2	12.222222222222223	summary_popularity_strata.tsv	840	2010	test	med_strat_k2	adamic_adar_w	delta_hi
+SI	b: stratum k2 n drugs	992.0	summary_popularity_strata.tsv	840	2010	test	med_strat_k2	adamic_adar_w	n_drugs
+SI	b: stratum k2 n later	1774.0	summary_popularity_strata.tsv	840	2010	test	med_strat_k2	adamic_adar_w	n_later
+SI	b: stratum k2 popularity min	14.0	strata_boundaries.tsv	9	2010		stratum 2		pop_min
+SI	b: stratum k2 popularity max	64.0	strata_boundaries.tsv	9	2010		stratum 2		pop_max
+SI	b: stratum k3	9.210526315789473	summary_popularity_strata.tsv	849	2010	test	med_strat_k3	adamic_adar_w	delta
+SI	b: stratum k3	7.163742690058491	summary_popularity_strata.tsv	849	2010	test	med_strat_k3	adamic_adar_w	delta_lo
+SI	b: stratum k3	10.81081081081081	summary_popularity_strata.tsv	849	2010	test	med_strat_k3	adamic_adar_w	delta_hi
+SI	b: stratum k3 n drugs	1840.0	summary_popularity_strata.tsv	849	2010	test	med_strat_k3	adamic_adar_w	n_drugs
+SI	b: stratum k3 n later	4198.0	summary_popularity_strata.tsv	849	2010	test	med_strat_k3	adamic_adar_w	n_later
+SI	b: stratum k3 popularity min	71.0	strata_boundaries.tsv	10	2010		stratum 3		pop_min
+SI	b: stratum k3 popularity max	220.0	strata_boundaries.tsv	10	2010		stratum 3		pop_max
+SI	b: stratum k4	7.857142857142854	summary_popularity_strata.tsv	858	2010	test	med_strat_k4	adamic_adar_w	delta
+SI	b: stratum k4	5.855855855855857	summary_popularity_strata.tsv	858	2010	test	med_strat_k4	adamic_adar_w	delta_lo
+SI	b: stratum k4	9.047619047619044	summary_popularity_strata.tsv	858	2010	test	med_strat_k4	adamic_adar_w	delta_hi
+SI	b: stratum k4 n drugs	2988.0	summary_popularity_strata.tsv	858	2010	test	med_strat_k4	adamic_adar_w	n_drugs
+SI	b: stratum k4 n later	11172.0	summary_popularity_strata.tsv	858	2010	test	med_strat_k4	adamic_adar_w	n_later
+SI	b: stratum k4 popularity min	227.0	strata_boundaries.tsv	11	2010		stratum 4		pop_min
+SI	b: stratum k4 popularity max	1221.0	strata_boundaries.tsv	11	2010		stratum 4		pop_max
+SI	c: fused vs popularity, 2005 test	-0.1193709790077186	summary_popularity_strata.tsv	288	2005	test	med_fused	popularity	delta
+SI	c: fused vs popularity, 2005 test	-0.2166011683383668	summary_popularity_strata.tsv	288	2005	test	med_fused	popularity	delta_lo
+SI	c: fused vs popularity, 2005 test	0.0251210217820665	summary_popularity_strata.tsv	288	2005	test	med_fused	popularity	delta_hi
+SI	c: fused vs popularity, 2005 all	0.3178128178128179	summary_popularity_strata.tsv	27	2005	all	med_fused	popularity	delta
+SI	c: fused vs popularity, 2005 all	0.2084502791961806	summary_popularity_strata.tsv	27	2005	all	med_fused	popularity	delta_lo
+SI	c: fused vs popularity, 2005 all	0.4200305608612067	summary_popularity_strata.tsv	27	2005	all	med_fused	popularity	delta_hi
+SI	c: fused vs popularity, 2010 test	-0.2196220722930022	summary_popularity_strata.tsv	810	2010	test	med_fused	popularity	delta
+SI	c: fused vs popularity, 2010 test	-0.3208877663367107	summary_popularity_strata.tsv	810	2010	test	med_fused	popularity	delta_lo
+SI	c: fused vs popularity, 2010 test	-0.1348475854418137	summary_popularity_strata.tsv	810	2010	test	med_fused	popularity	delta_hi
+SI	c: fused vs popularity, 2010 all	0.1686483462646324	summary_popularity_strata.tsv	549	2010	all	med_fused	popularity	delta
+SI	c: fused vs popularity, 2010 all	0.0821861877216912	summary_popularity_strata.tsv	549	2010	all	med_fused	popularity	delta_lo
+SI	c: fused vs popularity, 2010 all	0.271897003556135	summary_popularity_strata.tsv	549	2010	all	med_fused	popularity	delta_hi
+SI	c: fused vs popularity, 2015 test	-0.1987549688742218	summary_popularity_strata.tsv	1332	2015	test	med_fused	popularity	delta
+SI	c: fused vs popularity, 2015 test	-0.2907131256459472	summary_popularity_strata.tsv	1332	2015	test	med_fused	popularity	delta_lo
+SI	c: fused vs popularity, 2015 test	-0.1238432353993158	summary_popularity_strata.tsv	1332	2015	test	med_fused	popularity	delta_hi
+SI	c: fused vs popularity, 2015 all	0.1409293751734841	summary_popularity_strata.tsv	1071	2015	all	med_fused	popularity	delta
+SI	c: fused vs popularity, 2015 all	0.0801431063749531	summary_popularity_strata.tsv	1071	2015	all	med_fused	popularity	delta_lo
+SI	c: fused vs popularity, 2015 all	0.2099282227539161	summary_popularity_strata.tsv	1071	2015	all	med_fused	popularity	delta_hi
+SI	d: mean top-10% precision, Trial popularity, 2005 test	0.0391244841320539	summary_popularity_strata.tsv	522	2005	test	prec10_mean	popularity	value
+SI	d: mean top-10% precision, Trial popularity, 2005 test	0.0374325373743374	summary_popularity_strata.tsv	522	2005	test	prec10_mean	popularity	lo
+SI	d: mean top-10% precision, Trial popularity, 2005 test	0.0409262330916454	summary_popularity_strata.tsv	522	2005	test	prec10_mean	popularity	hi
+SI	d: mean top-10% precision, Trial popularity, 2005 all	0.0363308597683706	summary_popularity_strata.tsv	261	2005	all	prec10_mean	popularity	value
+SI	d: mean top-10% precision, Trial popularity, 2005 all	0.034678985832134	summary_popularity_strata.tsv	261	2005	all	prec10_mean	popularity	lo
+SI	d: mean top-10% precision, Trial popularity, 2005 all	0.0380560097786224	summary_popularity_strata.tsv	261	2005	all	prec10_mean	popularity	hi
+SI	d: mean top-10% precision, Trial popularity, 2010 test	0.0245278049773717	summary_popularity_strata.tsv	1044	2010	test	prec10_mean	popularity	value
+SI	d: mean top-10% precision, Trial popularity, 2010 test	0.0235730250226528	summary_popularity_strata.tsv	1044	2010	test	prec10_mean	popularity	lo
+SI	d: mean top-10% precision, Trial popularity, 2010 test	0.0254766913560893	summary_popularity_strata.tsv	1044	2010	test	prec10_mean	popularity	hi
+SI	d: mean top-10% precision, Trial popularity, 2010 all	0.0209358649119766	summary_popularity_strata.tsv	783	2010	all	prec10_mean	popularity	value
+SI	d: mean top-10% precision, Trial popularity, 2010 all	0.0199977523019431	summary_popularity_strata.tsv	783	2010	all	prec10_mean	popularity	lo
+SI	d: mean top-10% precision, Trial popularity, 2010 all	0.0218499912926256	summary_popularity_strata.tsv	783	2010	all	prec10_mean	popularity	hi
+SI	d: mean top-10% precision, Trial popularity, 2015 test	0.0152064436716384	summary_popularity_strata.tsv	1566	2015	test	prec10_mean	popularity	value
+SI	d: mean top-10% precision, Trial popularity, 2015 test	0.0146462034023808	summary_popularity_strata.tsv	1566	2015	test	prec10_mean	popularity	lo
+SI	d: mean top-10% precision, Trial popularity, 2015 test	0.0157912699697951	summary_popularity_strata.tsv	1566	2015	test	prec10_mean	popularity	hi
+SI	d: mean top-10% precision, Trial popularity, 2015 all	0.012500649984021	summary_popularity_strata.tsv	1305	2015	all	prec10_mean	popularity	value
+SI	d: mean top-10% precision, Trial popularity, 2015 all	0.0120531925182557	summary_popularity_strata.tsv	1305	2015	all	prec10_mean	popularity	lo
+SI	d: mean top-10% precision, Trial popularity, 2015 all	0.0129976822953959	summary_popularity_strata.tsv	1305	2015	all	prec10_mean	popularity	hi
+SI	d: mean top-10% precision, Weighted Adamic–Adar, 2005 test	0.0268504629759979	summary_popularity_strata.tsv	516	2005	test	prec10_mean	adamic_adar_w	value
+SI	d: mean top-10% precision, Weighted Adamic–Adar, 2005 test	0.0257536284879025	summary_popularity_strata.tsv	516	2005	test	prec10_mean	adamic_adar_w	lo
+SI	d: mean top-10% precision, Weighted Adamic–Adar, 2005 test	0.0280476019960337	summary_popularity_strata.tsv	516	2005	test	prec10_mean	adamic_adar_w	hi
+SI	d: mean top-10% precision, Weighted Adamic–Adar, 2005 all	0.0244993431929129	summary_popularity_strata.tsv	255	2005	all	prec10_mean	adamic_adar_w	value
+SI	d: mean top-10% precision, Weighted Adamic–Adar, 2005 all	0.0234838468973237	summary_popularity_strata.tsv	255	2005	all	prec10_mean	adamic_adar_w	lo
+SI	d: mean top-10% precision, Weighted Adamic–Adar, 2005 all	0.0255907685256383	summary_popularity_strata.tsv	255	2005	all	prec10_mean	adamic_adar_w	hi
+SI	d: mean top-10% precision, Weighted Adamic–Adar, 2010 test	0.0162037363384627	summary_popularity_strata.tsv	1038	2010	test	prec10_mean	adamic_adar_w	value
+SI	d: mean top-10% precision, Weighted Adamic–Adar, 2010 test	0.0155871466370634	summary_popularity_strata.tsv	1038	2010	test	prec10_mean	adamic_adar_w	lo
+SI	d: mean top-10% precision, Weighted Adamic–Adar, 2010 test	0.0167956830913757	summary_popularity_strata.tsv	1038	2010	test	prec10_mean	adamic_adar_w	hi
+SI	d: mean top-10% precision, Weighted Adamic–Adar, 2010 all	0.013890922701028	summary_popularity_strata.tsv	777	2010	all	prec10_mean	adamic_adar_w	value
+SI	d: mean top-10% precision, Weighted Adamic–Adar, 2010 all	0.0133279210783658	summary_popularity_strata.tsv	777	2010	all	prec10_mean	adamic_adar_w	lo
+SI	d: mean top-10% precision, Weighted Adamic–Adar, 2010 all	0.0144619326192022	summary_popularity_strata.tsv	777	2010	all	prec10_mean	adamic_adar_w	hi
+SI	d: mean top-10% precision, Weighted Adamic–Adar, 2015 test	0.01018324702906	summary_popularity_strata.tsv	1560	2015	test	prec10_mean	adamic_adar_w	value
+SI	d: mean top-10% precision, Weighted Adamic–Adar, 2015 test	0.0098225048107095	summary_popularity_strata.tsv	1560	2015	test	prec10_mean	adamic_adar_w	lo
+SI	d: mean top-10% precision, Weighted Adamic–Adar, 2015 test	0.0105787962213432	summary_popularity_strata.tsv	1560	2015	test	prec10_mean	adamic_adar_w	hi
+SI	d: mean top-10% precision, Weighted Adamic–Adar, 2015 all	0.0085954291501422	summary_popularity_strata.tsv	1299	2015	all	prec10_mean	adamic_adar_w	value
+SI	d: mean top-10% precision, Weighted Adamic–Adar, 2015 all	0.0082907981968992	summary_popularity_strata.tsv	1299	2015	all	prec10_mean	adamic_adar_w	lo
+SI	d: mean top-10% precision, Weighted Adamic–Adar, 2015 all	0.0089066975898772	summary_popularity_strata.tsv	1299	2015	all	prec10_mean	adamic_adar_w	hi
+SI	d: mean top-10% precision, DisAtlas, 2005 test	0.0195689228910307	summary_popularity_strata.tsv	518	2005	test	prec10_mean	disatlas_ens5	value
+SI	d: mean top-10% precision, DisAtlas, 2005 test	0.0187194840585554	summary_popularity_strata.tsv	518	2005	test	prec10_mean	disatlas_ens5	lo
+SI	d: mean top-10% precision, DisAtlas, 2005 test	0.0204111718238212	summary_popularity_strata.tsv	518	2005	test	prec10_mean	disatlas_ens5	hi
+SI	d: mean top-10% precision, DisAtlas, 2005 all	0.018611454564645	summary_popularity_strata.tsv	257	2005	all	prec10_mean	disatlas_ens5	value
+SI	d: mean top-10% precision, DisAtlas, 2005 all	0.0178490802002577	summary_popularity_strata.tsv	257	2005	all	prec10_mean	disatlas_ens5	lo
+SI	d: mean top-10% precision, DisAtlas, 2005 all	0.0194171339161143	summary_popularity_strata.tsv	257	2005	all	prec10_mean	disatlas_ens5	hi
+SI	d: mean top-10% precision, DisAtlas, 2010 test	0.0133977289861904	summary_popularity_strata.tsv	1040	2010	test	prec10_mean	disatlas_ens5	value
+SI	d: mean top-10% precision, DisAtlas, 2010 test	0.0128365673261438	summary_popularity_strata.tsv	1040	2010	test	prec10_mean	disatlas_ens5	lo
+SI	d: mean top-10% precision, DisAtlas, 2010 test	0.0139502146354599	summary_popularity_strata.tsv	1040	2010	test	prec10_mean	disatlas_ens5	hi
+SI	d: mean top-10% precision, DisAtlas, 2010 all	0.011872918559945	summary_popularity_strata.tsv	779	2010	all	prec10_mean	disatlas_ens5	value
+SI	d: mean top-10% precision, DisAtlas, 2010 all	0.0113976269303879	summary_popularity_strata.tsv	779	2010	all	prec10_mean	disatlas_ens5	lo
+SI	d: mean top-10% precision, DisAtlas, 2010 all	0.0123671025075807	summary_popularity_strata.tsv	779	2010	all	prec10_mean	disatlas_ens5	hi
+SI	d: mean top-10% precision, DisAtlas, 2015 test	0.0095393330050943	summary_popularity_strata.tsv	1562	2015	test	prec10_mean	disatlas_ens5	value
+SI	d: mean top-10% precision, DisAtlas, 2015 test	0.0091782272739	summary_popularity_strata.tsv	1562	2015	test	prec10_mean	disatlas_ens5	lo
+SI	d: mean top-10% precision, DisAtlas, 2015 test	0.0099064841040679	summary_popularity_strata.tsv	1562	2015	test	prec10_mean	disatlas_ens5	hi
+SI	d: mean top-10% precision, DisAtlas, 2015 all	0.007781852752119	summary_popularity_strata.tsv	1301	2015	all	prec10_mean	disatlas_ens5	value
+SI	d: mean top-10% precision, DisAtlas, 2015 all	0.0075016893799685	summary_popularity_strata.tsv	1301	2015	all	prec10_mean	disatlas_ens5	lo
+SI	d: mean top-10% precision, DisAtlas, 2015 all	0.0080823096610323	summary_popularity_strata.tsv	1301	2015	all	prec10_mean	disatlas_ens5	hi

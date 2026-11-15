@@ -1,0 +1,9 @@
+item	asset	verdict	max_px_diff	note
+Table 1 protocols	tables/main/table1_protocols.md	IDENTICAL	n/a	6/6 rows
+SI Fig 3a trials	tables/SI/table_fig3a_trials.md	IDENTICAL	n/a	91/91 rows; US-spelling display map for one trial title
+SI baselines	tables/SI/table_si_baselines.md	IDENTICAL	n/a	25/25 rows; new generator; B = 2,000 disease-cluster bootstrap on the gene-anchored model; MONDO SimGIC point estimate
+SI AI subgroups	tables/SI/table_llm_subgroups.md	IDENTICAL	n/a	13/13 rows; cosine rows of the shared-draw subgroup bootstrap
+SI heuristic vs AI	tables/SI/table_heuristic_vs_ai.md	IDENTICAL	n/a	11/11 rows; new generator; stored AI outputs, no model calls
+SI event-time subsets	figures/SI/SI_event_time_tables.md (Subset of new trials block)	RESIDUAL (manuscript mixed-era)	n/a	5/41 body rows identical (main-analysis rows, gene-anchored). Rendering the same block from the decoder-era deltas matches 37/42 lines, all except the main-analysis rows. The manuscript table combines gene-anchored main rows with decoder-era subset rows; DisAtlas ships the gene-anchored values throughout, per the final-readout rule
+SI event-time deltas (S10, side effect)	figures/SI/SI_event_time_tables.md	RESIDUAL (manuscript mixed-era)	n/a	the manuscript S10 body is decoder-era (e.g. +7.03 [+6.18, +7.91]) while S13 cites it with the gene-anchored +8.31 [+7.49, +9.21]; regenerated from the shipped gene-anchored deltas.tsv. HEAD had a stale decoder-era render
+SI FDA dated-pairs table (side effect)	figures/SI/SI_fda_prioritisation_text.md	RESIDUAL (manuscript mixed-era)	n/a	800f2168 prose (63.9%; -10.2 [-16.6, -1.4]; -7.2 percentile points) equals the gene-anchored regeneration; the table printed beneath it (64.5%) is decoder-era

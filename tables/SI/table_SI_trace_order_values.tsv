@@ -1,0 +1,47 @@
+Pair (panel)	List	Rank	Displayed intermediate	Walk-mass share	Specificity weight (ln N/degree)	Display label in Figure 4
+aHUS–PNH (d)	evidence items	1	Regulation of Complement cascade	0.045	4.09	
+aHUS–PNH (d)	evidence items	2	complement all	0.054	3.00	
+aHUS–PNH (d)	evidence items	3	complement regulator loss	0.036	4.00	
+aHUS–PNH (d)	evidence items	4	Alternative complement activation	0.022	5.71	
+aHUS–PNH (d)	evidence items	5	complement activation/deposition (complement generic)	0.042	2.80	complement activation/deposition
+aHUS–PNH (d)	evidence items	6	Regulation of Complement cascade	0.034	3.20	Regulation of Complement cascade, automated node
+aHUS–PNH (d)	evidence items	7	Activation of C3 and C5	0.018	4.92	
+aHUS–PNH (d)	evidence items	8	terminal pathway / MAC (C5-C9) (literature pattern v1)	0.027	3.20	terminal pathway / MAC (C5-C9), literature
+aHUS–PNH (d)	genes	1	C3	0.104	3.07	
+aHUS–PNH (d)	genes	2	C5	0.035	4.22	
+aHUS–PNH (d)	genes	3	CFH	0.043	3.32	
+aHUS–PNH (d)	genes	4	CD59	0.028	3.21	
+aHUS–PNH (d)	genes	5	CD55	0.019	4.09	
+aHUS–PNH (d)	shared neighbor diseases	1	hemolytic uremic syndrome, atypical, susceptibility to, 1	0.044	6.04	aHUS susceptibility, type 1
+aHUS–PNH (d)	shared neighbor diseases	2	dense deposit disease	0.053	4.78	
+aHUS–PNH (d)	shared neighbor diseases	3	atypical hemolytic-uremic syndrome with B factor anomaly	0.039	5.32	aHUS with factor B anomaly
+NMOSD–PNH (f)	evidence items	1	Regulation of Complement cascade	0.018	4.09	Complement cascade regulation
+NMOSD–PNH (f)	evidence items	2	Neutrophil degranulation	0.019	3.17	
+NMOSD–PNH (f)	evidence items	3	terminal pathway / MAC (C5-C9) (literature pattern v1)	0.018	3.20	Terminal pathway / MAC (C5-C9), literature
+NMOSD–PNH (f)	evidence items	4	C5b-9/MAC (complement C5 MAC)	0.014	3.96	C5b-9/MAC
+NMOSD–PNH (f)	evidence items	5	complement all	0.018	3.00	
+NMOSD–PNH (f)	genes	1	C3	0.064	3.07	
+NMOSD–PNH (f)	genes	2	C5	0.024	4.22	
+NMOSD–PNH (f)	genes	3	CD14	0.020	3.51	
+NMOSD–PNH (f)	shared neighbor diseases	1	transplant rejection	0.127	4.37	
+NMOSD–PNH (f)	shared neighbor diseases	2	autoimmune hemolytic anemia	0.072	4.52	
+Crohn–UC (f)	evidence items	1	shared rare gene IL12B	0.072	4.17	
+Crohn–UC (f)	evidence items	2	shared rare gene NOD2	0.021	3.58	
+Crohn–UC (f)	evidence items	3	Differentiation of Circulating Monocytes	0.005	2.57	Monocyte differentiation
+Crohn–UC (f)	evidence items	4	Neutrophil degranulation	0.004	3.17	
+Crohn–UC (f)	evidence items	5	Interleukin-10 signaling	0.004	2.57	IL-10 signalling
+Crohn–UC (f)	genes	1	IL12B	0.073	4.17	
+Crohn–UC (f)	genes	2	NOD2	0.022	3.58	
+Crohn–UC (f)	genes	3	PSMB6	0.011	4.19	
+Crohn–UC (f)	shared neighbor diseases	1	Mendelian susceptibility to mycobacterial diseases due to complete IL12B deficiency	0.055	6.77	MSMD, IL12B deficiency
+Crohn–UC (f)	shared neighbor diseases	2	eosinophilic esophagitis	0.041	5.16	
+RA–polymyositis (f)	evidence items	1	Immunoregulatory interactions between a Lymphoid and a non-Lymphoid cell	0.009	3.50	Lymphoid–non-lymphoid interactions
+RA–polymyositis (f)	evidence items	2	Translocation of ZAP-70 to Immunological synapse	0.008	3.94	ZAP-70 to immunological synapse
+RA–polymyositis (f)	evidence items	3	Interferon gamma signaling	0.008	3.80	IFN-γ signalling
+RA–polymyositis (f)	evidence items	4	Phosphorylation of CD3 and TCR zeta chains	0.008	3.86	CD3/TCR ζ phosphorylation
+RA–polymyositis (f)	evidence items	5	ER-Phagosome pathway	0.008	3.42	
+RA–polymyositis (f)	genes	1	IL18	0.021	3.04	
+RA–polymyositis (f)	genes	2	IL1B	0.022	2.78	
+RA–polymyositis (f)	genes	3	NFKB1	0.023	2.62	
+RA–polymyositis (f)	shared neighbor diseases	1	immune system disorder	0.050	3.91	
+RA–polymyositis (f)	shared neighbor diseases	2	myositis disease	0.043	4.37	

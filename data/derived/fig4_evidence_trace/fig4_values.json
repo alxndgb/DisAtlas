@@ -1,0 +1,21 @@
+{
+ "threshold_youden_tune": 0.204894,
+ "test_n_neg": 603,
+ "test_n_pos": 491,
+ "test_sensitivity": 0.7270875763747454,
+ "test_specificity": 0.8474295190713101,
+ "cosine_test_auroc": 0.86046,
+ "cosine_test_auroc_lo": 0.805502,
+ "cosine_test_auroc_hi": 0.905997,
+ "cosine_test_n_pairs": 1094,
+ "spearman_logM2_cos": 0.6573508006995037,
+ "n_m2_pos": 136286,
+ "n_pairs": 228447,
+ "n_shared_neighbours": {
+  "aHUS-PNH": 52,
+  "NMOSD-PNH": 19,
+  "Crohn-UC": 208,
+  "RA-polymyositis": 69
+ },
+ "idf_n_diseases": 13021
+}

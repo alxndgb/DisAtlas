@@ -1,0 +1,58 @@
+panel	pair	list	item	label	type	frac_of_M2	degree	idf	infectious	rank_share_only	rank_specificity	shown_share_only	shown_specificity	display_label
+d	aHUS-PNH	module	NAMED:complement_all	complement all	Named gene set	0.0540768766517438	648	3.000428021376454	False	1	2	True	True	complement all
+d	aHUS-PNH	module	REACTOME:R-HSA-977606	Regulation of Complement cascade	Reactome pathway	0.0448482515001371	218	4.089823654939639	False	2	1	True	True	Regulation of Complement cascade
+d	aHUS-PNH	module	LITMECH:complement_generic|complement activation/deposition	complement activation/deposition (complement generic)	Literature mechanism	0.0422253472795402	789	2.803552396882854	False	3	5	True	True	complement activation/deposition
+d	aHUS-PNH	module	MECHNODE:M1	complement regulator loss	Mechanism node (curated)	0.03644265003031	238	4.002048044057254	False	4	3	True	True	complement regulator loss
+d	aHUS-PNH	module	MECHNODE:AUTO:R-HSA-977606	Regulation of Complement cascade	Mechanism node (automated)	0.0340979204952435	529	3.203330285870429	False	5	6	True	True	Regulation of Complement cascade, automated node
+d	aHUS-PNH	module	LITMECH:MECH:M5|v1	terminal pathway / MAC (C5-C9) (literature pattern v1)	Literature mechanism	0.0271542705714932	533	3.195797293562884	False	6	8	True	True	terminal pathway / MAC (C5-C9), literature
+d	aHUS-PNH	module	LITMECH:complement_C3_proximal|C3	C3 (complement C3 proximal)	Literature mechanism	0.0225418407068364	510	3.239907992010357	False	7	11	True	False	
+d	aHUS-PNH	module	MECHNODE:M5	terminal pathway / MAC (C5-C9)	Mechanism node (curated)	0.0219822289812796	489	3.2819562282538564	False	8	12	True	False	
+d	aHUS-PNH	module	REACTOME:R-HSA-173736	Alternative complement activation	Reactome pathway	0.0217270732033951	43	5.713118602035165	False	9	4	False	True	Alternative complement activation
+d	aHUS-PNH	module	REACTOME:R-HSA-174577	Activation of C3 and C5	Reactome pathway	0.0179813678753519	95	4.920441826128188	False	12	7	False	True	Activation of C3 and C5
+d	aHUS-PNH	gene	ENSEMBL:ENSG00000125730	C3	Gene	0.1040849000436314	605	3.069090259697887	False	1	1	True	True	C3
+d	aHUS-PNH	gene	ENSEMBL:ENSG00000000971	CFH	Gene	0.0430035818799056	471	3.3194606237123105	False	2	3	True	True	CFH
+d	aHUS-PNH	gene	ENSEMBL:ENSG00000106804	C5	Gene	0.0351094344401418	192	4.216823345700947	False	3	2	True	True	C5
+d	aHUS-PNH	gene	ENSEMBL:ENSG00000085063	CD59	Gene	0.0279780932797474	525	3.2109204551371047	False	4	4	True	True	CD59
+d	aHUS-PNH	gene	ENSEMBL:ENSG00000196352	CD55	Gene	0.0187792903121671	218	4.089823654939639	False	5	5	True	True	CD55
+d	aHUS-PNH	neighbour	MONDO:0019736	dense deposit disease	Disease	0.0532910743480236	109	4.782970835499585	False	1	2	True	True	Dense deposit disease
+d	aHUS-PNH	neighbour	MONDO:0009335	hemolytic uremic syndrome, atypical, susceptibility to, 1	Disease	0.043588560983955	31	6.040331513243582	False	2	1	True	True	aHUS susceptibility, type 1
+d	aHUS-PNH	neighbour	MONDO:0019737	thrombotic microangiopathy	Disease	0.0431352441665656	194	4.2064605586654	False	3	6	True	False	
+d	aHUS-PNH	neighbour	MONDO:0013042	atypical hemolytic-uremic syndrome with B factor anomaly	Disease	0.0387249538346526	64	5.315435634369057	False	6	3	False	True	aHUS with factor B anomaly
+f	NMOSD-PNH	module	REACTOME:R-HSA-6798695	Neutrophil degranulation	Reactome pathway	0.0192838436038544	546	3.171699741983823	False	1	2	True	True	Neutrophil degranulation
+f	NMOSD-PNH	module	LITMECH:complement_generic|complement activation/deposition	complement activation/deposition (complement generic)	Literature mechanism	0.0191816948735619	789	2.803552396882854	False	2	8	True	False	
+f	NMOSD-PNH	module	LITMECH:MECH:M5|v1	terminal pathway / MAC (C5-C9) (literature pattern v1)	Literature mechanism	0.0184307847322581	533	3.195797293562884	False	3	3	True	True	Terminal pathway / MAC (C5-C9), literature
+f	NMOSD-PNH	module	NAMED:complement_all	complement all	Named gene set	0.0181810861415971	648	3.000428021376454	False	4	5	True	True	Complement all
+f	NMOSD-PNH	module	REACTOME:R-HSA-977606	Regulation of Complement cascade	Reactome pathway	0.0180480596092198	218	4.089823654939639	False	5	1	True	True	Complement cascade regulation
+f	NMOSD-PNH	module	LITMECH:complement_C5_MAC|C5b-9/MAC	C5b-9/MAC (complement C5 MAC)	Literature mechanism	0.0139167494496672	247	3.9649303811007512	False	10	4	False	True	C5b-9/MAC
+f	NMOSD-PNH	gene	ENSEMBL:ENSG00000125730	C3	Gene	0.0639604414595683	605	3.069090259697887	False	1	1	True	True	C3
+f	NMOSD-PNH	gene	ENSEMBL:ENSG00000136634	IL10	Gene	0.0242415718436163	933	2.6359135168813843	False	2	4	True	False	
+f	NMOSD-PNH	gene	ENSEMBL:ENSG00000106804	C5	Gene	0.0241605973338502	192	4.216823345700947	False	3	2	True	True	C5
+f	NMOSD-PNH	gene	ENSEMBL:ENSG00000170458	CD14	Gene	0.0202756710088514	389	3.510739374110282	False	6	3	False	True	CD14
+f	NMOSD-PNH	neighbour	MONDO:1010185	transplant rejection	Disease	0.127327796862436	165	4.368373243828148	False	1	1	True	True	Transplant rejection
+f	NMOSD-PNH	neighbour	MONDO:0020108	autoimmune hemolytic anemia	Disease	0.0722604155136524	142	4.518491660127467	False	2	2	True	True	Autoimmune hemolytic anemia
+f	Crohn-UC	module	GENEANCHOR:ENSEMBL:ENSG00000113302	shared rare gene IL12B	Shared rare gene	0.0721303266302474	201	4.1710138096696525	False	1	1	True	True	Shared rare gene IL12B
+f	Crohn-UC	module	GENEANCHOR:ENSEMBL:ENSG00000167207	shared rare gene NOD2	Shared rare gene	0.0213389623927181	364	3.577164850091988	False	2	2	True	True	Shared rare gene NOD2
+f	Crohn-UC	module	REACTOME:R-HSA-6785807	Interleukin-4 and Interleukin-13 signaling	Reactome pathway	0.0047766456645218	1459	2.1888121692059426	False	3	6	True	False	
+f	Crohn-UC	module	REACTOME:R-HSA-9968734	Differentiation of Circulating Monocytes	Reactome pathway	0.0046098558277671	1001	2.565563938413508	False	4	3	True	True	Monocyte differentiation
+f	Crohn-UC	module	REACTOME:R-HSA-6783783	Interleukin-10 signaling	Reactome pathway	0.0044096270851444	995	2.5715759805701355	False	5	5	True	True	IL-10 signalling
+f	Crohn-UC	module	REACTOME:R-HSA-6798695	Neutrophil degranulation	Reactome pathway	0.0036407076361429	546	3.171699741983823	False	7	4	False	True	Neutrophil degranulation
+f	Crohn-UC	gene	ENSEMBL:ENSG00000113302	IL12B	Gene	0.072623170402861	201	4.1710138096696525	False	1	1	True	True	IL12B
+f	Crohn-UC	gene	ENSEMBL:ENSG00000167207	NOD2	Gene	0.0218074469320072	364	3.577164850091988	False	2	2	True	True	NOD2
+f	Crohn-UC	gene	ENSEMBL:ENSG00000146648	EGFR	Gene	0.0124520878244052	1032	2.53506477168722	False	3	4	True	False	
+f	Crohn-UC	gene	ENSEMBL:ENSG00000142507	PSMB6	Gene	0.0111716397777557	197	4.19111498899074	False	4	3	False	True	PSMB6
+f	Crohn-UC	neighbour	MONDO:0013954	Mendelian susceptibility to mycobacterial diseases due to complete IL12B deficiency	Disease	0.0550063410465987	15	6.766268516626519	False	1	1	True	True	MSMD, IL12B deficiency
+f	Crohn-UC	neighbour	MONDO:0005361	eosinophilic esophagitis	Disease	0.040839776955617	75	5.156830604192418	False	2	2	True	True	Eosinophilic esophagitis
+f	RA-polymyositis	module	REACTOME:R-HSA-6783783	Interleukin-10 signaling	Reactome pathway	0.0093509984626016	995	2.5715759805701355	False	1	12	True	False	
+f	RA-polymyositis	module	REACTOME:R-HSA-9968734	Differentiation of Circulating Monocytes	Reactome pathway	0.0093150745813471	1001	2.565563938413508	False	2	13	True	False	
+f	RA-polymyositis	module	REACTOME:R-HSA-6785807	Interleukin-4 and Interleukin-13 signaling	Reactome pathway	0.009267095501469	1459	2.1888121692059426	False	3	16	True	False	
+f	RA-polymyositis	module	REACTOME:R-HSA-198933	Immunoregulatory interactions between a Lymphoid and a non-Lymphoid cell	Reactome pathway	0.0091856096464666	395	3.4954329528276067	False	4	1	True	True	Lymphoid–non-lymphoid interactions
+f	RA-polymyositis	module	REACTOME:R-HSA-6798695	Neutrophil degranulation	Reactome pathway	0.0087368895410866	546	3.171699741983823	False	5	6	True	False	
+f	RA-polymyositis	module	REACTOME:R-HSA-1236974	ER-Phagosome pathway	Reactome pathway	0.0083148737365326	428	3.415195522146932	False	7	5	False	True	ER-Phagosome pathway
+f	RA-polymyositis	module	REACTOME:R-HSA-877300	Interferon gamma signaling	Reactome pathway	0.0078200524788411	292	3.797564915460448	False	8	3	False	True	IFN-γ signalling
+f	RA-polymyositis	module	REACTOME:R-HSA-202430	Translocation of ZAP-70 to Immunological synapse	Reactome pathway	0.0077474919376805	254	3.936984450710192	False	10	2	False	True	ZAP-70 to immunological synapse
+f	RA-polymyositis	module	REACTOME:R-HSA-202427	Phosphorylation of CD3 and TCR zeta chains	Reactome pathway	0.0076748231782764	273	3.864846922543769	False	11	4	False	True	CD3/TCR ζ phosphorylation
+f	RA-polymyositis	gene	ENSEMBL:ENSG00000109320	NFKB1	Gene	0.0233890198594917	952	2.615753682937363	False	1	3	True	True	NFKB1
+f	RA-polymyositis	gene	ENSEMBL:ENSG00000125538	IL1B	Gene	0.02247904161064	805	2.783476440310165	False	2	2	True	True	IL1B
+f	RA-polymyositis	gene	ENSEMBL:ENSG00000150782	IL18	Gene	0.0207113106589995	623	3.039772198941275	False	3	1	True	True	IL18
+f	RA-polymyositis	neighbour	MONDO:0005046	immune system disorder	Disease	0.0503408837374929	261	3.909798310406035	False	1	1	True	True	Immune system disorder
+f	RA-polymyositis	neighbour	MONDO:0021167	myositis disease	Disease	0.0428753268687068	164	4.3744522899045295	False	2	2	True	True	Myositis disease

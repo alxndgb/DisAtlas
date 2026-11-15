@@ -1,0 +1,57 @@
+| Cluster | Diseases | Theme | Dominant body-system class (share) | Mechanism or process term (share, fold) |
+|:--|--:|:--|:--|:--|
+| c1 | 273 | anatomy | nervous system disorder (93%) | — |
+| c3 | 146 | anatomy | cardiovascular disorder (75%) | — |
+| c9 | 270 | anatomy | nervous system disorder (87%) | — |
+| c10 | 448 | anatomy | integumentary system disorder (86%) | — |
+| c11 | 274 | anatomy | disorder of visual system (89%) | — |
+| c13 | 162 | anatomy | reproductive system disorder (84%) | — |
+| c21 | 266 | anatomy | nervous system disorder (90%) | — |
+| c22 | 289 | anatomy | nervous system disorder (90%) | — |
+| c30 | 179 | anatomy | nervous system disorder (97%) | — |
+| c31 | 292 | anatomy | nervous system disorder (95%) | — |
+| c32 | 391 | anatomy | musculoskeletal system disorder (78%) | — |
+| c34 | 200 | anatomy | musculoskeletal system disorder (95%) | — |
+| c36 | 320 | anatomy | nervous system disorder (97%) | — |
+| c38 | 160 | anatomy | hematologic disorder (78%) | — |
+| c39 | 161 | anatomy | musculoskeletal system disorder (69%) | — |
+| c45 | 435 | anatomy | disorder of visual system (92%) | — |
+| c46 | 301 | anatomy | nervous system disorder (80%) | — |
+| c49 | 197 | anatomy | musculoskeletal system disorder (65%) | — |
+| c50 | 121 | anatomy | urinary system disorder (80%) | — |
+| c51 | 284 | anatomy | endocrine system disorder (81%) | — |
+| c53 | 207 | anatomy | cardiovascular disorder (83%) | — |
+| c5 | 177 | mixed | reproductive system disorder (68%) | primary ciliary dyskinesia (29%, 65×) |
+| c15 | 238 | mixed | hematologic disorder (68%) | blood coagulation (40%, 13×; GO) |
+| c16 | 214 | mixed | digestive system disorder (75%) | inborn disorder of porphyrin metabolism (17%, 41×) |
+| c17 | 216 | mixed | hematologic disorder (75%) | erythrocyte homeostasis (50%, 31×; GO) |
+| c44 | 450 | mixed | immune system disorder (84%) | inborn error of immunity (25%, 16×) |
+| c47 | 125 | mixed | endocrine system disorder (63%) | monogenic diabetes (26%, 104×) |
+| c0 | 400 | process | — | inborn mitochondrial metabolism disorder (53%, 20×) |
+| c6 | 270 | process | — | ciliopathy (49%, 29×) |
+| c12 | 224 | process | — | regulation of endothelial cell apoptotic process (52%, 20×; GO) |
+| c19 | 179 | process | — | cardiac muscle cell action potential (60%, 35×; GO) |
+| c23 | 172 | process | — | complement deficiency (19%, 68×) |
+| c24 | 184 | process | — | DNA repair disease (20%, 39×) |
+| c26 | 123 | process | — | lysosomal storage disease (53%, 45×) |
+| c27 | 172 | process | — | fatty acid transport (35%, 22×; GO) |
+| c35 | 238 | process | — | cellular response to fibroblast growth factor stimulus (38%, 19×; GO) |
+| c37 | 189 | process | — | inherited lipid metabolism disorder (21%, 11×) |
+| c52 | 259 | process | — | extracellular matrix organization (45%, 15×; GO) |
+| c28 | 113 | neoplasm (79% cancer or benign tumor) | — | negative regulation of protein modification process (67%, 18×; GO) |
+| c29 | 214 | neoplasm (66% cancer or benign tumor) | — | — |
+| c33 | 289 | neoplasm (84% cancer or benign tumor) | — | response to UV (39%, 11×; GO) |
+| c41 | 297 | neoplasm (80% cancer or benign tumor) | — | — |
+| c2 | 187 | unresolved | — | — |
+| c4 | 214 | unresolved | — | — |
+| c7 | 226 | unresolved | — | — |
+| c8 | 163 | unresolved | — | — |
+| c14 | 223 | unresolved | — | — |
+| c18 | 343 | unresolved | — | — |
+| c20 | 207 | unresolved | — | — |
+| c25 | 162 | unresolved | — | — |
+| c40 | 158 | unresolved | — | — |
+| c42 | 252 | unresolved | — | — |
+| c43 | 287 | unresolved | — | — |
+| c48 | 146 | unresolved | — | — |
+| c54 | 334 | unresolved | — | — |

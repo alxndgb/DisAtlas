@@ -1,0 +1,71 @@
+{
+ "n_candidate_diseases": 13080,
+ "dis_gene": {
+  "n_rows": 18287,
+  "n_diseases": 9426,
+  "n_genes": 5656,
+  "uncapped_n_rows": 22570,
+  "uncapped_n_diseases": 9440,
+  "uncapped_n_genes": 6278,
+  "per_source": {
+   "BIKG_NLP_SCIENTIFIC_LITERATURE": {
+    "n_assoc": 3413,
+    "n_diseases": 783,
+    "n_genes": 995,
+    "n_solo": 2818
+   },
+   "GenCC": {
+    "n_assoc": 6903,
+    "n_diseases": 6033,
+    "n_genes": 4157,
+    "n_solo": 1232
+   },
+   "OMIM Direct": {
+    "n_assoc": 6019,
+    "n_diseases": 5818,
+    "n_genes": 4328,
+    "n_solo": 588
+   },
+   "OPENTARGETS": {
+    "n_assoc": 8009,
+    "n_diseases": 5421,
+    "n_genes": 4063,
+    "n_solo": 1693
+   },
+   "ORPHANET": {
+    "n_assoc": 8150,
+    "n_diseases": 4090,
+    "n_genes": 4421,
+    "n_solo": 4183
+   }
+  }
+ },
+ "dis_symptom": {
+  "n_rows": 167798,
+  "n_diseases": 8991,
+  "n_symptoms": 10199,
+  "uncapped_n_rows": 204529,
+  "uncapped_n_diseases": 9348,
+  "uncapped_n_symptoms": 10712,
+  "per_source": {
+   "BIKG_HPOA": {
+    "n_assoc": 147952,
+    "n_diseases": 7031,
+    "n_symptoms": 9622
+   },
+   "OMIM_phenotype_hpoa": {
+    "n_assoc": 123388,
+    "n_diseases": 8099,
+    "n_symptoms": 8800
+   }
+  }
+ },
+ "dis_symptom_propagation": {
+  "n_rows": 39894,
+  "n_diseases": 986
+ },
+ "union_tier1_gene_or_symptom_diseases": 11502,
+ "both_gene_and_symptom_diseases": 6915,
+ "only_gene_diseases": 2511,
+ "only_symptom_diseases": 2076
+}

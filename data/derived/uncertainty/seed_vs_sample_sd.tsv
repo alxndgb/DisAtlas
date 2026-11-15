@@ -1,0 +1,3 @@
+stratum	metric	seed_sd	sample_sd_cluster
+all_4364	auroc	0.0022647864931016	0.0180017447616411
+test_test_heldout	auroc	0.0032782158845348	0.0257089271125876
