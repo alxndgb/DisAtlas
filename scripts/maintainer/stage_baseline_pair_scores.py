@@ -11,7 +11,7 @@ No DisAtlas or AI-system score is staged: DisAtlas c and nd_c are read from data
 """
 import sys
 import pandas as pd
-R0 = "/projects/rd/us/AI/kwfh644/dis2vec_2"
+R0 = "/projects/rd/us/AI/kwfh644/DisAtlas_Dis2Vec"
 S4 = pd.read_csv(f"{R0}/revision/frozen_mechdist_eval/data/ixidn4364_scores.tsv", sep="\t", usecols=["blind_id", "a", "b", "y"])
 F = pd.read_csv("/scratch/kwfh644/reframe_v1/si/promote/r4mc1_baselines_pair_scores_full_setting_cosine.tsv.gz", sep="\t")
 F = F[["pair_id", "y", "split", "allfeat_jaccard", "gene_jaccard", "hpo_jaccard"]]  # graph scores: computed in si_baselines from the released training graph

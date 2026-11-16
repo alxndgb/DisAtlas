@@ -3,12 +3,12 @@ associated genes and HPO terms that define the annotation-matched null of the ra
 (Supplementary Figure SI_rare_common; disatlas.rebuild.rc_coverage). Source: the authors' association loader
 (02S_dis2vec/02S_mech_dist/mechdist_inputs.py load_associations, the graph-construction GDS products), as used by
 revision/v32_rewrite/headline_swap/code/rc_enrichment_B.py. Counts only; no association rows are released here.
-Run with the authors' environment (dis2vec_2/.venv), read-only on dis2vec_2:
+Run with the authors' environment (DisAtlas_Dis2Vec/.venv), read-only on DisAtlas_Dis2Vec:
     python scripts/maintainer/stage_rc_annotation_counts.py OUT.tsv.gz
 """
 import os, sys
 import pandas as pd
-R0 = "/projects/rd/us/AI/kwfh644/dis2vec_2"
+R0 = "/projects/rd/us/AI/kwfh644/DisAtlas_Dis2Vec"
 sys.path[:0] = [R0, f"{R0}/02S_dis2vec", f"{R0}/02S_dis2vec/02S_mech_dist"]
 from mechdist_inputs import load_associations
 HERE = os.path.dirname(os.path.abspath(__file__))
